@@ -1,0 +1,88 @@
+[
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "Bullet_Ptahur_JellyFish_ShootAttack_Bullet",
+            "modifiers": {
+                "Bullet_Loop": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "onAdded": [
+                        {
+                            "$type": "AttachEffect",
+                            "LHHFHDEJOHC": "Eff_Monster_Ptahur_JellyFish_ShootAttack_Bullet",
+                            "PCLAEGHPNHE": -1.0
+                        },
+                        {
+                            "$type": "AttachEffect",
+                            "LHHFHDEJOHC": "Eff_Monster_Ptahur_JellyFish_ShootAttack_Bullet_Trail",
+                            "PCLAEGHPNHE": -1.0
+                        }
+                    ],
+                    "NFKOGKMAIIE": [
+                        {
+                            "$type": "KillSelf"
+                        }
+                    ]
+                }
+            },
+            "onAdded": [
+                {
+                    "$type": "AttachModifier",
+                    "modifierName": "Bullet_Loop"
+                }
+            ],
+            "onAbilityStart": [
+                {
+                    "$type": "FireEffect",
+                    "LHHFHDEJOHC": "Eff_Monster_Ptahur_JellyFish_ShootAttack_Bullet_Hit",
+                    "PCLAEGHPNHE": -1.0
+                },
+                {
+                    "$type": "TriggerAttackEvent",
+                    "FMDHJHAACGM": {
+                        "LOPCJCIFFBE": {
+                            "$type": "IHKJIHKGECH",
+                            "triggerType": "TriggerNoRepeat",
+                            "CCNCMOGOFAG": {
+                                "$type": "DELDMCFKBBL",
+                                "offset": {
+                                    "NEEHMANEJKM": 0.0,
+                                    "KKKLBADAPPB": 0.0,
+                                    "GENNNOANKOO": 0.0
+                                },
+                                "FPDJOHEHNDD": true
+                            },
+                            "GGEJLLOCJDH": 1.5
+                        },
+                        "OIAMOBFMPAB": {
+                            "KNOKCFHALLI": "",
+                            "HOKPLNACNKG": "",
+                            "ILLFBEHPCJA": "default",
+                            "BAPFFKCLDPC": {
+                                "OLLFABADCKH": 0.5,
+                                "PDHAKJCMPHB": 0.0,
+                                "elementType": "Water",
+                                "bonusCritical": 10.0,
+                                "GAOIEGMFFDJ": "Default",
+                                "FFIIMACIKEA": 50.0,
+                                "ELCPFOMENGK": "Range",
+                                "AEOLDMAMNLM": 0.0
+                            },
+                            "OCHEEDIDOHI": {
+                                "AIDMNBLLAIJ": "default",
+                                "OEGAJNNFFPO": "LV3",
+                                "EPGLCHLENNG": 0.05000000074505806
+                            }
+                        }
+                    },
+                    "PFBJAFHFBDE": "Enemy"
+                },
+                {
+                    "$type": "RemoveModifier",
+                    "modifierName": "Bullet_Loop"
+                }
+            ]
+        }
+    }
+]

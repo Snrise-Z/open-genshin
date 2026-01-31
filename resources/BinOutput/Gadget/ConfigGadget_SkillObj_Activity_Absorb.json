@@ -1,0 +1,627 @@
+{
+    "ActivityAbility_Absorb_Bullet": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "HP": 99999.0,
+                "isInvincible": true,
+                "isLockHP": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "ActivityAbility_Absorb_Bullet",
+                "abilityName": "ActivityAbility_Absorb_Bullet",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 3.0
+        },
+        "move": {
+            "$type": "DGFHGKIONHF",
+            "MPMOPIIFDPO": {
+                "muteAll": true
+            }
+        },
+        "LGBJNNEDJDF": {
+            "$type": "OANGKAJJAPC",
+            "collision": {
+                "targetType": "Enemy",
+                "ignoreWater": true
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Absorb_SprayGun_Bullet_Hit"
+                }
+            ],
+            "GNGMJEIPCJE": true,
+            "ABEEECCLELB": {
+                "$type": "PHDKEEJOLEA",
+                "shieldHP": "Eff_Avatar_Diving_Absorb_Bullet",
+                "FFHAKCJMAKF": ""
+            }
+        }
+    },
+    "Absorb_OctopusDash_Bullet": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Bullet_Absorb_OctopusDash",
+                "abilityName": "Bullet_Absorb_OctopusDash",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 0.5
+        }
+    },
+    "Absorb_OctopusDash_Dash_Bullet": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Avatar_Absorb_OctopusDash_Dash_Bullet",
+                "abilityName": "Avatar_Absorb_OctopusDash_Dash_Bullet",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 0.5
+        }
+    },
+    "Absorb_SwordFishSlash_Bullet": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "CPGMBCECPEN": 0.4000000059604645
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "Avatar_Absorb_SwordFishSlash_Range_Bullet",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 1.2000000476837158
+        },
+        "move": {
+            "$type": "KBENGKLMEAL",
+            "MPMOPIIFDPO": {
+                "muteAll": true
+            },
+            "speed": 30.0,
+            "DHODNAPCIEF": {
+                "BKAADAIPNBC": true
+            }
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "ccd": {
+                    "type": "Always"
+                },
+                "triggerType": "TriggerNoRepeat",
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Avatar_Absorb_SwordFishSlash_Range_Bullet"
+                }
+            ],
+            "JPNAMDFCBFN": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Avatar_Absorb_SwordFishSlash_Range_Bullet"
+                }
+            ]
+        }
+    },
+    "Absorb_TrackingMissile_Bullet": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "CPGMBCECPEN": 0.4000000059604645
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "Absorb_TrackingMissile_Bullet",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 2.0
+        },
+        "move": {
+            "$type": "EGIBMIADEHO",
+            "MPMOPIIFDPO": {
+                "muteAll": true
+            },
+            "speed": 20.0,
+            "GBPNCGHBJMC": 1440.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD",
+                "MJFDEEKHOKP": true
+            },
+            "JPDDBBHJAAH": true,
+            "DHODNAPCIEF": {
+                "BKAADAIPNBC": true
+            },
+            "BCNECAMPGJJ": true,
+            "FDECFKIJFPN": {
+                "$type": "OIPBNHOJLBF",
+                "KBOKKCAAOIP": {
+                    "$type": "GHHFGNOPNBM",
+                    "offset": {
+                        "EMBMLEBGFOI": 0.0,
+                        "NABPJFNICAE": 0.0,
+                        "MLOLIKEJCKB": 20.0
+                    },
+                    "CMLNNDEJCEF": true
+                },
+                "radius": 3.5
+            }
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "ccd": {
+                    "type": "Always"
+                },
+                "targetType": "Enemy",
+                "ignoreWater": true
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Absorb_TrackingMissile_Bullet"
+                }
+            ],
+            "JPNAMDFCBFN": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Absorb_TrackingMissile_Bullet"
+                }
+            ]
+        }
+    },
+    "Absorb_SprayGun_Bullet": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            }
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 999999.0,
+                "attack": 10.0,
+                "defense": 999999.0,
+                "isInvincible": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            },
+            "simulatePhysics": {
+                "enable": true,
+                "radius": 0.10000000149011612
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "Absorb_SprayGun_Bullet_Hit",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 10.0
+        },
+        "move": {
+            "$type": "DGFHGKIONHF",
+            "MPMOPIIFDPO": {
+                "muteAll": true
+            },
+            "DHODNAPCIEF": {
+                "BKAADAIPNBC": true
+            }
+        },
+        "LGBJNNEDJDF": {
+            "$type": "OANGKAJJAPC",
+            "collision": {
+                "targetType": "Enemy",
+                "ignoreWater": true
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Absorb_SprayGun_Bullet_Hit"
+                }
+            ],
+            "GNGMJEIPCJE": true,
+            "ABEEECCLELB": {
+                "$type": "PHDKEEJOLEA",
+                "shieldHP": "Eff_Avatar_Diving_SprayGun_Bullet",
+                "FFHAKCJMAKF": ""
+            }
+        },
+        "NFGLECOELLL": true
+    },
+    "ActivityAbility_Absorb_Avatar": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            }
+        },
+        "hasModel": true,
+        "combat": {
+            "property": {
+                "HP": 99999.0,
+                "defense": 99999.0,
+                "isInvincible": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "ActivityAbility_Absorb_Avatar_Gadget",
+                "abilityName": "ActivityAbility_Absorb_Avatar_Gadget",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "ActivityAbility_Absorb_Avatar_Gadget_Slash",
+                "abilityName": "ActivityAbility_Absorb_Avatar_Gadget_Slash",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "ActivityAbility_Absorb_Avatar_Gadget_Slash_Range",
+                "abilityName": "ActivityAbility_Absorb_Avatar_Gadget_Slash_Range",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeInfinite": true,
+            "lifeTime": 9999.0
+        },
+        "move": {
+            "$type": "DKAMCGDMNKI",
+            "MPMOPIIFDPO": {
+                "muteAll": true
+            },
+            "attachPoint": "",
+            "followRotation": true,
+            "offset": {
+                "x": 0.6000000238418579,
+                "y": 1.5,
+                "z": -0.6000000238418579
+            },
+            "JHIDLJOPJML": true,
+            "JDDHGLLAOJP": true,
+            "NJODBDDIFIE": 0.07000000029802322,
+            "IALNCPBDMCB": 0.10000000149011612,
+            "HMPJAIBPNND": ""
+        }
+    },
+    "ActivityAbility_Absorb_Avatar_2": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            }
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 99999.0,
+                "defense": 99999.0,
+                "isInvincible": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "ActivityAbility_Absorb_Avatar_Gadget_2",
+                "abilityName": "ActivityAbility_Absorb_Avatar_Gadget_2",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeInfinite": true,
+            "lifeTime": 9999.0
+        },
+        "move": {
+            "$type": "DKAMCGDMNKI",
+            "MPMOPIIFDPO": {
+                "muteAll": true
+            },
+            "attachPoint": "",
+            "followRotation": true,
+            "offset": {
+                "x": 0.800000011920929,
+                "y": 1.7000000476837158,
+                "z": -0.6000000238418579
+            },
+            "JHIDLJOPJML": true,
+            "JDDHGLLAOJP": true,
+            "NJODBDDIFIE": 0.07000000029802322,
+            "IALNCPBDMCB": 0.10000000149011612,
+            "HMPJAIBPNND": ""
+        }
+    },
+    "ActivityAbility_Absorb_Avatar_3": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            }
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 99999.0,
+                "defense": 99999.0,
+                "isInvincible": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "ActivityAbility_Absorb_Avatar_Gadget_3",
+                "abilityName": "ActivityAbility_Absorb_Avatar_Gadget_3",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeInfinite": true,
+            "lifeTime": 9999.0
+        },
+        "move": {
+            "$type": "DKAMCGDMNKI",
+            "MPMOPIIFDPO": {
+                "muteAll": true
+            },
+            "attachPoint": "",
+            "followRotation": true,
+            "offset": {
+                "x": 0.800000011920929,
+                "y": 1.7000000476837158,
+                "z": -0.6000000238418579
+            },
+            "JHIDLJOPJML": true,
+            "JDDHGLLAOJP": true,
+            "NJODBDDIFIE": 0.07000000029802322,
+            "IALNCPBDMCB": 0.10000000149011612,
+            "HMPJAIBPNND": ""
+        }
+    },
+    "ActivityAbility_Absorb_Avatar_4": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            }
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 99999.0,
+                "defense": 99999.0,
+                "isInvincible": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "ActivityAbility_Absorb_Avatar_Gadget_4",
+                "abilityName": "ActivityAbility_Absorb_Avatar_Gadget_4",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeInfinite": true,
+            "lifeTime": 9999.0
+        },
+        "move": {
+            "$type": "DKAMCGDMNKI",
+            "MPMOPIIFDPO": {
+                "muteAll": true
+            },
+            "attachPoint": "",
+            "followRotation": true,
+            "offset": {
+                "x": 0.800000011920929,
+                "y": 1.7000000476837158,
+                "z": -0.6000000238418579
+            },
+            "JHIDLJOPJML": true,
+            "JDDHGLLAOJP": true,
+            "NJODBDDIFIE": 0.07000000029802322,
+            "IALNCPBDMCB": 0.10000000149011612,
+            "HMPJAIBPNND": ""
+        }
+    }
+}

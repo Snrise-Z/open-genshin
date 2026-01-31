@@ -1,0 +1,645 @@
+{
+    "common": {
+        "effectAttachShape": {
+            "$type": "ConfigEffectAttachSkinnedMesh",
+            "mesh": "EffectMesh"
+        },
+        "mass": 9999999.0,
+        "height": 1.0,
+        "affectedByWorld": true,
+        "checkInSurface": true,
+        "canTriggerElementReactionText": false,
+        "useGrassDisplacement": true,
+        "clearAnimatorOnSetLightDeactive": true,
+        "clearAIOnSetLightDeactive": true
+    },
+    "model": {
+        "bornEffect": "",
+        "attachEffect": "",
+        "canBakeMesh": false
+    },
+    "MEMHBNEJBCL": {
+        "PJBCJPKPOLB": 1.0
+    },
+    "combat": {
+        "property": {
+            "endureType": "Monster_Minion",
+            "weight": 101.0,
+            "isInvincible": true
+        },
+        "beHit": {
+            "hitBloodEffect": "",
+            "OFKMFHKFECF": true,
+            "muteAllHitText": true
+        },
+        "combatLock": {
+            "lockShape": "CircleLockEnemy",
+            "denyLockOn": true,
+            "lockType": "Animal_Lv2"
+        },
+        "die": {
+            "dieEndTime": 2.0,
+            "dieForceDisappearTime": 10.0,
+            "dieDisappearEffect": ""
+        }
+    },
+    "abilities": [
+        {
+            "abilityID": "CommonInitial",
+            "abilityName": "Animal_Common_Initial",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "Animal_Inu_Tanuki_IgnoreControlState",
+            "abilityName": "Animal_Inu_Tanuki_IgnoreControlState",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "Animal_Inu_Tanuki_BlinkState",
+            "abilityName": "Animal_Inu_Tanuki_BlinkState",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "Animal_Inu_Tanuki_FindNextPathPoint",
+            "abilityName": "Animal_Inu_Tanuki_FindNextPathPoint",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "Animal_Inu_Tanuki_DoBlink",
+            "abilityName": "Animal_Inu_Tanuki_DoBlink",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "Animal_Inu_Tanuki_KillSelf",
+            "abilityName": "Animal_Inu_Tanuki_KillSelf",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "Animal_Inu_Tanuki_KillSelf_Escape",
+            "abilityName": "Animal_Inu_Tanuki_KillSelf_Escape",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "Animal_Inu_Tanuki_Steer",
+            "abilityName": "Animal_Inu_Tanuki_Steer",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "Animal_Inu_Tanuki_Attraction",
+            "abilityName": "Animal_Inu_Tanuki_Attraction",
+            "abilityOverride": ""
+        }
+    ],
+    "stateLayers": {
+        "defaultLayer": {
+            "$type": "ConfigNormalStateLayer",
+            "ACOCIAFGIAD": "",
+            "stateIDs": {
+                "Born": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Born": []
+                    },
+                    "resetAnimatorTriggerOnExit": [
+                        "DoSkill"
+                    ]
+                },
+                "NormalIdle": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Standby": [],
+                        "Sit": []
+                    },
+                    "canDoSkill": true,
+                    "canSyncMove": true,
+                    "resetAnimatorTriggerOnExit": [
+                        "DoSkill"
+                    ]
+                },
+                "NormalMove": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Walk": [
+                            "Audio_Tanuki_Walk"
+                        ],
+                        "Run": [
+                            "Audio_Tanuki_Run"
+                        ]
+                    },
+                    "canSyncMove": true,
+                    "resetAnimatorTriggerOnExit": [
+                        "DoSkill"
+                    ],
+                    "LIPMJPLGIKD": true
+                },
+                "Alert": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Alert": [
+                            "Audio_Tanuki_Alert"
+                        ],
+                        "Alert_AS": [
+                            "Audio_Tanuki_Alert"
+                        ]
+                    },
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill",
+                        "AlertHitTrigger"
+                    ]
+                },
+                "Escape": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Escape": [
+                            "Animal_Inu_Tanuki_Escape",
+                            "Audio_Tanuki_Die"
+                        ]
+                    },
+                    "canSyncMove": true,
+                    "resetAnimatorTriggerOnExit": [
+                        "DoSkill"
+                    ],
+                    "LIPMJPLGIKD": true
+                },
+                "StandbyToSit": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "StandbyToSit": []
+                    },
+                    "canDoSkill": true,
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "SitToStandby": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "SitToStandby": []
+                    },
+                    "canDoSkill": true,
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "SitFree": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "SitFree01": [
+                            "Audio_Tanuki_sitFree01"
+                        ],
+                        "SitFree02": [
+                            "Audio_Tanuki_sitFree02"
+                        ]
+                    },
+                    "canDoSkill": true,
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "Blink_BS": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Blink_BS": [
+                            "Animal_Inu_Tanuki_Blink_BS",
+                            "Audio_Tanuki_Blink_BS"
+                        ]
+                    },
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ],
+                    "LIPMJPLGIKD": true
+                },
+                "Blink": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Blink_AS": [
+                            "Animal_Inu_Tanuki_Blink_AS",
+                            "Audio_Tanuki_Blink_AS"
+                        ],
+                        "Blink_AS02": []
+                    },
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "End": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "End": [
+                            "Animal_Inu_Tanuki_End",
+                            "Audio_Tanuki_Blink_BS"
+                        ]
+                    },
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ],
+                    "LIPMJPLGIKD": true
+                },
+                "Attraction": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Attraction": [
+                            "Audio_Tanuki_Alert"
+                        ]
+                    },
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "Attraction_AS": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Attraction_AS": [
+                            "Audio_Tanuki_Alert"
+                        ]
+                    },
+                    "canDoSkill": true,
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                }
+            }
+        }
+    },
+    "initialPoses": {
+        "Default": {
+            "initialPoseID": 1,
+            "initialPoseParams": {
+                "LHMPJOKLEHI": {
+                    "ActionState": "0"
+                }
+            }
+        },
+        "Sit": {
+            "initialPoseID": 2,
+            "initialPoseParams": {
+                "LHMPJOKLEHI": {
+                    "ActionState": "1"
+                }
+            }
+        },
+        "Prone": {
+            "initialPoseID": 3,
+            "initialPoseParams": {
+                "LHMPJOKLEHI": {
+                    "ActionState": "2"
+                }
+            }
+        }
+    },
+    "aibeta": {
+        "enable": true,
+        "friendliness": 1,
+        "sensing": {
+            "settings": {
+                "DefaultSetting": {
+                    "PHDIIPOBJGA": 10.0,
+                    "COENEFGMPFK": 90.0,
+                    "MPEJKBDNFGB": 45.0,
+                    "feelRange": 10.0
+                }
+            }
+        },
+        "neurons": {
+            "DefaultSetting": [
+                "HIT"
+            ]
+        },
+        "threat": {
+            "clearThreatTimerByDistance": 1.0,
+            "KDPOCNEHGBJ": 500.0,
+            "JGFOPCOIJOI": ""
+        },
+        "defendArea": {
+            "defendRange": 50.0
+        },
+        "GFDCKHFMHMH": {
+            "CKMELLHBHNH": [
+                {
+                    "KLENJAFFEFE": 7.0,
+                    "BMJCOELLDOL": 15.0,
+                    "HJEFCLHLLLN": 1,
+                    "MHHHCHEOGCL": [
+                        2
+                    ],
+                    "MHEIPEDLGEP": true
+                },
+                {
+                    "KLENJAFFEFE": 15.0,
+                    "BMJCOELLDOL": 30.0,
+                    "HJEFCLHLLLN": 2,
+                    "MHHHCHEOGCL": [
+                        1
+                    ],
+                    "MHEIPEDLGEP": true
+                }
+            ]
+        },
+        "ui": {
+            "hasDirectionIndicator": false,
+            "FLMOHOODJBA": ""
+        },
+        "IEMFHBCDJFP": [
+            {
+                "BIMBEJCAFLP": 100,
+                "DIAPGOFDGLC": 0.0
+            }
+        ],
+        "BNIENJNLAIJ": {
+            "1": {
+                "NOKKDDHKGAK": "OnAlert",
+                "IKMCLKEPDFP": "OnAlert",
+                "MBDAAADDHNL": 1,
+                "NOPNCNPCPJE": "",
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "Alert"
+                ],
+                "NNJBOCFBGJG": 3.0,
+                "PGPDNPMFFAG": "11",
+                "CCEAGFDONFH": "01",
+                "OKOFHICILMD": "10",
+                "CCFFFOIDOLP": "11"
+            },
+            "1011": {
+                "NOKKDDHKGAK": "Blink",
+                "ENKLFBHHOJI": {
+                    "CEKMINILIFB": [
+                        101
+                    ],
+                    "JHPHNFCMCIL": true,
+                    "OLKBBCIPHJB": 50.0,
+                    "LAOLODOGIMK": 50.0,
+                    "MLFAMHDFHMM": 12.0
+                },
+                "NOPNCNPCPJE": "",
+                "LLNBBNIEGGO": true,
+                "BIMBEJCAFLP": 100,
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "Blink",
+                    "Blink_BS"
+                ],
+                "PGPDNPMFFAG": "11",
+                "CCEAGFDONFH": "01",
+                "OKOFHICILMD": "10",
+                "CCFFFOIDOLP": "11"
+            },
+            "1012": {
+                "NOKKDDHKGAK": "Blink",
+                "ENKLFBHHOJI": {
+                    "CEKMINILIFB": [
+                        101
+                    ],
+                    "JHPHNFCMCIL": true,
+                    "MLFAMHDFHMM": 7.0
+                },
+                "NOPNCNPCPJE": "",
+                "LLNBBNIEGGO": true,
+                "BIMBEJCAFLP": 100,
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "Blink",
+                    "Blink_BS"
+                ],
+                "PGPDNPMFFAG": "11",
+                "CCEAGFDONFH": "01",
+                "OKOFHICILMD": "10",
+                "CCFFFOIDOLP": "11"
+            },
+            "1021": {
+                "NOKKDDHKGAK": "End",
+                "HAOJJHNOGHO": true,
+                "ENKLFBHHOJI": {
+                    "CEKMINILIFB": [
+                        102
+                    ],
+                    "JHPHNFCMCIL": true,
+                    "OLKBBCIPHJB": 50.0,
+                    "LAOLODOGIMK": 50.0,
+                    "MLFAMHDFHMM": 7.0
+                },
+                "NOPNCNPCPJE": "",
+                "LLNBBNIEGGO": true,
+                "BIMBEJCAFLP": 100,
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "End"
+                ],
+                "PGPDNPMFFAG": "11",
+                "CCEAGFDONFH": "01",
+                "OKOFHICILMD": "10",
+                "CCFFFOIDOLP": "11"
+            },
+            "1022": {
+                "NOKKDDHKGAK": "End",
+                "HAOJJHNOGHO": true,
+                "ENKLFBHHOJI": {
+                    "CEKMINILIFB": [
+                        102
+                    ],
+                    "JHPHNFCMCIL": true,
+                    "MLFAMHDFHMM": 12.0
+                },
+                "NOPNCNPCPJE": "",
+                "LLNBBNIEGGO": true,
+                "BIMBEJCAFLP": 100,
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "End"
+                ],
+                "PGPDNPMFFAG": "11",
+                "CCEAGFDONFH": "01",
+                "OKOFHICILMD": "10",
+                "CCFFFOIDOLP": "11"
+            },
+            "103": {
+                "NOKKDDHKGAK": "Escape",
+                "HAOJJHNOGHO": true,
+                "ENKLFBHHOJI": {
+                    "CEKMINILIFB": [
+                        103
+                    ],
+                    "JHPHNFCMCIL": true
+                },
+                "NOPNCNPCPJE": "",
+                "LLNBBNIEGGO": true,
+                "BIMBEJCAFLP": 100,
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "Escape"
+                ],
+                "PGPDNPMFFAG": "11",
+                "CCEAGFDONFH": "01",
+                "OKOFHICILMD": "10",
+                "CCFFFOIDOLP": "11"
+            },
+            "104": {
+                "NOKKDDHKGAK": "FixedMoveBlink",
+                "IKMCLKEPDFP": "ActionPoint",
+                "ENKLFBHHOJI": {
+                    "CEKMINILIFB": [
+                        104
+                    ]
+                },
+                "NOPNCNPCPJE": "",
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "Blink",
+                    "Blink_BS"
+                ],
+                "PGPDNPMFFAG": "11",
+                "CCEAGFDONFH": "01",
+                "OKOFHICILMD": "10",
+                "CCFFFOIDOLP": "11"
+            },
+            "105": {
+                "NOKKDDHKGAK": "FixedMoveEnd",
+                "IKMCLKEPDFP": "ActionPoint",
+                "ENKLFBHHOJI": {
+                    "CEKMINILIFB": [
+                        105
+                    ]
+                },
+                "NOPNCNPCPJE": "",
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "End",
+                    "Blink_BS"
+                ],
+                "PGPDNPMFFAG": "11",
+                "CCEAGFDONFH": "01",
+                "OKOFHICILMD": "10",
+                "CCFFFOIDOLP": "11"
+            },
+            "106": {
+                "NOKKDDHKGAK": "Attraction",
+                "ENKLFBHHOJI": {
+                    "CEKMINILIFB": [
+                        100,
+                        101,
+                        102
+                    ],
+                    "JHPHNFCMCIL": true
+                },
+                "cd": 4.0,
+                "LKCFDIOMLCM": 1.0,
+                "NOPNCNPCPJE": "",
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "Attraction"
+                ],
+                "PGPDNPMFFAG": "11",
+                "CCEAGFDONFH": "01",
+                "OKOFHICILMD": "10",
+                "CCFFFOIDOLP": "11"
+            },
+            "201": {
+                "NOKKDDHKGAK": "SitFree01",
+                "IKMCLKEPDFP": "Free",
+                "ENKLFBHHOJI": {
+                    "CEKMINILIFB": [
+                        2
+                    ]
+                },
+                "cd": 30.0,
+                "GPMLADFJAAH": 30.0,
+                "LKCFDIOMLCM": 15.0,
+                "KKAEGIJIDLG": 45.0,
+                "NOPNCNPCPJE": "",
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "SitFree"
+                ],
+                "PGPDNPMFFAG": "10",
+                "CCEAGFDONFH": "01",
+                "OKOFHICILMD": "10",
+                "CCFFFOIDOLP": "11"
+            },
+            "202": {
+                "NOKKDDHKGAK": "SitFree02",
+                "IKMCLKEPDFP": "Free",
+                "ENKLFBHHOJI": {
+                    "CEKMINILIFB": [
+                        2
+                    ]
+                },
+                "cd": 30.0,
+                "GPMLADFJAAH": 30.0,
+                "LKCFDIOMLCM": 15.0,
+                "KKAEGIJIDLG": 45.0,
+                "NOPNCNPCPJE": "",
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "SitFree"
+                ],
+                "PGPDNPMFFAG": "10",
+                "CCEAGFDONFH": "01",
+                "OKOFHICILMD": "10",
+                "CCFFFOIDOLP": "11"
+            }
+        },
+        "EMBHEEALPLD": 0.5,
+        "combatFixedMoveTactic": [
+            {
+                "$type": "KMHBGMELMKD",
+                "enable": true,
+                "defaultSetting": {
+                    "KIHPEPHJMOG": 0,
+                    "FKIKEIAEEBO": 1.0,
+                    "BMLLGHNDPNE": 3.0,
+                    "JOCOJHEICNA": "",
+                    "DBIELIMGBMC": ""
+                }
+            },
+            {
+                "$type": "GGKADEIBMLG",
+                "enable": true,
+                "FJANPNOAAFK": {
+                    "CEKMINILIFB": [
+                        1
+                    ]
+                },
+                "defaultSetting": {
+                    "turnSpeedOverride": 0.75,
+                    "JIFJFPJANHO": 12.5,
+                    "CBKHBGCPFBG": 7.5,
+                    "EKDHNAGGGAE": 5.0,
+                    "BFEJAKFKKFP": 1.5,
+                    "KOAMKCEFJED": 3.0,
+                    "JOCOJHEICNA": ""
+                }
+            }
+        ]
+    },
+    "GIBHCHHOJFI": [
+        {
+            "NPDDCIDNKMH": 1,
+            "KCAOBJOPJIC": 257,
+            "abilityName": ""
+        },
+        {
+            "NPDDCIDNKMH": 1011,
+            "KCAOBJOPJIC": 258,
+            "abilityName": ""
+        },
+        {
+            "NPDDCIDNKMH": 103,
+            "KCAOBJOPJIC": 259,
+            "abilityName": ""
+        }
+    ],
+    "animal": {
+        "tickAbilityElement": false,
+        "hasCharacterRenderering": false
+    }
+}

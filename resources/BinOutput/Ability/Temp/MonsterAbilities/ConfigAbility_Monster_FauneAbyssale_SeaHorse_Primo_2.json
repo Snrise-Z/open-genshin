@@ -1,0 +1,1285 @@
+[
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "FauneAbyssale_SeaHorse_Primo_DistanceCalculation",
+            "onAbilityStart": [
+                {
+                    "$type": "Predicated",
+                    "KMGAOOHMCPK": "Target",
+                    "targetPredicates": [
+                        {
+                            "$type": "FJHPOHKCGED",
+                            "KMGAOOHMCPK": "SelfAttackActiveTarget",
+                            "value": 10.0
+                        }
+                    ],
+                    "successActions": [
+                        {
+                            "$type": "SetAnimatorBool",
+                            "CMLNMLEDGPA": "TargetFar",
+                            "value": true
+                        }
+                    ],
+                    "failActions": [
+                        {
+                            "$type": "SetAnimatorBool",
+                            "CMLNMLEDGPA": "TargetFar"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "FauneAbyssale_SeaHorse_Primo_DistanceCalculation_Weak",
+            "onAbilityStart": [
+                {
+                    "$type": "Predicated",
+                    "KMGAOOHMCPK": "Target",
+                    "targetPredicates": [
+                        {
+                            "$type": "FJHPOHKCGED",
+                            "KMGAOOHMCPK": "SelfAttackActiveTarget",
+                            "value": 6.0
+                        }
+                    ],
+                    "successActions": [
+                        {
+                            "$type": "SetAnimatorBool",
+                            "CMLNMLEDGPA": "TargetFar",
+                            "value": true
+                        }
+                    ],
+                    "failActions": [
+                        {
+                            "$type": "SetAnimatorBool",
+                            "CMLNMLEDGPA": "TargetFar"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "FauneAbyssale_SeaHorse_Primo_Annihilation_DistanceCalculation",
+            "onAbilityStart": [
+                {
+                    "$type": "Predicated",
+                    "KMGAOOHMCPK": "Target",
+                    "targetPredicates": [
+                        {
+                            "$type": "KGBLHCJNCGM",
+                            "KMGAOOHMCPK": "Self",
+                            "value": 11.0,
+                            "POLCJDPOKCF": "_CENTER_POS"
+                        }
+                    ],
+                    "successActions": [
+                        {
+                            "$type": "SetAnimatorBool",
+                            "CMLNMLEDGPA": "TargetFar",
+                            "value": true
+                        }
+                    ],
+                    "failActions": [
+                        {
+                            "$type": "SetAnimatorBool",
+                            "CMLNMLEDGPA": "TargetFar"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "FauneAbyssale_SeaHorse_Primo_ElectronCharge_Far_DistanceCalculation",
+            "onAbilityStart": [
+                {
+                    "$type": "Predicated",
+                    "KMGAOOHMCPK": "Target",
+                    "targetPredicates": [
+                        {
+                            "$type": "FJHPOHKCGED",
+                            "KMGAOOHMCPK": "SelfAttackActiveTarget",
+                            "value": 20.0
+                        }
+                    ],
+                    "successActions": [
+                        {
+                            "$type": "SetAnimatorBool",
+                            "CMLNMLEDGPA": "TargetFar",
+                            "value": true
+                        }
+                    ],
+                    "failActions": [
+                        {
+                            "$type": "SetAnimatorBool",
+                            "CMLNMLEDGPA": "TargetFar"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "FauneAbyssale_SeaHorse_Primo_TileLogic",
+            "modifiers": {
+                "BigWorld_Tile_Handler": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "modifierMixins": [
+                        {
+                            "$type": "ScenePropSyncMixin",
+                            "tileName": "Monster_FauneAbyssale_Seahorse_Primo_Tile"
+                        },
+                        {
+                            "$type": "TileAttackManagerMixin",
+                            "attackID": "TileAtk_Monster_FauneAbyssale_Seahorse_Primo_Tile",
+                            "interval": 0.5,
+                            "MMEOOBAIMMM": "OwnerCamp",
+                            "NBMKPPMHDNM": true,
+                            "OIAMOBFMPAB": {
+                                "KNOKCFHALLI": "",
+                                "HOKPLNACNKG": "FauneAbyssale_SeaHorse_Primo_Tile",
+                                "ILLFBEHPCJA": "FauneAbyssale_SeaHorse_Primo_Tile",
+                                "BAPFFKCLDPC": {
+                                    "OLLFABADCKH": 0.05999999865889549,
+                                    "PDHAKJCMPHB": 0.0,
+                                    "elementType": "Electric",
+                                    "bonusCritical": 25.0,
+                                    "AEOLDMAMNLM": 0.0
+                                },
+                                "OCHEEDIDOHI": {
+                                    "AIDMNBLLAIJ": "",
+                                    "OEGAJNNFFPO": "LV0",
+                                    "ELNNAPDHCPF": true
+                                }
+                            }
+                        }
+                    ]
+                },
+                "Dungeon_Tile_Handler": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "modifierMixins": [
+                        {
+                            "$type": "ScenePropSyncMixin",
+                            "tileName": "Monster_FauneAbyssale_Seahorse_Primo_Tile_Dungeon"
+                        },
+                        {
+                            "$type": "TileAttackManagerMixin",
+                            "attackID": "TileAtk_Monster_FauneAbyssale_Seahorse_Primo_Tile",
+                            "interval": 0.5,
+                            "MMEOOBAIMMM": "OwnerCamp",
+                            "NBMKPPMHDNM": true,
+                            "OIAMOBFMPAB": {
+                                "KNOKCFHALLI": "",
+                                "HOKPLNACNKG": "FauneAbyssale_SeaHorse_Primo_Tile",
+                                "ILLFBEHPCJA": "FauneAbyssale_SeaHorse_Primo_Tile",
+                                "BAPFFKCLDPC": {
+                                    "OLLFABADCKH": 0.05999999865889549,
+                                    "PDHAKJCMPHB": 0.0,
+                                    "elementType": "Electric",
+                                    "bonusCritical": 25.0,
+                                    "AEOLDMAMNLM": 0.0
+                                },
+                                "OCHEEDIDOHI": {
+                                    "AIDMNBLLAIJ": "",
+                                    "OEGAJNNFFPO": "LV0",
+                                    "ELNNAPDHCPF": true
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            "onAdded": [
+                {
+                    "$type": "Predicated",
+                    "targetPredicates": [
+                        {
+                            "$type": "OMPKIEPKGPF",
+                            "KMGAOOHMCPK": "Self",
+                            "NGGCNKPAODB": "_IS_IN_ABYSS",
+                            "value": 1.0
+                        }
+                    ],
+                    "successActions": [
+                        {
+                            "$type": "ApplyModifier",
+                            "modifierName": "Dungeon_Tile_Handler"
+                        }
+                    ],
+                    "failActions": [
+                        {
+                            "$type": "ApplyModifier",
+                            "modifierName": "BigWorld_Tile_Handler"
+                        }
+                    ]
+                }
+            ],
+            "LFBJFECLNGK": [
+                {
+                    "$type": "ClearTile",
+                    "tileName": ""
+                },
+                {
+                    "$type": "Predicated",
+                    "targetPredicates": [
+                        {
+                            "$type": "OMPKIEPKGPF",
+                            "KMGAOOHMCPK": "Self",
+                            "NGGCNKPAODB": "_IS_IN_ABYSS",
+                            "value": 1.0
+                        }
+                    ],
+                    "successActions": [
+                        {
+                            "$type": "RemoveModifier",
+                            "modifierName": "Dungeon_Tile_Handler"
+                        }
+                    ],
+                    "failActions": [
+                        {
+                            "$type": "RemoveModifier",
+                            "modifierName": "BigWorld_Tile_Handler"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "FauneAbyssale_SeaHorse_Primo_Annihilation_ThunderPoint",
+            "abilityMixins": [
+                {
+                    "$type": "AttachModifierToGlobalValueMixin",
+                    "MJLPLOIAKOK": "Owner",
+                    "globalValueKey": "_CORAL_GADGET_NOT_EXIST_",
+                    "valueSteps": [
+                        -0.5,
+                        0.5,
+                        1.5
+                    ],
+                    "modifierNameSteps": [
+                        "Thunder_Dummy",
+                        "Thunder_KillSelf"
+                    ]
+                }
+            ],
+            "modifiers": {
+                "WarningCircle_VFX": {
+                    "modifierName": "",
+                    "FAFCPJJAIGK": 1.149999976158142,
+                    "bonusCritical": 100.0,
+                    "ANPDJHOGAFE": 1.0,
+                    "onAdded": [
+                        {
+                            "$type": "FireEffect",
+                            "LHHFHDEJOHC": "Eff_Monster_FauneAbyssale_SeaHorse_Primo_Annihilation_Thunder_WarningCircle",
+                            "PCLAEGHPNHE": -1.0
+                        }
+                    ],
+                    "MDPGEKAIFIM": [
+                        {
+                            "$type": "CreateGadget",
+                            "BLPPFMNOOIO": 42601120
+                        }
+                    ]
+                },
+                "Thunder_KillSelf": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "onAdded": [
+                        {
+                            "$type": "RemoveModifier",
+                            "modifierName": "WarningCircle_VFX"
+                        }
+                    ]
+                },
+                "Thunder_Dummy": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0
+                }
+            },
+            "onAdded": [
+                {
+                    "$type": "ApplyModifier",
+                    "modifierName": "WarningCircle_VFX"
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "FauneAbyssale_SeaHorse_Primo_Annihilation_ThunderStrike",
+            "modifiers": {
+                "DoThunderAttack": {
+                    "modifierName": "",
+                    "FAFCPJJAIGK": 0.27000001072883606,
+                    "bonusCritical": 100.0,
+                    "onAdded": [
+                        {
+                            "$type": "FireEffect",
+                            "LHHFHDEJOHC": "Eff_Monster_FauneAbyssale_SeaHorse_Primo_Annihilation_Thunder",
+                            "PCLAEGHPNHE": -1.0
+                        }
+                    ],
+                    "NFKOGKMAIIE": [
+                        {
+                            "$type": "TriggerAttackEvent",
+                            "FMDHJHAACGM": {
+                                "LOPCJCIFFBE": {
+                                    "$type": "PMGLIKAEELC",
+                                    "triggerType": "TriggerNoRepeat",
+                                    "height": 4.0,
+                                    "GGEJLLOCJDH": 7.650000095367432
+                                },
+                                "OIAMOBFMPAB": {
+                                    "KNOKCFHALLI": "",
+                                    "HOKPLNACNKG": "Annihilation_ThunderStrike",
+                                    "ILLFBEHPCJA": "SeaHorse_Primo_HitProtection_Multi",
+                                    "BAPFFKCLDPC": {
+                                        "OLLFABADCKH": 1.0,
+                                        "PDHAKJCMPHB": 0.0,
+                                        "elementType": "Electric",
+                                        "bonusCritical": 25.0,
+                                        "GAOIEGMFFDJ": "Blunt",
+                                        "FFIIMACIKEA": 101.0,
+                                        "ELCPFOMENGK": "Range",
+                                        "AEOLDMAMNLM": 0.0
+                                    },
+                                    "OCHEEDIDOHI": {
+                                        "AIDMNBLLAIJ": "default",
+                                        "OEGAJNNFFPO": "LV3"
+                                    },
+                                    "KPCBFANCGFH": true,
+                                    "FCDFPCPCJGO": {
+                                        "DFOAHDENBKP": "CustomVector",
+                                        "FIKIBNDMNEF": 1.2000000476837158,
+                                        "NCDMOKAIAJD": 0.30000001192092896,
+                                        "BOEOGMPKDBO": {
+                                            "y": 1.0
+                                        }
+                                    }
+                                }
+                            },
+                            "PFBJAFHFBDE": "Enemy"
+                        },
+                        {
+                            "$type": "Predicated",
+                            "KMGAOOHMCPK": "OriginOwner",
+                            "targetPredicates": [
+                                {
+                                    "$type": "OMPKIEPKGPF",
+                                    "KMGAOOHMCPK": "OriginOwner",
+                                    "NGGCNKPAODB": "_IS_IN_ABYSS",
+                                    "value": 1.0
+                                }
+                            ],
+                            "successActions": [
+                                {
+                                    "$type": "CreateTile",
+                                    "tileName": "Monster_FauneAbyssale_Seahorse_Primo_Tile_Dungeon",
+                                    "LOPCJCIFFBE": {
+                                        "$type": "IHKJIHKGECH",
+                                        "triggerType": "TriggerNoRepeat",
+                                        "GGEJLLOCJDH": 6.0
+                                    }
+                                }
+                            ],
+                            "failActions": [
+                                {
+                                    "$type": "CreateTile",
+                                    "tileName": "Monster_FauneAbyssale_Seahorse_Primo_Tile",
+                                    "LOPCJCIFFBE": {
+                                        "$type": "IHKJIHKGECH",
+                                        "triggerType": "TriggerNoRepeat",
+                                        "GGEJLLOCJDH": 6.0
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            "onAdded": [
+                {
+                    "$type": "ApplyModifier",
+                    "modifierName": "DoThunderAttack"
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "FauneAbyssale_SeaHorse_Primo_ThunderStrike_AttackGadget",
+            "modifiers": {
+                "DoThunderAttack": {
+                    "modifierName": "",
+                    "FAFCPJJAIGK": 0.5,
+                    "bonusCritical": 100.0,
+                    "NFKOGKMAIIE": [
+                        {
+                            "$type": "FireEffect",
+                            "LHHFHDEJOHC": "Eff_Monster_FauneAbyssale_SeaHorse_Primo_ThunderStrike_Strike",
+                            "PCLAEGHPNHE": -1.0
+                        },
+                        {
+                            "$type": "TriggerAttackEvent",
+                            "FMDHJHAACGM": {
+                                "LOPCJCIFFBE": {
+                                    "$type": "PMGLIKAEELC",
+                                    "triggerType": "TriggerNoRepeat",
+                                    "height": 4.0,
+                                    "GGEJLLOCJDH": 1.649999976158142
+                                },
+                                "OIAMOBFMPAB": {
+                                    "KNOKCFHALLI": "",
+                                    "HOKPLNACNKG": "ThunderStrike_AttackGadget",
+                                    "ILLFBEHPCJA": "SeaHorse_Primo_HitProtection_Multi",
+                                    "BAPFFKCLDPC": {
+                                        "OLLFABADCKH": 0.5,
+                                        "PDHAKJCMPHB": 0.0,
+                                        "elementType": "Electric",
+                                        "bonusCritical": 25.0,
+                                        "GAOIEGMFFDJ": "Blunt",
+                                        "FFIIMACIKEA": 160.0,
+                                        "ELCPFOMENGK": "Range",
+                                        "AEOLDMAMNLM": 0.0
+                                    },
+                                    "OCHEEDIDOHI": {
+                                        "AIDMNBLLAIJ": "default",
+                                        "OEGAJNNFFPO": "",
+                                        "HMAALKAJCFB": {
+                                            "LNDONGHHKPJ": "Air",
+                                            "KIPGEFGLCFL": 0.0,
+                                            "BBNADHPONHO": 560.0
+                                        }
+                                    },
+                                    "KPCBFANCGFH": true,
+                                    "FCDFPCPCJGO": {
+                                        "DFOAHDENBKP": "CustomVector",
+                                        "FIKIBNDMNEF": 0.699999988079071,
+                                        "NCDMOKAIAJD": 0.30000001192092896,
+                                        "BOEOGMPKDBO": {
+                                            "y": 1.0
+                                        }
+                                    }
+                                }
+                            },
+                            "PFBJAFHFBDE": "Enemy"
+                        },
+                        {
+                            "$type": "Predicated",
+                            "KMGAOOHMCPK": "OriginOwner",
+                            "targetPredicates": [
+                                {
+                                    "$type": "OMPKIEPKGPF",
+                                    "KMGAOOHMCPK": "OriginOwner",
+                                    "NGGCNKPAODB": "_IS_IN_ABYSS",
+                                    "value": 1.0
+                                }
+                            ],
+                            "successActions": [
+                                {
+                                    "$type": "CreateTile",
+                                    "tileName": "Monster_FauneAbyssale_Seahorse_Primo_Tile_Dungeon",
+                                    "LOPCJCIFFBE": {
+                                        "$type": "IHKJIHKGECH",
+                                        "triggerType": "TriggerNoRepeat",
+                                        "GGEJLLOCJDH": 1.600000023841858
+                                    }
+                                }
+                            ],
+                            "failActions": [
+                                {
+                                    "$type": "CreateTile",
+                                    "tileName": "Monster_FauneAbyssale_Seahorse_Primo_Tile",
+                                    "LOPCJCIFFBE": {
+                                        "$type": "IHKJIHKGECH",
+                                        "triggerType": "TriggerNoRepeat",
+                                        "GGEJLLOCJDH": 1.600000023841858
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            "onAdded": [
+                {
+                    "$type": "ApplyModifier",
+                    "modifierName": "DoThunderAttack"
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "FauneAbyssale_SeaHorse_Primo_ElectronCharge_DummyBullet_LifeTimeControl",
+            "abilityMixins": [
+                {
+                    "$type": "AttachModifierToGlobalValueMixin",
+                    "MJLPLOIAKOK": "Owner",
+                    "globalValueKey": "_DUMMY_BULLET_EXIST",
+                    "valueSteps": [
+                        -0.5,
+                        0.5,
+                        1.5
+                    ],
+                    "modifierNameSteps": [
+                        "Destroy",
+                        "Dummy"
+                    ]
+                }
+            ],
+            "modifiers": {
+                "Dummy": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0
+                },
+                "Destroy": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "onAdded": [
+                        {
+                            "$type": "KillSelf"
+                        }
+                    ]
+                },
+                "Kill_Summon_Gadget": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "onAdded": [
+                        {
+                            "$type": "KillSelf"
+                        }
+                    ]
+                }
+            },
+            "onAbilityStart": [
+                {
+                    "$type": "ApplyModifier",
+                    "KMGAOOHMCPK": "Target",
+                    "FLEEHCIOPKA": [
+                        {
+                            "$type": "OMPKIEPKGPF",
+                            "NGGCNKPAODB": "_COMMON_GADGET_ISSUMMON",
+                            "value": 0.0,
+                            "GAGKBNPOCAC": "MoreThan"
+                        }
+                    ],
+                    "modifierName": "Kill_Summon_Gadget"
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "FauneAbyssale_SeaHorse_Primo_CoralGadget",
+            "abilityMixins": [
+                {
+                    "$type": "AttachModifierToGlobalValueMixin",
+                    "MJLPLOIAKOK": "Owner",
+                    "globalValueKey": "_CORAL_GADGET_NOT_EXIST_",
+                    "valueSteps": [
+                        -0.5,
+                        0.5,
+                        1.5
+                    ],
+                    "modifierNameSteps": [
+                        "Coral_Dummy",
+                        "Coral_KillSelf"
+                    ]
+                }
+            ],
+            "modifiers": {
+                "Coral_BornTimer": {
+                    "modifierName": "",
+                    "FAFCPJJAIGK": 0.36000001430511475,
+                    "bonusCritical": 100.0,
+                    "modifierMixins": [
+                        {
+                            "$type": "WindZoneMixin",
+                            "IBPOJODNMHO": "CircleR2H3",
+                            "KEODLBNGJGH": -10.0,
+                            "BGBDDJHIFCM": 5.0,
+                            "HJHKHEMMDCE": 0.0,
+                            "PFBJAFHFBDE": "Enemy",
+                            "modifierName": ""
+                        },
+                        {
+                            "$type": "AttachActionToModifierMixin",
+                            "onAdded": [
+                                {
+                                    "$type": "EnableHitBoxByName",
+                                    "DFBDHJKDLHI": [
+                                        "HitBox"
+                                    ]
+                                },
+                                {
+                                    "$type": "EnablePushColliderName",
+                                    "MPJLFMGJJEM": [
+                                        "PushCollider"
+                                    ]
+                                }
+                            ],
+                            "NFKOGKMAIIE": [
+                                {
+                                    "$type": "EnableHitBoxByName",
+                                    "DFBDHJKDLHI": [
+                                        "HitBox"
+                                    ],
+                                    "DEHFCFDDEGB": true
+                                },
+                                {
+                                    "$type": "EnablePushColliderName",
+                                    "MPJLFMGJJEM": [
+                                        "PushCollider"
+                                    ],
+                                    "DEHFCFDDEGB": true
+                                }
+                            ]
+                        }
+                    ],
+                    "FJMPEOEHPJK": "DenyLockOn",
+                    "onAdded": [
+                        {
+                            "$type": "FireEffect",
+                            "LHHFHDEJOHC": "Eff_Monster_FauneAbyssale_SeaHorse_Primo_Annihilation_Coral_Born",
+                            "PCLAEGHPNHE": -1.0
+                        }
+                    ],
+                    "NFKOGKMAIIE": [
+                        {
+                            "$type": "ApplyModifier",
+                            "modifierName": "Coral_ELementalHandler"
+                        }
+                    ]
+                },
+                "Coral_ELementalHandler": {
+                    "modifierName": "",
+                    "elementType": "Electric",
+                    "bonusCritical": 10.0,
+                    "modifierMixins": [
+                        {
+                            "$type": "ShieldBarMixin",
+                            "GLBNMILELCH": [
+                                {
+                                    "$type": "ServerMonsterLog",
+                                    "KMGAOOHMCPK": "Owner",
+                                    "KCOMCHEOHOC": [
+                                        0,
+                                        2,
+                                        1
+                                    ]
+                                },
+                                {
+                                    "$type": "ApplyModifier",
+                                    "KMGAOOHMCPK": "Owner",
+                                    "modifierName": "SeaDragon_Coral_Broken"
+                                },
+                                {
+                                    "$type": "FireEffect",
+                                    "LHHFHDEJOHC": "Eff_Monster_FauneAbyssale_SeaHorse_Primo_Annihilation_Coral_Destroy",
+                                    "PCLAEGHPNHE": -1.0
+                                },
+                                {
+                                    "$type": "KillSelf"
+                                }
+                            ],
+                            "BNHNIOIMHDI": "",
+                            "GJAJKDANDOB": "Electric"
+                        }
+                    ],
+                    "onAdded": [
+                        {
+                            "$type": "AttachEffect",
+                            "LHHFHDEJOHC": "Eff_Monster_FauneAbyssale_SeaHorse_Primo_Annihilation_Coral",
+                            "PCLAEGHPNHE": -1.0
+                        },
+                        {
+                            "$type": "AttachModifier",
+                            "modifierName": "Coral_Line_VFX"
+                        }
+                    ]
+                },
+                "Coral_Line_VFX": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "onAdded": [
+                        {
+                            "$type": "AttachEffect",
+                            "KMGAOOHMCPK": "Owner",
+                            "LHHFHDEJOHC": "Eff_Monster_FauneAbyssale_SeaHorse_Primo_Annihilation_Coral_Line",
+                            "CCNCMOGOFAG": {
+                                "$type": "IADBHDLMGJB",
+                                "FNHBOFDBNNK": {
+                                    "$type": "KLGGPHDOCPJ",
+                                    "MDPMJPIOGLA": "LinePoint",
+                                    "JPEOGPAHPDM": "Caster"
+                                },
+                                "FPDJOHEHNDD": true,
+                                "MDPMJPIOGLA": "Horn"
+                            },
+                            "PCLAEGHPNHE": -1.0,
+                            "GAJDOCMPDFD": true
+                        }
+                    ]
+                },
+                "SeaDragon_Coral_Broken": {
+                    "HABNNJHCOCD": "Multiple",
+                    "modifierName": "",
+                    "FAFCPJJAIGK": 0.10000000149011612,
+                    "bonusCritical": 100.0,
+                    "onAdded": [
+                        {
+                            "$type": "TriggerAbility",
+                            "musicSubStates": {
+                                "$type": "GNHODBHJPLP",
+                                "CJJEEJHMBGG": 1,
+                                "HDBBMLMCMKE": "Nearest",
+                                "HADIOIIIHBI": 42601115
+                            },
+                            "abilityName": "FauneAbyssale_SeaHorse_Primo_PearlGadget_MinusElement"
+                        },
+                        {
+                            "$type": "SetGlobalValue",
+                            "value": 2.0,
+                            "NGGCNKPAODB": "ACHIEVEMENT_82185_MARK",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        }
+                    ]
+                },
+                "Coral_KillSelf": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "onAdded": [
+                        {
+                            "$type": "FireEffect",
+                            "LHHFHDEJOHC": "Eff_Monster_FauneAbyssale_SeaHorse_Primo_Annihilation_Coral_Destroy",
+                            "PCLAEGHPNHE": -1.0
+                        },
+                        {
+                            "$type": "KillSelf"
+                        }
+                    ]
+                },
+                "Coral_Dummy": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0
+                },
+                "Kill_Summon_Gadget": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "onAdded": [
+                        {
+                            "$type": "KillSelf"
+                        }
+                    ]
+                }
+            },
+            "onAdded": [
+                {
+                    "$type": "ApplyModifier",
+                    "modifierName": "Coral_BornTimer"
+                },
+                {
+                    "$type": "ApplyModifier",
+                    "musicSubStates": {
+                        "$type": "HGNAFICLGFP",
+                        "IBPOJODNMHO": "CircleR4H4",
+                        "CHPLPFBEPDN": "All",
+                        "CHGLFBPDMKF": 1.0
+                    },
+                    "FLEEHCIOPKA": [
+                        {
+                            "$type": "OMPKIEPKGPF",
+                            "NGGCNKPAODB": "_COMMON_GADGET_ISSUMMON",
+                            "value": 0.0,
+                            "GAGKBNPOCAC": "MoreThan"
+                        }
+                    ],
+                    "modifierName": "Kill_Summon_Gadget"
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "FauneAbyssale_SeaHorse_Primo_ElectronCharge_RemoveDummyBullet",
+            "abilityMixins": [
+                {
+                    "$type": "AttachToAnimatorStateIDMixin",
+                    "FHCHNMKMJJA": [
+                        "ElectronCharge",
+                        "ElectronChargeWeak"
+                    ],
+                    "modifierName": "DummyBulletMonitor"
+                }
+            ],
+            "modifiers": {
+                "DummyBulletMonitor": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "onAdded": [
+                        {
+                            "$type": "SetGlobalValue",
+                            "value": 1.0,
+                            "NGGCNKPAODB": "_DUMMY_BULLET_EXIST",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        }
+                    ],
+                    "NFKOGKMAIIE": [
+                        {
+                            "$type": "SetGlobalValue",
+                            "value": 0.0,
+                            "NGGCNKPAODB": "_DUMMY_BULLET_EXIST",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        }
+                    ]
+                }
+            },
+            "onAdded": [
+                {
+                    "$type": "SetGlobalValue",
+                    "value": 0.0,
+                    "NGGCNKPAODB": "_DUMMY_BULLET_EXIST",
+                    "LBHGJKHHAKP": 0.0,
+                    "EMGNPOKHMNN": 0.0
+                }
+            ],
+            "onAbilityStart": [
+                {
+                    "$type": "SetGlobalValue",
+                    "value": 0.0,
+                    "NGGCNKPAODB": "_DUMMY_BULLET_EXIST",
+                    "LBHGJKHHAKP": 0.0,
+                    "EMGNPOKHMNN": 0.0
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "FauneAbyssale_SeaHorse_Primo_ElectronCharge_CreateDummyBullet_Electric",
+            "onAbilityStart": [
+                {
+                    "$type": "SetGlobalValue",
+                    "value": 1.0,
+                    "NGGCNKPAODB": "_DUMMY_BULLET_EXIST",
+                    "LBHGJKHHAKP": 0.0,
+                    "EMGNPOKHMNN": 0.0
+                },
+                {
+                    "$type": "TriggerBullet",
+                    "PMOEIMCLPBE": 42601122,
+                    "EMINLBKFOBM": "Self",
+                    "LLEKJLJCCGN": true
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "FauneAbyssale_SeaHorse_Primo_ElectronCharge_CreateDummyBullet_Physic",
+            "onAbilityStart": [
+                {
+                    "$type": "TriggerBullet",
+                    "PMOEIMCLPBE": 42601123,
+                    "EMINLBKFOBM": "Self",
+                    "LLEKJLJCCGN": true
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "FauneAbyssale_SeaHorse_Primo_FishBarrage",
+            "onAbilityStart": [
+                {
+                    "$type": "TriggerBullet",
+                    "PMOEIMCLPBE": 42601117,
+                    "CCNCMOGOFAG": {
+                        "$type": "IADBHDLMGJB",
+                        "FPDJOHEHNDD": true,
+                        "MDPMJPIOGLA": "Bone_Tail01_M"
+                    },
+                    "EMINLBKFOBM": "SelfAttackActiveTarget"
+                },
+                {
+                    "$type": "ReTriggerAISkillInitialCD",
+                    "AGAIJDENKJE": [
+                        201
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "FauneAbyssale_SeaHorse_Primo_FishBarrage_Bullet",
+            "onAbilityStart": [
+                {
+                    "$type": "FireHitEffect",
+                    "KOCNKAKDKII": "Eff_Monster_FauneAbyssale_SeaHorse_Primo_FishBarrage_Hit",
+                    "CAMEMAMPOMA": {
+                        "LJJEBGDNMON": "Eff_Monster_FauneAbyssale_SeaHorse_Primo_FishBarrage_HitScene"
+                    }
+                },
+                {
+                    "$type": "TriggerAttackEvent",
+                    "FMDHJHAACGM": {
+                        "LOPCJCIFFBE": {
+                            "$type": "IHKJIHKGECH",
+                            "triggerType": "TriggerNoRepeat",
+                            "CCNCMOGOFAG": {
+                                "$type": "NCCAHOCNGAN"
+                            },
+                            "GGEJLLOCJDH": 0.3499999940395355
+                        },
+                        "OIAMOBFMPAB": {
+                            "KNOKCFHALLI": "",
+                            "HOKPLNACNKG": "SeaHorse_Primo_FishBarrage",
+                            "ILLFBEHPCJA": "SeaHorse_Primo_FishBarrage",
+                            "BAPFFKCLDPC": {
+                                "OLLFABADCKH": 0.3499999940395355,
+                                "PDHAKJCMPHB": 0.0,
+                                "elementType": "Electric",
+                                "bonusCritical": 25.0,
+                                "GAOIEGMFFDJ": "Default",
+                                "FFIIMACIKEA": 60.0,
+                                "ELCPFOMENGK": "Range",
+                                "AEOLDMAMNLM": 0.0
+                            },
+                            "OCHEEDIDOHI": {
+                                "AIDMNBLLAIJ": "default",
+                                "OEGAJNNFFPO": "LV2",
+                                "MLDJMEACGKL": "ByHitDirection"
+                            },
+                            "FAAOHGPLAFO": "Owner"
+                        }
+                    },
+                    "PFBJAFHFBDE": "Enemy"
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "FauneAbyssale_SeaHorse_Primo_Annihilation_Decoration",
+            "onAbilityStart": [
+                {
+                    "$type": "TriggerAttackEvent",
+                    "FMDHJHAACGM": {
+                        "LOPCJCIFFBE": {
+                            "$type": "IHKJIHKGECH",
+                            "triggerType": "TriggerNoRepeat",
+                            "CCNCMOGOFAG": {
+                                "$type": "NCCAHOCNGAN"
+                            },
+                            "GGEJLLOCJDH": 1.0
+                        },
+                        "OIAMOBFMPAB": {
+                            "KNOKCFHALLI": "",
+                            "HOKPLNACNKG": "",
+                            "ILLFBEHPCJA": "default",
+                            "BAPFFKCLDPC": {
+                                "OLLFABADCKH": 0.05000000074505806,
+                                "PDHAKJCMPHB": 0.0,
+                                "elementType": "Electric",
+                                "bonusCritical": 25.0,
+                                "GAOIEGMFFDJ": "Blunt",
+                                "FFIIMACIKEA": 1.0,
+                                "AEOLDMAMNLM": 0.0
+                            },
+                            "OCHEEDIDOHI": {
+                                "AIDMNBLLAIJ": "default",
+                                "OEGAJNNFFPO": "LV1"
+                            }
+                        }
+                    },
+                    "PFBJAFHFBDE": "Enemy"
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "FauneAbyssale_SeaHorse_Primo_ThunderStrike",
+            "modifiers": {
+                "FishThunderStrike_Timer": {
+                    "modifierName": "",
+                    "FAFCPJJAIGK": 4.0,
+                    "bonusCritical": 100.0,
+                    "ANPDJHOGAFE": 3.0,
+                    "onAdded": [
+                        {
+                            "$type": "AttachEffect",
+                            "LHHFHDEJOHC": "Eff_Monster_FauneAbyssale_SeaHorse_Primo_ThunderStrike_Follow",
+                            "PCLAEGHPNHE": -1.0
+                        }
+                    ],
+                    "MDPGEKAIFIM": [
+                        {
+                            "$type": "CreateGadget",
+                            "FLEEHCIOPKA": [
+                                {
+                                    "$type": "JFPBCBGHNFO",
+                                    "KMGAOOHMCPK": "Caster"
+                                }
+                            ],
+                            "BLADPIMNPBA": "Caster",
+                            "CKADMLFLPMH": "Caster",
+                            "CCNCMOGOFAG": {
+                                "$type": "DELDMCFKBBL",
+                                "OINHJGEGJLO": true,
+                                "FPDJOHEHNDD": true
+                            },
+                            "LLEKJLJCCGN": true,
+                            "BLPPFMNOOIO": 42601121
+                        },
+                        {
+                            "$type": "RemoveModifier",
+                            "modifierName": "FishThunderStrike_Timer"
+                        }
+                    ]
+                }
+            },
+            "onAbilityStart": [
+                {
+                    "$type": "Predicated",
+                    "musicSubStates": {
+                        "$type": "HGNAFICLGFP",
+                        "CJJEEJHMBGG": 2,
+                        "LPEGNBCHKHK": [
+                            "Avatar"
+                        ],
+                        "HDBBMLMCMKE": "Random",
+                        "IBPOJODNMHO": "CircleLockEnemyR50H30HC",
+                        "CHPLPFBEPDN": "Enemy",
+                        "CHGLFBPDMKF": 1.0
+                    },
+                    "MADMIGBIPCI": [
+                        {
+                            "$type": "FAGBAHBLACH",
+                            "MALHNOJHHDJ": [
+                                "Avatar"
+                            ]
+                        }
+                    ],
+                    "successActions": [
+                        {
+                            "$type": "AttachModifier",
+                            "KMGAOOHMCPK": "TargetTeam",
+                            "modifierName": "FishThunderStrike_Timer"
+                        }
+                    ]
+                },
+                {
+                    "$type": "ActCameraRadialBlur",
+                    "KHDOFBLONED": {
+                        "FHBANGLKDIL": 0.6000000238418579,
+                        "KBNCJNPFLDA": 0.15000000596046448,
+                        "BGFFDKADGHJ": 0.30000001192092896
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "FauneAbyssale_SeaHorse_Primo_ElectronCharge_CreateTile",
+            "onAbilityStart": [
+                {
+                    "$type": "Predicated",
+                    "targetPredicates": [
+                        {
+                            "$type": "OMPKIEPKGPF",
+                            "KMGAOOHMCPK": "Self",
+                            "NGGCNKPAODB": "_IS_IN_ABYSS",
+                            "value": 1.0
+                        }
+                    ],
+                    "successActions": [
+                        {
+                            "$type": "CreateTile",
+                            "tileName": "Monster_FauneAbyssale_Seahorse_Primo_Tile_Dungeon",
+                            "LOPCJCIFFBE": {
+                                "$type": "JDNHMJKEPOH",
+                                "triggerType": "TriggerNoRepeat",
+                                "CCNCMOGOFAG": {
+                                    "$type": "IADBHDLMGJB",
+                                    "offset": {
+                                        "GENNNOANKOO": -4.0
+                                    },
+                                    "FPDJOHEHNDD": true,
+                                    "MDPMJPIOGLA": "Motion_Root"
+                                },
+                                "DMIKDAOCFDG": {
+                                    "NEEHMANEJKM": 3.0,
+                                    "KKKLBADAPPB": 1.5,
+                                    "GENNNOANKOO": 6.0
+                                }
+                            }
+                        }
+                    ],
+                    "failActions": [
+                        {
+                            "$type": "CreateTile",
+                            "tileName": "Monster_FauneAbyssale_Seahorse_Primo_Tile",
+                            "LOPCJCIFFBE": {
+                                "$type": "JDNHMJKEPOH",
+                                "triggerType": "TriggerNoRepeat",
+                                "CCNCMOGOFAG": {
+                                    "$type": "IADBHDLMGJB",
+                                    "offset": {
+                                        "GENNNOANKOO": -4.0
+                                    },
+                                    "FPDJOHEHNDD": true,
+                                    "MDPMJPIOGLA": "Motion_Root"
+                                },
+                                "DMIKDAOCFDG": {
+                                    "NEEHMANEJKM": 3.0,
+                                    "KKKLBADAPPB": 1.5,
+                                    "GENNNOANKOO": 6.0
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "FauneAbyssale_SeaHorse_Primo_Rock_Crasher_Handler",
+            "abilityMixins": [
+                {
+                    "$type": "AttachToAIAlertnessMixin",
+                    "FNLKHCKNFJI": [
+                        2
+                    ],
+                    "modifierName": "Rock_Crasher_Handler"
+                }
+            ],
+            "modifiers": {
+                "Rock_Crasher_Handler": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "onAdded": [
+                        {
+                            "$type": "ApplyModifier",
+                            "musicSubStates": {
+                                "$type": "GNHODBHJPLP",
+                                "HADIOIIIHBI": 42601125
+                            },
+                            "modifierName": "KillGadget"
+                        },
+                        {
+                            "$type": "TriggerBullet",
+                            "PMOEIMCLPBE": 42601125,
+                            "EMINLBKFOBM": "Self",
+                            "LLEKJLJCCGN": true
+                        }
+                    ],
+                    "NFKOGKMAIIE": [
+                        {
+                            "$type": "ApplyModifier",
+                            "musicSubStates": {
+                                "$type": "GNHODBHJPLP",
+                                "HADIOIIIHBI": 42601125
+                            },
+                            "modifierName": "KillGadget"
+                        }
+                    ],
+                    "FCHBGPJGEBK": [
+                        {
+                            "$type": "ApplyModifier",
+                            "musicSubStates": {
+                                "$type": "GNHODBHJPLP",
+                                "HADIOIIIHBI": 42601125
+                            },
+                            "modifierName": "KillGadget"
+                        },
+                        {
+                            "$type": "TriggerBullet",
+                            "PMOEIMCLPBE": 42601125,
+                            "EMINLBKFOBM": "Self",
+                            "LLEKJLJCCGN": true
+                        }
+                    ]
+                },
+                "KillGadget": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "onAdded": [
+                        {
+                            "$type": "KillSelf"
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "FauneAbyssale_SeaHorse_Primo_Rock_Crasher",
+            "modifiers": {
+                "Kill_Summon_Gadget": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "onAdded": [
+                        {
+                            "$type": "KillSelf"
+                        }
+                    ]
+                }
+            },
+            "onAbilityStart": [
+                {
+                    "$type": "ApplyModifier",
+                    "KMGAOOHMCPK": "Target",
+                    "FLEEHCIOPKA": [
+                        {
+                            "$type": "OMPKIEPKGPF",
+                            "NGGCNKPAODB": "_COMMON_GADGET_ISSUMMON",
+                            "value": 0.0,
+                            "GAGKBNPOCAC": "MoreThan"
+                        }
+                    ],
+                    "modifierName": "Kill_Summon_Gadget"
+                }
+            ]
+        }
+    }
+]

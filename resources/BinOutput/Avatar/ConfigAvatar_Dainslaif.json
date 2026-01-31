@@ -1,0 +1,1019 @@
+{
+    "common": {
+        "MPHHEGOANPF": {
+            "$type": "CLIJMMPNCCF",
+            "BFOGFKFAACA": "EffectMesh"
+        },
+        "CFJLBCLHEEP": 10.0,
+        "height": 1.8646999597549438,
+        "ENMHIOBFJOH": 1.8600000143051147,
+        "IKHIEAOIJMN": true,
+        "COEGBAPPFOD": true
+    },
+    "entityTags": {
+        "$type": "KEIOLLNNCDM",
+        "useHeadControl": true,
+        "KMEFBJPOACC": [
+            "NormalStandby",
+            "NormalMove/WalkToRun",
+            "NormalMove/Walk",
+            "NormalMove/RunToWalk",
+            "NormalMove/Run",
+            "NormalMove/RunToIdle",
+            "NormalMove/WalkToIdle",
+            "NormalMove/RunningTurn",
+            "NormalMove/SprintToRun",
+            "NormalMove/SprintToIdle",
+            "Sprint",
+            "Climb/ClimbIdle",
+            "Ladder/LadderIdle",
+            "Swim/SwimIdle",
+            "NormalStandbyWeapon",
+            "NormalMoveWeapon/WalkToRunWeapon",
+            "NormalMoveWeapon/WalkWeapon",
+            "NormalMoveWeapon/RunToWalkWeapon",
+            "NormalMoveWeapon/RunWeapon",
+            "NormalMoveWeapon/RunToIdleWeapon",
+            "NormalMoveWeapon/WalkToIdleWeapon",
+            "NormalMoveWeapon/RunningTurnWeapon",
+            "Sit/SitLoop",
+            "SitB/SitBLoop"
+        ]
+    },
+    "headControl": {
+        "EKGDPANBPAJ": "PRIVATE_Pendant",
+        "JFOMPBMAOCM": "PRIVATE_Pendant",
+        "LINELGNOOHL": "RootNode",
+        "CHGJLADOCLM": "RootNode"
+    },
+    "NHLLHOPMJAI": {
+        "property": {
+            "endureType": "Avatar_Sword",
+            "weight": 75.0
+        },
+        "beHit": {
+            "hitBloodEffect": ""
+        },
+        "die": {
+            "HDFIFPALILN": true,
+            "HIEBABBDILN": 1.5,
+            "EJLBMNFLOBA": 2.5,
+            "DOLNKIGJNFP": "Death_Avatar_Common",
+            "JOOBNOBOHAI": "AvatarDie",
+            "NPLJFAJMFKO": true,
+            "OGGDOJBPKEO": 0.4000000059604645
+        }
+    },
+    "LNCIEIKIMKC": {
+        "PCGBINIGMDH": "WeaponBackPut",
+        "BFMFGEJADNO": 0.07500000298023224,
+        "LEMNBCLLKJJ": 2.0999999046325684,
+        "PFJEKPCDADD": {
+            "equip01": "WeaponR",
+            "equip02": "WeaponL",
+            "equip03": "WeaponL"
+        }
+    },
+    "OMBDIIOMFPP": {
+        "defaultLayer": {
+            "$type": "BCEEMBHGGHA",
+            "GFLIPIMOJKM": "",
+            "FHCHNMKMJJA": {
+                "NormalStandby": {
+                    "$type": "CNKDGKDOGFE",
+                    "ELACKPNABCG": {
+                        "Standby": []
+                    },
+                    "CAFOPAHHOHC": true,
+                    "APFDIJLOJCC": 100.0,
+                    "FKOMAMLPNCC": [
+                        {
+                            "name": "&CanUseSkill"
+                        }
+                    ],
+                    "GPCJAEFDOEI": [
+                        {}
+                    ],
+                    "NLDNDMFDPBH": "",
+                    "NFHLGIAGOEC": true
+                },
+                "NormalMove": {
+                    "$type": "CNKDGKDOGFE",
+                    "ELACKPNABCG": {
+                        "ShowUp": [
+                            "Audio_Male_Showup"
+                        ],
+                        "WalkToRun": [
+                            "Audio_Male_WalkToRun"
+                        ],
+                        "Walk": [
+                            "Ani_WalkSprint01",
+                            "Audio_Male_Walk",
+                            "WalkStepOnWater"
+                        ],
+                        "RunToWalk": [
+                            "Audio_Male_RunToWalk"
+                        ],
+                        "Run": [
+                            "Ani_Run01",
+                            "Audio_Male_Run"
+                        ],
+                        "RunToIdle": [
+                            "Audio_Male_RunToIdle"
+                        ],
+                        "WalkToIdle": [
+                            "Audio_Male_WalkToIdle"
+                        ],
+                        "RunningTurn": [],
+                        "SprintToRun": [
+                            "Audio_Male_SprintToRun"
+                        ],
+                        "SprintToIdle": [
+                            "Audio_Male_SprintToIdle",
+                            "Emo_Male_Sprint_AS"
+                        ],
+                        "FallOnGround": [
+                            "Audio_Male_FallOnGround"
+                        ],
+                        "FallOnGroundLit": [
+                            "Audio_Male_FallOnGroundLit"
+                        ],
+                        "FallToGroundRun": [
+                            "Audio_Male_FallToGroundRun"
+                        ],
+                        "FallToGroundRunHard": [
+                            "Audio_Male_FallToGroundRunHard"
+                        ],
+                        "FallToGroundSprint": [
+                            "Audio_Male_FallToGroundSprint"
+                        ]
+                    },
+                    "CAFOPAHHOHC": true,
+                    "APFDIJLOJCC": 1.0,
+                    "FKOMAMLPNCC": [
+                        {
+                            "name": "&CanUseSkill"
+                        }
+                    ],
+                    "GPCJAEFDOEI": [
+                        {}
+                    ],
+                    "NLDNDMFDPBH": "",
+                    "NFHLGIAGOEC": true
+                },
+                "SprintBS": {
+                    "$type": "CNKDGKDOGFE",
+                    "ELACKPNABCG": {
+                        "SprintBS": [
+                            "Audio_Male_RunToSprint",
+                            "SprintBS_Invincible",
+                            "Emo_Male_Sprint_BS"
+                        ]
+                    },
+                    "CAFOPAHHOHC": true,
+                    "FOLHPBDGHFN": [
+                        "DoSkill",
+                        "AimEnd"
+                    ],
+                    "FKOMAMLPNCC": [
+                        {
+                            "name": "&CanUseSkill",
+                            "BPKNANBNBBJ": 0.25999999046325684
+                        }
+                    ],
+                    "GPCJAEFDOEI": [
+                        {
+                            "BPKNANBNBBJ": 0.25999999046325684
+                        }
+                    ],
+                    "NLDNDMFDPBH": "",
+                    "NFHLGIAGOEC": true
+                },
+                "Sprint": {
+                    "$type": "CNKDGKDOGFE",
+                    "ELACKPNABCG": {
+                        "Sprint": [
+                            "Ani_WalkSprint01",
+                            "Audio_Male_Sprint",
+                            "Emo_Male_Sprint_Loop"
+                        ]
+                    },
+                    "CAFOPAHHOHC": true,
+                    "APFDIJLOJCC": 1.0,
+                    "FKOMAMLPNCC": [
+                        {
+                            "name": "&CanUseSkill"
+                        }
+                    ],
+                    "GPCJAEFDOEI": [
+                        {}
+                    ],
+                    "NLDNDMFDPBH": "",
+                    "NFHLGIAGOEC": true
+                },
+                "SkiffNormal": {
+                    "$type": "CNKDGKDOGFE",
+                    "ELACKPNABCG": {
+                        "SkiffNormal": []
+                    },
+                    "APFDIJLOJCC": 100.0,
+                    "MBDPBOCALGK": [
+                        "BeHit",
+                        "DoSkill",
+                        "Jump"
+                    ],
+                    "NLDNDMFDPBH": "",
+                    "NFHLGIAGOEC": true
+                },
+                "Climb": {
+                    "$type": "CNKDGKDOGFE",
+                    "ELACKPNABCG": {
+                        "ClimbMove0": [
+                            "ClimbStep",
+                            "Audio_Male_Climb"
+                        ],
+                        "ClimbMove1": [
+                            "ClimbStep",
+                            "Audio_Male_Climb"
+                        ],
+                        "ClimbIdle": [],
+                        "ClimbJump": [
+                            "Audio_Male_ClimbDash"
+                        ],
+                        "JumpUpWallForStandby": [
+                            "Audio_Male_JumpUpWallStandby"
+                        ],
+                        "Standby2ClimbB": [
+                            "Audio_Male_Standby2ClimbB"
+                        ]
+                    },
+                    "FOLHPBDGHFN": [
+                        "DoSkill"
+                    ],
+                    "HIDHPBADOED": "Climb",
+                    "NLDNDMFDPBH": "",
+                    "NFHLGIAGOEC": true
+                },
+                "ClimbTransient": {
+                    "$type": "CNKDGKDOGFE",
+                    "ELACKPNABCG": {
+                        "JumpWallReady": [],
+                        "Standby2ClimbA": [
+                            "Audio_Male_Standby2ClimbA"
+                        ]
+                    },
+                    "FOLHPBDGHFN": [
+                        "DoSkill"
+                    ],
+                    "NLDNDMFDPBH": "",
+                    "NFHLGIAGOEC": true
+                },
+                "Upstairs": {
+                    "$type": "CNKDGKDOGFE",
+                    "ELACKPNABCG": {
+                        "Upstairs": [
+                            "Audio_Male_Upstairs"
+                        ]
+                    },
+                    "FOLHPBDGHFN": [
+                        "DoSkill"
+                    ],
+                    "FKOMAMLPNCC": [
+                        {
+                            "name": "&CanUseSkill"
+                        }
+                    ],
+                    "NLDNDMFDPBH": "",
+                    "NFHLGIAGOEC": true
+                },
+                "Slip": {
+                    "$type": "CNKDGKDOGFE",
+                    "ELACKPNABCG": {
+                        "SlipFaceWall": [],
+                        "SlipBackWall": []
+                    },
+                    "FOLHPBDGHFN": [
+                        "DoSkill"
+                    ],
+                    "NLDNDMFDPBH": "",
+                    "NFHLGIAGOEC": true
+                },
+                "Swim": {
+                    "$type": "CNKDGKDOGFE",
+                    "ELACKPNABCG": {
+                        "SwimIdle": [
+                            "Audio_Male_SwimIdle"
+                        ],
+                        "SwimMove": [
+                            "SwimStep",
+                            "Audio_Male_SwimMove"
+                        ],
+                        "SwimDash": [
+                            "Audio_Male_SwimDash",
+                            "Avatar_Male_SwimDash_Hand_Effect"
+                        ],
+                        "SwimJumpToWater": [
+                            "Audio_Male_SwimJumpToWater"
+                        ]
+                    },
+                    "FOLHPBDGHFN": [
+                        "DoSkill"
+                    ],
+                    "HIDHPBADOED": "Swim",
+                    "NLDNDMFDPBH": "",
+                    "NFHLGIAGOEC": true
+                },
+                "Fly": {
+                    "$type": "CNKDGKDOGFE",
+                    "ELACKPNABCG": {
+                        "Fly": [],
+                        "FlyStart": [
+                            "Audio_Male_FlyStart",
+                            "FlyStart_Weapon"
+                        ]
+                    },
+                    "CAFOPAHHOHC": true,
+                    "FOLHPBDGHFN": [
+                        "DoSkill"
+                    ],
+                    "FKOMAMLPNCC": [
+                        {
+                            "name": "&CanUseAirSkill"
+                        }
+                    ],
+                    "HIDHPBADOED": "Fly",
+                    "NLDNDMFDPBH": "",
+                    "NFHLGIAGOEC": true
+                },
+                "Jump": {
+                    "$type": "CNKDGKDOGFE",
+                    "ELACKPNABCG": {
+                        "Jump": [
+                            "Audio_Male_Jump"
+                        ],
+                        "JumpForRun": [
+                            "Audio_Male_Jump"
+                        ],
+                        "JumpForWalk": [
+                            "Audio_Male_Jump"
+                        ],
+                        "JumpForSprint": [
+                            "Audio_Male_Jump"
+                        ]
+                    },
+                    "CAFOPAHHOHC": true,
+                    "FOLHPBDGHFN": [
+                        "DoSkill",
+                        "AimEnd"
+                    ],
+                    "FKOMAMLPNCC": [
+                        {
+                            "name": "&CanUseAirSkill"
+                        }
+                    ],
+                    "HIDHPBADOED": "Jump",
+                    "NLDNDMFDPBH": "",
+                    "NFHLGIAGOEC": true
+                },
+                "Fall": {
+                    "$type": "CNKDGKDOGFE",
+                    "ELACKPNABCG": {
+                        "JumpOffWall": [
+                            "Audio_Male_Jump"
+                        ],
+                        "SwimJump": [
+                            "Audio_Male_SwimJump"
+                        ],
+                        "SwimJumpDrop": [],
+                        "DropDown": [
+                            "Audio_Male_DropDown"
+                        ],
+                        "DropDownLit": [],
+                        "WalkDropDownLit": []
+                    },
+                    "CAFOPAHHOHC": true,
+                    "FOLHPBDGHFN": [
+                        "DoSkill"
+                    ],
+                    "FKOMAMLPNCC": [
+                        {
+                            "name": "&CanUseAirSkill"
+                        }
+                    ],
+                    "NLDNDMFDPBH": "",
+                    "NFHLGIAGOEC": true
+                },
+                "NormalStandbyWeapon": {
+                    "$type": "CNKDGKDOGFE",
+                    "ELACKPNABCG": {
+                        "StandbyWeapon": []
+                    },
+                    "CAFOPAHHOHC": true,
+                    "APFDIJLOJCC": 100.0,
+                    "FKOMAMLPNCC": [
+                        {
+                            "name": "&CanUseSkill"
+                        }
+                    ],
+                    "GPCJAEFDOEI": [
+                        {}
+                    ],
+                    "NLDNDMFDPBH": "",
+                    "ICKBCFNPEAM": true
+                },
+                "NormalMoveWeapon": {
+                    "$type": "CNKDGKDOGFE",
+                    "ELACKPNABCG": {
+                        "WalkToRunWeapon": [
+                            "Audio_Male_WalkToRun"
+                        ],
+                        "WalkWeapon": [
+                            "Audio_Male_Walk"
+                        ],
+                        "RunToWalkWeapon": [
+                            "Audio_Male_RunToWalk"
+                        ],
+                        "RunWeapon": [
+                            "Audio_Male_Run"
+                        ],
+                        "RunToIdleWeapon": [],
+                        "WalkToIdleWeapon": [],
+                        "RunningTurnWeapon": [],
+                        "FallOnGroundWeapon": [
+                            "Audio_Male_FallOnGround"
+                        ],
+                        "FallOnGroundLitWeapon": [
+                            "Audio_Male_FallOnGroundLit"
+                        ],
+                        "FallOnGroundMiddleWeapon": [
+                            "Audio_Male_FallOnGroundMiddle"
+                        ],
+                        "FallToGroundRunWeapon": [
+                            "Audio_Male_FallToGroundRun"
+                        ],
+                        "FallToGroundRunHardWeapon": [
+                            "Audio_Male_FallToGroundRunHard"
+                        ]
+                    },
+                    "CAFOPAHHOHC": true,
+                    "APFDIJLOJCC": 2.0,
+                    "FKOMAMLPNCC": [
+                        {
+                            "name": "&CanUseSkill"
+                        }
+                    ],
+                    "GPCJAEFDOEI": [
+                        {}
+                    ],
+                    "NLDNDMFDPBH": "",
+                    "ICKBCFNPEAM": true
+                },
+                "NormalMoveWeaponPutaway": {
+                    "$type": "CNKDGKDOGFE",
+                    "ELACKPNABCG": {
+                        "StandbyPutaway": [
+                            "Male_Sword_Putaway_Standby",
+                            "Audio_Male_Sword_StandbyPutAway"
+                        ],
+                        "WalkPutaway": [
+                            "Male_Sword_Putaway_Walk",
+                            "Audio_Male_Sword_WalkPutAway"
+                        ],
+                        "RunPutaway": [
+                            "Male_Sword_Putaway_Run",
+                            "Audio_Male_Sword_RunPutAway"
+                        ],
+                        "RunToSprintWeapon": [
+                            "Male_Sword_Putaway_Sprint",
+                            "Audio_Male_Sword_RunToSprintWeapon"
+                        ]
+                    },
+                    "CAFOPAHHOHC": true,
+                    "APFDIJLOJCC": 2.0,
+                    "FKOMAMLPNCC": [
+                        {
+                            "name": "&CanUseSkill"
+                        }
+                    ],
+                    "GPCJAEFDOEI": [
+                        {}
+                    ],
+                    "NLDNDMFDPBH": "",
+                    "ICKBCFNPEAM": true
+                },
+                "NormalMoveWeaponOver": {
+                    "$type": "CNKDGKDOGFE",
+                    "ELACKPNABCG": {
+                        "StandbyPutawayOver": [],
+                        "WalkPutawayOver": [
+                            "Audio_Male_Sword_WalkPutAwayOver"
+                        ],
+                        "RunPutawayOver": [
+                            "Audio_Male_Sword_RunPutAwayOver"
+                        ],
+                        "RunToSprintWeaponOver": [
+                            "Audio_Male_Sword_RunToSprintWeaponOver"
+                        ]
+                    },
+                    "CAFOPAHHOHC": true,
+                    "APFDIJLOJCC": 2.0,
+                    "FKOMAMLPNCC": [
+                        {
+                            "name": "&CanUseSkill"
+                        }
+                    ],
+                    "GPCJAEFDOEI": [
+                        {}
+                    ],
+                    "NLDNDMFDPBH": "",
+                    "NFHLGIAGOEC": true
+                },
+                "JumpWeapon": {
+                    "$type": "CNKDGKDOGFE",
+                    "ELACKPNABCG": {
+                        "JumpWeapon": [
+                            "Audio_Male_Jump"
+                        ],
+                        "JumpForRunWeapon": [
+                            "Audio_Male_Jump"
+                        ],
+                        "JumpForWalkWeapon": [
+                            "Audio_Male_Jump"
+                        ]
+                    },
+                    "CAFOPAHHOHC": true,
+                    "FOLHPBDGHFN": [
+                        "DoSkill"
+                    ],
+                    "FKOMAMLPNCC": [
+                        {
+                            "name": "&CanUseAirSkill"
+                        }
+                    ],
+                    "GPCJAEFDOEI": [
+                        {}
+                    ],
+                    "HIDHPBADOED": "Jump",
+                    "NLDNDMFDPBH": "",
+                    "ICKBCFNPEAM": true
+                },
+                "FallWeapon": {
+                    "$type": "CNKDGKDOGFE",
+                    "ELACKPNABCG": {
+                        "DropDownWeapon": [
+                            "Audio_Male_DropDown"
+                        ],
+                        "DropDownLitWeapon": [],
+                        "WalkDropDownLitWeapon": []
+                    },
+                    "CAFOPAHHOHC": true,
+                    "FOLHPBDGHFN": [
+                        "DoSkill"
+                    ],
+                    "FKOMAMLPNCC": [
+                        {
+                            "name": "&CanUseAirSkill"
+                        }
+                    ],
+                    "NLDNDMFDPBH": "",
+                    "ICKBCFNPEAM": true
+                },
+                "BeHit": {
+                    "$type": "CNKDGKDOGFE",
+                    "ELACKPNABCG": {
+                        "Hit_L": [
+                            "Audio_Male_Hit_L"
+                        ],
+                        "Hit_H": [
+                            "Audio_Male_Hit_H"
+                        ]
+                    },
+                    "moveType": "combatMove",
+                    "FOLHPBDGHFN": [
+                        "BeHit",
+                        "HitAir2HitDrop"
+                    ],
+                    "MBDPBOCALGK": [
+                        "DoSkill"
+                    ],
+                    "LNJEFNDDGEI": "combatBeHit",
+                    "BPMNKLLBBJK": 0.0,
+                    "NLDNDMFDPBH": "",
+                    "ICKBCFNPEAM": true
+                },
+                "Die": {
+                    "$type": "CNKDGKDOGFE",
+                    "ELACKPNABCG": {
+                        "FallDie": [
+                            "Audio_Male_Death"
+                        ],
+                        "NormalDie": [
+                            "Die",
+                            "Audio_Male_Death"
+                        ],
+                        "SwimDie": [
+                            "Swim_Die",
+                            "Audio_Male_SwimDie"
+                        ],
+                        "HitGroundDie": [
+                            "Die",
+                            "Audio_Male_Death"
+                        ]
+                    },
+                    "NLDNDMFDPBH": ""
+                },
+                "Die_RagDoll": {
+                    "$type": "CNKDGKDOGFE",
+                    "ELACKPNABCG": {
+                        "NormalDie_AS": [],
+                        "FallDie_AS": []
+                    },
+                    "AAADPCPFBML": true,
+                    "NLDNDMFDPBH": ""
+                }
+            }
+        }
+    },
+    "CDFKOLGBBLI": {
+        "JLIALJOFKEE": "",
+        "HEAOKAKIJNH": {
+            "JOOHGKCAINA": [
+                {
+                    "PEGIGOEBDOO": "StandbyPutaway",
+                    "GBALAKEMEHF": {
+                        "text": "Stop_sfx_weapon_1HSword_lady_putAwayStandby"
+                    }
+                },
+                {
+                    "PEGIGOEBDOO": "WalkPutaway",
+                    "GBALAKEMEHF": {
+                        "text": "Stop_sfx_weapon_1HSword_lady_putAwayStandby"
+                    }
+                },
+                {
+                    "PEGIGOEBDOO": "RunPutaway",
+                    "GBALAKEMEHF": {
+                        "text": "Stop_sfx_weapon_1HSword_lady_putAwayStandby"
+                    }
+                },
+                {
+                    "PEGIGOEBDOO": "SwimJumpDrop",
+                    "GBALAKEMEHF": {
+                        "text": "Stop_sfx_char_swim_drop"
+                    }
+                },
+                {
+                    "PEGIGOEBDOO": "SwimJump",
+                    "GBALAKEMEHF": {
+                        "text": "Stop_sfx_char_swim_drop"
+                    },
+                    "GEPPJEDBEOA": [
+                        "SwimJumpDrop"
+                    ],
+                    "GIFPHOOOHFO": "Except"
+                },
+                {
+                    "PEGIGOEBDOO": "Fly",
+                    "GBALAKEMEHF": {
+                        "text": "Play_sfx_char_land_climb"
+                    },
+                    "GEPPJEDBEOA": [
+                        "ClimbIdle",
+                        "ClimbMove0",
+                        "ClimbMove1",
+                        "ClimbJump"
+                    ],
+                    "GIFPHOOOHFO": "InSet"
+                },
+                {
+                    "PEGIGOEBDOO": "FlyStart",
+                    "GBALAKEMEHF": {
+                        "text": "Play_sfx_char_land_climb"
+                    },
+                    "GEPPJEDBEOA": [
+                        "ClimbIdle",
+                        "ClimbMove0",
+                        "ClimbMove1",
+                        "ClimbJump"
+                    ],
+                    "GIFPHOOOHFO": "InSet"
+                },
+                {
+                    "PEGIGOEBDOO": "DropDownLit",
+                    "GBALAKEMEHF": {
+                        "text": "Play_sfx_char_land_climb"
+                    },
+                    "GEPPJEDBEOA": [
+                        "ClimbIdle",
+                        "ClimbMove0",
+                        "ClimbMove1",
+                        "ClimbJump"
+                    ],
+                    "GIFPHOOOHFO": "InSet"
+                },
+                {
+                    "PEGIGOEBDOO": "DropDown",
+                    "GBALAKEMEHF": {
+                        "text": "Play_sfx_char_land_climb"
+                    },
+                    "GEPPJEDBEOA": [
+                        "ClimbIdle",
+                        "ClimbMove0",
+                        "ClimbMove1",
+                        "ClimbJump"
+                    ],
+                    "GIFPHOOOHFO": "InSet"
+                },
+                {
+                    "PEGIGOEBDOO": "WalkDropDownLit",
+                    "GBALAKEMEHF": {
+                        "text": "Play_sfx_char_land_climb"
+                    },
+                    "GEPPJEDBEOA": [
+                        "ClimbIdle",
+                        "ClimbMove0",
+                        "ClimbMove1",
+                        "ClimbJump"
+                    ],
+                    "GIFPHOOOHFO": "InSet"
+                },
+                {
+                    "PEGIGOEBDOO": "Jump",
+                    "GBALAKEMEHF": {
+                        "text": "Play_sfx_char_land_climb"
+                    },
+                    "GEPPJEDBEOA": [
+                        "ClimbIdle",
+                        "ClimbMove0",
+                        "ClimbMove1",
+                        "ClimbJump"
+                    ],
+                    "GIFPHOOOHFO": "InSet"
+                },
+                {
+                    "PEGIGOEBDOO": "JumpForWalk",
+                    "GBALAKEMEHF": {
+                        "text": "Play_sfx_char_land_climb"
+                    },
+                    "GEPPJEDBEOA": [
+                        "ClimbIdle",
+                        "ClimbMove0",
+                        "ClimbMove1",
+                        "ClimbJump"
+                    ],
+                    "GIFPHOOOHFO": "InSet"
+                },
+                {
+                    "PEGIGOEBDOO": "JumpForRun",
+                    "GBALAKEMEHF": {
+                        "text": "Play_sfx_char_land_climb"
+                    },
+                    "GEPPJEDBEOA": [
+                        "ClimbIdle",
+                        "ClimbMove0",
+                        "ClimbMove1",
+                        "ClimbJump"
+                    ],
+                    "GIFPHOOOHFO": "InSet"
+                },
+                {
+                    "PEGIGOEBDOO": "JumpForSprint",
+                    "GBALAKEMEHF": {
+                        "text": "Play_sfx_char_land_climb"
+                    },
+                    "GEPPJEDBEOA": [
+                        "ClimbIdle",
+                        "ClimbMove0",
+                        "ClimbMove1",
+                        "ClimbJump"
+                    ],
+                    "GIFPHOOOHFO": "InSet"
+                },
+                {
+                    "PEGIGOEBDOO": "JumpWeapon",
+                    "GBALAKEMEHF": {
+                        "text": "Play_sfx_char_land_climb"
+                    },
+                    "GEPPJEDBEOA": [
+                        "ClimbIdle",
+                        "ClimbMove0",
+                        "ClimbMove1",
+                        "ClimbJump"
+                    ],
+                    "GIFPHOOOHFO": "InSet"
+                },
+                {
+                    "PEGIGOEBDOO": "JumpForWalkWeapon",
+                    "GBALAKEMEHF": {
+                        "text": "Play_sfx_char_land_climb"
+                    },
+                    "GEPPJEDBEOA": [
+                        "ClimbIdle",
+                        "ClimbMove0",
+                        "ClimbMove1",
+                        "ClimbJump"
+                    ],
+                    "GIFPHOOOHFO": "InSet"
+                },
+                {
+                    "PEGIGOEBDOO": "JumpForRunWeapon",
+                    "GBALAKEMEHF": {
+                        "text": "Play_sfx_char_land_climb"
+                    },
+                    "GEPPJEDBEOA": [
+                        "ClimbIdle",
+                        "ClimbMove0",
+                        "ClimbMove1",
+                        "ClimbJump"
+                    ],
+                    "GIFPHOOOHFO": "InSet"
+                },
+                {
+                    "PEGIGOEBDOO": "DropDownWeapon",
+                    "GBALAKEMEHF": {
+                        "text": "Play_sfx_char_land_climb"
+                    },
+                    "GEPPJEDBEOA": [
+                        "ClimbIdle",
+                        "ClimbMove0",
+                        "ClimbMove1",
+                        "ClimbJump"
+                    ],
+                    "GIFPHOOOHFO": "InSet"
+                },
+                {
+                    "PEGIGOEBDOO": "DropDownLitWeapon",
+                    "GBALAKEMEHF": {
+                        "text": "Play_sfx_char_land_climb"
+                    },
+                    "GEPPJEDBEOA": [
+                        "ClimbIdle",
+                        "ClimbMove0",
+                        "ClimbMove1",
+                        "ClimbJump"
+                    ],
+                    "GIFPHOOOHFO": "InSet"
+                },
+                {
+                    "PEGIGOEBDOO": "SwimMove",
+                    "GBALAKEMEHF": {
+                        "text": "Stop_sfx_char_swim"
+                    }
+                }
+            ],
+            "HPDEJNIHPCM": {
+                "Standby": {
+                    "BIMILCIIFCE": {
+                        "OBDJPGNOOMF": 28.0,
+                        "DDHCDCCOBEI": 23.0
+                    },
+                    "GGFOBBDIGON": {
+                        "OBDJPGNOOMF": 40.0,
+                        "DDHCDCCOBEI": 34.0
+                    },
+                    "eventName": {
+                        "text": "Play_vo_char_explore_idle"
+                    }
+                },
+                "Walk": {
+                    "BIMILCIIFCE": {
+                        "OBDJPGNOOMF": 16.0,
+                        "DDHCDCCOBEI": 13.0
+                    },
+                    "GGFOBBDIGON": {
+                        "OBDJPGNOOMF": 14.0,
+                        "DDHCDCCOBEI": 10.0
+                    },
+                    "eventName": {
+                        "text": ""
+                    }
+                },
+                "Run": {
+                    "BIMILCIIFCE": {
+                        "OBDJPGNOOMF": 13.0,
+                        "DDHCDCCOBEI": 9.0
+                    },
+                    "GGFOBBDIGON": {
+                        "OBDJPGNOOMF": 11.0,
+                        "DDHCDCCOBEI": 8.0
+                    },
+                    "eventName": {
+                        "text": ""
+                    }
+                },
+                "Sprint": {
+                    "BIMILCIIFCE": {
+                        "OBDJPGNOOMF": 12.0,
+                        "DDHCDCCOBEI": 7.0
+                    },
+                    "GGFOBBDIGON": {
+                        "OBDJPGNOOMF": 9.0,
+                        "DDHCDCCOBEI": 6.0
+                    },
+                    "eventName": {
+                        "text": ""
+                    }
+                }
+            }
+        },
+        "OIMLGELDOFE": {
+            "PMLABEDBCMO": [
+                {
+                    "PEGIGOEBDOO": "Fly",
+                    "GBALAKEMEHF": {
+                        "text": "Play_sfx_char_fly"
+                    }
+                }
+            ],
+            "JHCEIAHGNEG": [
+                {
+                    "PEGIGOEBDOO": "Fly",
+                    "GBALAKEMEHF": {
+                        "text": "Stop_sfx_char_fly"
+                    },
+                    "GEPPJEDBEOA": [
+                        "Air"
+                    ],
+                    "GIFPHOOOHFO": "Except"
+                },
+                {
+                    "PEGIGOEBDOO": "Air",
+                    "GBALAKEMEHF": {
+                        "text": "Stop_sfx_char_fly"
+                    },
+                    "GEPPJEDBEOA": [
+                        "Fly"
+                    ],
+                    "GIFPHOOOHFO": "Except"
+                }
+            ]
+        },
+        "PGBDOFBNFKL": {
+            "text": "Switch_Dainslaif"
+        },
+        "OJIIGHJJJBC": {
+            "text": "Switch_Male"
+        }
+    },
+    "HDGDMPFNFKI": {
+        "MEIJEAKDGCN": {
+            "DEFBPFJMFOD": "",
+            "MGOEOPOGPMD": {
+                "Snow": {
+                    "all": {
+                        "effect": "Eff_Character_Snow_Footprint",
+                        "deformation": ""
+                    },
+                    "PCNoTessellation": {
+                        "effect": "Eff_Character_Snow_Footprint",
+                        "deformation": ""
+                    },
+                    "pc": {
+                        "effect": "Eff_Character_Snow_Footprint_PCPS4",
+                        "deformation": "Snow_Footprint"
+                    },
+                    "ps4": {
+                        "effect": "Eff_Character_Snow_Footprint_PCPS4",
+                        "deformation": "Snow_Footprint"
+                    }
+                },
+                "SnowRock": {
+                    "all": {
+                        "effect": "Eff_Character_Snow_Footprint",
+                        "deformation": ""
+                    },
+                    "PCNoTessellation": {
+                        "effect": "Eff_Character_Snow_Footprint",
+                        "deformation": ""
+                    },
+                    "pc": {
+                        "effect": "Eff_Character_Snow_Footprint_PCPS4",
+                        "deformation": "Snow_Footprint"
+                    },
+                    "ps4": {
+                        "effect": "Eff_Character_Snow_Footprint_PCPS4",
+                        "deformation": "Snow_Footprint"
+                    }
+                },
+                "Dirt": {
+                    "all": {
+                        "effect": "Eff_Chacter_Footprint",
+                        "deformation": ""
+                    }
+                },
+                "Sand": {
+                    "all": {
+                        "effect": "Eff_Chacter_Footprint",
+                        "deformation": ""
+                    }
+                },
+                "Cloud": {
+                    "all": {
+                        "effect": "Eff_FootGround_Cloud_01",
+                        "deformation": ""
+                    }
+                }
+            }
+        }
+    }
+}

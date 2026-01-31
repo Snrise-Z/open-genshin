@@ -1,0 +1,547 @@
+{
+    "Fatuus_Fire_01_Stage1Mirror": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "FCAGPAEOLPI": 1.2000000476837158,
+                "HOJBBPFJMIL": 1.2000000476837158,
+                "CPGMBCECPEN": 1.2000000476837158
+            },
+            "scale": 1.2000000476837158
+        },
+        "hasModel": true,
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 999999.0,
+                "attack": 15.0,
+                "defense": 999999.0
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "hitAutoRedirect": false,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "lockType": "Gear_Lv3"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Monster_Fatuus_Fire_01_Stage1Mirror_Manager",
+                "abilityName": "Monster_Fatuus_Fire_01_Stage1Mirror_Manager",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Monster_Fatuus_Fire_01_Stage1Mirror_FollowAtk",
+                "abilityName": "Monster_Fatuus_Fire_01_Stage1Mirror_FollowAtk",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 65.0
+        },
+        "stateLayers": {
+            "defaultLayer": {
+                "$type": "GMHKGJPLHFD",
+                "DLEKAADOFBI": "",
+                "stateIDs": {
+                    "State": {
+                        "$type": "BGNDILBMEIM",
+                        "DNPOFANDHPP": {
+                            "Idle": [],
+                            "FadeOut": []
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "Fatuus_Fire_01_Stage2Mirror": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "FCAGPAEOLPI": 1.2000000476837158,
+                "HOJBBPFJMIL": 1.2000000476837158,
+                "CPGMBCECPEN": 1.2000000476837158
+            },
+            "scale": 1.2000000476837158
+        },
+        "hasModel": true,
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 999999.0,
+                "attack": 15.0,
+                "defense": 999999.0
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "hitAutoRedirect": false,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Monster_Fatuus_Fire_01_Stage2Mirror_Manager",
+                "abilityName": "Monster_Fatuus_Fire_01_Stage2Mirror_Manager",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 65.0
+        },
+        "stateLayers": {
+            "defaultLayer": {
+                "$type": "GMHKGJPLHFD",
+                "DLEKAADOFBI": "",
+                "stateIDs": {
+                    "State": {
+                        "$type": "BGNDILBMEIM",
+                        "DNPOFANDHPP": {
+                            "Idle": [],
+                            "FadeIn": []
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "Fatuus_Fire_01_Stage2MidGadget": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "FCAGPAEOLPI": 1.2000000476837158,
+                "HOJBBPFJMIL": 1.2000000476837158,
+                "CPGMBCECPEN": 1.2000000476837158
+            },
+            "scale": 1.2000000476837158
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 999999.0,
+                "attack": 15.0,
+                "defense": 999999.0,
+                "isInvincible": true,
+                "isGhostToEnemy": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "hitAutoRedirect": false,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Monster_Fatuus_Fire_01_Stage2MidGadget",
+                "abilityName": "Monster_Fatuus_Fire_01_Stage2MidGadget",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 10.0
+        },
+        "LGBJNNEDJDF": {
+            "$type": "BDDBDDGKLKD",
+            "collision": {
+                "triggerType": "TriggerNoRepeat",
+                "targetType": "All",
+                "ignoreScene": true
+            },
+            "HODPCIDIOLO": "Collider",
+            "ILCHLIKHOKO": "InteeTrigger"
+        }
+    },
+    "Fatuus_Fire_01_Stage2DestGadget": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "FCAGPAEOLPI": 1.2000000476837158,
+                "HOJBBPFJMIL": 1.2000000476837158,
+                "CPGMBCECPEN": 1.2000000476837158
+            },
+            "scale": 1.2000000476837158
+        },
+        "hasModel": true,
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 999999.0,
+                "attack": 15.0,
+                "defense": 999999.0,
+                "isInvincible": true,
+                "isGhostToEnemy": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "hitAutoRedirect": false,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Monster_Fatuus_Fire_01_Stage2DestGadget",
+                "abilityName": "Monster_Fatuus_Fire_01_Stage2DestGadget",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 10.0
+        }
+    },
+    "Fatuus_Fire_01_EchoBullet": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "FCAGPAEOLPI": 1.2000000476837158,
+                "HOJBBPFJMIL": 1.2000000476837158,
+                "CPGMBCECPEN": 1.2000000476837158
+            }
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 999999.0,
+                "attack": 15.0,
+                "defense": 999999.0,
+                "isLockHP": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": ""
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Monster_Fatuus_Fire_01_EchoBullet",
+                "abilityName": "Monster_Fatuus_Fire_01_EchoBullet",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 0.30000001192092896
+        },
+        "move": {
+            "$type": "KBENGKLMEAL",
+            "speed": 30.0,
+            "JPDKAELMNDJ": {
+                "JJPKBDAAIFH": 4.0,
+                "HOOIFDANBGN": 75.0,
+                "MAGKJGBJBPE": 0.10000000149011612,
+                "MFPFHOJOFDN": "Keep",
+                "IBAOIHMFNFE": "Keep"
+            }
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "triggerType": "TriggerNoRepeat",
+                "targetType": "Enemy",
+                "ignoreScene": true
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Monster_Fatuus_Fire_01_EchoBullet"
+                }
+            ],
+            "GNGMJEIPCJE": true
+        }
+    },
+    "Fatuus_Fire_01_Stage2TriggerBullet": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "FCAGPAEOLPI": 1.2000000476837158,
+                "HOJBBPFJMIL": 1.2000000476837158,
+                "CPGMBCECPEN": 1.2000000476837158
+            }
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 999999.0,
+                "attack": 15.0,
+                "defense": 999999.0,
+                "isLockHP": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": ""
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Monster_Fatuus_Fire_01_Stage2TriggerBullet",
+                "abilityName": "Monster_Fatuus_Fire_01_Stage2TriggerBullet",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 0.20000000298023224
+        },
+        "move": {
+            "$type": "KBENGKLMEAL",
+            "speed": 30.0,
+            "JPDKAELMNDJ": {
+                "JJPKBDAAIFH": 4.0,
+                "HOOIFDANBGN": 75.0,
+                "MAGKJGBJBPE": 0.10000000149011612,
+                "MFPFHOJOFDN": "Keep",
+                "IBAOIHMFNFE": "Keep"
+            }
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "triggerType": "TriggerNoRepeat",
+                "targetType": "All",
+                "ignoreScene": true
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Monster_Fatuus_Fire_01_Stage2TriggerBullet"
+                }
+            ],
+            "GNGMJEIPCJE": true
+        }
+    },
+    "Fatuus_Fire_01_FollowHitBox1": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "FCAGPAEOLPI": 1.2000000476837158,
+                "HOJBBPFJMIL": 1.2000000476837158,
+                "CPGMBCECPEN": 1.2000000476837158
+            },
+            "scale": 1.2000000476837158
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 999999.0,
+                "attack": 15.0,
+                "defense": 999999.0,
+                "isLockHP": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": ""
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Monster_Fatuus_Fire_01_DashingStrike_FollowHitBox",
+                "abilityName": "Monster_Fatuus_Fire_01_DashingStrike_FollowHitBox",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 8.0
+        },
+        "move": {
+            "$type": "DKAMCGDMNKI",
+            "target": "TargetEntity",
+            "attachPoint": "RootNode",
+            "HMPJAIBPNND": ""
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "triggerType": "TriggerNoRepeat",
+                "targetType": "Enemy",
+                "ignoreScene": true
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Monster_Fatuus_Fire_01_DashingStrike_FollowHitBox"
+                }
+            ],
+            "GNGMJEIPCJE": true
+        }
+    },
+    "Fatuus_Fire_01_FollowHitBox2": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "FCAGPAEOLPI": 1.2000000476837158,
+                "HOJBBPFJMIL": 1.2000000476837158,
+                "CPGMBCECPEN": 1.2000000476837158
+            },
+            "scale": 1.2000000476837158
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 999999.0,
+                "attack": 15.0,
+                "defense": 999999.0,
+                "isLockHP": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": ""
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Monster_Fatuus_Fire_01_FlashStrike_FollowHitBox",
+                "abilityName": "Monster_Fatuus_Fire_01_FlashStrike_FollowHitBox",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 8.0
+        },
+        "move": {
+            "$type": "DKAMCGDMNKI",
+            "target": "TargetEntity",
+            "attachPoint": "RootNode",
+            "HMPJAIBPNND": ""
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "triggerType": "TriggerNoRepeat",
+                "targetType": "Enemy",
+                "ignoreScene": true
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Monster_Fatuus_Fire_01_FlashStrike_FollowHitBox"
+                }
+            ],
+            "GNGMJEIPCJE": true
+        }
+    },
+    "Fatuus_Fire_01_Surrounding": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            }
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 999999.0,
+                "attack": 30.0,
+                "defense": 999999.0,
+                "isLockHP": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            },
+            "die": {
+                "dieDisappearEffect": "Eff_Monster_Fatuus_Fire_01_IntoShadow_WeaponDestroyed"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Monster_Fatuus_Fire_01_SurroundingBullet",
+                "abilityName": "Monster_Fatuus_Fire_01_SurroundingBullet",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 4.0
+        },
+        "move": {
+            "$type": "GFMMGDGALAP",
+            "speed": 22.0,
+            "JPDKAELMNDJ": {
+                "JJPKBDAAIFH": 1.5,
+                "HOOIFDANBGN": 40.0,
+                "APHEEIPGAAP": 1.2000000476837158,
+                "MAGKJGBJBPE": 0.5,
+                "LFCIJINPMNE": true,
+                "MFPFHOJOFDN": "Keep",
+                "IBAOIHMFNFE": "Keep"
+            },
+            "JPDDBBHJAAH": true,
+            "radius": 3.5,
+            "BCNECAMPGJJ": true
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "triggerType": "TriggerAlways",
+                "triggerCD": 0.6000000238418579,
+                "targetType": "Enemy",
+                "ignoreScene": true
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Monster_Fatuus_Fire_01_SurroundingBullet"
+                }
+            ]
+        }
+    }
+}

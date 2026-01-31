@@ -1,0 +1,1558 @@
+{
+    "common": {
+        "effectAttachShape": {
+            "$type": "ConfigEffectAttachSkinnedMesh",
+            "mesh": "EffectMesh"
+        },
+        "mass": 30.0,
+        "height": 1.7000000476837158,
+        "INNNMDJACOJ": 1.7000000476837158,
+        "MECICKNEPGG": 1.100000023841858,
+        "affectedByWorld": true,
+        "checkInSurface": true,
+        "scale": 1.100000023841858,
+        "useGrassDisplacement": true,
+        "clearAnimatorOnSetLightDeactive": true,
+        "clearAIOnSetLightDeactive": true,
+        "LOGFKHMLOOL": true
+    },
+    "LBGLCHLIKJP": {
+        "$type": "NJIKCGBDNDF",
+        "HONCKGMDJEK": true,
+        "IKIJCPNMBHI": 60.0,
+        "FMKKBCJKMPH": 30.0,
+        "FDPCOFKGCHG": [
+            "NormalIdle/Standby",
+            "NormalMove/WalkForward",
+            "NormalMove/WalkBack",
+            "NormalMove/WalkRight",
+            "NormalMove/WalkLeft",
+            "NormalMove/Run",
+            "Turn/TurnLeft",
+            "Turn/TurnRight"
+        ]
+    },
+    "model": {
+        "bornEffect": "Eff_Monster_Common_Born",
+        "attachEffect": ""
+    },
+    "MEMHBNEJBCL": {
+        "PJBCJPKPOLB": 1.0
+    },
+    "combat": {
+        "property": {
+            "endureType": "Monster_Minion",
+            "weight": 70.0
+        },
+        "beHit": {
+            "hitBloodEffect": ""
+        },
+        "combatLock": {
+            "lockShape": "CircleLockEnemy",
+            "lockType": "Avatar&Monster_Lv4"
+        },
+        "die": {
+            "hasAnimatorDie": true,
+            "dieEndTime": 2.0,
+            "dieForceDisappearTime": 8.0,
+            "dieDisappearEffect": "Eff_Death_Sand_Eremite",
+            "dieShaderData": "EremiteSandDie",
+            "JHKKJIOFEDD": 1.0,
+            "AHGCGJLAMJJ": true,
+            "ragDollDieEndTimeDelay": 8.0,
+            "LEDBOLGDENF": true,
+            "IEAKKMEDNDE": true,
+            "AAEANOPIAAL": true,
+            "IBBHGBHIHCI": true,
+            "BKIBMIAJOHP": true,
+            "MOFPBPPGPCL": true
+        }
+    },
+    "EOGPAIHDBFM": {
+        "EMHOEGGEKMH": "",
+        "JLFHFMOAFHP": {
+            "equip01": "WeaponR",
+            "equip02": "WeaponL"
+        }
+    },
+    "abilities": [
+        {
+            "abilityID": "",
+            "abilityName": "Eremite_TurnState_AnimatorSteer",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "",
+            "abilityName": "Eremite_Crossbow_AnimatorSteer",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "",
+            "abilityName": "Eremite_ReturnToBorn",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "",
+            "abilityName": "Eremite_Equip_Display_Manager",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "",
+            "abilityName": "Eremite_Equip_SheathWeapon",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "",
+            "abilityName": "Eremite_Crossbow_ProjectileShoot_Load",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "",
+            "abilityName": "Eremite_Crossbow_SingleShoot_Fire",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "",
+            "abilityName": "Eremite_Crossbow_RapidShoot_Fire",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "",
+            "abilityName": "Eremite_Crossbow_Fire_Dendro_Bomb",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "",
+            "abilityName": "Eremite_Crossbow_Fire_Dendro_Bomb_Hov",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "",
+            "abilityName": "Eremite_Universal_Alert",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "",
+            "abilityName": "Eremite_Gambling_Logic",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "",
+            "abilityName": "Eremite_FreePose_Display_Manager",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "",
+            "abilityName": "Eremite_FreePose_Male_Drinking_Display_Manager",
+            "abilityOverride": ""
+        }
+    ],
+    "stateLayers": {
+        "defaultLayer": {
+            "$type": "ConfigNormalStateLayer",
+            "ACOCIAFGIAD": "",
+            "stateIDs": {
+                "NormalIdle": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Standby": []
+                    },
+                    "canDoSkill": true,
+                    "canSyncMove": true,
+                    "resetAnimatorTriggerOnExit": [
+                        "DoSkill"
+                    ]
+                },
+                "NormalBorn": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Born": []
+                    },
+                    "canDoSkill": true,
+                    "resetAnimatorTriggerOnExit": [
+                        "DoSkill"
+                    ]
+                },
+                "NormalMove": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "WalkForward": [
+                            "Audio_Monste_Eremite_Male_Standard_Crossbow_01_walk"
+                        ],
+                        "WalkBack": [
+                            "Audio_Monste_Eremite_Male_Standard_Crossbow_01_walk"
+                        ],
+                        "WalkRight": [
+                            "Audio_Monste_Eremite_Male_Standard_Crossbow_01_walk"
+                        ],
+                        "WalkLeft": [
+                            "Audio_Monste_Eremite_Male_Standard_Crossbow_01_walk"
+                        ],
+                        "Run": [
+                            "Audio_Monste_Eremite_Male_Standard_Crossbow_01_run"
+                        ]
+                    },
+                    "canDoSkill": true,
+                    "canSyncMove": true,
+                    "resetAnimatorTriggerOnExit": [
+                        "DoSkill"
+                    ],
+                    "LIPMJPLGIKD": true
+                },
+                "Turn": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "TurnLeft": [
+                            "Audio_Monste_Eremite_Male_Standard_Crossbow_01_walk"
+                        ],
+                        "TurnRight": [
+                            "Audio_Monste_Eremite_Male_Standard_Crossbow_01_walk"
+                        ]
+                    },
+                    "canDoSkill": true,
+                    "canSyncMove": true,
+                    "resetAnimatorTriggerOnExit": [
+                        "DoSkill"
+                    ],
+                    "LIPMJPLGIKD": true
+                },
+                "BeHit": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Hit_L": [],
+                        "Hit_H": [
+                            "Audio_Monste_Eremite_Male_Standard_Crossbow_01_hit_H"
+                        ]
+                    },
+                    "AJBLILDCLBO": [
+                        "BeHit"
+                    ],
+                    "resetAnimatorTriggerOnExit": [
+                        "DoSkill"
+                    ]
+                },
+                "BeHitThrow": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "HitThrow": [],
+                        "HitThrowDrop": []
+                    },
+                    "AJBLILDCLBO": [
+                        "BeHit",
+                        "HitAir2HitDrop"
+                    ],
+                    "resetAnimatorTriggerOnExit": [
+                        "DoSkill",
+                        "BeHit"
+                    ],
+                    "PBAOEAEEBNB": [
+                        {
+                            "NOKKDDHKGAK": "AirDie"
+                        }
+                    ]
+                },
+                "BeHitThrowToStandby": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "HitThrowToGround": [
+                            "Audio_Monste_Eremite_Male_Standard_Crossbow_01_hitthrowtoground"
+                        ]
+                    },
+                    "AJBLILDCLBO": [
+                        "BeHit",
+                        "HitAir2HitDrop"
+                    ],
+                    "resetAnimatorTriggerOnExit": [
+                        "DoSkill",
+                        "BeHit"
+                    ],
+                    "PBAOEAEEBNB": [
+                        {
+                            "NOKKDDHKGAK": "AirDie",
+                            "CFLNLPKCDAB": 0.5
+                        }
+                    ]
+                },
+                "Struggle": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Struggle": []
+                    },
+                    "AJBLILDCLBO": [
+                        "BeHit",
+                        "HitAir2HitDrop"
+                    ],
+                    "resetAnimatorTriggerOnExit": [
+                        "DoSkill"
+                    ]
+                },
+                "Die": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Die1": [
+                            "Monster_Eremite_Crossbow_Die",
+                            "Audio_Monste_Eremite_Male_Standard_Crossbow_01_die"
+                        ],
+                        "Die2": [
+                            "Monster_Eremite_Crossbow_Die",
+                            "Audio_Monste_Eremite_Male_Standard_Crossbow_01_die"
+                        ],
+                        "SwimDie_BS": [],
+                        "SwimDie": [
+                            "Monster_Eremite_SwimDie"
+                        ],
+                        "SwimDie_AS": []
+                    }
+                },
+                "Die_RagDoll": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "AirDie": [
+                            "Monster_Eremite_AirDie"
+                        ]
+                    },
+                    "CPOLOGIELCD": true
+                },
+                "Alert": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Alert": [
+                            "Monster_Eremite_Crossbow_ShowWeapon",
+                            "Monster_Eremite_Clear_FreePoseMark",
+                            "Audio_Monste_Eremite_Male_Standard_Crossbow_01_rapidshoot_alert"
+                        ]
+                    },
+                    "OGNDLAMHMPB": 0.0,
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "Crossleg_Alert": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "CrosslegAlert": [
+                            "Monster_Eremite_Crossbow_ShowWeapon_SpecialAlert",
+                            "Monster_Eremite_Clear_FreePoseMark",
+                            "Audio_Monste_Eremite_Male_Standard_Crossbow_01_crosslegalert"
+                        ]
+                    },
+                    "OGNDLAMHMPB": 0.0,
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "SheathWeapon": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "SheathWeapon": [
+                            "Monster_Eremite_Crossbow_SheathWeapon",
+                            "Audio_Monste_Eremite_Male_Standard_Crossbow_01_sheathweapon"
+                        ]
+                    },
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "SingleShoot_Aim": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "SingleShoot_Aim": [
+                            "Audio_Monste_Eremite_Male_Standard_Crossbow_01_rapidshoot_aim01"
+                        ]
+                    },
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "SingleShoot_Fire": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "SingleShoot_Fire": [
+                            "Monster_Eremite_Crossbow_SingleShoot_Fire",
+                            "Audio_Monste_Eremite_Male_Standard_Crossbow_01_projectshoot_fire01"
+                        ]
+                    },
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "SingleShoot_Exit": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "SingleShoot_Exit": [
+                            "Audio_Monste_Eremite_Male_Standard_Crossbow_01_projectshoot_fire01"
+                        ]
+                    },
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "FastShoot_BS": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "FastShoot_BS": [
+                            "Audio_Monste_Eremite_Male_Standard_Crossbow_01_rapidshoot_aim01"
+                        ]
+                    },
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "FastShoot": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "FastShoot": [
+                            "Monster_Eremite_Crossbow_SingleShoot_Fire",
+                            "Audio_Monste_Eremite_Male_Standard_Crossbow_01_projectshoot_fire01"
+                        ]
+                    },
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "RapidShoot_BS": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "RapidShoot_BS": [
+                            "Audio_Monste_Eremite_Male_Standard_Crossbow_01_Rapidshoot_BS"
+                        ]
+                    },
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill",
+                        "RapidShootEndTrigger"
+                    ]
+                },
+                "RapidShoot_Loop": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "RapidShoot_Aim": [
+                            "Audio_Monste_Eremite_Male_Standard_Crossbow_01_rapidshoot_aim01"
+                        ],
+                        "RapidShoot_Fire": [
+                            "Monster_Eremite_Crossbow_RapidShoot_Fire",
+                            "Audio_Monste_Eremite_Male_Standard_Crossbow_01_rapidshoot_fire"
+                        ]
+                    },
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "RapidShoot_AS": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "RapidShoot_AS": [
+                            "Audio_Monste_Eremite_Male_Standard_Crossbow_01_rapidshoot_AS"
+                        ]
+                    },
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill",
+                        "RapidShootEndTrigger"
+                    ]
+                },
+                "RapidShoot_AS_Loaded": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "RapidShoot_AS_Loaded": []
+                    },
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill",
+                        "RapidShootEndTrigger"
+                    ]
+                },
+                "ProjectileShoot_Load": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "ProjectileShoot_Load": [
+                            "Monster_Eremite_Crossbow_ProjectileShoot_Load",
+                            "Audio_Monste_Eremite_Male_Standard_Crossbow_01_rapidshoot_AS_loaded"
+                        ]
+                    },
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "ProjectileShoot_Aim01": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "ProjectileShoot_Aim01": [
+                            "Audio_Monste_Eremite_Male_Standard_Crossbow_01_rapidshoot_aim01"
+                        ]
+                    },
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "ProjectileShoot_Aim02": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "ProjectileShoot_Aim02": [
+                            "Audio_Monste_Eremite_Male_Standard_Crossbow_01_rapidshoot_aim02"
+                        ]
+                    },
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "ProjectileShoot_Fire01": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "ProjectileShoot_Fire01": [
+                            "Monster_Eremite_Crossbow_ProjectileShoot_Fire_Hov",
+                            "Audio_Monste_Eremite_Male_Standard_Crossbow_01_projectshoot_fire01"
+                        ]
+                    },
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill",
+                        "ProjectileTrigger"
+                    ]
+                },
+                "ProjectileShoot_Fire02": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "ProjectileShoot_Fire02": [
+                            "Monster_Eremite_Crossbow_ProjectileShoot_Fire",
+                            "Audio_Monste_Eremite_Male_Standard_Crossbow_01_projectshoot_fire02"
+                        ]
+                    },
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill",
+                        "ProjectileTrigger"
+                    ]
+                },
+                "FreePose_HoldArm_Idle": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "HoldArm_Idle": []
+                    },
+                    "canDoSkill": true,
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "FreePose_Downcast_Idle": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Downcast_Idle": []
+                    },
+                    "canDoSkill": true,
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "FreePose_LeanOnWall_Idle": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "LeanOnWall_Idle": []
+                    },
+                    "canDoSkill": true,
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "FreePose_Arrange_Idle": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Arrange_Idle": []
+                    },
+                    "canDoSkill": true,
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "FreePose_Investigate_Idle": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Investigate_Idle": []
+                    },
+                    "canDoSkill": true,
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "FreePose_StandingTalk_Idle": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "StandingTalk_Idle": []
+                    },
+                    "canDoSkill": true,
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "FreePose_StandingTalk_Skill": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "StandingTalk01_Skill": [],
+                        "StandingTalk02_Skill": [],
+                        "StandingTalk03_Skill": []
+                    },
+                    "canDoSkill": true,
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "FreePose_Crossleg_Idle": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Crossleg_Idle": []
+                    },
+                    "canDoSkill": true,
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "FreePose_Crossleg_Chat_Skill": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Crossleg_Chat01_Skill": [
+                            "Audio_Monste_Eremite_Male_Standard_Crossbow_01_chat01"
+                        ],
+                        "Crossleg_Chat02_Skill": [
+                            "Audio_Monste_Eremite_Male_Standard_Crossbow_01_chat02"
+                        ]
+                    },
+                    "canDoSkill": true,
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "FreePose_Crossleg_Drink_Skill": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Crossleg_Drink_Skill_01": [
+                            "Audio_Monste_Eremite_Male_Standard_Crossbow_01_drink"
+                        ],
+                        "Crossleg_Drink_Skill_02": [],
+                        "Crossleg_Drink_Skill_03": [
+                            "Monster_Eremite_Drinking_WaterDrop"
+                        ],
+                        "Crossleg_Drink_Skill_04": [],
+                        "Crossleg_Drink_Skill_05": []
+                    },
+                    "canDoSkill": true,
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "FreePose_Crossleg_Sleeping_Skill": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Crossleg_Sleeping_Skill": []
+                    },
+                    "canDoSkill": true,
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "FreePose_Crossleg_Gambling_Bet_Skill": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Crossleg_Gambling_Bet_Skill": [
+                            "Audio_Monste_Eremite_Male_Standard_Crossbow_Gamebling_bet"
+                        ]
+                    },
+                    "canDoSkill": true,
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "FreePose_Crossleg_Gambling_Roll": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Crossleg_Gambling_Roll": [
+                            "Monster_Eremite_Gambling_GetResult",
+                            "Audio_Monste_Eremite_Male_Standard_Crossbow_Gamebling_Roll"
+                        ]
+                    },
+                    "canDoSkill": true,
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "FreePose_Crossleg_Gambling_Lose": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Crossleg_Gambling_Lose": [
+                            "Audio_Monste_Eremite_Male_Standard_Crossbow_01_gambling_lose"
+                        ]
+                    },
+                    "canDoSkill": true,
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "FreePose_Crossleg_Gambling_Win": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Crossleg_Gambling_Win": [
+                            "Audio_Monste_Eremite_Male_Standard_Crossbow_01_gambling_win"
+                        ]
+                    },
+                    "canDoSkill": true,
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "FreePose_Crossleg_PlayDaff_Idle": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Crossleg_PlayDaff_Idle": []
+                    },
+                    "canDoSkill": true,
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "FreePose_Crossleg_PlayOud_Idle": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Crossleg_OudIdle": [],
+                        "Crossleg_PlayOud_BS": [],
+                        "Crossleg_PlayOud_Loop": [],
+                        "Crossleg_PlayOud_AS": []
+                    },
+                    "canDoSkill": true,
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                }
+            }
+        }
+    },
+    "IEFGNHABHFH": {
+        "$type": "PAOBAEKGGBC",
+        "JBKMLLFNHAL": "BillboardAttach",
+        "NDKBHOOPGNA": {
+            "x": -0.05000000074505806
+        },
+        "EMFFJPOKEKF": "Character",
+        "LOMMBJLKPHE": 0.25,
+        "KGHAGECNJPO": true
+    },
+    "initialPoses": {
+        "Default": {},
+        "HoldArm": {
+            "initialPoseID": 9001,
+            "initialPoseParams": {
+                "LHMPJOKLEHI": {
+                    "FreePoseMark": "9001"
+                }
+            }
+        },
+        "Downcast": {
+            "initialPoseID": 9002,
+            "initialPoseParams": {
+                "LHMPJOKLEHI": {
+                    "FreePoseMark": "9002"
+                }
+            }
+        },
+        "LeanOnWall": {
+            "initialPoseID": 9003,
+            "initialPoseParams": {
+                "LHMPJOKLEHI": {
+                    "FreePoseMark": "9003"
+                }
+            }
+        },
+        "Arrange": {
+            "initialPoseID": 9004,
+            "initialPoseParams": {
+                "LHMPJOKLEHI": {
+                    "FreePoseMark": "9004"
+                }
+            }
+        },
+        "StandingTalk": {
+            "initialPoseID": 9005,
+            "initialPoseParams": {
+                "LHMPJOKLEHI": {
+                    "FreePoseMark": "9005"
+                }
+            }
+        },
+        "Investigate": {
+            "initialPoseID": 9006,
+            "initialPoseParams": {
+                "LHMPJOKLEHI": {
+                    "FreePoseMark": "9006"
+                }
+            }
+        },
+        "CrossLeg_Talk_Only": {
+            "initialPoseID": 9501,
+            "initialPoseParams": {
+                "LHMPJOKLEHI": {
+                    "FreePoseMark": "9501"
+                }
+            }
+        },
+        "CrossLeg_Universal": {
+            "initialPoseID": 9502,
+            "initialPoseParams": {
+                "LHMPJOKLEHI": {
+                    "FreePoseMark": "9502"
+                }
+            }
+        },
+        "CrossLeg_Drink_Only": {
+            "initialPoseID": 9503,
+            "initialPoseParams": {
+                "LHMPJOKLEHI": {
+                    "FreePoseMark": "9503"
+                }
+            }
+        },
+        "CrossLeg_Sleeping": {
+            "initialPoseID": 9504,
+            "initialPoseParams": {
+                "LHMPJOKLEHI": {
+                    "FreePoseMark": "9504"
+                }
+            }
+        },
+        "CrossLeg_PlayOud": {
+            "initialPoseID": 9505,
+            "initialPoseParams": {
+                "LHMPJOKLEHI": {
+                    "FreePoseMark": "9505"
+                }
+            }
+        },
+        "CrossLeg_PlayDaff": {
+            "initialPoseID": 9506,
+            "initialPoseParams": {
+                "LHMPJOKLEHI": {
+                    "FreePoseMark": "9506"
+                }
+            }
+        },
+        "CrossLeg_Gambling_Banker": {
+            "initialPoseID": 9511,
+            "initialPoseParams": {
+                "LHMPJOKLEHI": {
+                    "FreePoseMark": "9511"
+                }
+            }
+        },
+        "CrossLeg_Gambling_Receiver": {
+            "initialPoseID": 9512,
+            "initialPoseParams": {
+                "LHMPJOKLEHI": {
+                    "FreePoseMark": "9512"
+                }
+            }
+        }
+    },
+    "aibeta": {
+        "enable": true,
+        "moveSetting": {
+            "navMeshAgentName": "Undead01",
+            "NNPOPGCMKBH": 1.5
+        },
+        "HEAKPLEEIJN": {
+            "PCNNAFDADJD": true
+        },
+        "sensing": {
+            "settings": {
+                "DefaultSetting": {
+                    "feelRange": 8.0
+                },
+                "HighAlert": {
+                    "PHDIIPOBJGA": 40.0,
+                    "feelRange": 10.0
+                },
+                "LowAlert": {
+                    "PHDIIPOBJGA": 15.0,
+                    "feelRange": 6.0
+                },
+                "UltraLowSensing": {
+                    "PHDIIPOBJGA": 10.0,
+                    "hearAttractionRange": 0.0,
+                    "feelRange": 4.0
+                },
+                "EarshotFix": {
+                    "hearAttractionRange": 9.0,
+                    "feelRange": 8.0
+                },
+                "NeverCombat": {
+                    "enableVision": false,
+                    "hearAttractionRange": 0.0,
+                    "feelRange": 0.0
+                }
+            },
+            "templates": {
+                "DefaultTemplate": {
+                    "DefaultPoses": "DefaultSetting"
+                },
+                "HighAlert": {
+                    "DefaultPoses": "HighAlert"
+                },
+                "LowAlert": {
+                    "DefaultPoses": "LowAlert"
+                },
+                "UltraLowSensing": {
+                    "DefaultPoses": "UltraLowSensing"
+                },
+                "EarshotFix": {
+                    "DefaultPoses": "EarshotFix"
+                },
+                "NeverCombat": {
+                    "DefaultPoses": "NeverCombat"
+                }
+            }
+        },
+        "neurons": {
+            "DefaultSetting": [
+                "HIT"
+            ],
+            "NeverCombat": []
+        },
+        "threat": {
+            "DMBNEKAFACI": true,
+            "clearThreatTimerByDistance": 3.0,
+            "viewThreatGrow": 30.0,
+            "feelThreatGrow": 60.0,
+            "KDPOCNEHGBJ": 100.0,
+            "BJLBMJLOPIP": [
+                {
+                    "LFALGCACJOF": 10.0,
+                    "IOHOACGNJHO": 2.0
+                },
+                {
+                    "LFALGCACJOF": 15.0,
+                    "IOHOACGNJHO": 0.800000011920929
+                },
+                {
+                    "LFALGCACJOF": 20.0,
+                    "IOHOACGNJHO": 0.5
+                },
+                {
+                    "LFALGCACJOF": 25.0,
+                    "IOHOACGNJHO": 0.30000001192092896
+                },
+                {
+                    "LFALGCACJOF": 30.0,
+                    "IOHOACGNJHO": 0.20000000298023224
+                }
+            ],
+            "JGFOPCOIJOI": ""
+        },
+        "defendArea": {},
+        "IEMFHBCDJFP": [
+            {
+                "BIMBEJCAFLP": 1,
+                "DIAPGOFDGLC": 2.5
+            }
+        ],
+        "BNIENJNLAIJ": {
+            "101": {
+                "NOKKDDHKGAK": "OnAlert",
+                "IKMCLKEPDFP": "OnAlert",
+                "ENKLFBHHOJI": {
+                    "CEKMINILIFB": [
+                        1,
+                        9001,
+                        9002,
+                        9003,
+                        9004,
+                        9005,
+                        9006
+                    ]
+                },
+                "NOPNCNPCPJE": "",
+                "LLNBBNIEGGO": true,
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "Alert"
+                ],
+                "NNJBOCFBGJG": 3.0,
+                "PGPDNPMFFAG": "10",
+                "CCEAGFDONFH": "01",
+                "OKOFHICILMD": "10",
+                "CCFFFOIDOLP": "11"
+            },
+            "102": {
+                "NOKKDDHKGAK": "OnAlert_Combat",
+                "MBDAAADDHNL": 1,
+                "ENKLFBHHOJI": {
+                    "CEKMINILIFB": [
+                        1,
+                        9001,
+                        9002,
+                        9003,
+                        9004,
+                        9005,
+                        9006,
+                        10
+                    ]
+                },
+                "NOPNCNPCPJE": "",
+                "LLNBBNIEGGO": true,
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "Alert"
+                ],
+                "NNJBOCFBGJG": 3.0,
+                "PGPDNPMFFAG": "11",
+                "CCEAGFDONFH": "11",
+                "OKOFHICILMD": "11",
+                "CCFFFOIDOLP": "11"
+            },
+            "111": {
+                "NOKKDDHKGAK": "OnAlert_Crossleg",
+                "IKMCLKEPDFP": "OnAlert",
+                "ENKLFBHHOJI": {
+                    "CEKMINILIFB": [
+                        9501,
+                        9502,
+                        9503,
+                        9504,
+                        9505,
+                        9506,
+                        9511,
+                        9512,
+                        9555
+                    ]
+                },
+                "NOPNCNPCPJE": "",
+                "LLNBBNIEGGO": true,
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "Alert"
+                ],
+                "NNJBOCFBGJG": 3.0,
+                "PGPDNPMFFAG": "10",
+                "CCEAGFDONFH": "01",
+                "OKOFHICILMD": "10",
+                "CCFFFOIDOLP": "11"
+            },
+            "112": {
+                "NOKKDDHKGAK": "OnAlert_Crossleg_Combat",
+                "ENKLFBHHOJI": {
+                    "CEKMINILIFB": [
+                        9501,
+                        9502,
+                        9503,
+                        9504,
+                        9505,
+                        9506,
+                        9511,
+                        9512,
+                        9555
+                    ]
+                },
+                "NOPNCNPCPJE": "",
+                "LLNBBNIEGGO": true,
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "Alert"
+                ],
+                "NNJBOCFBGJG": 3.0,
+                "PGPDNPMFFAG": "11",
+                "CCEAGFDONFH": "11",
+                "OKOFHICILMD": "11",
+                "CCFFFOIDOLP": "11"
+            },
+            "201": {
+                "NOKKDDHKGAK": "SingleShoot",
+                "OFLMMKCAHKM": "RangedAttack",
+                "ENKLFBHHOJI": {
+                    "CEKMINILIFB": [
+                        1001
+                    ],
+                    "OLDIEKKCIOG": 4.0,
+                    "MLFAMHDFHMM": 15.0
+                },
+                "cd": 6.0,
+                "NOPNCNPCPJE": "",
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "SingleShoot_Aim",
+                    "SingleShoot_Fire",
+                    "SingleShoot_Exit"
+                ],
+                "PGPDNPMFFAG": "11",
+                "CCEAGFDONFH": "11",
+                "OKOFHICILMD": "11",
+                "CCFFFOIDOLP": "11"
+            },
+            "202": {
+                "NOKKDDHKGAK": "FastShoot",
+                "OFLMMKCAHKM": "RangedAttack",
+                "ENKLFBHHOJI": {
+                    "CEKMINILIFB": [
+                        1001
+                    ],
+                    "MLFAMHDFHMM": 4.0
+                },
+                "cd": 6.0,
+                "NOPNCNPCPJE": "",
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "FastShoot_BS",
+                    "FastShoot"
+                ],
+                "PGPDNPMFFAG": "11",
+                "CCEAGFDONFH": "11",
+                "OKOFHICILMD": "11",
+                "CCFFFOIDOLP": "11"
+            },
+            "301": {
+                "NOKKDDHKGAK": "RapidShoot",
+                "OFLMMKCAHKM": "RangedAttack",
+                "MBDAAADDHNL": 2,
+                "ENKLFBHHOJI": {
+                    "CEKMINILIFB": [
+                        1001
+                    ],
+                    "OLDIEKKCIOG": 4.0,
+                    "MLFAMHDFHMM": 14.0
+                },
+                "cd": 9.0,
+                "NOPNCNPCPJE": "",
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "RapidShoot_BS",
+                    "RapidShoot_Loop",
+                    "RapidShoot_AS",
+                    "RapidShoot_AS_Loaded"
+                ],
+                "PGPDNPMFFAG": "11",
+                "CCEAGFDONFH": "11",
+                "OKOFHICILMD": "11",
+                "CCFFFOIDOLP": "11"
+            },
+            "401": {
+                "NOKKDDHKGAK": "ProjectileShoot",
+                "OFLMMKCAHKM": "RangedAttack",
+                "MBDAAADDHNL": 2,
+                "ENKLFBHHOJI": {
+                    "CEKMINILIFB": [
+                        1001
+                    ],
+                    "OLDIEKKCIOG": 6.0,
+                    "MLFAMHDFHMM": 20.0
+                },
+                "cd": 12.0,
+                "NOPNCNPCPJE": "",
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "ProjectileShoot_Load",
+                    "ProjectileShoot_Aim01",
+                    "ProjectileShoot_Aim02",
+                    "ProjectileShoot_Fire01",
+                    "ProjectileShoot_Fire02"
+                ],
+                "PGPDNPMFFAG": "11",
+                "CCEAGFDONFH": "11",
+                "OKOFHICILMD": "11",
+                "CCFFFOIDOLP": "11"
+            },
+            "90051": {
+                "NOKKDDHKGAK": "Chat01",
+                "IKMCLKEPDFP": "Free",
+                "ENKLFBHHOJI": {
+                    "CEKMINILIFB": [
+                        9005
+                    ]
+                },
+                "cd": 1.0,
+                "GPMLADFJAAH": 4.0,
+                "NOPNCNPCPJE": "",
+                "LLNBBNIEGGO": true,
+                "BIMBEJCAFLP": 1,
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "FreePose_StandingTalk_Skill"
+                ],
+                "PGPDNPMFFAG": "10",
+                "CCEAGFDONFH": "01",
+                "OKOFHICILMD": "10",
+                "CCFFFOIDOLP": "11"
+            },
+            "90052": {
+                "NOKKDDHKGAK": "Chat01",
+                "IKMCLKEPDFP": "Free",
+                "ENKLFBHHOJI": {
+                    "CEKMINILIFB": [
+                        9005
+                    ]
+                },
+                "cd": 1.0,
+                "GPMLADFJAAH": 4.0,
+                "NOPNCNPCPJE": "",
+                "LLNBBNIEGGO": true,
+                "BIMBEJCAFLP": 1,
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "FreePose_StandingTalk_Skill"
+                ],
+                "PGPDNPMFFAG": "10",
+                "CCEAGFDONFH": "01",
+                "OKOFHICILMD": "10",
+                "CCFFFOIDOLP": "11"
+            },
+            "90053": {
+                "NOKKDDHKGAK": "Chat01",
+                "IKMCLKEPDFP": "Free",
+                "ENKLFBHHOJI": {
+                    "CEKMINILIFB": [
+                        9005
+                    ]
+                },
+                "cd": 1.0,
+                "GPMLADFJAAH": 4.0,
+                "NOPNCNPCPJE": "",
+                "LLNBBNIEGGO": true,
+                "BIMBEJCAFLP": 1,
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "FreePose_StandingTalk_Skill"
+                ],
+                "PGPDNPMFFAG": "10",
+                "CCEAGFDONFH": "01",
+                "OKOFHICILMD": "10",
+                "CCFFFOIDOLP": "11"
+            },
+            "95011": {
+                "NOKKDDHKGAK": "Chat01",
+                "IKMCLKEPDFP": "Free",
+                "ENKLFBHHOJI": {
+                    "CEKMINILIFB": [
+                        9501,
+                        9502
+                    ]
+                },
+                "cd": 1.0,
+                "GPMLADFJAAH": 4.0,
+                "NOPNCNPCPJE": "",
+                "LLNBBNIEGGO": true,
+                "BIMBEJCAFLP": 1,
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "FreePose_Crossleg_Chat_Skill"
+                ],
+                "PGPDNPMFFAG": "10",
+                "CCEAGFDONFH": "01",
+                "OKOFHICILMD": "10",
+                "CCFFFOIDOLP": "11"
+            },
+            "95012": {
+                "NOKKDDHKGAK": "Chat02",
+                "IKMCLKEPDFP": "Free",
+                "ENKLFBHHOJI": {
+                    "CEKMINILIFB": [
+                        9501,
+                        9502
+                    ]
+                },
+                "cd": 1.0,
+                "GPMLADFJAAH": 4.0,
+                "LKCFDIOMLCM": 12.0,
+                "NOPNCNPCPJE": "",
+                "LLNBBNIEGGO": true,
+                "BIMBEJCAFLP": 1,
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "FreePose_Crossleg_Chat_Skill"
+                ],
+                "PGPDNPMFFAG": "10",
+                "CCEAGFDONFH": "01",
+                "OKOFHICILMD": "10",
+                "CCFFFOIDOLP": "11"
+            },
+            "95031": {
+                "NOKKDDHKGAK": "Drink",
+                "IKMCLKEPDFP": "Free",
+                "ENKLFBHHOJI": {
+                    "CEKMINILIFB": [
+                        9502,
+                        9503
+                    ]
+                },
+                "cd": 12.0,
+                "GPMLADFJAAH": 12.0,
+                "LKCFDIOMLCM": 6.0,
+                "NOPNCNPCPJE": "",
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "FreePose_Crossleg_Drink_Skill"
+                ],
+                "PGPDNPMFFAG": "10",
+                "CCEAGFDONFH": "01",
+                "OKOFHICILMD": "10",
+                "CCFFFOIDOLP": "11"
+            },
+            "95041": {
+                "NOKKDDHKGAK": "Sleeping",
+                "IKMCLKEPDFP": "Free",
+                "ENKLFBHHOJI": {
+                    "CEKMINILIFB": [
+                        9504
+                    ]
+                },
+                "cd": 3.5,
+                "GPMLADFJAAH": 8.0,
+                "LKCFDIOMLCM": 2.0,
+                "NOPNCNPCPJE": "",
+                "BIMBEJCAFLP": 1,
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "FreePose_Crossleg_Sleeping_Skill"
+                ],
+                "PGPDNPMFFAG": "10",
+                "CCEAGFDONFH": "01",
+                "OKOFHICILMD": "10",
+                "CCFFFOIDOLP": "11"
+            },
+            "95111": {
+                "NOKKDDHKGAK": "Gambling",
+                "IKMCLKEPDFP": "Free",
+                "ENKLFBHHOJI": {
+                    "CEKMINILIFB": [
+                        9511
+                    ]
+                },
+                "GPMLADFJAAH": 2.0,
+                "LKCFDIOMLCM": 6.0,
+                "NOPNCNPCPJE": "",
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "FreePose_Crossleg_Gambling_Bet_Skill",
+                    "FreePose_Crossleg_Gambling_Roll",
+                    "FreePose_Crossleg_Gambling_Lose",
+                    "FreePose_Crossleg_Gambling_Win"
+                ],
+                "PGPDNPMFFAG": "10",
+                "CCEAGFDONFH": "01",
+                "OKOFHICILMD": "10",
+                "CCFFFOIDOLP": "11"
+            }
+        },
+        "EMBHEEALPLD": 3.5,
+        "combatFixedMoveTactic": [
+            {
+                "$type": "DIIPKNMAPAC",
+                "enable": true,
+                "FJANPNOAAFK": {
+                    "CEKMINILIFB": [
+                        1001,
+                        10
+                    ]
+                },
+                "defaultSetting": {
+                    "AGCMPDABMIA": 7.0,
+                    "GDPAONNEBCO": 14.0,
+                    "MMKHHBIBJEN": {
+                        "GECJAGFGHKL": 6.0,
+                        "GEECPOOOMFC": 0.5,
+                        "NFMBIOFFKGK": 1.5
+                    },
+                    "HEGPGPBKGFH": "1111",
+                    "AFCLIFKCEKM": "1111",
+                    "JOCOJHEICNA": ""
+                }
+            },
+            {
+                "$type": "NCHKIPKMCLC",
+                "enable": true,
+                "FJANPNOAAFK": {
+                    "CEKMINILIFB": [
+                        1
+                    ]
+                }
+            },
+            {
+                "$type": "BNAGECKMCIB",
+                "enable": true,
+                "FJANPNOAAFK": {
+                    "CEKMINILIFB": [
+                        1001,
+                        10
+                    ]
+                },
+                "defaultSetting": {
+                    "MPEMBMLOEDG": 23.0,
+                    "IJLGPEJGLEH": 50.0,
+                    "JKOGPCLFHCP": 15.0,
+                    "IHCAFCNDANA": 13.0,
+                    "JOCOJHEICNA": ""
+                }
+            },
+            {
+                "$type": "KMHBGMELMKD",
+                "enable": true,
+                "defaultSetting": {
+                    "JOCOJHEICNA": "",
+                    "DBIELIMGBMC": ""
+                }
+            },
+            {
+                "$type": "GGKADEIBMLG",
+                "enable": true,
+                "FJANPNOAAFK": {
+                    "CEKMINILIFB": [
+                        1
+                    ]
+                },
+                "defaultSetting": {
+                    "JIFJFPJANHO": 3.0,
+                    "CBKHBGCPFBG": 1.5,
+                    "EKDHNAGGGAE": 15.0,
+                    "BFEJAKFKKFP": 3.75,
+                    "KOAMKCEFJED": 7.5,
+                    "JOCOJHEICNA": ""
+                }
+            }
+        ]
+    },
+    "GIBHCHHOJFI": [
+        {
+            "NPDDCIDNKMH": 201,
+            "KCAOBJOPJIC": 257,
+            "abilityName": ""
+        },
+        {
+            "NPDDCIDNKMH": 301,
+            "KCAOBJOPJIC": 258,
+            "abilityName": ""
+        },
+        {
+            "NPDDCIDNKMH": 401,
+            "KCAOBJOPJIC": 259,
+            "abilityName": ""
+        }
+    ],
+    "move": {
+        "$type": "IIGPJJNGCLE",
+        "MIPNOGBEANL": "FourDirection",
+        "BEPOPLDKJOP": "StoopType",
+        "FACNOEFNHIB": "RootNode"
+    },
+    "BEGHJJDCLLK": {
+        "KEEAIACIJBN": "",
+        "JIOEGJGNLEC": {
+            "NGKLCAOGKNG": [
+                {
+                    "ILNHPFBOKNK": "Crossleg_PlayDaff_Idle",
+                    "CDMEEHAPNGE": {
+                        "KMNBEAJOBPE": "Play_sfx_monster_Eremite_freePose_playDaff_Loop"
+                    },
+                    "LFOAJJCBNPI": [
+                        "Crossleg_PlayDaff_Idle"
+                    ],
+                    "JKPDEGAANLH": "Except"
+                },
+                {
+                    "ILNHPFBOKNK": "Crossleg_PlayOud_Loop",
+                    "CDMEEHAPNGE": {
+                        "KMNBEAJOBPE": "Play_sfx_monster_Eremite_freePose_playDaff_Loop_oud"
+                    },
+                    "LFOAJJCBNPI": [
+                        "Crossleg_PlayOud_Loop"
+                    ],
+                    "JKPDEGAANLH": "Except"
+                }
+            ],
+            "MPLMIOAKNGG": [
+                {
+                    "ILNHPFBOKNK": "Crossleg_PlayDaff_Idle",
+                    "CDMEEHAPNGE": {
+                        "KMNBEAJOBPE": "Stop_sfx_monster_Eremite_freePose_playDaff_Loop"
+                    },
+                    "LFOAJJCBNPI": [
+                        "Crossleg_PlayDaff_Idle"
+                    ],
+                    "JKPDEGAANLH": "Except"
+                },
+                {
+                    "ILNHPFBOKNK": "Crossleg_Chat01_Skill",
+                    "CDMEEHAPNGE": {
+                        "KMNBEAJOBPE": "Stop_sfx_monster_Human_Male_Standard_CrossBow_crossleg_chat01"
+                    }
+                },
+                {
+                    "ILNHPFBOKNK": "Crossleg_Chat02_Skill",
+                    "CDMEEHAPNGE": {
+                        "KMNBEAJOBPE": "Stop_sfx_monster_Human_Male_Standard_CrossBow_crossleg_chat02"
+                    }
+                },
+                {
+                    "ILNHPFBOKNK": "Crossleg_Drink_Skill",
+                    "CDMEEHAPNGE": {
+                        "KMNBEAJOBPE": "Stop_sfx_monster_Human_Male_Standard_CrossBow_crossleg_drink"
+                    }
+                },
+                {
+                    "ILNHPFBOKNK": "Crossleg_Gambling_Lose",
+                    "CDMEEHAPNGE": {
+                        "KMNBEAJOBPE": "Stop_sfx_monster_Human_Male_Standard_CrossBow_crossleg_gambling_lose"
+                    }
+                },
+                {
+                    "ILNHPFBOKNK": "Crossleg_Gambling_Win",
+                    "CDMEEHAPNGE": {
+                        "KMNBEAJOBPE": "Stop_sfx_monster_Human_Male_Standard_CrossBow_crossleg_gambling_win"
+                    }
+                },
+                {
+                    "ILNHPFBOKNK": "Crossleg_Gambling_Bet_Skill",
+                    "CDMEEHAPNGE": {
+                        "KMNBEAJOBPE": "Stop_sfx_monster_Human_Male_Standard_CrossBow_gambling_bet"
+                    }
+                },
+                {
+                    "ILNHPFBOKNK": "Crossleg_Gambling_Roll",
+                    "CDMEEHAPNGE": {
+                        "KMNBEAJOBPE": "Stop_sfx_monster_Human_Male_Standard_CrossBow_gambling_roll"
+                    }
+                },
+                {
+                    "ILNHPFBOKNK": "Crossleg_PlayOud_Loop",
+                    "CDMEEHAPNGE": {
+                        "KMNBEAJOBPE": "Stop_sfx_monster_Eremite_freePose_playDaff_Loop_oud"
+                    },
+                    "LFOAJJCBNPI": [
+                        "Crossleg_PlayOud_Loop"
+                    ],
+                    "JKPDEGAANLH": "Except"
+                }
+            ]
+        }
+    }
+}

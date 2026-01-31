@@ -1,0 +1,1392 @@
+{
+    "Yelan_Arrow_01": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "FCAGPAEOLPI": 0.5,
+                "HOJBBPFJMIL": 0.5
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            },
+            "animEvents": {
+                "ATK01": {
+                    "attackPattern": {
+                        "$type": "BOIOFIPLBNK",
+                        "triggerType": "TriggerNoRepeat",
+                        "PINHPKJJOGC": "Both",
+                        "born": {
+                            "$type": "MNJLPLGJGLI",
+                            "offset": {
+                                "EMBMLEBGFOI": 0.0,
+                                "NABPJFNICAE": 0.0,
+                                "MLOLIKEJCKB": -0.5
+                            }
+                        },
+                        "size": {
+                            "EMBMLEBGFOI": 0.10000000149011612,
+                            "NABPJFNICAE": 0.10000000149011612,
+                            "MLOLIKEJCKB": 1.0
+                        }
+                    },
+                    "attackInfo": {
+                        "attackTag": "NormalAttack_01",
+                        "attenuationTag": "",
+                        "attenuationGroup": "default",
+                        "attackProperty": {
+                            "ACKCDHKEGCK": 0.0,
+                            "JIICGJODDDM": 0.0,
+                            "bonusCriticalHurt": 100.0,
+                            "strikeType": "Pierce",
+                            "enBreak": 14.1899995803833,
+                            "damagePercentage": 0.0
+                        },
+                        "hitPattern": {
+                            "onHitEffectName": "default",
+                            "hitImpulseType": "LV1"
+                        },
+                        "cameraShake": {
+                            "shakeRange": 0.019999999552965164,
+                            "shakeTime": 0.10000000149011612
+                        },
+                        "canBeModifiedBy": "OriginOwner"
+                    }
+                }
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Avatar_Yelan_ShootArrow_Bullet",
+                "abilityName": "Avatar_Yelan_ShootArrow_Bullet",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 8.0
+        },
+        "move": {
+            "$type": "MPNKKNJBNCD",
+            "speed": 40.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "CIHFFMJBELB": 7.0,
+            "IPBPLMGOJKC": 15.0,
+            "HMOHCMJMLNE": 0.009999999776482582
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "BOHOOADOAKJ",
+                    "attackEvent": "ATK01"
+                },
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Avatar_Yelan_ShootArrow_Bullet"
+                }
+            ],
+            "JHKBLJLPGEB": true
+        }
+    },
+    "Yelan_Arrow_02": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "FCAGPAEOLPI": 0.5,
+                "HOJBBPFJMIL": 0.5
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            },
+            "animEvents": {
+                "ATK02": {
+                    "attackPattern": {
+                        "$type": "BOIOFIPLBNK",
+                        "triggerType": "TriggerNoRepeat",
+                        "PINHPKJJOGC": "Both",
+                        "born": {
+                            "$type": "MNJLPLGJGLI",
+                            "offset": {
+                                "EMBMLEBGFOI": 0.0,
+                                "NABPJFNICAE": 0.0,
+                                "MLOLIKEJCKB": -0.5
+                            }
+                        },
+                        "size": {
+                            "EMBMLEBGFOI": 0.10000000149011612,
+                            "NABPJFNICAE": 0.10000000149011612,
+                            "MLOLIKEJCKB": 1.0
+                        }
+                    },
+                    "attackInfo": {
+                        "attackTag": "NormalAttack_02",
+                        "attenuationTag": "",
+                        "attenuationGroup": "default",
+                        "attackProperty": {
+                            "ACKCDHKEGCK": 0.0,
+                            "JIICGJODDDM": 0.0,
+                            "bonusCriticalHurt": 100.0,
+                            "strikeType": "Pierce",
+                            "enBreak": 13.619999885559082,
+                            "damagePercentage": 0.0
+                        },
+                        "hitPattern": {
+                            "onHitEffectName": "default",
+                            "hitImpulseType": "LV1"
+                        },
+                        "cameraShake": {
+                            "shakeRange": 0.019999999552965164,
+                            "shakeTime": 0.10000000149011612
+                        },
+                        "canBeModifiedBy": "OriginOwner"
+                    }
+                }
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Avatar_Yelan_ShootArrow_Bullet",
+                "abilityName": "Avatar_Yelan_ShootArrow_Bullet",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 8.0
+        },
+        "move": {
+            "$type": "MPNKKNJBNCD",
+            "speed": 40.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "CIHFFMJBELB": 7.0,
+            "IPBPLMGOJKC": 15.0,
+            "HMOHCMJMLNE": 0.009999999776482582
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "BOHOOADOAKJ",
+                    "attackEvent": "ATK02"
+                },
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Avatar_Yelan_ShootArrow_Bullet"
+                }
+            ],
+            "JHKBLJLPGEB": true
+        }
+    },
+    "Yelan_Arrow_03": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "FCAGPAEOLPI": 0.5,
+                "HOJBBPFJMIL": 0.5
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            },
+            "animEvents": {
+                "ATK03": {
+                    "attackPattern": {
+                        "$type": "BOIOFIPLBNK",
+                        "triggerType": "TriggerNoRepeat",
+                        "PINHPKJJOGC": "Both",
+                        "born": {
+                            "$type": "MNJLPLGJGLI",
+                            "offset": {
+                                "EMBMLEBGFOI": 0.0,
+                                "NABPJFNICAE": 0.0,
+                                "MLOLIKEJCKB": -0.5
+                            }
+                        },
+                        "size": {
+                            "EMBMLEBGFOI": 0.10000000149011612,
+                            "NABPJFNICAE": 0.10000000149011612,
+                            "MLOLIKEJCKB": 1.0
+                        }
+                    },
+                    "attackInfo": {
+                        "attackTag": "NormalAttack_03",
+                        "attenuationTag": "",
+                        "attenuationGroup": "default",
+                        "attackProperty": {
+                            "ACKCDHKEGCK": 0.0,
+                            "JIICGJODDDM": 0.0,
+                            "bonusCriticalHurt": 100.0,
+                            "strikeType": "Pierce",
+                            "enBreak": 18.0,
+                            "damagePercentage": 0.0
+                        },
+                        "hitPattern": {
+                            "onHitEffectName": "default",
+                            "hitImpulseType": "LV1"
+                        },
+                        "cameraShake": {
+                            "shakeRange": 0.019999999552965164,
+                            "shakeTime": 0.10000000149011612
+                        },
+                        "canBeModifiedBy": "OriginOwner"
+                    }
+                }
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Avatar_Yelan_ShootArrow_Bullet",
+                "abilityName": "Avatar_Yelan_ShootArrow_Bullet",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 8.0
+        },
+        "move": {
+            "$type": "MPNKKNJBNCD",
+            "speed": 40.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "CIHFFMJBELB": 7.0,
+            "IPBPLMGOJKC": 15.0,
+            "HMOHCMJMLNE": 0.009999999776482582
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "BOHOOADOAKJ",
+                    "attackEvent": "ATK03"
+                },
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Avatar_Yelan_ShootArrow_Bullet"
+                }
+            ],
+            "JHKBLJLPGEB": true
+        }
+    },
+    "Yelan_Arrow_04": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "FCAGPAEOLPI": 0.5,
+                "HOJBBPFJMIL": 0.5
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            },
+            "animEvents": {
+                "ATK04": {
+                    "attackPattern": {
+                        "$type": "BOIOFIPLBNK",
+                        "triggerType": "TriggerNoRepeat",
+                        "PINHPKJJOGC": "Both",
+                        "born": {
+                            "$type": "MNJLPLGJGLI",
+                            "offset": {
+                                "EMBMLEBGFOI": 0.0,
+                                "NABPJFNICAE": 0.0,
+                                "MLOLIKEJCKB": -0.5
+                            }
+                        },
+                        "size": {
+                            "EMBMLEBGFOI": 0.10000000149011612,
+                            "NABPJFNICAE": 0.10000000149011612,
+                            "MLOLIKEJCKB": 1.0
+                        }
+                    },
+                    "attackInfo": {
+                        "attackTag": "NormalAttack_04",
+                        "attenuationTag": "",
+                        "attenuationGroup": "default",
+                        "attackProperty": {
+                            "ACKCDHKEGCK": 0.0,
+                            "JIICGJODDDM": 0.0,
+                            "bonusCriticalHurt": 100.0,
+                            "strikeType": "Pierce",
+                            "enBreak": 7.559999942779541,
+                            "damagePercentage": 0.0
+                        },
+                        "hitPattern": {
+                            "onHitEffectName": "default",
+                            "hitImpulseType": "LV1"
+                        },
+                        "cameraShake": {
+                            "shakeRange": 0.019999999552965164,
+                            "shakeTime": 0.10000000149011612
+                        },
+                        "canBeModifiedBy": "OriginOwner"
+                    }
+                }
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Avatar_Yelan_ShootArrow_Bullet_Last",
+                "abilityName": "Avatar_Yelan_ShootArrow_Bullet_Last",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 8.0
+        },
+        "move": {
+            "$type": "MPNKKNJBNCD",
+            "speed": 55.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "CIHFFMJBELB": 7.0,
+            "IPBPLMGOJKC": 15.0,
+            "HMOHCMJMLNE": 0.009999999776482582
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "BOHOOADOAKJ",
+                    "attackEvent": "ATK04"
+                },
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Avatar_Yelan_ShootArrow_Bullet_Last"
+                }
+            ],
+            "JHKBLJLPGEB": true
+        }
+    },
+    "Yelan_Arrow_05": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "FCAGPAEOLPI": 0.5,
+                "HOJBBPFJMIL": 0.5
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            },
+            "animEvents": {
+                "ATK05": {
+                    "attackPattern": {
+                        "$type": "BOIOFIPLBNK",
+                        "triggerType": "TriggerNoRepeat",
+                        "PINHPKJJOGC": "Both",
+                        "born": {
+                            "$type": "MNJLPLGJGLI",
+                            "offset": {
+                                "EMBMLEBGFOI": 0.0,
+                                "NABPJFNICAE": 0.0,
+                                "MLOLIKEJCKB": -0.5
+                            }
+                        },
+                        "size": {
+                            "EMBMLEBGFOI": 0.10000000149011612,
+                            "NABPJFNICAE": 0.10000000149011612,
+                            "MLOLIKEJCKB": 1.0
+                        }
+                    },
+                    "attackInfo": {
+                        "attackTag": "NormalAttack_05",
+                        "attenuationTag": "",
+                        "attenuationGroup": "default",
+                        "attackProperty": {
+                            "ACKCDHKEGCK": 0.0,
+                            "JIICGJODDDM": 0.0,
+                            "bonusCriticalHurt": 100.0,
+                            "strikeType": "Pierce",
+                            "enBreak": 7.559999942779541,
+                            "damagePercentage": 0.0
+                        },
+                        "hitPattern": {
+                            "onHitEffectName": "default",
+                            "hitImpulseType": "LV1"
+                        },
+                        "cameraShake": {
+                            "shakeRange": 0.019999999552965164,
+                            "shakeTime": 0.10000000149011612
+                        },
+                        "canBeModifiedBy": "OriginOwner"
+                    }
+                }
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Avatar_Yelan_ShootArrow_Bullet",
+                "abilityName": "Avatar_Yelan_ShootArrow_Bullet",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 8.0
+        },
+        "move": {
+            "$type": "MPNKKNJBNCD",
+            "speed": 40.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "CIHFFMJBELB": 7.0,
+            "IPBPLMGOJKC": 15.0,
+            "HMOHCMJMLNE": 0.009999999776482582
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "BOHOOADOAKJ",
+                    "attackEvent": "ATK05"
+                },
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Avatar_Yelan_ShootArrow_Bullet"
+                }
+            ],
+            "JHKBLJLPGEB": true
+        }
+    },
+    "Yelan_Arrow_06": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "FCAGPAEOLPI": 0.5,
+                "HOJBBPFJMIL": 0.5
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            },
+            "animEvents": {
+                "ATK06": {
+                    "attackPattern": {
+                        "$type": "BOIOFIPLBNK",
+                        "triggerType": "TriggerNoRepeat",
+                        "PINHPKJJOGC": "Both",
+                        "born": {
+                            "$type": "MNJLPLGJGLI",
+                            "offset": {
+                                "EMBMLEBGFOI": 0.0,
+                                "NABPJFNICAE": 0.0,
+                                "MLOLIKEJCKB": -0.5
+                            }
+                        },
+                        "size": {
+                            "EMBMLEBGFOI": 0.10000000149011612,
+                            "NABPJFNICAE": 0.10000000149011612,
+                            "MLOLIKEJCKB": 1.0
+                        }
+                    },
+                    "attackInfo": {
+                        "attackTag": "NormalAttack_06",
+                        "attenuationTag": "",
+                        "attenuationGroup": "default",
+                        "attackProperty": {
+                            "ACKCDHKEGCK": 0.0,
+                            "JIICGJODDDM": 0.0,
+                            "bonusCriticalHurt": 100.0,
+                            "strikeType": "Pierce",
+                            "enBreak": 7.559999942779541,
+                            "damagePercentage": 0.0
+                        },
+                        "hitPattern": {
+                            "onHitEffectName": "default",
+                            "hitImpulseType": "LV1"
+                        },
+                        "cameraShake": {
+                            "shakeRange": 0.019999999552965164,
+                            "shakeTime": 0.10000000149011612
+                        },
+                        "canBeModifiedBy": "OriginOwner"
+                    }
+                }
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Avatar_Yelan_ShootArrow_Bullet",
+                "abilityName": "Avatar_Yelan_ShootArrow_Bullet",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 8.0
+        },
+        "move": {
+            "$type": "MPNKKNJBNCD",
+            "speed": 70.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "CIHFFMJBELB": 15.0,
+            "IPBPLMGOJKC": 30.0,
+            "HMOHCMJMLNE": 0.009999999776482582
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "BOHOOADOAKJ",
+                    "attackEvent": "ATK06"
+                },
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Avatar_Yelan_ShootArrow_Bullet"
+                }
+            ],
+            "JHKBLJLPGEB": true
+        }
+    },
+    "Yelan_AimingArrow_WithoutWater": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "FCAGPAEOLPI": 0.5,
+                "HOJBBPFJMIL": 0.5
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Arrow_WithoutIce",
+                "abilityName": "Avatar_Yelan_ShootArrow_Enchanted_WithOutWater",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 20.0
+        },
+        "move": {
+            "$type": "MPNKKNJBNCD",
+            "speed": 50.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "CIHFFMJBELB": 25.0,
+            "IPBPLMGOJKC": 5.5,
+            "HMOHCMJMLNE": 0.009999999776482582
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Avatar_Yelan_ShootArrow_Enchanted_WithOutWater"
+                }
+            ],
+            "JHKBLJLPGEB": true
+        }
+    },
+    "Yelan_AimingArrow_WithWater": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "FCAGPAEOLPI": 0.5,
+                "HOJBBPFJMIL": 0.5
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Avatar_Yelan_ShootArrow_Enchanted_WithWater",
+                "abilityName": "Avatar_Yelan_ShootArrow_Enchanted_WithWater",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 20.0
+        },
+        "move": {
+            "$type": "MPNKKNJBNCD",
+            "speed": 50.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "CIHFFMJBELB": 25.0,
+            "IPBPLMGOJKC": 5.5,
+            "HMOHCMJMLNE": 0.009999999776482582
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Avatar_Yelan_ShootArrow_Enchanted_WithWater"
+                }
+            ],
+            "JHKBLJLPGEB": true
+        }
+    },
+    "Yelan_AimingArrow_Sneak": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "FCAGPAEOLPI": 0.5,
+                "HOJBBPFJMIL": 0.5
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Avatar_Yelan_SneakArrow",
+                "abilityName": "Avatar_Yelan_SneakArrow",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 20.0
+        },
+        "move": {
+            "$type": "MPNKKNJBNCD",
+            "speed": 50.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "CIHFFMJBELB": 25.0,
+            "IPBPLMGOJKC": 5.5,
+            "HMOHCMJMLNE": 0.009999999776482582
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Avatar_Yelan_SneakArrow"
+                }
+            ],
+            "JHKBLJLPGEB": true
+        }
+    },
+    "Yelan_ElementalArt_QuietStep_Bullet": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            }
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 99999.0,
+                "defense": 99999.0,
+                "isInvincible": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Avatar_Yelan_ElementalArt_QuietStep_Bullet",
+                "abilityName": "Avatar_Yelan_ElementalArt_QuietStep_Bullet",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 5.0
+        },
+        "move": {
+            "$type": "DKAMCGDMNKI",
+            "attachPoint": "MoveHead",
+            "followRotation": true,
+            "JHIDLJOPJML": true,
+            "JDDHGLLAOJP": true,
+            "HMPJAIBPNND": ""
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "ccd": {
+                    "type": "Always"
+                },
+                "triggerType": "TriggerNoRepeat",
+                "targetType": "Enemy",
+                "ignoreScene": true,
+                "ignoreWater": true
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Avatar_Yelan_ElementalArt_QuietStep_Bullet"
+                }
+            ]
+        },
+        "LNJIIEDIOEM": true
+    },
+    "Yelan_ElementalBurst_Dice": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            }
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 99999.0,
+                "defense": 99999.0,
+                "isInvincible": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Avatar_Yelan_ElementalBurst_Dice",
+                "abilityName": "Avatar_Yelan_ElementalBurst_Dice",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Avatar_Yelan_ElementalBurst_Dice_TriggerBullet",
+                "abilityName": "Avatar_Yelan_ElementalBurst_Dice_TriggerBullet",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Avatar_Yelan_ElementalBurst_Dice_TriggerBullet_Extra",
+                "abilityName": "Avatar_Yelan_ElementalBurst_Dice_TriggerBullet_Extra",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 20.0
+        },
+        "move": {
+            "$type": "DKAMCGDMNKI",
+            "attachPoint": "",
+            "followRotation": true,
+            "offset": {
+                "x": 0.800000011920929,
+                "y": 1.7000000476837158,
+                "z": -0.6000000238418579
+            },
+            "JHIDLJOPJML": true,
+            "JDDHGLLAOJP": true,
+            "NJODBDDIFIE": 0.07000000029802322,
+            "IALNCPBDMCB": 0.10000000149011612,
+            "HMPJAIBPNND": ""
+        }
+    },
+    "Yelan_ElementalBurst_Dice_Bullet_01": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            }
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Avatar_Yelan_ElementalBurst_Dice_Bullet_01",
+                "abilityName": "Avatar_Yelan_ElementalBurst_Dice_Bullet_01",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 1.5
+        },
+        "move": {
+            "$type": "EGIBMIADEHO",
+            "speed": 15.0,
+            "maxSpeed": 30.0,
+            "minSpeed": 10.0,
+            "GBPNCGHBJMC": 720.0,
+            "AFIKDKDFKCJ": 30.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD",
+                "GMLPDHMOONH": 720.0
+            },
+            "BCNECAMPGJJ": true
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Avatar_Yelan_ElementalBurst_Dice_Bullet_01"
+                }
+            ],
+            "JPNAMDFCBFN": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Avatar_Yelan_ElementalBurst_Dice_Bullet_01"
+                }
+            ]
+        }
+    },
+    "Yelan_ElementalBurst_Dice_Bullet_02": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            }
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Avatar_Yelan_ElementalBurst_Dice_Bullet_01",
+                "abilityName": "Avatar_Yelan_ElementalBurst_Dice_Bullet_01",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 1.5
+        },
+        "move": {
+            "$type": "EGIBMIADEHO",
+            "speed": 15.0,
+            "maxSpeed": 30.0,
+            "minSpeed": 10.0,
+            "GBPNCGHBJMC": 720.0,
+            "AFIKDKDFKCJ": 30.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD",
+                "GMLPDHMOONH": 720.0
+            },
+            "BCNECAMPGJJ": true
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Avatar_Yelan_ElementalBurst_Dice_Bullet_01"
+                }
+            ],
+            "JPNAMDFCBFN": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Avatar_Yelan_ElementalBurst_Dice_Bullet_01"
+                }
+            ]
+        }
+    },
+    "Yelan_ElementalBurst_Dice_Bullet_03": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            }
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Avatar_Yelan_ElementalBurst_Dice_Bullet_01",
+                "abilityName": "Avatar_Yelan_ElementalBurst_Dice_Bullet_01",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 1.5
+        },
+        "move": {
+            "$type": "EGIBMIADEHO",
+            "speed": 15.0,
+            "maxSpeed": 30.0,
+            "minSpeed": 10.0,
+            "GBPNCGHBJMC": 720.0,
+            "AFIKDKDFKCJ": 30.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD",
+                "GMLPDHMOONH": 720.0
+            },
+            "BCNECAMPGJJ": true
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Avatar_Yelan_ElementalBurst_Dice_Bullet_01"
+                }
+            ],
+            "JPNAMDFCBFN": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Avatar_Yelan_ElementalBurst_Dice_Bullet_01"
+                }
+            ]
+        }
+    },
+    "Yelan_ElementalBurst_Dice_Bullet_Extra": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            }
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Avatar_Yelan_ElementalBurst_Dice_Bullet_Extra",
+                "abilityName": "Avatar_Yelan_ElementalBurst_Dice_Bullet_Extra",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 1.0
+        },
+        "move": {
+            "$type": "EGIBMIADEHO",
+            "speed": 60.0,
+            "maxSpeed": 60.0,
+            "minSpeed": 20.0,
+            "GBPNCGHBJMC": 7200.0,
+            "AFIKDKDFKCJ": 30.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD",
+                "GMLPDHMOONH": 7200.0
+            },
+            "KGGKADOKFII": 0.15000000596046448,
+            "BCNECAMPGJJ": true
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Avatar_Yelan_ElementalBurst_Dice_Bullet_Extra"
+                }
+            ],
+            "JPNAMDFCBFN": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Avatar_Yelan_ElementalBurst_Dice_Bullet_Extra"
+                }
+            ]
+        }
+    },
+    "Yelan_AimingArrow_Sneak_Extra_01": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "FCAGPAEOLPI": 0.5,
+                "HOJBBPFJMIL": 0.5
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Avatar_Yelan_SneakArrow_Extra_Before",
+                "abilityName": "Avatar_Yelan_SneakArrow_Extra_Before",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 8.0
+        },
+        "move": {
+            "$type": "MPNKKNJBNCD",
+            "speed": 40.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "CIHFFMJBELB": 7.0,
+            "IPBPLMGOJKC": 15.0,
+            "HMOHCMJMLNE": 0.009999999776482582
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Avatar_Yelan_SneakArrow_Extra_Before"
+                }
+            ],
+            "JHKBLJLPGEB": true
+        }
+    },
+    "Yelan_AimingArrow_Sneak_Extra_02": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "FCAGPAEOLPI": 0.5,
+                "HOJBBPFJMIL": 0.5
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Avatar_Yelan_SneakArrow_Extra_After",
+                "abilityName": "Avatar_Yelan_SneakArrow_Extra_After",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 8.0
+        },
+        "move": {
+            "$type": "MPNKKNJBNCD",
+            "speed": 55.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "CIHFFMJBELB": 7.0,
+            "IPBPLMGOJKC": 15.0,
+            "HMOHCMJMLNE": 0.009999999776482582
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Avatar_Yelan_SneakArrow_Extra_After"
+                }
+            ],
+            "JHKBLJLPGEB": true
+        }
+    }
+}

@@ -1,0 +1,1071 @@
+[
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "BoxMatch_Hatchet_CoreLogic",
+            "abilityMixins": [
+                {
+                    "$type": "AttachToPoseIDMixin",
+                    "OLJKDPFLMCF": [
+                        101,
+                        102
+                    ],
+                    "modifierName": "Hatchet_Level_1"
+                },
+                {
+                    "$type": "AttachToPoseIDMixin",
+                    "OLJKDPFLMCF": [
+                        201,
+                        202
+                    ],
+                    "modifierName": "Hatchet_Level_2"
+                },
+                {
+                    "$type": "AttachModifierToSelfGlobalValueMixin",
+                    "globalValueKey": "GV_BoxMatch_StartBurst",
+                    "defaultGlobalValueOnCreate": 0.0,
+                    "valueSteps": [
+                        -0.5,
+                        0.5,
+                        1.5
+                    ],
+                    "modifierNameSteps": [
+                        "Dummy",
+                        "StartBurst"
+                    ]
+                }
+            ],
+            "modifiers": {
+                "Dummy": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0
+                },
+                "StartBurst": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "ANPDJHOGAFE": 0.5,
+                    "onAdded": [
+                        {
+                            "$type": "SetAnimatorTrigger",
+                            "POPKLBPMAJN": "BurstImmediately"
+                        },
+                        {
+                            "$type": "FireEffect",
+                            "LHHFHDEJOHC": "Eff_Monster_FungusFight_UnionBurstGlitter",
+                            "PCLAEGHPNHE": -1.0
+                        }
+                    ],
+                    "MDPGEKAIFIM": [
+                        {
+                            "$type": "SetGlobalValue",
+                            "value": 0.0,
+                            "NGGCNKPAODB": "GV_BoxMatch_StartBurst",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        }
+                    ]
+                },
+                "Hatchet_Level_1": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0
+                },
+                "Hatchet_Level_2": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "modifierMixins": [
+                        {
+                            "$type": "ReplaceEventPatternMixin",
+                            "GOKOHGENGHB": [
+                                "Monster_BoxMatch_Hatchet_FireWork_BS"
+                            ],
+                            "NMDJDCDMHLD": [
+                                "Monster_BoxMatch_Hatchet_FireWork_Lv2_BS"
+                            ]
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "BoxMatch_Hatchet_FireWork_Trigger",
+            "onAbilityStart": [
+                {
+                    "$type": "CreateGadget",
+                    "FLEEHCIOPKA": [
+                        {
+                            "$type": "NLBPNOHOGKC",
+                            "modifierName": "Hatchet_Level_1"
+                        }
+                    ],
+                    "CCNCMOGOFAG": {
+                        "$type": "DELDMCFKBBL",
+                        "OINHJGEGJLO": true,
+                        "FPDJOHEHNDD": true
+                    },
+                    "BLPPFMNOOIO": 42501015
+                },
+                {
+                    "$type": "TriggerBullet",
+                    "FLEEHCIOPKA": [
+                        {
+                            "$type": "NLBPNOHOGKC",
+                            "modifierName": "Hatchet_Level_2"
+                        }
+                    ],
+                    "PMOEIMCLPBE": 42501016,
+                    "CCNCMOGOFAG": {
+                        "$type": "IADBHDLMGJB",
+                        "FNHBOFDBNNK": {
+                            "$type": "GPKIIMADEMG"
+                        },
+                        "FPDJOHEHNDD": true,
+                        "MDPMJPIOGLA": "WeaponR"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "BoxMatch_Hatchet_FireWork_Lv1",
+            "modifiers": {
+                "Firework_Logic": {
+                    "modifierName": "",
+                    "FAFCPJJAIGK": 0.4000000059604645,
+                    "bonusCritical": 100.0,
+                    "onAdded": [
+                        {
+                            "$type": "FireEffect",
+                            "LHHFHDEJOHC": "Eff_Monster_BoxMatch_Firework_BS",
+                            "PCLAEGHPNHE": -1.0
+                        }
+                    ],
+                    "NFKOGKMAIIE": [
+                        {
+                            "$type": "FireEffect",
+                            "LHHFHDEJOHC": "Eff_Monster_BoxMatch_Firework_Attack",
+                            "PCLAEGHPNHE": -1.0
+                        },
+                        {
+                            "$type": "TriggerAttackEvent",
+                            "FMDHJHAACGM": {
+                                "LOPCJCIFFBE": {
+                                    "$type": "JDNHMJKEPOH",
+                                    "triggerType": "TriggerNoRepeat",
+                                    "CCNCMOGOFAG": {
+                                        "$type": "DELDMCFKBBL",
+                                        "offset": {
+                                            "KKKLBADAPPB": 1.0
+                                        },
+                                        "FPDJOHEHNDD": true
+                                    },
+                                    "DMIKDAOCFDG": {
+                                        "NEEHMANEJKM": 4.5,
+                                        "KKKLBADAPPB": 2.0,
+                                        "GENNNOANKOO": 4.5
+                                    }
+                                },
+                                "OIAMOBFMPAB": {
+                                    "KNOKCFHALLI": "",
+                                    "HOKPLNACNKG": "",
+                                    "ILLFBEHPCJA": "default",
+                                    "BAPFFKCLDPC": {
+                                        "OLLFABADCKH": 1.600000023841858,
+                                        "PDHAKJCMPHB": 0.0,
+                                        "elementType": "Fire",
+                                        "bonusCritical": 50.0,
+                                        "FFIIMACIKEA": 100.0,
+                                        "ELCPFOMENGK": "Range",
+                                        "AEOLDMAMNLM": 0.0
+                                    },
+                                    "OCHEEDIDOHI": {
+                                        "AIDMNBLLAIJ": "default",
+                                        "OEGAJNNFFPO": "LV3"
+                                    }
+                                }
+                            },
+                            "PFBJAFHFBDE": "Enemy"
+                        }
+                    ]
+                },
+                "Firework_Damage_Delay": {
+                    "modifierName": "",
+                    "FAFCPJJAIGK": 0.44999998807907104,
+                    "bonusCritical": 100.0,
+                    "NFKOGKMAIIE": [
+                        {
+                            "$type": "TriggerAttackEvent",
+                            "FMDHJHAACGM": {
+                                "LOPCJCIFFBE": {
+                                    "$type": "JDNHMJKEPOH",
+                                    "triggerType": "TriggerNoRepeat",
+                                    "CCNCMOGOFAG": {
+                                        "$type": "DELDMCFKBBL",
+                                        "offset": {
+                                            "KKKLBADAPPB": 1.0
+                                        },
+                                        "FPDJOHEHNDD": true
+                                    },
+                                    "DMIKDAOCFDG": {
+                                        "NEEHMANEJKM": 4.5,
+                                        "KKKLBADAPPB": 2.0,
+                                        "GENNNOANKOO": 4.5
+                                    }
+                                },
+                                "OIAMOBFMPAB": {
+                                    "KNOKCFHALLI": "",
+                                    "HOKPLNACNKG": "",
+                                    "ILLFBEHPCJA": "default",
+                                    "BAPFFKCLDPC": {
+                                        "OLLFABADCKH": 0.4000000059604645,
+                                        "PDHAKJCMPHB": 0.0,
+                                        "elementType": "Fire",
+                                        "bonusCritical": 25.0,
+                                        "FFIIMACIKEA": 0.0,
+                                        "ELCPFOMENGK": "Range",
+                                        "AEOLDMAMNLM": 0.0
+                                    },
+                                    "OCHEEDIDOHI": {
+                                        "AIDMNBLLAIJ": "default",
+                                        "OEGAJNNFFPO": "LV0"
+                                    }
+                                }
+                            },
+                            "PFBJAFHFBDE": "Enemy"
+                        }
+                    ]
+                }
+            },
+            "onAdded": [
+                {
+                    "$type": "ApplyModifier",
+                    "modifierName": "Firework_Logic"
+                },
+                {
+                    "$type": "ApplyModifier",
+                    "modifierName": "Firework_Damage_Delay"
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "BoxMatch_FireWork_Lv2",
+            "modifiers": {
+                "Bullet_VFX": {
+                    "modifierName": "",
+                    "elementType": "Fire",
+                    "bonusCritical": 25.0,
+                    "isElementDurabilityMutable": false,
+                    "onAdded": [
+                        {
+                            "$type": "AttachEffect",
+                            "LHHFHDEJOHC": "Eff_Monster_BoxMatch_Firework_Lv2_Bullet",
+                            "PCLAEGHPNHE": -1.0
+                        },
+                        {
+                            "$type": "AttachEffect",
+                            "LHHFHDEJOHC": "Eff_Monster_BoxMatch_Firework_Lv2_Bullet_Trail",
+                            "PCLAEGHPNHE": -1.0
+                        }
+                    ]
+                }
+            },
+            "onAdded": [
+                {
+                    "$type": "AttachModifier",
+                    "modifierName": "Bullet_VFX"
+                }
+            ],
+            "onAbilityStart": [
+                {
+                    "$type": "RemoveModifier",
+                    "modifierName": "Bullet_VFX"
+                },
+                {
+                    "$type": "CreateGadget",
+                    "CCNCMOGOFAG": {
+                        "$type": "NCCAHOCNGAN"
+                    },
+                    "BLPPFMNOOIO": 42501017
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "BoxMatch_Hatchet_FireWork_Lv2_Attack",
+            "modifiers": {
+                "Firework_Damage_Delay_Lv2": {
+                    "modifierName": "",
+                    "FAFCPJJAIGK": 0.4000000059604645,
+                    "bonusCritical": 100.0,
+                    "ANPDJHOGAFE": 0.09000000357627869,
+                    "MDPGEKAIFIM": [
+                        {
+                            "$type": "TriggerAttackEvent",
+                            "FMDHJHAACGM": {
+                                "LOPCJCIFFBE": {
+                                    "$type": "IHKJIHKGECH",
+                                    "triggerType": "TriggerNoRepeat",
+                                    "CCNCMOGOFAG": {
+                                        "$type": "DELDMCFKBBL",
+                                        "FPDJOHEHNDD": true
+                                    },
+                                    "GGEJLLOCJDH": 5.199999809265137
+                                },
+                                "OIAMOBFMPAB": {
+                                    "KNOKCFHALLI": "",
+                                    "HOKPLNACNKG": "",
+                                    "ILLFBEHPCJA": "default",
+                                    "BAPFFKCLDPC": {
+                                        "OLLFABADCKH": 0.4000000059604645,
+                                        "PDHAKJCMPHB": 0.0,
+                                        "elementType": "Fire",
+                                        "bonusCritical": 25.0,
+                                        "GAOIEGMFFDJ": "Default",
+                                        "FFIIMACIKEA": 0.0,
+                                        "ELCPFOMENGK": "Range",
+                                        "AEOLDMAMNLM": 0.0
+                                    },
+                                    "OCHEEDIDOHI": {
+                                        "AIDMNBLLAIJ": "default",
+                                        "OEGAJNNFFPO": "LV0"
+                                    }
+                                }
+                            },
+                            "PFBJAFHFBDE": "Enemy"
+                        }
+                    ]
+                }
+            },
+            "onAdded": [
+                {
+                    "$type": "FireEffect",
+                    "LHHFHDEJOHC": "Eff_Monster_BoxMatch_Firework_Lv2_Attack",
+                    "CCNCMOGOFAG": {
+                        "$type": "DELDMCFKBBL",
+                        "FPDJOHEHNDD": true
+                    },
+                    "PCLAEGHPNHE": -1.0
+                },
+                {
+                    "$type": "TriggerAttackEvent",
+                    "FMDHJHAACGM": {
+                        "LOPCJCIFFBE": {
+                            "$type": "IHKJIHKGECH",
+                            "triggerType": "TriggerNoRepeat",
+                            "CCNCMOGOFAG": {
+                                "$type": "DELDMCFKBBL",
+                                "FPDJOHEHNDD": true
+                            },
+                            "GGEJLLOCJDH": 5.199999809265137
+                        },
+                        "OIAMOBFMPAB": {
+                            "KNOKCFHALLI": "",
+                            "HOKPLNACNKG": "",
+                            "ILLFBEHPCJA": "default",
+                            "BAPFFKCLDPC": {
+                                "OLLFABADCKH": 2.4000000953674316,
+                                "PDHAKJCMPHB": 0.0,
+                                "elementType": "Fire",
+                                "bonusCritical": 50.0,
+                                "GAOIEGMFFDJ": "Default",
+                                "FFIIMACIKEA": 250.0,
+                                "ELCPFOMENGK": "Range",
+                                "AEOLDMAMNLM": 0.0
+                            },
+                            "OCHEEDIDOHI": {
+                                "AIDMNBLLAIJ": "default",
+                                "OEGAJNNFFPO": "LV3"
+                            },
+                            "KPCBFANCGFH": true,
+                            "FCDFPCPCJGO": {
+                                "FIKIBNDMNEF": 1.0,
+                                "NCDMOKAIAJD": 0.23999999463558197
+                            }
+                        }
+                    },
+                    "PFBJAFHFBDE": "Enemy"
+                },
+                {
+                    "$type": "ApplyModifier",
+                    "modifierName": "Firework_Damage_Delay_Lv2"
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "BoxMatch_Hatchet_Equip_Display_Manager",
+            "abilityMixins": [
+                {
+                    "$type": "AttachModifierToSelfGlobalValueMixin",
+                    "globalValueKey": "_SHEATH_WEAPON",
+                    "defaultGlobalValueOnCreate": 1.0,
+                    "valueSteps": [
+                        -0.5,
+                        0.5,
+                        1.5
+                    ],
+                    "modifierNameSteps": [
+                        "BoxMatch_ShowWeapon",
+                        "BoxMatch_SheathWeapon"
+                    ]
+                },
+                {
+                    "$type": "DoActionByPoseIDMixin",
+                    "OLJKDPFLMCF": [
+                        1009
+                    ],
+                    "EEGIIGFKBHC": [
+                        {
+                            "$type": "SetAnimatorTrigger",
+                            "POPKLBPMAJN": "SheathWeapon"
+                        }
+                    ]
+                }
+            ],
+            "modifiers": {
+                "BoxMatch_SheathWeapon": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "onAdded": [
+                        {
+                            "$type": "SetWeaponAttachPointRealName",
+                            "DBNEEEGIJGN": true,
+                            "OFIIHIFLCMB": "equip01",
+                            "AGEJACLACAD": "WeaponSheathPoint"
+                        }
+                    ],
+                    "FCHBGPJGEBK": [
+                        {
+                            "$type": "SetWeaponAttachPointRealName",
+                            "OFIIHIFLCMB": "equip01",
+                            "AGEJACLACAD": "WeaponSheathPoint"
+                        }
+                    ],
+                    "NGLFJIILCGM": [
+                        {
+                            "$type": "SetWeaponAttachPointRealName",
+                            "OFIIHIFLCMB": "equip01",
+                            "AGEJACLACAD": "WeaponSheathPoint"
+                        }
+                    ]
+                },
+                "BoxMatch_ShowWeapon": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "onAdded": [
+                        {
+                            "$type": "SetWeaponAttachPointRealName",
+                            "OFIIHIFLCMB": "equip01",
+                            "AGEJACLACAD": ""
+                        }
+                    ]
+                }
+            },
+            "onAbilityStart": [
+                {
+                    "$type": "SetGlobalValue",
+                    "value": 0.0,
+                    "NGGCNKPAODB": "_SHEATH_WEAPON",
+                    "LBHGJKHHAKP": 0.0,
+                    "EMGNPOKHMNN": 0.0
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "BoxMatch_Hatchet_Dodge",
+            "abilityMixins": [
+                {
+                    "$type": "EntityDefenceMixin",
+                    "FHCHNMKMJJA": [
+                        "Slash01_AS",
+                        "Slash02_AS",
+                        "TripleAttack",
+                        "JumpAttack_AS"
+                    ],
+                    "NGADIBKINLO": "DodgeTrigger",
+                    "GEGJNPPKBDI": 100.0,
+                    "BPNCEFGKNCD": 0.5,
+                    "AOIABNCMNLD": 0.25,
+                    "PGEEBEOJKED": 0.30000001192092896,
+                    "GFDMPEDMEDN": 0
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "BoxMatch_Hatchet_AttackSteer",
+            "abilityMixins": [
+                {
+                    "$type": "SteerAttackMixin",
+                    "LMMLIKMOKHL": [
+                        "Slash01"
+                    ],
+                    "EIAGKLKHEFP": 0.20000000298023224,
+                    "GGMOCFABGPD": 0.26100000739097595,
+                    "KNPBDOFJKKB": 900.0,
+                    "APILILGPPAD": "",
+                    "OCDBANEEBAM": true
+                },
+                {
+                    "$type": "SteerAttackMixin",
+                    "LMMLIKMOKHL": [
+                        "Slash01"
+                    ],
+                    "EIAGKLKHEFP": 0.26100000739097595,
+                    "GGMOCFABGPD": 0.32499998807907104,
+                    "KNPBDOFJKKB": 240.0,
+                    "APILILGPPAD": "",
+                    "OCDBANEEBAM": true
+                },
+                {
+                    "$type": "SteerAttackMixin",
+                    "LMMLIKMOKHL": [
+                        "Slash02"
+                    ],
+                    "EIAGKLKHEFP": 0.328000009059906,
+                    "GGMOCFABGPD": 0.3540000021457672,
+                    "KNPBDOFJKKB": 240.0,
+                    "APILILGPPAD": "",
+                    "OCDBANEEBAM": true
+                },
+                {
+                    "$type": "SteerAttackMixin",
+                    "LMMLIKMOKHL": [
+                        "TripleAttack"
+                    ],
+                    "EIAGKLKHEFP": 0.2199999988079071,
+                    "GGMOCFABGPD": 0.33000001311302185,
+                    "KNPBDOFJKKB": 900.0,
+                    "APILILGPPAD": "",
+                    "OCDBANEEBAM": true
+                },
+                {
+                    "$type": "SteerAttackMixin",
+                    "LMMLIKMOKHL": [
+                        "TripleAttack"
+                    ],
+                    "EIAGKLKHEFP": 0.5199999809265137,
+                    "GGMOCFABGPD": 0.5569999814033508,
+                    "KNPBDOFJKKB": 480.0,
+                    "APILILGPPAD": "",
+                    "OCDBANEEBAM": true
+                },
+                {
+                    "$type": "SteerAttackMixin",
+                    "LMMLIKMOKHL": [
+                        "JumpAttack"
+                    ],
+                    "EIAGKLKHEFP": 0.20999999344348907,
+                    "GGMOCFABGPD": 0.3400000035762787,
+                    "KNPBDOFJKKB": 700.0,
+                    "APILILGPPAD": "",
+                    "OCDBANEEBAM": true
+                },
+                {
+                    "$type": "SteerAttackMixin",
+                    "LMMLIKMOKHL": [
+                        "FireWork"
+                    ],
+                    "KNPBDOFJKKB": 180.0,
+                    "APILILGPPAD": "",
+                    "OCDBANEEBAM": true
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "BoxMatch_Affix_Skirmisher_SprayGun_Ice",
+            "abilityMixins": [
+                {
+                    "$type": "DoActionByAnimatorStateIDMixin",
+                    "FHCHNMKMJJA": [
+                        "Improve"
+                    ],
+                    "PLOCKLIHJKB": [
+                        {
+                            "$type": "ServerLuaCall",
+                            "FNBGNCANKJF": "CurGalleryControlGroup",
+                            "FDPMGLDLLIN": "SLC_BoxMatch_ShowReminder",
+                            "HALOALHGGNM": 1,
+                            "param1": 1.0,
+                            "HFOIEKLCLEM": 0.0,
+                            "MCLOKLEBGPH": 0.0
+                        },
+                        {
+                            "$type": "ServerLuaCall",
+                            "FNBGNCANKJF": "CurGalleryControlGroup",
+                            "FDPMGLDLLIN": "SLC_SkillHint_Enabled",
+                            "HALOALHGGNM": 1,
+                            "param1": 1.0,
+                            "HFOIEKLCLEM": 0.0,
+                            "MCLOKLEBGPH": 0.0
+                        },
+                        {
+                            "$type": "TriggerAudio",
+                            "MNCMNAOBMDC": {
+                                "$type": "KKBFMANIJFN",
+                                "MNCMNAOBMDC": {
+                                    "text": "Play_ui_activity_BoxMatch_InLevel_Jubilate"
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "$type": "DoActionByAnimatorStateIDMixin",
+                    "FHCHNMKMJJA": [
+                        "Weak_BS"
+                    ],
+                    "EEGIIGFKBHC": [
+                        {
+                            "$type": "ServerLuaCall",
+                            "FNBGNCANKJF": "CurGalleryControlGroup",
+                            "FDPMGLDLLIN": "SLC_BoxMatch_ShowReminder",
+                            "HALOALHGGNM": 1,
+                            "param1": 2.0,
+                            "HFOIEKLCLEM": 0.0,
+                            "MCLOKLEBGPH": 0.0
+                        },
+                        {
+                            "$type": "ServerLuaCall",
+                            "FNBGNCANKJF": "CurGalleryControlGroup",
+                            "FDPMGLDLLIN": "SLC_SkillHint_Disabled",
+                            "HALOALHGGNM": 1,
+                            "param1": 1.0,
+                            "HFOIEKLCLEM": 0.0,
+                            "MCLOKLEBGPH": 0.0
+                        },
+                        {
+                            "$type": "TriggerAudio",
+                            "MNCMNAOBMDC": {
+                                "$type": "KKBFMANIJFN",
+                                "MNCMNAOBMDC": {
+                                    "text": "Play_ui_activity_BoxMatch_InLevel_Jubilate"
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "$type": "ChangeBillboardMixin",
+                    "FDEELEHEJHH": {
+                        "$type": "OPBKEDPMDBD",
+                        "PAOPLDJGAKA": "BillboardAttach",
+                        "offset": {
+                            "x": -0.3499999940395355
+                        },
+                        "KNBIHIMMLME": "Character",
+                        "NPDFLJLNCJL": 100.0,
+                        "KGHDNJLCJNM": true,
+                        "KAFAFJNGLAG": true,
+                        "DMIKDAOCFDG": "Big"
+                    }
+                }
+            ],
+            "EGGOIPOIGJA": true
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "BoxMatch_Affix_Samurai_Kairagi",
+            "abilityMixins": [
+                {
+                    "$type": "DoActionByPoseIDMixin",
+                    "OLJKDPFLMCF": [
+                        201
+                    ],
+                    "EEGIIGFKBHC": [
+                        {
+                            "$type": "ServerLuaCall",
+                            "FNBGNCANKJF": "CurGalleryControlGroup",
+                            "FDPMGLDLLIN": "SLC_BoxMatch_ShowReminder",
+                            "HALOALHGGNM": 1,
+                            "param1": 4.0,
+                            "HFOIEKLCLEM": 0.0,
+                            "MCLOKLEBGPH": 0.0
+                        }
+                    ]
+                },
+                {
+                    "$type": "AttachToAbilityStateMixin",
+                    "LGDAFLEHFOH": [
+                        "ElementFrozen"
+                    ],
+                    "modifierName": "SendElementFrozenSLC"
+                },
+                {
+                    "$type": "ChangeBillboardMixin",
+                    "FDEELEHEJHH": {
+                        "$type": "OPBKEDPMDBD",
+                        "PAOPLDJGAKA": "BillboardAttach",
+                        "KNBIHIMMLME": "Character",
+                        "NPDFLJLNCJL": 100.0,
+                        "KGHDNJLCJNM": true,
+                        "KAFAFJNGLAG": true,
+                        "NBCDKHPGJDC": 50.0,
+                        "DMIKDAOCFDG": "Big"
+                    }
+                }
+            ],
+            "modifiers": {
+                "SendElementFrozenSLC": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "onAdded": [
+                        {
+                            "$type": "ServerLuaCall",
+                            "FNBGNCANKJF": "CurGalleryControlGroup",
+                            "FDPMGLDLLIN": "SLC_BoxMatch_ShowReminder",
+                            "HALOALHGGNM": 1,
+                            "param1": 7.0,
+                            "HFOIEKLCLEM": 0.0,
+                            "MCLOKLEBGPH": 0.0
+                        },
+                        {
+                            "$type": "TriggerAudio",
+                            "FLEEHCIOPKA": [
+                                {
+                                    "$type": "OMPKIEPKGPF",
+                                    "KMGAOOHMCPK": "Self",
+                                    "NGGCNKPAODB": "_AUDIO_TRIGGERED_",
+                                    "value": 0.0
+                                }
+                            ],
+                            "MNCMNAOBMDC": {
+                                "$type": "KKBFMANIJFN",
+                                "MNCMNAOBMDC": {
+                                    "text": "Play_ui_activity_BoxMatch_InLevel_Jubilate"
+                                }
+                            }
+                        },
+                        {
+                            "$type": "SetGlobalValue",
+                            "value": 1.0,
+                            "NGGCNKPAODB": "_AUDIO_TRIGGERED_",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        }
+                    ]
+                }
+            },
+            "onAdded": [
+                {
+                    "$type": "SetGlobalValue",
+                    "value": 0.0,
+                    "NGGCNKPAODB": "_AUDIO_TRIGGERED_",
+                    "LBHGJKHHAKP": 0.0,
+                    "EMGNPOKHMNN": 0.0
+                }
+            ],
+            "EGGOIPOIGJA": true
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "BoxMatch_Affix_MuscleMan_NoWeapon",
+            "abilityMixins": [
+                {
+                    "$type": "DoActionByAnimatorStateIDMixin",
+                    "FHCHNMKMJJA": [
+                        "UltStrike_BS",
+                        "UltStrike_Charge"
+                    ],
+                    "EEGIIGFKBHC": [
+                        {
+                            "$type": "ServerLuaCall",
+                            "FNBGNCANKJF": "CurGalleryControlGroup",
+                            "FDPMGLDLLIN": "SLC_BoxMatch_ShowReminder",
+                            "HALOALHGGNM": 1,
+                            "param1": 9.0,
+                            "HFOIEKLCLEM": 0.0,
+                            "MCLOKLEBGPH": 0.0
+                        },
+                        {
+                            "$type": "ServerLuaCall",
+                            "FNBGNCANKJF": "CurGalleryControlGroup",
+                            "FDPMGLDLLIN": "SLC_SkillHint_Enabled",
+                            "HALOALHGGNM": 1,
+                            "param1": 3.0,
+                            "HFOIEKLCLEM": 0.0,
+                            "MCLOKLEBGPH": 0.0
+                        },
+                        {
+                            "$type": "ServerLuaCall",
+                            "FNBGNCANKJF": "CurGalleryControlGroup",
+                            "FDPMGLDLLIN": "SLC_SkillHint_Enabled",
+                            "HALOALHGGNM": 1,
+                            "param1": 2.0,
+                            "HFOIEKLCLEM": 0.0,
+                            "MCLOKLEBGPH": 0.0
+                        }
+                    ],
+                    "PLOCKLIHJKB": [
+                        {
+                            "$type": "ServerLuaCall",
+                            "FNBGNCANKJF": "CurGalleryControlGroup",
+                            "FDPMGLDLLIN": "SLC_SkillHint_Disabled",
+                            "HALOALHGGNM": 1,
+                            "param1": 3.0,
+                            "HFOIEKLCLEM": 0.0,
+                            "MCLOKLEBGPH": 0.0
+                        },
+                        {
+                            "$type": "ServerLuaCall",
+                            "FNBGNCANKJF": "CurGalleryControlGroup",
+                            "FDPMGLDLLIN": "SLC_SkillHint_Disabled",
+                            "HALOALHGGNM": 1,
+                            "param1": 2.0,
+                            "HFOIEKLCLEM": 0.0,
+                            "MCLOKLEBGPH": 0.0
+                        }
+                    ]
+                },
+                {
+                    "$type": "ChangeBillboardMixin",
+                    "FDEELEHEJHH": {
+                        "$type": "OPBKEDPMDBD",
+                        "PAOPLDJGAKA": "BillboardAttach",
+                        "offset": {
+                            "x": -0.05000000074505806
+                        },
+                        "KNBIHIMMLME": "Character",
+                        "GFOGDCALKML": 0.25,
+                        "NPDFLJLNCJL": 100.0,
+                        "KGHDNJLCJNM": true,
+                        "KAFAFJNGLAG": true
+                    }
+                }
+            ],
+            "onAdded": [
+                {
+                    "$type": "SetGlobalValue",
+                    "value": 1.0,
+                    "NGGCNKPAODB": "_IS_IN_BOX_MATCH",
+                    "LBHGJKHHAKP": 0.0,
+                    "EMGNPOKHMNN": 0.0
+                }
+            ],
+            "EGGOIPOIGJA": true
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "BoxMatch_Affix_MachinaIustitia_Ruggiero",
+            "abilityMixins": [
+                {
+                    "$type": "DoActionByPoseIDMixin",
+                    "OLJKDPFLMCF": [
+                        101
+                    ],
+                    "EEGIIGFKBHC": [
+                        {
+                            "$type": "ServerLuaCall",
+                            "FNBGNCANKJF": "CurGalleryControlGroup",
+                            "FDPMGLDLLIN": "SLC_BoxMatch_ShowReminder",
+                            "HALOALHGGNM": 1,
+                            "param1": 3.0,
+                            "HFOIEKLCLEM": 0.0,
+                            "MCLOKLEBGPH": 0.0
+                        }
+                    ]
+                },
+                {
+                    "$type": "ChangeBillboardMixin",
+                    "FDEELEHEJHH": {
+                        "$type": "OPBKEDPMDBD",
+                        "PAOPLDJGAKA": "BillboardAttach",
+                        "KNBIHIMMLME": "Character",
+                        "GFOGDCALKML": 0.4000000059604645,
+                        "NPDFLJLNCJL": 100.0,
+                        "KGHDNJLCJNM": true,
+                        "KAFAFJNGLAG": true,
+                        "DMIKDAOCFDG": "Big"
+                    }
+                }
+            ],
+            "EGGOIPOIGJA": true
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "BoxMatch_Affix_MachinaIustitia_Bradamante",
+            "abilityMixins": [
+                {
+                    "$type": "DoActionByPoseIDMixin",
+                    "OLJKDPFLMCF": [
+                        101
+                    ],
+                    "EEGIIGFKBHC": [
+                        {
+                            "$type": "ServerLuaCall",
+                            "FNBGNCANKJF": "CurGalleryControlGroup",
+                            "FDPMGLDLLIN": "SLC_BoxMatch_ShowReminder",
+                            "HALOALHGGNM": 1,
+                            "param1": 8.0,
+                            "HFOIEKLCLEM": 0.0,
+                            "MCLOKLEBGPH": 0.0
+                        },
+                        {
+                            "$type": "TriggerTaunt",
+                            "musicSubStates": {
+                                "$type": "HGNAFICLGFP",
+                                "IBPOJODNMHO": "CircleR30H10",
+                                "CHPLPFBEPDN": "Enemy",
+                                "CHGLFBPDMKF": 1.0
+                            },
+                            "NKCIEFLMBMK": -10000.0
+                        },
+                        {
+                            "$type": "ServerLuaCall",
+                            "FNBGNCANKJF": "CurGalleryControlGroup",
+                            "FDPMGLDLLIN": "SLC_SkillHint_Disabled",
+                            "HALOALHGGNM": 1,
+                            "param1": 2.0,
+                            "HFOIEKLCLEM": 0.0,
+                            "MCLOKLEBGPH": 0.0
+                        },
+                        {
+                            "$type": "ApplyModifier",
+                            "musicSubStates": {
+                                "$type": "HGNAFICLGFP",
+                                "IBPOJODNMHO": "CircleR30H10",
+                                "CHPLPFBEPDN": "Alliance",
+                                "CHGLFBPDMKF": 1.0
+                            },
+                            "modifierName": "AddTaunt"
+                        },
+                        {
+                            "$type": "TriggerAudio",
+                            "FLEEHCIOPKA": [
+                                {
+                                    "$type": "OMPKIEPKGPF",
+                                    "KMGAOOHMCPK": "Self",
+                                    "NGGCNKPAODB": "_AUDIO_TRIGGERED_",
+                                    "value": 0.0
+                                }
+                            ],
+                            "MNCMNAOBMDC": {
+                                "$type": "KKBFMANIJFN",
+                                "MNCMNAOBMDC": {
+                                    "text": "Play_ui_activity_BoxMatch_InLevel_Jubilate"
+                                }
+                            }
+                        },
+                        {
+                            "$type": "SetGlobalValue",
+                            "value": 1.0,
+                            "NGGCNKPAODB": "_AUDIO_TRIGGERED_",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        }
+                    ]
+                },
+                {
+                    "$type": "ChangeBillboardMixin",
+                    "FDEELEHEJHH": {
+                        "$type": "OPBKEDPMDBD",
+                        "PAOPLDJGAKA": "BillboardAttach",
+                        "KNBIHIMMLME": "Character",
+                        "GFOGDCALKML": 0.4000000059604645,
+                        "NPDFLJLNCJL": 100.0,
+                        "KGHDNJLCJNM": true,
+                        "KAFAFJNGLAG": true,
+                        "DMIKDAOCFDG": "Big"
+                    }
+                }
+            ],
+            "modifiers": {
+                "Taunt_Timer": {
+                    "modifierName": "",
+                    "FAFCPJJAIGK": 6.0,
+                    "bonusCritical": 100.0,
+                    "NFKOGKMAIIE": [
+                        {
+                            "$type": "TriggerTaunt",
+                            "musicSubStates": {
+                                "$type": "HGNAFICLGFP",
+                                "IBPOJODNMHO": "CircleR30H10",
+                                "CHPLPFBEPDN": "Enemy",
+                                "CHGLFBPDMKF": 1.0
+                            },
+                            "NKCIEFLMBMK": 10000.0
+                        },
+                        {
+                            "$type": "ApplyModifier",
+                            "modifierName": "Hint_Timer"
+                        }
+                    ]
+                },
+                "Hint_Timer": {
+                    "modifierName": "",
+                    "FAFCPJJAIGK": 4.0,
+                    "bonusCritical": 100.0,
+                    "NFKOGKMAIIE": [
+                        {
+                            "$type": "ServerLuaCall",
+                            "FNBGNCANKJF": "CurGalleryControlGroup",
+                            "FDPMGLDLLIN": "SLC_SkillHint_Enabled",
+                            "HALOALHGGNM": 1,
+                            "param1": 2.0,
+                            "HFOIEKLCLEM": 0.0,
+                            "MCLOKLEBGPH": 0.0
+                        }
+                    ]
+                },
+                "AddTaunt": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "onAdded": [
+                        {
+                            "$type": "TriggerTaunt",
+                            "musicSubStates": {
+                                "$type": "HGNAFICLGFP",
+                                "IBPOJODNMHO": "CircleR30H10",
+                                "CHPLPFBEPDN": "Enemy",
+                                "CHGLFBPDMKF": 1.0
+                            },
+                            "NKCIEFLMBMK": 10000.0,
+                            "LOLNABDLDIF": true
+                        }
+                    ]
+                }
+            },
+            "onAdded": [
+                {
+                    "$type": "SetGlobalValue",
+                    "value": 0.0,
+                    "NGGCNKPAODB": "_AUDIO_TRIGGERED_",
+                    "LBHGJKHHAKP": 0.0,
+                    "EMGNPOKHMNN": 0.0
+                },
+                {
+                    "$type": "ApplyModifier",
+                    "modifierName": "Taunt_Timer"
+                }
+            ],
+            "EGGOIPOIGJA": true
+        }
+    }
+]

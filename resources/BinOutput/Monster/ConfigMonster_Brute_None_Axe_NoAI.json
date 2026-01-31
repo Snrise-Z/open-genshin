@@ -1,0 +1,1581 @@
+{
+    "common": {
+        "effectAttachShape": {
+            "$type": "BNMOHLDPIIH",
+            "CDOIALFJGFK": "EffectMesh"
+        },
+        "mass": 10000.0,
+        "height": 2.4000000953674316,
+        "modelHeight": 2.4000000953674316,
+        "viewSize": 2.0,
+        "affectedByWorld": true,
+        "checkInSurface": true,
+        "scale": 1.2000000476837158,
+        "useGrassDisplacement": true
+    },
+    "headControl": {
+        "$type": "CKJGDIDMJPB",
+        "useHeadControl": true,
+        "CMDLFPLAGPF": 45.0,
+        "NBLKGDPCOPJ": 30.0,
+        "DHFKIFJJEMB": [
+            "NormalIdle/Standby",
+            "NormalMove/WalkForward",
+            "NormalMove/WalkBack",
+            "NormalMove/WalkRight",
+            "NormalMove/WalkLeft",
+            "NormalMove/Run",
+            "TurnLeft/TurnLeft_BS",
+            "TurnLeft/TurnLeft_AS",
+            "TurnRight/TurnRight_BS",
+            "TurnRight/TurnRight_AS"
+        ]
+    },
+    "dither": {
+        "CKFAFHECEJJ": 2.0
+    },
+    "combat": {
+        "property": {
+            "endureType": "Monster_Demiboss_Humanoid",
+            "weight": 150.0
+        },
+        "beHit": {
+            "hitBloodEffect": ""
+        },
+        "combatLock": {
+            "lockShape": "CircleLockEnemy",
+            "lockType": "Avatar&Monster_Lv4"
+        },
+        "die": {
+            "hasAnimatorDie": true,
+            "dieEndTime": 2.0,
+            "dieForceDisappearTime": 4.0,
+            "dieDisappearEffect": "Eff_Death_Common",
+            "dieShaderData": "MonsterDie",
+            "useRagDoll": true,
+            "muteHitBox": true,
+            "dieDenyLockOn": true,
+            "dieIsGhostToEnemy": true,
+            "dieIgnoreTriggerBullet": true,
+            "muteBillboard": true,
+            "mutePushCollider": true
+        },
+        "animEvents": {
+            "Attack01": {
+                "attackPattern": {
+                    "$type": "FPJICLLGBLO",
+                    "triggerType": "TriggerNoRepeat",
+                    "born": {
+                        "$type": "AJCFIBNMGKO",
+                        "offset": {
+                            "EMBMLEBGFOI": 0.0,
+                            "NABPJFNICAE": 0.0,
+                            "MLOLIKEJCKB": 1.0
+                        }
+                    },
+                    "DLFACKMBPCH": 4.5
+                },
+                "attackInfo": {
+                    "attackTag": "",
+                    "attenuationTag": "",
+                    "attenuationGroup": "default",
+                    "attackProperty": {
+                        "ACKCDHKEGCK": 0.5,
+                        "JIICGJODDDM": 0.0,
+                        "bonusCriticalHurt": 100.0,
+                        "strikeType": "Blunt",
+                        "enBreak": 100.0,
+                        "attackType": "Melee",
+                        "damagePercentage": 0.0
+                    },
+                    "hitPattern": {
+                        "onHitEffectName": "default",
+                        "hitImpulseType": "LV5"
+                    },
+                    "forceCameraShake": true,
+                    "cameraShake": {
+                        "shakeType": "CustomVector",
+                        "shakeRange": 0.03999999910593033,
+                        "shakeTime": 0.09000000357627869,
+                        "shakeDir": {
+                            "x": 1.0,
+                            "z": 1.0
+                        }
+                    }
+                }
+            },
+            "Attack01_Fire": {
+                "attackPattern": {
+                    "$type": "FPJICLLGBLO",
+                    "triggerType": "TriggerNoRepeat",
+                    "born": {
+                        "$type": "AJCFIBNMGKO",
+                        "offset": {
+                            "EMBMLEBGFOI": 0.0,
+                            "NABPJFNICAE": 0.0,
+                            "MLOLIKEJCKB": 1.0
+                        }
+                    },
+                    "DLFACKMBPCH": 4.5
+                },
+                "attackInfo": {
+                    "attackTag": "",
+                    "attenuationTag": "",
+                    "attenuationGroup": "default",
+                    "attackProperty": {
+                        "ACKCDHKEGCK": 0.5,
+                        "JIICGJODDDM": 0.0,
+                        "elementType": "Fire",
+                        "bonusCriticalHurt": 100.0,
+                        "strikeType": "Blunt",
+                        "enBreak": 100.0,
+                        "attackType": "Melee",
+                        "damagePercentage": 0.0
+                    },
+                    "hitPattern": {
+                        "onHitEffectName": "default",
+                        "hitImpulseType": "LV5"
+                    },
+                    "forceCameraShake": true,
+                    "cameraShake": {
+                        "shakeType": "CustomVector",
+                        "shakeRange": 0.11999999731779099,
+                        "shakeTime": 0.09000000357627869,
+                        "shakeDistance": 25.0,
+                        "shakeDir": {
+                            "x": 1.0,
+                            "z": 1.0
+                        }
+                    }
+                }
+            },
+            "Attack02": {
+                "attackPattern": {
+                    "$type": "BOIOFIPLBNK",
+                    "triggerType": "TriggerNoRepeat",
+                    "born": {
+                        "$type": "AJCFIBNMGKO",
+                        "offset": {
+                            "EMBMLEBGFOI": 0.0,
+                            "NABPJFNICAE": 3.0,
+                            "MLOLIKEJCKB": -4.0
+                        }
+                    },
+                    "size": {
+                        "EMBMLEBGFOI": 2.4000000953674316,
+                        "NABPJFNICAE": 5.5,
+                        "MLOLIKEJCKB": 9.0
+                    }
+                },
+                "attackInfo": {
+                    "attackTag": "",
+                    "attenuationTag": "",
+                    "attenuationGroup": "default",
+                    "attackProperty": {
+                        "ACKCDHKEGCK": 0.5,
+                        "JIICGJODDDM": 0.0,
+                        "bonusCriticalHurt": 100.0,
+                        "strikeType": "Blunt",
+                        "enBreak": 200.0,
+                        "attackType": "Melee",
+                        "damagePercentage": 0.0
+                    },
+                    "hitPattern": {
+                        "onHitEffectName": "default",
+                        "hitImpulseType": "LV6"
+                    },
+                    "forceCameraShake": true,
+                    "cameraShake": {
+                        "shakeType": "CustomVector",
+                        "shakeRange": 0.05999999865889549,
+                        "shakeTime": 0.23999999463558197,
+                        "shakeDir": {
+                            "y": -1.0
+                        }
+                    }
+                }
+            },
+            "Attack02_Fire": {
+                "attackPattern": {
+                    "$type": "BOIOFIPLBNK",
+                    "triggerType": "TriggerNoRepeat",
+                    "born": {
+                        "$type": "AJCFIBNMGKO",
+                        "offset": {
+                            "EMBMLEBGFOI": 0.0,
+                            "NABPJFNICAE": 3.0,
+                            "MLOLIKEJCKB": -4.0
+                        }
+                    },
+                    "size": {
+                        "EMBMLEBGFOI": 2.4000000953674316,
+                        "NABPJFNICAE": 5.5,
+                        "MLOLIKEJCKB": 9.0
+                    }
+                },
+                "attackInfo": {
+                    "attackTag": "",
+                    "attenuationTag": "",
+                    "attenuationGroup": "default",
+                    "attackProperty": {
+                        "ACKCDHKEGCK": 0.5,
+                        "JIICGJODDDM": 0.0,
+                        "elementType": "Fire",
+                        "bonusCriticalHurt": 100.0,
+                        "strikeType": "Blunt",
+                        "enBreak": 200.0,
+                        "attackType": "Melee",
+                        "damagePercentage": 0.0
+                    },
+                    "hitPattern": {
+                        "onHitEffectName": "default",
+                        "hitImpulseType": "LV6"
+                    },
+                    "forceCameraShake": true,
+                    "cameraShake": {
+                        "shakeType": "CustomVector",
+                        "shakeRange": 0.20000000298023224,
+                        "shakeTime": 0.23999999463558197,
+                        "shakeDistance": 25.0,
+                        "shakeDir": {
+                            "y": -1.0
+                        }
+                    }
+                }
+            },
+            "Attack03": {
+                "attackPattern": {
+                    "$type": "FPJICLLGBLO",
+                    "triggerType": "TriggerNoRepeat",
+                    "born": {
+                        "$type": "AJCFIBNMGKO",
+                        "offset": {
+                            "EMBMLEBGFOI": 0.0,
+                            "NABPJFNICAE": 0.0,
+                            "MLOLIKEJCKB": 1.0
+                        }
+                    },
+                    "DLFACKMBPCH": 4.5
+                },
+                "attackInfo": {
+                    "attackTag": "",
+                    "attenuationTag": "",
+                    "attenuationGroup": "default",
+                    "attackProperty": {
+                        "ACKCDHKEGCK": 0.5,
+                        "JIICGJODDDM": 0.0,
+                        "bonusCriticalHurt": 100.0,
+                        "strikeType": "Blunt",
+                        "enBreak": 100.0,
+                        "attackType": "Melee",
+                        "damagePercentage": 0.0
+                    },
+                    "hitPattern": {
+                        "onHitEffectName": "default",
+                        "hitImpulseType": "LV5"
+                    },
+                    "forceCameraShake": true,
+                    "cameraShake": {
+                        "shakeType": "CustomVector",
+                        "shakeRange": 0.05000000074505806,
+                        "shakeTime": 0.09000000357627869,
+                        "shakeDir": {
+                            "x": 1.0,
+                            "z": 1.0
+                        }
+                    }
+                }
+            },
+            "Attack03_Fire": {
+                "attackPattern": {
+                    "$type": "FPJICLLGBLO",
+                    "triggerType": "TriggerNoRepeat",
+                    "born": {
+                        "$type": "AJCFIBNMGKO",
+                        "offset": {
+                            "EMBMLEBGFOI": 0.0,
+                            "NABPJFNICAE": 0.0,
+                            "MLOLIKEJCKB": 1.0
+                        }
+                    },
+                    "DLFACKMBPCH": 4.5
+                },
+                "attackInfo": {
+                    "attackTag": "",
+                    "attenuationTag": "",
+                    "attenuationGroup": "default",
+                    "attackProperty": {
+                        "ACKCDHKEGCK": 0.5,
+                        "JIICGJODDDM": 0.0,
+                        "elementType": "Fire",
+                        "bonusCriticalHurt": 100.0,
+                        "strikeType": "Blunt",
+                        "enBreak": 100.0,
+                        "attackType": "Melee",
+                        "damagePercentage": 0.0
+                    },
+                    "hitPattern": {
+                        "onHitEffectName": "default",
+                        "hitImpulseType": "LV5"
+                    },
+                    "forceCameraShake": true,
+                    "cameraShake": {
+                        "shakeType": "CustomVector",
+                        "shakeRange": 0.1599999964237213,
+                        "shakeTime": 0.15000000596046448,
+                        "shakeDistance": 25.0,
+                        "shakeDir": {
+                            "x": 1.0,
+                            "z": 1.0
+                        }
+                    }
+                }
+            },
+            "JumpAttack": {
+                "attackPattern": {
+                    "$type": "FPJICLLGBLO",
+                    "triggerType": "TriggerNoRepeat",
+                    "born": {
+                        "$type": "AJCFIBNMGKO",
+                        "offset": {
+                            "EMBMLEBGFOI": 0.0,
+                            "NABPJFNICAE": 0.0,
+                            "MLOLIKEJCKB": 2.5
+                        }
+                    },
+                    "DLFACKMBPCH": 3.0
+                },
+                "attackInfo": {
+                    "attackTag": "",
+                    "attenuationTag": "",
+                    "attenuationGroup": "default",
+                    "attackProperty": {
+                        "ACKCDHKEGCK": 1.0,
+                        "JIICGJODDDM": 0.0,
+                        "bonusCriticalHurt": 100.0,
+                        "strikeType": "Blunt",
+                        "enBreak": 200.0,
+                        "attackType": "Melee",
+                        "damagePercentage": 0.0
+                    },
+                    "hitPattern": {
+                        "onHitEffectName": "default",
+                        "hitImpulseType": "LV6"
+                    },
+                    "forceCameraShake": true,
+                    "cameraShake": {
+                        "shakeType": "CustomVector",
+                        "shakeRange": 0.11999999731779099,
+                        "shakeTime": 0.23999999463558197,
+                        "shakeDir": {
+                            "y": -1.0
+                        }
+                    }
+                }
+            },
+            "JumpAttack_Fire": {
+                "attackPattern": {
+                    "$type": "FPJICLLGBLO",
+                    "triggerType": "TriggerNoRepeat",
+                    "born": {
+                        "$type": "AJCFIBNMGKO",
+                        "offset": {
+                            "EMBMLEBGFOI": 0.0,
+                            "NABPJFNICAE": 0.0,
+                            "MLOLIKEJCKB": 2.5
+                        }
+                    },
+                    "DLFACKMBPCH": 3.0
+                },
+                "attackInfo": {
+                    "attackTag": "",
+                    "attenuationTag": "",
+                    "attenuationGroup": "default",
+                    "attackProperty": {
+                        "ACKCDHKEGCK": 1.0,
+                        "JIICGJODDDM": 0.0,
+                        "elementType": "Fire",
+                        "bonusCriticalHurt": 100.0,
+                        "strikeType": "Blunt",
+                        "enBreak": 200.0,
+                        "attackType": "Melee",
+                        "damagePercentage": 0.0
+                    },
+                    "hitPattern": {
+                        "onHitEffectName": "default",
+                        "hitImpulseType": "LV6"
+                    },
+                    "forceCameraShake": true,
+                    "cameraShake": {
+                        "shakeType": "CustomVector",
+                        "shakeRange": 0.1599999964237213,
+                        "shakeTime": 0.23999999463558197,
+                        "shakeDistance": 25.0,
+                        "shakeDir": {
+                            "y": -1.0
+                        }
+                    }
+                }
+            },
+            "Whirl01": {
+                "attackPattern": {
+                    "$type": "BOIOFIPLBNK",
+                    "triggerType": "TriggerNoRepeat",
+                    "born": {
+                        "$type": "AJCFIBNMGKO",
+                        "offset": {
+                            "EMBMLEBGFOI": 0.0,
+                            "NABPJFNICAE": 1.0,
+                            "MLOLIKEJCKB": 0.0
+                        },
+                        "NLICIODEGDO": {
+                            "$type": "BMAMOFPPNBD",
+                            "JOEDEGAHBHC": {
+                                "EMBMLEBGFOI": 0.0,
+                                "NABPJFNICAE": 0.0,
+                                "MLOLIKEJCKB": 0.0
+                            }
+                        }
+                    },
+                    "size": {
+                        "EMBMLEBGFOI": 2.0,
+                        "NABPJFNICAE": 2.0,
+                        "MLOLIKEJCKB": 4.0
+                    }
+                },
+                "attackInfo": {
+                    "attackTag": "",
+                    "attenuationTag": "",
+                    "attenuationGroup": "default",
+                    "attackProperty": {
+                        "ACKCDHKEGCK": 0.125,
+                        "JIICGJODDDM": 0.0,
+                        "bonusCriticalHurt": 100.0,
+                        "strikeType": "Blunt",
+                        "enBreak": 100.0,
+                        "attackType": "Melee",
+                        "damagePercentage": 0.0
+                    },
+                    "hitPattern": {
+                        "onHitEffectName": "default",
+                        "hitImpulseType": "LV4",
+                        "hitHaltTime": 0.11999999731779099,
+                        "hitHaltTimeScale": 0.05000000074505806
+                    },
+                    "cameraShake": {
+                        "shakeType": "HitVector",
+                        "shakeRange": 0.1599999964237213,
+                        "shakeTime": 0.11999999731779099,
+                        "shakeDistance": 25.0,
+                        "shakeDir": {
+                            "z": 1.0
+                        }
+                    }
+                }
+            },
+            "Whirl02": {
+                "attackPattern": {
+                    "$type": "BOIOFIPLBNK",
+                    "triggerType": "TriggerNoRepeat",
+                    "born": {
+                        "$type": "AJCFIBNMGKO",
+                        "offset": {
+                            "EMBMLEBGFOI": 0.0,
+                            "NABPJFNICAE": 1.0,
+                            "MLOLIKEJCKB": 0.0
+                        },
+                        "NLICIODEGDO": {
+                            "$type": "BMAMOFPPNBD",
+                            "JOEDEGAHBHC": {
+                                "EMBMLEBGFOI": 0.0,
+                                "NABPJFNICAE": 90.0,
+                                "MLOLIKEJCKB": 0.0
+                            }
+                        }
+                    },
+                    "size": {
+                        "EMBMLEBGFOI": 2.0,
+                        "NABPJFNICAE": 2.0,
+                        "MLOLIKEJCKB": 4.0
+                    }
+                },
+                "attackInfo": {
+                    "attackTag": "",
+                    "attenuationTag": "",
+                    "attenuationGroup": "default",
+                    "attackProperty": {
+                        "ACKCDHKEGCK": 0.125,
+                        "JIICGJODDDM": 0.0,
+                        "bonusCriticalHurt": 100.0,
+                        "strikeType": "Blunt",
+                        "enBreak": 100.0,
+                        "attackType": "Melee",
+                        "damagePercentage": 0.0
+                    },
+                    "hitPattern": {
+                        "onHitEffectName": "default",
+                        "hitImpulseType": "LV4",
+                        "hitHaltTime": 0.11999999731779099,
+                        "hitHaltTimeScale": 0.05000000074505806
+                    },
+                    "cameraShake": {
+                        "shakeType": "HitVector",
+                        "shakeRange": 0.1599999964237213,
+                        "shakeTime": 0.11999999731779099,
+                        "shakeDistance": 25.0,
+                        "shakeDir": {
+                            "z": 1.0
+                        }
+                    }
+                }
+            },
+            "Whirl03": {
+                "attackPattern": {
+                    "$type": "BOIOFIPLBNK",
+                    "triggerType": "TriggerNoRepeat",
+                    "born": {
+                        "$type": "AJCFIBNMGKO",
+                        "offset": {
+                            "EMBMLEBGFOI": 0.0,
+                            "NABPJFNICAE": 1.0,
+                            "MLOLIKEJCKB": 0.0
+                        },
+                        "NLICIODEGDO": {
+                            "$type": "BMAMOFPPNBD",
+                            "JOEDEGAHBHC": {
+                                "EMBMLEBGFOI": 0.0,
+                                "NABPJFNICAE": 180.0,
+                                "MLOLIKEJCKB": 0.0
+                            }
+                        }
+                    },
+                    "size": {
+                        "EMBMLEBGFOI": 2.0,
+                        "NABPJFNICAE": 2.0,
+                        "MLOLIKEJCKB": 4.0
+                    }
+                },
+                "attackInfo": {
+                    "attackTag": "",
+                    "attenuationTag": "",
+                    "attenuationGroup": "default",
+                    "attackProperty": {
+                        "ACKCDHKEGCK": 0.125,
+                        "JIICGJODDDM": 0.0,
+                        "bonusCriticalHurt": 100.0,
+                        "strikeType": "Blunt",
+                        "enBreak": 100.0,
+                        "attackType": "Melee",
+                        "damagePercentage": 0.0
+                    },
+                    "hitPattern": {
+                        "onHitEffectName": "default",
+                        "hitImpulseType": "LV4",
+                        "hitHaltTime": 0.11999999731779099,
+                        "hitHaltTimeScale": 0.05000000074505806
+                    },
+                    "cameraShake": {
+                        "shakeType": "HitVector",
+                        "shakeRange": 0.1599999964237213,
+                        "shakeTime": 0.11999999731779099,
+                        "shakeDistance": 25.0,
+                        "shakeDir": {
+                            "z": 1.0
+                        }
+                    }
+                }
+            },
+            "Whirl04": {
+                "attackPattern": {
+                    "$type": "BOIOFIPLBNK",
+                    "triggerType": "TriggerNoRepeat",
+                    "born": {
+                        "$type": "AJCFIBNMGKO",
+                        "offset": {
+                            "EMBMLEBGFOI": 0.0,
+                            "NABPJFNICAE": 1.0,
+                            "MLOLIKEJCKB": 0.0
+                        },
+                        "NLICIODEGDO": {
+                            "$type": "BMAMOFPPNBD",
+                            "JOEDEGAHBHC": {
+                                "EMBMLEBGFOI": 0.0,
+                                "NABPJFNICAE": 270.0,
+                                "MLOLIKEJCKB": 0.0
+                            }
+                        }
+                    },
+                    "size": {
+                        "EMBMLEBGFOI": 2.0,
+                        "NABPJFNICAE": 2.0,
+                        "MLOLIKEJCKB": 4.0
+                    }
+                },
+                "attackInfo": {
+                    "attackTag": "",
+                    "attenuationTag": "",
+                    "attenuationGroup": "default",
+                    "attackProperty": {
+                        "ACKCDHKEGCK": 0.125,
+                        "JIICGJODDDM": 0.0,
+                        "bonusCriticalHurt": 100.0,
+                        "strikeType": "Blunt",
+                        "enBreak": 100.0,
+                        "attackType": "Melee",
+                        "damagePercentage": 0.0
+                    },
+                    "hitPattern": {
+                        "onHitEffectName": "default",
+                        "hitImpulseType": "LV4",
+                        "hitHaltTime": 0.11999999731779099,
+                        "hitHaltTimeScale": 0.05000000074505806
+                    },
+                    "cameraShake": {
+                        "shakeType": "HitVector",
+                        "shakeRange": 0.1599999964237213,
+                        "shakeTime": 0.11999999731779099,
+                        "shakeDistance": 25.0,
+                        "shakeDir": {
+                            "z": 1.0
+                        }
+                    }
+                }
+            },
+            "Whirl05": {
+                "attackPattern": {
+                    "$type": "BOIOFIPLBNK",
+                    "triggerType": "TriggerNoRepeat",
+                    "born": {
+                        "$type": "AJCFIBNMGKO",
+                        "offset": {
+                            "EMBMLEBGFOI": 0.0,
+                            "NABPJFNICAE": 1.0,
+                            "MLOLIKEJCKB": 0.0
+                        },
+                        "NLICIODEGDO": {
+                            "$type": "BMAMOFPPNBD",
+                            "JOEDEGAHBHC": {
+                                "EMBMLEBGFOI": 0.0,
+                                "NABPJFNICAE": 0.0,
+                                "MLOLIKEJCKB": 0.0
+                            }
+                        }
+                    },
+                    "size": {
+                        "EMBMLEBGFOI": 2.0,
+                        "NABPJFNICAE": 2.0,
+                        "MLOLIKEJCKB": 4.0
+                    }
+                },
+                "attackInfo": {
+                    "attackTag": "",
+                    "attenuationTag": "",
+                    "attenuationGroup": "default",
+                    "attackProperty": {
+                        "ACKCDHKEGCK": 0.125,
+                        "JIICGJODDDM": 0.0,
+                        "bonusCriticalHurt": 100.0,
+                        "strikeType": "Blunt",
+                        "enBreak": 100.0,
+                        "attackType": "Melee",
+                        "damagePercentage": 0.0
+                    },
+                    "hitPattern": {
+                        "onHitEffectName": "default",
+                        "hitImpulseType": "LV6",
+                        "hitHaltTime": 0.11999999731779099,
+                        "hitHaltTimeScale": 0.05000000074505806
+                    },
+                    "cameraShake": {
+                        "shakeType": "HitVector",
+                        "shakeRange": 0.1599999964237213,
+                        "shakeTime": 0.11999999731779099,
+                        "shakeDistance": 25.0,
+                        "shakeDir": {
+                            "z": 1.0
+                        }
+                    }
+                }
+            },
+            "Whirl01_Fire": {
+                "attackPattern": {
+                    "$type": "BOIOFIPLBNK",
+                    "triggerType": "TriggerNoRepeat",
+                    "born": {
+                        "$type": "AJCFIBNMGKO",
+                        "offset": {
+                            "EMBMLEBGFOI": 0.0,
+                            "NABPJFNICAE": 1.0,
+                            "MLOLIKEJCKB": 0.0
+                        },
+                        "NLICIODEGDO": {
+                            "$type": "BMAMOFPPNBD",
+                            "JOEDEGAHBHC": {
+                                "EMBMLEBGFOI": 0.0,
+                                "NABPJFNICAE": 0.0,
+                                "MLOLIKEJCKB": 0.0
+                            }
+                        }
+                    },
+                    "size": {
+                        "EMBMLEBGFOI": 2.0,
+                        "NABPJFNICAE": 2.0,
+                        "MLOLIKEJCKB": 4.0
+                    }
+                },
+                "attackInfo": {
+                    "attackTag": "",
+                    "attenuationTag": "",
+                    "attenuationGroup": "default",
+                    "attackProperty": {
+                        "ACKCDHKEGCK": 0.125,
+                        "JIICGJODDDM": 0.0,
+                        "elementType": "Fire",
+                        "bonusCriticalHurt": 100.0,
+                        "strikeType": "Blunt",
+                        "enBreak": 100.0,
+                        "attackType": "Melee",
+                        "damagePercentage": 0.0
+                    },
+                    "hitPattern": {
+                        "onHitEffectName": "default",
+                        "hitImpulseType": "LV4",
+                        "hitHaltTime": 0.11999999731779099,
+                        "hitHaltTimeScale": 0.05000000074505806
+                    },
+                    "cameraShake": {
+                        "shakeType": "HitVector",
+                        "shakeRange": 0.1599999964237213,
+                        "shakeTime": 0.11999999731779099,
+                        "shakeDistance": 25.0,
+                        "shakeDir": {
+                            "z": 1.0
+                        }
+                    }
+                }
+            },
+            "Whirl02_Fire": {
+                "attackPattern": {
+                    "$type": "BOIOFIPLBNK",
+                    "triggerType": "TriggerNoRepeat",
+                    "born": {
+                        "$type": "AJCFIBNMGKO",
+                        "offset": {
+                            "EMBMLEBGFOI": 0.0,
+                            "NABPJFNICAE": 1.0,
+                            "MLOLIKEJCKB": 0.0
+                        },
+                        "NLICIODEGDO": {
+                            "$type": "BMAMOFPPNBD",
+                            "JOEDEGAHBHC": {
+                                "EMBMLEBGFOI": 0.0,
+                                "NABPJFNICAE": 90.0,
+                                "MLOLIKEJCKB": 0.0
+                            }
+                        }
+                    },
+                    "size": {
+                        "EMBMLEBGFOI": 2.0,
+                        "NABPJFNICAE": 2.0,
+                        "MLOLIKEJCKB": 4.0
+                    }
+                },
+                "attackInfo": {
+                    "attackTag": "",
+                    "attenuationTag": "",
+                    "attenuationGroup": "default",
+                    "attackProperty": {
+                        "ACKCDHKEGCK": 0.125,
+                        "JIICGJODDDM": 0.0,
+                        "elementType": "Fire",
+                        "bonusCriticalHurt": 100.0,
+                        "strikeType": "Blunt",
+                        "enBreak": 100.0,
+                        "attackType": "Melee",
+                        "damagePercentage": 0.0
+                    },
+                    "hitPattern": {
+                        "onHitEffectName": "default",
+                        "hitImpulseType": "LV4",
+                        "hitHaltTime": 0.11999999731779099,
+                        "hitHaltTimeScale": 0.05000000074505806
+                    },
+                    "cameraShake": {
+                        "shakeType": "HitVector",
+                        "shakeRange": 0.1599999964237213,
+                        "shakeTime": 0.11999999731779099,
+                        "shakeDistance": 25.0,
+                        "shakeDir": {
+                            "z": 1.0
+                        }
+                    }
+                }
+            },
+            "Whirl03_Fire": {
+                "attackPattern": {
+                    "$type": "BOIOFIPLBNK",
+                    "triggerType": "TriggerNoRepeat",
+                    "born": {
+                        "$type": "AJCFIBNMGKO",
+                        "offset": {
+                            "EMBMLEBGFOI": 0.0,
+                            "NABPJFNICAE": 1.0,
+                            "MLOLIKEJCKB": 0.0
+                        },
+                        "NLICIODEGDO": {
+                            "$type": "BMAMOFPPNBD",
+                            "JOEDEGAHBHC": {
+                                "EMBMLEBGFOI": 0.0,
+                                "NABPJFNICAE": 180.0,
+                                "MLOLIKEJCKB": 0.0
+                            }
+                        }
+                    },
+                    "size": {
+                        "EMBMLEBGFOI": 2.0,
+                        "NABPJFNICAE": 2.0,
+                        "MLOLIKEJCKB": 4.0
+                    }
+                },
+                "attackInfo": {
+                    "attackTag": "",
+                    "attenuationTag": "",
+                    "attenuationGroup": "default",
+                    "attackProperty": {
+                        "ACKCDHKEGCK": 0.125,
+                        "JIICGJODDDM": 0.0,
+                        "elementType": "Fire",
+                        "bonusCriticalHurt": 100.0,
+                        "strikeType": "Blunt",
+                        "enBreak": 100.0,
+                        "attackType": "Melee",
+                        "damagePercentage": 0.0
+                    },
+                    "hitPattern": {
+                        "onHitEffectName": "default",
+                        "hitImpulseType": "LV4",
+                        "hitHaltTime": 0.11999999731779099,
+                        "hitHaltTimeScale": 0.05000000074505806
+                    },
+                    "cameraShake": {
+                        "shakeType": "HitVector",
+                        "shakeRange": 0.1599999964237213,
+                        "shakeTime": 0.11999999731779099,
+                        "shakeDistance": 25.0,
+                        "shakeDir": {
+                            "z": 1.0
+                        }
+                    }
+                }
+            },
+            "Whirl04_Fire": {
+                "attackPattern": {
+                    "$type": "BOIOFIPLBNK",
+                    "triggerType": "TriggerNoRepeat",
+                    "born": {
+                        "$type": "AJCFIBNMGKO",
+                        "offset": {
+                            "EMBMLEBGFOI": 0.0,
+                            "NABPJFNICAE": 1.0,
+                            "MLOLIKEJCKB": 0.0
+                        },
+                        "NLICIODEGDO": {
+                            "$type": "BMAMOFPPNBD",
+                            "JOEDEGAHBHC": {
+                                "EMBMLEBGFOI": 0.0,
+                                "NABPJFNICAE": 270.0,
+                                "MLOLIKEJCKB": 0.0
+                            }
+                        }
+                    },
+                    "size": {
+                        "EMBMLEBGFOI": 2.0,
+                        "NABPJFNICAE": 2.0,
+                        "MLOLIKEJCKB": 4.0
+                    }
+                },
+                "attackInfo": {
+                    "attackTag": "",
+                    "attenuationTag": "",
+                    "attenuationGroup": "default",
+                    "attackProperty": {
+                        "ACKCDHKEGCK": 0.125,
+                        "JIICGJODDDM": 0.0,
+                        "elementType": "Fire",
+                        "bonusCriticalHurt": 100.0,
+                        "strikeType": "Blunt",
+                        "enBreak": 100.0,
+                        "attackType": "Melee",
+                        "damagePercentage": 0.0
+                    },
+                    "hitPattern": {
+                        "onHitEffectName": "default",
+                        "hitImpulseType": "LV4",
+                        "hitHaltTime": 0.11999999731779099,
+                        "hitHaltTimeScale": 0.05000000074505806
+                    },
+                    "cameraShake": {
+                        "shakeType": "HitVector",
+                        "shakeRange": 0.1599999964237213,
+                        "shakeTime": 0.11999999731779099,
+                        "shakeDistance": 25.0,
+                        "shakeDir": {
+                            "z": 1.0
+                        }
+                    }
+                }
+            },
+            "Whirl05_Fire": {
+                "attackPattern": {
+                    "$type": "BOIOFIPLBNK",
+                    "triggerType": "TriggerNoRepeat",
+                    "born": {
+                        "$type": "AJCFIBNMGKO",
+                        "offset": {
+                            "EMBMLEBGFOI": 0.0,
+                            "NABPJFNICAE": 1.0,
+                            "MLOLIKEJCKB": 0.0
+                        },
+                        "NLICIODEGDO": {
+                            "$type": "BMAMOFPPNBD",
+                            "JOEDEGAHBHC": {
+                                "EMBMLEBGFOI": 0.0,
+                                "NABPJFNICAE": 0.0,
+                                "MLOLIKEJCKB": 0.0
+                            }
+                        }
+                    },
+                    "size": {
+                        "EMBMLEBGFOI": 2.0,
+                        "NABPJFNICAE": 2.0,
+                        "MLOLIKEJCKB": 4.0
+                    }
+                },
+                "attackInfo": {
+                    "attackTag": "",
+                    "attenuationTag": "",
+                    "attenuationGroup": "default",
+                    "attackProperty": {
+                        "ACKCDHKEGCK": 0.125,
+                        "JIICGJODDDM": 0.0,
+                        "elementType": "Fire",
+                        "bonusCriticalHurt": 100.0,
+                        "strikeType": "Blunt",
+                        "enBreak": 100.0,
+                        "attackType": "Melee",
+                        "damagePercentage": 0.0
+                    },
+                    "hitPattern": {
+                        "onHitEffectName": "default",
+                        "hitImpulseType": "LV6",
+                        "hitHaltTime": 0.11999999731779099,
+                        "hitHaltTimeScale": 0.05000000074505806
+                    },
+                    "cameraShake": {
+                        "shakeType": "HitVector",
+                        "shakeRange": 0.1599999964237213,
+                        "shakeTime": 0.11999999731779099,
+                        "shakeDistance": 25.0,
+                        "shakeDir": {
+                            "z": 1.0
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "equipController": {
+        "sheathPoint": "",
+        "attachPoints": {
+            "equip01": "WeaponR",
+            "equip02": "WeaponL"
+        }
+    },
+    "abilities": [
+        {
+            "abilityID": "Turn",
+            "abilityName": "Brute_None_Axe_Turn",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "Alert",
+            "abilityName": "Brute_None_Alert",
+            "abilityOverride": "",
+            "lightWeightRemove": true
+        },
+        {
+            "abilityID": "FireAxe",
+            "abilityName": "Brute_Axe_FireAxe",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "NormalAttack",
+            "abilityName": "Brute_Axe_NormalAttack",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "Attack02_FireWave",
+            "abilityName": "Brute_Axe_Attack02_FireWave",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "JumpAttack_Alert",
+            "abilityName": "Brute_Axe_JumpAttack_Alert",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "JumpAttack_FireWave",
+            "abilityName": "Brute_Axe_JumpAttack_FireWave",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "Whirl",
+            "abilityName": "Brute_Axe_Whirl",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "PickUpAndThrow",
+            "abilityName": "Brute_Axe_PickUpAndThrow",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "ThrowFireSlime_Fire",
+            "abilityName": "Brute_Axe_ThrowFireSlime_Fire",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "ThrowFireSlime_None",
+            "abilityName": "Brute_Axe_ThrowFireSlime_None",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "Brute_None_Axe_TurnToSit",
+            "abilityName": "Brute_None_Axe_TurnToSit",
+            "abilityOverride": "",
+            "lightWeightRemove": true
+        },
+        {
+            "abilityID": "Brute_None_OutOfSit",
+            "abilityName": "Brute_None_OutOfSit",
+            "abilityOverride": "",
+            "lightWeightRemove": true
+        },
+        {
+            "abilityID": "Brute_None_AwakeAlert",
+            "abilityName": "Brute_None_AwakeAlert",
+            "abilityOverride": "",
+            "lightWeightRemove": true
+        }
+    ],
+    "stateLayers": {
+        "defaultLayer": {
+            "$type": "GMHKGJPLHFD",
+            "DLEKAADOFBI": "",
+            "stateIDs": {
+                "NormalIdle": {
+                    "$type": "BGNDILBMEIM",
+                    "DNPOFANDHPP": {
+                        "Standby": [],
+                        "Born": []
+                    },
+                    "NOHGAIAMGLM": true,
+                    "KDAJCNNPANO": true,
+                    "DNEFGECPAAJ": [
+                        "DoSkill"
+                    ]
+                },
+                "NormalMove": {
+                    "$type": "BGNDILBMEIM",
+                    "DNPOFANDHPP": {
+                        "WalkForward": [
+                            "Audio_Brute_Axe_WalkForward"
+                        ],
+                        "WalkBack": [
+                            "Audio_Brute_Axe_WalkBack"
+                        ],
+                        "WalkRight": [
+                            "Audio_Brute_Axe_WalkForward"
+                        ],
+                        "WalkLeft": [
+                            "Audio_Brute_Axe_WalkForward"
+                        ],
+                        "Run": [
+                            "Audio_Brute_Axe_WalkForward"
+                        ]
+                    },
+                    "NOHGAIAMGLM": true,
+                    "KDAJCNNPANO": true,
+                    "DNEFGECPAAJ": [
+                        "DoSkill"
+                    ],
+                    "BEMELNECHCO": true
+                },
+                "TurnLeft": {
+                    "$type": "BGNDILBMEIM",
+                    "DNPOFANDHPP": {
+                        "TurnLeft_BS": [
+                            "Audio_Brute_Axe_Turn"
+                        ],
+                        "TurnLeft_AS": [
+                            "Audio_Brute_Axe_Turn"
+                        ]
+                    },
+                    "NOHGAIAMGLM": true,
+                    "KDAJCNNPANO": true,
+                    "DNEFGECPAAJ": [
+                        "DoSkill"
+                    ]
+                },
+                "TurnRight": {
+                    "$type": "BGNDILBMEIM",
+                    "DNPOFANDHPP": {
+                        "TurnRight_BS": [
+                            "Audio_Brute_Axe_Turn"
+                        ],
+                        "TurnRight_AS": [
+                            "Audio_Brute_Axe_Turn"
+                        ]
+                    },
+                    "NOHGAIAMGLM": true,
+                    "KDAJCNNPANO": true,
+                    "DNEFGECPAAJ": [
+                        "DoSkill"
+                    ]
+                },
+                "TurnToSit": {
+                    "$type": "BGNDILBMEIM",
+                    "DNPOFANDHPP": {
+                        "TurnToSit": [
+                            "Monster_Brute_None_Axe_TurnToSit"
+                        ]
+                    },
+                    "NOHGAIAMGLM": true,
+                    "DNEFGECPAAJ": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "OutOfSit": {
+                    "$type": "BGNDILBMEIM",
+                    "DNPOFANDHPP": {
+                        "OutOfSit": [
+                            "Monster_Brute_None_OutOfSit"
+                        ]
+                    },
+                    "NOHGAIAMGLM": true,
+                    "DNEFGECPAAJ": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "Sit": {
+                    "$type": "BGNDILBMEIM",
+                    "DNPOFANDHPP": {
+                        "Sit": []
+                    },
+                    "NOHGAIAMGLM": true,
+                    "KDAJCNNPANO": true,
+                    "DNEFGECPAAJ": [
+                        "DoSkill"
+                    ]
+                },
+                "Life_Talk": {
+                    "$type": "BGNDILBMEIM",
+                    "DNPOFANDHPP": {
+                        "Talk": [],
+                        "Talk_Sit": []
+                    },
+                    "NOHGAIAMGLM": true,
+                    "DNEFGECPAAJ": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "BeHit": {
+                    "$type": "BGNDILBMEIM",
+                    "DNPOFANDHPP": {
+                        "Hit_L": [
+                            "Audio_Brute_Axe_HitL"
+                        ],
+                        "Hit_H": [
+                            "Audio_Brute_Axe_HitH"
+                        ]
+                    },
+                    "MKPCFKBHPDC": [
+                        "BeHit"
+                    ],
+                    "DNEFGECPAAJ": [
+                        "DoSkill"
+                    ]
+                },
+                "BeHitThrow": {
+                    "$type": "BGNDILBMEIM",
+                    "DNPOFANDHPP": {
+                        "HitThrow": [],
+                        "HitThrowDrop": [],
+                        "HitThrowToGround": [
+                            "Audio_Brute_Axe_HitThrowToGround"
+                        ]
+                    },
+                    "MKPCFKBHPDC": [
+                        "BeHit",
+                        "HitAir2HitDrop"
+                    ],
+                    "DNEFGECPAAJ": [
+                        "DoSkill"
+                    ]
+                },
+                "Struggle": {
+                    "$type": "BGNDILBMEIM",
+                    "DNPOFANDHPP": {
+                        "Struggle": []
+                    },
+                    "MKPCFKBHPDC": [
+                        "BeHit",
+                        "HitAir2HitDrop"
+                    ],
+                    "DNEFGECPAAJ": [
+                        "DoSkill"
+                    ]
+                },
+                "Die": {
+                    "$type": "BGNDILBMEIM",
+                    "DNPOFANDHPP": {
+                        "Die_01": [
+                            "Audio_Brute_Axe_Die"
+                        ],
+                        "Die_02": [
+                            "Audio_Brute_Axe_Die"
+                        ],
+                        "SwimDie": [
+                            "Monster_Brute_None_Die"
+                        ],
+                        "SwimDie_AS": []
+                    }
+                },
+                "Die_RagDoll": {
+                    "$type": "BGNDILBMEIM",
+                    "DNPOFANDHPP": {
+                        "Die_RagDoll_01": [
+                            "Audio_Brute_Axe_Die"
+                        ],
+                        "Die_RagDoll_02": [
+                            "Audio_Brute_Axe_Die"
+                        ],
+                        "AirDie": [
+                            "Audio_Brute_Axe_AirDie"
+                        ]
+                    },
+                    "GDOJDCJOHJP": true
+                },
+                "Alert": {
+                    "$type": "BGNDILBMEIM",
+                    "DNPOFANDHPP": {
+                        "Alert": [
+                            "Monster_Brute_None_Alert"
+                        ]
+                    },
+                    "DNEFGECPAAJ": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "AwakeAlert": {
+                    "$type": "BGNDILBMEIM",
+                    "DNPOFANDHPP": {
+                        "AwakeAlert": [
+                            "Monster_Brute_None_AwakeAlert"
+                        ]
+                    },
+                    "NOHGAIAMGLM": true,
+                    "DNEFGECPAAJ": [
+                        "BeHit",
+                        "DoSkill",
+                        "AwakeAlert"
+                    ]
+                },
+                "Attack01": {
+                    "$type": "BGNDILBMEIM",
+                    "DNPOFANDHPP": {
+                        "Attack01": [
+                            "Monster_Brute_Axe_Attack01",
+                            "Audio_Brute_Axe_Attack01"
+                        ]
+                    },
+                    "FHKLFMHPIIL": 0.800000011920929,
+                    "NIOKPMKCCGN": 20.0,
+                    "DNEFGECPAAJ": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "Attack02": {
+                    "$type": "BGNDILBMEIM",
+                    "DNPOFANDHPP": {
+                        "Attack02": [
+                            "Monster_Brute_Axe_Attack02",
+                            "Audio_Brute_Axe_Attack02"
+                        ]
+                    },
+                    "FHKLFMHPIIL": 0.800000011920929,
+                    "NIOKPMKCCGN": 20.0,
+                    "DNEFGECPAAJ": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "Attack03": {
+                    "$type": "BGNDILBMEIM",
+                    "DNPOFANDHPP": {
+                        "Attack03": [
+                            "Monster_Brute_Axe_Attack03",
+                            "Audio_Brute_Axe_Attack03"
+                        ]
+                    },
+                    "FHKLFMHPIIL": 0.800000011920929,
+                    "NIOKPMKCCGN": 20.0,
+                    "DNEFGECPAAJ": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "Whirl_BS": {
+                    "$type": "BGNDILBMEIM",
+                    "DNPOFANDHPP": {
+                        "Whirl_BS": [
+                            "Audio_Brute_Axe_Whirl_BS"
+                        ]
+                    },
+                    "FHKLFMHPIIL": 0.0,
+                    "NIOKPMKCCGN": 20.0,
+                    "DNEFGECPAAJ": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "Whirl_Loop": {
+                    "$type": "BGNDILBMEIM",
+                    "DNPOFANDHPP": {
+                        "Whirl_Loop": [
+                            "Monster_Brute_Axe_Whirl_Loop",
+                            "Audio_Brute_Axe_Whirl_Loop"
+                        ]
+                    },
+                    "FHKLFMHPIIL": 0.0,
+                    "NIOKPMKCCGN": 20.0,
+                    "DNEFGECPAAJ": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "Whirl_AS": {
+                    "$type": "BGNDILBMEIM",
+                    "DNPOFANDHPP": {
+                        "Whirl_AS": [
+                            "Monster_Brute_Axe_Whirl_AS",
+                            "Audio_Brute_Axe_Whirl_AS"
+                        ]
+                    },
+                    "NIOKPMKCCGN": 20.0,
+                    "DNEFGECPAAJ": [
+                        "BeHit",
+                        "DoSkill",
+                        "NextSkillTrigger"
+                    ]
+                },
+                "Whirl_Crash": {
+                    "$type": "BGNDILBMEIM",
+                    "DNPOFANDHPP": {
+                        "Whirl_Crash": [
+                            "Audio_Brute_Axe_Whirl_Crash"
+                        ]
+                    },
+                    "DNEFGECPAAJ": [
+                        "BeHit",
+                        "DoSkill",
+                        "NextSkillTrigger"
+                    ]
+                },
+                "JumpAttack": {
+                    "$type": "BGNDILBMEIM",
+                    "DNPOFANDHPP": {
+                        "JumpAttack": [
+                            "Monster_Brute_Axe_JumpAttack",
+                            "Audio_Brute_Axe_JumpAttack"
+                        ]
+                    },
+                    "CGNNAJLBEMJ": true,
+                    "FHKLFMHPIIL": 0.0,
+                    "NIOKPMKCCGN": 20.0,
+                    "DNEFGECPAAJ": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "PickUp": {
+                    "$type": "BGNDILBMEIM",
+                    "DNPOFANDHPP": {
+                        "PickUp": [
+                            "Monster_Brute_Axe_PickUp",
+                            "Audio_Brute_Axe_Pickup"
+                        ]
+                    },
+                    "FHKLFMHPIIL": 0.0,
+                    "NIOKPMKCCGN": 20.0,
+                    "DNEFGECPAAJ": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "Throw": {
+                    "$type": "BGNDILBMEIM",
+                    "DNPOFANDHPP": {
+                        "Throw": [
+                            "Monster_Brute_Axe_ThrowSlime_Fire",
+                            "Audio_Brute_Axe_Throw"
+                        ]
+                    },
+                    "FHKLFMHPIIL": 0.0,
+                    "NIOKPMKCCGN": 20.0,
+                    "DNEFGECPAAJ": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "CastAndThrow": {
+                    "$type": "BGNDILBMEIM",
+                    "DNPOFANDHPP": {
+                        "CastAndThrow": [
+                            "Monster_Brute_Axe_CastAndThrow",
+                            "Audio_Brute_Axe_CastAndThrow"
+                        ]
+                    },
+                    "FHKLFMHPIIL": 0.0,
+                    "NIOKPMKCCGN": 20.0,
+                    "DNEFGECPAAJ": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                }
+            }
+        }
+    },
+    "billboard": {
+        "$type": "JOBMBKHMEKJ",
+        "attachPoint": "BillboardAttach",
+        "offset": {
+            "x": 0.03999999910593033
+        },
+        "KIIONDAMCOE": "Character",
+        "HNBHIFHDHHP": 0.7200000286102295,
+        "BAFOFKKNFAI": true,
+        "size": "Big"
+    },
+    "PDGNHABAJOB": {
+        "Default": {
+            "KNFNBEPPPCE": {
+                "KIBFCHNDOBM": {
+                    "Sleep": "false",
+                    "Sit": "false"
+                }
+            }
+        },
+        "Sit": {
+            "CJJJENBJBIE": 401,
+            "KNFNBEPPPCE": {
+                "KIBFCHNDOBM": {
+                    "Sit": "true"
+                }
+            }
+        }
+    },
+    "NIHJKMJGBBE": [
+        {
+            "OBAOJLJHIDN": 210,
+            "PJGGFMLCLCO": 257,
+            "abilityName": ""
+        },
+        {
+            "OBAOJLJHIDN": 220,
+            "PJGGFMLCLCO": 258,
+            "abilityName": ""
+        },
+        {
+            "OBAOJLJHIDN": 230,
+            "PJGGFMLCLCO": 259,
+            "abilityName": ""
+        },
+        {
+            "OBAOJLJHIDN": 240,
+            "PJGGFMLCLCO": 260,
+            "abilityName": ""
+        },
+        {
+            "OBAOJLJHIDN": 210,
+            "PJGGFMLCLCO": 261,
+            "abilityName": ""
+        },
+        {
+            "OBAOJLJHIDN": 121,
+            "PJGGFMLCLCO": 262,
+            "abilityName": ""
+        }
+    ],
+    "IJLCLNIAPOM": {
+        "$type": "EGPKIJBLBBM",
+        "KEPJFGBECCO": "ForwardBackward",
+        "EKAKOIGPKEI": "StrongHumanoidType",
+        "BGKPKBJPKKC": "RootNode"
+    },
+    "audio": {
+        "CDPGEDJOKEB": "",
+        "animAudio": {
+            "onTransitionOut": [
+                {
+                    "currentStateName": "Whirl_Loop",
+                    "audioEvent": {
+                        "text": "Stop_sfx_monster_brute_axe_whirl"
+                    },
+                    "otherStateNames": [
+                        "Whirl_AS"
+                    ],
+                    "usage": "Except"
+                },
+                {
+                    "currentStateName": "Whirl_BS",
+                    "audioEvent": {
+                        "text": "Stop_sfx_monster_brute_axe_whirl"
+                    },
+                    "otherStateNames": [
+                        "Whirl_Loop"
+                    ],
+                    "usage": "Except"
+                },
+                {
+                    "currentStateName": "JumpAttack",
+                    "audioEvent": {
+                        "text": "Stop_sfx_monster_brute_axe_jumpAttack"
+                    }
+                },
+                {
+                    "currentStateName": "PickUp",
+                    "audioEvent": {
+                        "text": "Stop_sfx_monster_brute_axe_pickup"
+                    }
+                },
+                {
+                    "currentStateName": "JumpAttack",
+                    "audioEvent": {
+                        "text": "Stop_vo_monster_brute_axe_jumpAttack"
+                    }
+                },
+                {
+                    "currentStateName": "PickUp",
+                    "audioEvent": {
+                        "text": "Stop_vo_monster_brute_axe_pickUp"
+                    }
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,152 @@
+{
+    "Eula_ElementalArt_IceWave": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            }
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "AHCOGNAHOOF": {
+            "lifeTime": 3.5
+        }
+    },
+    "Eula_ElementalBurst_Judgment": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            }
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "Avatar_Eula_ElementalBurst_Judgment",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 10.0
+        },
+        "move": {
+            "$type": "DKAMCGDMNKI",
+            "attachPoint": "",
+            "followRotation": true,
+            "JGFLINDOJDF": {
+                "z": 1.0
+            },
+            "JHIDLJOPJML": true,
+            "JDDHGLLAOJP": true,
+            "HMPJAIBPNND": ""
+        }
+    },
+    "Eula_ElementalArt_ExtraAttack_1": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "CPGMBCECPEN": 0.4000000059604645
+            }
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 999999.0,
+                "attack": 10.0,
+                "defense": 999999.0,
+                "isInvincible": true,
+                "isLockHP": true,
+                "isGhostToEnemy": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "Avatar_Eula_ElementalArt_ExtraAttack_1",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 1.2000000476837158
+        }
+    },
+    "Eula_ElementalArt_ExtraAttack_2": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "CPGMBCECPEN": 0.4000000059604645
+            }
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 999999.0,
+                "attack": 10.0,
+                "defense": 999999.0,
+                "isInvincible": true,
+                "isLockHP": true,
+                "isGhostToEnemy": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "Avatar_Eula_ElementalArt_ExtraAttack_2",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 2.0
+        }
+    }
+}

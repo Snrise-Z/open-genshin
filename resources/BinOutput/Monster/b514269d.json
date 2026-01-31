@@ -1,0 +1,718 @@
+{
+  "common": {
+    "effectAttachShape": {
+      "$type": "ConfigEffectAttachSkinnedMesh",
+      "mesh": "EffectMesh"
+    },
+    "mass": 9999999.0,
+    "height": 1.0,
+    "checkInSurface": true,
+    "canTriggerElementReactionText": false,
+    "useGrassDisplacement": true,
+    "BKPPECPBMBF": true,
+    "LOGFKHMLOOL": true
+  },
+  "model": {
+    "bornEffect": "",
+    "attachEffect": "",
+    "canBakeMesh": false
+  },
+  "MEMHBNEJBCL": {
+    "PJBCJPKPOLB": 1.0
+  },
+  "combat": {
+    "property": {
+      "endureType": "Monster_Minion",
+      "weight": 101.0,
+      "isInvincible": true
+    },
+    "beHit": {
+      "hitBloodEffect": "",
+      "OFKMFHKFECF": true,
+      "muteAllHitText": true
+    },
+    "combatLock": {
+      "lockShape": "CircleLockEnemy",
+      "lockType": "Animal_Lv2"
+    },
+    "die": {
+      "dieEndTime": 2.5999999046325684,
+      "dieForceDisappearTime": 2.0,
+      "dieDisappearEffect": "",
+      "MOFPBPPGPCL": true
+    },
+    "HBPHEONOLPB": {
+      "MeleeAtk01": {
+        "IDCAGFLHNBC": {
+          "$type": "AGJFCPDIMCK",
+          "JHMCMBLENNJ": "TriggerNoRepeat",
+          "CGJJEPFIPAH": {
+            "$type": "NKOODKOFELF",
+            "NDKBHOOPGNA": {
+              "GNGDNIIPPNL": 0.0,
+              "GIIMFINHIED": -0.5,
+              "CLBCHJICOKH": 0.0
+            }
+          },
+          "height": 3.0,
+          "IAMPMDAOKJL": 180.0,
+          "LOACHGCADCO": 3.0
+        },
+        "DAHBCLPNNIF": {
+          "EGJIJCBGKJG": "Electrohercules_MeleeAttack01",
+          "LDGDNEICIGK": "",
+          "FLPOJIPCNFI": "default",
+          "JBODPMACBML": {
+            "HOGNHNAHNML": 0.0,
+            "BAPILBAGBOJ": 0.0,
+            "PHIOAFANJGL": 100.0,
+            "MCMDIPMIMJB": "Blunt",
+            "MLOPAPDEAOH": 0.0,
+            "JKALHBCIMGB": "Melee",
+            "CFIIAFOMDOM": 0.0
+          }
+        }
+      }
+    }
+  },
+  "abilities": [
+    {
+      "abilityID": "",
+      "abilityName": "Animal_Electrohercules_Properties_02",
+      "abilityOverride": ""
+    },
+    {
+      "abilityID": "",
+      "abilityName": "Animal_Electrohercules_BattleStateHandler",
+      "abilityOverride": ""
+    },
+    {
+      "abilityID": "",
+      "abilityName": "Animal_Electrohercules_PositionLogicHandler",
+      "abilityOverride": ""
+    },
+    {
+      "abilityID": "",
+      "abilityName": "Animal_Electrohercules_PlayAlert",
+      "abilityOverride": ""
+    },
+    {
+      "abilityID": "",
+      "abilityName": "Animal_Electrohercules_AttackLandedHandler",
+      "abilityOverride": ""
+    },
+    {
+      "abilityID": "",
+      "abilityName": "Animal_Electrohercules_Enemy_RangedAttack01_Chasing",
+      "abilityOverride": ""
+    },
+    {
+      "abilityID": "",
+      "abilityName": "Animal_Electrohercules_TryBreakRangedAttack",
+      "abilityOverride": ""
+    },
+    {
+      "abilityID": "",
+      "abilityName": "Animal_Electrohercules_SkillElite_Level01",
+      "abilityOverride": ""
+    }
+  ],
+  "stateLayers": {
+    "defaultLayer": {
+      "$type": "ConfigNormalStateLayer",
+      "ACOCIAFGIAD": "",
+      "stateIDs": {
+        "Born": {
+          "$type": "ConfigMonsterStateIDInfo",
+          "animatorStates": {
+            "Born": []
+          },
+          "resetAnimatorTriggerOnExit": [
+            "DoSkill"
+          ]
+        },
+        "NormalIdle": {
+          "$type": "ConfigMonsterStateIDInfo",
+          "animatorStates": {
+            "Standby": []
+          },
+          "canDoSkill": true,
+          "canSyncMove": true,
+          "AJBLILDCLBO": [
+            "IsCharging"
+          ],
+          "resetAnimatorTriggerOnExit": [
+            "DoSkill"
+          ]
+        },
+        "NormalMove": {
+          "$type": "ConfigMonsterStateIDInfo",
+          "animatorStates": {
+            "WalkForward": [],
+            "WalkBack": []
+          },
+          "canDoSkill": true,
+          "resetAnimatorTriggerOnExit": [
+            "DoSkill"
+          ]
+        },
+        "BeHit": {
+          "$type": "ConfigMonsterStateIDInfo",
+          "animatorStates": {
+            "Hit_L": [
+              "Audio_Animal_Electrohercules_01_Hit_L"
+            ],
+            "Hit_H": [
+              "Audio_Animal_Electrohercules_01_Hit_H"
+            ]
+          },
+          "AJBLILDCLBO": [
+            "BeHit"
+          ],
+          "resetAnimatorTriggerOnExit": [
+            "DoSkill"
+          ]
+        },
+        "BeHitThrow": {
+          "$type": "ConfigMonsterStateIDInfo",
+          "animatorStates": {
+            "HitThrow": [],
+            "HitThrowDrop": [],
+            "HitThrowToGround": []
+          },
+          "AJBLILDCLBO": [
+            "BeHit",
+            "HitAir2HitDrop"
+          ],
+          "resetAnimatorTriggerOnExit": [
+            "DoSkill"
+          ]
+        },
+        "Struggle": {
+          "$type": "ConfigMonsterStateIDInfo",
+          "animatorStates": {
+            "Struggle": []
+          },
+          "AJBLILDCLBO": [
+            "BeHit",
+            "HitAir2HitDrop"
+          ],
+          "resetAnimatorTriggerOnExit": [
+            "DoSkill"
+          ]
+        },
+        "Die": {
+          "$type": "ConfigMonsterStateIDInfo",
+          "animatorStates": {
+            "Die": [
+              "Audio_Animal_Electrohercules_01_Die"
+            ]
+          }
+        },
+        "Warning": {
+          "$type": "ConfigMonsterStateIDInfo",
+          "animatorStates": {
+            "Alert": [
+              "Audio_Animal_Electrohercules_01_Alert"
+            ]
+          },
+          "canSyncMove": true,
+          "resetAnimatorTriggerOnExit": [
+            "BeHit",
+            "DoSkill"
+          ],
+          "LIPMJPLGIKD": true
+        },
+        "MeleeAttack01_BS": {
+          "$type": "ConfigMonsterStateIDInfo",
+          "animatorStates": {
+            "MeleeAttack01_01_BS": [
+              "Animal_Electrohercules_01_JumpForward_Charging",
+              "Animal_Electrohercules_01_MeleeAttack01_BS"
+            ],
+            "MeleeAttack01_01_BSLoop": [],
+            "MeleeAttack01_02_BS": [
+              "Animal_Electrohercules_01_JumpForward_Charging",
+              "Animal_Electrohercules_01_MeleeAttack01_BS"
+            ],
+            "MeleeAttack01_02_BSLoop": [],
+            "MeleeAttack01_03_BS": [
+              "Animal_Electrohercules_01_JumpForward_Charging",
+              "Animal_Electrohercules_01_MeleeAttack01_BS"
+            ],
+            "MeleeAttack01_03_BSLoop": []
+          },
+          "resetAnimatorTriggerOnExit": [
+            "BeHit",
+            "DoSkill"
+          ]
+        },
+        "MeleeAttack01": {
+          "$type": "ConfigMonsterStateIDInfo",
+          "animatorStates": {
+            "MeleeAttack01_01": [
+              "Animal_Electrohercules_01_JumpForward",
+              "Audio_Animal_Electrohercules_01_JumpForward"
+            ],
+            "MeleeAttack01_01_AS": [],
+            "MeleeAttack01_02": [
+              "Animal_Electrohercules_01_JumpForward",
+              "Audio_Animal_Electrohercules_01_JumpForward"
+            ],
+            "MeleeAttack01_02_AS": [],
+            "MeleeAttack01_03": [
+              "Animal_Electrohercules_01_JumpForward",
+              "Audio_Animal_Electrohercules_01_JumpForward"
+            ],
+            "MeleeAttack01_03_AS": []
+          },
+          "resetAnimatorTriggerOnExit": [
+            "BeHit",
+            "DoSkill"
+          ]
+        },
+        "RangedAttack01": {
+          "$type": "ConfigMonsterStateIDInfo",
+          "animatorStates": {
+            "RangedAttack01_BS": [
+              "Animal_Electrohercules_01_RangedAttack01"
+            ],
+            "RangedAttack01_Loop": [],
+            "RangedAttack01_AS": []
+          },
+          "resetAnimatorTriggerOnExit": [
+            "BeHit",
+            "DoSkill"
+          ]
+        },
+        "Recoil": {
+          "$type": "ConfigMonsterStateIDInfo",
+          "animatorStates": {
+            "Recoil": []
+          },
+          "resetAnimatorTriggerOnExit": [
+            "BeHit",
+            "DoSkill",
+            "CriticalTrigger"
+          ]
+        },
+        "Taunt01": {
+          "$type": "ConfigMonsterStateIDInfo",
+          "animatorStates": {
+            "Taunt01": [
+              "Audio_Animal_Electrohercules_01_Alert"
+            ]
+          },
+          "resetAnimatorTriggerOnExit": [
+            "BeHit",
+            "DoSkill"
+          ]
+        },
+        "Taunt02": {
+          "$type": "ConfigMonsterStateIDInfo",
+          "animatorStates": {
+            "Taunt02": [
+              "Audio_Animal_Electrohercules_01_Taunt"
+            ]
+          },
+          "resetAnimatorTriggerOnExit": [
+            "BeHit",
+            "DoSkill"
+          ]
+        }
+      }
+    }
+  },
+  "initialPoses": {
+    "Default": {
+      "initialPoseID": 1,
+      "initialPoseParams": {
+        "LHMPJOKLEHI": {
+          "ActionState": "0"
+        }
+      }
+    }
+  },
+  "aibeta": {
+    "enable": true,
+    "sensing": {
+      "settings": {
+        "DefaultSetting": {
+          "PHDIIPOBJGA": 25.0,
+          "MELADMKNPHC": true,
+          "feelRange": 25.0
+        }
+      }
+    },
+    "neurons": {
+      "DefaultSetting": []
+    },
+    "threat": {
+      "clearThreatTimerByDistance": 1.0,
+      "KDPOCNEHGBJ": 500.0,
+      "JGFOPCOIJOI": ""
+    },
+    "defendArea": {
+      "defendRange": 50.0
+    },
+    "ui": {
+      "hasDirectionIndicator": false,
+      "FLMOHOODJBA": ""
+    },
+    "IEMFHBCDJFP": [
+      {
+        "BIMBEJCAFLP": 1,
+        "DIAPGOFDGLC": 12.5
+      }
+    ],
+    "HEJKJODINHK": {
+      "GMBKODANLGP": {
+        "1": [
+          1011,
+          1012
+        ],
+        "2": [
+          1016,
+          1017
+        ]
+      }
+    },
+    "BNIENJNLAIJ": {
+      "1011": {
+        "NOKKDDHKGAK": "MeleeAttack01",
+        "ENKLFBHHOJI": {
+          "CEKMINILIFB": [
+            101,
+            111
+          ],
+          "MLFAMHDFHMM": 2.0,
+          "FNMKPCNDPFM": 9.5
+        },
+        "cd": 3.0,
+        "LKCFDIOMLCM": 5.5,
+        "KKAEGIJIDLG": 0.5,
+        "NOPNCNPCPJE": "",
+        "HGAMDGAEIGO": "",
+        "stateIDs": [
+          "MeleeAttack01_BS",
+          "MeleeAttack01"
+        ],
+        "PGPDNPMFFAG": "11",
+        "CCEAGFDONFH": "01",
+        "OKOFHICILMD": "10",
+        "CCFFFOIDOLP": "11"
+      },
+      "1012": {
+        "NOKKDDHKGAK": "MeleeAttack01R",
+        "ENKLFBHHOJI": {
+          "CEKMINILIFB": [
+            121
+          ],
+          "MLFAMHDFHMM": 2.5
+        },
+        "NOPNCNPCPJE": "",
+        "HGAMDGAEIGO": "",
+        "stateIDs": [
+          "MeleeAttack01_BS",
+          "MeleeAttack01"
+        ],
+        "PGPDNPMFFAG": "11",
+        "CCEAGFDONFH": "01",
+        "OKOFHICILMD": "10",
+        "CCFFFOIDOLP": "11"
+      },
+      "1016": {
+        "NOKKDDHKGAK": "MeleeAttack02",
+        "ENKLFBHHOJI": {
+          "CEKMINILIFB": [
+            101,
+            111
+          ],
+          "MLFAMHDFHMM": 3.0,
+          "FNMKPCNDPFM": 9.5
+        },
+        "cd": 2.5,
+        "GPMLADFJAAH": 1.0,
+        "LKCFDIOMLCM": 2.5,
+        "KKAEGIJIDLG": 0.5,
+        "NOPNCNPCPJE": "",
+        "HGAMDGAEIGO": "",
+        "stateIDs": [
+          "MeleeAttack01_BS",
+          "MeleeAttack01"
+        ],
+        "PGPDNPMFFAG": "11",
+        "CCEAGFDONFH": "01",
+        "OKOFHICILMD": "10",
+        "CCFFFOIDOLP": "11"
+      },
+      "1017": {
+        "NOKKDDHKGAK": "MeleeAttack02R",
+        "ENKLFBHHOJI": {
+          "CEKMINILIFB": [
+            121
+          ],
+          "MLFAMHDFHMM": 3.5
+        },
+        "NOPNCNPCPJE": "",
+        "HGAMDGAEIGO": "",
+        "stateIDs": [
+          "MeleeAttack01_BS",
+          "MeleeAttack01"
+        ],
+        "PGPDNPMFFAG": "11",
+        "CCEAGFDONFH": "01",
+        "OKOFHICILMD": "10",
+        "CCFFFOIDOLP": "11"
+      },
+      "1021": {
+        "NOKKDDHKGAK": "RangedAttack01",
+        "ENKLFBHHOJI": {
+          "CEKMINILIFB": [
+            101,
+            111,
+            121
+          ],
+          "OLDIEKKCIOG": 1.0,
+          "MLFAMHDFHMM": 99.0
+        },
+        "cd": 7.5,
+        "GPMLADFJAAH": 2.5,
+        "LKCFDIOMLCM": 7.5,
+        "KKAEGIJIDLG": 2.5,
+        "NOPNCNPCPJE": "",
+        "HGAMDGAEIGO": "",
+        "stateIDs": [
+          "RangedAttack01"
+        ],
+        "PGPDNPMFFAG": "11",
+        "CCEAGFDONFH": "01",
+        "OKOFHICILMD": "10",
+        "CCFFFOIDOLP": "11"
+      },
+      "1031": {
+        "NOKKDDHKGAK": "Taunt01",
+        "ENKLFBHHOJI": {
+          "CEKMINILIFB": [
+            101,
+            111
+          ],
+          "OLDIEKKCIOG": 1.5,
+          "MLFAMHDFHMM": 99.0
+        },
+        "cd": 10.0,
+        "GPMLADFJAAH": 2.5,
+        "LKCFDIOMLCM": 7.5,
+        "KKAEGIJIDLG": 2.5,
+        "NOPNCNPCPJE": "",
+        "LLNBBNIEGGO": true,
+        "BIMBEJCAFLP": 1,
+        "HGAMDGAEIGO": "",
+        "stateIDs": [
+          "Taunt01"
+        ],
+        "PGPDNPMFFAG": "11",
+        "CCEAGFDONFH": "01",
+        "OKOFHICILMD": "10",
+        "CCFFFOIDOLP": "11"
+      },
+      "1036": {
+        "NOKKDDHKGAK": "Taunt02",
+        "ENKLFBHHOJI": {
+          "CEKMINILIFB": [
+            101,
+            111
+          ],
+          "OLDIEKKCIOG": 1.5,
+          "MLFAMHDFHMM": 99.0
+        },
+        "cd": 10.0,
+        "GPMLADFJAAH": 2.5,
+        "LKCFDIOMLCM": 7.5,
+        "KKAEGIJIDLG": 2.5,
+        "NOPNCNPCPJE": "",
+        "LLNBBNIEGGO": true,
+        "BIMBEJCAFLP": 1,
+        "HGAMDGAEIGO": "",
+        "stateIDs": [
+          "Taunt02"
+        ],
+        "PGPDNPMFFAG": "11",
+        "CCEAGFDONFH": "01",
+        "OKOFHICILMD": "10",
+        "CCFFFOIDOLP": "11"
+      }
+    },
+    "combatFixedMoveTactic": [
+      {
+        "$type": "DIIPKNMAPAC",
+        "enable": true,
+        "FJANPNOAAFK": {
+          "CEKMINILIFB": [
+            101,
+            111,
+            121
+          ]
+        },
+        "defaultSetting": {
+          "AGCMPDABMIA": 0.949999988079071,
+          "GDPAONNEBCO": 1.9500000476837158,
+          "AJCEMHKIMHA": 10.0,
+          "JNMPGLIADPP": 4.0,
+          "CCMODCEDODH": 3.0,
+          "MMKHHBIBJEN": {
+            "GECJAGFGHKL": 0.0,
+            "JNJFKLDABCB": 0.0,
+            "BEJLOBBENJJ": 0.0
+          },
+          "GPPLHEGALHI": false,
+          "HEGPGPBKGFH": "1111",
+          "AFCLIFKCEKM": "1111",
+          "JOCOJHEICNA": ""
+        },
+        "specification": {
+          "111": {
+            "AGCMPDABMIA": 1.9500000476837158,
+            "GDPAONNEBCO": 2.450000047683716,
+            "AJCEMHKIMHA": 10.0,
+            "JNMPGLIADPP": 4.0,
+            "CCMODCEDODH": 3.0,
+            "MMKHHBIBJEN": {
+              "GECJAGFGHKL": 0.0,
+              "JNJFKLDABCB": 0.0,
+              "BEJLOBBENJJ": 0.0
+            },
+            "GPPLHEGALHI": false,
+            "HEGPGPBKGFH": "1111",
+            "AFCLIFKCEKM": "1111",
+            "JOCOJHEICNA": ""
+          },
+          "121": {
+            "AGCMPDABMIA": 0.0,
+            "GDPAONNEBCO": 1.9500000476837158,
+            "AJCEMHKIMHA": 10.0,
+            "JNMPGLIADPP": 4.0,
+            "CCMODCEDODH": 0.5,
+            "MMKHHBIBJEN": {
+              "GECJAGFGHKL": 0.0,
+              "NFMBIOFFKGK": 0.0,
+              "JNJFKLDABCB": 0.0,
+              "BEJLOBBENJJ": 0.0
+            },
+            "GPPLHEGALHI": false,
+            "HEGPGPBKGFH": "1111",
+            "AFCLIFKCEKM": "1111",
+            "JOCOJHEICNA": ""
+          }
+        }
+      },
+      {
+        "$type": "BNAGECKMCIB",
+        "enable": true,
+        "FJANPNOAAFK": {
+          "CEKMINILIFB": [
+            101,
+            121
+          ]
+        },
+        "defaultSetting": {
+          "KIHPEPHJMOG": 1,
+          "GEAICNICJAJ": 1.0,
+          "MPEMBMLOEDG": 1.4500000476837158,
+          "IJLGPEJGLEH": 50.0,
+          "JKOGPCLFHCP": 1.4500000476837158,
+          "IHCAFCNDANA": 0.0,
+          "JOCOJHEICNA": ""
+        }
+      }
+    ]
+  },
+  "GIBHCHHOJFI": [
+    {
+      "NPDDCIDNKMH": 1,
+      "KCAOBJOPJIC": 257,
+      "abilityName": ""
+    },
+    {
+      "NPDDCIDNKMH": 1011,
+      "KCAOBJOPJIC": 258,
+      "abilityName": ""
+    },
+    {
+      "NPDDCIDNKMH": 1012,
+      "KCAOBJOPJIC": 259,
+      "abilityName": ""
+    },
+    {
+      "NPDDCIDNKMH": 1013,
+      "KCAOBJOPJIC": 260,
+      "abilityName": ""
+    },
+    {
+      "NPDDCIDNKMH": 1014,
+      "KCAOBJOPJIC": 261,
+      "abilityName": ""
+    },
+    {
+      "NPDDCIDNKMH": 1015,
+      "KCAOBJOPJIC": 262,
+      "abilityName": ""
+    },
+    {
+      "NPDDCIDNKMH": 1016,
+      "KCAOBJOPJIC": 263,
+      "abilityName": ""
+    },
+    {
+      "NPDDCIDNKMH": 1017,
+      "KCAOBJOPJIC": 264,
+      "abilityName": ""
+    },
+    {
+      "NPDDCIDNKMH": 1018,
+      "KCAOBJOPJIC": 265,
+      "abilityName": ""
+    }
+  ],
+  "move": {
+    "$type": "IIGPJJNGCLE",
+    "MIPNOGBEANL": "ForwardBackward",
+    "FACNOEFNHIB": "RootNode"
+  },
+  "BEGHJJDCLLK": {
+    "KEEAIACIJBN": "",
+    "JIOEGJGNLEC": {
+      "NGKLCAOGKNG": [
+        {
+          "ILNHPFBOKNK": "WalkBack",
+          "CDMEEHAPNGE": {
+            "KMNBEAJOBPE": "Play_sfx_animal_electrohercules_walk_Loop"
+          }
+        },
+        {
+          "ILNHPFBOKNK": "WalkForward",
+          "CDMEEHAPNGE": {
+            "KMNBEAJOBPE": "Play_sfx_animal_electrohercules_walk_Loop"
+          }
+        }
+      ],
+      "MPLMIOAKNGG": [
+        {
+          "ILNHPFBOKNK": "WalkBack",
+          "CDMEEHAPNGE": {
+            "KMNBEAJOBPE": "Stop_sfx_animal_electrohercules_walk_Loop"
+          }
+        },
+        {
+          "ILNHPFBOKNK": "WalkForward",
+          "CDMEEHAPNGE": {
+            "KMNBEAJOBPE": "Stop_sfx_animal_electrohercules_walk_Loop"
+          }
+        }
+      ]
+    }
+  },
+  "animal": {
+    "tickAbilityElement": false
+  }
+}

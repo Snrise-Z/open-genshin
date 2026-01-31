@@ -1,0 +1,1295 @@
+[
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "ActivityAbility_V4.2_RainBowPrince_ShockWave_Basic",
+            "abilityMixins": [
+                {
+                    "$type": "AttachToNormalizedTimeMixin",
+                    "GEAPDIDEKFG": "Skill01",
+                    "modifierName": "RainBowPrince_ShockWave_Basic_Handler",
+                    "BPKNANBNBBJ": 0.23000000417232513
+                }
+            ],
+            "abilitySpecials": {
+                "ShockWave_Damage": 0.0
+            },
+            "modifiers": {
+                "RainBowPrince_ShockWave_Basic_Handler": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "TriggerAttackEvent",
+                            "BKFHNENKMAL": true,
+                            "FMDHJHAACGM": {
+                                "LOPCJCIFFBE": {
+                                    "$type": "IHKJIHKGECH",
+                                    "triggerType": "TriggerNoRepeat",
+                                    "CCNCMOGOFAG": {
+                                        "$type": "DELDMCFKBBL",
+                                        "FPDJOHEHNDD": true
+                                    },
+                                    "GGEJLLOCJDH": 7.0
+                                },
+                                "OIAMOBFMPAB": {
+                                    "KNOKCFHALLI": "",
+                                    "HOKPLNACNKG": "",
+                                    "ILLFBEHPCJA": "default",
+                                    "BAPFFKCLDPC": {
+                                        "PDHAKJCMPHB": 0.0,
+                                        "bonusCritical": 0.0,
+                                        "BLOMOIHOBBI": true,
+                                        "FFIIMACIKEA": 20.0,
+                                        "ELCPFOMENGK": "Melee",
+                                        "PGDDACECJLG": [
+                                            "ShockWave_Damage",
+                                            "DamageSystemValue",
+                                            "MUL"
+                                        ],
+                                        "OBNJIGIHGEO": true,
+                                        "JCCADHFFNFM": true,
+                                        "AEOLDMAMNLM": 0.0
+                                    },
+                                    "OCHEEDIDOHI": {
+                                        "AIDMNBLLAIJ": "default",
+                                        "OEGAJNNFFPO": "LV2",
+                                        "EPGLCHLENNG": 0.019999999552965164
+                                    }
+                                }
+                            },
+                            "PFBJAFHFBDE": "Enemy"
+                        },
+                        {
+                            "$type": "FireEffect",
+                            "BKFHNENKMAL": true,
+                            "LHHFHDEJOHC": "Eff_Activity_V4.2_RainBowPrince_ShockWave_Basic",
+                            "CCNCMOGOFAG": {
+                                "$type": "DELDMCFKBBL",
+                                "FPDJOHEHNDD": true
+                            },
+                            "PCLAEGHPNHE": -1.0
+                        }
+                    ]
+                }
+            },
+            "NLFIGALMIPD": [
+                {
+                    "$type": "SetSystemValueToOverrideMap",
+                    "BKFHNENKMAL": true,
+                    "NGGCNKPAODB": "DamageSystemValue",
+                    "type": "ElementLevelCo"
+                }
+            ],
+            "onAbilityStart": [
+                {
+                    "$type": "FireEffect",
+                    "BKFHNENKMAL": true,
+                    "LHHFHDEJOHC": "Eff_Activity_V4.2_RainBowPrince_ShockWave_BasicFlare",
+                    "PCLAEGHPNHE": -1.0
+                }
+            ],
+            "EGGOIPOIGJA": true
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "ActivityAbility_V4.2_RainBowPrince_ShockWave_Advanced",
+            "abilityMixins": [
+                {
+                    "$type": "AttachToNormalizedTimeMixin",
+                    "GEAPDIDEKFG": "Skill01",
+                    "modifierName": "RainBowPrince_ShockWave_Advanced_Handler",
+                    "BPKNANBNBBJ": 0.23000000417232513
+                }
+            ],
+            "abilitySpecials": {
+                "ShockWave_Damage": 0.0
+            },
+            "modifiers": {
+                "RainBowPrince_ShockWave_Advanced_Handler": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "FireEffect",
+                            "BKFHNENKMAL": true,
+                            "LHHFHDEJOHC": "Eff_Activity_V4.2_RainBowPrince_ShockWave_Advanced",
+                            "CCNCMOGOFAG": {
+                                "$type": "DELDMCFKBBL",
+                                "FPDJOHEHNDD": true
+                            },
+                            "PCLAEGHPNHE": -1.0
+                        },
+                        {
+                            "$type": "TriggerAttackEvent",
+                            "BKFHNENKMAL": true,
+                            "FMDHJHAACGM": {
+                                "LOPCJCIFFBE": {
+                                    "$type": "IHKJIHKGECH",
+                                    "triggerType": "TriggerNoRepeat",
+                                    "CCNCMOGOFAG": {
+                                        "$type": "DELDMCFKBBL",
+                                        "FPDJOHEHNDD": true
+                                    },
+                                    "GGEJLLOCJDH": 15.0
+                                },
+                                "OIAMOBFMPAB": {
+                                    "KNOKCFHALLI": "",
+                                    "HOKPLNACNKG": "",
+                                    "ILLFBEHPCJA": "default",
+                                    "BAPFFKCLDPC": {
+                                        "PDHAKJCMPHB": 0.0,
+                                        "bonusCritical": 0.0,
+                                        "BLOMOIHOBBI": true,
+                                        "FFIIMACIKEA": 20.0,
+                                        "ELCPFOMENGK": "Melee",
+                                        "PGDDACECJLG": [
+                                            "ShockWave_Damage",
+                                            "DamageSystemValue",
+                                            "MUL"
+                                        ],
+                                        "OBNJIGIHGEO": true,
+                                        "JCCADHFFNFM": true,
+                                        "AEOLDMAMNLM": 0.0
+                                    },
+                                    "OCHEEDIDOHI": {
+                                        "AIDMNBLLAIJ": "default",
+                                        "OEGAJNNFFPO": "LV2",
+                                        "EPGLCHLENNG": 0.019999999552965164
+                                    }
+                                }
+                            },
+                            "PFBJAFHFBDE": "Enemy"
+                        }
+                    ]
+                }
+            },
+            "NLFIGALMIPD": [
+                {
+                    "$type": "SetSystemValueToOverrideMap",
+                    "BKFHNENKMAL": true,
+                    "NGGCNKPAODB": "DamageSystemValue",
+                    "type": "ElementLevelCo"
+                }
+            ],
+            "onAbilityStart": [
+                {
+                    "$type": "FireEffect",
+                    "BKFHNENKMAL": true,
+                    "LHHFHDEJOHC": "Eff_Activity_V4.2_RainBowPrince_ShockWave_AdvancedFlare",
+                    "PCLAEGHPNHE": -1.0
+                }
+            ],
+            "EGGOIPOIGJA": true
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "ActivityAbility_V4.2_RainBowPrince_ThunderRing",
+            "abilityMixins": [
+                {
+                    "$type": "AttachToNormalizedTimeMixin",
+                    "GEAPDIDEKFG": "Skill01",
+                    "modifierName": "UNIQUE_RainBowPrince_ThunderRing_Handler",
+                    "BPKNANBNBBJ": 0.23000000417232513
+                }
+            ],
+            "abilitySpecials": {
+                "ThunderRing_Attack_Up": 0.0,
+                "ThunderRing_ChargeEfficiency_Up": 0.0,
+                "ThunderRing_BuffTime": 0.0,
+                "ThunderRing_ReviveElemEnergyValue": 0.0,
+                "ThunderRing_ReduceBurstCD_Delta": 0.0,
+                "ThunderRing_BurstTriggerTime": 0.0,
+                "ThunderRing_Damage": 0.0
+            },
+            "modifiers": {
+                "UNIQUE_RainBowPrince_ThunderRing_Handler": {
+                    "modifierName": "",
+                    "defaultDistanceBetweenAvatarAndCamera": true,
+                    "FAFCPJJAIGK": 5.0,
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "FireEffect",
+                            "BKFHNENKMAL": true,
+                            "LHHFHDEJOHC": "Eff_Activity_V4.2_RainBowPrince_ThunderRing",
+                            "CCNCMOGOFAG": {
+                                "$type": "DELDMCFKBBL",
+                                "FPDJOHEHNDD": true
+                            },
+                            "PCLAEGHPNHE": -1.0
+                        },
+                        {
+                            "$type": "TriggerAttackEvent",
+                            "BKFHNENKMAL": true,
+                            "FMDHJHAACGM": {
+                                "LOPCJCIFFBE": {
+                                    "$type": "PMGLIKAEELC",
+                                    "triggerType": "TriggerNoRepeat",
+                                    "CCNCMOGOFAG": {
+                                        "$type": "DELDMCFKBBL",
+                                        "FPDJOHEHNDD": true
+                                    },
+                                    "GGEJLLOCJDH": 15.0
+                                },
+                                "OIAMOBFMPAB": {
+                                    "KNOKCFHALLI": "",
+                                    "HOKPLNACNKG": "",
+                                    "ILLFBEHPCJA": "default",
+                                    "BAPFFKCLDPC": {
+                                        "PDHAKJCMPHB": 0.0,
+                                        "elementType": "Electric",
+                                        "bonusCritical": 50.0,
+                                        "BLOMOIHOBBI": true,
+                                        "FFIIMACIKEA": 20.0,
+                                        "ELCPFOMENGK": "Melee",
+                                        "PGDDACECJLG": [
+                                            "ThunderRing_Damage",
+                                            "DamageSystemValue",
+                                            "MUL"
+                                        ],
+                                        "OBNJIGIHGEO": true,
+                                        "JCCADHFFNFM": true,
+                                        "AEOLDMAMNLM": 0.0
+                                    },
+                                    "OCHEEDIDOHI": {
+                                        "AIDMNBLLAIJ": "default",
+                                        "OEGAJNNFFPO": "LV2",
+                                        "EPGLCHLENNG": 0.019999999552965164
+                                    }
+                                }
+                            },
+                            "PFBJAFHFBDE": "Enemy"
+                        },
+                        {
+                            "$type": "ReviveElemEnergy",
+                            "KMGAOOHMCPK": "AllPlayerAvatars",
+                            "BKFHNENKMAL": true,
+                            "FLEEHCIOPKA": [
+                                {
+                                    "$type": "FJHPOHKCGED",
+                                    "JCMFILJLNFH": "LesserOrEqual",
+                                    "value": 15.0
+                                }
+                            ],
+                            "value": "ThunderRing_ReviveElemEnergyValue"
+                        },
+                        {
+                            "$type": "ModifyAvatarSkillCD",
+                            "KMGAOOHMCPK": "AllPlayerAvatars",
+                            "BKFHNENKMAL": true,
+                            "DOIIJEKABAA": [
+                                5
+                            ],
+                            "JDAPHJGNLIH": "ThunderRing_ReduceBurstCD_Delta"
+                        },
+                        {
+                            "$type": "ApplyModifier",
+                            "KMGAOOHMCPK": "AllPlayerAvatars",
+                            "BKFHNENKMAL": true,
+                            "FLEEHCIOPKA": [
+                                {
+                                    "$type": "FJHPOHKCGED",
+                                    "JCMFILJLNFH": "LesserOrEqual",
+                                    "value": 15.0
+                                }
+                            ],
+                            "modifierName": "UNIQUE_RainBowPrince_ThunderRing_BurstEnhanced_Handler"
+                        }
+                    ]
+                },
+                "UNIQUE_RainBowPrince_ThunderRing_BurstEnhanced_Handler": {
+                    "modifierName": "",
+                    "defaultDistanceBetweenAvatarAndCamera": true,
+                    "FAFCPJJAIGK": "ThunderRing_BurstTriggerTime",
+                    "bonusCritical": 100.0,
+                    "modifierMixins": [
+                        {
+                            "$type": "OnAvatarUseSkillMixin",
+                            "PAPDDFLCFFE": [
+                                {
+                                    "$type": "ApplyModifier",
+                                    "KMGAOOHMCPK": "AllPlayerAvatars",
+                                    "BKFHNENKMAL": true,
+                                    "modifierName": "ThunderRing_BurstEnhanced_Attack_ChargeEffiency_BothUp"
+                                }
+                            ],
+                            "DKIIIIGNBIA": true,
+                            "PHCAKDJHLAO": 1.0
+                        }
+                    ]
+                },
+                "ThunderRing_BurstEnhanced_Attack_ChargeEffiency_BothUp": {
+                    "modifierName": "",
+                    "FAFCPJJAIGK": [
+                        "ThunderRing_BuffTime",
+                        0.5,
+                        "ADD"
+                    ],
+                    "bonusCritical": 100.0,
+                    "NLPPKPOJEOA": {
+                        "Actor_AttackRatio": "ThunderRing_Attack_Up",
+                        "Actor_ChargeEfficiencyDelta": "ThunderRing_ChargeEfficiency_Up"
+                    },
+                    "FJMPEOEHPJK": "AttackUp",
+                    "PLFMOPGDMDI": true
+                }
+            },
+            "NLFIGALMIPD": [
+                {
+                    "$type": "SetSystemValueToOverrideMap",
+                    "BKFHNENKMAL": true,
+                    "NGGCNKPAODB": "DamageSystemValue",
+                    "type": "ElementLevelCo"
+                }
+            ],
+            "onAbilityStart": [
+                {
+                    "$type": "FireEffect",
+                    "BKFHNENKMAL": true,
+                    "LHHFHDEJOHC": "Eff_Activity_V4.2_RainBowPrince_ThunderFlare",
+                    "PCLAEGHPNHE": -1.0
+                }
+            ],
+            "EGGOIPOIGJA": true
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "ActivityAbility_V4.2_RainBowPrince_WaterRing",
+            "abilityMixins": [
+                {
+                    "$type": "AttachToNormalizedTimeMixin",
+                    "GEAPDIDEKFG": "Skill01",
+                    "modifierName": "UNIQUE_RainBowPrince_WaterRing_Start",
+                    "BPKNANBNBBJ": 0.23000000417232513
+                }
+            ],
+            "abilitySpecials": {
+                "WaterRing_BuffTime": 0.0,
+                "WaterRing_HealHPRatio": 0.0,
+                "WaterRing_Buff_ElemMasteryDelta": 0.0,
+                "WaterRing_Damage": 0.0
+            },
+            "modifiers": {
+                "UNIQUE_RainBowPrince_WaterRing_Start": {
+                    "modifierName": "",
+                    "defaultDistanceBetweenAvatarAndCamera": true,
+                    "FAFCPJJAIGK": 0.30000001192092896,
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "ApplyModifier",
+                            "BKFHNENKMAL": true,
+                            "modifierName": "UNIQUE_RainBowPrince_WaterRing_Handler"
+                        }
+                    ]
+                },
+                "UNIQUE_RainBowPrince_WaterRing_Handler": {
+                    "HABNNJHCOCD": "Unique",
+                    "modifierName": "",
+                    "defaultDistanceBetweenAvatarAndCamera": true,
+                    "FAFCPJJAIGK": 12.0,
+                    "bonusCritical": 100.0,
+                    "ANPDJHOGAFE": 5.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "FireEffect",
+                            "BKFHNENKMAL": true,
+                            "LHHFHDEJOHC": "Eff_Activity_V4.2_RainBowPrince_WaterRing",
+                            "CCNCMOGOFAG": {
+                                "$type": "DELDMCFKBBL",
+                                "FPDJOHEHNDD": true
+                            },
+                            "PCLAEGHPNHE": -1.0
+                        },
+                        {
+                            "$type": "ApplyModifier",
+                            "KMGAOOHMCPK": "AllPlayerAvatars",
+                            "BKFHNENKMAL": true,
+                            "FLEEHCIOPKA": [
+                                {
+                                    "$type": "FJHPOHKCGED",
+                                    "JCMFILJLNFH": "LesserOrEqual",
+                                    "value": 12.0
+                                }
+                            ],
+                            "modifierName": "RainBowPrince_WaterRing_HealHP"
+                        },
+                        {
+                            "$type": "TriggerAttackEvent",
+                            "BKFHNENKMAL": true,
+                            "FMDHJHAACGM": {
+                                "LOPCJCIFFBE": {
+                                    "$type": "PMGLIKAEELC",
+                                    "triggerType": "TriggerNoRepeat",
+                                    "CCNCMOGOFAG": {
+                                        "$type": "DELDMCFKBBL",
+                                        "FPDJOHEHNDD": true
+                                    },
+                                    "GGEJLLOCJDH": 12.0
+                                },
+                                "OIAMOBFMPAB": {
+                                    "KNOKCFHALLI": "",
+                                    "HOKPLNACNKG": "",
+                                    "ILLFBEHPCJA": "default",
+                                    "BAPFFKCLDPC": {
+                                        "PDHAKJCMPHB": 0.0,
+                                        "elementType": "Water",
+                                        "bonusCritical": 25.0,
+                                        "BLOMOIHOBBI": true,
+                                        "FFIIMACIKEA": 20.0,
+                                        "ELCPFOMENGK": "Melee",
+                                        "PGDDACECJLG": [
+                                            "WaterRing_Damage",
+                                            "DamageSystemValue",
+                                            "MUL"
+                                        ],
+                                        "OBNJIGIHGEO": true,
+                                        "JCCADHFFNFM": true,
+                                        "AEOLDMAMNLM": 0.0
+                                    },
+                                    "OCHEEDIDOHI": {
+                                        "AIDMNBLLAIJ": "default",
+                                        "OEGAJNNFFPO": "LV2",
+                                        "EPGLCHLENNG": 0.019999999552965164
+                                    }
+                                }
+                            },
+                            "PFBJAFHFBDE": "Enemy"
+                        },
+                        {
+                            "$type": "ApplyModifier",
+                            "KMGAOOHMCPK": "AllPlayerAvatars",
+                            "BKFHNENKMAL": true,
+                            "FLEEHCIOPKA": [
+                                {
+                                    "$type": "FJHPOHKCGED",
+                                    "JCMFILJLNFH": "LesserOrEqual",
+                                    "value": 12.0
+                                }
+                            ],
+                            "modifierName": "UNIQUE_WaterRing_Buff_ElemMastery_Delta"
+                        }
+                    ],
+                    "MDPGEKAIFIM": [
+                        {
+                            "$type": "FireEffect",
+                            "BKFHNENKMAL": true,
+                            "LHHFHDEJOHC": "Eff_Activity_V4.2_RainBowPrince_WaterRing",
+                            "CCNCMOGOFAG": {
+                                "$type": "DELDMCFKBBL",
+                                "FPDJOHEHNDD": true
+                            },
+                            "PCLAEGHPNHE": -1.0
+                        },
+                        {
+                            "$type": "TriggerAttackEvent",
+                            "BKFHNENKMAL": true,
+                            "FMDHJHAACGM": {
+                                "LOPCJCIFFBE": {
+                                    "$type": "PMGLIKAEELC",
+                                    "triggerType": "TriggerNoRepeat",
+                                    "CCNCMOGOFAG": {
+                                        "$type": "DELDMCFKBBL",
+                                        "FPDJOHEHNDD": true
+                                    },
+                                    "GGEJLLOCJDH": 12.0
+                                },
+                                "OIAMOBFMPAB": {
+                                    "KNOKCFHALLI": "",
+                                    "HOKPLNACNKG": "",
+                                    "ILLFBEHPCJA": "default",
+                                    "BAPFFKCLDPC": {
+                                        "PDHAKJCMPHB": 0.0,
+                                        "elementType": "Water",
+                                        "bonusCritical": 25.0,
+                                        "BLOMOIHOBBI": true,
+                                        "FFIIMACIKEA": 20.0,
+                                        "ELCPFOMENGK": "Melee",
+                                        "PGDDACECJLG": [
+                                            "WaterRing_Damage",
+                                            "DamageSystemValue",
+                                            "MUL"
+                                        ],
+                                        "OBNJIGIHGEO": true,
+                                        "JCCADHFFNFM": true,
+                                        "AEOLDMAMNLM": 0.0
+                                    },
+                                    "OCHEEDIDOHI": {
+                                        "AIDMNBLLAIJ": "default",
+                                        "OEGAJNNFFPO": "LV2",
+                                        "EPGLCHLENNG": 0.019999999552965164
+                                    }
+                                }
+                            },
+                            "PFBJAFHFBDE": "Enemy"
+                        },
+                        {
+                            "$type": "ApplyModifier",
+                            "KMGAOOHMCPK": "AllPlayerAvatars",
+                            "BKFHNENKMAL": true,
+                            "FLEEHCIOPKA": [
+                                {
+                                    "$type": "FJHPOHKCGED",
+                                    "JCMFILJLNFH": "LesserOrEqual",
+                                    "value": 12.0
+                                }
+                            ],
+                            "modifierName": "RainBowPrince_WaterRing_HealHP"
+                        },
+                        {
+                            "$type": "ApplyModifier",
+                            "KMGAOOHMCPK": "AllPlayerAvatars",
+                            "BKFHNENKMAL": true,
+                            "FLEEHCIOPKA": [
+                                {
+                                    "$type": "FJHPOHKCGED",
+                                    "JCMFILJLNFH": "LesserOrEqual",
+                                    "value": 12.0
+                                }
+                            ],
+                            "modifierName": "UNIQUE_WaterRing_Buff_ElemMastery_Delta"
+                        }
+                    ]
+                },
+                "RainBowPrince_WaterRing_HealHP": {
+                    "HABNNJHCOCD": "Multiple",
+                    "modifierName": "",
+                    "FAFCPJJAIGK": 0.10000000149011612,
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "DebugLog",
+                            "GOMJPONMJII": "##水环回血"
+                        },
+                        {
+                            "$type": "HealHP",
+                            "KMGAOOHMCPK": "AllPlayerAvatars",
+                            "FLEEHCIOPKA": [
+                                {
+                                    "$type": "FJHPOHKCGED",
+                                    "JCMFILJLNFH": "LesserOrEqual",
+                                    "value": 15.0
+                                }
+                            ],
+                            "BFFEOHLLMHA": "WaterRing_HealHPRatio",
+                            "IHHGNLPEAOJ": ""
+                        }
+                    ]
+                },
+                "UNIQUE_WaterRing_Buff_ElemMastery_Delta": {
+                    "FNNAEGKHFHN": {
+                        "KDGIJMLBBPL": "",
+                        "HDFMDCDJBPB": 1.0,
+                        "NGAONBEFEAH": true
+                    },
+                    "modifierName": "",
+                    "defaultDistanceBetweenAvatarAndCamera": true,
+                    "FAFCPJJAIGK": "WaterRing_BuffTime",
+                    "bonusCritical": 100.0,
+                    "NLPPKPOJEOA": {
+                        "Actor_ElemMasteryDelta": "WaterRing_Buff_ElemMasteryDelta"
+                    },
+                    "FJMPEOEHPJK": "AttackUp",
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "DebugLog",
+                            "GOMJPONMJII": "##水环加精通"
+                        }
+                    ]
+                }
+            },
+            "NLFIGALMIPD": [
+                {
+                    "$type": "SetSystemValueToOverrideMap",
+                    "BKFHNENKMAL": true,
+                    "NGGCNKPAODB": "DamageSystemValue",
+                    "type": "ElementLevelCo"
+                }
+            ],
+            "onAbilityStart": [
+                {
+                    "$type": "FireEffect",
+                    "BKFHNENKMAL": true,
+                    "LHHFHDEJOHC": "Eff_Activity_V4.2_RainBowPrince_WaterFlare",
+                    "PCLAEGHPNHE": -1.0
+                }
+            ],
+            "EGGOIPOIGJA": true
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "ActivityAbility_V4.2_RainBowPrince_WindRing",
+            "abilityMixins": [
+                {
+                    "$type": "AttachToNormalizedTimeMixin",
+                    "GEAPDIDEKFG": "Skill01",
+                    "modifierName": "UNIQUE_RainBowPrince_WindRing_Start",
+                    "BPKNANBNBBJ": 0.13699999451637268
+                }
+            ],
+            "abilitySpecials": {
+                "WindRing_BuffTime": 0.0,
+                "WindRing_CritBuffTime": 0.0,
+                "WindRing_Critical_Delta": 0.0,
+                "WindRing_CriticalHurt_Delta": 0.0,
+                "WindRing_Damage": 0.0
+            },
+            "modifiers": {
+                "UNIQUE_RainBowPrince_WindRing_Team": {
+                    "modifierName": "",
+                    "defaultDistanceBetweenAvatarAndCamera": true,
+                    "FAFCPJJAIGK": "WindRing_BuffTime",
+                    "bonusCritical": 100.0,
+                    "modifierMixins": [
+                        {
+                            "$type": "LocalAvatarsMixin",
+                            "modifierName": "UNIQUE_WindRing_WindZone_Crit_Trigger"
+                        }
+                    ]
+                },
+                "UNIQUE_RainBowPrince_WindRing_Start": {
+                    "modifierName": "",
+                    "defaultDistanceBetweenAvatarAndCamera": true,
+                    "FAFCPJJAIGK": 0.30000001192092896,
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "ApplyModifier",
+                            "BKFHNENKMAL": true,
+                            "modifierName": "UNIQUE_RainBowPrince_WindRing_Handler"
+                        },
+                        {
+                            "$type": "ApplyModifier",
+                            "KMGAOOHMCPK": "Team",
+                            "modifierName": "UNIQUE_RainBowPrince_WindRing_Team"
+                        }
+                    ]
+                },
+                "UNIQUE_RainBowPrince_WindRing_Handler": {
+                    "HABNNJHCOCD": "Unique",
+                    "modifierName": "",
+                    "defaultDistanceBetweenAvatarAndCamera": true,
+                    "FAFCPJJAIGK": "WindRing_BuffTime",
+                    "bonusCritical": 100.0,
+                    "ANPDJHOGAFE": 0.4000000059604645,
+                    "modifierMixins": [
+                        {
+                            "$type": "WindZoneMixin",
+                            "IBPOJODNMHO": "CircleR12",
+                            "CCNCMOGOFAG": {
+                                "$type": "IADBHDLMGJB",
+                                "offset": {
+                                    "NEEHMANEJKM": 0.0,
+                                    "KKKLBADAPPB": -0.5,
+                                    "GENNNOANKOO": 0.0
+                                },
+                                "FPDJOHEHNDD": true,
+                                "MDPMJPIOGLA": "RootNode"
+                            },
+                            "KEODLBNGJGH": 6.0,
+                            "BGBDDJHIFCM": 0.5,
+                            "HJHKHEMMDCE": 0.20000000298023224,
+                            "PFBJAFHFBDE": "Enemy",
+                            "modifierName": ""
+                        }
+                    ],
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "AttachEffect",
+                            "BKFHNENKMAL": true,
+                            "LHHFHDEJOHC": "Eff_Activity_V4.2_RainBowPrince_WindRing",
+                            "CCNCMOGOFAG": {
+                                "$type": "DELDMCFKBBL",
+                                "FPDJOHEHNDD": true
+                            },
+                            "PCLAEGHPNHE": -1.0
+                        }
+                    ],
+                    "FNDEOLGHDHC": [
+                        {
+                            "$type": "AttachModifier",
+                            "KMGAOOHMCPK": "Target",
+                            "FLEEHCIOPKA": [
+                                {
+                                    "$type": "KCNEABODHDN",
+                                    "JCMFILJLNFH": "LesserOrEqual",
+                                    "HJKALMELCLL": 100.0
+                                }
+                            ],
+                            "modifierName": "WindRing_WindZone_Drag"
+                        }
+                    ],
+                    "MDPGEKAIFIM": [
+                        {
+                            "$type": "TriggerAttackEvent",
+                            "FMDHJHAACGM": {
+                                "LOPCJCIFFBE": {
+                                    "$type": "IHKJIHKGECH",
+                                    "triggerType": "TriggerNoRepeat",
+                                    "CCNCMOGOFAG": {
+                                        "$type": "DELDMCFKBBL",
+                                        "offset": {
+                                            "NEEHMANEJKM": 0.0,
+                                            "KKKLBADAPPB": 0.0,
+                                            "GENNNOANKOO": 0.0
+                                        },
+                                        "FPDJOHEHNDD": true
+                                    },
+                                    "GGEJLLOCJDH": 8.0
+                                },
+                                "OIAMOBFMPAB": {
+                                    "KNOKCFHALLI": "",
+                                    "HOKPLNACNKG": "",
+                                    "ILLFBEHPCJA": "default",
+                                    "BAPFFKCLDPC": {
+                                        "PDHAKJCMPHB": 0.0,
+                                        "elementType": "Wind",
+                                        "EKJLOEGBKPN": 3.0,
+                                        "bonusCritical": 0.0,
+                                        "BLOMOIHOBBI": true,
+                                        "FFIIMACIKEA": 20.0,
+                                        "ELCPFOMENGK": "Melee",
+                                        "PGDDACECJLG": [
+                                            "WindRing_Damage",
+                                            "DamageSystemValue",
+                                            "MUL"
+                                        ],
+                                        "OBNJIGIHGEO": true,
+                                        "JCCADHFFNFM": true,
+                                        "AEOLDMAMNLM": 0.0
+                                    },
+                                    "OCHEEDIDOHI": {
+                                        "AIDMNBLLAIJ": "default",
+                                        "OEGAJNNFFPO": "LV2",
+                                        "EPGLCHLENNG": 0.05000000074505806
+                                    },
+                                    "FAAOHGPLAFO": "OriginOwner"
+                                }
+                            },
+                            "PFBJAFHFBDE": "Enemy"
+                        }
+                    ]
+                },
+                "WindRing_WindZone_Drag": {
+                    "modifierName": "",
+                    "FAFCPJJAIGK": 1.0,
+                    "bonusCritical": 100.0,
+                    "NLPPKPOJEOA": {
+                        "Actor_AddGravityScale": -2.0
+                    },
+                    "FJMPEOEHPJK": "Struggle",
+                    "PLFMOPGDMDI": true
+                },
+                "UNIQUE_WindRing_WindZone_Crit_Trigger": {
+                    "HABNNJHCOCD": "Unique",
+                    "modifierName": "",
+                    "defaultDistanceBetweenAvatarAndCamera": true,
+                    "bonusCritical": 100.0,
+                    "FNDEOLGHDHC": [
+                        {
+                            "$type": "Predicated",
+                            "KMGAOOHMCPK": "Other",
+                            "BKFHNENKMAL": true,
+                            "targetPredicates": [
+                                {
+                                    "$type": "FAGBAHBLACH",
+                                    "MALHNOJHHDJ": [
+                                        "Monster"
+                                    ]
+                                }
+                            ],
+                            "successActions": [
+                                {
+                                    "$type": "ApplyModifier",
+                                    "KMGAOOHMCPK": "AllPlayerAvatars",
+                                    "BKFHNENKMAL": true,
+                                    "modifierName": "WindRing_Buff_Critical_Delta"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "WindRing_Buff_Critical_Delta": {
+                    "HABNNJHCOCD": "MultipleRefreshNoRemove",
+                    "FNNAEGKHFHN": {
+                        "KDGIJMLBBPL": "",
+                        "HDFMDCDJBPB": 20.0,
+                        "NGAONBEFEAH": true
+                    },
+                    "modifierName": "",
+                    "FAFCPJJAIGK": "WindRing_CritBuffTime",
+                    "bonusCritical": 100.0,
+                    "NLPPKPOJEOA": {
+                        "Actor_CriticalDelta": "WindRing_Critical_Delta",
+                        "Actor_CriticalHurtDelta": "WindRing_CriticalHurt_Delta"
+                    },
+                    "PLFMOPGDMDI": true
+                }
+            },
+            "NLFIGALMIPD": [
+                {
+                    "$type": "SetSystemValueToOverrideMap",
+                    "BKFHNENKMAL": true,
+                    "NGGCNKPAODB": "DamageSystemValue",
+                    "type": "ElementLevelCo"
+                }
+            ],
+            "onAbilityStart": [
+                {
+                    "$type": "FireEffect",
+                    "BKFHNENKMAL": true,
+                    "LHHFHDEJOHC": "Eff_Activity_V4.2_RainBowPrince_WindFlare",
+                    "PCLAEGHPNHE": -1.0
+                }
+            ],
+            "EGGOIPOIGJA": true
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "ActivityAbility_V4.2_RainBowPrince_HPRing",
+            "abilityMixins": [
+                {
+                    "$type": "AttachToNormalizedTimeMixin",
+                    "GEAPDIDEKFG": "Skill01",
+                    "modifierName": "UNIQUE_RainBowPrince_HPRing_Start",
+                    "BPKNANBNBBJ": 0.31700000166893005
+                },
+                {
+                    "$type": "AttachToNormalizedTimeMixin",
+                    "GEAPDIDEKFG": "Skill01",
+                    "modifierName": "RainBowPrince_HPRing_Effect",
+                    "BPKNANBNBBJ": 0.18299999833106995
+                }
+            ],
+            "abilitySpecials": {
+                "HPRing_HPUpRatio": 0.0,
+                "HPRing_HurtReductionRatio": 0.0,
+                "HPRing_BuffTime": 0.0,
+                "HPRing_StackingBuff_HPUpRatio": 0.0,
+                "HPRing_StackingBuff_ElemMasteryDelta": 0.0,
+                "HPRing_BuffMaxStacks": 0.0,
+                "HPRing_AddHurtExtra_Delta": 0.0
+            },
+            "modifiers": {
+                "RainBowPrince_HPRing_Effect": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "FireEffect",
+                            "BKFHNENKMAL": true,
+                            "LHHFHDEJOHC": "Eff_Activity_V4.2_RainBowPrince_HPBuff",
+                            "CCNCMOGOFAG": {
+                                "$type": "DELDMCFKBBL",
+                                "FPDJOHEHNDD": true
+                            },
+                            "PCLAEGHPNHE": -1.0
+                        }
+                    ]
+                },
+                "UNIQUE_RainBowPrince_HPRing_Start": {
+                    "modifierName": "",
+                    "defaultDistanceBetweenAvatarAndCamera": true,
+                    "FAFCPJJAIGK": 0.30000001192092896,
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "ApplyModifier",
+                            "modifierName": "UNIQUE_RainBowPrince_HPRing_Handler"
+                        }
+                    ]
+                },
+                "UNIQUE_RainBowPrince_HPRing_Handler": {
+                    "HABNNJHCOCD": "Unique",
+                    "modifierName": "",
+                    "defaultDistanceBetweenAvatarAndCamera": true,
+                    "FAFCPJJAIGK": "HPRing_BuffTime",
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "AttachModifier",
+                            "KMGAOOHMCPK": "Team",
+                            "modifierName": "UNIQUE_RainBowPrince_HPRing_Team"
+                        }
+                    ]
+                },
+                "UNIQUE_RainBowPrince_HPRing_Team": {
+                    "modifierName": "",
+                    "defaultDistanceBetweenAvatarAndCamera": true,
+                    "FAFCPJJAIGK": "HPRing_BuffTime",
+                    "bonusCritical": 100.0,
+                    "modifierMixins": [
+                        {
+                            "$type": "CurLocalAvatarMixinV2",
+                            "modifierName": "UNIQUE_RainBowPrince_HPRing_Eff"
+                        },
+                        {
+                            "$type": "LocalAvatarsMixin",
+                            "modifierName": "UNIQUE_RainBowPrince_HPRing_Buff"
+                        }
+                    ]
+                },
+                "UNIQUE_RainBowPrince_HPRing_Eff": {
+                    "modifierName": "",
+                    "defaultDistanceBetweenAvatarAndCamera": true,
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "FireEffect",
+                            "LHHFHDEJOHC": "Eff_Activity_V4.2_RainBowPrince_HPBuff02",
+                            "PCLAEGHPNHE": -1.0
+                        },
+                        {
+                            "$type": "AttachEffect",
+                            "LHHFHDEJOHC": "Eff_Activity_V4.2_RainBowPrince_HPBuff03",
+                            "PCLAEGHPNHE": -1.0
+                        }
+                    ]
+                },
+                "UNIQUE_RainBowPrince_HPRing_Buff": {
+                    "FNNAEGKHFHN": {
+                        "KDGIJMLBBPL": "",
+                        "HDFMDCDJBPB": 1.0,
+                        "NGAONBEFEAH": true
+                    },
+                    "modifierName": "",
+                    "defaultDistanceBetweenAvatarAndCamera": true,
+                    "bonusCritical": 100.0,
+                    "modifierMixins": [
+                        {
+                            "$type": "DoActionByEventMixin",
+                            "PLAFKLOEBNE": "HPDown",
+                            "actions": [
+                                {
+                                    "$type": "ApplyModifier",
+                                    "KMGAOOHMCPK": "AllPlayerAvatars",
+                                    "BKFHNENKMAL": true,
+                                    "modifierName": "Stacking_RainBowPrince_HPRing_Buff"
+                                }
+                            ],
+                            "CHBDMMEEIDE": ""
+                        }
+                    ],
+                    "NLPPKPOJEOA": {
+                        "Actor_MaxHPRatio": "HPRing_HPUpRatio",
+                        "Actor_SubHurtDelta": "HPRing_HurtReductionRatio"
+                    },
+                    "NFKOGKMAIIE": [
+                        {
+                            "$type": "RemoveModifier",
+                            "BKFHNENKMAL": true,
+                            "modifierName": "Stacking_RainBowPrince_HPRing_Buff"
+                        }
+                    ],
+                    "PLFMOPGDMDI": true
+                },
+                "Stacking_RainBowPrince_HPRing_Buff": {
+                    "HABNNJHCOCD": "MultipleRefreshNoRemove",
+                    "FNNAEGKHFHN": {
+                        "KDGIJMLBBPL": "",
+                        "HDFMDCDJBPB": "HPRing_BuffMaxStacks",
+                        "NGAONBEFEAH": true
+                    },
+                    "modifierName": "",
+                    "FAFCPJJAIGK": "HPRing_BuffTime",
+                    "bonusCritical": 100.0,
+                    "NLPPKPOJEOA": {
+                        "Actor_MaxHPRatio": "HPRing_StackingBuff_HPUpRatio",
+                        "Actor_ElemMasteryDelta": "HPRing_StackingBuff_ElemMasteryDelta"
+                    },
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "FireEffect",
+                            "LHHFHDEJOHC": "Eff_Activity_V4.2_RainBowPrince_HPBuff02",
+                            "PCLAEGHPNHE": -1.0
+                        }
+                    ],
+                    "PLFMOPGDMDI": true
+                }
+            },
+            "NLFIGALMIPD": [
+                {
+                    "$type": "SetSystemValueToOverrideMap",
+                    "BKFHNENKMAL": true,
+                    "NGGCNKPAODB": "DamageSystemValue",
+                    "type": "ElementLevelCo"
+                }
+            ],
+            "EGGOIPOIGJA": true
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "ActivityAbility_V4.2_RainBowPrince_DrainHP",
+            "abilityMixins": [
+                {
+                    "$type": "AttachToNormalizedTimeMixin",
+                    "GEAPDIDEKFG": "Skill01",
+                    "modifierName": "UNIQUE_RainBowPrince_DrainHp_Start",
+                    "BPKNANBNBBJ": 0.13699999451637268
+                }
+            ],
+            "abilitySpecials": {
+                "DrainHP_BuffTime": 0.0,
+                "DrainHP_Buff_LifeCostRatio": 0.0,
+                "DrainHP_Buff_Attack_Rate": 0.0,
+                "DrainHP_Buff_LifeReviveRatio": 0.05000000074505806
+            },
+            "modifiers": {
+                "UNIQUE_RainBowPrince_DrainHp_Start": {
+                    "modifierName": "",
+                    "defaultDistanceBetweenAvatarAndCamera": true,
+                    "FAFCPJJAIGK": 0.30000001192092896,
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "ApplyModifier",
+                            "KMGAOOHMCPK": "Team",
+                            "modifierName": "UNIQUE_RainBowPrince_DrainHP_Handler"
+                        },
+                        {
+                            "$type": "ApplyModifier",
+                            "modifierName": "RainBowPrince_DrainHP_Eff_TargetMain"
+                        }
+                    ]
+                },
+                "RainBowPrince_DrainHP_Eff_TargetMain": {
+                    "modifierName": "",
+                    "FAFCPJJAIGK": "DrainHP_BuffTime",
+                    "bonusCritical": 100.0,
+                    "ANPDJHOGAFE": [
+                        "DrainHP_BuffTime",
+                        1.0,
+                        "SUB"
+                    ],
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "AttachEffect",
+                            "LHHFHDEJOHC": "Eff_Activity_V4.2_RainBowPrince_DrainHP_TargetMain",
+                            "PCLAEGHPNHE": -1.0,
+                            "GAJDOCMPDFD": true
+                        }
+                    ],
+                    "MDPGEKAIFIM": [
+                        {
+                            "$type": "SendEffectTriggerToLineEffect",
+                            "HDBIEOFMAOD": "LineEnd",
+                            "PAOPLDJGAKA": "",
+                            "LHHFHDEJOHC": "Eff_Activity_V4.2_RainBowPrince_DrainHP_Buff"
+                        }
+                    ]
+                },
+                "RainBowPrince_DrainHP_Eff_TargetSub": {
+                    "modifierName": "",
+                    "FAFCPJJAIGK": "DrainHP_BuffTime",
+                    "bonusCritical": 100.0,
+                    "modifierMixins": [
+                        {
+                            "$type": "OnAvatarUseSkillMixin",
+                            "PAPDDFLCFFE": [
+                                {
+                                    "$type": "AttachModifier",
+                                    "KMGAOOHMCPK": "Caster",
+                                    "BKFHNENKMAL": true,
+                                    "modifierName": "Eff_Activity_V4.2_RainBowPrince_DrainHP_ChangeAlpha"
+                                }
+                            ],
+                            "PHCAKDJHLAO": 1.0
+                        }
+                    ],
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "AttachEffect",
+                            "BKFHNENKMAL": true,
+                            "LHHFHDEJOHC": "Eff_Activity_V4.2_RainBowPrince_DrainHP_TargetSub",
+                            "PCLAEGHPNHE": -1.0
+                        }
+                    ]
+                },
+                "Eff_Activity_V4.2_RainBowPrince_DrainHP_ChangeAlpha": {
+                    "modifierName": "",
+                    "FAFCPJJAIGK": 2.0,
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "SendEffectTriggerToLineEffect",
+                            "HDBIEOFMAOD": "LineStop",
+                            "PAOPLDJGAKA": "",
+                            "LHHFHDEJOHC": "Eff_Activity_V4.2_RainBowPrince_DrainHP_Buff"
+                        }
+                    ],
+                    "NFKOGKMAIIE": [
+                        {
+                            "$type": "SendEffectTriggerToLineEffect",
+                            "HDBIEOFMAOD": "LineStart",
+                            "PAOPLDJGAKA": "",
+                            "LHHFHDEJOHC": "Eff_Activity_V4.2_RainBowPrince_DrainHP_Buff"
+                        }
+                    ]
+                },
+                "UNIQUE_RainBowPrince_DrainHP_Handler": {
+                    "modifierName": "",
+                    "defaultDistanceBetweenAvatarAndCamera": true,
+                    "FAFCPJJAIGK": "DrainHP_BuffTime",
+                    "bonusCritical": 100.0,
+                    "modifierMixins": [
+                        {
+                            "$type": "CurLocalAvatarMixinV2",
+                            "modifierName": "RainBowPrince_DrainHP_Buff"
+                        }
+                    ]
+                },
+                "RainBowPrince_DrainHP_Buff": {
+                    "HABNNJHCOCD": "Unique",
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "ANPDJHOGAFE": 0.800000011920929,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "AttachModifier",
+                            "modifierName": "RainBowPrince_DrainHP_Eff_TargetSub"
+                        },
+                        {
+                            "$type": "Predicated",
+                            "BKFHNENKMAL": true,
+                            "targetPredicates": [
+                                {
+                                    "$type": "OGKLKNAFOAB",
+                                    "KMGAOOHMCPK": "Self",
+                                    "KAFEGOCEDLK": 0.5
+                                }
+                            ],
+                            "successActions": [
+                                {
+                                    "$type": "AttachModifier",
+                                    "modifierName": "RainBowPrince_DrainHP_DamageUp"
+                                }
+                            ]
+                        }
+                    ],
+                    "FNDEOLGHDHC": [
+                        {
+                            "$type": "Predicated",
+                            "KMGAOOHMCPK": "Other",
+                            "targetPredicates": [
+                                {
+                                    "$type": "FAGBAHBLACH",
+                                    "MALHNOJHHDJ": [
+                                        "Monster"
+                                    ]
+                                }
+                            ],
+                            "successActions": [
+                                {
+                                    "$type": "ApplyModifier",
+                                    "modifierName": "UNIQUE_RainBowPrince_DrainHP_HPDown"
+                                }
+                            ]
+                        }
+                    ],
+                    "MDPGEKAIFIM": [
+                        {
+                            "$type": "Predicated",
+                            "BKFHNENKMAL": true,
+                            "targetPredicates": [
+                                {
+                                    "$type": "OGKLKNAFOAB",
+                                    "KMGAOOHMCPK": "Self",
+                                    "KAFEGOCEDLK": 0.5
+                                }
+                            ],
+                            "successActions": [
+                                {
+                                    "$type": "AttachModifier",
+                                    "modifierName": "RainBowPrince_DrainHP_DamageUp"
+                                }
+                            ]
+                        }
+                    ],
+                    "PLFMOPGDMDI": true
+                },
+                "RainBowPrince_DrainHP_DamageUp": {
+                    "modifierName": "",
+                    "FAFCPJJAIGK": 2.0,
+                    "bonusCritical": 100.0,
+                    "modifierMixins": [
+                        {
+                            "$type": "ModifyDamageMixin",
+                            "LBKHBAHAAIL": [
+                                "NormalAttack_01",
+                                "NormalAttack_02",
+                                "NormalAttack_03",
+                                "NormalAttack_04",
+                                "NormalAttack_05",
+                                "NormalAttack_06",
+                                "ExtraAttack",
+                                "FallingAttack",
+                                "Elemental_Art",
+                                "Elemental_Art_Hold",
+                                "Elemental_Art_Extra"
+                            ],
+                            "PDHAKJCMPHB": "DrainHP_Buff_Attack_Rate"
+                        }
+                    ],
+                    "FJMPEOEHPJK": "AttackUp",
+                    "PLFMOPGDMDI": true
+                },
+                "UNIQUE_RainBowPrince_DrainHP_HPDown": {
+                    "HABNNJHCOCD": "Unique",
+                    "modifierName": "",
+                    "defaultDistanceBetweenAvatarAndCamera": true,
+                    "FAFCPJJAIGK": 0.30000001192092896,
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "Predicated",
+                            "BKFHNENKMAL": true,
+                            "targetPredicates": [
+                                {
+                                    "$type": "OGKLKNAFOAB",
+                                    "KMGAOOHMCPK": "Self",
+                                    "KAFEGOCEDLK": 0.5
+                                }
+                            ],
+                            "successActions": [
+                                {
+                                    "$type": "LoseHP",
+                                    "BFFEOHLLMHA": "DrainHP_Buff_LifeCostRatio",
+                                    "KFPIIPEFCOJ": false,
+                                    "DKEIJGBAKME": ""
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "RainBowPrince_DrainHP_HPUp": {
+                    "HABNNJHCOCD": "Multiple",
+                    "modifierName": "",
+                    "FAFCPJJAIGK": 0.30000001192092896,
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "HealHP",
+                            "KMGAOOHMCPK": "AllPlayerAvatars",
+                            "BFFEOHLLMHA": "DrainHP_Buff_LifeReviveRatio",
+                            "IHHGNLPEAOJ": ""
+                        }
+                    ]
+                }
+            },
+            "EGGOIPOIGJA": true
+        }
+    }
+]

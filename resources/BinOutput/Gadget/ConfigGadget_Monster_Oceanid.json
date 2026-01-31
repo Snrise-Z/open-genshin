@@ -1,0 +1,1573 @@
+{
+    "Oceanid_MustKill_Empty": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "CPGMBCECPEN": 0.4000000059604645
+            },
+            "mass": 5.0,
+            "affectedByWorld": true,
+            "checkInSurface": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 1.0,
+                "defense": 999999.0,
+                "isLockHP": true,
+                "isGhostToAllied": true,
+                "ignorePurgeRate": false
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "AHCOGNAHOOF": {
+            "lifeTime": 6.0
+        }
+    },
+    "Oceanid_DelayWaterBall_Trigger": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "CPGMBCECPEN": 0.4000000059604645
+            },
+            "mass": 5.0,
+            "affectedByWorld": true,
+            "checkInSurface": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 1.0,
+                "defense": 999999.0,
+                "isGhostToAllied": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "CreateDelayBall",
+                "abilityName": "Monster_Oceanid_02_BulletTriggerDelayWaterBall",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 10.0
+        }
+    },
+    "Oceanid_PlatformDamage": {
+        "$type": "ConfigGadget",
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isLockHP": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "PlatfromDamage",
+                "abilityName": "Monster_Oceanid_02_PlatformDamage",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 33.0
+        }
+    },
+    "Oceanid_DelayWaterBall": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            }
+        },
+        "hasModel": true,
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 1.0,
+                "attack": 15.0,
+                "defense": 999999.0,
+                "isInvincible": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "hitAutoRedirect": false,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Monster_Oceanid_WaterLaser_ChasingTarget",
+                "abilityName": "Oceanid_DelayWaterBall_Explode",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 3.0
+        },
+        "move": {
+            "$type": "AMKPMPLFKHP",
+            "speed": 10.0,
+            "maxSpeed": 15.0,
+            "minSpeed": 12.0,
+            "GBPNCGHBJMC": 1000.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "BCHPBKHELJG": 0.5,
+            "IAOOAMKFJFD": 1000.0,
+            "HGADENJMNEB": 0.800000011920929
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Oceanid_DelayWaterBall_Explode"
+                }
+            ],
+            "JPNAMDFCBFN": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Oceanid_DelayWaterBall_Explode"
+                }
+            ]
+        }
+    },
+    "Oceanid_TraceWaterBall": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            }
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isGhostToAllied": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Oceanid_TraceWaterBall_Explode",
+                "abilityName": "Oceanid_TraceWaterBall_Explode",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 4.0
+        },
+        "move": {
+            "$type": "EGIBMIADEHO",
+            "speed": 7.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            }
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Oceanid_TraceWaterBall_Explode"
+                }
+            ],
+            "JPNAMDFCBFN": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Oceanid_TraceWaterBall_Explode"
+                }
+            ],
+            "GNGMJEIPCJE": true
+        }
+    },
+    "Oceanid_SmashAddAttack": {
+        "$type": "ConfigGadget",
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isLockHP": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "SmashDLCAtk",
+                "abilityName": "Monster_Oceanid_02_SmashAddAttackGadget",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 5.0
+        }
+    },
+    "Oceanid_Elevator_Buttom": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            }
+        },
+        "KHBLBFEGFKJ": {
+            "DNMJABMFJBL": true,
+            "FFMEBENHJAC": ""
+        },
+        "combat": {
+            "property": {
+                "endureType": "Monster_Boss_Humanoid",
+                "HP": 1000000000.0,
+                "attack": 15.0,
+                "defense": 999999.0
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Monster_Oceanid_02_ElevatorButtomGadget",
+                "abilityName": "Monster_Oceanid_02_ElevatorButtomGadget",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Monster_Oceanid_02_ResetElevator",
+                "abilityName": "Monster_Oceanid_02_ResetElevator",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 35.0
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "triggerType": "TriggerAlways",
+                "triggerCD": 0.30000001192092896,
+                "targetType": "All",
+                "ignoreScene": true,
+                "ignoreWater": true,
+                "bornWithTriggerEnabled": false
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Monster_Oceanid_02_ElevatorButtomGadget"
+                }
+            ],
+            "ENBJBDDCLMC": 0.6000000238418579
+        }
+    },
+    "Oceanid_Elevator": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            }
+        },
+        "KHBLBFEGFKJ": {
+            "IDDADMDNJND": true,
+            "DNMJABMFJBL": true,
+            "FFMEBENHJAC": ""
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Monster_Oceanid_02_Elevator",
+                "abilityName": "Monster_Oceanid_02_Elevator",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 20.0
+        },
+        "move": {
+            "$type": "ConfigPlatformMove",
+            "LHHCPNPDHBL": {
+                "localId": 42005015,
+                "name": "Oceanid_Elevator",
+                "points": [
+                    {
+                        "targetVelocity": 5.5
+                    },
+                    {
+                        "pos": {
+                            "y": 6.099999904632568
+                        },
+                        "waitTime": 31.0,
+                        "targetVelocity": 5.0,
+                        "hasReachEvent": true,
+                        "reachStop": true
+                    }
+                ]
+            }
+        }
+    },
+    "Oceanid_WaterLaser_LockTarget": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "CPGMBCECPEN": 0.4000000059604645
+            },
+            "mass": 5.0,
+            "affectedByWorld": true,
+            "checkInSurface": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 1.0,
+                "defense": 999999.0,
+                "isLockHP": true,
+                "isGhostToEnemy": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Monster_Oceanid_02_LockTargetGadget",
+                "abilityName": "Monster_Oceanid_02_LockTargetGadget",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 20.0
+        },
+        "move": {
+            "$type": "EGIBMIADEHO",
+            "MPMOPIIFDPO": {
+                "excludeForces": [
+                    "WindZoneType"
+                ]
+            },
+            "speed": 30.0,
+            "JPDKAELMNDJ": {
+                "JJPKBDAAIFH": 0.5,
+                "HOOIFDANBGN": 45.0,
+                "APHEEIPGAAP": 0.10000000149011612,
+                "MAGKJGBJBPE": 0.25,
+                "LFCIJINPMNE": true,
+                "MFPFHOJOFDN": "Keep",
+                "IBAOIHMFNFE": "Keep"
+            }
+        }
+    },
+    "Oceanid_WaterLaser_ChasingTarget": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "FCAGPAEOLPI": 1.2000000476837158,
+                "HOJBBPFJMIL": 1.2000000476837158,
+                "CPGMBCECPEN": 1.2000000476837158
+            },
+            "scale": 1.2000000476837158
+        },
+        "hasModel": true,
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 999999.0,
+                "attack": 15.0,
+                "defense": 999999.0,
+                "isInvincible": true,
+                "isGhostToEnemy": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "hitAutoRedirect": false,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Monster_Oceanid_WaterLaser_ChasingTarget",
+                "abilityName": "Monster_Oceanid_WaterLaser_ChasingTarget",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 11.0
+        },
+        "move": {
+            "$type": "EGIBMIADEHO",
+            "MPMOPIIFDPO": {
+                "excludeForces": [
+                    "WindZoneType"
+                ]
+            },
+            "speed": 6.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD",
+                "GMLPDHMOONH": 360.0
+            },
+            "JPDKAELMNDJ": {
+                "JJPKBDAAIFH": 0.5,
+                "HOOIFDANBGN": 60.0,
+                "APHEEIPGAAP": 0.20000000298023224,
+                "MAGKJGBJBPE": 0.30000001192092896,
+                "LFCIJINPMNE": true,
+                "MFPFHOJOFDN": "Keep",
+                "IBAOIHMFNFE": "Keep"
+            }
+        }
+    },
+    "Oceanid_WaterLaser_Damage": {
+        "$type": "ConfigGadget",
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 999999.0,
+                "attack": 15.0,
+                "defense": 999999.0,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Monster_Oceanid_02_WaterLaserDamage",
+                "abilityName": "Monster_Oceanid_02_WaterLaserDamage",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 1.0
+        },
+        "move": {
+            "$type": "KBENGKLMEAL",
+            "speed": 60.0
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "ccd": {
+                    "type": "Always"
+                },
+                "targetType": "AllExceptSelf"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Monster_Oceanid_02_WaterLaserDamage"
+                }
+            ]
+        }
+    },
+    "Oceanid_Crab_Bubble": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "CPGMBCECPEN": 0.4000000059604645
+            }
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 999999.0,
+                "attack": 15.0,
+                "defense": 999999.0,
+                "isLockHP": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Bubble_Explode",
+                "abilityName": "Oceanid_Crab_Bubble_Explode",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 5.0
+        },
+        "move": {
+            "$type": "EGIBMIADEHO",
+            "speed": 4.800000190734863,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "BCNECAMPGJJ": true
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "All",
+                "ignoreScene": true
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Oceanid_Crab_Bubble_Explode"
+                }
+            ],
+            "JPNAMDFCBFN": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Oceanid_Crab_Bubble_Explode"
+                }
+            ],
+            "GNGMJEIPCJE": true
+        }
+    },
+    "Oceanid_Boar_WaterBall": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            },
+            "affectedByWorld": true,
+            "checkInSurface": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 999999.0,
+                "attack": 15.0,
+                "defense": 999999.0,
+                "weight": 60.0,
+                "isLockHP": true,
+                "ignorePurgeRate": false
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "BallExplode",
+                "abilityName": "Animal_Oceanid_Boar_02_BallExplode",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 10.0
+        },
+        "move": {
+            "$type": "FHJABLDOPCE",
+            "speed": 30.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "JPDDBBHJAAH": true,
+            "LDOEEHMFPHN": 45.0,
+            "IPBPLMGOJKC": 40.0,
+            "NKKKMPEEEAP": {
+                "$type": "HHINGLNHGCK",
+                "PKKOKKLEFMB": 5.0,
+                "AHBLNOPFFIP": 15.0,
+                "minSpeed": 6.0,
+                "maxSpeed": 24.0
+            }
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy",
+                "bornWithTriggerEnabled": false
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Animal_Oceanid_Boar_02_BallExplode"
+                }
+            ]
+        }
+    },
+    "Oceanid_Squirrel_WaterWave": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            }
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 999999.0,
+                "attack": 10.0,
+                "defense": 999999.0,
+                "isInvincible": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Oceanid_Squirrel_WaterWaveEffect",
+                "abilityName": "Oceanid_Squirrel_WaterWaveEffect",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 3.0
+        },
+        "move": {
+            "$type": "KBENGKLMEAL",
+            "speed": 15.0,
+            "AFIKDKDFKCJ": 7.5,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            }
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "triggerType": "TriggerNoRepeat",
+                "targetType": "Enemy",
+                "ignoreScene": true
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Oceanid_Squirrel_WaterWaveEffect"
+                }
+            ],
+            "GNGMJEIPCJE": true
+        }
+    },
+    "Crane_WaterWave": {
+        "$type": "ConfigGadget",
+        "common": {},
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 999999.0,
+                "attack": 10.0,
+                "defense": 999999.0,
+                "isInvincible": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Crane_WaterWave_Explode",
+                "abilityName": "Crane_WaterWave_Explode",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Crane_WaterWave_LifeTimeOver",
+                "abilityName": "Crane_WaterWave_LifeTimeOver",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 3.5
+        },
+        "move": {
+            "$type": "KBENGKLMEAL",
+            "speed": 20.0,
+            "AFIKDKDFKCJ": 5.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "JPDKAELMNDJ": {
+                "JJPKBDAAIFH": 0.5,
+                "HOOIFDANBGN": 45.0,
+                "APHEEIPGAAP": 0.10000000149011612,
+                "MAGKJGBJBPE": 0.25,
+                "LFCIJINPMNE": true,
+                "MFPFHOJOFDN": "Keep",
+                "IBAOIHMFNFE": "Keep"
+            }
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "triggerType": "TriggerNoRepeat",
+                "targetType": "Enemy",
+                "ignoreScene": true
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Crane_WaterWave_Explode"
+                }
+            ],
+            "JPNAMDFCBFN": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Crane_WaterWave_LifeTimeOver"
+                }
+            ]
+        }
+    },
+    "Crab_WaterBubble": {
+        "$type": "ConfigGadget",
+        "common": {},
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 999999.0,
+                "attack": 10.0,
+                "defense": 999999.0,
+                "isInvincible": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Crane_WaterWave_Explode",
+                "abilityName": "Crab_WaterBubble_Explode",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 5.0
+        },
+        "move": {
+            "$type": "FHJABLDOPCE",
+            "speed": 10.0,
+            "LDOEEHMFPHN": 60.0,
+            "IPBPLMGOJKC": 7.5,
+            "NKKKMPEEEAP": {
+                "$type": "HHINGLNHGCK",
+                "PKKOKKLEFMB": 1.0,
+                "AHBLNOPFFIP": 45.0,
+                "minSpeed": 7.5,
+                "maxSpeed": 20.0
+            }
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy",
+                "ignoreScene": true
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Crab_WaterBubble_Explode"
+                }
+            ],
+            "JPNAMDFCBFN": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Crab_WaterBubble_Explode"
+                }
+            ],
+            "GNGMJEIPCJE": true
+        }
+    },
+    "Tit_WaterBubble": {
+        "$type": "ConfigGadget",
+        "common": {},
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 999999.0,
+                "attack": 10.0,
+                "defense": 999999.0,
+                "isInvincible": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Crane_WaterWave_Explode",
+                "abilityName": "Crane_WaterWave_Explode",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 5.0
+        },
+        "move": {
+            "$type": "KBENGKLMEAL",
+            "speed": 5.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            }
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Crane_WaterWave_Explode"
+                }
+            ],
+            "JPNAMDFCBFN": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Crane_WaterWave_Explode"
+                }
+            ],
+            "GNGMJEIPCJE": true
+        }
+    },
+    "Frog_WaterWave": {
+        "$type": "ConfigGadget",
+        "common": {},
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 999999.0,
+                "attack": 10.0,
+                "defense": 999999.0,
+                "isInvincible": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Frog_WaterWave_Damage",
+                "abilityName": "Frog_WaterWave_Damage",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 5.0
+        },
+        "move": {
+            "$type": "KBENGKLMEAL",
+            "speed": 15.0,
+            "AFIKDKDFKCJ": -4.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            }
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "triggerType": "TriggerNoRepeat",
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Frog_WaterWave_Damage"
+                }
+            ],
+            "GNGMJEIPCJE": true
+        }
+    },
+    "Frog_DeathExplode": {
+        "$type": "ConfigGadget",
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 100.0,
+                "attack": 10.0,
+                "isInvincible": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Frog_DeathExplode_Damage",
+                "abilityName": "Frog_DeathExplode_Damage",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 10.0
+        }
+    },
+    "Oceanid_Affix_DeathExplode": {
+        "$type": "ConfigGadget",
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 100.0,
+                "attack": 10.0,
+                "isInvincible": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Oceanid_Affix_DeathExplode",
+                "abilityName": "Oceanid_Affix_DeathExplode",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 10.0
+        }
+    },
+    "Oceanid_PlatForm": {
+        "$type": "ConfigGadget",
+        "common": {},
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 999999.0,
+                "attack": 10.0,
+                "defense": 999999.0,
+                "isInvincible": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "AHCOGNAHOOF": {
+            "lifeInfinite": true,
+            "lifeTime": 5.0
+        }
+    },
+    "Oceanid_MoveAnchor": {
+        "$type": "ConfigGadget",
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isLockHP": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "AHCOGNAHOOF": {
+            "lifeInfinite": true,
+            "lifeTime": 5.0
+        }
+    },
+    "Oceanid_SummonBullet": {
+        "$type": "ConfigGadget",
+        "common": {},
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 999999.0,
+                "attack": 10.0,
+                "defense": 999999.0,
+                "isInvincible": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Oceanid_SummonBullet_Explode",
+                "abilityName": "Oceanid_SummonBullet_Explode",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 7.5
+        },
+        "move": {
+            "$type": "EGIBMIADEHO",
+            "speed": 10.0,
+            "AFIKDKDFKCJ": 3.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "BCNECAMPGJJ": true
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "triggerType": "TriggerNoRepeat",
+                "targetType": "Enemy",
+                "ignoreScene": true
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Oceanid_SummonBullet_Explode"
+                }
+            ],
+            "GNGMJEIPCJE": true
+        }
+    },
+    "SceneObj_Oceanid_Platform": {
+        "$type": "ConfigGadget",
+        "common": {
+            "disableTickDistance": 1500.0,
+            "canTriggerElementReactionText": false,
+            "muteElementStickUI": true
+        },
+        "combat": {
+            "property": {
+                "HP": 1000.0,
+                "attack": 100.0,
+                "weight": 50.0,
+                "isLockHP": true,
+                "isGhostToAllied": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "hitAutoRedirect": false,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            },
+            "die": {
+                "dieForceDisappearTime": 0.0,
+                "dieDisappearEffect": ""
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Oceanid_Platform_SwitchHitBox",
+                "abilityName": "Oceanid_Platform_SwitchHitBox",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Oceanid_Platform_SummonMonster",
+                "abilityName": "Oceanid_Platform_SummonMonster",
+                "abilityOverride": ""
+            }
+        ],
+        "move": {
+            "$type": "ConfigPlatformMove"
+        }
+    },
+    "Oceanid_HpController": {
+        "$type": "ConfigGadget",
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isLockHP": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Oceanid_HpController_Stage",
+                "abilityName": "Oceanid_HpController_Stage",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeInfinite": true,
+            "lifeTime": 5.0
+        }
+    },
+    "Oceanid_BornAnchor": {
+        "$type": "ConfigGadget",
+        "combat": {
+            "property": {
+                "HP": 999999.0,
+                "attack": 10.0,
+                "defense": 999999.0,
+                "isInvincible": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Oceanid_BornAnchor_State",
+                "abilityName": "Oceanid_BornAnchor_State",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeInfinite": true,
+            "lifeTime": 5.0
+        }
+    },
+    "Necalevia_Small_RangeBullet": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            }
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isGhostToAllied": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "Necalevia_Small_RangeBullet_Explode",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "",
+                "abilityName": "Monster_Necalevia_Small_RangeBulletExplode_LifeOver",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 4.0
+        },
+        "move": {
+            "$type": "KBENGKLMEAL",
+            "speed": 7.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            }
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Necalevia_Small_RangeBullet_Explode"
+                }
+            ],
+            "JPNAMDFCBFN": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Monster_Necalevia_Small_RangeBulletExplode_LifeOver"
+                }
+            ],
+            "GNGMJEIPCJE": true
+        }
+    },
+    "Necalevia_RangeBullet": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            }
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isGhostToAllied": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "Necalevia_RangeBullet_Explode",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "",
+                "abilityName": "Monster_Necalevia_RangeBulletExplode_LifeOver",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 4.0
+        },
+        "move": {
+            "$type": "KBENGKLMEAL",
+            "speed": 20.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            }
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Necalevia_RangeBullet_Explode"
+                }
+            ],
+            "JPNAMDFCBFN": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Monster_Necalevia_RangeBulletExplode_LifeOver"
+                }
+            ],
+            "GNGMJEIPCJE": true
+        }
+    },
+    "Necalevia_AOERangeMulti": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            },
+            "mass": 100000.0
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isLockHP": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            },
+            "simulatePhysics": {
+                "enable": true,
+                "radius": 0.30000001192092896
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "Necalevia_AOERangeMulti_Damage",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 5.0
+        },
+        "move": {
+            "$type": "DGFHGKIONHF"
+        },
+        "LGBJNNEDJDF": {
+            "$type": "OANGKAJJAPC",
+            "collision": {
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Necalevia_AOERangeMulti_Damage"
+                }
+            ],
+            "ABEEECCLELB": {
+                "$type": "PHDKEEJOLEA",
+                "shieldHP": "Eff_Monster_Necalevia_Big_RangeAOEAttack_Bullet",
+                "FFHAKCJMAKF": "",
+                "KJLIEBGKOFN": 0.5
+            }
+        }
+    },
+    "Oceanid_Animal_WaterDropAttack": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            },
+            "affectedByWorld": true,
+            "checkInSurface": true,
+            "useGrassDisplacement": true,
+            "enableCrashDamage": false
+        },
+        "combat": {
+            "property": {
+                "endureType": "Monster_Boss_Humanoid",
+                "useCreatorProperty": true,
+                "weight": 200.0,
+                "isLockHP": true,
+                "isGhostToEnemy": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": ""
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "Monster_Oceanid_Boar_WaterDropAttack",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 20.0
+        },
+        "PCADANJPFND": true
+    }
+}

@@ -1,0 +1,172 @@
+{
+    "SceneObj_Area_Common_Property_Prop_EmptyFloraShelve_01": {
+        "$type": "ConfigGadget",
+        "hasModel": true,
+        "combat": {
+            "property": {
+                "HP": 99999.0,
+                "isLockHP": true,
+                "ignoreDamageToSelf": true
+            }
+        },
+        "combatTemplate": "",
+        "EOLFAMFPCOL": {
+            "AOGIJKALGNB": "UI/open_custom_gadget_page",
+            "DLLLIKCMJMP": "UI_HOMEWORLD_CUSTOM_BUTTON",
+            "icon": "",
+            "GEALIGKGCBF": "",
+            "NFJICIGABPE": "",
+            "MIHHAGGNIIO": "",
+            "OJDAGICCHKD": false
+        },
+        "CFEIPLEGNFH": {
+            "OGKPAHBIOIJ": {
+                "MKCMEBOGJFM": {
+                    "MNOPCEMCBIG": 1.7000000476837158
+                },
+                "slotMap": {
+                    "FlowerShelf": {
+                        "AFJBANBMPOP": "FlowerShelf",
+                        "NFOJHECOLBN": 1000
+                    }
+                }
+            },
+            "APJGLOKDMCN": ""
+        },
+        "PPLJLLCBMEC": {
+            "JEIMFGMIPFC": 3.0
+        }
+    },
+    "SceneObj_Area_Common_Property_Prop_SnowmanBody_01": {
+        "$type": "ConfigGadget",
+        "hasModel": true,
+        "combat": {
+            "property": {
+                "HP": 99999.0,
+                "isLockHP": true,
+                "ignoreDamageToSelf": true
+            }
+        },
+        "combatTemplate": "",
+        "EOLFAMFPCOL": {
+            "AOGIJKALGNB": "UI/open_custom_gadget_page",
+            "DLLLIKCMJMP": "UI_HOMEWORLD_CUSTOM_SNOWMANBUTTON",
+            "icon": "",
+            "GEALIGKGCBF": "",
+            "NFJICIGABPE": "",
+            "MIHHAGGNIIO": "",
+            "OJDAGICCHKD": false
+        },
+        "CFEIPLEGNFH": {
+            "OGKPAHBIOIJ": {
+                "MKCMEBOGJFM": {
+                    "MNOPCEMCBIG": 1.7000000476837158
+                },
+                "slotMap": {
+                    "Head": {
+                        "AFJBANBMPOP": "Head",
+                        "NFOJHECOLBN": 11
+                    },
+                    "Hand": {
+                        "AFJBANBMPOP": "Hand",
+                        "NFOJHECOLBN": 12
+                    }
+                }
+            },
+            "APJGLOKDMCN": ""
+        },
+        "PPLJLLCBMEC": {
+            "JEIMFGMIPFC": 3.0
+        }
+    },
+    "SceneObj_Area_Dq_Property_Prop_Irodori_Miniascape_01": {
+        "$type": "ConfigGadget",
+        "hasModel": true,
+        "combat": {
+            "property": {
+                "HP": 99999.0,
+                "isLockHP": true,
+                "ignoreDamageToSelf": true
+            }
+        },
+        "combatTemplate": "",
+        "EOLFAMFPCOL": {
+            "AOGIJKALGNB": "UI/open_custom_gadget_page",
+            "DLLLIKCMJMP": "UI_HOMEWORLD_CUSTOM_MINIASCAPE",
+            "icon": "",
+            "GEALIGKGCBF": "",
+            "NFJICIGABPE": "",
+            "MIHHAGGNIIO": "",
+            "OJDAGICCHKD": false
+        },
+        "CFEIPLEGNFH": {
+            "OGKPAHBIOIJ": {
+                "MKCMEBOGJFM": {
+                    "MNOPCEMCBIG": 0.800000011920929
+                },
+                "slotMap": {
+                    "FrontScene": {
+                        "AFJBANBMPOP": "FrontScene",
+                        "NFOJHECOLBN": 21
+                    },
+                    "BehindScene": {
+                        "AFJBANBMPOP": "BehindScene",
+                        "NFOJHECOLBN": 22
+                    }
+                }
+            },
+            "APJGLOKDMCN": ""
+        },
+        "PPLJLLCBMEC": {
+            "OONMLKGDJOL": 1.2000000476837158,
+            "JEIMFGMIPFC": 3.0
+        }
+    },
+    "SceneObj_Area_Xm_Property_Prop_WoodAranaraStage_Slot_01": {
+        "$type": "ConfigGadget",
+        "hasModel": true,
+        "combat": {
+            "property": {
+                "HP": 99999.0,
+                "isLockHP": true,
+                "ignoreDamageToSelf": true
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "SceneObj_Area_Xm_Property_Prop_WoodAranaraStage_Slot_01",
+                "abilityName": "SceneObj_Area_Xm_Property_Prop_WoodAranaraStage_Slot_01",
+                "abilityOverride": ""
+            }
+        ],
+        "EOLFAMFPCOL": {
+            "AOGIJKALGNB": "UI/open_custom_gadget_page",
+            "DLLLIKCMJMP": "",
+            "DEPPLAJNPOH": [
+                "HOST"
+            ],
+            "icon": "",
+            "GEALIGKGCBF": "",
+            "NFJICIGABPE": "",
+            "MIHHAGGNIIO": "",
+            "OJDAGICCHKD": false
+        },
+        "CFEIPLEGNFH": {
+            "OGKPAHBIOIJ": {
+                "MKCMEBOGJFM": {},
+                "slotMap": {
+                    "Body": {
+                        "AFJBANBMPOP": "Body",
+                        "NFOJHECOLBN": 1001
+                    }
+                }
+            },
+            "APJGLOKDMCN": ""
+        },
+        "PPLJLLCBMEC": {
+            "OONMLKGDJOL": 1.5,
+            "JEIMFGMIPFC": 3.0
+        }
+    }
+}

@@ -1,0 +1,490 @@
+{
+    "common": {
+        "effectAttachShape": {
+            "$type": "ConfigEffectAttachSkinnedMesh",
+            "mesh": "EffectMesh"
+        },
+        "mass": 20.0,
+        "height": 0.5,
+        "modelHeight": 0.4000000059604645,
+        "viewSize": 0.75,
+        "affectedByWorld": true,
+        "checkInSurface": true,
+        "scale": 1.25,
+        "enableCrashDamage": false
+    },
+    "model": {
+        "bornEffect": "",
+        "attachEffect": "Eff_Monster_Cicin_Water_Born"
+    },
+    "dither": {
+        "showDitherDuration": 2.0
+    },
+    "combat": {
+        "property": {
+            "endureType": "Monster_Slime",
+            "weight": 60.0
+        },
+        "beHit": {
+            "hitBloodEffect": "",
+            "ignoreMinHitVY": true
+        },
+        "combatLock": {
+            "lockShape": "CircleLockEnemy",
+            "lockType": "Avatar&Monster_Lv4"
+        },
+        "die": {
+            "hasAnimatorDie": true,
+            "dieEndTime": 2.0,
+            "dieForceDisappearTime": 8.0,
+            "dieDisappearEffect": "",
+            "muteHitBox": true,
+            "dieDenyLockOn": true,
+            "dieIsGhostToEnemy": true,
+            "dieIgnoreTriggerBullet": true,
+            "muteBillboard": true,
+            "mutePushCollider": true
+        }
+    },
+    "abilities": [
+        {
+            "abilityID": "Monster_Cicin_Water_NormalAtk",
+            "abilityName": "Monster_Cicin_Water_NormalAtk",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "Monster_Cicin_Steer",
+            "abilityName": "Monster_Cicin_Steer",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "Monster_Cicin_Water_CommonEffect",
+            "abilityName": "Monster_Cicin_Water_CommonEffect",
+            "abilityOverride": ""
+        }
+    ],
+    "stateLayers": {
+        "defaultLayer": {
+            "$type": "ConfigNormalStateLayer",
+            "ACOCIAFGIAD": "",
+            "stateIDs": {
+                "Born": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Born": [
+                            "Audio_Cicin_Water_Born"
+                        ]
+                    },
+                    "canDoSkill": true,
+                    "resetAnimatorTriggerOnExit": [
+                        "DoSkill"
+                    ]
+                },
+                "NormalIdle": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Standby": []
+                    },
+                    "canDoSkill": true,
+                    "canSyncMove": true,
+                    "OGNDLAMHMPB": 1.2000000476837158,
+                    "resetAnimatorTriggerOnExit": [
+                        "DoSkill"
+                    ],
+                    "LIPMJPLGIKD": true,
+                    "HMPOMAMKBEF": true
+                },
+                "NormalMove": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Walk": [],
+                        "Run": [],
+                        "Run_Standby": []
+                    },
+                    "canSyncMove": true,
+                    "OGNDLAMHMPB": 1.2000000476837158,
+                    "resetAnimatorTriggerOnExit": [
+                        "DoSkill"
+                    ],
+                    "LIPMJPLGIKD": true
+                },
+                "BeHit": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Hit_L": [],
+                        "Hit_H": []
+                    },
+                    "AJBLILDCLBO": [
+                        "BeHit"
+                    ],
+                    "resetAnimatorTriggerOnExit": [
+                        "DoSkill"
+                    ]
+                },
+                "Struggle": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Struggle": []
+                    },
+                    "AJBLILDCLBO": [
+                        "BeHit"
+                    ],
+                    "resetAnimatorTriggerOnExit": [
+                        "DoSkill"
+                    ]
+                },
+                "BeHitThrow": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "HitThrow": []
+                    },
+                    "AJBLILDCLBO": [
+                        "BeHit",
+                        "HitAir2HitDrop"
+                    ],
+                    "resetAnimatorTriggerOnExit": [
+                        "DoSkill"
+                    ]
+                },
+                "Die": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Die": [
+                            "Monster_Cicin_Water_Die"
+                        ]
+                    }
+                },
+                "Warning": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Warning": [
+                            "Monster_Slime_Warning"
+                        ]
+                    },
+                    "OGNDLAMHMPB": 1.2000000476837158,
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "HasOwnerWarning": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "HasOwnerWarning": []
+                    },
+                    "OGNDLAMHMPB": 1.2000000476837158,
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "NormalAtk": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "NormalAtk": [
+                            "Monster_Cicin_Water_NormalAtk"
+                        ]
+                    },
+                    "OGNDLAMHMPB": 1.2000000476837158,
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ],
+                    "CFGFMHDOEBF": true
+                }
+            }
+        }
+    },
+    "billboard": {
+        "$type": "PAOBAEKGGBC",
+        "attachPoint": "BillboardAttach",
+        "offset": {
+            "y": 0.20000000298023224
+        },
+        "KGHAGECNJPO": true
+    },
+    "initialPoses": {
+        "Default": {}
+    },
+    "aibeta": {
+        "enable": true,
+        "decisionArchetype": "Cicin",
+        "moveSetting": {
+            "moveCategory": "Amphibious",
+            "useNavMesh": false,
+            "navMeshAgentName": "Undead01",
+            "almostReachedDistanceWalk": 2.0,
+            "almostReachedDistanceRun": 2.0
+        },
+        "sensing": {
+            "settings": {
+                "DefaultSetting": {
+                    "viewRange": 20.0,
+                    "feelRange": 10.0
+                }
+            }
+        },
+        "neurons": {
+            "DefaultSetting": [
+                "HIT"
+            ]
+        },
+        "threat": {
+            "clearThreatEdgeDistance": 3.5,
+            "clearThreatTimerByDistance": 1.75,
+            "viewThreatGrow": 35.0,
+            "feelThreatGrow": 1000.0,
+            "threatDecreaseSpeed": 10.0,
+            "JGFOPCOIJOI": ""
+        },
+        "order": {
+            "servant": {
+                "enable": true
+            }
+        },
+        "defendArea": {
+            "defendRange": 30.0
+        },
+        "fly": {
+            "enable": true,
+            "floatingPoses": [
+                1,
+                2,
+                101,
+                201,
+                202,
+                203
+            ]
+        },
+        "skills": {
+            "100": {
+                "name": "OnAlert",
+                "skillType": "OnAlert",
+                "faceTarget": true,
+                "publicCDGroup": "",
+                "triggerGCD": false,
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "Warning"
+                ],
+                "skillQueryingTime": 3.0,
+                "flagTargetReachable": "10",
+                "flagSelfOnTemplateCollider": "01",
+                "flagSelfInZone": "10",
+                "flagTargetInZone": "11"
+            },
+            "301": {
+                "name": "NormalAtk",
+                "combatSkillType": "RangedAttack",
+                "faceTarget": true,
+                "castCondition": {
+                    "pose": [
+                        101
+                    ],
+                    "pickRangeMax": 30.0
+                },
+                "cd": 5.0,
+                "cdUpperRange": 2.5,
+                "publicCDGroup": "",
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "NormalAtk"
+                ],
+                "flagTargetReachable": "11",
+                "flagSelfOnTemplateCollider": "01",
+                "flagSelfInZone": "11",
+                "flagTargetInZone": "11"
+            },
+            "311": {
+                "name": "NormalAtk",
+                "faceTarget": true,
+                "castCondition": {
+                    "pose": [
+                        201
+                    ],
+                    "pickRangeMax": 30.0
+                },
+                "cd": 5.0,
+                "cdUpperRange": 7.5,
+                "publicCDGroup": "",
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "NormalAtk"
+                ],
+                "flagTargetReachable": "11",
+                "flagSelfOnTemplateCollider": "01",
+                "flagSelfInZone": "11",
+                "flagTargetInZone": "11"
+            }
+        },
+        "skillGCD": 1.5,
+        "combatFixedMoveTactic": [
+            {
+                "$type": "KOFCEOHBOMD",
+                "enable": true,
+                "FJANPNOAAFK": {
+                    "pose": [
+                        1,
+                        2,
+                        101,
+                        201,
+                        203
+                    ]
+                },
+                "defaultSetting": {
+                    "KIHPEPHJMOG": 1,
+                    "turnSpeedOverride": 10.0,
+                    "LIPBFAMLADJ": 1.0,
+                    "DAAOCEJBKEP": 1.5,
+                    "LOJEKMFGAKH": 0.75,
+                    "LFGIDEOEKIB": 2.75,
+                    "PBBMCLFLICL": 3.0,
+                    "JOCOJHEICNA": "",
+                    "DBIELIMGBMC": ""
+                },
+                "specification": {
+                    "101": {
+                        "KIHPEPHJMOG": 1,
+                        "turnSpeedOverride": 10.0,
+                        "LIPBFAMLADJ": 0.30000001192092896,
+                        "DAAOCEJBKEP": 0.6499999761581421,
+                        "LOJEKMFGAKH": 0.550000011920929,
+                        "LFGIDEOEKIB": 1.2999999523162842,
+                        "PBBMCLFLICL": 2.75,
+                        "JOCOJHEICNA": "",
+                        "DBIELIMGBMC": ""
+                    },
+                    "201": {
+                        "KIHPEPHJMOG": 1,
+                        "turnSpeedOverride": 10.0,
+                        "LIPBFAMLADJ": 0.30000001192092896,
+                        "DAAOCEJBKEP": 0.6499999761581421,
+                        "LOJEKMFGAKH": 0.550000011920929,
+                        "LFGIDEOEKIB": 1.2999999523162842,
+                        "PBBMCLFLICL": 2.75,
+                        "JOCOJHEICNA": "",
+                        "DBIELIMGBMC": ""
+                    },
+                    "203": {
+                        "KIHPEPHJMOG": 1,
+                        "turnSpeedOverride": 10.0,
+                        "LIPBFAMLADJ": 0.30000001192092896,
+                        "DAAOCEJBKEP": 0.6499999761581421,
+                        "LOJEKMFGAKH": 0.550000011920929,
+                        "LFGIDEOEKIB": 1.2999999523162842,
+                        "PBBMCLFLICL": 2.75,
+                        "LHNNAOPJFOL": false,
+                        "JOCOJHEICNA": "",
+                        "DBIELIMGBMC": ""
+                    }
+                }
+            },
+            {
+                "$type": "KMHBGMELMKD",
+                "enable": true,
+                "defaultSetting": {
+                    "KIHPEPHJMOG": 1,
+                    "FKIKEIAEEBO": 0.75,
+                    "BMLLGHNDPNE": 2.25,
+                    "JOCGOKPMCKI": "Spacial",
+                    "JOCOJHEICNA": "",
+                    "DBIELIMGBMC": ""
+                }
+            },
+            {
+                "$type": "APBKGIMHIEJ",
+                "enable": true,
+                "FJANPNOAAFK": {
+                    "pose": [
+                        101
+                    ]
+                },
+                "defaultSetting": {
+                    "KIHPEPHJMOG": 2,
+                    "EJJMPMENNGE": 15.0,
+                    "GABOKKPIPGO": 7.5,
+                    "NCOONJCNMJO": 1.0,
+                    "EBNPDABAEEB": 2.5,
+                    "segmentDistance": 3.0,
+                    "JOCOJHEICNA": "",
+                    "DBIELIMGBMC": ""
+                }
+            },
+            {
+                "$type": "PAHHOIMHFPA",
+                "enable": true,
+                "FJANPNOAAFK": {
+                    "pose": [
+                        1
+                    ]
+                },
+                "defaultSetting": {
+                    "KIHPEPHJMOG": 2,
+                    "JIFJFPJANHO": 20.0,
+                    "CBKHBGCPFBG": 15.0,
+                    "LOJEKMFGAKH": 1.5,
+                    "LFGIDEOEKIB": 3.0,
+                    "EKDHNAGGGAE": 30.0,
+                    "BFEJAKFKKFP": 2.5,
+                    "KOAMKCEFJED": 4.0,
+                    "MDBLPMNHKML": 4,
+                    "KDCBFEJMPFI": 5,
+                    "JOCOJHEICNA": "",
+                    "DBIELIMGBMC": ""
+                }
+            }
+        ]
+    },
+    "inputKeys": [
+        {
+            "keyID": 401,
+            "inputKeyCode": 257,
+            "abilityName": ""
+        },
+        {
+            "keyID": 301,
+            "inputKeyCode": 258,
+            "abilityName": ""
+        }
+    ],
+    "move": {
+        "$type": "IIGPJJNGCLE",
+        "EIEIGIPKLAO": {
+            "excludeForces": [
+                "WindZoneType",
+                "AirflowType"
+            ]
+        },
+        "MEKENCHCEEN": false,
+        "MLKCNHIIMCE": true,
+        "BEPOPLDKJOP": "SlimeType",
+        "FACNOEFNHIB": "RootNode"
+    },
+    "audio": {
+        "KEEAIACIJBN": "",
+        "animAudio": {
+            "onTransitionIn": [
+                {
+                    "currentStateName": "Die",
+                    "audioEvent": {
+                        "text": "Stop_sfx_monster_cicin_thunder_foley_slow_lp"
+                    }
+                },
+                {
+                    "currentStateName": "RushAtk",
+                    "audioEvent": {
+                        "text": "Play_sfx_monster_cicin_thunder_electricSurround_start"
+                    }
+                }
+            ],
+            "onTransitionOut": [
+                {
+                    "currentStateName": "Die",
+                    "audioEvent": {
+                        "text": ""
+                    }
+                }
+            ]
+        }
+    }
+}

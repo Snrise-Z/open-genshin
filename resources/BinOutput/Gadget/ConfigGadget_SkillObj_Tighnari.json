@@ -1,0 +1,1288 @@
+{
+    "Tighnari_Arrow_01": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "FCAGPAEOLPI": 0.5,
+                "HOJBBPFJMIL": 0.5
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            },
+            "animEvents": {
+                "Arrow_ATK01": {
+                    "attackPattern": {
+                        "$type": "BOIOFIPLBNK",
+                        "triggerType": "TriggerNoRepeat",
+                        "PINHPKJJOGC": "Both",
+                        "born": {
+                            "$type": "MNJLPLGJGLI",
+                            "offset": {
+                                "EMBMLEBGFOI": 0.0,
+                                "NABPJFNICAE": 0.0,
+                                "MLOLIKEJCKB": -0.5
+                            }
+                        },
+                        "size": {
+                            "EMBMLEBGFOI": 0.10000000149011612,
+                            "NABPJFNICAE": 0.10000000149011612,
+                            "MLOLIKEJCKB": 1.0
+                        }
+                    },
+                    "attackInfo": {
+                        "attackTag": "NormalAttack_01",
+                        "attenuationTag": "",
+                        "attenuationGroup": "default",
+                        "attackProperty": {
+                            "ACKCDHKEGCK": 0.0,
+                            "JIICGJODDDM": 0.0,
+                            "bonusCriticalHurt": 100.0,
+                            "strikeType": "Pierce",
+                            "enBreak": 16.5,
+                            "damagePercentage": 0.0
+                        },
+                        "hitPattern": {
+                            "onHitEffectName": "default",
+                            "hitImpulseType": "LV1"
+                        },
+                        "cameraShake": {
+                            "shakeRange": 0.019999999552965164,
+                            "shakeTime": 0.10000000149011612
+                        },
+                        "canBeModifiedBy": "OriginOwner"
+                    }
+                }
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Bullet_Tighnari_ArrowDamage_Handler",
+                "abilityName": "Bullet_Tighnari_ArrowDamage_Handler",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Bullet_Tighnari_Arrow_Material_Small",
+                "abilityName": "Bullet_Tighnari_Arrow_Material_Small",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 8.0
+        },
+        "move": {
+            "$type": "MPNKKNJBNCD",
+            "speed": 40.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "CIHFFMJBELB": 7.0,
+            "IPBPLMGOJKC": 15.0,
+            "HMOHCMJMLNE": 0.009999999776482582
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "BOHOOADOAKJ",
+                    "attackEvent": "Arrow_ATK01"
+                },
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Bullet_Tighnari_Arrow_Material_Small"
+                }
+            ],
+            "JHKBLJLPGEB": true
+        }
+    },
+    "Tighnari_Arrow_02": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "FCAGPAEOLPI": 0.5,
+                "HOJBBPFJMIL": 0.5
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            },
+            "animEvents": {
+                "Arrow_ATK02": {
+                    "attackPattern": {
+                        "$type": "BOIOFIPLBNK",
+                        "triggerType": "TriggerNoRepeat",
+                        "PINHPKJJOGC": "Both",
+                        "born": {
+                            "$type": "MNJLPLGJGLI",
+                            "offset": {
+                                "EMBMLEBGFOI": 0.0,
+                                "NABPJFNICAE": 0.0,
+                                "MLOLIKEJCKB": -0.5
+                            }
+                        },
+                        "size": {
+                            "EMBMLEBGFOI": 0.10000000149011612,
+                            "NABPJFNICAE": 0.10000000149011612,
+                            "MLOLIKEJCKB": 1.0
+                        }
+                    },
+                    "attackInfo": {
+                        "attackTag": "NormalAttack_02",
+                        "attenuationTag": "",
+                        "attenuationGroup": "default",
+                        "attackProperty": {
+                            "ACKCDHKEGCK": 0.0,
+                            "JIICGJODDDM": 0.0,
+                            "bonusCriticalHurt": 100.0,
+                            "strikeType": "Pierce",
+                            "enBreak": 15.899999618530273,
+                            "damagePercentage": 0.0
+                        },
+                        "hitPattern": {
+                            "onHitEffectName": "default",
+                            "hitImpulseType": "LV1"
+                        },
+                        "cameraShake": {
+                            "shakeRange": 0.019999999552965164,
+                            "shakeTime": 0.10000000149011612
+                        },
+                        "canBeModifiedBy": "OriginOwner"
+                    }
+                }
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Bullet_Tighnari_ArrowDamage_Handler",
+                "abilityName": "Bullet_Tighnari_ArrowDamage_Handler",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Bullet_Tighnari_Arrow_Material_Small",
+                "abilityName": "Bullet_Tighnari_Arrow_Material_Small",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 8.0
+        },
+        "move": {
+            "$type": "MPNKKNJBNCD",
+            "speed": 40.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "CIHFFMJBELB": 7.0,
+            "IPBPLMGOJKC": 15.0,
+            "HMOHCMJMLNE": 0.009999999776482582
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "BOHOOADOAKJ",
+                    "attackEvent": "Arrow_ATK02"
+                },
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Bullet_Tighnari_Arrow_Material_Small"
+                }
+            ],
+            "JHKBLJLPGEB": true
+        }
+    },
+    "Tighnari_Arrow_03": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "FCAGPAEOLPI": 0.5,
+                "HOJBBPFJMIL": 0.5
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            },
+            "animEvents": {
+                "Arrow_ATK03": {
+                    "attackPattern": {
+                        "$type": "BOIOFIPLBNK",
+                        "triggerType": "TriggerNoRepeat",
+                        "PINHPKJJOGC": "Both",
+                        "born": {
+                            "$type": "MNJLPLGJGLI",
+                            "offset": {
+                                "EMBMLEBGFOI": 0.0,
+                                "NABPJFNICAE": 0.0,
+                                "MLOLIKEJCKB": -0.5
+                            }
+                        },
+                        "size": {
+                            "EMBMLEBGFOI": 0.10000000149011612,
+                            "NABPJFNICAE": 0.10000000149011612,
+                            "MLOLIKEJCKB": 1.0
+                        }
+                    },
+                    "attackInfo": {
+                        "attackTag": "NormalAttack_03",
+                        "attenuationTag": "",
+                        "attenuationGroup": "default",
+                        "attackProperty": {
+                            "ACKCDHKEGCK": 0.0,
+                            "JIICGJODDDM": 0.0,
+                            "bonusCriticalHurt": 100.0,
+                            "strikeType": "Pierce",
+                            "enBreak": 9.75,
+                            "damagePercentage": 0.0
+                        },
+                        "hitPattern": {
+                            "onHitEffectName": "default",
+                            "hitImpulseType": "LV1"
+                        },
+                        "cameraShake": {
+                            "shakeRange": 0.019999999552965164,
+                            "shakeTime": 0.10000000149011612
+                        },
+                        "canBeModifiedBy": "OriginOwner"
+                    }
+                }
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Bullet_Tighnari_ArrowDamage_Handler",
+                "abilityName": "Bullet_Tighnari_ArrowDamage_Handler",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Bullet_Tighnari_Arrow_Material_Small",
+                "abilityName": "Bullet_Tighnari_Arrow_Material_Small",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 8.0
+        },
+        "move": {
+            "$type": "MPNKKNJBNCD",
+            "speed": 40.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "CIHFFMJBELB": 7.0,
+            "IPBPLMGOJKC": 15.0,
+            "HMOHCMJMLNE": 0.009999999776482582
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "BOHOOADOAKJ",
+                    "attackEvent": "Arrow_ATK03"
+                },
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Bullet_Tighnari_Arrow_Material_Small"
+                }
+            ],
+            "JHKBLJLPGEB": true
+        }
+    },
+    "Tighnari_Arrow_04": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "FCAGPAEOLPI": 0.5,
+                "HOJBBPFJMIL": 0.5
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            },
+            "animEvents": {
+                "Arrow_ATK04": {
+                    "attackPattern": {
+                        "$type": "BOIOFIPLBNK",
+                        "triggerType": "TriggerNoRepeat",
+                        "PINHPKJJOGC": "Both",
+                        "born": {
+                            "$type": "MNJLPLGJGLI",
+                            "offset": {
+                                "EMBMLEBGFOI": 0.0,
+                                "NABPJFNICAE": 0.0,
+                                "MLOLIKEJCKB": -0.5
+                            }
+                        },
+                        "size": {
+                            "EMBMLEBGFOI": 0.10000000149011612,
+                            "NABPJFNICAE": 0.10000000149011612,
+                            "MLOLIKEJCKB": 1.0
+                        }
+                    },
+                    "attackInfo": {
+                        "attackTag": "NormalAttack_04",
+                        "attenuationTag": "",
+                        "attenuationGroup": "default",
+                        "attackProperty": {
+                            "ACKCDHKEGCK": 0.0,
+                            "JIICGJODDDM": 0.0,
+                            "bonusCriticalHurt": 100.0,
+                            "strikeType": "Pierce",
+                            "enBreak": 25.5,
+                            "damagePercentage": 0.0
+                        },
+                        "hitPattern": {
+                            "onHitEffectName": "default",
+                            "hitImpulseType": "LV1"
+                        },
+                        "cameraShake": {
+                            "shakeRange": 0.019999999552965164,
+                            "shakeTime": 0.10000000149011612
+                        },
+                        "canBeModifiedBy": "OriginOwner"
+                    }
+                }
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Bullet_Tighnari_ArrowDamage_Handler",
+                "abilityName": "Bullet_Tighnari_ArrowDamage_Handler",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Bullet_Tighnari_Arrow_Material_Big",
+                "abilityName": "Bullet_Tighnari_Arrow_Material_Big",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 8.0
+        },
+        "move": {
+            "$type": "MPNKKNJBNCD",
+            "speed": 70.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "CIHFFMJBELB": 15.0,
+            "IPBPLMGOJKC": 30.0,
+            "HMOHCMJMLNE": 0.009999999776482582
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "BOHOOADOAKJ",
+                    "attackEvent": "Arrow_ATK04"
+                },
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Bullet_Tighnari_Arrow_Material_Big"
+                }
+            ],
+            "JHKBLJLPGEB": true
+        }
+    },
+    "Tighnari_AimingArrow_NoGrass": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "FCAGPAEOLPI": 0.5,
+                "HOJBBPFJMIL": 0.5
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Bullet_Tighnari_Arrow_NoGrass_Material",
+                "abilityName": "Bullet_Tighnari_Arrow_NoGrass_Material",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 20.0
+        },
+        "move": {
+            "$type": "MPNKKNJBNCD",
+            "speed": 50.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "CIHFFMJBELB": 25.0,
+            "IPBPLMGOJKC": 5.5,
+            "HMOHCMJMLNE": 0.009999999776482582
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Bullet_Tighnari_Arrow_NoGrass_Material"
+                }
+            ],
+            "JHKBLJLPGEB": true
+        }
+    },
+    "Tighnari_AimingArrow_WithGrass": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "FCAGPAEOLPI": 0.5,
+                "HOJBBPFJMIL": 0.5
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Bullet_Tighnari_Arrow_WithGrass_Material",
+                "abilityName": "Bullet_Tighnari_Arrow_WithGrass_Material",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 20.0
+        },
+        "move": {
+            "$type": "MPNKKNJBNCD",
+            "speed": 50.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "CIHFFMJBELB": 25.0,
+            "IPBPLMGOJKC": 5.5,
+            "HMOHCMJMLNE": 0.009999999776482582
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Bullet_Tighnari_Arrow_WithGrass_Material"
+                }
+            ],
+            "JHKBLJLPGEB": true
+        }
+    },
+    "Tighnari_AimingArrow_BeforeFission": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Tighnari_AimingArrow_BeforeFission_Material",
+                "abilityName": "Tighnari_AimingArrow_BeforeFission_Material",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 20.0
+        },
+        "move": {
+            "$type": "MPNKKNJBNCD",
+            "speed": 50.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "CIHFFMJBELB": 25.0,
+            "IPBPLMGOJKC": 5.5,
+            "HMOHCMJMLNE": 0.009999999776482582
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Tighnari_AimingArrow_BeforeFission_Material"
+                }
+            ],
+            "JPNAMDFCBFN": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Tighnari_AimingArrow_BeforeFission_Material"
+                }
+            ],
+            "JHKBLJLPGEB": true
+        }
+    },
+    "Tighnari_AimingArrow_Fission": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Tighnari_AimingArrow_Fission_Material",
+                "abilityName": "Tighnari_AimingArrow_Fission_Material",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Tighnari_AimingArrow_Fission_LifeOver",
+                "abilityName": "Tighnari_AimingArrow_Fission_LifeOver",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 2.0
+        },
+        "move": {
+            "$type": "EGIBMIADEHO",
+            "MPMOPIIFDPO": {
+                "muteAll": true
+            },
+            "speed": 14.0,
+            "GBPNCGHBJMC": 20.0,
+            "AFIKDKDFKCJ": -2.0,
+            "NNKNFFMKNNB": 2.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "KGGKADOKFII": 0.05000000074505806,
+            "BCNECAMPGJJ": true,
+            "FDECFKIJFPN": {
+                "$type": "OIPBNHOJLBF",
+                "KBOKKCAAOIP": {
+                    "$type": "AJCFIBNMGKO",
+                    "offset": {
+                        "EMBMLEBGFOI": 0.0,
+                        "NABPJFNICAE": 0.0,
+                        "MLOLIKEJCKB": 0.009999999776482582
+                    }
+                },
+                "radius": 0.5,
+                "LFJAPNIOCAF": 0.30000001192092896
+            }
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Tighnari_AimingArrow_Fission_Material"
+                }
+            ],
+            "JPNAMDFCBFN": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Tighnari_AimingArrow_Fission_LifeOver"
+                }
+            ],
+            "JHKBLJLPGEB": true,
+            "ENBJBDDCLMC": 0.30000001192092896,
+            "AEMONPKLPOP": true,
+            "PGHEFGJADMG": true
+        }
+    },
+    "Tighnari_AimingArrow_Fission_Talent": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Tighnari_AimingArrow_Fission_Material_Talent",
+                "abilityName": "Tighnari_AimingArrow_Fission_Material_Talent",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Tighnari_AimingArrow_Fission_LifeOver_Talent",
+                "abilityName": "Tighnari_AimingArrow_Fission_LifeOver_Talent",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 2.0
+        },
+        "move": {
+            "$type": "EGIBMIADEHO",
+            "MPMOPIIFDPO": {
+                "muteAll": true
+            },
+            "speed": 14.0,
+            "GBPNCGHBJMC": 20.0,
+            "AFIKDKDFKCJ": -2.0,
+            "NNKNFFMKNNB": 2.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "KGGKADOKFII": 0.05000000074505806,
+            "BCNECAMPGJJ": true,
+            "FDECFKIJFPN": {
+                "$type": "OIPBNHOJLBF",
+                "KBOKKCAAOIP": {
+                    "$type": "AJCFIBNMGKO",
+                    "offset": {
+                        "EMBMLEBGFOI": 0.0,
+                        "NABPJFNICAE": 0.0,
+                        "MLOLIKEJCKB": 0.009999999776482582
+                    }
+                },
+                "radius": 0.5,
+                "LFJAPNIOCAF": 0.30000001192092896
+            }
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Tighnari_AimingArrow_Fission_Material_Talent"
+                }
+            ],
+            "JPNAMDFCBFN": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Tighnari_AimingArrow_Fission_LifeOver_Talent"
+                }
+            ],
+            "JHKBLJLPGEB": true,
+            "ENBJBDDCLMC": 0.30000001192092896,
+            "AEMONPKLPOP": true,
+            "PGHEFGJADMG": true
+        }
+    },
+    "Tighnari_ElementalArt_Bullet": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            }
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "SkillObj_Tighnari_ElementalArt_Ball_Material",
+                "abilityName": "SkillObj_Tighnari_ElementalArt_Ball_Material",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 4.0
+        },
+        "move": {
+            "$type": "FHJABLDOPCE",
+            "MPMOPIIFDPO": {
+                "muteAll": true
+            },
+            "speed": 15.0,
+            "LDOEEHMFPHN": 20.0,
+            "IPBPLMGOJKC": 30.0,
+            "NKKKMPEEEAP": {
+                "$type": "HHINGLNHGCK",
+                "AHBLNOPFFIP": 15.0,
+                "minSpeed": 4.0,
+                "maxSpeed": 18.0
+            }
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "SkillObj_Tighnari_ElementalArt_Ball_Material"
+                }
+            ],
+            "JPNAMDFCBFN": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "SkillObj_Tighnari_ElementalArt_Ball_Material"
+                }
+            ]
+        }
+    },
+    "Tighnari_ElementalArt_CenterGadget": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            }
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            },
+            "die": {
+                "dieEndTime": 0.5,
+                "dieDisappearEffect": ""
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "SkillObj_Tighnari_ElementalArt_CenterGadget_Material",
+                "abilityName": "SkillObj_Tighnari_ElementalArt_CenterGadget_Material",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 10.0
+        }
+    },
+    "Tighnari_ElementalArt_TauntGadget": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            },
+            "affectedByWorld": true
+        },
+        "specialPoint": {
+            "elementAbsorb": "RootNode",
+            "elementPendant": "",
+            "elementDrop": "RootNode",
+            "bulletAim": "RootNode"
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true,
+                "ignorePurgeRate": false,
+                "ignorePurgeRate": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Avatar&Monster_Lv4"
+            },
+            "die": {
+                "dieEndTime": 0.5,
+                "dieDisappearEffect": ""
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "SkillObj_Tighnari_ElementalArt_TauntGadget_Material",
+                "abilityName": "SkillObj_Tighnari_ElementalArt_TauntGadget_Material",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 10.0
+        }
+    },
+    "Tighnari_ExtraAttack_Count": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            }
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Skillobj_Tighnari_ExtraAttack_CountBuff",
+                "abilityName": "Skillobj_Tighnari_ExtraAttack_CountBuff",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 20.0
+        },
+        "move": {
+            "$type": "DKAMCGDMNKI",
+            "MPMOPIIFDPO": {
+                "muteAll": true
+            },
+            "attachPoint": "CameraLook",
+            "followRotation": true,
+            "JGFLINDOJDF": {
+                "z": 1.0
+            },
+            "JHIDLJOPJML": true,
+            "JDDHGLLAOJP": true,
+            "HMPJAIBPNND": ""
+        },
+        "OJJOBJEKBDP": true
+    },
+    "Tighnari_ElementalBurst_BulletTrigger": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            }
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Avatar_Tighnari_ElementalBurst_BulletTrigger",
+                "abilityName": "Avatar_Tighnari_ElementalBurst_BulletTrigger",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 2.0
+        }
+    },
+    "Tighnari_ElementalBurst_TrackBullet1": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            }
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "TriggerDamage",
+                "abilityName": "Avatar_Tighnari_ElementalBurst_Bullet_Damage1",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Bullet_Material",
+                "abilityName": "Avatar_Tighnari_ElementalBurst_Bullet_1_Material",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 2.0
+        },
+        "move": {
+            "$type": "EGIBMIADEHO",
+            "MPMOPIIFDPO": {
+                "muteAll": true
+            },
+            "speed": 10.0,
+            "maxSpeed": 30.0,
+            "minSpeed": 10.0,
+            "GBPNCGHBJMC": 90.0,
+            "AFIKDKDFKCJ": 15.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD",
+                "GMLPDHMOONH": 360.0,
+                "MJFDEEKHOKP": true
+            },
+            "BCNECAMPGJJ": true,
+            "FDECFKIJFPN": {
+                "$type": "OIPBNHOJLBF",
+                "KBOKKCAAOIP": {
+                    "$type": "GHHFGNOPNBM",
+                    "offset": {
+                        "EMBMLEBGFOI": 0.0,
+                        "NABPJFNICAE": 0.0,
+                        "MLOLIKEJCKB": 20.0
+                    },
+                    "CMLNNDEJCEF": true
+                },
+                "radius": 3.5
+            }
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Avatar_Tighnari_ElementalBurst_Bullet_Damage1"
+                }
+            ],
+            "JPNAMDFCBFN": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Avatar_Tighnari_ElementalBurst_Bullet_Damage1"
+                }
+            ],
+            "ENBJBDDCLMC": 0.30000001192092896,
+            "AEMONPKLPOP": true,
+            "PGHEFGJADMG": true
+        }
+    },
+    "Tighnari_ElementalBurst_TrackBullet2": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            }
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "TriggerDamage",
+                "abilityName": "Avatar_Tighnari_ElementalBurst_Bullet_Damage2",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Bullet_Material",
+                "abilityName": "Avatar_Tighnari_ElementalBurst_Bullet_2_Material",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 2.0
+        },
+        "move": {
+            "$type": "EGIBMIADEHO",
+            "MPMOPIIFDPO": {
+                "muteAll": true
+            },
+            "speed": 10.0,
+            "maxSpeed": 20.0,
+            "minSpeed": 10.0,
+            "GBPNCGHBJMC": 20.0,
+            "AFIKDKDFKCJ": 5.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD",
+                "GMLPDHMOONH": 360.0,
+                "MJFDEEKHOKP": true
+            },
+            "KGGKADOKFII": 0.10000000149011612,
+            "BCNECAMPGJJ": true,
+            "FDECFKIJFPN": {
+                "$type": "OIPBNHOJLBF",
+                "KBOKKCAAOIP": {
+                    "$type": "AJCFIBNMGKO",
+                    "offset": {
+                        "EMBMLEBGFOI": 0.0,
+                        "NABPJFNICAE": 0.0,
+                        "MLOLIKEJCKB": 0.009999999776482582
+                    }
+                },
+                "radius": 0.5,
+                "LFJAPNIOCAF": 0.30000001192092896
+            }
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Avatar_Tighnari_ElementalBurst_Bullet_Damage2"
+                }
+            ],
+            "JPNAMDFCBFN": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Avatar_Tighnari_ElementalBurst_Bullet_Damage2"
+                }
+            ],
+            "ENBJBDDCLMC": 0.30000001192092896,
+            "AEMONPKLPOP": true,
+            "PGHEFGJADMG": true
+        }
+    }
+}

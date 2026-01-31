@@ -1,0 +1,3978 @@
+[
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "Activity_LanternRite_V4_Slime_Ability",
+            "abilitySpecials": {
+                "GalleryTime": 0.0,
+                "AvatarHitByOthers_0": 0.0,
+                "AvatarHitByOthers_1": 0.0,
+                "slimePos_0": 0.0,
+                "slimePos_1": 0.0,
+                "slimePos_2": 0.0
+            },
+            "modifiers": {
+                "KillSelf_CountDown": {
+                    "HABNNJHCOCD": "Unique",
+                    "modifierName": "",
+                    "FAFCPJJAIGK": 4.0,
+                    "bonusCritical": 100.0,
+                    "modifierMixins": [
+                        {
+                            "$type": "LocalTeamTriggerMixin",
+                            "OGCPACDLACH": "LanternRiteV4_FindSlime",
+                            "CPBJHBLMLAI": "RootNode",
+                            "LIPIDGKOOPK": {
+                                "IBPOJODNMHO": "SphereR4",
+                                "LIBBJNGNPCF": "InteeTrigger",
+                                "LDCHJAPKAAF": "",
+                                "triggerType": "TriggerAlways",
+                                "JFPEHPILAFN": 0.5,
+                                "CHPLPFBEPDN": "Alliance"
+                            },
+                            "KNMNGANGGNE": [
+                                {
+                                    "$type": "Predicated",
+                                    "KMGAOOHMCPK": "Target",
+                                    "targetPredicates": [
+                                        {
+                                            "$type": "FAGBAHBLACH",
+                                            "MALHNOJHHDJ": [
+                                                "Avatar"
+                                            ]
+                                        },
+                                        {
+                                            "$type": "BLIEHOICPMH",
+                                            "FLEEHCIOPKA": [
+                                                {
+                                                    "$type": "EGFCNNFCLII"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$type": "OMPKIEPKGPF",
+                                            "NGGCNKPAODB": "_Ability_LanternRite_Hit_Avatar",
+                                            "value": 0.0,
+                                            "GAGKBNPOCAC": "NoneOrEqual"
+                                        }
+                                    ],
+                                    "successActions": [
+                                        {
+                                            "$type": "DebugLog",
+                                            "GOMJPONMJII": "LanternRite slime find other player"
+                                        },
+                                        {
+                                            "$type": "SetTargetToTargetKey",
+                                            "KMGAOOHMCPK": "Target",
+                                            "ABGGMIPPNEA": "_ABILITY_LanternRite_AvatarHitByOthers"
+                                        },
+                                        {
+                                            "$type": "SetGlobalValueToOverrideMap",
+                                            "globalValueKey": "_ABILITY_LanternRite_AvatarHitByOthers_0",
+                                            "BPGLCPGHEEK": "AvatarHitByOthers_0"
+                                        },
+                                        {
+                                            "$type": "SetGlobalValueToOverrideMap",
+                                            "globalValueKey": "_ABILITY_LanternRite_AvatarHitByOthers_1",
+                                            "BPGLCPGHEEK": "AvatarHitByOthers_1"
+                                        },
+                                        {
+                                            "$type": "CopyGlobalValue",
+                                            "CAAICNJMPCD": "Self",
+                                            "INODFCIEOPP": "CurLocalAvatar",
+                                            "OHLDODBILJD": "_ABILITY_LanternRite_AvatarHitByOthers_0",
+                                            "DCOAHDNGMHH": "_ABILITY_LanternRite_AvatarHitByOthers_0"
+                                        },
+                                        {
+                                            "$type": "CopyGlobalValue",
+                                            "CAAICNJMPCD": "Self",
+                                            "INODFCIEOPP": "CurLocalAvatar",
+                                            "OHLDODBILJD": "_ABILITY_LanternRite_AvatarHitByOthers_1",
+                                            "DCOAHDNGMHH": "_ABILITY_LanternRite_AvatarHitByOthers_1"
+                                        },
+                                        {
+                                            "$type": "SetTargetToTargetKey",
+                                            "KMGAOOHMCPK": "CurLocalAvatar",
+                                            "ABGGMIPPNEA": "_ABILITY_LanternRite_SelfToHitOthers"
+                                        },
+                                        {
+                                            "$type": "CopyGlobalValue",
+                                            "CAAICNJMPCD": "Self",
+                                            "OHLDODBILJD": "_ABILITY_LanternRite_SelfToHitOthers_0",
+                                            "DCOAHDNGMHH": "_ABILITY_LanternRite_SelfToHitOthers_0"
+                                        },
+                                        {
+                                            "$type": "CopyGlobalValue",
+                                            "CAAICNJMPCD": "Self",
+                                            "OHLDODBILJD": "_ABILITY_LanternRite_SelfToHitOthers_1",
+                                            "DCOAHDNGMHH": "_ABILITY_LanternRite_SelfToHitOthers_1"
+                                        },
+                                        {
+                                            "$type": "ApplyModifier",
+                                            "KMGAOOHMCPK": "Target",
+                                            "FLEEHCIOPKA": [
+                                                {
+                                                    "$type": "BLIEHOICPMH",
+                                                    "FLEEHCIOPKA": [
+                                                        {
+                                                            "$type": "OMPKIEPKGPF",
+                                                            "KMGAOOHMCPK": "TargetTeam",
+                                                            "NGGCNKPAODB": "SGV_LanternRite_SlimeSkill",
+                                                            "value": 1.0
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "$type": "OMPKIEPKGPF",
+                                                    "KMGAOOHMCPK": "CurLocalAvatar",
+                                                    "NGGCNKPAODB": "_Ability_LanternRite_AvatarIsSlime",
+                                                    "value": 1.0
+                                                }
+                                            ],
+                                            "modifierName": "UNIQUE_LanternRite_ProtectionAfterHit_FromSlimeToChar"
+                                        },
+                                        {
+                                            "$type": "ApplyModifier",
+                                            "KMGAOOHMCPK": "Target",
+                                            "FLEEHCIOPKA": [
+                                                {
+                                                    "$type": "OMPKIEPKGPF",
+                                                    "KMGAOOHMCPK": "TargetTeam",
+                                                    "NGGCNKPAODB": "SGV_LanternRite_SlimeSkill",
+                                                    "value": 1.0
+                                                },
+                                                {
+                                                    "$type": "OMPKIEPKGPF",
+                                                    "KMGAOOHMCPK": "CurLocalAvatar",
+                                                    "NGGCNKPAODB": "_Ability_LanternRite_AvatarIsSlime",
+                                                    "value": 1.0
+                                                }
+                                            ],
+                                            "modifierName": "UNIQUE_LanternRite_ProtectionAfterHit_FromSlimeToSlime"
+                                        },
+                                        {
+                                            "$type": "HitAir",
+                                            "KMGAOOHMCPK": "Target",
+                                            "FLEEHCIOPKA": [
+                                                {
+                                                    "$type": "OMPKIEPKGPF",
+                                                    "KMGAOOHMCPK": "CurLocalAvatar",
+                                                    "NGGCNKPAODB": "_Ability_LanternRite_AvatarIsSlime",
+                                                    "value": 1.0
+                                                }
+                                            ],
+                                            "EPEOPHLIFKM": 15.0,
+                                            "NBKJHCHIOFF": 15.0
+                                        },
+                                        {
+                                            "$type": "ApplyModifier",
+                                            "KMGAOOHMCPK": "Target",
+                                            "FLEEHCIOPKA": [
+                                                {
+                                                    "$type": "OMPKIEPKGPF",
+                                                    "KMGAOOHMCPK": "CurLocalAvatar",
+                                                    "NGGCNKPAODB": "_Ability_LanternRite_AvatarIsSlime",
+                                                    "value": 1.0
+                                                }
+                                            ],
+                                            "modifierName": "LanternRite_Behit_FireEffect"
+                                        },
+                                        {
+                                            "$type": "ApplyModifier",
+                                            "KMGAOOHMCPK": "OriginOwner",
+                                            "FLEEHCIOPKA": [
+                                                {
+                                                    "$type": "OMPKIEPKGPF",
+                                                    "KMGAOOHMCPK": "CurLocalAvatar",
+                                                    "NGGCNKPAODB": "_Ability_LanternRite_AvatarIsSlime",
+                                                    "value": 1.0
+                                                }
+                                            ],
+                                            "modifierName": "LanternRite_Hit_TriggerEffect"
+                                        },
+                                        {
+                                            "$type": "Predicated",
+                                            "KMGAOOHMCPK": "TargetTeam",
+                                            "targetPredicates": [
+                                                {
+                                                    "$type": "OMPKIEPKGPF",
+                                                    "NGGCNKPAODB": "SGV_LanternRite_SlimeSkill",
+                                                    "value": 1.0
+                                                },
+                                                {
+                                                    "$type": "OMPKIEPKGPF",
+                                                    "KMGAOOHMCPK": "CurLocalAvatar",
+                                                    "NGGCNKPAODB": "_Ability_LanternRite_AvatarIsSlime",
+                                                    "value": 1.0
+                                                }
+                                            ],
+                                            "successActions": [
+                                                {
+                                                    "$type": "DebugLog",
+                                                    "GOMJPONMJII": "LanternRite slime find slime"
+                                                },
+                                                {
+                                                    "$type": "ApplyModifier",
+                                                    "KMGAOOHMCPK": "CurLocalAvatar",
+                                                    "modifierName": "SLC_SlimeHitSlime_Handler_FromSlimeToAvatar"
+                                                },
+                                                {
+                                                    "$type": "ApplyModifier",
+                                                    "KMGAOOHMCPK": "CurLocalAvatar",
+                                                    "modifierName": "UNIQUE_ModifierSkillCD_ToAvatar"
+                                                }
+                                            ],
+                                            "failActions": [
+                                                {
+                                                    "$type": "DebugLog",
+                                                    "GOMJPONMJII": "LanternRite slime find character"
+                                                },
+                                                {
+                                                    "$type": "ApplyModifier",
+                                                    "KMGAOOHMCPK": "CurLocalAvatar",
+                                                    "modifierName": "SLC_SlimeHitCharacter_Handler_FromSlimeToAvatar"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$type": "ApplyModifier",
+                                            "KMGAOOHMCPK": "Target",
+                                            "FLEEHCIOPKA": [
+                                                {
+                                                    "$type": "OMPKIEPKGPF",
+                                                    "KMGAOOHMCPK": "CurLocalAvatar",
+                                                    "NGGCNKPAODB": "_Ability_LanternRite_AvatarIsSlime",
+                                                    "value": 1.0
+                                                }
+                                            ],
+                                            "modifierName": "LanternRite_hit_CameraShake"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "SetGlobalValue",
+                            "KMGAOOHMCPK": "CurLocalAvatar",
+                            "BKFHNENKMAL": true,
+                            "value": 1.0,
+                            "NGGCNKPAODB": "_Ability_LanternRite_AvatarIsSlime",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        }
+                    ],
+                    "NFKOGKMAIIE": [
+                        {
+                            "$type": "DebugLog",
+                            "GOMJPONMJII": "KillSelf_CountDown > onRemoved"
+                        },
+                        {
+                            "$type": "SetGlobalValue",
+                            "KMGAOOHMCPK": "CurLocalAvatar",
+                            "BKFHNENKMAL": true,
+                            "value": 0.0,
+                            "NGGCNKPAODB": "_Ability_LanternRite_AvatarIsSlime",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        },
+                        {
+                            "$type": "FireEffect",
+                            "LHHFHDEJOHC": "Eff_Activity_PartyLion_Disappear",
+                            "PCLAEGHPNHE": -1.0
+                        },
+                        {
+                            "$type": "KillSelf",
+                            "DNDIEEEJGMJ": [
+                                44000580,
+                                44000581,
+                                44000582
+                            ]
+                        }
+                    ]
+                },
+                "UNIQUE_ModifierSkillCD_ToAvatar": {
+                    "modifierName": "",
+                    "defaultDistanceBetweenAvatarAndCamera": true,
+                    "FAFCPJJAIGK": 0.20000000298023224,
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "ModifyAvatarSkillCD",
+                            "FLEEHCIOPKA": [
+                                {
+                                    "$type": "OMPKIEPKGPF",
+                                    "KMGAOOHMCPK": "Team",
+                                    "NGGCNKPAODB": "SGV_LanternRite_SkillType",
+                                    "value": 1.0
+                                }
+                            ],
+                            "GCOFBECOEFF": 20077,
+                            "LJHOOFDBELA": 6.0
+                        },
+                        {
+                            "$type": "ModifyAvatarSkillCD",
+                            "FLEEHCIOPKA": [
+                                {
+                                    "$type": "OMPKIEPKGPF",
+                                    "KMGAOOHMCPK": "Team",
+                                    "NGGCNKPAODB": "SGV_LanternRite_SkillType",
+                                    "value": 2.0
+                                }
+                            ],
+                            "GCOFBECOEFF": 20083,
+                            "LJHOOFDBELA": 6.0
+                        },
+                        {
+                            "$type": "ModifyAvatarSkillCD",
+                            "FLEEHCIOPKA": [
+                                {
+                                    "$type": "OMPKIEPKGPF",
+                                    "KMGAOOHMCPK": "Team",
+                                    "NGGCNKPAODB": "SGV_LanternRite_SkillType",
+                                    "value": 3.0
+                                }
+                            ],
+                            "GCOFBECOEFF": 20084,
+                            "LJHOOFDBELA": 6.0
+                        }
+                    ]
+                },
+                "SLC_SlimeHitCharacter_Handler_FromSlimeToAvatar": {
+                    "HABNNJHCOCD": "Multiple",
+                    "modifierName": "",
+                    "FAFCPJJAIGK": 0.20000000298023224,
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "ServerLuaCall",
+                            "KMGAOOHMCPK": "TempTarget",
+                            "distanceBetweenAvatarAndCameraRtpcKey": {
+                                "FIHOPJIJHOO": "_ABILITY_LanternRite_AvatarHitByOthers"
+                            },
+                            "FNBGNCANKJF": "CurGalleryControlGroup",
+                            "EMLPCEDPDIE": true,
+                            "FDPMGLDLLIN": "SLC_LanternRite_SlimeHitCharacter",
+                            "param1": 0.0,
+                            "HFOIEKLCLEM": 0.0,
+                            "MCLOKLEBGPH": 0.0
+                        },
+                        {
+                            "$type": "Predicated",
+                            "KMGAOOHMCPK": "Team",
+                            "targetPredicates": [
+                                {
+                                    "$type": "CDPHOKIPLGH",
+                                    "FLEEHCIOPKA": [
+                                        {
+                                            "$type": "OMPKIEPKGPF",
+                                            "NGGCNKPAODB": "SGV_LanternRite_SkillType",
+                                            "value": 1.0
+                                        },
+                                        {
+                                            "$type": "OMPKIEPKGPF",
+                                            "NGGCNKPAODB": "SGV_LanternRite_SkillType",
+                                            "value": 3.0
+                                        }
+                                    ]
+                                }
+                            ],
+                            "successActions": [
+                                {
+                                    "$type": "SetGlobalPos",
+                                    "NGGCNKPAODB": "_Ability_LanternRite_SlimePos",
+                                    "CCNCMOGOFAG": {
+                                        "$type": "DELDMCFKBBL",
+                                        "FPDJOHEHNDD": true
+                                    }
+                                },
+                                {
+                                    "$type": "SetGlobalValueToOverrideMap",
+                                    "globalValueKey": "_Ability_LanternRite_SlimePos_0",
+                                    "BPGLCPGHEEK": "slimePos_0"
+                                },
+                                {
+                                    "$type": "SetGlobalValueToOverrideMap",
+                                    "globalValueKey": "_Ability_LanternRite_SlimePos_1",
+                                    "BPGLCPGHEEK": "slimePos_1"
+                                },
+                                {
+                                    "$type": "SetGlobalValueToOverrideMap",
+                                    "globalValueKey": "_Ability_LanternRite_SlimePos_2",
+                                    "BPGLCPGHEEK": "slimePos_2"
+                                },
+                                {
+                                    "$type": "ServerLuaCall",
+                                    "KMGAOOHMCPK": "TempTarget",
+                                    "distanceBetweenAvatarAndCameraRtpcKey": {
+                                        "FIHOPJIJHOO": "_ABILITY_LanternRite_AvatarHitByOthers"
+                                    },
+                                    "FNBGNCANKJF": "CurGalleryControlGroup",
+                                    "EMLPCEDPDIE": true,
+                                    "FDPMGLDLLIN": "SLC_SlimePos",
+                                    "HALOALHGGNM": 3,
+                                    "param1": "slimePos_0",
+                                    "HFOIEKLCLEM": "slimePos_1",
+                                    "MCLOKLEBGPH": "slimePos_2"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "SLC_SlimeHitSlime_Handler_FromSlimeToAvatar": {
+                    "HABNNJHCOCD": "Unique",
+                    "modifierName": "",
+                    "FAFCPJJAIGK": 1.0,
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "RemoveUniqueModifier",
+                            "KMGAOOHMCPK": "CurLocalAvatar",
+                            "modifierName": "UNIQUE_SlimeSkill_Avatar"
+                        },
+                        {
+                            "$type": "RemoveUniqueModifier",
+                            "KMGAOOHMCPK": "CurLocalAvatar",
+                            "modifierName": "UNIQUE_SlimeSkill_02_Avatar"
+                        },
+                        {
+                            "$type": "RemoveUniqueModifier",
+                            "KMGAOOHMCPK": "CurLocalAvatar",
+                            "modifierName": "UNIQUE_SlimeSkill_03_Avatar"
+                        },
+                        {
+                            "$type": "ServerLuaCall",
+                            "KMGAOOHMCPK": "TempTarget",
+                            "distanceBetweenAvatarAndCameraRtpcKey": {
+                                "FIHOPJIJHOO": "_ABILITY_LanternRite_AvatarHitByOthers"
+                            },
+                            "FNBGNCANKJF": "CurGalleryControlGroup",
+                            "EMLPCEDPDIE": true,
+                            "FDPMGLDLLIN": "SLC_LanternRite_SlimeHitSlime",
+                            "param1": 0.0,
+                            "HFOIEKLCLEM": 0.0,
+                            "MCLOKLEBGPH": 0.0
+                        }
+                    ]
+                },
+                "UNIQUE_LanternRite_ProtectionAfterHit_FromSlimeToSlime": {
+                    "HABNNJHCOCD": "Unique",
+                    "modifierName": "",
+                    "defaultDistanceBetweenAvatarAndCamera": true,
+                    "FAFCPJJAIGK": 2.0,
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "SetGlobalValueV2",
+                            "BKFHNENKMAL": true,
+                            "value": 1.0,
+                            "NGGCNKPAODB": "_Ability_LanternRite_Hit_Avatar",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        },
+                        {
+                            "$type": "HitAir",
+                            "KMGAOOHMCPK": "CasterOriginOwner",
+                            "EPEOPHLIFKM": 15.0,
+                            "NBKJHCHIOFF": 15.0
+                        },
+                        {
+                            "$type": "RemoveUniqueModifier",
+                            "KMGAOOHMCPK": "CurLocalAvatar",
+                            "modifierName": "UNIQUE_SlimeSkill_Avatar"
+                        },
+                        {
+                            "$type": "RemoveUniqueModifier",
+                            "KMGAOOHMCPK": "CurLocalAvatar",
+                            "modifierName": "UNIQUE_SlimeSkill_02_Avatar"
+                        },
+                        {
+                            "$type": "RemoveUniqueModifier",
+                            "KMGAOOHMCPK": "CurLocalAvatar",
+                            "modifierName": "UNIQUE_SlimeSkill_03_Avatar"
+                        },
+                        {
+                            "$type": "ApplyModifier",
+                            "modifierName": "UNIQUE_ModifierSkillCD_ToAvatar"
+                        }
+                    ],
+                    "NFKOGKMAIIE": [
+                        {
+                            "$type": "SetGlobalValueV2",
+                            "BKFHNENKMAL": true,
+                            "value": 0.0,
+                            "NGGCNKPAODB": "_Ability_LanternRite_Hit_Avatar",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        }
+                    ]
+                },
+                "UNIQUE_LanternRite_ProtectionAfterHit_FromSlimeToChar": {
+                    "HABNNJHCOCD": "Unique",
+                    "modifierName": "",
+                    "defaultDistanceBetweenAvatarAndCamera": true,
+                    "FAFCPJJAIGK": 2.0,
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "SetGlobalValueV2",
+                            "BKFHNENKMAL": true,
+                            "value": 1.0,
+                            "NGGCNKPAODB": "_Ability_LanternRite_Hit_Avatar",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        }
+                    ],
+                    "NFKOGKMAIIE": [
+                        {
+                            "$type": "SetGlobalValueV2",
+                            "BKFHNENKMAL": true,
+                            "value": 0.0,
+                            "NGGCNKPAODB": "_Ability_LanternRite_Hit_Avatar",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        }
+                    ]
+                },
+                "LanternRite_Behit_FireEffect": {
+                    "modifierName": "",
+                    "FAFCPJJAIGK": 0.10000000149011612,
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "FireEffect",
+                            "LHHFHDEJOHC": "Eff_Activity_PartyLion_Hit",
+                            "PCLAEGHPNHE": -1.0
+                        }
+                    ]
+                },
+                "LanternRite_Hit_TriggerEffect": {
+                    "modifierName": "",
+                    "FAFCPJJAIGK": 0.20000000298023224,
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "SendEffectTrigger",
+                            "HDBIEOFMAOD": "Hit",
+                            "PAOPLDJGAKA": "",
+                            "LHHFHDEJOHC": "Eff_Activity_PartyLion_Scope"
+                        }
+                    ]
+                },
+                "LanternRite_hit_CameraShake": {
+                    "modifierName": "",
+                    "FAFCPJJAIGK": 0.5,
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "DoActionsLocal",
+                            "JNAOMAGIAJI": [
+                                {
+                                    "$type": "ActCameraShake",
+                                    "DBNEEEGIJGN": true,
+                                    "FCDFPCPCJGO": {
+                                        "FIKIBNDMNEF": 2.0,
+                                        "NCDMOKAIAJD": 0.11999999731779099,
+                                        "JOLJAMKOCJL": 300.0,
+                                        "LLNFDIKODIM": {
+                                            "IHLFAKGAOPO": true
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            "NLFIGALMIPD": [
+                {
+                    "$type": "SetGlobalValue",
+                    "value": 1.0,
+                    "NGGCNKPAODB": "_Ability_LanternRite_Slime",
+                    "LBHGJKHHAKP": 0.0,
+                    "EMGNPOKHMNN": 0.0
+                },
+                {
+                    "$type": "SetGlobalValue",
+                    "value": 0.0,
+                    "NGGCNKPAODB": "_ABILITY_LanternRite_AvatarHitByOthers",
+                    "LBHGJKHHAKP": 0.0,
+                    "EMGNPOKHMNN": 0.0
+                },
+                {
+                    "$type": "SetGlobalValue",
+                    "value": 1.0,
+                    "NGGCNKPAODB": "_ABILITY_LanternRite",
+                    "LBHGJKHHAKP": 0.0,
+                    "EMGNPOKHMNN": 0.0
+                },
+                {
+                    "$type": "SetGlobalValue",
+                    "value": 0.0,
+                    "NGGCNKPAODB": "_Ability_LanternRite_Mark",
+                    "LBHGJKHHAKP": 0.0,
+                    "EMGNPOKHMNN": 0.0
+                },
+                {
+                    "$type": "FireEffect",
+                    "LHHFHDEJOHC": "Eff_Activity_PartyLion_Appare",
+                    "PCLAEGHPNHE": -1.0
+                },
+                {
+                    "$type": "AttachModifier",
+                    "modifierName": "KillSelf_CountDown"
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "SceneObj_Area_Common_Property_Ani_Prop_LanternRite_AirWall_01_Ability",
+            "abilityMixins": [
+                {
+                    "$type": "AttachToGadgetStateMixin",
+                    "modifierName": "ExistState"
+                }
+            ],
+            "modifiers": {
+                "ExistState": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "EnableSceneTransformByName",
+                            "HFFMMIDGGKN": [
+                                "Collider"
+                            ],
+                            "DEHFCFDDEGB": true
+                        },
+                        {
+                            "$type": "AttachEffect",
+                            "LHHFHDEJOHC": "Eff_SceneObj_FungusFighterV2_TowerEnhancer_01_Active",
+                            "PCLAEGHPNHE": -1.0
+                        }
+                    ]
+                }
+            },
+            "LFBJFECLNGK": [
+                {
+                    "$type": "FireEffect",
+                    "LHHFHDEJOHC": "Eff_SceneObj_FungusFighterV2_TowerEnhancer_01_Destroy",
+                    "PCLAEGHPNHE": -1.0
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "SceneObj_Area_Common_Property_Ani_Prop_LanternRite_CoinModel_Ability",
+            "abilityMixins": [
+                {
+                    "$type": "AttachToGadgetStateMixin",
+                    "JBFLOAMNPBC": 201,
+                    "modifierName": "VanishState_Model"
+                },
+                {
+                    "$type": "AttachToGadgetStateMixin",
+                    "JBFLOAMNPBC": 202,
+                    "modifierName": "DeadState_Model"
+                },
+                {
+                    "$type": "AttachModifierToSelfGlobalValueMixin",
+                    "globalValueKey": "_Ability_LanternRite_CoinType",
+                    "defaultGlobalValueOnCreate": 0.0,
+                    "valueSteps": [
+                        -1.5,
+                        -0.5
+                    ],
+                    "modifierNameSteps": [
+                        "PickedUp"
+                    ],
+                    "ELIABBGNMKE": true
+                }
+            ],
+            "modifiers": {
+                "DeadState_Model": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "AttachModifier",
+                            "modifierName": "Delay_Model"
+                        }
+                    ]
+                },
+                "Delay_Model": {
+                    "modifierName": "",
+                    "FAFCPJJAIGK": 2.0,
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "DebugLog",
+                            "GOMJPONMJII": "WarningDelay onAdded"
+                        }
+                    ]
+                },
+                "VanishState_Model": {
+                    "modifierName": "",
+                    "FAFCPJJAIGK": 0.10000000149011612,
+                    "bonusCritical": 100.0,
+                    "NFKOGKMAIIE": [
+                        {
+                            "$type": "EnableSceneTransformByName",
+                            "HFFMMIDGGKN": [
+                                "Coin"
+                            ]
+                        },
+                        {
+                            "$type": "EnableSceneTransformByName",
+                            "HFFMMIDGGKN": [
+                                "Survival"
+                            ]
+                        },
+                        {
+                            "$type": "SetGlobalValue",
+                            "value": -1.0,
+                            "NGGCNKPAODB": "_Ability_LanternRite_CoinType",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        },
+                        {
+                            "$type": "KillSelf",
+                            "DNDIEEEJGMJ": [
+                                70220163,
+                                70220168,
+                                70220169,
+                                70220185
+                            ]
+                        }
+                    ]
+                },
+                "PickedUp": {
+                    "modifierName": "",
+                    "FAFCPJJAIGK": 0.10000000149011612,
+                    "bonusCritical": 100.0,
+                    "NFKOGKMAIIE": [
+                        {
+                            "$type": "EnableSceneTransformByName",
+                            "HFFMMIDGGKN": [
+                                "Coin"
+                            ]
+                        },
+                        {
+                            "$type": "EnableSceneTransformByName",
+                            "HFFMMIDGGKN": [
+                                "Survival"
+                            ]
+                        }
+                    ]
+                }
+            },
+            "NLFIGALMIPD": [
+                {
+                    "$type": "EnableSceneTransformByName",
+                    "FLEEHCIOPKA": [
+                        {
+                            "$type": "OMPKIEPKGPF",
+                            "KMGAOOHMCPK": "Self",
+                            "NGGCNKPAODB": "SGV_LanternRite_CoinType",
+                            "value": 1.0
+                        }
+                    ],
+                    "HFFMMIDGGKN": [
+                        "Coin"
+                    ],
+                    "DEHFCFDDEGB": true
+                },
+                {
+                    "$type": "EnableSceneTransformByName",
+                    "FLEEHCIOPKA": [
+                        {
+                            "$type": "OMPKIEPKGPF",
+                            "KMGAOOHMCPK": "Self",
+                            "NGGCNKPAODB": "SGV_LanternRite_CoinType",
+                            "value": 1.0
+                        }
+                    ],
+                    "HFFMMIDGGKN": [
+                        "Survival"
+                    ]
+                },
+                {
+                    "$type": "EnableSceneTransformByName",
+                    "FLEEHCIOPKA": [
+                        {
+                            "$type": "OMPKIEPKGPF",
+                            "KMGAOOHMCPK": "Self",
+                            "NGGCNKPAODB": "SGV_LanternRite_CoinType",
+                            "value": 3.0
+                        }
+                    ],
+                    "HFFMMIDGGKN": [
+                        "Survival"
+                    ],
+                    "DEHFCFDDEGB": true
+                },
+                {
+                    "$type": "EnableSceneTransformByName",
+                    "FLEEHCIOPKA": [
+                        {
+                            "$type": "OMPKIEPKGPF",
+                            "KMGAOOHMCPK": "Self",
+                            "NGGCNKPAODB": "SGV_LanternRite_CoinType",
+                            "value": 3.0
+                        }
+                    ],
+                    "HFFMMIDGGKN": [
+                        "Coin"
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "SceneObj_Area_Common_Property_Ani_Prop_LanternRite_CoinEffect_Ability",
+            "abilityMixins": [
+                {
+                    "$type": "AttachToGadgetStateMixin",
+                    "modifierName": "ExistState"
+                },
+                {
+                    "$type": "AttachToGadgetStateMixin",
+                    "JBFLOAMNPBC": 202,
+                    "modifierName": "DeadState"
+                },
+                {
+                    "$type": "AttachToGadgetStateMixin",
+                    "JBFLOAMNPBC": 201,
+                    "modifierName": "VanishState"
+                }
+            ],
+            "modifiers": {
+                "ExistState": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "FireSubEmitterEffect",
+                            "FLEEHCIOPKA": [
+                                {
+                                    "$type": "OMPKIEPKGPF",
+                                    "KMGAOOHMCPK": "Self",
+                                    "NGGCNKPAODB": "SGV_LanternRite_CoinSize",
+                                    "value": 2.0
+                                },
+                                {
+                                    "$type": "OMPKIEPKGPF",
+                                    "KMGAOOHMCPK": "Self",
+                                    "NGGCNKPAODB": "_Ability_LanternRite_CoinCreated",
+                                    "value": 0.0,
+                                    "GAGKBNPOCAC": "NoneOrEqual"
+                                }
+                            ],
+                            "LHHFHDEJOHC": "Eff_SceneObj_StageTeacake_01_Appear",
+                            "CCNCMOGOFAG": {
+                                "$type": "IADBHDLMGJB",
+                                "FPDJOHEHNDD": true,
+                                "MDPMJPIOGLA": "AttachPoint01"
+                            },
+                            "scale": 1.600000023841858
+                        },
+                        {
+                            "$type": "FireSubEmitterEffect",
+                            "FLEEHCIOPKA": [
+                                {
+                                    "$type": "BLIEHOICPMH",
+                                    "FLEEHCIOPKA": [
+                                        {
+                                            "$type": "OMPKIEPKGPF",
+                                            "KMGAOOHMCPK": "Self",
+                                            "NGGCNKPAODB": "SGV_LanternRite_CoinSize",
+                                            "value": 2.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "$type": "OMPKIEPKGPF",
+                                    "KMGAOOHMCPK": "Self",
+                                    "NGGCNKPAODB": "_Ability_LanternRite_CoinCreated",
+                                    "value": 0.0,
+                                    "GAGKBNPOCAC": "NoneOrEqual"
+                                }
+                            ],
+                            "LHHFHDEJOHC": "Eff_SceneObj_StageTeacake_01_Appear",
+                            "CCNCMOGOFAG": {
+                                "$type": "IADBHDLMGJB",
+                                "FPDJOHEHNDD": true,
+                                "MDPMJPIOGLA": "AttachPoint"
+                            }
+                        },
+                        {
+                            "$type": "SetGlobalValue",
+                            "value": 1.0,
+                            "NGGCNKPAODB": "_Ability_LanternRite_CoinCreated",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        },
+                        {
+                            "$type": "AttachEffect",
+                            "FLEEHCIOPKA": [
+                                {
+                                    "$type": "OMPKIEPKGPF",
+                                    "KMGAOOHMCPK": "Self",
+                                    "NGGCNKPAODB": "SGV_LanternRite_CoinSize",
+                                    "value": 2.0
+                                }
+                            ],
+                            "LHHFHDEJOHC": "Eff_SceneObj_StageTeacake_01_Default",
+                            "CCNCMOGOFAG": {
+                                "$type": "IADBHDLMGJB",
+                                "FPDJOHEHNDD": true,
+                                "MDPMJPIOGLA": "AttachPoint01"
+                            },
+                            "scale": 1.600000023841858,
+                            "PCLAEGHPNHE": -1.0
+                        },
+                        {
+                            "$type": "SetEffectFollowPath",
+                            "FLEEHCIOPKA": [
+                                {
+                                    "$type": "OMPKIEPKGPF",
+                                    "KMGAOOHMCPK": "Self",
+                                    "NGGCNKPAODB": "SGV_LanternRite_CoinSize",
+                                    "value": 2.0
+                                }
+                            ],
+                            "LAHGKDJIIJH": "AttachPoint01",
+                            "LHHFHDEJOHC": "Eff_SceneObj_StageTeacake_01_Default",
+                            "PAOPLDJGAKA": "AttachPoint01"
+                        },
+                        {
+                            "$type": "AttachEffect",
+                            "FLEEHCIOPKA": [
+                                {
+                                    "$type": "BLIEHOICPMH",
+                                    "FLEEHCIOPKA": [
+                                        {
+                                            "$type": "OMPKIEPKGPF",
+                                            "KMGAOOHMCPK": "Self",
+                                            "NGGCNKPAODB": "SGV_LanternRite_CoinSize",
+                                            "value": 2.0
+                                        }
+                                    ]
+                                }
+                            ],
+                            "LHHFHDEJOHC": "Eff_SceneObj_StageTeacake_01_Default",
+                            "CCNCMOGOFAG": {
+                                "$type": "IADBHDLMGJB",
+                                "FPDJOHEHNDD": true,
+                                "MDPMJPIOGLA": "AttachPoint"
+                            },
+                            "PCLAEGHPNHE": -1.0
+                        }
+                    ]
+                },
+                "DeadState": {
+                    "modifierName": "",
+                    "FAFCPJJAIGK": 2.0,
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "AttachEffect",
+                            "FLEEHCIOPKA": [
+                                {
+                                    "$type": "BLIEHOICPMH",
+                                    "FLEEHCIOPKA": [
+                                        {
+                                            "$type": "OMPKIEPKGPF",
+                                            "KMGAOOHMCPK": "Self",
+                                            "NGGCNKPAODB": "SGV_LanternRite_CoinSize",
+                                            "value": 2.0
+                                        }
+                                    ]
+                                }
+                            ],
+                            "LHHFHDEJOHC": "Eff_SceneObj_StageTeacake_01_Warning",
+                            "PCLAEGHPNHE": -1.0
+                        },
+                        {
+                            "$type": "AttachEffect",
+                            "FLEEHCIOPKA": [
+                                {
+                                    "$type": "OMPKIEPKGPF",
+                                    "KMGAOOHMCPK": "Self",
+                                    "NGGCNKPAODB": "SGV_LanternRite_CoinSize",
+                                    "value": 2.0
+                                }
+                            ],
+                            "LHHFHDEJOHC": "Eff_SceneObj_StageTeacake_01_Warning",
+                            "CCNCMOGOFAG": {
+                                "$type": "IADBHDLMGJB",
+                                "FPDJOHEHNDD": true,
+                                "MDPMJPIOGLA": "AttachPoint01"
+                            },
+                            "scale": 1.600000023841858,
+                            "PCLAEGHPNHE": -1.0
+                        },
+                        {
+                            "$type": "SetEffectFollowPath",
+                            "FLEEHCIOPKA": [
+                                {
+                                    "$type": "OMPKIEPKGPF",
+                                    "KMGAOOHMCPK": "Self",
+                                    "NGGCNKPAODB": "SGV_LanternRite_CoinSize",
+                                    "value": 2.0
+                                }
+                            ],
+                            "LAHGKDJIIJH": "AttachPoint01",
+                            "LHHFHDEJOHC": "Eff_SceneObj_StageTeacake_01_Warning",
+                            "PAOPLDJGAKA": "AttachPoint01"
+                        }
+                    ],
+                    "NFKOGKMAIIE": [
+                        {
+                            "$type": "KillSelf",
+                            "DNDIEEEJGMJ": [
+                                70220163,
+                                70220165,
+                                70220169,
+                                70220185
+                            ]
+                        }
+                    ]
+                },
+                "VanishState": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "FireSubEmitterEffect",
+                            "FLEEHCIOPKA": [
+                                {
+                                    "$type": "OMPKIEPKGPF",
+                                    "KMGAOOHMCPK": "Self",
+                                    "NGGCNKPAODB": "SGV_LanternRite_CoinSize",
+                                    "value": 2.0
+                                }
+                            ],
+                            "LHHFHDEJOHC": "Eff_SceneObj_StageTeacake_01_Disappear_01",
+                            "CCNCMOGOFAG": {
+                                "$type": "IADBHDLMGJB",
+                                "FPDJOHEHNDD": true,
+                                "MDPMJPIOGLA": "AttachPoint01"
+                            },
+                            "scale": 1.600000023841858
+                        },
+                        {
+                            "$type": "FireSubEmitterEffect",
+                            "FLEEHCIOPKA": [
+                                {
+                                    "$type": "BLIEHOICPMH",
+                                    "FLEEHCIOPKA": [
+                                        {
+                                            "$type": "OMPKIEPKGPF",
+                                            "KMGAOOHMCPK": "Self",
+                                            "NGGCNKPAODB": "SGV_LanternRite_CoinSize",
+                                            "value": 2.0
+                                        }
+                                    ]
+                                }
+                            ],
+                            "LHHFHDEJOHC": "Eff_SceneObj_StageTeacake_01_Disappear_01",
+                            "CCNCMOGOFAG": {
+                                "$type": "IADBHDLMGJB",
+                                "FPDJOHEHNDD": true,
+                                "MDPMJPIOGLA": "AttachPoint"
+                            }
+                        }
+                    ]
+                }
+            },
+            "LFBJFECLNGK": [
+                {
+                    "$type": "FireSubEmitterEffect",
+                    "FLEEHCIOPKA": [
+                        {
+                            "$type": "OMPKIEPKGPF",
+                            "KMGAOOHMCPK": "Self",
+                            "NGGCNKPAODB": "SGV_LanternRite_CoinSize",
+                            "value": 2.0
+                        },
+                        {
+                            "$type": "BLIEHOICPMH",
+                            "FLEEHCIOPKA": [
+                                {
+                                    "$type": "OMPKIEPKGPF",
+                                    "KMGAOOHMCPK": "Self",
+                                    "NGGCNKPAODB": "_Ability_LanternRite_CoinType",
+                                    "value": -1.0
+                                }
+                            ]
+                        }
+                    ],
+                    "LHHFHDEJOHC": "Eff_SceneObj_StageTeacake_01_Disappear_02",
+                    "CCNCMOGOFAG": {
+                        "$type": "IADBHDLMGJB",
+                        "FPDJOHEHNDD": true,
+                        "MDPMJPIOGLA": "AttachPoint01"
+                    },
+                    "scale": 1.600000023841858
+                },
+                {
+                    "$type": "FireSubEmitterEffect",
+                    "FLEEHCIOPKA": [
+                        {
+                            "$type": "BLIEHOICPMH",
+                            "FLEEHCIOPKA": [
+                                {
+                                    "$type": "OMPKIEPKGPF",
+                                    "KMGAOOHMCPK": "Self",
+                                    "NGGCNKPAODB": "SGV_LanternRite_CoinSize",
+                                    "value": 2.0
+                                }
+                            ]
+                        },
+                        {
+                            "$type": "BLIEHOICPMH",
+                            "FLEEHCIOPKA": [
+                                {
+                                    "$type": "OMPKIEPKGPF",
+                                    "KMGAOOHMCPK": "Self",
+                                    "NGGCNKPAODB": "_Ability_LanternRite_CoinType",
+                                    "value": -1.0
+                                }
+                            ]
+                        }
+                    ],
+                    "LHHFHDEJOHC": "Eff_SceneObj_StageTeacake_01_Disappear_02",
+                    "CCNCMOGOFAG": {
+                        "$type": "IADBHDLMGJB",
+                        "FPDJOHEHNDD": true,
+                        "MDPMJPIOGLA": "AttachPoint"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "SceneObj_Area_Common_Property_Ani_Prop_LanternRite_Coin_Small",
+            "abilityMixins": [
+                {
+                    "$type": "AttachToGadgetStateMixin",
+                    "JBFLOAMNPBC": 201,
+                    "modifierName": "VanishState_GV"
+                }
+            ],
+            "modifiers": {
+                "VanishState_GV": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "SetGlobalValue",
+                            "value": -1.0,
+                            "NGGCNKPAODB": "_Ability_LanternRite_CoinType",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        }
+                    ]
+                }
+            },
+            "NLFIGALMIPD": [
+                {
+                    "$type": "SetGlobalValue",
+                    "value": 1.0,
+                    "NGGCNKPAODB": "_Ability_LanternRite_CoinType",
+                    "LBHGJKHHAKP": 0.0,
+                    "EMGNPOKHMNN": 0.0
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "SceneObj_Area_Common_Property_Ani_Prop_LanternRite_Coin_Large",
+            "abilityMixins": [
+                {
+                    "$type": "AttachToGadgetStateMixin",
+                    "JBFLOAMNPBC": 201,
+                    "modifierName": "VanishState_GV"
+                }
+            ],
+            "modifiers": {
+                "VanishState_GV": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "SetGlobalValue",
+                            "value": -1.0,
+                            "NGGCNKPAODB": "_Ability_LanternRite_CoinType",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        }
+                    ]
+                }
+            },
+            "NLFIGALMIPD": [
+                {
+                    "$type": "SetGlobalValue",
+                    "value": 10.0,
+                    "NGGCNKPAODB": "_Ability_LanternRite_CoinType",
+                    "LBHGJKHHAKP": 0.0,
+                    "EMGNPOKHMNN": 0.0
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "SceneObj_Area_Common_Property_Ani_Prop_LanternRite_Coin_02_Ability",
+            "abilityMixins": [
+                {
+                    "$type": "AttachToGadgetStateMixin",
+                    "JBFLOAMNPBC": 201,
+                    "modifierName": "PickedState_Bullet"
+                }
+            ],
+            "modifiers": {
+                "ReconnectHandler": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "FCHBGPJGEBK": [
+                        {
+                            "$type": "SetGlobalPos",
+                            "NGGCNKPAODB": "_Gadget_DropCoin_Pos",
+                            "CCNCMOGOFAG": {
+                                "$type": "DELDMCFKBBL",
+                                "OINHJGEGJLO": true,
+                                "FPDJOHEHNDD": true
+                            }
+                        },
+                        {
+                            "$type": "SetGlobalValue",
+                            "value": 2.700000047683716,
+                            "NGGCNKPAODB": "_Gadget_DropCoin_Pos_1",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        },
+                        {
+                            "$type": "ApplyModifier",
+                            "modifierName": "StopMove"
+                        }
+                    ]
+                },
+                "CountDown": {
+                    "modifierName": "",
+                    "FAFCPJJAIGK": 15.0,
+                    "bonusCritical": 100.0,
+                    "ANPDJHOGAFE": 13.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "FireEffect",
+                            "FLEEHCIOPKA": [
+                                {
+                                    "$type": "OMPKIEPKGPF",
+                                    "KMGAOOHMCPK": "Self",
+                                    "NGGCNKPAODB": "_Ability_LanternRite_CoinCreated",
+                                    "value": 0.0,
+                                    "GAGKBNPOCAC": "NoneOrEqual"
+                                }
+                            ],
+                            "LHHFHDEJOHC": "Eff_SceneObj_StageTeacake_01_Appear",
+                            "scale": 1.600000023841858,
+                            "PCLAEGHPNHE": -1.0
+                        },
+                        {
+                            "$type": "SetGlobalValue",
+                            "value": 1.0,
+                            "NGGCNKPAODB": "_Ability_LanternRite_CoinCreated",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        },
+                        {
+                            "$type": "AttachEffect",
+                            "LHHFHDEJOHC": "Eff_SceneObj_StageTeacake_01_Special",
+                            "CCNCMOGOFAG": {
+                                "$type": "MIJAAKJGAEJ",
+                                "FNHBOFDBNNK": {
+                                    "$type": "AMMBLNIJMPD",
+                                    "KGLBNDIOKKO": {
+                                        "x": 1.0
+                                    }
+                                },
+                                "POLCJDPOKCF": "_Gadget_DropCoin_Pos",
+                                "NHBEMFBAMNP": ""
+                            },
+                            "PCLAEGHPNHE": -1.0
+                        }
+                    ],
+                    "NFKOGKMAIIE": [
+                        {
+                            "$type": "FireSubEmitterEffect",
+                            "FLEEHCIOPKA": [
+                                {
+                                    "$type": "BLIEHOICPMH",
+                                    "FLEEHCIOPKA": [
+                                        {
+                                            "$type": "OMPKIEPKGPF",
+                                            "KMGAOOHMCPK": "Self",
+                                            "NGGCNKPAODB": "_Ability_LanternRite_CoinType",
+                                            "value": -1.0
+                                        }
+                                    ]
+                                }
+                            ],
+                            "LHHFHDEJOHC": "Eff_SceneObj_StageTeacake_01_Disappear_02",
+                            "CCNCMOGOFAG": {
+                                "$type": "IADBHDLMGJB",
+                                "FPDJOHEHNDD": true,
+                                "MDPMJPIOGLA": "AttachPoint01"
+                            },
+                            "scale": 1.600000023841858
+                        },
+                        {
+                            "$type": "SetGlobalValue",
+                            "value": -1.0,
+                            "NGGCNKPAODB": "_Ability_LanternRite_CoinType",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        },
+                        {
+                            "$type": "KillSelf",
+                            "KNHCJMCGNFD": true,
+                            "DNDIEEEJGMJ": [
+                                70220168
+                            ]
+                        }
+                    ],
+                    "MDPGEKAIFIM": [
+                        {
+                            "$type": "AttachEffect",
+                            "LHHFHDEJOHC": "Eff_SceneObj_StageTeacake_01_Warning",
+                            "scale": 1.600000023841858,
+                            "PCLAEGHPNHE": -1.0
+                        }
+                    ]
+                },
+                "StopMove": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLPPKPOJEOA": {
+                        "Actor_BulletMoveSpeedRatio": -1.0
+                    },
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "DoBlinkByGlobalPos",
+                            "POLCJDPOKCF": "_Gadget_DropCoin_Pos",
+                            "NHBEMFBAMNP": "",
+                            "KCKNCIKJKAF": true,
+                            "CIBHKJAHBNG": false
+                        }
+                    ]
+                },
+                "PickedState_Bullet": {
+                    "modifierName": "",
+                    "FAFCPJJAIGK": 0.10000000149011612,
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "SetGlobalValue",
+                            "value": -1.0,
+                            "NGGCNKPAODB": "_Ability_LanternRite_CoinType",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        },
+                        {
+                            "$type": "FireSubEmitterEffect",
+                            "LHHFHDEJOHC": "Eff_SceneObj_StageTeacake_01_Disappear_01",
+                            "CCNCMOGOFAG": {
+                                "$type": "IADBHDLMGJB",
+                                "FPDJOHEHNDD": true,
+                                "MDPMJPIOGLA": "AttachPoint01"
+                            },
+                            "scale": 1.600000023841858
+                        },
+                        {
+                            "$type": "RemoveModifier",
+                            "modifierName": "CountDown"
+                        }
+                    ]
+                }
+            },
+            "NLFIGALMIPD": [
+                {
+                    "$type": "AttachModifier",
+                    "modifierName": "CountDown"
+                },
+                {
+                    "$type": "ApplyModifier",
+                    "modifierName": "ReconnectHandler"
+                }
+            ],
+            "NFKOGKMAIIE": [
+                {
+                    "$type": "RemoveModifier",
+                    "modifierName": "ReconnectHandler"
+                }
+            ],
+            "onAbilityStart": [
+                {
+                    "$type": "Predicated",
+                    "KMGAOOHMCPK": "Target",
+                    "targetPredicates": [
+                        {
+                            "$type": "FAGBAHBLACH",
+                            "MALHNOJHHDJ": [
+                                "Level",
+                                "Gadget"
+                            ]
+                        }
+                    ],
+                    "successActions": [
+                        {
+                            "$type": "SetGlobalPos",
+                            "NGGCNKPAODB": "_Gadget_DropCoin_Pos",
+                            "CCNCMOGOFAG": {
+                                "$type": "DELDMCFKBBL",
+                                "OINHJGEGJLO": true,
+                                "FPDJOHEHNDD": true
+                            }
+                        },
+                        {
+                            "$type": "SetGlobalValue",
+                            "value": 2.700000047683716,
+                            "NGGCNKPAODB": "_Gadget_DropCoin_Pos_1",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        },
+                        {
+                            "$type": "ApplyModifier",
+                            "modifierName": "StopMove"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "SceneObj_Area_Common_Property_Ani_Prop_LanternRite_Coin_03_Ability",
+            "abilityMixins": [
+                {
+                    "$type": "AttachToGadgetStateMixin",
+                    "JBFLOAMNPBC": 201,
+                    "modifierName": "VanishState_Special"
+                }
+            ],
+            "modifiers": {
+                "VanishState_Special": {
+                    "modifierName": "",
+                    "FAFCPJJAIGK": 0.10000000149011612,
+                    "bonusCritical": 100.0,
+                    "NFKOGKMAIIE": [
+                        {
+                            "$type": "EnableSceneTransformByName",
+                            "HFFMMIDGGKN": [
+                                "Coin"
+                            ]
+                        },
+                        {
+                            "$type": "EnableSceneTransformByName",
+                            "HFFMMIDGGKN": [
+                                "Coin_Large"
+                            ]
+                        },
+                        {
+                            "$type": "EnableSceneTransformByName",
+                            "HFFMMIDGGKN": [
+                                "Survival"
+                            ]
+                        },
+                        {
+                            "$type": "SetGlobalValue",
+                            "value": -1.0,
+                            "NGGCNKPAODB": "_Ability_LanternRite_CoinType",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        },
+                        {
+                            "$type": "KillSelf",
+                            "DNDIEEEJGMJ": [
+                                70220185
+                            ]
+                        }
+                    ]
+                },
+                "CountDown": {
+                    "modifierName": "",
+                    "FAFCPJJAIGK": 13.0,
+                    "bonusCritical": 100.0,
+                    "NFKOGKMAIIE": [
+                        {
+                            "$type": "ChangeGadgetState",
+                            "LAKGGCIOMBH": 202
+                        }
+                    ]
+                },
+                "CountDown_Born": {
+                    "modifierName": "",
+                    "FAFCPJJAIGK": 0.5,
+                    "bonusCritical": 100.0,
+                    "NFKOGKMAIIE": [
+                        {
+                            "$type": "SetGlobalValue",
+                            "value": 1.0,
+                            "NGGCNKPAODB": "_Ability_LanternRite_CoinType",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        }
+                    ]
+                }
+            },
+            "NLFIGALMIPD": [
+                {
+                    "$type": "SetGlobalValue",
+                    "value": -1.0,
+                    "NGGCNKPAODB": "_Ability_LanternRite_CoinType",
+                    "LBHGJKHHAKP": 0.0,
+                    "EMGNPOKHMNN": 0.0
+                },
+                {
+                    "$type": "AttachModifier",
+                    "modifierName": "CountDown_Born"
+                },
+                {
+                    "$type": "AttachModifier",
+                    "modifierName": "CountDown"
+                },
+                {
+                    "$type": "EnableSceneTransformByName",
+                    "FLEEHCIOPKA": [
+                        {
+                            "$type": "OMPKIEPKGPF",
+                            "KMGAOOHMCPK": "Self",
+                            "NGGCNKPAODB": "SGV_LanternRite_CoinType",
+                            "value": 1.0
+                        },
+                        {
+                            "$type": "OMPKIEPKGPF",
+                            "KMGAOOHMCPK": "Self",
+                            "NGGCNKPAODB": "SGV_LanternRite_CoinSize",
+                            "value": 1.0
+                        }
+                    ],
+                    "HFFMMIDGGKN": [
+                        "Coin"
+                    ],
+                    "DEHFCFDDEGB": true
+                },
+                {
+                    "$type": "EnableSceneTransformByName",
+                    "FLEEHCIOPKA": [
+                        {
+                            "$type": "OMPKIEPKGPF",
+                            "KMGAOOHMCPK": "Self",
+                            "NGGCNKPAODB": "SGV_LanternRite_CoinType",
+                            "value": 1.0
+                        },
+                        {
+                            "$type": "OMPKIEPKGPF",
+                            "KMGAOOHMCPK": "Self",
+                            "NGGCNKPAODB": "SGV_LanternRite_CoinSize",
+                            "value": 2.0
+                        }
+                    ],
+                    "HFFMMIDGGKN": [
+                        "Coin_Large"
+                    ],
+                    "DEHFCFDDEGB": true
+                },
+                {
+                    "$type": "EnableSceneTransformByName",
+                    "FLEEHCIOPKA": [
+                        {
+                            "$type": "OMPKIEPKGPF",
+                            "KMGAOOHMCPK": "Self",
+                            "NGGCNKPAODB": "SGV_LanternRite_CoinType",
+                            "value": 3.0
+                        }
+                    ],
+                    "HFFMMIDGGKN": [
+                        "Survival"
+                    ],
+                    "DEHFCFDDEGB": true
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "SceneObj_Area_Common_Property_Ani_Prop_LanternRite_Buff_Ability",
+            "abilityMixins": [
+                {
+                    "$type": "AttachToGadgetStateMixin",
+                    "modifierName": "ShowState"
+                },
+                {
+                    "$type": "AttachToGadgetStateMixin",
+                    "JBFLOAMNPBC": 202,
+                    "modifierName": "HideState"
+                }
+            ],
+            "modifiers": {
+                "ShowState": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "SetGlobalValue",
+                            "value": 1.0,
+                            "NGGCNKPAODB": "_Ability_LanternRite_Buff_Enabled",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        },
+                        {
+                            "$type": "AttachEffect",
+                            "LHHFHDEJOHC": "Eff_SceneObj_JumpUp_01",
+                            "PCLAEGHPNHE": -1.0
+                        }
+                    ]
+                },
+                "HideState": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "FireEffect",
+                            "FLEEHCIOPKA": [
+                                {
+                                    "$type": "OMPKIEPKGPF",
+                                    "NGGCNKPAODB": "_Ability_LanternRite_Buff_Enabled",
+                                    "value": 1.0
+                                }
+                            ],
+                            "LHHFHDEJOHC": "Eff_SceneObj_JumpUp_01_Dis",
+                            "PCLAEGHPNHE": -1.0
+                        },
+                        {
+                            "$type": "SetGlobalValue",
+                            "value": 0.0,
+                            "NGGCNKPAODB": "_Ability_LanternRite_Buff_Enabled",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        }
+                    ]
+                }
+            },
+            "LFBJFECLNGK": [
+                {
+                    "$type": "FireEffect",
+                    "FLEEHCIOPKA": [
+                        {
+                            "$type": "OMPKIEPKGPF",
+                            "KMGAOOHMCPK": "Self",
+                            "NGGCNKPAODB": "_Ability_LanternRite_Buff_Enabled",
+                            "value": 1.0
+                        }
+                    ],
+                    "LHHFHDEJOHC": "Eff_SceneObj_JumpUp_01_Dis",
+                    "PCLAEGHPNHE": -1.0
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "SceneObj_Area_Common_Property_Ani_Prop_LanternRite_Buff_01_Ability",
+            "NLFIGALMIPD": [
+                {
+                    "$type": "SetGlobalValue",
+                    "value": 1.0,
+                    "NGGCNKPAODB": "_Ability_LanternRite_BuffType",
+                    "LBHGJKHHAKP": 0.0,
+                    "EMGNPOKHMNN": 0.0
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "SceneObj_Area_Common_Property_Ani_Prop_LanternRite_Buff_02_Ability",
+            "NLFIGALMIPD": [
+                {
+                    "$type": "SetGlobalValue",
+                    "value": 2.0,
+                    "NGGCNKPAODB": "_Ability_LanternRite_BuffType",
+                    "LBHGJKHHAKP": 0.0,
+                    "EMGNPOKHMNN": 0.0
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "SceneObj_Area_Common_Property_Ani_Prop_LanternRite_Buff_03_Ability",
+            "NLFIGALMIPD": [
+                {
+                    "$type": "SetGlobalValue",
+                    "value": 3.0,
+                    "NGGCNKPAODB": "_Ability_LanternRite_BuffType",
+                    "LBHGJKHHAKP": 0.0,
+                    "EMGNPOKHMNN": 0.0
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "SceneObj_Area_Common_Property_Ani_Prop_LanternRite_Buff_04_Ability",
+            "NLFIGALMIPD": [
+                {
+                    "$type": "SetGlobalValue",
+                    "value": 4.0,
+                    "NGGCNKPAODB": "_Ability_LanternRite_BuffType",
+                    "LBHGJKHHAKP": 0.0,
+                    "EMGNPOKHMNN": 0.0
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "SceneObj_Area_Common_Property_Ani_Prop_LanternRite_Floor_01_Ability",
+            "abilityMixins": [
+                {
+                    "$type": "AttachToGadgetStateMixin",
+                    "modifierName": "NormalState"
+                },
+                {
+                    "$type": "AttachToGadgetStateMixin",
+                    "JBFLOAMNPBC": 901,
+                    "modifierName": "LowerState"
+                },
+                {
+                    "$type": "AttachToGadgetStateMixin",
+                    "JBFLOAMNPBC": 201,
+                    "modifierName": "HigherState"
+                },
+                {
+                    "$type": "AttachModifierToSelfGlobalValueNoInitMixin",
+                    "globalValueKey": "_Ability_LanternRite_LeftTop",
+                    "valueSteps": [
+                        0.5,
+                        1.5
+                    ],
+                    "modifierNameSteps": [
+                        "LeftTop"
+                    ],
+                    "ELIABBGNMKE": true
+                },
+                {
+                    "$type": "AttachModifierToSelfGlobalValueNoInitMixin",
+                    "globalValueKey": "_Ability_LanternRite_RightTop",
+                    "valueSteps": [
+                        0.5,
+                        1.5
+                    ],
+                    "modifierNameSteps": [
+                        "RightTop"
+                    ],
+                    "ELIABBGNMKE": true
+                },
+                {
+                    "$type": "AttachModifierToSelfGlobalValueNoInitMixin",
+                    "globalValueKey": "_Ability_LanternRite_RightBottom",
+                    "valueSteps": [
+                        0.5,
+                        1.5
+                    ],
+                    "modifierNameSteps": [
+                        "RightBottom"
+                    ],
+                    "ELIABBGNMKE": true
+                },
+                {
+                    "$type": "AttachModifierToSelfGlobalValueNoInitMixin",
+                    "globalValueKey": "_Ability_LanternRite_LeftBottom",
+                    "valueSteps": [
+                        0.5,
+                        1.5
+                    ],
+                    "modifierNameSteps": [
+                        "LeftBottom"
+                    ],
+                    "ELIABBGNMKE": true
+                },
+                {
+                    "$type": "ServerUpdateGlobalValueMixin",
+                    "NGGCNKPAODB": "_Ability_LanternRite_LeftTop",
+                    "AJKBEKOCMKF": true,
+                    "LBHGJKHHAKP": 1.0,
+                    "EMGNPOKHMNN": 0.0
+                },
+                {
+                    "$type": "ServerUpdateGlobalValueMixin",
+                    "NGGCNKPAODB": "_Ability_LanternRite_RightTop",
+                    "AJKBEKOCMKF": true,
+                    "LBHGJKHHAKP": 1.0,
+                    "EMGNPOKHMNN": 0.0
+                },
+                {
+                    "$type": "ServerUpdateGlobalValueMixin",
+                    "NGGCNKPAODB": "_Ability_LanternRite_RightBottom",
+                    "AJKBEKOCMKF": true,
+                    "LBHGJKHHAKP": 1.0,
+                    "EMGNPOKHMNN": 0.0
+                },
+                {
+                    "$type": "ServerUpdateGlobalValueMixin",
+                    "NGGCNKPAODB": "_Ability_LanternRite_LeftBottom",
+                    "AJKBEKOCMKF": true,
+                    "LBHGJKHHAKP": 1.0,
+                    "EMGNPOKHMNN": 0.0
+                }
+            ],
+            "modifiers": {
+                "LeftTop": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "modifierMixins": [
+                        {
+                            "$type": "AttachSubEmitterEffectMixin",
+                            "LHHFHDEJOHC": "Eff_ScenObj_PartyAdjustableFloor_Line",
+                            "IMDKCPMBOFB": "LeftTop"
+                        }
+                    ],
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "AttachEffect",
+                            "LHHFHDEJOHC": "Eff_ScenObj_PartyAdjustableFloor_Glod_02",
+                            "CCNCMOGOFAG": {
+                                "$type": "IADBHDLMGJB",
+                                "FPDJOHEHNDD": true,
+                                "MDPMJPIOGLA": "LeftTop"
+                            },
+                            "PCLAEGHPNHE": -1.0
+                        },
+                        {
+                            "$type": "SetEffectFollowPath",
+                            "LAHGKDJIIJH": "LeftTop",
+                            "LHHFHDEJOHC": "Eff_ScenObj_PartyAdjustableFloor_Glod_02",
+                            "PAOPLDJGAKA": "LeftTop"
+                        }
+                    ]
+                },
+                "RightTop": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "modifierMixins": [
+                        {
+                            "$type": "AttachSubEmitterEffectMixin",
+                            "LHHFHDEJOHC": "Eff_ScenObj_PartyAdjustableFloor_Line",
+                            "IMDKCPMBOFB": "RightTop"
+                        }
+                    ],
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "AttachEffect",
+                            "LHHFHDEJOHC": "Eff_ScenObj_PartyAdjustableFloor_Glod_02",
+                            "CCNCMOGOFAG": {
+                                "$type": "IADBHDLMGJB",
+                                "FPDJOHEHNDD": true,
+                                "MDPMJPIOGLA": "RightTop"
+                            },
+                            "PCLAEGHPNHE": -1.0
+                        },
+                        {
+                            "$type": "SetEffectFollowPath",
+                            "LAHGKDJIIJH": "RightTop",
+                            "LHHFHDEJOHC": "Eff_ScenObj_PartyAdjustableFloor_Glod_02",
+                            "PAOPLDJGAKA": "RightTop"
+                        }
+                    ]
+                },
+                "RightBottom": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "modifierMixins": [
+                        {
+                            "$type": "AttachSubEmitterEffectMixin",
+                            "LHHFHDEJOHC": "Eff_ScenObj_PartyAdjustableFloor_Line",
+                            "IMDKCPMBOFB": "RightBottom"
+                        }
+                    ],
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "AttachEffect",
+                            "LHHFHDEJOHC": "Eff_ScenObj_PartyAdjustableFloor_Glod_02",
+                            "CCNCMOGOFAG": {
+                                "$type": "IADBHDLMGJB",
+                                "FPDJOHEHNDD": true,
+                                "MDPMJPIOGLA": "RightBottom"
+                            },
+                            "PCLAEGHPNHE": -1.0
+                        },
+                        {
+                            "$type": "SetEffectFollowPath",
+                            "LAHGKDJIIJH": "RightBottom",
+                            "LHHFHDEJOHC": "Eff_ScenObj_PartyAdjustableFloor_Glod_02",
+                            "PAOPLDJGAKA": "RightBottom"
+                        }
+                    ]
+                },
+                "LeftBottom": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "modifierMixins": [
+                        {
+                            "$type": "AttachSubEmitterEffectMixin",
+                            "LHHFHDEJOHC": "Eff_ScenObj_PartyAdjustableFloor_Line",
+                            "IMDKCPMBOFB": "LeftBottom"
+                        }
+                    ],
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "AttachEffect",
+                            "LHHFHDEJOHC": "Eff_ScenObj_PartyAdjustableFloor_Glod_02",
+                            "CCNCMOGOFAG": {
+                                "$type": "IADBHDLMGJB",
+                                "FPDJOHEHNDD": true,
+                                "MDPMJPIOGLA": "LeftBottom"
+                            },
+                            "PCLAEGHPNHE": -1.0
+                        },
+                        {
+                            "$type": "SetEffectFollowPath",
+                            "LAHGKDJIIJH": "LeftBottom",
+                            "LHHFHDEJOHC": "Eff_ScenObj_PartyAdjustableFloor_Glod_02",
+                            "PAOPLDJGAKA": "LeftBottom"
+                        }
+                    ]
+                },
+                "NormalState": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "SetAnimatorInt",
+                            "EGCALHMEFEC": "GadgetState",
+                            "value": 0.0
+                        }
+                    ]
+                },
+                "LowerState": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "modifierMixins": [
+                        {
+                            "$type": "AttachSubEmitterEffectMixin",
+                            "LHHFHDEJOHC": "Eff_ScenObj_PartyAdjustableFloor_Red_01",
+                            "IMDKCPMBOFB": "AttachPoint"
+                        },
+                        {
+                            "$type": "AttachSubEmitterEffectMixin",
+                            "LHHFHDEJOHC": "Eff_ScenObj_PartyAdjustableFloor_Red_02",
+                            "IMDKCPMBOFB": "AttachPoint"
+                        }
+                    ],
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "SetAnimatorInt",
+                            "EGCALHMEFEC": "GadgetState",
+                            "value": 0.0
+                        }
+                    ]
+                },
+                "HigherState": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "SetAnimatorInt",
+                            "EGCALHMEFEC": "GadgetState",
+                            "value": 201.0
+                        },
+                        {
+                            "$type": "AttachEffect",
+                            "LHHFHDEJOHC": "Eff_ScenObj_PartyAdjustableFloor_Glod_01",
+                            "PCLAEGHPNHE": -1.0
+                        }
+                    ],
+                    "NFKOGKMAIIE": [
+                        {
+                            "$type": "SetGlobalValue",
+                            "value": 0.0,
+                            "NGGCNKPAODB": "_Ability_LanternRite_LeftTop",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        },
+                        {
+                            "$type": "SetGlobalValue",
+                            "value": 0.0,
+                            "NGGCNKPAODB": "_Ability_LanternRite_RightTop",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        },
+                        {
+                            "$type": "SetGlobalValue",
+                            "value": 0.0,
+                            "NGGCNKPAODB": "_Ability_LanternRite_RightBottom",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        },
+                        {
+                            "$type": "SetGlobalValue",
+                            "value": 0.0,
+                            "NGGCNKPAODB": "_Ability_LanternRite_LeftBottom",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        }
+                    ]
+                }
+            },
+            "NLFIGALMIPD": [
+                {
+                    "$type": "SetGlobalValue",
+                    "value": 0.0,
+                    "NGGCNKPAODB": "_ABILITY_LanternRite_SourceFloor",
+                    "LBHGJKHHAKP": 0.0,
+                    "EMGNPOKHMNN": 0.0
+                },
+                {
+                    "$type": "SetGlobalValue",
+                    "value": 1.0,
+                    "NGGCNKPAODB": "_ABILITY_LanternRite_Floor_Mark",
+                    "LBHGJKHHAKP": 0.0,
+                    "EMGNPOKHMNN": 0.0
+                },
+                {
+                    "$type": "SetGlobalValue",
+                    "value": 0.0,
+                    "NGGCNKPAODB": "_Ability_LanternRite_LeftTop",
+                    "LBHGJKHHAKP": 0.0,
+                    "EMGNPOKHMNN": 0.0
+                },
+                {
+                    "$type": "SetGlobalValue",
+                    "value": 0.0,
+                    "NGGCNKPAODB": "_Ability_LanternRite_RightTop",
+                    "LBHGJKHHAKP": 0.0,
+                    "EMGNPOKHMNN": 0.0
+                },
+                {
+                    "$type": "SetGlobalValue",
+                    "value": 0.0,
+                    "NGGCNKPAODB": "_Ability_LanternRite_RightBottom",
+                    "LBHGJKHHAKP": 0.0,
+                    "EMGNPOKHMNN": 0.0
+                },
+                {
+                    "$type": "SetGlobalValue",
+                    "value": 0.0,
+                    "NGGCNKPAODB": "_Ability_LanternRite_LeftBottom",
+                    "LBHGJKHHAKP": 0.0,
+                    "EMGNPOKHMNN": 0.0
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "SceneObj_Area_Common_Property_Ani_Prop_LanternRite_SafeArea_R40_Ability",
+            "abilityMixins": [
+                {
+                    "$type": "AttachToGadgetStateMixin",
+                    "modifierName": "Radius40"
+                },
+                {
+                    "$type": "AttachToGadgetStateMixin",
+                    "JBFLOAMNPBC": 901,
+                    "modifierName": "Radius12_5"
+                },
+                {
+                    "$type": "AttachToGadgetStateMixin",
+                    "JBFLOAMNPBC": 202,
+                    "modifierName": "VanishState"
+                },
+                {
+                    "$type": "AttachModifierToSelfGlobalValueMixin",
+                    "globalValueKey": "_Ability_LanternRite_SafeArea_Reconnect",
+                    "defaultGlobalValueOnCreate": 0.0,
+                    "valueSteps": [
+                        0.5,
+                        1.5
+                    ],
+                    "modifierNameSteps": [
+                        "SafeArea_ReconnectHandler"
+                    ],
+                    "ELIABBGNMKE": true
+                }
+            ],
+            "abilitySpecials": {
+                "Delta": -0.15000000596046448,
+                "Interval": 0.20000000298023224
+            },
+            "modifiers": {
+                "SafeArea_ReconnectHandler": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "SendEffectTrigger",
+                            "DBNEEEGIJGN": true,
+                            "HDBIEOFMAOD": "Reconnect",
+                            "PAOPLDJGAKA": "",
+                            "LHHFHDEJOHC": "Eff_SceneObj_PartyChiliCircle_01_40_Loop"
+                        }
+                    ]
+                },
+                "SafeArea_Effect": {
+                    "HABNNJHCOCD": "Unique",
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "AttachEffect",
+                            "LHHFHDEJOHC": "Eff_SceneObj_PartyChiliCircle_01_40_Loop",
+                            "PCLAEGHPNHE": -1.0
+                        },
+                        {
+                            "$type": "SendEffectTrigger",
+                            "DBNEEEGIJGN": true,
+                            "FLEEHCIOPKA": [
+                                {
+                                    "$type": "LAEBCHNCDEC"
+                                }
+                            ],
+                            "HDBIEOFMAOD": "GadgetState",
+                            "PAOPLDJGAKA": "",
+                            "type": "Int",
+                            "LHHFHDEJOHC": "Eff_SceneObj_PartyChiliCircle_01_40_Loop"
+                        },
+                        {
+                            "$type": "SendEffectTrigger",
+                            "DBNEEEGIJGN": true,
+                            "FLEEHCIOPKA": [
+                                {
+                                    "$type": "LAEBCHNCDEC",
+                                    "JBFLOAMNPBC": 901
+                                }
+                            ],
+                            "HDBIEOFMAOD": "GadgetState",
+                            "PAOPLDJGAKA": "",
+                            "type": "Int",
+                            "KHMNAHOBJAE": 901,
+                            "LHHFHDEJOHC": "Eff_SceneObj_PartyChiliCircle_01_40_Loop"
+                        }
+                    ]
+                },
+                "Radius40": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "SendEffectTrigger",
+                            "DBNEEEGIJGN": true,
+                            "HDBIEOFMAOD": "GadgetState",
+                            "PAOPLDJGAKA": "",
+                            "type": "Int",
+                            "LHHFHDEJOHC": "Eff_SceneObj_PartyChiliCircle_01_40_Loop"
+                        },
+                        {
+                            "$type": "FireEffect",
+                            "FLEEHCIOPKA": [
+                                {
+                                    "$type": "BLIEHOICPMH",
+                                    "FLEEHCIOPKA": [
+                                        {
+                                            "$type": "OMPKIEPKGPF",
+                                            "NGGCNKPAODB": "_Ability_LanternRite_SafeArea",
+                                            "value": 20.0
+                                        }
+                                    ]
+                                }
+                            ],
+                            "LHHFHDEJOHC": "Eff_SceneObj_PartyChiliCircle_01_40_Appear",
+                            "PCLAEGHPNHE": -1.0
+                        },
+                        {
+                            "$type": "SetGlobalValue",
+                            "value": 20.0,
+                            "NGGCNKPAODB": "_Ability_LanternRite_SafeArea",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        }
+                    ],
+                    "FCHBGPJGEBK": [
+                        {
+                            "$type": "DebugLog",
+                            "GOMJPONMJII": "SafeArea onReconnect 0"
+                        },
+                        {
+                            "$type": "SendEffectTrigger",
+                            "DBNEEEGIJGN": true,
+                            "HDBIEOFMAOD": "GadgetState",
+                            "PAOPLDJGAKA": "",
+                            "type": "Int",
+                            "LHHFHDEJOHC": "Eff_SceneObj_PartyChiliCircle_01_40_Loop"
+                        }
+                    ]
+                },
+                "Radius12_5": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "ANPDJHOGAFE": 0.20000000298023224,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "SendEffectTrigger",
+                            "DBNEEEGIJGN": true,
+                            "HDBIEOFMAOD": "GadgetState",
+                            "PAOPLDJGAKA": "",
+                            "type": "Int",
+                            "KHMNAHOBJAE": 901,
+                            "LHHFHDEJOHC": "Eff_SceneObj_PartyChiliCircle_01_40_Loop"
+                        }
+                    ],
+                    "MDPGEKAIFIM": [
+                        {
+                            "$type": "AddGlobalValue",
+                            "FLEEHCIOPKA": [
+                                {
+                                    "$type": "NFLBHMJCDPE",
+                                    "LHHFHDEJOHC": "Eff_SceneObj_PartyChiliCircle_01_40_Loop",
+                                    "BCGJDMPPDEA": "PartyChiliCircle_01_40_25"
+                                }
+                            ],
+                            "value": "Delta",
+                            "NGGCNKPAODB": "_Ability_LanternRite_SafeArea",
+                            "AJKBEKOCMKF": true,
+                            "LBHGJKHHAKP": 20.0,
+                            "EMGNPOKHMNN": 12.5
+                        },
+                        {
+                            "$type": "SetGlobalValue",
+                            "FLEEHCIOPKA": [
+                                {
+                                    "$type": "NFLBHMJCDPE",
+                                    "LHHFHDEJOHC": "Eff_SceneObj_PartyChiliCircle_01_40_Loop",
+                                    "BCGJDMPPDEA": "PartyChiliCircle_Loop_25"
+                                }
+                            ],
+                            "value": 12.5,
+                            "NGGCNKPAODB": "_Ability_LanternRite_SafeArea",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        }
+                    ],
+                    "FCHBGPJGEBK": [
+                        {
+                            "$type": "DebugLog",
+                            "GOMJPONMJII": "SafeArea onReconnect 901"
+                        },
+                        {
+                            "$type": "SendEffectTrigger",
+                            "DBNEEEGIJGN": true,
+                            "HDBIEOFMAOD": "GadgetState",
+                            "PAOPLDJGAKA": "",
+                            "type": "Int",
+                            "KHMNAHOBJAE": 901,
+                            "LHHFHDEJOHC": "Eff_SceneObj_PartyChiliCircle_01_40_Loop"
+                        },
+                        {
+                            "$type": "SetGlobalValue",
+                            "value": 1.0,
+                            "NGGCNKPAODB": "_Ability_LanternRite_SafeArea_Reconnect",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        }
+                    ]
+                },
+                "VanishState": {
+                    "modifierName": "",
+                    "FAFCPJJAIGK": 2.0,
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "SendEffectTrigger",
+                            "HDBIEOFMAOD": "Die",
+                            "PAOPLDJGAKA": "",
+                            "type": "Bool",
+                            "KHMNAHOBJAE": 1,
+                            "LHHFHDEJOHC": "Eff_SceneObj_PartyChiliCircle_01_40_Loop"
+                        },
+                        {
+                            "$type": "SetGlobalValue",
+                            "value": -1.0,
+                            "NGGCNKPAODB": "_Ability_LanternRite_SafeArea",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        }
+                    ],
+                    "NFKOGKMAIIE": [
+                        {
+                            "$type": "KillSelf",
+                            "DNDIEEEJGMJ": [
+                                70220171
+                            ]
+                        }
+                    ]
+                }
+            },
+            "NLFIGALMIPD": [
+                {
+                    "$type": "AttachModifier",
+                    "FLEEHCIOPKA": [
+                        {
+                            "$type": "BLIEHOICPMH",
+                            "FLEEHCIOPKA": [
+                                {
+                                    "$type": "LAEBCHNCDEC",
+                                    "JBFLOAMNPBC": 202
+                                }
+                            ]
+                        }
+                    ],
+                    "modifierName": "SafeArea_Effect"
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "SceneObj_Area_Common_Property_Ani_Prop_LanternRite_SafeArea_R25_Ability",
+            "abilityMixins": [
+                {
+                    "$type": "AttachToGadgetStateMixin",
+                    "modifierName": "Radius12_5"
+                },
+                {
+                    "$type": "AttachToGadgetStateMixin",
+                    "JBFLOAMNPBC": 202,
+                    "modifierName": "VanishState"
+                }
+            ],
+            "modifiers": {
+                "SafeArea_Effect": {
+                    "HABNNJHCOCD": "Unique",
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "AttachEffect",
+                            "LHHFHDEJOHC": "Eff_SceneObj_PartyChiliCircle_01_25_Loop",
+                            "PCLAEGHPNHE": -1.0
+                        }
+                    ]
+                },
+                "Radius12_5": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "FireEffect",
+                            "FLEEHCIOPKA": [
+                                {
+                                    "$type": "BLIEHOICPMH",
+                                    "FLEEHCIOPKA": [
+                                        {
+                                            "$type": "OMPKIEPKGPF",
+                                            "NGGCNKPAODB": "_Ability_LanternRite_SafeArea",
+                                            "value": 12.5
+                                        }
+                                    ]
+                                }
+                            ],
+                            "LHHFHDEJOHC": "Eff_SceneObj_PartyChiliCircle_01_25_Appear",
+                            "PCLAEGHPNHE": -1.0
+                        },
+                        {
+                            "$type": "SetGlobalValue",
+                            "value": 12.5,
+                            "NGGCNKPAODB": "_Ability_LanternRite_SafeArea",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        }
+                    ]
+                },
+                "VanishState": {
+                    "modifierName": "",
+                    "FAFCPJJAIGK": 2.0,
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "SendEffectTrigger",
+                            "HDBIEOFMAOD": "Die",
+                            "PAOPLDJGAKA": "",
+                            "type": "Bool",
+                            "KHMNAHOBJAE": 1,
+                            "LHHFHDEJOHC": "Eff_SceneObj_PartyChiliCircle_01_25_Loop"
+                        },
+                        {
+                            "$type": "SetGlobalValue",
+                            "value": -1.0,
+                            "NGGCNKPAODB": "_Ability_LanternRite_SafeArea",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        }
+                    ],
+                    "NFKOGKMAIIE": [
+                        {
+                            "$type": "KillSelf",
+                            "DNDIEEEJGMJ": [
+                                70220193
+                            ]
+                        }
+                    ]
+                }
+            },
+            "NLFIGALMIPD": [
+                {
+                    "$type": "AttachModifier",
+                    "FLEEHCIOPKA": [
+                        {
+                            "$type": "BLIEHOICPMH",
+                            "FLEEHCIOPKA": [
+                                {
+                                    "$type": "LAEBCHNCDEC",
+                                    "JBFLOAMNPBC": 202
+                                }
+                            ]
+                        }
+                    ],
+                    "modifierName": "SafeArea_Effect"
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "SceneObj_Area_Common_Property_Ani_Prop_LanternRite_SafeArea_R10_Ability",
+            "abilityMixins": [
+                {
+                    "$type": "AttachToGadgetStateMixin",
+                    "modifierName": "Radius5"
+                },
+                {
+                    "$type": "AttachToGadgetStateMixin",
+                    "JBFLOAMNPBC": 202,
+                    "modifierName": "VanishState"
+                }
+            ],
+            "modifiers": {
+                "SafeArea_Effect": {
+                    "HABNNJHCOCD": "Unique",
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "AttachEffect",
+                            "LHHFHDEJOHC": "Eff_SceneObj_PartyChiliCircle_01_10_Loop",
+                            "PCLAEGHPNHE": -1.0
+                        }
+                    ]
+                },
+                "Radius5": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "FireEffect",
+                            "FLEEHCIOPKA": [
+                                {
+                                    "$type": "BLIEHOICPMH",
+                                    "FLEEHCIOPKA": [
+                                        {
+                                            "$type": "OMPKIEPKGPF",
+                                            "NGGCNKPAODB": "_Ability_LanternRite_SafeArea",
+                                            "value": 5.0
+                                        }
+                                    ]
+                                }
+                            ],
+                            "LHHFHDEJOHC": "Eff_SceneObj_PartyChiliCircle_01_10_Appear",
+                            "PCLAEGHPNHE": -1.0
+                        },
+                        {
+                            "$type": "SetGlobalValue",
+                            "value": 5.0,
+                            "NGGCNKPAODB": "_Ability_LanternRite_SafeArea",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        }
+                    ]
+                },
+                "VanishState": {
+                    "modifierName": "",
+                    "FAFCPJJAIGK": 2.0,
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "SendEffectTrigger",
+                            "HDBIEOFMAOD": "Die",
+                            "PAOPLDJGAKA": "",
+                            "type": "Bool",
+                            "KHMNAHOBJAE": 1,
+                            "LHHFHDEJOHC": "Eff_SceneObj_PartyChiliCircle_01_10_Loop"
+                        },
+                        {
+                            "$type": "SetGlobalValue",
+                            "value": -1.0,
+                            "NGGCNKPAODB": "_Ability_LanternRite_SafeArea",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        }
+                    ],
+                    "NFKOGKMAIIE": [
+                        {
+                            "$type": "KillSelf",
+                            "DNDIEEEJGMJ": [
+                                70220194
+                            ]
+                        }
+                    ]
+                }
+            },
+            "NLFIGALMIPD": [
+                {
+                    "$type": "AttachModifier",
+                    "FLEEHCIOPKA": [
+                        {
+                            "$type": "BLIEHOICPMH",
+                            "FLEEHCIOPKA": [
+                                {
+                                    "$type": "LAEBCHNCDEC",
+                                    "JBFLOAMNPBC": 202
+                                }
+                            ]
+                        }
+                    ],
+                    "modifierName": "SafeArea_Effect"
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "SceneObj_Area_Common_Property_Ani_Prop_LanternRite_Crown_01_Ability",
+            "abilityMixins": [
+                {
+                    "$type": "AttachToGadgetStateMixin",
+                    "modifierName": "ExistState"
+                },
+                {
+                    "$type": "AttachToGadgetStateMixin",
+                    "JBFLOAMNPBC": 202,
+                    "modifierName": "HideState"
+                }
+            ],
+            "modifiers": {
+                "ExistState": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "EnableSceneTransformByName",
+                            "HFFMMIDGGKN": [
+                                "Crown"
+                            ],
+                            "DEHFCFDDEGB": true
+                        },
+                        {
+                            "$type": "FireEffect",
+                            "FLEEHCIOPKA": [
+                                {
+                                    "$type": "BLIEHOICPMH",
+                                    "FLEEHCIOPKA": [
+                                        {
+                                            "$type": "OMPKIEPKGPF",
+                                            "NGGCNKPAODB": "_Ability_LanternRite_Crown",
+                                            "value": 1.0
+                                        }
+                                    ]
+                                }
+                            ],
+                            "LHHFHDEJOHC": "Eff_SceneObj_CrownTeacake_01_Appear",
+                            "PCLAEGHPNHE": -1.0
+                        },
+                        {
+                            "$type": "AttachEffect",
+                            "LHHFHDEJOHC": "Eff_SceneObj_PartyIndicatorBeam_Idle_M",
+                            "PCLAEGHPNHE": -1.0
+                        },
+                        {
+                            "$type": "SetGlobalValue",
+                            "value": 1.0,
+                            "NGGCNKPAODB": "_Ability_LanternRite_Crown",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        }
+                    ]
+                },
+                "HideState": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "SetGlobalValue",
+                            "value": -1.0,
+                            "NGGCNKPAODB": "_Ability_LanternRite_Crown",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        },
+                        {
+                            "$type": "EnableSceneTransformByName",
+                            "HFFMMIDGGKN": [
+                                "Crown"
+                            ]
+                        },
+                        {
+                            "$type": "FireEffect",
+                            "LHHFHDEJOHC": "Eff_SceneObj_CrownTeacake_01_Disappear_01",
+                            "PCLAEGHPNHE": -1.0
+                        },
+                        {
+                            "$type": "KillSelf",
+                            "DNDIEEEJGMJ": [
+                                70220174
+                            ]
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "SceneObj_Area_Common_Property_Ani_Prop_LanternRite_Explode_01_Ability",
+            "abilityMixins": [
+                {
+                    "$type": "AttachModifierToSelfGlobalValueNoInitMixin",
+                    "globalValueKey": "_Ability_LanternRite_Explode",
+                    "valueSteps": [
+                        0.5,
+                        1.5
+                    ],
+                    "modifierNameSteps": [
+                        "Explode"
+                    ],
+                    "ELIABBGNMKE": true
+                },
+                {
+                    "$type": "ServerUpdateGlobalValueMixin",
+                    "NGGCNKPAODB": "_Ability_LanternRite_Explode",
+                    "AJKBEKOCMKF": true,
+                    "LBHGJKHHAKP": 1.0,
+                    "EMGNPOKHMNN": 0.0
+                }
+            ],
+            "modifiers": {
+                "Explode": {
+                    "modifierName": "",
+                    "FAFCPJJAIGK": 0.20000000298023224,
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "FireEffect",
+                            "LHHFHDEJOHC": "Eff_SceneObj_PartyChiliCircle_01_ShockWave",
+                            "PCLAEGHPNHE": -1.0
+                        }
+                    ],
+                    "NFKOGKMAIIE": [
+                        {
+                            "$type": "SetGlobalValue",
+                            "value": 0.0,
+                            "NGGCNKPAODB": "_Ability_LanternRite_Explode",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        }
+                    ]
+                }
+            },
+            "NLFIGALMIPD": [
+                {
+                    "$type": "SetGlobalValue",
+                    "value": 0.0,
+                    "NGGCNKPAODB": "_Ability_LanternRite_Explode",
+                    "LBHGJKHHAKP": 0.0,
+                    "EMGNPOKHMNN": 0.0
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "SceneObj_Area_Common_Property_Ani_Prop_LanternRite_Balloon_01",
+            "abilityMixins": [
+                {
+                    "$type": "AttachToGadgetStateMixin",
+                    "modifierName": "ExistState"
+                }
+            ],
+            "modifiers": {
+                "ExistState": {
+                    "modifierName": "",
+                    "FAFCPJJAIGK": 1.0,
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "FireEffect",
+                            "LHHFHDEJOHC": "Eff_SceneObj_Fireworks_01",
+                            "PCLAEGHPNHE": -1.0
+                        }
+                    ],
+                    "NFKOGKMAIIE": [
+                        {
+                            "$type": "KillSelf",
+                            "DNDIEEEJGMJ": [
+                                70220175
+                            ]
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "SceneObj_Area_Common_Property_Ani_Prop_LanternRite_Camera_01_Ability",
+            "NLFIGALMIPD": [
+                {
+                    "$type": "EnableGadgetSpecialCamera",
+                    "DBNEEEGIJGN": true,
+                    "enable": true
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "SceneObj_Area_Common_Property_Ani_Prop_LanternRite_Light_01_Ability",
+            "modifiers": {
+                "LightEffect": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "AttachEffect",
+                            "LHHFHDEJOHC": "Eff_SceneObj_HdjV04_XYDJ_Light_01",
+                            "PCLAEGHPNHE": -1.0,
+                            "DCNKOEEKGPG": true
+                        }
+                    ]
+                }
+            },
+            "NLFIGALMIPD": [
+                {
+                    "$type": "AttachModifier",
+                    "modifierName": "LightEffect"
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "SceneObj_Area_Common_Property_Ani_Prop_CarpJumpRunner_WaterBall_01_Ability",
+            "abilityMixins": [
+                {
+                    "$type": "AttachModifierToSelfGlobalValueNoInitMixin",
+                    "globalValueKey": "SGV_CarpJumpRunner_BuffType",
+                    "valueSteps": [
+                        0.5,
+                        1.5,
+                        2.5,
+                        3.5
+                    ],
+                    "modifierNameSteps": [
+                        "BuffType_01",
+                        "BuffType_02",
+                        "BuffType_03"
+                    ],
+                    "ELIABBGNMKE": true
+                }
+            ],
+            "modifiers": {
+                "BuffType_01": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "AttachEffect",
+                            "LHHFHDEJOHC": "Eff_SceneObj_LanternRiteV4buff_02_Buff",
+                            "PCLAEGHPNHE": -1.0
+                        }
+                    ]
+                },
+                "BuffType_02": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "AttachEffect",
+                            "LHHFHDEJOHC": "Eff_SceneObj_LanternRiteV4buff_03_Buff",
+                            "PCLAEGHPNHE": -1.0
+                        }
+                    ]
+                },
+                "BuffType_03": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "AttachEffect",
+                            "LHHFHDEJOHC": "Eff_SceneObj_LanternRiteV4buff_01_Buff",
+                            "PCLAEGHPNHE": -1.0
+                        }
+                    ]
+                }
+            },
+            "NFKOGKMAIIE": [
+                {
+                    "$type": "SetGlobalValue",
+                    "KMGAOOHMCPK": "CurLocalAvatar",
+                    "value": 1.0,
+                    "NGGCNKPAODB": "_FishJumpQuit",
+                    "LBHGJKHHAKP": 0.0,
+                    "EMGNPOKHMNN": 0.0
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "SceneObj_Area_Common_Property_Ani_Prop_CarpJumpRunner_Point_01_Ability",
+            "abilityMixins": [
+                {
+                    "$type": "AttachModifierToSelfGlobalValueNoInitMixin",
+                    "globalValueKey": "_Ability_CarpJumpRunner_GadgetType",
+                    "valueSteps": [
+                        -1.5,
+                        -0.5
+                    ],
+                    "modifierNameSteps": [
+                        "ChangeToDead"
+                    ]
+                },
+                {
+                    "$type": "AttachToGadgetStateMixin",
+                    "modifierName": "NormalState"
+                },
+                {
+                    "$type": "AttachToGadgetStateMixin",
+                    "JBFLOAMNPBC": 202,
+                    "modifierName": "DeadState"
+                },
+                {
+                    "$type": "AttachToGadgetStateMixin",
+                    "JBFLOAMNPBC": 201,
+                    "modifierName": "SpecialState"
+                },
+                {
+                    "$type": "AttachToGadgetStateMixin",
+                    "JBFLOAMNPBC": 901,
+                    "modifierName": "HideState"
+                },
+                {
+                    "$type": "ServerUpdateGlobalValueMixin",
+                    "NGGCNKPAODB": "_Ability_CarpJumpRunner_GadgetType",
+                    "AJKBEKOCMKF": true,
+                    "LBHGJKHHAKP": 1.0,
+                    "EMGNPOKHMNN": -1.0
+                }
+            ],
+            "modifiers": {
+                "ChangeToDead": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "ChangeGadgetState",
+                            "LAKGGCIOMBH": 202
+                        },
+                        {
+                            "$type": "SetGlobalValue",
+                            "value": -1.0,
+                            "NGGCNKPAODB": "_Ability_CarpJumpRunner_GadgetType",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        },
+                        {
+                            "$type": "EnableSceneTransformByName",
+                            "HFFMMIDGGKN": [
+                                "Model"
+                            ]
+                        },
+                        {
+                            "$type": "FireEffect",
+                            "LHHFHDEJOHC": "Eff_SceneObj_PointBalloon_01_Ds",
+                            "CCNCMOGOFAG": {
+                                "$type": "IADBHDLMGJB",
+                                "FPDJOHEHNDD": true,
+                                "MDPMJPIOGLA": "AttachPoint"
+                            },
+                            "PCLAEGHPNHE": -1.0
+                        },
+                        {
+                            "$type": "ServerLuaCall",
+                            "FLEEHCIOPKA": [
+                                {
+                                    "$type": "BLIEHOICPMH",
+                                    "FLEEHCIOPKA": [
+                                        {
+                                            "$type": "OMPKIEPKGPF",
+                                            "KMGAOOHMCPK": "Team",
+                                            "NGGCNKPAODB": "ActivityAbility_CarpJumpRunner_BuffType",
+                                            "value": 1.0
+                                        }
+                                    ]
+                                }
+                            ],
+                            "FNBGNCANKJF": "CurGalleryControlGroup",
+                            "FDPMGLDLLIN": "SLC_CarpJumpRunner_PickUp",
+                            "HALOALHGGNM": 1,
+                            "param1": 0.0,
+                            "HFOIEKLCLEM": 0.0,
+                            "MCLOKLEBGPH": 0.0
+                        },
+                        {
+                            "$type": "ServerLuaCall",
+                            "FLEEHCIOPKA": [
+                                {
+                                    "$type": "OMPKIEPKGPF",
+                                    "KMGAOOHMCPK": "Team",
+                                    "NGGCNKPAODB": "ActivityAbility_CarpJumpRunner_BuffType",
+                                    "value": 1.0
+                                }
+                            ],
+                            "FNBGNCANKJF": "CurGalleryControlGroup",
+                            "FDPMGLDLLIN": "SLC_CarpJumpRunner_PickUp",
+                            "HALOALHGGNM": 1,
+                            "param1": 1.0,
+                            "HFOIEKLCLEM": 0.0,
+                            "MCLOKLEBGPH": 0.0
+                        }
+                    ]
+                },
+                "NormalState": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "modifierMixins": [
+                        {
+                            "$type": "ShaderStateMachineSwitchMixin",
+                            "CEDEEIOGOHB": ""
+                        }
+                    ],
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "FireEffect",
+                            "LHHFHDEJOHC": "Eff_SceneObj_Ballon_01_NormalAs",
+                            "CCNCMOGOFAG": {
+                                "$type": "IADBHDLMGJB",
+                                "FPDJOHEHNDD": true,
+                                "MDPMJPIOGLA": "AttachPoint"
+                            },
+                            "PCLAEGHPNHE": -1.0
+                        }
+                    ]
+                },
+                "DeadState": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "modifierMixins": [
+                        {
+                            "$type": "ShaderStateMachineSwitchMixin",
+                            "EKECDFMGGJA": 1,
+                            "CEDEEIOGOHB": ""
+                        }
+                    ]
+                },
+                "SpecialState": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "modifierMixins": [
+                        {
+                            "$type": "ShaderStateMachineSwitchMixin",
+                            "EKECDFMGGJA": 2,
+                            "MHAECJKHLKH": true,
+                            "CEDEEIOGOHB": ""
+                        }
+                    ],
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "FireEffect",
+                            "LHHFHDEJOHC": "Eff_SceneObj_Ballon_01_NormalAs",
+                            "CCNCMOGOFAG": {
+                                "$type": "IADBHDLMGJB",
+                                "FPDJOHEHNDD": true,
+                                "MDPMJPIOGLA": "AttachPoint"
+                            },
+                            "PCLAEGHPNHE": -1.0
+                        }
+                    ]
+                },
+                "HideState": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "modifierMixins": [
+                        {
+                            "$type": "ShaderStateMachineSwitchMixin",
+                            "EKECDFMGGJA": 1,
+                            "CEDEEIOGOHB": ""
+                        }
+                    ],
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "SetGlobalValue",
+                            "value": -10.0,
+                            "NGGCNKPAODB": "_Ability_CarpJumpRunner_GadgetType",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        },
+                        {
+                            "$type": "FireEffect",
+                            "LHHFHDEJOHC": "Eff_SceneObj_PointBalloon_01_Ds",
+                            "CCNCMOGOFAG": {
+                                "$type": "IADBHDLMGJB",
+                                "FPDJOHEHNDD": true,
+                                "MDPMJPIOGLA": "AttachPoint"
+                            },
+                            "PCLAEGHPNHE": -1.0
+                        }
+                    ]
+                }
+            },
+            "NLFIGALMIPD": [
+                {
+                    "$type": "SetGlobalValue",
+                    "value": 1.0,
+                    "NGGCNKPAODB": "_Ability_CarpJumpRunner_GadgetType",
+                    "LBHGJKHHAKP": 0.0,
+                    "EMGNPOKHMNN": 0.0
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "SceneObj_Area_Common_Property_Ani_Prop_CarpJumpRunner_Chaos_01_Ability",
+            "abilityMixins": [
+                {
+                    "$type": "AttachModifierToSelfGlobalValueNoInitMixin",
+                    "globalValueKey": "_Ability_CarpJumpRunner_GadgetType",
+                    "valueSteps": [
+                        -1.5,
+                        -0.5
+                    ],
+                    "modifierNameSteps": [
+                        "ChangeToDead"
+                    ]
+                },
+                {
+                    "$type": "AttachToGadgetStateMixin",
+                    "modifierName": "ChaosState"
+                },
+                {
+                    "$type": "AttachToGadgetStateMixin",
+                    "JBFLOAMNPBC": 201,
+                    "modifierName": "SpecialState"
+                },
+                {
+                    "$type": "AttachToGadgetStateMixin",
+                    "JBFLOAMNPBC": 901,
+                    "modifierName": "SpecialState_Shine"
+                },
+                {
+                    "$type": "AttachToGadgetStateMixin",
+                    "JBFLOAMNPBC": 202,
+                    "modifierName": "DeadState"
+                }
+            ],
+            "modifiers": {
+                "CreateEffect": {
+                    "HABNNJHCOCD": "Unique",
+                    "modifierName": "",
+                    "FAFCPJJAIGK": 0.10000000149011612,
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "FireEffect",
+                            "LHHFHDEJOHC": "Eff_SceneObj_Ballon_01_NormalAs",
+                            "CCNCMOGOFAG": {
+                                "$type": "IADBHDLMGJB",
+                                "FPDJOHEHNDD": true,
+                                "MDPMJPIOGLA": "AttachPoint"
+                            },
+                            "PCLAEGHPNHE": -1.0
+                        }
+                    ]
+                },
+                "ChangeToDead": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "ChangeGadgetState",
+                            "LAKGGCIOMBH": 202
+                        },
+                        {
+                            "$type": "SetGlobalValue",
+                            "KMGAOOHMCPK": "Target",
+                            "value": -1.0,
+                            "NGGCNKPAODB": "_Ability_CarpJumpRunner_GadgetType",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        },
+                        {
+                            "$type": "EnableSceneTransformByName",
+                            "HFFMMIDGGKN": [
+                                "Special"
+                            ]
+                        },
+                        {
+                            "$type": "EnableSceneTransformByName",
+                            "HFFMMIDGGKN": [
+                                "Chaos"
+                            ]
+                        },
+                        {
+                            "$type": "FireEffect",
+                            "FLEEHCIOPKA": [
+                                {
+                                    "$type": "OMPKIEPKGPF",
+                                    "NGGCNKPAODB": "_Ability_CarpJumpRunner_ChaosType",
+                                    "value": 1.0
+                                }
+                            ],
+                            "LHHFHDEJOHC": "Eff_SceneObj_DisorderlyBallon_01_Ds",
+                            "CCNCMOGOFAG": {
+                                "$type": "IADBHDLMGJB",
+                                "FPDJOHEHNDD": true,
+                                "MDPMJPIOGLA": "AttachPoint"
+                            },
+                            "PCLAEGHPNHE": -1.0
+                        },
+                        {
+                            "$type": "FireEffect",
+                            "FLEEHCIOPKA": [
+                                {
+                                    "$type": "OMPKIEPKGPF",
+                                    "NGGCNKPAODB": "_Ability_CarpJumpRunner_ChaosType",
+                                    "value": 2.0
+                                }
+                            ],
+                            "LHHFHDEJOHC": "Eff_SceneObj_DisorderlyBallon_02_Ds",
+                            "CCNCMOGOFAG": {
+                                "$type": "IADBHDLMGJB",
+                                "FPDJOHEHNDD": true,
+                                "MDPMJPIOGLA": "AttachPoint"
+                            },
+                            "PCLAEGHPNHE": -1.0
+                        },
+                        {
+                            "$type": "SetGlobalValue",
+                            "KMGAOOHMCPK": "Team",
+                            "FLEEHCIOPKA": [
+                                {
+                                    "$type": "OMPKIEPKGPF",
+                                    "KMGAOOHMCPK": "Self",
+                                    "NGGCNKPAODB": "_Ability_CarpJumpRunner_ChaosType",
+                                    "value": 1.0
+                                }
+                            ],
+                            "value": 1.0,
+                            "NGGCNKPAODB": "_Ability_CarpJumpRunner_ChaosMark",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        },
+                        {
+                            "$type": "ServerLuaCall",
+                            "FLEEHCIOPKA": [
+                                {
+                                    "$type": "OMPKIEPKGPF",
+                                    "NGGCNKPAODB": "_Ability_CarpJumpRunner_ChaosType",
+                                    "value": 1.0
+                                }
+                            ],
+                            "FNBGNCANKJF": "CurGalleryControlGroup",
+                            "FDPMGLDLLIN": "SLC_CarpJumpRunner_PickUp",
+                            "HALOALHGGNM": 1,
+                            "param1": 0.0,
+                            "HFOIEKLCLEM": 0.0,
+                            "MCLOKLEBGPH": 0.0
+                        },
+                        {
+                            "$type": "ServerLuaCall",
+                            "FLEEHCIOPKA": [
+                                {
+                                    "$type": "OMPKIEPKGPF",
+                                    "NGGCNKPAODB": "_Ability_CarpJumpRunner_ChaosType",
+                                    "value": 2.0
+                                }
+                            ],
+                            "FNBGNCANKJF": "CurGalleryControlGroup",
+                            "FDPMGLDLLIN": "SLC_CarpJumpRunner_PickUp",
+                            "HALOALHGGNM": 1,
+                            "param1": 1.0,
+                            "HFOIEKLCLEM": 0.0,
+                            "MCLOKLEBGPH": 0.0
+                        }
+                    ]
+                },
+                "SpecialState_Shine": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "SetMaterialParamFloatByTransform",
+                            "DIPCDEOLIBJ": "Special",
+                            "FPIGFKPGBFM": "_BreathingSpeed",
+                            "value": 1.0
+                        },
+                        {
+                            "$type": "SetMaterialParamFloatByTransform",
+                            "DIPCDEOLIBJ": "Chaos",
+                            "FPIGFKPGBFM": "_DissolveVal",
+                            "value": 1.0
+                        },
+                        {
+                            "$type": "SetMaterialParamFloatByTransform",
+                            "DIPCDEOLIBJ": "Special",
+                            "FPIGFKPGBFM": "_DissolveVal",
+                            "value": 0.0
+                        },
+                        {
+                            "$type": "SetGlobalValue",
+                            "value": 2.0,
+                            "NGGCNKPAODB": "_Ability_CarpJumpRunner_ChaosType",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        }
+                    ]
+                },
+                "ChaosState": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "SetMaterialParamFloatByTransform",
+                            "DIPCDEOLIBJ": "Special",
+                            "FPIGFKPGBFM": "_DissolveVal",
+                            "value": 1.0
+                        },
+                        {
+                            "$type": "SetMaterialParamFloatByTransform",
+                            "DIPCDEOLIBJ": "Chaos",
+                            "FPIGFKPGBFM": "_DissolveVal",
+                            "value": 0.0
+                        },
+                        {
+                            "$type": "FireEffect",
+                            "FLEEHCIOPKA": [
+                                {
+                                    "$type": "OMPKIEPKGPF",
+                                    "NGGCNKPAODB": "_Ability_CarpJumpRunner_ChaosType",
+                                    "value": 2.0
+                                }
+                            ],
+                            "LHHFHDEJOHC": "Eff_SceneObj_DisorderlyBallon_01_As",
+                            "CCNCMOGOFAG": {
+                                "$type": "IADBHDLMGJB",
+                                "FPDJOHEHNDD": true,
+                                "MDPMJPIOGLA": "AttachPoint"
+                            },
+                            "PCLAEGHPNHE": -1.0
+                        },
+                        {
+                            "$type": "SetGlobalValue",
+                            "value": 1.0,
+                            "NGGCNKPAODB": "_Ability_CarpJumpRunner_ChaosType",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        }
+                    ]
+                },
+                "SpecialState": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "SetMaterialParamFloatByTransform",
+                            "DIPCDEOLIBJ": "Special",
+                            "FPIGFKPGBFM": "_DissolveVal",
+                            "value": 0.0,
+                            "GFEOGMINGGB": true,
+                            "JAHEMGINLCE": 1,
+                            "FJPIPCAPJBP": 0.5
+                        },
+                        {
+                            "$type": "SetMaterialParamFloatByTransform",
+                            "DIPCDEOLIBJ": "Chaos",
+                            "FPIGFKPGBFM": "_DissolveVal",
+                            "value": 1.0,
+                            "GFEOGMINGGB": true,
+                            "JAHEMGINLCE": 1,
+                            "FJPIPCAPJBP": 0.5
+                        },
+                        {
+                            "$type": "SetMaterialParamFloatByTransform",
+                            "DIPCDEOLIBJ": "Special",
+                            "FPIGFKPGBFM": "_BreathingSpeed",
+                            "value": 0.0
+                        },
+                        {
+                            "$type": "FireEffect",
+                            "LHHFHDEJOHC": "Eff_SceneObj_DisorderlyBallon_01_As",
+                            "CCNCMOGOFAG": {
+                                "$type": "IADBHDLMGJB",
+                                "FPDJOHEHNDD": true,
+                                "MDPMJPIOGLA": "AttachPoint"
+                            },
+                            "PCLAEGHPNHE": -1.0
+                        },
+                        {
+                            "$type": "SetGlobalValue",
+                            "value": 2.0,
+                            "NGGCNKPAODB": "_Ability_CarpJumpRunner_ChaosType",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        }
+                    ]
+                },
+                "DeadState": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0
+                },
+                "DirtyBalloon_Eff": {
+                    "modifierName": "",
+                    "FAFCPJJAIGK": 1.0,
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "CameraScreenEffect",
+                            "DBNEEEGIJGN": true,
+                            "FMIDIADJIBK": true,
+                            "enable": true,
+                            "effectName": "Eff_UI_LanV4CarpJump_02_Screen"
+                        }
+                    ]
+                }
+            },
+            "NLFIGALMIPD": [
+                {
+                    "$type": "SetGlobalValue",
+                    "value": 2.0,
+                    "NGGCNKPAODB": "_Ability_CarpJumpRunner_GadgetType",
+                    "LBHGJKHHAKP": 0.0,
+                    "EMGNPOKHMNN": 0.0
+                },
+                {
+                    "$type": "AttachModifier",
+                    "modifierName": "CreateEffect"
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "SceneObj_Area_Common_Property_Ani_Prop_CarpJumpRunner_Explode_Ability",
+            "abilityMixins": [
+                {
+                    "$type": "AttachModifierToSelfGlobalValueNoInitMixin",
+                    "globalValueKey": "_Ability_CarpJumpRunner_GadgetType",
+                    "valueSteps": [
+                        -1.5,
+                        -0.5
+                    ],
+                    "modifierNameSteps": [
+                        "ChangeToDead"
+                    ]
+                },
+                {
+                    "$type": "AttachToGadgetStateMixin",
+                    "JBFLOAMNPBC": 202,
+                    "modifierName": "DeadState"
+                }
+            ],
+            "modifiers": {
+                "CreateEffect": {
+                    "HABNNJHCOCD": "Unique",
+                    "modifierName": "",
+                    "FAFCPJJAIGK": 0.10000000149011612,
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "FireEffect",
+                            "LHHFHDEJOHC": "Eff_SceneObj_Ballon_01_NormalAs",
+                            "CCNCMOGOFAG": {
+                                "$type": "IADBHDLMGJB",
+                                "FPDJOHEHNDD": true,
+                                "MDPMJPIOGLA": "AttachPoint"
+                            },
+                            "PCLAEGHPNHE": -1.0
+                        }
+                    ]
+                },
+                "ChangeToDead": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "SetGlobalValue",
+                            "KMGAOOHMCPK": "Target",
+                            "value": -1.0,
+                            "NGGCNKPAODB": "_Ability_CarpJumpRunner_GadgetType",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        },
+                        {
+                            "$type": "FireEffect",
+                            "FLEEHCIOPKA": [
+                                {
+                                    "$type": "OMPKIEPKGPF",
+                                    "NGGCNKPAODB": "_Ability_CarpJumpRunner_ExplodeType",
+                                    "value": 1.0
+                                }
+                            ],
+                            "LHHFHDEJOHC": "Eff_SceneObj_NoramlBombBalloon_01_NormalDs",
+                            "CCNCMOGOFAG": {
+                                "$type": "IADBHDLMGJB",
+                                "FPDJOHEHNDD": true,
+                                "MDPMJPIOGLA": "AttachPoint"
+                            },
+                            "PCLAEGHPNHE": -1.0
+                        },
+                        {
+                            "$type": "FireEffect",
+                            "FLEEHCIOPKA": [
+                                {
+                                    "$type": "OMPKIEPKGPF",
+                                    "NGGCNKPAODB": "_Ability_CarpJumpRunner_ExplodeType",
+                                    "value": 2.0
+                                }
+                            ],
+                            "LHHFHDEJOHC": "Eff_SceneObj_NoramlBombBalloon_01_SuperDs",
+                            "CCNCMOGOFAG": {
+                                "$type": "IADBHDLMGJB",
+                                "FPDJOHEHNDD": true,
+                                "MDPMJPIOGLA": "AttachPoint"
+                            },
+                            "PCLAEGHPNHE": -1.0
+                        },
+                        {
+                            "$type": "EnableSceneTransformByName",
+                            "HFFMMIDGGKN": [
+                                "Model"
+                            ]
+                        },
+                        {
+                            "$type": "ServerLuaCall",
+                            "FNBGNCANKJF": "CurGalleryControlGroup",
+                            "FDPMGLDLLIN": "SLC_CarpJumpRunner_PickUp",
+                            "HALOALHGGNM": 1,
+                            "param1": 0.0,
+                            "HFOIEKLCLEM": 0.0,
+                            "MCLOKLEBGPH": 0.0
+                        },
+                        {
+                            "$type": "Predicated",
+                            "musicSubStates": {
+                                "$type": "HGNAFICLGFP",
+                                "HDBBMLMCMKE": "Nearest",
+                                "IBPOJODNMHO": "CircleR2_5H5",
+                                "CHPLPFBEPDN": "AllExceptSelf",
+                                "CHGLFBPDMKF": 1.0
+                            },
+                            "targetPredicates": [
+                                {
+                                    "$type": "OMPKIEPKGPF",
+                                    "NGGCNKPAODB": "_Ability_CarpJumpRunner_GadgetType",
+                                    "value": 1.0
+                                }
+                            ],
+                            "successActions": [
+                                {
+                                    "$type": "DebugLog",
+                                    "GOMJPONMJII": "CarpJumpRunner explode find point"
+                                },
+                                {
+                                    "$type": "AttachModifier",
+                                    "KMGAOOHMCPK": "Target",
+                                    "modifierName": "DisableTarget"
+                                }
+                            ]
+                        },
+                        {
+                            "$type": "Predicated",
+                            "musicSubStates": {
+                                "$type": "HGNAFICLGFP",
+                                "HDBBMLMCMKE": "Nearest",
+                                "IBPOJODNMHO": "CircleR2_5H5",
+                                "CHPLPFBEPDN": "AllExceptSelf",
+                                "CHGLFBPDMKF": 1.0
+                            },
+                            "targetPredicates": [
+                                {
+                                    "$type": "OMPKIEPKGPF",
+                                    "NGGCNKPAODB": "_Ability_CarpJumpRunner_GadgetType",
+                                    "value": 3.0
+                                }
+                            ],
+                            "successActions": [
+                                {
+                                    "$type": "DebugLog",
+                                    "GOMJPONMJII": "CarpJumpRunner explode find explode"
+                                },
+                                {
+                                    "$type": "AttachModifier",
+                                    "KMGAOOHMCPK": "Target",
+                                    "modifierName": "DisableTarget"
+                                }
+                            ]
+                        },
+                        {
+                            "$type": "Predicated",
+                            "musicSubStates": {
+                                "$type": "HGNAFICLGFP",
+                                "HDBBMLMCMKE": "Nearest",
+                                "IBPOJODNMHO": "CircleR2_5H5",
+                                "CHPLPFBEPDN": "AllExceptSelf",
+                                "CHGLFBPDMKF": 1.0
+                            },
+                            "targetPredicates": [
+                                {
+                                    "$type": "OMPKIEPKGPF",
+                                    "NGGCNKPAODB": "_Ability_CarpJumpRunner_GadgetType",
+                                    "value": 2.0
+                                }
+                            ],
+                            "successActions": [
+                                {
+                                    "$type": "DebugLog",
+                                    "GOMJPONMJII": "CarpJumpRunner explode find chaos"
+                                },
+                                {
+                                    "$type": "AttachModifier",
+                                    "KMGAOOHMCPK": "Target",
+                                    "modifierName": "DisableTarget"
+                                }
+                            ]
+                        },
+                        {
+                            "$type": "ChangeGadgetState",
+                            "LAKGGCIOMBH": 202
+                        }
+                    ]
+                },
+                "DeadState": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0
+                },
+                "DisableTarget": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "SetGlobalValue",
+                            "value": -1.0,
+                            "NGGCNKPAODB": "_Ability_CarpJumpRunner_GadgetType",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        }
+                    ]
+                }
+            },
+            "NLFIGALMIPD": [
+                {
+                    "$type": "SetGlobalValue",
+                    "value": 3.0,
+                    "NGGCNKPAODB": "_Ability_CarpJumpRunner_GadgetType",
+                    "LBHGJKHHAKP": 0.0,
+                    "EMGNPOKHMNN": 0.0
+                },
+                {
+                    "$type": "AttachModifier",
+                    "modifierName": "CreateEffect"
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "SceneObj_Area_Common_Property_Ani_Prop_CarpJumpRunner_Explode_01_Ability",
+            "NLFIGALMIPD": [
+                {
+                    "$type": "SetGlobalValue",
+                    "value": 3.0,
+                    "NGGCNKPAODB": "_Ability_CarpJumpRunner_GadgetType",
+                    "LBHGJKHHAKP": 0.0,
+                    "EMGNPOKHMNN": 0.0
+                },
+                {
+                    "$type": "SetGlobalValue",
+                    "value": 1.0,
+                    "NGGCNKPAODB": "_Ability_CarpJumpRunner_ExplodeType",
+                    "LBHGJKHHAKP": 0.0,
+                    "EMGNPOKHMNN": 0.0
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "SceneObj_Area_Common_Property_Ani_Prop_CarpJumpRunner_Explode_02_Ability",
+            "NLFIGALMIPD": [
+                {
+                    "$type": "SetGlobalValue",
+                    "value": 3.0,
+                    "NGGCNKPAODB": "_Ability_CarpJumpRunner_GadgetType",
+                    "LBHGJKHHAKP": 0.0,
+                    "EMGNPOKHMNN": 0.0
+                },
+                {
+                    "$type": "SetGlobalValue",
+                    "value": 2.0,
+                    "NGGCNKPAODB": "_Ability_CarpJumpRunner_ExplodeType",
+                    "LBHGJKHHAKP": 0.0,
+                    "EMGNPOKHMNN": 0.0
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "SceneObj_Area_Common_Property_Ani_Prop_CarpJumpRunner_Buff_01_Ability",
+            "abilityMixins": [
+                {
+                    "$type": "AttachToGadgetStateMixin",
+                    "modifierName": "ShowSelf"
+                },
+                {
+                    "$type": "AttachToGadgetStateMixin",
+                    "JBFLOAMNPBC": 202,
+                    "modifierName": "DisableSelf"
+                }
+            ],
+            "modifiers": {
+                "ShowSelf": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "SetGlobalValue",
+                            "value": 5.0,
+                            "NGGCNKPAODB": "_Ability_CarpJumpRunner_GadgetType",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        },
+                        {
+                            "$type": "AttachEffect",
+                            "LHHFHDEJOHC": "Eff_SceneObj_LanternRiteV4buff_02_Ball",
+                            "PCLAEGHPNHE": -1.0
+                        }
+                    ]
+                },
+                "DisableSelf": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "SetGlobalValue",
+                            "KMGAOOHMCPK": "Team",
+                            "value": 1.0,
+                            "NGGCNKPAODB": "ActivityAbility_CarpJumpRunner_BuffType",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        },
+                        {
+                            "$type": "FireEffect",
+                            "LHHFHDEJOHC": "Eff_SceneObj_LanternRiteV4buff_02_Get",
+                            "PCLAEGHPNHE": -1.0
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "SceneObj_Area_Common_Property_Ani_Prop_CarpJumpRunner_Buff_02_Ability",
+            "abilityMixins": [
+                {
+                    "$type": "AttachToGadgetStateMixin",
+                    "modifierName": "ShowSelf"
+                },
+                {
+                    "$type": "AttachToGadgetStateMixin",
+                    "JBFLOAMNPBC": 202,
+                    "modifierName": "DisableSelf"
+                }
+            ],
+            "modifiers": {
+                "ShowSelf": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "SetGlobalValue",
+                            "value": 6.0,
+                            "NGGCNKPAODB": "_Ability_CarpJumpRunner_GadgetType",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        },
+                        {
+                            "$type": "AttachEffect",
+                            "LHHFHDEJOHC": "Eff_SceneObj_LanternRiteV4buff_03_Ball",
+                            "PCLAEGHPNHE": -1.0
+                        }
+                    ]
+                },
+                "DisableSelf": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "SetGlobalValue",
+                            "KMGAOOHMCPK": "Team",
+                            "value": 2.0,
+                            "NGGCNKPAODB": "ActivityAbility_CarpJumpRunner_BuffType",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        },
+                        {
+                            "$type": "FireEffect",
+                            "LHHFHDEJOHC": "Eff_SceneObj_LanternRiteV4buff_03_Get",
+                            "PCLAEGHPNHE": -1.0
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "SceneObj_Area_Common_Property_Ani_Prop_CarpJumpRunner_Buff_03_Ability",
+            "abilityMixins": [
+                {
+                    "$type": "AttachToGadgetStateMixin",
+                    "modifierName": "ShowSelf"
+                },
+                {
+                    "$type": "AttachToGadgetStateMixin",
+                    "JBFLOAMNPBC": 202,
+                    "modifierName": "DisableSelf"
+                }
+            ],
+            "modifiers": {
+                "ShowSelf": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "SetGlobalValue",
+                            "value": 7.0,
+                            "NGGCNKPAODB": "_Ability_CarpJumpRunner_GadgetType",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        },
+                        {
+                            "$type": "AttachEffect",
+                            "LHHFHDEJOHC": "Eff_SceneObj_LanternRiteV4buff_01_Ball",
+                            "PCLAEGHPNHE": -1.0
+                        }
+                    ]
+                },
+                "DisableSelf": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "SetGlobalValue",
+                            "KMGAOOHMCPK": "Team",
+                            "value": 3.0,
+                            "NGGCNKPAODB": "ActivityAbility_CarpJumpRunner_BuffType",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        },
+                        {
+                            "$type": "FireEffect",
+                            "LHHFHDEJOHC": "Eff_SceneObj_LanternRiteV4buff_01_Get",
+                            "PCLAEGHPNHE": -1.0
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "SceneObj_Area_Common_Property_Ani_Prop_CarpJumpRunner_StaminaBall_01_Ability",
+            "abilityMixins": [
+                {
+                    "$type": "AttachModifierToSelfGlobalValueNoInitMixin",
+                    "globalValueKey": "_Ability_CarpJumpRunner_GadgetType",
+                    "valueSteps": [
+                        -1.5,
+                        0.5,
+                        4.5
+                    ],
+                    "modifierNameSteps": [
+                        "StaminaBall_Off",
+                        "StaminaBall_On"
+                    ]
+                }
+            ],
+            "modifiers": {
+                "StaminaBall_On": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "AttachEffect",
+                            "LHHFHDEJOHC": "Eff_SceneObj_FleurStamina_Float",
+                            "PCLAEGHPNHE": -1.0
+                        }
+                    ],
+                    "NFKOGKMAIIE": [
+                        {
+                            "$type": "FireEffect",
+                            "LHHFHDEJOHC": "Eff_SceneObj_FleurStamina_Smash",
+                            "PCLAEGHPNHE": -1.0
+                        }
+                    ]
+                },
+                "StaminaBall_Off": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "ApplyModifier",
+                            "modifierName": "StaminaBall_Recover"
+                        }
+                    ]
+                },
+                "StaminaBall_Recover": {
+                    "modifierName": "",
+                    "FAFCPJJAIGK": 20.0,
+                    "bonusCritical": 100.0,
+                    "NFKOGKMAIIE": [
+                        {
+                            "$type": "SetGlobalValue",
+                            "value": 4.0,
+                            "NGGCNKPAODB": "_Ability_CarpJumpRunner_GadgetType",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        }
+                    ]
+                }
+            },
+            "NLFIGALMIPD": [
+                {
+                    "$type": "SetGlobalValue",
+                    "value": 4.0,
+                    "NGGCNKPAODB": "_Ability_CarpJumpRunner_GadgetType",
+                    "LBHGJKHHAKP": 0.0,
+                    "EMGNPOKHMNN": 0.0
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "SceneObj_Area_Common_Property_Ani_Prop_CarpJumpRunner_Operator_01_Ability",
+            "abilityMixins": [
+                {
+                    "$type": "AttachToGadgetStateMixin",
+                    "modifierName": "Effect_0"
+                },
+                {
+                    "$type": "AttachToGadgetStateMixin",
+                    "JBFLOAMNPBC": 201,
+                    "modifierName": "Effect_201"
+                },
+                {
+                    "$type": "AttachToGadgetStateMixin",
+                    "JBFLOAMNPBC": 202,
+                    "modifierName": "Effect_202"
+                }
+            ],
+            "modifiers": {
+                "Effect_0": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "SendEffectTrigger",
+                            "HDBIEOFMAOD": "State",
+                            "PAOPLDJGAKA": "",
+                            "type": "Int",
+                            "LHHFHDEJOHC": "Eff_SceneObj_Challengestarter_02"
+                        }
+                    ]
+                },
+                "Effect_201": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "SendEffectTrigger",
+                            "HDBIEOFMAOD": "State",
+                            "PAOPLDJGAKA": "",
+                            "type": "Int",
+                            "KHMNAHOBJAE": 201,
+                            "LHHFHDEJOHC": "Eff_SceneObj_Challengestarter_02"
+                        }
+                    ]
+                },
+                "Effect_202": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "SendEffectTrigger",
+                            "HDBIEOFMAOD": "State",
+                            "PAOPLDJGAKA": "",
+                            "type": "Int",
+                            "KHMNAHOBJAE": 202,
+                            "LHHFHDEJOHC": "Eff_SceneObj_Challengestarter_02"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+]

@@ -1,0 +1,2143 @@
+[
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "SceneObj_Area_Common_Property_Ani_Prop_PitchPotNormalpot_01",
+            "abilityMixins": [
+                {
+                    "$type": "AttachToGadgetStateMixin",
+                    "modifierName": "Normalpot_State_0"
+                },
+                {
+                    "$type": "AttachToGadgetStateMixin",
+                    "JBFLOAMNPBC": 201,
+                    "modifierName": "Normalpot_State_201"
+                },
+                {
+                    "$type": "AttachToGadgetStateMixin",
+                    "JBFLOAMNPBC": 202,
+                    "modifierName": "Normalpot_State_202"
+                }
+            ],
+            "modifiers": {
+                "Normalpot_State_0": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "ChangeTag",
+                            "GMLGHDNGILP": true,
+                            "tag": "Is_NormalPot"
+                        },
+                        {
+                            "$type": "FireEffect",
+                            "LHHFHDEJOHC": "Eff_SceneObj_PitchPotNormalpot_01_Born",
+                            "PCLAEGHPNHE": -1.0
+                        }
+                    ],
+                    "NFKOGKMAIIE": [
+                        {
+                            "$type": "ChangeTag",
+                            "tag": "Is_NormalPot"
+                        }
+                    ]
+                },
+                "Normalpot_State_201": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "FireEffect",
+                            "LHHFHDEJOHC": "Eff_SceneObj_PitchPotNormalpot_01_Disaper",
+                            "PCLAEGHPNHE": -1.0
+                        },
+                        {
+                            "$type": "KillSelf"
+                        }
+                    ]
+                },
+                "Normalpot_State_202": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "FireEffect",
+                            "LHHFHDEJOHC": "Eff_SceneObj_PitchPotNormalpot_01_DitherDisaper",
+                            "PCLAEGHPNHE": -1.0
+                        },
+                        {
+                            "$type": "KillSelf"
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "SceneObj_Area_Common_Property_Ani_Prop_PitchPotNormalpot_03",
+            "abilityMixins": [
+                {
+                    "$type": "AttachToGadgetStateMixin",
+                    "modifierName": "Normalpot_State_0"
+                },
+                {
+                    "$type": "AttachToGadgetStateMixin",
+                    "JBFLOAMNPBC": 201,
+                    "modifierName": "Normalpot_State_201"
+                },
+                {
+                    "$type": "AttachToGadgetStateMixin",
+                    "JBFLOAMNPBC": 202,
+                    "modifierName": "Normalpot_State_202"
+                }
+            ],
+            "modifiers": {
+                "Normalpot_State_0": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "ChangeTag",
+                            "GMLGHDNGILP": true,
+                            "tag": "Is_NormalPot"
+                        },
+                        {
+                            "$type": "FireEffect",
+                            "LHHFHDEJOHC": "Eff_SceneObj_PitchPotNormalpot_01_Born",
+                            "PCLAEGHPNHE": -1.0
+                        },
+                        {
+                            "$type": "AttachEffect",
+                            "LHHFHDEJOHC": "Eff_SceneObj_PitchPotNormalpot_01_Buff",
+                            "PCLAEGHPNHE": -1.0
+                        }
+                    ],
+                    "NFKOGKMAIIE": [
+                        {
+                            "$type": "ChangeTag",
+                            "tag": "Is_NormalPot"
+                        },
+                        {
+                            "$type": "FireEffect",
+                            "LHHFHDEJOHC": "Eff_SceneObj_PitchPotNormalpot_01_BuffDisaper",
+                            "PCLAEGHPNHE": -1.0
+                        }
+                    ]
+                },
+                "Normalpot_State_201": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "FireEffect",
+                            "LHHFHDEJOHC": "Eff_SceneObj_PitchPotNormalpot_01_Disaper",
+                            "PCLAEGHPNHE": -1.0
+                        },
+                        {
+                            "$type": "KillSelf"
+                        }
+                    ]
+                },
+                "Normalpot_State_202": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "FireEffect",
+                            "LHHFHDEJOHC": "Eff_SceneObj_PitchPotNormalpot_01_DitherDisaper",
+                            "PCLAEGHPNHE": -1.0
+                        },
+                        {
+                            "$type": "KillSelf"
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "SceneObj_Area_Common_Property_Ani_Prop_PitchPotBoompot_01",
+            "abilityMixins": [
+                {
+                    "$type": "AttachToGadgetStateMixin",
+                    "modifierName": "BoomPot_State_0"
+                },
+                {
+                    "$type": "AttachToGadgetStateMixin",
+                    "JBFLOAMNPBC": 201,
+                    "modifierName": "BoomPot_State_201"
+                },
+                {
+                    "$type": "AttachToGadgetStateMixin",
+                    "JBFLOAMNPBC": 202,
+                    "modifierName": "BoomPot_State_202"
+                }
+            ],
+            "modifiers": {
+                "BoomPot_State_0": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "ChangeTag",
+                            "GMLGHDNGILP": true,
+                            "tag": "Is_ExplodePot"
+                        },
+                        {
+                            "$type": "FireEffect",
+                            "LHHFHDEJOHC": "Eff_SceneObj_PitchPotNormalpot_01_Born",
+                            "PCLAEGHPNHE": -1.0
+                        }
+                    ],
+                    "NFKOGKMAIIE": [
+                        {
+                            "$type": "ChangeTag",
+                            "tag": "Is_ExplodePot"
+                        }
+                    ]
+                },
+                "BoomPot_State_201": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "FireEffect",
+                            "LHHFHDEJOHC": "Eff_SceneObj_PitchPotBoompot_01_Boom",
+                            "PCLAEGHPNHE": -1.0
+                        },
+                        {
+                            "$type": "KillSelf"
+                        }
+                    ]
+                },
+                "BoomPot_State_202": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "FireEffect",
+                            "LHHFHDEJOHC": "Eff_SceneObj_PitchPotNormalpot_01_DitherDisaper",
+                            "PCLAEGHPNHE": -1.0
+                        },
+                        {
+                            "$type": "KillSelf"
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "SceneObj_Area_Common_Property_Ani_Prop_PitchPotHugepot_01",
+            "abilityMixins": [
+                {
+                    "$type": "AttachModifierToGlobalValueMixin",
+                    "globalValueKey": "SGV_HitTime",
+                    "valueSteps": [
+                        -0.5,
+                        2.5,
+                        5.5,
+                        8.5,
+                        100.0
+                    ],
+                    "modifierNameSteps": [
+                        "HugePot_State_Big",
+                        "HugePot_State_Mid",
+                        "HugePot_State_Small",
+                        "HugePot_State_Die"
+                    ],
+                    "ELIABBGNMKE": true
+                },
+                {
+                    "$type": "AttachToGadgetStateMixin",
+                    "JBFLOAMNPBC": 201,
+                    "modifierName": "HugePot_State_Die"
+                },
+                {
+                    "$type": "AttachToGadgetStateMixin",
+                    "JBFLOAMNPBC": 202,
+                    "modifierName": "HugePot_State_202"
+                }
+            ],
+            "modifiers": {
+                "HugePot_State_Big": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "ANPDJHOGAFE": 0.5,
+                    "modifierMixins": [
+                        {
+                            "$type": "DoActionOnGlobalValueChangeMixin",
+                            "globalValueKey": "SGV_HitTime",
+                            "actions": [
+                                {
+                                    "$type": "ApplyModifier",
+                                    "FLEEHCIOPKA": [
+                                        {
+                                            "$type": "OMPKIEPKGPF",
+                                            "NGGCNKPAODB": "SGV_HitTime",
+                                            "value": 0.0,
+                                            "GAGKBNPOCAC": "MoreThan"
+                                        }
+                                    ],
+                                    "modifierName": "UNIQUE_HugePotBig_BeHit"
+                                }
+                            ]
+                        }
+                    ],
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "FireEffect",
+                            "LHHFHDEJOHC": "Eff_SceneObj_PitchPotNormalpot_01_Born",
+                            "scale": 1.2999999523162842,
+                            "PCLAEGHPNHE": -1.0
+                        },
+                        {
+                            "$type": "EnableSceneTransformByName",
+                            "HFFMMIDGGKN": [
+                                "BigPot",
+                                "MidPot"
+                            ],
+                            "DEHFCFDDEGB": true
+                        },
+                        {
+                            "$type": "EnableSceneTransformByName",
+                            "HFFMMIDGGKN": [
+                                "SmallPot"
+                            ]
+                        },
+                        {
+                            "$type": "EnableHitBoxByName",
+                            "DFBDHJKDLHI": [
+                                "HitBoxBig"
+                            ],
+                            "DEHFCFDDEGB": true
+                        },
+                        {
+                            "$type": "EnableHitBoxByName",
+                            "DFBDHJKDLHI": [
+                                "HitBoxMid",
+                                "HitBoxSmall"
+                            ]
+                        },
+                        {
+                            "$type": "ApplyModifier",
+                            "modifierName": "UNIQUE_HugePotBig_Normal"
+                        }
+                    ],
+                    "MDPGEKAIFIM": [
+                        {
+                            "$type": "ApplyModifier",
+                            "musicSubStates": {
+                                "$type": "HGNAFICLGFP",
+                                "IBPOJODNMHO": "CircleR2H1",
+                                "CHPLPFBEPDN": "AllExceptSelf",
+                                "CHGLFBPDMKF": 1.0
+                            },
+                            "FLEEHCIOPKA": [
+                                {
+                                    "$type": "CDPHOKIPLGH",
+                                    "FLEEHCIOPKA": [
+                                        {
+                                            "$type": "LHEEPLIJKBL",
+                                            "tag": "Is_NormalPot"
+                                        },
+                                        {
+                                            "$type": "LHEEPLIJKBL",
+                                            "tag": "Is_ExplodePot"
+                                        },
+                                        {
+                                            "$type": "LHEEPLIJKBL",
+                                            "tag": "Is_Predictable"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "modifierName": "SLC_PotCruhsed"
+                        }
+                    ]
+                },
+                "HugePot_State_Mid": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "ANPDJHOGAFE": 0.5,
+                    "modifierMixins": [
+                        {
+                            "$type": "DoActionOnGlobalValueChangeMixin",
+                            "globalValueKey": "SGV_HitTime",
+                            "actions": [
+                                {
+                                    "$type": "ApplyModifier",
+                                    "FLEEHCIOPKA": [
+                                        {
+                                            "$type": "OMPKIEPKGPF",
+                                            "NGGCNKPAODB": "SGV_HitTime",
+                                            "value": 0.0,
+                                            "GAGKBNPOCAC": "MoreThan"
+                                        }
+                                    ],
+                                    "modifierName": "UNIQUE_HugePotMid_BeHit"
+                                }
+                            ]
+                        }
+                    ],
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "FireEffect",
+                            "LHHFHDEJOHC": "Eff_SceneObj_PitchPotHugepot_01_Change",
+                            "PCLAEGHPNHE": -1.0
+                        },
+                        {
+                            "$type": "EnableSceneTransformByName",
+                            "HFFMMIDGGKN": [
+                                "MidPot",
+                                "SmallPot"
+                            ],
+                            "DEHFCFDDEGB": true
+                        },
+                        {
+                            "$type": "EnableSceneTransformByName",
+                            "HFFMMIDGGKN": [
+                                "BigPot"
+                            ]
+                        },
+                        {
+                            "$type": "EnableHitBoxByName",
+                            "DFBDHJKDLHI": [
+                                "HitBoxMid"
+                            ],
+                            "DEHFCFDDEGB": true
+                        },
+                        {
+                            "$type": "EnableHitBoxByName",
+                            "DFBDHJKDLHI": [
+                                "HitBoxBig",
+                                "HitBoxSmall"
+                            ]
+                        },
+                        {
+                            "$type": "ApplyModifier",
+                            "modifierName": "UNIQUE_HugePotMid_Normal"
+                        }
+                    ],
+                    "MDPGEKAIFIM": [
+                        {
+                            "$type": "ApplyModifier",
+                            "musicSubStates": {
+                                "$type": "HGNAFICLGFP",
+                                "IBPOJODNMHO": "CircleR2H1",
+                                "CHPLPFBEPDN": "AllExceptSelf",
+                                "CHGLFBPDMKF": 1.0
+                            },
+                            "FLEEHCIOPKA": [
+                                {
+                                    "$type": "CDPHOKIPLGH",
+                                    "FLEEHCIOPKA": [
+                                        {
+                                            "$type": "LHEEPLIJKBL",
+                                            "tag": "Is_NormalPot"
+                                        },
+                                        {
+                                            "$type": "LHEEPLIJKBL",
+                                            "tag": "Is_ExplodePot"
+                                        },
+                                        {
+                                            "$type": "LHEEPLIJKBL",
+                                            "tag": "Is_Predictable"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "modifierName": "SLC_PotCruhsed"
+                        }
+                    ]
+                },
+                "HugePot_State_Small": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "ANPDJHOGAFE": 0.5,
+                    "modifierMixins": [
+                        {
+                            "$type": "DoActionOnGlobalValueChangeMixin",
+                            "globalValueKey": "SGV_HitTime",
+                            "actions": [
+                                {
+                                    "$type": "ApplyModifier",
+                                    "FLEEHCIOPKA": [
+                                        {
+                                            "$type": "OMPKIEPKGPF",
+                                            "NGGCNKPAODB": "SGV_HitTime",
+                                            "value": 0.0,
+                                            "GAGKBNPOCAC": "MoreThan"
+                                        }
+                                    ],
+                                    "modifierName": "UNIQUE_HugePotSmall_BeHit"
+                                }
+                            ]
+                        }
+                    ],
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "FireEffect",
+                            "LHHFHDEJOHC": "Eff_SceneObj_PitchPotHugepot_01_Change",
+                            "PCLAEGHPNHE": -1.0
+                        },
+                        {
+                            "$type": "EnableSceneTransformByName",
+                            "HFFMMIDGGKN": [
+                                "SmallPot"
+                            ],
+                            "DEHFCFDDEGB": true
+                        },
+                        {
+                            "$type": "EnableSceneTransformByName",
+                            "HFFMMIDGGKN": [
+                                "MidPot",
+                                "BigPot"
+                            ]
+                        },
+                        {
+                            "$type": "EnableHitBoxByName",
+                            "DFBDHJKDLHI": [
+                                "HitBoxSmall"
+                            ],
+                            "DEHFCFDDEGB": true
+                        },
+                        {
+                            "$type": "EnableHitBoxByName",
+                            "DFBDHJKDLHI": [
+                                "HitBoxBig",
+                                "HitBoxMid"
+                            ]
+                        },
+                        {
+                            "$type": "ApplyModifier",
+                            "modifierName": "UNIQUE_HugePotSmall_Normal"
+                        }
+                    ],
+                    "MDPGEKAIFIM": [
+                        {
+                            "$type": "ApplyModifier",
+                            "musicSubStates": {
+                                "$type": "HGNAFICLGFP",
+                                "IBPOJODNMHO": "CircleR2H1",
+                                "CHPLPFBEPDN": "AllExceptSelf",
+                                "CHGLFBPDMKF": 1.0
+                            },
+                            "FLEEHCIOPKA": [
+                                {
+                                    "$type": "CDPHOKIPLGH",
+                                    "FLEEHCIOPKA": [
+                                        {
+                                            "$type": "LHEEPLIJKBL",
+                                            "tag": "Is_NormalPot"
+                                        },
+                                        {
+                                            "$type": "LHEEPLIJKBL",
+                                            "tag": "Is_ExplodePot"
+                                        },
+                                        {
+                                            "$type": "LHEEPLIJKBL",
+                                            "tag": "Is_Predictable"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "modifierName": "SLC_PotCruhsed"
+                        }
+                    ]
+                },
+                "HugePot_State_Die": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "ChangeTag",
+                            "tag": "Is_HugePot"
+                        },
+                        {
+                            "$type": "FireEffect",
+                            "LHHFHDEJOHC": "Eff_SceneObj_PitchPotHugepot_01_DisaperLast",
+                            "scale": 0.8999999761581421,
+                            "PCLAEGHPNHE": -1.0
+                        },
+                        {
+                            "$type": "KillSelf"
+                        }
+                    ]
+                },
+                "HugePot_State_202": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "ChangeTag",
+                            "tag": "Is_HugePot"
+                        },
+                        {
+                            "$type": "FireEffect",
+                            "FLEEHCIOPKA": [
+                                {
+                                    "$type": "OMPKIEPKGPF",
+                                    "NGGCNKPAODB": "SGV_HitTime",
+                                    "value": 2.0,
+                                    "GAGKBNPOCAC": "LessAndEqual"
+                                }
+                            ],
+                            "LHHFHDEJOHC": "Eff_SceneObj_PitchPotNormalpot_01_DitherDisaper",
+                            "scale": 1.600000023841858,
+                            "PCLAEGHPNHE": -1.0
+                        },
+                        {
+                            "$type": "FireEffect",
+                            "FLEEHCIOPKA": [
+                                {
+                                    "$type": "OMPKIEPKGPF",
+                                    "NGGCNKPAODB": "SGV_HitTime",
+                                    "value": 3.0,
+                                    "GAGKBNPOCAC": "MoreThanAndEqual"
+                                },
+                                {
+                                    "$type": "OMPKIEPKGPF",
+                                    "NGGCNKPAODB": "SGV_HitTime",
+                                    "value": 5.0,
+                                    "GAGKBNPOCAC": "LessAndEqual"
+                                }
+                            ],
+                            "LHHFHDEJOHC": "Eff_SceneObj_PitchPotNormalpot_01_DitherDisaper",
+                            "scale": 1.100000023841858,
+                            "PCLAEGHPNHE": -1.0
+                        },
+                        {
+                            "$type": "FireEffect",
+                            "FLEEHCIOPKA": [
+                                {
+                                    "$type": "OMPKIEPKGPF",
+                                    "NGGCNKPAODB": "SGV_HitTime",
+                                    "value": 6.0,
+                                    "GAGKBNPOCAC": "MoreThanAndEqual"
+                                }
+                            ],
+                            "LHHFHDEJOHC": "Eff_SceneObj_PitchPotNormalpot_01_DitherDisaper",
+                            "PCLAEGHPNHE": -1.0
+                        },
+                        {
+                            "$type": "KillSelf"
+                        }
+                    ]
+                },
+                "UNIQUE_HugePotBig_BeHit": {
+                    "modifierName": "",
+                    "defaultDistanceBetweenAvatarAndCamera": true,
+                    "FAFCPJJAIGK": 0.4000000059604645,
+                    "bonusCritical": 100.0,
+                    "modifierMixins": [
+                        {
+                            "$type": "ShaderStateMachineSwitchMixin",
+                            "EKECDFMGGJA": 1,
+                            "OLMNNEOBLDG": 5.0,
+                            "CEDEEIOGOHB": ""
+                        }
+                    ],
+                    "NFKOGKMAIIE": [
+                        {
+                            "$type": "ApplyModifier",
+                            "FLEEHCIOPKA": [
+                                {
+                                    "$type": "OMPKIEPKGPF",
+                                    "NGGCNKPAODB": "SGV_HitTime",
+                                    "value": 3.0,
+                                    "GAGKBNPOCAC": "LessAndEqual"
+                                }
+                            ],
+                            "modifierName": "UNIQUE_HugePotBig_Normal"
+                        }
+                    ]
+                },
+                "UNIQUE_HugePotBig_Normal": {
+                    "modifierName": "",
+                    "defaultDistanceBetweenAvatarAndCamera": true,
+                    "FAFCPJJAIGK": 0.4000000059604645,
+                    "bonusCritical": 100.0,
+                    "modifierMixins": [
+                        {
+                            "$type": "ShaderStateMachineSwitchMixin",
+                            "OLMNNEOBLDG": 3.0,
+                            "CEDEEIOGOHB": ""
+                        }
+                    ]
+                },
+                "UNIQUE_HugePotMid_BeHit": {
+                    "modifierName": "",
+                    "defaultDistanceBetweenAvatarAndCamera": true,
+                    "FAFCPJJAIGK": 0.4000000059604645,
+                    "bonusCritical": 100.0,
+                    "modifierMixins": [
+                        {
+                            "$type": "ShaderStateMachineSwitchMixin",
+                            "EKECDFMGGJA": 3,
+                            "OLMNNEOBLDG": 5.0,
+                            "CEDEEIOGOHB": ""
+                        }
+                    ],
+                    "NFKOGKMAIIE": [
+                        {
+                            "$type": "ApplyModifier",
+                            "FLEEHCIOPKA": [
+                                {
+                                    "$type": "OMPKIEPKGPF",
+                                    "NGGCNKPAODB": "SGV_HitTime",
+                                    "value": 6.0,
+                                    "GAGKBNPOCAC": "LessAndEqual"
+                                }
+                            ],
+                            "modifierName": "UNIQUE_HugePotMid_Normal"
+                        }
+                    ]
+                },
+                "UNIQUE_HugePotMid_Normal": {
+                    "modifierName": "",
+                    "defaultDistanceBetweenAvatarAndCamera": true,
+                    "FAFCPJJAIGK": 0.4000000059604645,
+                    "bonusCritical": 100.0,
+                    "modifierMixins": [
+                        {
+                            "$type": "ShaderStateMachineSwitchMixin",
+                            "EKECDFMGGJA": 2,
+                            "OLMNNEOBLDG": 3.0,
+                            "CEDEEIOGOHB": ""
+                        }
+                    ]
+                },
+                "UNIQUE_HugePotSmall_BeHit": {
+                    "modifierName": "",
+                    "defaultDistanceBetweenAvatarAndCamera": true,
+                    "FAFCPJJAIGK": 0.4000000059604645,
+                    "bonusCritical": 100.0,
+                    "modifierMixins": [
+                        {
+                            "$type": "ShaderStateMachineSwitchMixin",
+                            "EKECDFMGGJA": 5,
+                            "OLMNNEOBLDG": 5.0,
+                            "CEDEEIOGOHB": ""
+                        }
+                    ],
+                    "NFKOGKMAIIE": [
+                        {
+                            "$type": "ApplyModifier",
+                            "FLEEHCIOPKA": [
+                                {
+                                    "$type": "OMPKIEPKGPF",
+                                    "NGGCNKPAODB": "SGV_HitTime",
+                                    "value": 9.0,
+                                    "GAGKBNPOCAC": "LessAndEqual"
+                                }
+                            ],
+                            "modifierName": "UNIQUE_HugePotSmall_Normal"
+                        }
+                    ]
+                },
+                "UNIQUE_HugePotSmall_Normal": {
+                    "modifierName": "",
+                    "defaultDistanceBetweenAvatarAndCamera": true,
+                    "FAFCPJJAIGK": 0.4000000059604645,
+                    "bonusCritical": 100.0,
+                    "modifierMixins": [
+                        {
+                            "$type": "ShaderStateMachineSwitchMixin",
+                            "EKECDFMGGJA": 4,
+                            "OLMNNEOBLDG": 3.0,
+                            "CEDEEIOGOHB": ""
+                        }
+                    ]
+                },
+                "SLC_PotCruhsed": {
+                    "HABNNJHCOCD": "MultipleRefresh",
+                    "modifierName": "",
+                    "FAFCPJJAIGK": 0.5,
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "ServerLuaCall",
+                            "FNBGNCANKJF": "CurGalleryControlGroup",
+                            "FDPMGLDLLIN": "SLC_PotCruhsed",
+                            "param1": 0.0,
+                            "HFOIEKLCLEM": 0.0,
+                            "MCLOKLEBGPH": 0.0
+                        }
+                    ]
+                }
+            },
+            "NLFIGALMIPD": [
+                {
+                    "$type": "ChangeTag",
+                    "GMLGHDNGILP": true,
+                    "tag": "Is_HugePot"
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "SceneObj_Area_Common_Property_Ani_Prop_PitchPotHugepotMark_01",
+            "abilityMixins": [
+                {
+                    "$type": "AttachToGadgetStateMixin",
+                    "modifierName": "Mark_State_0"
+                }
+            ],
+            "modifiers": {
+                "Mark_State_0": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "AttachEffect",
+                            "LHHFHDEJOHC": "Eff_SceneObj_PitchPotHugepot_01_EndPoint",
+                            "PCLAEGHPNHE": -1.0
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "SceneObj_Area_Common_Property_Ani_Prop_PitchPotScoreRing_01",
+            "abilityMixins": [
+                {
+                    "$type": "AttachToGadgetStateMixin",
+                    "JBFLOAMNPBC": 201,
+                    "modifierName": "ScoreRing_Disable"
+                },
+                {
+                    "$type": "AttachToGadgetStateMixin",
+                    "JBFLOAMNPBC": 202,
+                    "modifierName": "ScoreRing_Warning"
+                }
+            ],
+            "modifiers": {
+                "ScoreRing_Effect": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "ChangeTag",
+                            "GMLGHDNGILP": true,
+                            "tag": "Is_ScoreRing"
+                        },
+                        {
+                            "$type": "AttachEffect",
+                            "LHHFHDEJOHC": "Eff_SceneObj_PitchPotScoreRing",
+                            "PCLAEGHPNHE": -1.0
+                        }
+                    ],
+                    "NFKOGKMAIIE": [
+                        {
+                            "$type": "ChangeTag",
+                            "tag": "Is_ScoreRing"
+                        }
+                    ]
+                },
+                "ScoreRing_Disable": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "FireEffect",
+                            "LHHFHDEJOHC": "Eff_SceneObj_PitchPotScoreRing_Die",
+                            "PCLAEGHPNHE": -1.0
+                        },
+                        {
+                            "$type": "RemoveModifier",
+                            "modifierName": "ScoreRing_Effect"
+                        },
+                        {
+                            "$type": "KillSelf"
+                        }
+                    ]
+                },
+                "ScoreRing_Warning": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "SendEffectTrigger",
+                            "HDBIEOFMAOD": "State",
+                            "PAOPLDJGAKA": "",
+                            "type": "Int",
+                            "KHMNAHOBJAE": 202,
+                            "LHHFHDEJOHC": "Eff_SceneObj_PitchPotScoreRing"
+                        }
+                    ]
+                }
+            },
+            "NLFIGALMIPD": [
+                {
+                    "$type": "AttachModifier",
+                    "modifierName": "ScoreRing_Effect"
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "SceneObj_Area_Common_Property_Ani_Prop_PitchPotPredictablepot_01",
+            "abilityMixins": [
+                {
+                    "$type": "AttachToGadgetStateMixin",
+                    "modifierName": "Predictablepot_State_0"
+                },
+                {
+                    "$type": "AttachToGadgetStateMixin",
+                    "JBFLOAMNPBC": 201,
+                    "modifierName": "Predictablepot_State_201"
+                },
+                {
+                    "$type": "AttachToGadgetStateMixin",
+                    "JBFLOAMNPBC": 202,
+                    "modifierName": "Predictablepot_State_202"
+                },
+                {
+                    "$type": "AttachModifierToGlobalValueMixin",
+                    "globalValueKey": "SGV_Movedir",
+                    "valueSteps": [
+                        0.5,
+                        1.5,
+                        2.5
+                    ],
+                    "modifierNameSteps": [
+                        "MoveForward",
+                        "MoveBackward"
+                    ],
+                    "ELIABBGNMKE": true
+                }
+            ],
+            "modifiers": {
+                "MoveForward": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "FireEffect",
+                            "LHHFHDEJOHC": "Eff_SceneObj_PitchPotPredictablepot_01_ChangePosition",
+                            "PCLAEGHPNHE": -1.0
+                        }
+                    ]
+                },
+                "MoveBackward": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "FireEffect",
+                            "LHHFHDEJOHC": "Eff_SceneObj_PitchPotPredictablepot_02_ChangePosition",
+                            "PCLAEGHPNHE": -1.0
+                        }
+                    ]
+                },
+                "Predictablepot_State_0": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "ChangeTag",
+                            "GMLGHDNGILP": true,
+                            "tag": "Is_Predictable"
+                        },
+                        {
+                            "$type": "FireEffect",
+                            "LHHFHDEJOHC": "Eff_SceneObj_PitchPotNormalpot_01_Born",
+                            "PCLAEGHPNHE": -1.0
+                        }
+                    ],
+                    "NFKOGKMAIIE": [
+                        {
+                            "$type": "ChangeTag",
+                            "tag": "Is_Predictable"
+                        }
+                    ]
+                },
+                "Predictablepot_State_201": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "FireEffect",
+                            "LHHFHDEJOHC": "Eff_SceneObj_PitchPotChainpot_01_DisaperLast",
+                            "PCLAEGHPNHE": -1.0
+                        },
+                        {
+                            "$type": "KillSelf"
+                        }
+                    ]
+                },
+                "Predictablepot_State_202": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "FireEffect",
+                            "LHHFHDEJOHC": "Eff_SceneObj_PitchPotNormalpot_01_DitherDisaper",
+                            "PCLAEGHPNHE": -1.0
+                        },
+                        {
+                            "$type": "KillSelf"
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "SceneObj_Area_Common_Property_Ani_Prop_PitchPotChainpot_01",
+            "abilityMixins": [
+                {
+                    "$type": "AttachToGadgetStateMixin",
+                    "modifierName": "Chainpot_State_0"
+                },
+                {
+                    "$type": "AttachToGadgetStateMixin",
+                    "JBFLOAMNPBC": 201,
+                    "modifierName": "Chainpot_State_201"
+                },
+                {
+                    "$type": "AttachToGadgetStateMixin",
+                    "JBFLOAMNPBC": 202,
+                    "modifierName": "Chainpot_State_202"
+                },
+                {
+                    "$type": "AttachToGadgetStateMixin",
+                    "JBFLOAMNPBC": 203,
+                    "modifierName": "Chainpot_State_203"
+                },
+                {
+                    "$type": "AttachModifierToGlobalValueMixin",
+                    "globalValueKey": "SGV_Index",
+                    "valueSteps": [
+                        0.5,
+                        1.5,
+                        2.5,
+                        3.5
+                    ],
+                    "modifierNameSteps": [
+                        "ChainPot01",
+                        "ChainPot02",
+                        "ChainPot03"
+                    ],
+                    "ELIABBGNMKE": true
+                }
+            ],
+            "modifiers": {
+                "Chainpot_State_0": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "modifierMixins": [
+                        {
+                            "$type": "ShaderStateMachineSwitchMixin",
+                            "CEDEEIOGOHB": ""
+                        }
+                    ],
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "ChangeTag",
+                            "GMLGHDNGILP": true,
+                            "tag": "Is_NormalPot"
+                        },
+                        {
+                            "$type": "FireEffect",
+                            "LHHFHDEJOHC": "Eff_SceneObj_PitchPotNormalpot_01_Born",
+                            "PCLAEGHPNHE": -1.0
+                        }
+                    ],
+                    "NFKOGKMAIIE": [
+                        {
+                            "$type": "ChangeTag",
+                            "tag": "Is_NormalPot"
+                        }
+                    ]
+                },
+                "Chainpot_State_201": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "modifierMixins": [
+                        {
+                            "$type": "ShaderStateMachineSwitchMixin",
+                            "EKECDFMGGJA": 2,
+                            "CEDEEIOGOHB": ""
+                        }
+                    ],
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "FireEffect",
+                            "LHHFHDEJOHC": "Eff_SceneObj_PitchPotNormalpot_01_Disaper",
+                            "PCLAEGHPNHE": -1.0
+                        },
+                        {
+                            "$type": "KillSelf"
+                        }
+                    ]
+                },
+                "Chainpot_State_202": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "modifierMixins": [
+                        {
+                            "$type": "ShaderStateMachineSwitchMixin",
+                            "EKECDFMGGJA": 2,
+                            "CEDEEIOGOHB": ""
+                        }
+                    ],
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "FireEffect",
+                            "LHHFHDEJOHC": "Eff_SceneObj_PitchPotNormalpot_01_DitherDisaper",
+                            "PCLAEGHPNHE": -1.0
+                        },
+                        {
+                            "$type": "KillSelf"
+                        }
+                    ]
+                },
+                "Chainpot_State_203": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "FireEffect",
+                            "LHHFHDEJOHC": "Eff_SceneObj_PitchPotChainpot_01_DisaperLast",
+                            "PCLAEGHPNHE": -1.0
+                        },
+                        {
+                            "$type": "KillSelf"
+                        }
+                    ]
+                },
+                "ChainPot01": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "modifierMixins": [
+                        {
+                            "$type": "AttachModifierToGlobalValueMixin",
+                            "globalValueKey": "SGV_Disappear",
+                            "valueSteps": [
+                                -0.5,
+                                0.5,
+                                100.0
+                            ],
+                            "modifierNameSteps": [
+                                "ChainPot_01_Normal",
+                                "ChainPot_01_Disappear"
+                            ],
+                            "ELIABBGNMKE": true
+                        }
+                    ]
+                },
+                "ChainPot_01_Normal": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "modifierMixins": [
+                        {
+                            "$type": "ShaderStateMachineSwitchMixin",
+                            "CEDEEIOGOHB": ""
+                        }
+                    ]
+                },
+                "ChainPot_01_Disappear": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "modifierMixins": [
+                        {
+                            "$type": "ShaderStateMachineSwitchMixin",
+                            "EKECDFMGGJA": 1,
+                            "CEDEEIOGOHB": ""
+                        }
+                    ]
+                },
+                "ChainPot02": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "modifierMixins": [
+                        {
+                            "$type": "AttachModifierToGlobalValueMixin",
+                            "globalValueKey": "SGV_Disappear",
+                            "valueSteps": [
+                                -0.5,
+                                0.5,
+                                100.0
+                            ],
+                            "modifierNameSteps": [
+                                "ChainPot_02_Normal",
+                                "ChainPot_02_Disappear"
+                            ],
+                            "ELIABBGNMKE": true
+                        }
+                    ]
+                },
+                "ChainPot_02_Normal": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "modifierMixins": [
+                        {
+                            "$type": "ShaderStateMachineSwitchMixin",
+                            "EKECDFMGGJA": 3,
+                            "CEDEEIOGOHB": ""
+                        }
+                    ]
+                },
+                "ChainPot_02_Disappear": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "modifierMixins": [
+                        {
+                            "$type": "ShaderStateMachineSwitchMixin",
+                            "EKECDFMGGJA": 4,
+                            "CEDEEIOGOHB": ""
+                        }
+                    ]
+                },
+                "ChainPot03": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "modifierMixins": [
+                        {
+                            "$type": "AttachModifierToGlobalValueMixin",
+                            "globalValueKey": "SGV_Disappear",
+                            "valueSteps": [
+                                -0.5,
+                                0.5,
+                                100.0
+                            ],
+                            "modifierNameSteps": [
+                                "ChainPot_03_Normal",
+                                "ChainPot_03_Disappear"
+                            ],
+                            "ELIABBGNMKE": true
+                        }
+                    ]
+                },
+                "ChainPot_03_Normal": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "modifierMixins": [
+                        {
+                            "$type": "ShaderStateMachineSwitchMixin",
+                            "EKECDFMGGJA": 6,
+                            "CEDEEIOGOHB": ""
+                        }
+                    ]
+                },
+                "ChainPot_03_Disappear": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "modifierMixins": [
+                        {
+                            "$type": "ShaderStateMachineSwitchMixin",
+                            "EKECDFMGGJA": 7,
+                            "CEDEEIOGOHB": ""
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "SceneObj_Area_Common_Property_Ani_Prop_PitchPotBoard_01",
+            "abilityMixins": [
+                {
+                    "$type": "AttachToGadgetStateMixin",
+                    "modifierName": "Board_State_0"
+                },
+                {
+                    "$type": "AttachToGadgetStateMixin",
+                    "JBFLOAMNPBC": 201,
+                    "modifierName": "Board_State_201"
+                },
+                {
+                    "$type": "AttachToGadgetStateMixin",
+                    "JBFLOAMNPBC": 202,
+                    "modifierName": "Board_State_202"
+                },
+                {
+                    "$type": "AttachToGadgetStateMixin",
+                    "JBFLOAMNPBC": 203,
+                    "modifierName": "Board_State_203"
+                }
+            ],
+            "modifiers": {
+                "Board_State_0": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "FireEffect",
+                            "LHHFHDEJOHC": "Eff_SceneObj_PitchPotNormalpot_01_Born",
+                            "PCLAEGHPNHE": -1.0
+                        },
+                        {
+                            "$type": "EnableSceneTransformByName",
+                            "HFFMMIDGGKN": [
+                                "PitchBoard01",
+                                "PitchBoard02"
+                            ],
+                            "DEHFCFDDEGB": true
+                        },
+                        {
+                            "$type": "EnableSceneTransformByName",
+                            "HFFMMIDGGKN": [
+                                "PitchBoard03"
+                            ]
+                        }
+                    ]
+                },
+                "Board_State_201": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "TriggerAudio",
+                            "MNCMNAOBMDC": {
+                                "$type": "KKBFMANIJFN",
+                                "MNCMNAOBMDC": {
+                                    "text": "Play_amb_sceneObj_gear_pitchPotHugepot_01_hit_wood"
+                                }
+                            }
+                        },
+                        {
+                            "$type": "EnableSceneTransformByName",
+                            "HFFMMIDGGKN": [
+                                "PitchBoard02",
+                                "PitchBoard03"
+                            ],
+                            "DEHFCFDDEGB": true
+                        },
+                        {
+                            "$type": "EnableSceneTransformByName",
+                            "HFFMMIDGGKN": [
+                                "PitchBoard01"
+                            ]
+                        }
+                    ]
+                },
+                "Board_State_202": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "TriggerAudio",
+                            "MNCMNAOBMDC": {
+                                "$type": "KKBFMANIJFN",
+                                "MNCMNAOBMDC": {
+                                    "text": "Play_amb_sceneObj_gear_pitchPotHugepot_01_hit_wood"
+                                }
+                            }
+                        },
+                        {
+                            "$type": "EnableSceneTransformByName",
+                            "HFFMMIDGGKN": [
+                                "PitchBoard03"
+                            ],
+                            "DEHFCFDDEGB": true
+                        },
+                        {
+                            "$type": "EnableSceneTransformByName",
+                            "HFFMMIDGGKN": [
+                                "PitchBoard01",
+                                "PitchBoard02"
+                            ]
+                        }
+                    ]
+                },
+                "Board_State_203": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "TriggerAudio",
+                            "MNCMNAOBMDC": {
+                                "$type": "KKBFMANIJFN",
+                                "MNCMNAOBMDC": {
+                                    "text": "Play_amb_sceneObj_gear_pitchPotHugepot_01_hit_wood"
+                                }
+                            }
+                        },
+                        {
+                            "$type": "KillSelf"
+                        }
+                    ]
+                }
+            },
+            "NLFIGALMIPD": [
+                {
+                    "$type": "ChangeTag",
+                    "GMLGHDNGILP": true,
+                    "tag": "Is_Board"
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "SceneObj_Area_Fd_Property_Ani_Prop_LuminousJellyfish_02",
+            "modifiers": {
+                "Effect_Attacher": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "FireEffect",
+                            "LHHFHDEJOHC": "Eff_SceneObj_LuminousJellyfish_01",
+                            "PCLAEGHPNHE": -1.0
+                        },
+                        {
+                            "$type": "AttachEffect",
+                            "LHHFHDEJOHC": "Eff_Stages_SceneObj_ArtBoids_LuminousJellyfish_02",
+                            "PCLAEGHPNHE": -1.0
+                        }
+                    ]
+                },
+                "KillApplier_Handler": {
+                    "modifierName": "",
+                    "FAFCPJJAIGK": 0.5,
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "ApplyModifier",
+                            "KMGAOOHMCPK": "Applier",
+                            "FLEEHCIOPKA": [
+                                {
+                                    "$type": "GHCEEDKFPEE",
+                                    "KMGAOOHMCPK": "Self"
+                                }
+                            ],
+                            "modifierName": "KillSelf_Handler"
+                        }
+                    ]
+                },
+                "KillSelf_Handler": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "KillSelf"
+                        }
+                    ]
+                }
+            },
+            "NLFIGALMIPD": [
+                {
+                    "$type": "AttachModifier",
+                    "modifierName": "Effect_Attacher"
+                }
+            ],
+            "MENHKHPHIKK": [
+                {
+                    "$type": "Predicated",
+                    "KMGAOOHMCPK": "Target",
+                    "targetPredicates": [
+                        {
+                            "$type": "GHCEEDKFPEE"
+                        }
+                    ],
+                    "successActions": [
+                        {
+                            "$type": "RemoveModifier",
+                            "modifierName": "Effect_Attacher"
+                        },
+                        {
+                            "$type": "FireEffect",
+                            "LHHFHDEJOHC": "Eff_SceneObj_LuminousJellyfish_02",
+                            "PCLAEGHPNHE": -1.0
+                        },
+                        {
+                            "$type": "ApplyModifier",
+                            "KMGAOOHMCPK": "Target",
+                            "modifierName": "KillApplier_Handler"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "SceneObj_Area_Fd_Property_Ani_Prop_LuminousJellyfish_01",
+            "modifiers": {
+                "Effect_Attacher": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "FireEffect",
+                            "LHHFHDEJOHC": "Eff_SceneObj_LuminousJellyfish_03",
+                            "PCLAEGHPNHE": -1.0
+                        },
+                        {
+                            "$type": "AttachEffect",
+                            "LHHFHDEJOHC": "Eff_Stages_SceneObj_ArtBoids_LuminousJellyfish_01",
+                            "PCLAEGHPNHE": -1.0
+                        }
+                    ]
+                },
+                "KillApplier_Handler": {
+                    "modifierName": "",
+                    "FAFCPJJAIGK": 0.5,
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "ApplyModifier",
+                            "KMGAOOHMCPK": "Applier",
+                            "FLEEHCIOPKA": [
+                                {
+                                    "$type": "GHCEEDKFPEE",
+                                    "KMGAOOHMCPK": "Self"
+                                }
+                            ],
+                            "modifierName": "KillSelf_Handler"
+                        }
+                    ]
+                },
+                "KillSelf_Handler": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "KillSelf"
+                        }
+                    ]
+                }
+            },
+            "NLFIGALMIPD": [
+                {
+                    "$type": "AttachModifier",
+                    "modifierName": "Effect_Attacher"
+                }
+            ],
+            "MENHKHPHIKK": [
+                {
+                    "$type": "Predicated",
+                    "KMGAOOHMCPK": "Target",
+                    "targetPredicates": [
+                        {
+                            "$type": "GHCEEDKFPEE"
+                        }
+                    ],
+                    "successActions": [
+                        {
+                            "$type": "RemoveModifier",
+                            "modifierName": "Effect_Attacher"
+                        },
+                        {
+                            "$type": "FireEffect",
+                            "LHHFHDEJOHC": "Eff_SceneObj_LuminousJellyfish_04",
+                            "PCLAEGHPNHE": -1.0
+                        },
+                        {
+                            "$type": "ApplyModifier",
+                            "KMGAOOHMCPK": "Target",
+                            "modifierName": "KillApplier_Handler"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "Activity_UnderWater_TeamAbility",
+            "abilityMixins": [
+                {
+                    "$type": "DoActionOnGlobalValueChangeMixin",
+                    "globalValueKey": "SGV_ALGA_NUM",
+                    "actions": [
+                        {
+                            "$type": "AttachModifier",
+                            "KMGAOOHMCPK": "CurLocalAvatar",
+                            "FLEEHCIOPKA": [
+                                {
+                                    "$type": "OMPKIEPKGPF",
+                                    "KMGAOOHMCPK": "Team",
+                                    "NGGCNKPAODB": "SGV_ALGA_NUM",
+                                    "value": 0.0,
+                                    "GAGKBNPOCAC": "MoreThan"
+                                }
+                            ],
+                            "modifierName": "UNIQUE_Avatar_Has_Alga"
+                        },
+                        {
+                            "$type": "ApplyModifier",
+                            "KMGAOOHMCPK": "CurLocalAvatar",
+                            "FLEEHCIOPKA": [
+                                {
+                                    "$type": "OMPKIEPKGPF",
+                                    "KMGAOOHMCPK": "Team",
+                                    "NGGCNKPAODB": "SGV_ALGA_NUM",
+                                    "value": 0.0,
+                                    "GAGKBNPOCAC": "MoreThan"
+                                }
+                            ],
+                            "modifierName": "UNIQUE_Avatar_Alga_Appear"
+                        }
+                    ]
+                }
+            ],
+            "modifiers": {
+                "UNIQUE_Avatar_Alga_Appear": {
+                    "modifierName": "",
+                    "defaultDistanceBetweenAvatarAndCamera": true,
+                    "FAFCPJJAIGK": 10.0,
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "SendEffectTrigger",
+                            "KMGAOOHMCPK": "CurLocalAvatar",
+                            "HDBIEOFMAOD": "GadgetState",
+                            "PAOPLDJGAKA": "",
+                            "type": "Int",
+                            "LHHFHDEJOHC": "Eff_SceneObj_LuminousJellyfish_05"
+                        },
+                        {
+                            "$type": "SetGlobalValueV2",
+                            "KMGAOOHMCPK": "Team",
+                            "value": 1.0,
+                            "NGGCNKPAODB": "Mark_Has_Alga",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        }
+                    ],
+                    "NFKOGKMAIIE": [
+                        {
+                            "$type": "SendEffectTrigger",
+                            "KMGAOOHMCPK": "CurLocalAvatar",
+                            "HDBIEOFMAOD": "GadgetState",
+                            "PAOPLDJGAKA": "",
+                            "type": "Int",
+                            "KHMNAHOBJAE": 201,
+                            "LHHFHDEJOHC": "Eff_SceneObj_LuminousJellyfish_05"
+                        },
+                        {
+                            "$type": "SetGlobalValueV2",
+                            "KMGAOOHMCPK": "Team",
+                            "value": 0.0,
+                            "NGGCNKPAODB": "Mark_Has_Alga",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        }
+                    ]
+                },
+                "UNIQUE_Avatar_Has_Alga": {
+                    "modifierName": "",
+                    "defaultDistanceBetweenAvatarAndCamera": true,
+                    "bonusCritical": 100.0,
+                    "ANPDJHOGAFE": 5.0,
+                    "modifierMixins": [
+                        {
+                            "$type": "CurLocalAvatarMixinV2",
+                            "modifierName": "UNIQUE_Avatar_Has_AlgaEffect"
+                        }
+                    ],
+                    "MDPGEKAIFIM": [
+                        {
+                            "$type": "AttachModifier",
+                            "KMGAOOHMCPK": "CurLocalAvatar",
+                            "BKFHNENKMAL": true,
+                            "modifierName": "UNIQUE_Avatar_Has_AlgaEffect"
+                        }
+                    ]
+                },
+                "UNIQUE_Avatar_Has_AlgaEffect": {
+                    "HABNNJHCOCD": "Unique",
+                    "modifierName": "",
+                    "defaultDistanceBetweenAvatarAndCamera": true,
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "AttachEffect",
+                            "BKFHNENKMAL": true,
+                            "LHHFHDEJOHC": "Eff_SceneObj_LuminousJellyfish_05",
+                            "PCLAEGHPNHE": -1.0
+                        },
+                        {
+                            "$type": "SendEffectTrigger",
+                            "KMGAOOHMCPK": "CurLocalAvatar",
+                            "FLEEHCIOPKA": [
+                                {
+                                    "$type": "OMPKIEPKGPF",
+                                    "KMGAOOHMCPK": "Team",
+                                    "NGGCNKPAODB": "Mark_Has_Alga",
+                                    "value": 0.0
+                                }
+                            ],
+                            "HDBIEOFMAOD": "GadgetState",
+                            "PAOPLDJGAKA": "",
+                            "type": "Int",
+                            "KHMNAHOBJAE": 201,
+                            "LHHFHDEJOHC": "Eff_SceneObj_LuminousJellyfish_05"
+                        },
+                        {
+                            "$type": "SendEffectTrigger",
+                            "KMGAOOHMCPK": "CurLocalAvatar",
+                            "FLEEHCIOPKA": [
+                                {
+                                    "$type": "OMPKIEPKGPF",
+                                    "KMGAOOHMCPK": "Team",
+                                    "NGGCNKPAODB": "Mark_Has_Alga",
+                                    "value": 0.0,
+                                    "GAGKBNPOCAC": "MoreThan"
+                                }
+                            ],
+                            "HDBIEOFMAOD": "GadgetState",
+                            "PAOPLDJGAKA": "",
+                            "type": "Int",
+                            "LHHFHDEJOHC": "Eff_SceneObj_LuminousJellyfish_05"
+                        }
+                    ],
+                    "JPBJEOPOKPM": [
+                        {
+                            "$type": "RemoveModifier",
+                            "BKFHNENKMAL": true,
+                            "modifierName": "UNIQUE_Avatar_Has_AlgaEffect"
+                        }
+                    ]
+                }
+            },
+            "NLFIGALMIPD": [
+                {
+                    "$type": "SetGlobalValueV2",
+                    "KMGAOOHMCPK": "Team",
+                    "value": 0.0,
+                    "NGGCNKPAODB": "Mark_Has_Alga",
+                    "LBHGJKHHAKP": 0.0,
+                    "EMGNPOKHMNN": 0.0
+                }
+            ],
+            "EGGOIPOIGJA": true
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "SceneObj_Area_Common_Property_Ani_Prop_PaintingRepair_01",
+            "abilityMixins": [
+                {
+                    "$type": "AttachToGadgetStateMixin",
+                    "modifierName": "Opeartor_Show"
+                },
+                {
+                    "$type": "AttachToGadgetStateMixin",
+                    "JBFLOAMNPBC": 201,
+                    "modifierName": "Opeartor_Hide"
+                },
+                {
+                    "$type": "UIInteractMixin",
+                    "JFBPBPLIBKE": "OpenPage",
+                    "JNAOMAGIAJI": [
+                        {
+                            "$type": "ApplyModifier",
+                            "modifierName": "UIPage_Open"
+                        }
+                    ]
+                },
+                {
+                    "$type": "UIInteractMixin",
+                    "JFBPBPLIBKE": "ClosePage",
+                    "JNAOMAGIAJI": [
+                        {
+                            "$type": "ApplyModifier",
+                            "modifierName": "UIPage_Close"
+                        }
+                    ]
+                }
+            ],
+            "modifiers": {
+                "Opeartor_Recover": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "FCHBGPJGEBK": [
+                        {
+                            "$type": "ChangeGadgetState"
+                        }
+                    ]
+                },
+                "Opeartor_Show": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "AttachEffect",
+                            "LHHFHDEJOHC": "Eff_SceneObj_CameraActiveOperator_01",
+                            "PCLAEGHPNHE": -1.0
+                        },
+                        {
+                            "$type": "HideUIBillBoard"
+                        }
+                    ],
+                    "NFKOGKMAIIE": [
+                        {
+                            "$type": "FireEffect",
+                            "LHHFHDEJOHC": "Eff_SceneObj_CameraActiveOperator_01_Disappear",
+                            "PCLAEGHPNHE": -1.0
+                        },
+                        {
+                            "$type": "HideUIBillBoard",
+                            "HCDOGJLANIM": true
+                        }
+                    ]
+                },
+                "Opeartor_Hide": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0
+                },
+                "UIPage_Open": {
+                    "modifierName": "",
+                    "FAFCPJJAIGK": 1.0,
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "ChangeGadgetState",
+                            "LAKGGCIOMBH": 201
+                        }
+                    ]
+                },
+                "UIPage_Close": {
+                    "modifierName": "",
+                    "FAFCPJJAIGK": 1.0,
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "ChangeGadgetState"
+                        }
+                    ]
+                }
+            },
+            "NLFIGALMIPD": [
+                {
+                    "$type": "AttachModifier",
+                    "modifierName": "Opeartor_Recover"
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "SceneObj_Area_Fd_Property_Ani_Prop_LuminousBoostRing_01",
+            "modifiers": {
+                "OceanCurrentBoost_Avatar_Eff": {
+                    "HABNNJHCOCD": "MultipleRefresh",
+                    "FNNAEGKHFHN": {
+                        "KDGIJMLBBPL": "",
+                        "HDFMDCDJBPB": 1.0
+                    },
+                    "modifierName": "",
+                    "FAFCPJJAIGK": 4.0,
+                    "bonusCritical": 100.0,
+                    "NLPPKPOJEOA": {
+                        "Animator_MoveSpeedRatio": 0.5
+                    },
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "FireEffect",
+                            "LHHFHDEJOHC": "Eff_SceneObj_SpeedUp_Ring_Dash",
+                            "PCLAEGHPNHE": -1.0
+                        },
+                        {
+                            "$type": "AttachEffect",
+                            "LHHFHDEJOHC": "Eff_SceneObj_SpeedWaterBall_Buff_01_State",
+                            "PCLAEGHPNHE": -1.0
+                        },
+                        {
+                            "$type": "ApplyModifier",
+                            "modifierName": "OceanCurrentBoost_Avatar_Eff_Disappear"
+                        },
+                        {
+                            "$type": "SendEffectTrigger",
+                            "HDBIEOFMAOD": "State",
+                            "PAOPLDJGAKA": "",
+                            "type": "Int",
+                            "KHMNAHOBJAE": 203,
+                            "LHHFHDEJOHC": "Eff_SceneObj_SpeedWaterBall_Buff_01_State"
+                        }
+                    ]
+                },
+                "OceanCurrentBoost_Avatar_Eff_Disappear": {
+                    "HABNNJHCOCD": "MultipleRefresh",
+                    "FNNAEGKHFHN": {
+                        "KDGIJMLBBPL": "",
+                        "HDFMDCDJBPB": 1.0
+                    },
+                    "modifierName": "",
+                    "FAFCPJJAIGK": 2.799999952316284,
+                    "bonusCritical": 100.0,
+                    "NFKOGKMAIIE": [
+                        {
+                            "$type": "SendEffectTrigger",
+                            "HDBIEOFMAOD": "State",
+                            "PAOPLDJGAKA": "",
+                            "type": "Int",
+                            "LHHFHDEJOHC": "Eff_SceneObj_SpeedWaterBall_Buff_01_State"
+                        }
+                    ]
+                },
+                "OceanCurrentBoost_DelayKill": {
+                    "modifierName": "",
+                    "FAFCPJJAIGK": 1.0,
+                    "bonusCritical": 100.0,
+                    "NFKOGKMAIIE": [
+                        {
+                            "$type": "KillSelf",
+                            "BKFHNENKMAL": true
+                        }
+                    ]
+                },
+                "OceanCurrentBoost_Eff": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "AttachEffect",
+                            "LHHFHDEJOHC": "Eff_SceneObj_SpeedWaterBall_Idle_01_CY",
+                            "PCLAEGHPNHE": -1.0
+                        }
+                    ],
+                    "NFKOGKMAIIE": [
+                        {
+                            "$type": "FireEffect",
+                            "LHHFHDEJOHC": "Eff_SceneObj_SpeedWaterBall_Idle_01_DS",
+                            "PCLAEGHPNHE": -1.0
+                        }
+                    ]
+                }
+            },
+            "NLFIGALMIPD": [
+                {
+                    "$type": "AttachModifier",
+                    "modifierName": "OceanCurrentBoost_Eff"
+                }
+            ],
+            "MENHKHPHIKK": [
+                {
+                    "$type": "RemoveModifier",
+                    "modifierName": "OceanCurrentBoost_Eff"
+                },
+                {
+                    "$type": "ApplyModifier",
+                    "modifierName": "OceanCurrentBoost_DelayKill"
+                },
+                {
+                    "$type": "ApplyModifier",
+                    "KMGAOOHMCPK": "Target",
+                    "modifierName": "OceanCurrentBoost_Avatar_Eff"
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "ActivityAbility_QuickTimeCombat_V1",
+            "modifiers": {
+                "QTE_Reset_Camera_Handler": {
+                    "modifierName": "",
+                    "FAFCPJJAIGK": 1.0,
+                    "bonusCritical": 100.0,
+                    "NFKOGKMAIIE": [
+                        {
+                            "$type": "ApplyModifier",
+                            "KMGAOOHMCPK": "CurLocalAvatar",
+                            "modifierName": "QTE_Reset_Camera"
+                        }
+                    ]
+                },
+                "QTE_Reset_Camera": {
+                    "modifierName": "",
+                    "FAFCPJJAIGK": 1.0,
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "ResetCamera",
+                            "IKAKHAFIKIA": 1
+                        }
+                    ]
+                }
+            },
+            "NLFIGALMIPD": [
+                {
+                    "$type": "ShowExtraAbility",
+                    "GCOFBECOEFF": 20066
+                },
+                {
+                    "$type": "SetExtraAbilityEnable",
+                    "enable": true
+                }
+            ],
+            "NFKOGKMAIIE": [
+                {
+                    "$type": "ShowExtraAbility"
+                },
+                {
+                    "$type": "ApplyModifier",
+                    "KMGAOOHMCPK": "Team",
+                    "modifierName": "QTE_Reset_Camera_Handler"
+                }
+            ],
+            "onAbilityStart": [
+                {
+                    "$type": "SetExtraAbilityState"
+                },
+                {
+                    "$type": "PushInterActionByConfigPath",
+                    "KMGAOOHMCPK": "CurLocalAvatar",
+                    "FLEEHCIOPKA": [
+                        {
+                            "$type": "JFPBCBGHNFO",
+                            "KMGAOOHMCPK": "CurLocalAvatar"
+                        }
+                    ],
+                    "ELKBPHDMEBJ": "UI/open_QuickTimeCombat_V1_page"
+                },
+                {
+                    "$type": "SetGlobalValue",
+                    "KMGAOOHMCPK": "Team",
+                    "value": 0.0,
+                    "NGGCNKPAODB": "GV_Activity_QuickTimeCombat_QTETriggerCJB",
+                    "LBHGJKHHAKP": 0.0,
+                    "EMGNPOKHMNN": 0.0
+                },
+                {
+                    "$type": "DebugLog",
+                    "GOMJPONMJII": "## TD: T键触发 - QuickTimeCombat_V1"
+                }
+            ],
+            "EGGOIPOIGJA": true
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "ActivityAbility_QuickTimeCombat_ClientCall",
+            "onAbilityStart": [
+                {
+                    "$type": "ServerLuaCall",
+                    "FNBGNCANKJF": "CurGalleryControlGroup",
+                    "FDPMGLDLLIN": "SLC_QTE_Client_Judge_Finish",
+                    "param1": 0.0,
+                    "HFOIEKLCLEM": 0.0,
+                    "MCLOKLEBGPH": 0.0
+                }
+            ],
+            "EGGOIPOIGJA": true
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "SceneObj_Area_Common_Property_Ani_Prop_Leaves_01",
+            "abilityMixins": [
+                {
+                    "$type": "AttachToGadgetStateMixin",
+                    "modifierName": "Leaves_Effect_0"
+                },
+                {
+                    "$type": "AttachToGadgetStateMixin",
+                    "JBFLOAMNPBC": 201,
+                    "modifierName": "Leaves_Effect_201"
+                }
+            ],
+            "modifiers": {
+                "Leaves_Effect_0": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "AttachEffect",
+                            "LHHFHDEJOHC": "Eff_SceneObj_Property_Ani_Prop_Leaves_01_Water_Stop",
+                            "PCLAEGHPNHE": -1.0
+                        }
+                    ]
+                },
+                "Leaves_Effect_201": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "AttachEffect",
+                            "LHHFHDEJOHC": "Eff_SceneObj_Property_Ani_Prop_Leaves_01_Water",
+                            "PCLAEGHPNHE": -1.0
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "SceneObj_Area_Fd_Property_Ani_Prop_LuminousMark_01",
+            "modifiers": {
+                "RefreshBillboard": {
+                    "modifierName": "",
+                    "FAFCPJJAIGK": 0.10000000149011612,
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "HideUIBillBoard",
+                            "HCDOGJLANIM": true
+                        }
+                    ],
+                    "NFKOGKMAIIE": [
+                        {
+                            "$type": "HideUIBillBoard"
+                        }
+                    ]
+                }
+            },
+            "NLFIGALMIPD": [
+                {
+                    "$type": "ApplyModifier",
+                    "modifierName": "RefreshBillboard"
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "SceneObj_Area_Common_Property_Prop_QTEAirWall_01",
+            "modifiers": {
+                "QTEAirWall_Effect": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "AttachEffect",
+                            "LHHFHDEJOHC": "Eff_SceneObj_Airwall_QTEDungeon_01",
+                            "PCLAEGHPNHE": -1.0
+                        }
+                    ]
+                }
+            },
+            "NLFIGALMIPD": [
+                {
+                    "$type": "ApplyModifier",
+                    "modifierName": "QTEAirWall_Effect"
+                }
+            ]
+        }
+    }
+]

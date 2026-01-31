@@ -1,0 +1,728 @@
+{
+    "Apparatus_Enigma_BionicDrone_AimAtk_Bullet": {
+        "$type": "ConfigGadget",
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 999999.0,
+                "attack": 15.0,
+                "defense": 999999.0,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "Monster_Apparatus_Enigma_BionicDrone_AimAtk_Bullet",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 1.0
+        },
+        "move": {
+            "$type": "KBENGKLMEAL",
+            "MPMOPIIFDPO": {
+                "muteAll": true
+            },
+            "speed": 60.0
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "ccd": {
+                    "type": "Always"
+                },
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Monster_Apparatus_Enigma_BionicDrone_AimAtk_Bullet"
+                }
+            ]
+        }
+    },
+    "Apparatus_Enigma_BionicDrone_ChargeAtk_Bullet": {
+        "$type": "ConfigGadget",
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 999999.0,
+                "attack": 15.0,
+                "defense": 999999.0,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "Monster_Apparatus_Enigma_BionicDrone_ChargeAtk_Bullet",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 1.0
+        },
+        "move": {
+            "$type": "KBENGKLMEAL",
+            "speed": 25.0
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "ccd": {
+                    "type": "Always"
+                },
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Monster_Apparatus_Enigma_BionicDrone_ChargeAtk_Bullet"
+                }
+            ]
+        }
+    },
+    "Apparatus_Enigma_BionicDrone_VoltSwitch_EnergyBall": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            }
+        },
+        "hasModel": true,
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 999999.0,
+                "attack": 15.0,
+                "defense": 999999.0,
+                "isInvincible": true,
+                "isGhostToEnemy": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "hitAutoRedirect": false,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "Monster_Apparatus_Enigma_BionicDrone_VoltSwitch_EnergyBall",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 0.5
+        },
+        "move": {
+            "$type": "EGIBMIADEHO",
+            "speed": 5.0,
+            "GBPNCGHBJMC": 120.0,
+            "AFIKDKDFKCJ": 2.0,
+            "BCNECAMPGJJ": true
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "triggerType": "TriggerNoRepeat",
+                "targetType": "Enemy"
+            },
+            "JPNAMDFCBFN": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Monster_Apparatus_Enigma_BionicDrone_VoltSwitch_EnergyBall"
+                }
+            ],
+            "GNGMJEIPCJE": true
+        }
+    },
+    "Apparatus_Enigma_BionicDrone_VoltSwitch_EnergyBall_Land": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "FCAGPAEOLPI": 1.2000000476837158,
+                "HOJBBPFJMIL": 1.2000000476837158,
+                "CPGMBCECPEN": 1.2000000476837158
+            }
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 999999.0,
+                "attack": 15.0,
+                "defense": 999999.0,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "hitAutoRedirect": false,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "Monster_Apparatus_Enigma_BionicDrone_VoltSwitch_EnergyBall_Land",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 20.0
+        }
+    },
+    "Apparatus_Enigma_BionicDrone_CoveringFire_Position": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "FCAGPAEOLPI": 1.2000000476837158,
+                "HOJBBPFJMIL": 1.2000000476837158,
+                "CPGMBCECPEN": 1.2000000476837158
+            }
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 999999.0,
+                "attack": 15.0,
+                "defense": 999999.0,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "hitAutoRedirect": false,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "Monster_Apparatus_Enigma_BionicDrone_CoveringFire_Position",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 20.0
+        }
+    },
+    "Apparatus_Enigma_BionicFlora_RangeAtk_Bullet": {
+        "$type": "ConfigGadget",
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 999999.0,
+                "attack": 15.0,
+                "defense": 999999.0,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "Monster_Apparatus_Enigma_BionicFlora_RangeAtk_Bullet",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 2.5
+        },
+        "move": {
+            "$type": "KBENGKLMEAL",
+            "speed": 25.0
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "ccd": {
+                    "type": "Always"
+                },
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Monster_Apparatus_Enigma_BionicFlora_RangeAtk_Bullet"
+                }
+            ]
+        }
+    },
+    "Apparatus_Enigma_BionicFlora_ScorchingSands_Position": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            }
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 999999.0,
+                "attack": 15.0,
+                "defense": 999999.0,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "hitAutoRedirect": false,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "Monster_Apparatus_Enigma_BionicFlora_ScorchingSands_Position",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 20.0
+        }
+    },
+    "Apparatus_Enigma_BionicInsecta_ChargeAtk_Beam": {
+        "$type": "ConfigGadget",
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 999999.0,
+                "attack": 15.0,
+                "defense": 999999.0,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "Monster_Apparatus_Enigma_BionicInsecta_ChargeAtk_Beam",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 1.5
+        },
+        "move": {
+            "$type": "KBENGKLMEAL",
+            "MPMOPIIFDPO": {
+                "muteAll": true
+            },
+            "speed": 60.0
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "ccd": {
+                    "type": "Always"
+                },
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Monster_Apparatus_Enigma_BionicInsecta_ChargeAtk_Beam"
+                }
+            ]
+        }
+    },
+    "Apparatus_Enigma_BionicNettler_EnergyBall": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "FCAGPAEOLPI": 1.2000000476837158,
+                "HOJBBPFJMIL": 1.2000000476837158,
+                "CPGMBCECPEN": 1.2000000476837158
+            }
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 999999.0,
+                "attack": 15.0,
+                "defense": 999999.0,
+                "isGhostToEnemy": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "hitAutoRedirect": false,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "Monster_Apparatus_Enigma_BionicNettler_EnergyLine_Gadget",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 60.0
+        }
+    },
+    "Apparatus_Enigma_BionicNettler_EnergyBall_Line": {
+        "$type": "ConfigGadget",
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 999999.0,
+                "attack": 15.0,
+                "defense": 999999.0,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "Monster_Apparatus_Enigma_BionicNettler_EnergyLine_TriggerBullet",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 0.5
+        },
+        "move": {
+            "$type": "KBENGKLMEAL",
+            "speed": 0.0010000000474974513,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "KGGKADOKFII": 1.5
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "triggerType": "TriggerAlways",
+                "targetType": "Self"
+            },
+            "GNGMJEIPCJE": true
+        }
+    },
+    "Apparatus_Enigma_BionicNettler_TargetNearPosition1": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            }
+        },
+        "hasModel": true,
+        "combat": {
+            "property": {
+                "HP": 999999.0,
+                "attack": 15.0,
+                "defense": 999999.0,
+                "isInvincible": true,
+                "isGhostToEnemy": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "hitAutoRedirect": false,
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "AHCOGNAHOOF": {
+            "lifeInfinite": true
+        },
+        "move": {
+            "$type": "DKAMCGDMNKI",
+            "target": "TargetEntity",
+            "attachPoint": "",
+            "offset": {
+                "x": 4.0,
+                "z": 4.0
+            },
+            "HMPJAIBPNND": ""
+        }
+    },
+    "Apparatus_Enigma_BionicNettler_TargetNearPosition2": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            }
+        },
+        "hasModel": true,
+        "combat": {
+            "property": {
+                "HP": 999999.0,
+                "attack": 15.0,
+                "defense": 999999.0,
+                "isInvincible": true,
+                "isGhostToEnemy": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "hitAutoRedirect": false,
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "AHCOGNAHOOF": {
+            "lifeInfinite": true
+        },
+        "move": {
+            "$type": "DKAMCGDMNKI",
+            "target": "TargetEntity",
+            "attachPoint": "",
+            "offset": {
+                "x": 4.0,
+                "z": -4.0
+            },
+            "HMPJAIBPNND": ""
+        }
+    },
+    "Apparatus_Enigma_BionicNettler_TargetNearPosition3": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            }
+        },
+        "hasModel": true,
+        "combat": {
+            "property": {
+                "HP": 999999.0,
+                "attack": 15.0,
+                "defense": 999999.0,
+                "isInvincible": true,
+                "isGhostToEnemy": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "hitAutoRedirect": false,
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "AHCOGNAHOOF": {
+            "lifeInfinite": true
+        },
+        "move": {
+            "$type": "DKAMCGDMNKI",
+            "target": "TargetEntity",
+            "attachPoint": "",
+            "offset": {
+                "x": -4.0,
+                "z": -4.0
+            },
+            "HMPJAIBPNND": ""
+        }
+    },
+    "Apparatus_Enigma_BionicNettler_TargetNearPosition4": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            }
+        },
+        "hasModel": true,
+        "combat": {
+            "property": {
+                "HP": 999999.0,
+                "attack": 15.0,
+                "defense": 999999.0,
+                "isInvincible": true,
+                "isGhostToEnemy": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "hitAutoRedirect": false,
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "AHCOGNAHOOF": {
+            "lifeInfinite": true
+        },
+        "move": {
+            "$type": "DKAMCGDMNKI",
+            "target": "TargetEntity",
+            "attachPoint": "",
+            "offset": {
+                "x": -4.0,
+                "z": 4.0
+            },
+            "HMPJAIBPNND": ""
+        }
+    },
+    "Apparatus_Enigma_SupportPosition": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "FCAGPAEOLPI": 1.2000000476837158,
+                "HOJBBPFJMIL": 1.2000000476837158,
+                "CPGMBCECPEN": 1.2000000476837158
+            }
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 999999.0,
+                "attack": 15.0,
+                "defense": 999999.0,
+                "isGhostToEnemy": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "hitAutoRedirect": false,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "Monster_Apparatus_Enigma_SupportPosition",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 20.0
+        }
+    }
+}

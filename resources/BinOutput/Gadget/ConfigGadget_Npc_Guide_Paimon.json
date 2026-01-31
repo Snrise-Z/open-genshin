@@ -1,0 +1,692 @@
+{
+    "NPC_Guide_Paimon": {
+        "$type": "ConfigGadget",
+        "common": {
+            "mass": 0.10000000149011612,
+            "scale": 0.75
+        },
+        "headControl": {
+            "$type": "CKJGDIDMJPB"
+        },
+        "dither": {
+            "FAEPEFFEKFF": {
+                "enable": true
+            }
+        },
+        "hasModel": true,
+        "CCMHBLIAEOF": false,
+        "combat": {
+            "property": {
+                "HP": 999999.0,
+                "isInvincible": true,
+                "isLockHP": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "die": {
+                "dieForceDisappearTime": 0.0,
+                "dieDisappearEffect": ""
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Disappear",
+                "abilityName": "Gadget_Guide_Paimon_Disappear",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Eff",
+                "abilityName": "Gadget_Guide_Paimon_Eff",
+                "abilityOverride": ""
+            }
+        ],
+        "move": {
+            "$type": "EGPKIJBLBBM",
+            "MPMOPIIFDPO": {
+                "muteAll": true
+            },
+            "DHLIKMMHOKG": false,
+            "GDHCIJNGPDH": {
+                "maxSpeed": 15.0,
+                "LEGLPFCNNDN": 5.0,
+                "CFELKFMHGBN": 2.0,
+                "NEONDMFJGAL": 10.0,
+                "CPNIIGFFBEL": 10.0
+            },
+            "BGKPKBJPKKC": "RootNode"
+        },
+        "CFEIPLEGNFH": {
+            "APJGLOKDMCN": ""
+        },
+        "stateLayers": {
+            "defaultLayer": {
+                "$type": "GMHKGJPLHFD",
+                "DLEKAADOFBI": "",
+                "stateIDs": {
+                    "Born": {
+                        "$type": "BGNDILBMEIM",
+                        "DNPOFANDHPP": {
+                            "Appear": [
+                                "Emo_Gadget_Guide_Paimon_Appear",
+                                "Audio_Char_NPC_Paimon_Appear"
+                            ]
+                        },
+                        "DNEFGECPAAJ": [
+                            "DoSkill"
+                        ],
+                        "BEMELNECHCO": true
+                    },
+                    "Disappear": {
+                        "$type": "BGNDILBMEIM",
+                        "DNPOFANDHPP": {
+                            "Disappear": [
+                                "Emo_Gadget_Guide_Paimon_Disappear",
+                                "Gadget_Guide_Paimon_Disappear",
+                                "Audio_Char_NPC_Paimon_Disappear"
+                            ]
+                        },
+                        "DNEFGECPAAJ": [
+                            "DoSkill"
+                        ],
+                        "BEMELNECHCO": true
+                    },
+                    "NormalMove": {
+                        "$type": "BGNDILBMEIM",
+                        "DNPOFANDHPP": {
+                            "Standby": [
+                                "Audio_Char_NPC_Paimon_Walk"
+                            ],
+                            "Run": [
+                                "Audio_Char_NPC_Paimon_Walk"
+                            ]
+                        },
+                        "NOHGAIAMGLM": true,
+                        "DNEFGECPAAJ": [
+                            "DoSkill"
+                        ],
+                        "BEMELNECHCO": true
+                    },
+                    "Show": {
+                        "$type": "BGNDILBMEIM",
+                        "DNPOFANDHPP": {
+                            "Show_1": [
+                                "Emo_Gadget_Guide_Paimon_Show01",
+                                "Gadget_Guide_Paimon_Action",
+                                "Audio_Char_NPC_Paimon_Show_1"
+                            ],
+                            "Show_2": [
+                                "Emo_Gadget_Guide_Paimon_Show02",
+                                "Gadget_Guide_Paimon_Action",
+                                "Audio_Char_NPC_Paimon_Show_2"
+                            ],
+                            "Show_3": [
+                                "Emo_Gadget_Guide_Paimon_Show03",
+                                "Gadget_Guide_Paimon_Action",
+                                "Audio_Char_NPC_Paimon_Show_3"
+                            ],
+                            "Show_4": [
+                                "Emo_Gadget_Guide_Paimon_Show04",
+                                "Gadget_Guide_Paimon_Action",
+                                "Audio_Char_NPC_Paimon_Show_4"
+                            ]
+                        },
+                        "NOHGAIAMGLM": true,
+                        "DNEFGECPAAJ": [
+                            "DoSkill"
+                        ],
+                        "BEMELNECHCO": true
+                    },
+                    "Anger": {
+                        "$type": "BGNDILBMEIM",
+                        "DNPOFANDHPP": {
+                            "Anger": [
+                                "Emo_Gadget_Guide_Paimon_Anger",
+                                "Gadget_Guide_Paimon_Action",
+                                "Audio_Char_NPC_Paimon_Anger"
+                            ]
+                        },
+                        "NOHGAIAMGLM": true,
+                        "DNEFGECPAAJ": [
+                            "DoSkill"
+                        ],
+                        "BEMELNECHCO": true
+                    },
+                    "Domagic": {
+                        "$type": "BGNDILBMEIM",
+                        "DNPOFANDHPP": {
+                            "Domagic": [
+                                "Emo_Gadget_Guide_Paimon_Domagic",
+                                "Gadget_Guide_Paimon_Action",
+                                "Audio_Char_NPC_Paimon_Domagic"
+                            ]
+                        },
+                        "NOHGAIAMGLM": true,
+                        "DNEFGECPAAJ": [
+                            "DoSkill"
+                        ],
+                        "BEMELNECHCO": true
+                    },
+                    "Guide": {
+                        "$type": "BGNDILBMEIM",
+                        "DNPOFANDHPP": {
+                            "Guide": [
+                                "Emo_Gadget_Guide_Paimon_Guide",
+                                "Gadget_Guide_Paimon_Action",
+                                "Audio_Char_NPC_Paimon_Guide"
+                            ]
+                        },
+                        "NOHGAIAMGLM": true,
+                        "DNEFGECPAAJ": [
+                            "DoSkill"
+                        ],
+                        "BEMELNECHCO": true
+                    },
+                    "Hope": {
+                        "$type": "BGNDILBMEIM",
+                        "DNPOFANDHPP": {
+                            "Hope": [
+                                "Emo_Gadget_Guide_Paimon_Hope",
+                                "Gadget_Guide_Paimon_Action",
+                                "Audio_Char_NPC_Paimon_Hope"
+                            ]
+                        },
+                        "NOHGAIAMGLM": true,
+                        "DNEFGECPAAJ": [
+                            "DoSkill"
+                        ],
+                        "BEMELNECHCO": true
+                    },
+                    "Wave": {
+                        "$type": "BGNDILBMEIM",
+                        "DNPOFANDHPP": {
+                            "Wave": [
+                                "Emo_Gadget_Guide_Paimon_Wave",
+                                "Gadget_Guide_Paimon_Action",
+                                "Audio_Char_NPC_Paimon_Wave"
+                            ]
+                        },
+                        "NOHGAIAMGLM": true,
+                        "DNEFGECPAAJ": [
+                            "DoSkill"
+                        ],
+                        "BEMELNECHCO": true
+                    },
+                    "BlowNormal": {
+                        "$type": "BGNDILBMEIM",
+                        "DNPOFANDHPP": {
+                            "BlowNormal": [
+                                "Audio_Char_NPC_Paimon_BlowNormal"
+                            ]
+                        },
+                        "NOHGAIAMGLM": true,
+                        "DNEFGECPAAJ": [
+                            "DoSkill"
+                        ],
+                        "BEMELNECHCO": true
+                    },
+                    "BlowContinuous": {
+                        "$type": "BGNDILBMEIM",
+                        "DNPOFANDHPP": {
+                            "BlowContinuous": [
+                                "Audio_Char_NPC_Paimon_BlowSeveral"
+                            ]
+                        },
+                        "NOHGAIAMGLM": true,
+                        "DNEFGECPAAJ": [
+                            "DoSkill"
+                        ],
+                        "BEMELNECHCO": true
+                    }
+                }
+            }
+        },
+        "audio": {
+            "$type": "KKJKECCLPJI",
+            "CDPGEDJOKEB": "",
+            "animAudio": {
+                "onTransitionOut": [
+                    {
+                        "currentStateName": "Run",
+                        "audioEvent": {
+                            "text": "Stop_sfx_char_paimon_walk"
+                        },
+                        "otherStateNames": [
+                            "Standby",
+                            "Show_1",
+                            "Show_2",
+                            "Show_3",
+                            "Show_4"
+                        ],
+                        "usage": "Except"
+                    },
+                    {
+                        "currentStateName": "Standby",
+                        "audioEvent": {
+                            "text": "Stop_sfx_char_paimon_walk"
+                        },
+                        "otherStateNames": [
+                            "Run",
+                            "Show_1",
+                            "Show_2",
+                            "Show_3",
+                            "Show_4"
+                        ],
+                        "usage": "Except"
+                    },
+                    {
+                        "currentStateName": "Show_1",
+                        "audioEvent": {
+                            "text": "Stop_sfx_char_paimon_walk"
+                        }
+                    },
+                    {
+                        "currentStateName": "Show_2",
+                        "audioEvent": {
+                            "text": "Stop_sfx_char_paimon_walk"
+                        }
+                    },
+                    {
+                        "currentStateName": "Show_3",
+                        "audioEvent": {
+                            "text": "Stop_sfx_char_paimon_walk"
+                        }
+                    },
+                    {
+                        "currentStateName": "Show_4",
+                        "audioEvent": {
+                            "text": "Stop_sfx_char_paimon_walk"
+                        }
+                    },
+                    {
+                        "currentStateName": "BlowNormal",
+                        "audioEvent": {
+                            "text": "Stop_sfx_char_paimon_wind_blow"
+                        }
+                    },
+                    {
+                        "currentStateName": "BlowContinuous",
+                        "audioEvent": {
+                            "text": "Stop_sfx_char_paimon_wind_blow"
+                        }
+                    }
+                ]
+            }
+        },
+        "EHKBBGPCHBJ": {
+            "MBFJPLKAGOD": {
+                "x": 0.6000000238418579,
+                "y": 1.0499999523162842,
+                "z": -0.10000000149011612
+            },
+            "OKIONKKJEGH": 2.0,
+            "LLGEBKNIDFL": 9.0,
+            "PHAHOEINNID": 15.0
+        },
+        "bindEmotions": [
+            "Cutscene/ShortDialog/Cs_Emo_Avatar_Simple_Common_Set/Cs_Emo_Pet_Paimon_Ani_Show01",
+            "Cutscene/ShortDialog/Cs_Emo_Avatar_Simple_Common_Set/Cs_Emo_Pet_Paimon_Ani_Show02",
+            "Cutscene/ShortDialog/Cs_Emo_Avatar_Simple_Common_Set/Cs_Emo_Pet_Paimon_Ani_Show03",
+            "Cutscene/ShortDialog/Cs_Emo_Avatar_Simple_Common_Set/Cs_Emo_Pet_Paimon_Ani_Show04",
+            "Cutscene/ShortDialog/Cs_Emo_Avatar_Simple_Common_Set/Cs_Emo_Pet_Paimon_Ani_Anger",
+            "Cutscene/ShortDialog/Cs_Emo_Avatar_Simple_Common_Set/Cs_Emo_Pet_Paimon_Ani_Domagic",
+            "Cutscene/ShortDialog/Cs_Emo_Avatar_Simple_Common_Set/Cs_Emo_Pet_Paimon_Ani_Guide",
+            "Cutscene/ShortDialog/Cs_Emo_Avatar_Simple_Common_Set/Cs_Emo_Pet_Paimon_Ani_Hope",
+            "Cutscene/ShortDialog/Cs_Emo_Avatar_Simple_Common_Set/Cs_Emo_Pet_Paimon_Ani_Wave",
+            "Cutscene/ShortDialog/Cs_Emo_Avatar_Simple_Common_Set/Cs_Emo_Pet_Paimon_Ani_Appear",
+            "Cutscene/ShortDialog/Cs_Emo_Avatar_Simple_Common_Set/Cs_Emo_Pet_Paimon_Ani_Disappear"
+        ]
+    },
+    "NPC_Guide_Paimon_UnderWater": {
+        "$type": "ConfigGadget",
+        "common": {
+            "mass": 0.10000000149011612,
+            "scale": 0.75
+        },
+        "headControl": {
+            "$type": "CKJGDIDMJPB"
+        },
+        "dither": {
+            "FAEPEFFEKFF": {
+                "enable": true
+            }
+        },
+        "hasModel": true,
+        "CCMHBLIAEOF": false,
+        "combat": {
+            "property": {
+                "HP": 999999.0,
+                "isInvincible": true,
+                "isLockHP": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "die": {
+                "dieForceDisappearTime": 0.0,
+                "dieDisappearEffect": ""
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Disappear",
+                "abilityName": "Gadget_Guide_Paimon_Disappear",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Eff",
+                "abilityName": "Gadget_Guide_Paimon_Eff_UnderWater",
+                "abilityOverride": ""
+            }
+        ],
+        "move": {
+            "$type": "EGPKIJBLBBM",
+            "MPMOPIIFDPO": {
+                "muteAll": true
+            },
+            "DHLIKMMHOKG": false,
+            "GDHCIJNGPDH": {
+                "maxSpeed": 15.0,
+                "LEGLPFCNNDN": 5.0,
+                "CFELKFMHGBN": 2.0,
+                "NEONDMFJGAL": 10.0,
+                "CPNIIGFFBEL": 10.0
+            },
+            "BGKPKBJPKKC": "RootNode"
+        },
+        "CFEIPLEGNFH": {
+            "APJGLOKDMCN": ""
+        },
+        "stateLayers": {
+            "defaultLayer": {
+                "$type": "GMHKGJPLHFD",
+                "DLEKAADOFBI": "",
+                "stateIDs": {
+                    "Born": {
+                        "$type": "BGNDILBMEIM",
+                        "DNPOFANDHPP": {
+                            "Appear": [
+                                "Emo_Gadget_Guide_Paimon_Appear",
+                                "Audio_Char_NPC_Paimon_Appear"
+                            ]
+                        },
+                        "DNEFGECPAAJ": [
+                            "DoSkill"
+                        ],
+                        "BEMELNECHCO": true
+                    },
+                    "Disappear": {
+                        "$type": "BGNDILBMEIM",
+                        "DNPOFANDHPP": {
+                            "Disappear": [
+                                "Emo_Gadget_Guide_Paimon_Disappear",
+                                "Gadget_Guide_Paimon_Disappear",
+                                "Audio_Char_NPC_Paimon_Disappear"
+                            ]
+                        },
+                        "DNEFGECPAAJ": [
+                            "DoSkill"
+                        ],
+                        "BEMELNECHCO": true
+                    },
+                    "NormalMove": {
+                        "$type": "BGNDILBMEIM",
+                        "DNPOFANDHPP": {
+                            "Standby": [
+                                "Audio_Char_NPC_Paimon_Walk"
+                            ],
+                            "Run": [
+                                "Audio_Char_NPC_Paimon_Walk"
+                            ]
+                        },
+                        "NOHGAIAMGLM": true,
+                        "DNEFGECPAAJ": [
+                            "DoSkill"
+                        ],
+                        "BEMELNECHCO": true
+                    },
+                    "Show": {
+                        "$type": "BGNDILBMEIM",
+                        "DNPOFANDHPP": {
+                            "Show_1": [
+                                "Emo_Gadget_Guide_Paimon_Show01",
+                                "Gadget_Guide_Paimon_Action",
+                                "Audio_Char_NPC_Paimon_Show_1"
+                            ],
+                            "Show_2": [
+                                "Emo_Gadget_Guide_Paimon_Show02",
+                                "Gadget_Guide_Paimon_Action",
+                                "Audio_Char_NPC_Paimon_Show_2"
+                            ],
+                            "Show_3": [
+                                "Emo_Gadget_Guide_Paimon_Show03",
+                                "Gadget_Guide_Paimon_Action",
+                                "Audio_Char_NPC_Paimon_Show_3"
+                            ],
+                            "Show_4": [
+                                "Emo_Gadget_Guide_Paimon_Show04",
+                                "Gadget_Guide_Paimon_Action",
+                                "Audio_Char_NPC_Paimon_Show_4"
+                            ]
+                        },
+                        "NOHGAIAMGLM": true,
+                        "DNEFGECPAAJ": [
+                            "DoSkill"
+                        ],
+                        "BEMELNECHCO": true
+                    },
+                    "Anger": {
+                        "$type": "BGNDILBMEIM",
+                        "DNPOFANDHPP": {
+                            "Anger": [
+                                "Emo_Gadget_Guide_Paimon_Anger",
+                                "Gadget_Guide_Paimon_Action",
+                                "Audio_Char_NPC_Paimon_Anger"
+                            ]
+                        },
+                        "NOHGAIAMGLM": true,
+                        "DNEFGECPAAJ": [
+                            "DoSkill"
+                        ],
+                        "BEMELNECHCO": true
+                    },
+                    "Domagic": {
+                        "$type": "BGNDILBMEIM",
+                        "DNPOFANDHPP": {
+                            "Domagic": [
+                                "Emo_Gadget_Guide_Paimon_Domagic",
+                                "Gadget_Guide_Paimon_Action",
+                                "Audio_Char_NPC_Paimon_Domagic"
+                            ]
+                        },
+                        "NOHGAIAMGLM": true,
+                        "DNEFGECPAAJ": [
+                            "DoSkill"
+                        ],
+                        "BEMELNECHCO": true
+                    },
+                    "Guide": {
+                        "$type": "BGNDILBMEIM",
+                        "DNPOFANDHPP": {
+                            "Guide": [
+                                "Emo_Gadget_Guide_Paimon_Guide",
+                                "Gadget_Guide_Paimon_Action",
+                                "Audio_Char_NPC_Paimon_Guide"
+                            ]
+                        },
+                        "NOHGAIAMGLM": true,
+                        "DNEFGECPAAJ": [
+                            "DoSkill"
+                        ],
+                        "BEMELNECHCO": true
+                    },
+                    "Hope": {
+                        "$type": "BGNDILBMEIM",
+                        "DNPOFANDHPP": {
+                            "Hope": [
+                                "Emo_Gadget_Guide_Paimon_Hope",
+                                "Gadget_Guide_Paimon_Action",
+                                "Audio_Char_NPC_Paimon_Hope"
+                            ]
+                        },
+                        "NOHGAIAMGLM": true,
+                        "DNEFGECPAAJ": [
+                            "DoSkill"
+                        ],
+                        "BEMELNECHCO": true
+                    },
+                    "Wave": {
+                        "$type": "BGNDILBMEIM",
+                        "DNPOFANDHPP": {
+                            "Wave": [
+                                "Emo_Gadget_Guide_Paimon_Wave",
+                                "Gadget_Guide_Paimon_Action",
+                                "Audio_Char_NPC_Paimon_Wave"
+                            ]
+                        },
+                        "NOHGAIAMGLM": true,
+                        "DNEFGECPAAJ": [
+                            "DoSkill"
+                        ],
+                        "BEMELNECHCO": true
+                    },
+                    "BlowNormal": {
+                        "$type": "BGNDILBMEIM",
+                        "DNPOFANDHPP": {
+                            "BlowNormal": [
+                                "Audio_Char_NPC_Paimon_BlowNormal"
+                            ]
+                        },
+                        "NOHGAIAMGLM": true,
+                        "DNEFGECPAAJ": [
+                            "DoSkill"
+                        ],
+                        "BEMELNECHCO": true
+                    },
+                    "BlowContinuous": {
+                        "$type": "BGNDILBMEIM",
+                        "DNPOFANDHPP": {
+                            "BlowContinuous": [
+                                "Audio_Char_NPC_Paimon_BlowSeveral"
+                            ]
+                        },
+                        "NOHGAIAMGLM": true,
+                        "DNEFGECPAAJ": [
+                            "DoSkill"
+                        ],
+                        "BEMELNECHCO": true
+                    }
+                }
+            }
+        },
+        "audio": {
+            "$type": "KKJKECCLPJI",
+            "CDPGEDJOKEB": "",
+            "animAudio": {
+                "onTransitionOut": [
+                    {
+                        "currentStateName": "Run",
+                        "audioEvent": {
+                            "text": "Stop_sfx_char_paimon_walk"
+                        },
+                        "otherStateNames": [
+                            "Standby",
+                            "Show_1",
+                            "Show_2",
+                            "Show_3",
+                            "Show_4"
+                        ],
+                        "usage": "Except"
+                    },
+                    {
+                        "currentStateName": "Standby",
+                        "audioEvent": {
+                            "text": "Stop_sfx_char_paimon_walk"
+                        },
+                        "otherStateNames": [
+                            "Run",
+                            "Show_1",
+                            "Show_2",
+                            "Show_3",
+                            "Show_4"
+                        ],
+                        "usage": "Except"
+                    },
+                    {
+                        "currentStateName": "Show_1",
+                        "audioEvent": {
+                            "text": "Stop_sfx_char_paimon_walk"
+                        }
+                    },
+                    {
+                        "currentStateName": "Show_2",
+                        "audioEvent": {
+                            "text": "Stop_sfx_char_paimon_walk"
+                        }
+                    },
+                    {
+                        "currentStateName": "Show_3",
+                        "audioEvent": {
+                            "text": "Stop_sfx_char_paimon_walk"
+                        }
+                    },
+                    {
+                        "currentStateName": "Show_4",
+                        "audioEvent": {
+                            "text": "Stop_sfx_char_paimon_walk"
+                        }
+                    },
+                    {
+                        "currentStateName": "BlowNormal",
+                        "audioEvent": {
+                            "text": "Stop_sfx_char_paimon_wind_blow"
+                        }
+                    },
+                    {
+                        "currentStateName": "BlowContinuous",
+                        "audioEvent": {
+                            "text": "Stop_sfx_char_paimon_wind_blow"
+                        }
+                    }
+                ]
+            }
+        },
+        "EHKBBGPCHBJ": {
+            "MBFJPLKAGOD": {
+                "x": 0.6000000238418579,
+                "y": 1.0499999523162842,
+                "z": -0.10000000149011612
+            },
+            "OKIONKKJEGH": 2.0,
+            "LLGEBKNIDFL": 9.0,
+            "PHAHOEINNID": 15.0
+        },
+        "bindEmotions": [
+            "Cutscene/ShortDialog/Cs_Emo_Avatar_Simple_Common_Set/Cs_Emo_Pet_Paimon_Ani_Show01",
+            "Cutscene/ShortDialog/Cs_Emo_Avatar_Simple_Common_Set/Cs_Emo_Pet_Paimon_Ani_Show02",
+            "Cutscene/ShortDialog/Cs_Emo_Avatar_Simple_Common_Set/Cs_Emo_Pet_Paimon_Ani_Show03",
+            "Cutscene/ShortDialog/Cs_Emo_Avatar_Simple_Common_Set/Cs_Emo_Pet_Paimon_Ani_Show04",
+            "Cutscene/ShortDialog/Cs_Emo_Avatar_Simple_Common_Set/Cs_Emo_Pet_Paimon_Ani_Anger",
+            "Cutscene/ShortDialog/Cs_Emo_Avatar_Simple_Common_Set/Cs_Emo_Pet_Paimon_Ani_Domagic",
+            "Cutscene/ShortDialog/Cs_Emo_Avatar_Simple_Common_Set/Cs_Emo_Pet_Paimon_Ani_Guide",
+            "Cutscene/ShortDialog/Cs_Emo_Avatar_Simple_Common_Set/Cs_Emo_Pet_Paimon_Ani_Hope",
+            "Cutscene/ShortDialog/Cs_Emo_Avatar_Simple_Common_Set/Cs_Emo_Pet_Paimon_Ani_Wave",
+            "Cutscene/ShortDialog/Cs_Emo_Avatar_Simple_Common_Set/Cs_Emo_Pet_Paimon_Ani_Appear",
+            "Cutscene/ShortDialog/Cs_Emo_Avatar_Simple_Common_Set/Cs_Emo_Pet_Paimon_Ani_Disappear"
+        ]
+    }
+}

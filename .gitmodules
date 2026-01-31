@@ -1,0 +1,3 @@
+[submodule "Grasscutter"]
+	path = Grasscutter
+	url = https://github.com/Grasscutters/Grasscutter.git

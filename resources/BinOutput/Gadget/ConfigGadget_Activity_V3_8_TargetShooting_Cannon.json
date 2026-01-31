@@ -1,0 +1,257 @@
+{
+    "SceneObj_Penumbra_Common_Property_Ani_Prop_Cannon_02": {
+        "$type": "ConfigGadget",
+        "hasModel": true,
+        "combat": {
+            "property": {
+                "HP": 99999.0,
+                "attack": 20.0,
+                "weight": 50.0,
+                "isLockHP": true,
+                "ignoreDamageToSelf": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "hitAutoRedirect": false,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "TargetShooting_Cannon_Init",
+                "abilityName": "TargetShooting_Cannon_Init",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "TargetShooting_Extra_Magzine",
+                "abilityName": "TargetShooting_Extra_Magzine",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "TargetShooting_Reload",
+                "abilityName": "TargetShooting_Reload",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "TargetShooting_Cannon_Shot",
+                "abilityName": "TargetShooting_Cannon_Shot",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Scene_RockGadget_Summon_Detect",
+                "abilityName": "Scene_RockGadget_Summon_Detect",
+                "abilityOverride": ""
+            }
+        ],
+        "field": {
+            "concernType": "AllAvatars",
+            "shape": "CircleR3H5",
+            "PMOHIIJOLNG": "",
+            "triggerInfinite": true,
+            "lifeInfinite": true,
+            "checkInterval": 0.10000000149011612,
+            "overwriteCampType": true,
+            "campType": "SelfCamp",
+            "JHEKALHPHBK": "",
+            "JFLLEDMCPLF": ""
+        },
+        "EOLFAMFPCOL": {
+            "AOGIJKALGNB": "TEST/TEST_Chest_Btn",
+            "DLLLIKCMJMP": "UI_GADGET_TargetShooting_Cannon_OPERATE",
+            "IGMHLCNPBHI": "WidgetMPSupport",
+            "FGAFOJBEILG": [
+                "TargetShooting_Cannon_Init"
+            ],
+            "icon": "",
+            "GEALIGKGCBF": "",
+            "NFJICIGABPE": "",
+            "MIHHAGGNIIO": "",
+            "BGOMCAHPHEC": true
+        },
+        "CFEIPLEGNFH": {
+            "OEILCPIEKNF": {
+                "BEEIKAEOCIN": "CameraPivot",
+                "COMCNOFFGLH": {
+                    "y": 2.5,
+                    "z": -1.0
+                },
+                "MBKJFBHJBBC": 6.0,
+                "GAHPJLBHHIG": 50.0,
+                "GLBBGDANBAD": 22,
+                "FMPHJCBAECK": -55.0,
+                "MHDJCHNNOLB": 25.0,
+                "AJMHNBNMEBC": -90.0,
+                "GDKICNHHJIE": 90.0,
+                "CIANCFBMFFD": true,
+                "ABAFGNCDEIO": [
+                    70291144,
+                    70291145,
+                    70291146,
+                    70291147,
+                    70291148,
+                    70291149,
+                    70291150
+                ],
+                "CFIIKFKKLCA": 4.411799907684326,
+                "BPLHIMECKCC": 0.6499999761581421,
+                "HLNFCNKHMBJ": 0.44999998807907104,
+                "KMFLABJAKNP": "TargetShooting_Cannon_Shot",
+                "LGBKHIMEFPF": "TargetShooting_Reload",
+                "GLMJBJLOMED": "_LOCAL_MAX_AMMO",
+                "BFCDGNAJNLO": "_CURRENT_AMMO_NUMBER",
+                "AMNFKOPCAID": "_AMMO_RELOADING"
+            },
+            "APJGLOKDMCN": ""
+        }
+    },
+    "Penumbra_CannonBall_01": {
+        "$type": "ConfigGadget",
+        "common": {
+            "disableTickDistance": 100000.0
+        },
+        "model": {
+            "bornEffect": "",
+            "attachEffect": ""
+        },
+        "hasModel": true,
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 99999.0,
+                "attack": 10000.0,
+                "defense": 99999.0,
+                "weight": 1.0,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Bullet_TargetShooting_CannonBall",
+                "abilityName": "Bullet_TargetShooting_CannonBall",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 50.0
+        },
+        "move": {
+            "$type": "MPNKKNJBNCD",
+            "speed": 80.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "JPDDBBHJAAH": true,
+            "CIHFFMJBELB": 80.0,
+            "IPBPLMGOJKC": 20.0,
+            "HMOHCMJMLNE": 0.10000000149011612
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Bullet_TargetShooting_CannonBall"
+                }
+            ],
+            "JPNAMDFCBFN": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Bullet_TargetShooting_CannonBall"
+                }
+            ]
+        }
+    },
+    "Penumbra_CannonBall_02": {
+        "$type": "ConfigGadget",
+        "common": {
+            "disableTickDistance": 100000.0
+        },
+        "model": {
+            "bornEffect": "",
+            "attachEffect": ""
+        },
+        "hasModel": true,
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 99999.0,
+                "attack": 10000.0,
+                "defense": 99999.0,
+                "weight": 1.0,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Bullet_TargetShooting_ExplosiveCannonBall",
+                "abilityName": "Bullet_TargetShooting_ExplosiveCannonBall",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 50.0
+        },
+        "move": {
+            "$type": "MPNKKNJBNCD",
+            "speed": 120.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "JPDDBBHJAAH": true,
+            "CIHFFMJBELB": 80.0,
+            "IPBPLMGOJKC": 20.0,
+            "HMOHCMJMLNE": 0.10000000149011612
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Bullet_TargetShooting_ExplosiveCannonBall"
+                }
+            ],
+            "JPNAMDFCBFN": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Bullet_TargetShooting_ExplosiveCannonBall"
+                }
+            ]
+        }
+    }
+}

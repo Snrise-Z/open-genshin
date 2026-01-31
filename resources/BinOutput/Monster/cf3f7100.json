@@ -1,0 +1,1984 @@
+{
+    "common": {
+        "effectAttachShape": {
+            "$type": "BNMOHLDPIIH",
+            "CDOIALFJGFK": "EffectMesh"
+        },
+        "mass": 30.0,
+        "affectedByWorld": true,
+        "checkInSurface": true,
+        "scale": 1.100000023841858,
+        "useGrassDisplacement": true
+    },
+    "headControl": {
+        "$type": "CKJGDIDMJPB",
+        "useHeadControl": true,
+        "DHFKIFJJEMB": [
+            "NormalIdle/Standby",
+            "NormalMove/WalkForward",
+            "NormalMove/WalkBack",
+            "NormalMove/WalkRight",
+            "NormalMove/WalkLeft",
+            "NormalMove/Run",
+            "Turn/TurnLeft",
+            "Turn/TurnRight"
+        ]
+    },
+    "model": {
+        "HOPACANEMDO": "Eff_Monster_Common_Born",
+        "DCFFDLFJPBL": ""
+    },
+    "combat": {
+        "property": {
+            "endureType": "Monster_Minion",
+            "weight": 75.0
+        },
+        "beHit": {
+            "hitBloodEffect": ""
+        },
+        "combatLock": {
+            "lockShape": "CircleLockEnemy",
+            "lockType": "Avatar&Monster_Lv4"
+        },
+        "die": {
+            "hasAnimatorDie": true,
+            "dieEndTime": 2.0,
+            "dieForceDisappearTime": 4.0,
+            "dieDisappearEffect": "Eff_Death_Common",
+            "dieShaderData": "MonsterDie",
+            "dieModelFadeDelay": 0.5,
+            "useRagDoll": true,
+            "muteHitBox": true,
+            "dieDenyLockOn": true,
+            "dieIsGhostToEnemy": true,
+            "dieIgnoreTriggerBullet": true,
+            "muteBillboard": true,
+            "mutePushCollider": true
+        },
+        "animEvents": {
+            "AtkL01": {
+                "attackPattern": {
+                    "$type": "FPJICLLGBLO",
+                    "triggerType": "TriggerNoRepeat",
+                    "born": {
+                        "$type": "AJCFIBNMGKO",
+                        "offset": {
+                            "EMBMLEBGFOI": 0.0,
+                            "NABPJFNICAE": 0.0,
+                            "MLOLIKEJCKB": -0.5
+                        }
+                    },
+                    "KMDPCOICLCN": 75.0,
+                    "DLFACKMBPCH": 2.0
+                },
+                "attackInfo": {
+                    "attackTag": "",
+                    "attenuationTag": "",
+                    "attenuationGroup": "default",
+                    "attackProperty": {
+                        "ACKCDHKEGCK": 1.0,
+                        "JIICGJODDDM": 0.0,
+                        "bonusCriticalHurt": 100.0,
+                        "strikeType": "Blunt",
+                        "enBreak": 50.0,
+                        "attackType": "Melee",
+                        "damagePercentage": 0.0
+                    },
+                    "hitPattern": {
+                        "onHitEffectName": "default",
+                        "hitImpulseType": "LV2"
+                    }
+                }
+            },
+            "AtkL02": {
+                "attackPattern": {
+                    "$type": "FPJICLLGBLO",
+                    "triggerType": "TriggerNoRepeat",
+                    "born": {
+                        "$type": "AJCFIBNMGKO",
+                        "offset": {
+                            "EMBMLEBGFOI": 0.0,
+                            "NABPJFNICAE": 0.0,
+                            "MLOLIKEJCKB": -0.5
+                        }
+                    },
+                    "KMDPCOICLCN": 75.0,
+                    "DLFACKMBPCH": 2.0
+                },
+                "attackInfo": {
+                    "attackTag": "",
+                    "attenuationTag": "",
+                    "attenuationGroup": "default",
+                    "attackProperty": {
+                        "ACKCDHKEGCK": 1.0,
+                        "JIICGJODDDM": 0.0,
+                        "bonusCriticalHurt": 100.0,
+                        "strikeType": "Blunt",
+                        "enBreak": 50.0,
+                        "attackType": "Melee",
+                        "damagePercentage": 0.0
+                    },
+                    "hitPattern": {
+                        "onHitEffectName": "default",
+                        "hitImpulseType": "LV2"
+                    }
+                }
+            },
+            "AtkL03": {
+                "attackPattern": {
+                    "$type": "FPJICLLGBLO",
+                    "triggerType": "TriggerNoRepeat",
+                    "born": {
+                        "$type": "AJCFIBNMGKO",
+                        "offset": {
+                            "EMBMLEBGFOI": 0.0,
+                            "NABPJFNICAE": 0.0,
+                            "MLOLIKEJCKB": -0.5
+                        }
+                    },
+                    "KMDPCOICLCN": 75.0,
+                    "DLFACKMBPCH": 2.0
+                },
+                "attackInfo": {
+                    "attackTag": "",
+                    "attenuationTag": "",
+                    "attenuationGroup": "default",
+                    "attackProperty": {
+                        "ACKCDHKEGCK": 1.25,
+                        "JIICGJODDDM": 0.0,
+                        "bonusCriticalHurt": 100.0,
+                        "strikeType": "Blunt",
+                        "enBreak": 100.0,
+                        "attackType": "Melee",
+                        "damagePercentage": 0.0
+                    },
+                    "hitPattern": {
+                        "onHitEffectName": "default",
+                        "hitImpulseType": "LV4"
+                    },
+                    "cameraShake": {
+                        "shakeType": "HitVector",
+                        "shakeRange": 0.03999999910593033,
+                        "shakeTime": 0.09000000357627869,
+                        "shakeDir": {
+                            "y": -1.0
+                        }
+                    }
+                }
+            },
+            "AtkH": {
+                "attackPattern": {
+                    "$type": "FPJICLLGBLO",
+                    "triggerType": "TriggerNoRepeat",
+                    "born": {
+                        "$type": "AJCFIBNMGKO",
+                        "offset": {
+                            "EMBMLEBGFOI": 0.0,
+                            "NABPJFNICAE": 0.0,
+                            "MLOLIKEJCKB": -0.5
+                        }
+                    },
+                    "KMDPCOICLCN": 75.0,
+                    "DLFACKMBPCH": 1.75
+                },
+                "attackInfo": {
+                    "attackTag": "",
+                    "attenuationTag": "",
+                    "attenuationGroup": "default",
+                    "attackProperty": {
+                        "ACKCDHKEGCK": 2.0,
+                        "JIICGJODDDM": 0.0,
+                        "bonusCriticalHurt": 100.0,
+                        "strikeType": "Blunt",
+                        "enBreak": 200.0,
+                        "attackType": "Melee",
+                        "damagePercentage": 0.0
+                    },
+                    "hitPattern": {
+                        "onHitEffectName": "default",
+                        "hitImpulseType": "LV5"
+                    },
+                    "cameraShake": {
+                        "shakeType": "HitVector",
+                        "shakeRange": 0.05999999865889549,
+                        "shakeTime": 0.09000000357627869,
+                        "shakeDir": {
+                            "y": -1.0
+                        }
+                    }
+                }
+            },
+            "AtkNormal": {
+                "attackPattern": {
+                    "$type": "FPJICLLGBLO",
+                    "triggerType": "TriggerNoRepeat",
+                    "born": {
+                        "$type": "AJCFIBNMGKO",
+                        "offset": {
+                            "EMBMLEBGFOI": 0.0,
+                            "NABPJFNICAE": 0.0,
+                            "MLOLIKEJCKB": 0.0
+                        }
+                    },
+                    "KMDPCOICLCN": 60.0,
+                    "DLFACKMBPCH": 1.75
+                },
+                "attackInfo": {
+                    "attackTag": "",
+                    "attenuationTag": "",
+                    "attenuationGroup": "default",
+                    "attackProperty": {
+                        "ACKCDHKEGCK": 1.0,
+                        "JIICGJODDDM": 0.0,
+                        "bonusCriticalHurt": 100.0,
+                        "strikeType": "Blunt",
+                        "enBreak": 80.0,
+                        "attackType": "Melee",
+                        "damagePercentage": 0.0
+                    },
+                    "hitPattern": {
+                        "onHitEffectName": "default",
+                        "hitImpulseType": "LV3",
+                        "hitHaltTimeScale": 0.009999999776482582
+                    }
+                }
+            },
+            "AtkNo": {
+                "attackPattern": {
+                    "$type": "FPJICLLGBLO",
+                    "triggerType": "TriggerNoRepeat",
+                    "born": {
+                        "$type": "AJCFIBNMGKO",
+                        "offset": {
+                            "EMBMLEBGFOI": 0.0,
+                            "NABPJFNICAE": 0.0,
+                            "MLOLIKEJCKB": -0.5
+                        }
+                    },
+                    "KMDPCOICLCN": 60.0,
+                    "DLFACKMBPCH": 1.5
+                },
+                "attackInfo": {
+                    "attackTag": "",
+                    "attenuationTag": "",
+                    "attenuationGroup": "default",
+                    "attackProperty": {
+                        "ACKCDHKEGCK": 0.75,
+                        "JIICGJODDDM": 0.0,
+                        "bonusCriticalHurt": 100.0,
+                        "strikeType": "Blunt",
+                        "enBreak": 60.0,
+                        "attackType": "Melee",
+                        "damagePercentage": 0.0
+                    },
+                    "hitPattern": {
+                        "onHitEffectName": "default",
+                        "hitImpulseType": "LV3",
+                        "hitHaltTimeScale": 0.009999999776482582
+                    }
+                }
+            },
+            "DefendAttack_BS": {
+                "attackPattern": {
+                    "$type": "FPJICLLGBLO",
+                    "triggerType": "TriggerNoRepeat",
+                    "born": {
+                        "$type": "AJCFIBNMGKO",
+                        "offset": {
+                            "EMBMLEBGFOI": 0.0,
+                            "NABPJFNICAE": 0.0,
+                            "MLOLIKEJCKB": -0.5
+                        },
+                        "NLICIODEGDO": {
+                            "$type": "BMAMOFPPNBD",
+                            "JOEDEGAHBHC": {
+                                "EMBMLEBGFOI": 0.0,
+                                "NABPJFNICAE": -30.0,
+                                "MLOLIKEJCKB": 0.0
+                            }
+                        }
+                    },
+                    "KMDPCOICLCN": 120.0,
+                    "DLFACKMBPCH": 1.5
+                },
+                "attackInfo": {
+                    "attackTag": "",
+                    "attenuationTag": "",
+                    "attenuationGroup": "default",
+                    "attackProperty": {
+                        "ACKCDHKEGCK": 0.0,
+                        "JIICGJODDDM": 0.0,
+                        "bonusCriticalHurt": 100.0,
+                        "enBreak": 60.0,
+                        "damagePercentage": 0.0
+                    },
+                    "hitPattern": {
+                        "onHitEffectName": "default",
+                        "hitImpulseType": "LV3",
+                        "hitHaltTime": 0.11999999731779099,
+                        "hitHaltTimeScale": 0.10000000149011612,
+                        "muteHitText": true
+                    }
+                }
+            },
+            "DefendAttack_AS": {
+                "attackPattern": {
+                    "$type": "FPJICLLGBLO",
+                    "triggerType": "TriggerNoRepeat",
+                    "born": {
+                        "$type": "AJCFIBNMGKO",
+                        "offset": {
+                            "EMBMLEBGFOI": 0.0,
+                            "NABPJFNICAE": 0.0,
+                            "MLOLIKEJCKB": -0.5
+                        }
+                    },
+                    "KMDPCOICLCN": 75.0,
+                    "DLFACKMBPCH": 2.0
+                },
+                "attackInfo": {
+                    "attackTag": "",
+                    "attenuationTag": "",
+                    "attenuationGroup": "default",
+                    "attackProperty": {
+                        "ACKCDHKEGCK": 1.0,
+                        "JIICGJODDDM": 0.0,
+                        "bonusCriticalHurt": 100.0,
+                        "strikeType": "Blunt",
+                        "enBreak": 60.0,
+                        "attackType": "Melee",
+                        "damagePercentage": 0.0
+                    },
+                    "hitPattern": {
+                        "onHitEffectName": "default",
+                        "hitImpulseType": "LV4"
+                    }
+                }
+            }
+        }
+    },
+    "equipController": {
+        "sheathPoint": "",
+        "attachPoints": {
+            "equip01": "WeaponR",
+            "equip02": "WeaponL"
+        }
+    },
+    "abilities": [
+        {
+            "abilityID": "Alert",
+            "abilityName": "Hili_None_Alert",
+            "abilityOverride": "",
+            "lightWeightRemove": true
+        },
+        {
+            "abilityID": "AwakeAlert",
+            "abilityName": "Hili_None_AwakeAlert",
+            "abilityOverride": "",
+            "lightWeightRemove": true
+        },
+        {
+            "abilityID": "SteerAttack",
+            "abilityName": "Hili_None_SteerAttack",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "Shoot",
+            "abilityName": "Hili_None_ShootArrow_WithRandom",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "ThrowPebble_Effect",
+            "abilityName": "Hili_None_ThrowPebble_Effect",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "ThrowPebble",
+            "abilityName": "Hili_None_ThrowPebble",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "ThrowPebble_Shield_Effect",
+            "abilityName": "Hili_None_ThrowPebble_Shield_Effect",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "ThrowPebble_Shield",
+            "abilityName": "Hili_None_ThrowPebble_Shield",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "Hili_None_SpecialsState_Weapon",
+            "abilityName": "Hili_None_SpecialsState_Weapon",
+            "abilityOverride": "",
+            "lightWeightRemove": true
+        },
+        {
+            "abilityID": "Hili_None_SpecialsState_HideWeapon",
+            "abilityName": "Hili_None_SpecialsState_HideWeapon",
+            "abilityOverride": "",
+            "lightWeightRemove": true
+        },
+        {
+            "abilityID": "SpecialsState_AIStateInitial",
+            "abilityName": "Hili_None_SpecialsState_AIStateInitial",
+            "abilityOverride": "",
+            "lightWeightRemove": true
+        },
+        {
+            "abilityID": "EquipFlagManager",
+            "abilityName": "Hili_None_EquipFlagManager",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "Hili_ActionPointRegister",
+            "abilityName": "Hili_None_ActionPointRegister",
+            "abilityOverride": "",
+            "lightWeightRemove": true
+        },
+        {
+            "abilityID": "TurnToSleep",
+            "abilityName": "Hili_None_TurnToSleep",
+            "abilityOverride": "",
+            "lightWeightRemove": true
+        },
+        {
+            "abilityID": "OutOfSleep",
+            "abilityName": "Hili_None_OutOfSleep",
+            "abilityOverride": "",
+            "lightWeightRemove": true
+        },
+        {
+            "abilityID": "TurnToSit",
+            "abilityName": "Hili_None_TurnToSit",
+            "abilityOverride": "",
+            "lightWeightRemove": true
+        },
+        {
+            "abilityID": "OutOfSit",
+            "abilityName": "Hili_None_OutOfSit",
+            "abilityOverride": "",
+            "lightWeightRemove": true
+        },
+        {
+            "abilityID": "TurnToPractice",
+            "abilityName": "Hili_None_TurnToPractice",
+            "abilityOverride": "",
+            "lightWeightRemove": true
+        },
+        {
+            "abilityID": "OutOfPractice",
+            "abilityName": "Hili_None_OutOfPractice",
+            "abilityOverride": "",
+            "lightWeightRemove": true
+        },
+        {
+            "abilityID": "TurnToThreat",
+            "abilityName": "Hili_None_TurnToThreat",
+            "abilityOverride": "",
+            "lightWeightRemove": true
+        },
+        {
+            "abilityID": "OutOfThreat",
+            "abilityName": "Hili_None_OutOfThreat",
+            "abilityOverride": "",
+            "lightWeightRemove": true
+        },
+        {
+            "abilityID": "TurnToSurround",
+            "abilityName": "Hili_None_TurnToSurround",
+            "abilityOverride": "",
+            "lightWeightRemove": true
+        },
+        {
+            "abilityID": "OutOfSurround",
+            "abilityName": "Hili_None_OutOfSurround",
+            "abilityOverride": "",
+            "lightWeightRemove": true
+        },
+        {
+            "abilityID": "TurnToBuild",
+            "abilityName": "Hili_None_TurnToBuild",
+            "abilityOverride": "",
+            "lightWeightRemove": true
+        },
+        {
+            "abilityID": "OutOfBuild",
+            "abilityName": "Hili_None_OutOfBuild",
+            "abilityOverride": "",
+            "lightWeightRemove": true
+        },
+        {
+            "abilityID": "Build_Effect",
+            "abilityName": "Hili_None_Build_Effect",
+            "abilityOverride": "",
+            "lightWeightRemove": true
+        },
+        {
+            "abilityID": "TurnToMake",
+            "abilityName": "Hili_None_TurnToMake",
+            "abilityOverride": "",
+            "lightWeightRemove": true
+        },
+        {
+            "abilityID": "OutOfMake",
+            "abilityName": "Hili_None_OutOfMake",
+            "abilityOverride": "",
+            "lightWeightRemove": true
+        },
+        {
+            "abilityID": "Make_Effect",
+            "abilityName": "Hili_None_Make_Effect",
+            "abilityOverride": "",
+            "lightWeightRemove": true
+        },
+        {
+            "abilityID": "TurnToSearch",
+            "abilityName": "Hili_None_TurnToSearch",
+            "abilityOverride": "",
+            "lightWeightRemove": true
+        },
+        {
+            "abilityID": "OutOfSearch",
+            "abilityName": "Hili_None_OutOfSearch",
+            "abilityOverride": "",
+            "lightWeightRemove": true
+        },
+        {
+            "abilityID": "Search_Effect",
+            "abilityName": "Hili_None_Search_Effect",
+            "abilityOverride": "",
+            "lightWeightRemove": true
+        },
+        {
+            "abilityID": "TurnToDance",
+            "abilityName": "Hili_None_TurnToDance",
+            "abilityOverride": "",
+            "lightWeightRemove": true
+        },
+        {
+            "abilityID": "OutOfDance",
+            "abilityName": "Hili_None_OutOfDance",
+            "abilityOverride": "",
+            "lightWeightRemove": true
+        },
+        {
+            "abilityID": "",
+            "abilityName": "Hili_None_TurnToMining",
+            "abilityOverride": "",
+            "lightWeightRemove": true
+        },
+        {
+            "abilityID": "",
+            "abilityName": "Hili_None_OutOfMining",
+            "abilityOverride": "",
+            "lightWeightRemove": true
+        }
+    ],
+    "stateLayers": {
+        "defaultLayer": {
+            "$type": "GMHKGJPLHFD",
+            "DLEKAADOFBI": "",
+            "stateIDs": {
+                "NormalIdle": {
+                    "$type": "BGNDILBMEIM",
+                    "DNPOFANDHPP": {
+                        "Standby": [],
+                        "Born": []
+                    },
+                    "NOHGAIAMGLM": true,
+                    "KDAJCNNPANO": true,
+                    "DNEFGECPAAJ": [
+                        "DoSkill"
+                    ]
+                },
+                "NormalMove": {
+                    "$type": "BGNDILBMEIM",
+                    "DNPOFANDHPP": {
+                        "WalkForward": [
+                            "Audio_Hili_Walk"
+                        ],
+                        "WalkBack": [
+                            "Audio_Hili_Walk"
+                        ],
+                        "WalkRight": [
+                            "Audio_Hili_Walk"
+                        ],
+                        "WalkLeft": [
+                            "Audio_Hili_Walk"
+                        ],
+                        "Run": [
+                            "Audio_Hili_Run"
+                        ]
+                    },
+                    "NOHGAIAMGLM": true,
+                    "KDAJCNNPANO": true,
+                    "DNEFGECPAAJ": [
+                        "DoSkill"
+                    ],
+                    "BEMELNECHCO": true
+                },
+                "Turn": {
+                    "$type": "BGNDILBMEIM",
+                    "DNPOFANDHPP": {
+                        "TurnLeft": [
+                            "Audio_Hili_Walk"
+                        ],
+                        "TurnRight": [
+                            "Audio_Hili_Walk"
+                        ]
+                    },
+                    "NOHGAIAMGLM": true,
+                    "KDAJCNNPANO": true,
+                    "DNEFGECPAAJ": [
+                        "DoSkill"
+                    ],
+                    "BEMELNECHCO": true,
+                    "BAMBEILPAKP": true
+                },
+                "WeaponOnFire": {
+                    "$type": "BGNDILBMEIM",
+                    "DNPOFANDHPP": {
+                        "WeaponOnFire": [
+                            "Audio_Hili_WeaponOnFire"
+                        ]
+                    },
+                    "KDAJCNNPANO": true,
+                    "DNEFGECPAAJ": [
+                        "DoSkill"
+                    ]
+                },
+                "BeHit": {
+                    "$type": "BGNDILBMEIM",
+                    "DNPOFANDHPP": {
+                        "Hit_L": [
+                            "Audio_Hili_Hit_L"
+                        ],
+                        "Hit_H": [
+                            "Audio_Hili_Hit_H"
+                        ],
+                        "DHit": [
+                            "Audio_Hili_Hit_L"
+                        ]
+                    },
+                    "MKPCFKBHPDC": [
+                        "BeHit"
+                    ],
+                    "DNEFGECPAAJ": [
+                        "DoSkill"
+                    ]
+                },
+                "BeHitThrow": {
+                    "$type": "BGNDILBMEIM",
+                    "DNPOFANDHPP": {
+                        "HitThrow": [
+                            "Audio_Hili_Hit_Throw"
+                        ],
+                        "HitThrowDrop": [],
+                        "HitThrowToGround": [
+                            "Audio_Hili_Hit_ThrowToGround"
+                        ]
+                    },
+                    "MKPCFKBHPDC": [
+                        "BeHit",
+                        "HitAir2HitDrop"
+                    ],
+                    "DNEFGECPAAJ": [
+                        "DoSkill"
+                    ]
+                },
+                "Struggle": {
+                    "$type": "BGNDILBMEIM",
+                    "DNPOFANDHPP": {
+                        "Struggle": []
+                    },
+                    "MKPCFKBHPDC": [
+                        "BeHit",
+                        "HitAir2HitDrop"
+                    ],
+                    "DNEFGECPAAJ": [
+                        "DoSkill"
+                    ]
+                },
+                "Die": {
+                    "$type": "BGNDILBMEIM",
+                    "DNPOFANDHPP": {
+                        "SwimDie": [
+                            "Monster_Hili_None_Die",
+                            "Audio_Hili_SwimDie"
+                        ],
+                        "SwimDie_AS": [
+                            "Audio_Hili_SwimDie"
+                        ]
+                    }
+                },
+                "Die_RagDoll": {
+                    "$type": "BGNDILBMEIM",
+                    "DNPOFANDHPP": {
+                        "Die1": [
+                            "Monster_Hili_None_Die",
+                            "Audio_Hili_Die1"
+                        ],
+                        "Die2": [
+                            "Monster_Hili_None_Die",
+                            "Audio_Hili_Die2"
+                        ],
+                        "AirDie": [
+                            "Monster_Hili_None_Die",
+                            "Audio_Hili_Die1"
+                        ]
+                    },
+                    "GDOJDCJOHJP": true
+                },
+                "Life_Alert": {
+                    "$type": "BGNDILBMEIM",
+                    "DNPOFANDHPP": {
+                        "Alert": []
+                    },
+                    "DNEFGECPAAJ": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "Life_Warning": {
+                    "$type": "BGNDILBMEIM",
+                    "DNPOFANDHPP": {
+                        "Warning": [
+                            "Monster_Undead01_Warning",
+                            "Monster_Hili_None_Alert",
+                            "Audio_Hili_Warning"
+                        ]
+                    },
+                    "DNEFGECPAAJ": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "Life_Talk": {
+                    "$type": "BGNDILBMEIM",
+                    "DNPOFANDHPP": {
+                        "Talk": [],
+                        "Talk_Sit": []
+                    },
+                    "NOHGAIAMGLM": true,
+                    "DNEFGECPAAJ": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "TurnToSit": {
+                    "$type": "BGNDILBMEIM",
+                    "DNPOFANDHPP": {
+                        "TurnToSit": [
+                            "Monster_Hili_None_TurnToSit"
+                        ]
+                    },
+                    "NOHGAIAMGLM": true,
+                    "DNEFGECPAAJ": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "OutOfSit": {
+                    "$type": "BGNDILBMEIM",
+                    "DNPOFANDHPP": {
+                        "OutOfSit": [
+                            "Monster_Hili_None_OutOfSit"
+                        ]
+                    },
+                    "NOHGAIAMGLM": true,
+                    "DNEFGECPAAJ": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "Sit": {
+                    "$type": "BGNDILBMEIM",
+                    "DNPOFANDHPP": {
+                        "Sit": []
+                    },
+                    "NOHGAIAMGLM": true,
+                    "KDAJCNNPANO": true,
+                    "DNEFGECPAAJ": [
+                        "DoSkill"
+                    ]
+                },
+                "SitFree01": {
+                    "$type": "BGNDILBMEIM",
+                    "DNPOFANDHPP": {
+                        "SitFree01": []
+                    },
+                    "NOHGAIAMGLM": true,
+                    "DNEFGECPAAJ": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "TurnToSleep": {
+                    "$type": "BGNDILBMEIM",
+                    "DNPOFANDHPP": {
+                        "TurnToSleep": [
+                            "Monster_Hili_None_TurnToSleep"
+                        ]
+                    },
+                    "NOHGAIAMGLM": true,
+                    "DNEFGECPAAJ": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "OutOfSleep": {
+                    "$type": "BGNDILBMEIM",
+                    "DNPOFANDHPP": {
+                        "OutOfSleep": [
+                            "Monster_Hili_None_OutOfSleep"
+                        ]
+                    },
+                    "NOHGAIAMGLM": true,
+                    "DNEFGECPAAJ": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "Sleep": {
+                    "$type": "BGNDILBMEIM",
+                    "DNPOFANDHPP": {
+                        "Sleep": [
+                            "Audio_Hili_Sleep"
+                        ]
+                    },
+                    "NOHGAIAMGLM": true,
+                    "KDAJCNNPANO": true,
+                    "DNEFGECPAAJ": [
+                        "DoSkill"
+                    ]
+                },
+                "SleepFree01": {
+                    "$type": "BGNDILBMEIM",
+                    "DNPOFANDHPP": {
+                        "SleepFree01": []
+                    },
+                    "NOHGAIAMGLM": true,
+                    "DNEFGECPAAJ": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "SleepFree02": {
+                    "$type": "BGNDILBMEIM",
+                    "DNPOFANDHPP": {
+                        "SleepFree02": []
+                    },
+                    "NOHGAIAMGLM": true,
+                    "DNEFGECPAAJ": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "SleepFree03": {
+                    "$type": "BGNDILBMEIM",
+                    "DNPOFANDHPP": {
+                        "SleepFree03": []
+                    },
+                    "NOHGAIAMGLM": true,
+                    "DNEFGECPAAJ": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "TurnToPractice": {
+                    "$type": "BGNDILBMEIM",
+                    "DNPOFANDHPP": {
+                        "TurnToPractice": [
+                            "Monster_Hili_None_TurnToPractice"
+                        ]
+                    },
+                    "NOHGAIAMGLM": true,
+                    "DNEFGECPAAJ": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "OutOfPractice": {
+                    "$type": "BGNDILBMEIM",
+                    "DNPOFANDHPP": {
+                        "OutOfPractice": [
+                            "Monster_Hili_None_OutOfPractice"
+                        ]
+                    },
+                    "NOHGAIAMGLM": true,
+                    "DNEFGECPAAJ": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "Practice": {
+                    "$type": "BGNDILBMEIM",
+                    "DNPOFANDHPP": {
+                        "Practice": []
+                    },
+                    "NOHGAIAMGLM": true,
+                    "KDAJCNNPANO": true,
+                    "DNEFGECPAAJ": [
+                        "DoSkill"
+                    ]
+                },
+                "Practice_Action": {
+                    "$type": "BGNDILBMEIM",
+                    "DNPOFANDHPP": {
+                        "Practice_NoWeapon": [
+                            "Audio_Hili_Practice_NoWeapon"
+                        ],
+                        "Practice_NoWeapon_Back": [],
+                        "Practice_Sword": [
+                            "Audio_Hili_Practice_Sword"
+                        ],
+                        "Practice_Sword_Back": [],
+                        "Practice_Shoot_Aim": [],
+                        "Practice_Shoot_Attack": []
+                    },
+                    "NOHGAIAMGLM": true,
+                    "KDAJCNNPANO": true,
+                    "DNEFGECPAAJ": [
+                        "DoSkill"
+                    ]
+                },
+                "TurnToThreat": {
+                    "$type": "BGNDILBMEIM",
+                    "DNPOFANDHPP": {
+                        "TurnToThreat": [
+                            "Monster_Hili_None_TurnToThreat"
+                        ]
+                    },
+                    "NOHGAIAMGLM": true,
+                    "DNEFGECPAAJ": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "OutOfThreat": {
+                    "$type": "BGNDILBMEIM",
+                    "DNPOFANDHPP": {
+                        "OutOfThreat": [
+                            "Monster_Hili_None_OutOfThreat"
+                        ]
+                    },
+                    "NOHGAIAMGLM": true,
+                    "DNEFGECPAAJ": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "Threat": {
+                    "$type": "BGNDILBMEIM",
+                    "DNPOFANDHPP": {
+                        "Threat": []
+                    },
+                    "NOHGAIAMGLM": true,
+                    "DNEFGECPAAJ": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "ThreatFree01": {
+                    "$type": "BGNDILBMEIM",
+                    "DNPOFANDHPP": {
+                        "ThreatFree01_NoWeapon": [
+                            "Audio_Hili_Taunt"
+                        ],
+                        "ThreatFree01_Club": [
+                            "Audio_Hili_Taunt"
+                        ]
+                    },
+                    "NOHGAIAMGLM": true,
+                    "DNEFGECPAAJ": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "ThreatFree02": {
+                    "$type": "BGNDILBMEIM",
+                    "DNPOFANDHPP": {
+                        "ThreatFree02_NoWeapon": [
+                            "Audio_Hili_Taunt"
+                        ],
+                        "ThreatFree02_Club": [
+                            "Audio_Hili_Taunt"
+                        ]
+                    },
+                    "NOHGAIAMGLM": true,
+                    "DNEFGECPAAJ": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "TurnToSurround": {
+                    "$type": "BGNDILBMEIM",
+                    "DNPOFANDHPP": {
+                        "TurnToSurround": [
+                            "Monster_Hili_None_TurnToSurround"
+                        ]
+                    },
+                    "NOHGAIAMGLM": true,
+                    "DNEFGECPAAJ": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "OutOfSurround": {
+                    "$type": "BGNDILBMEIM",
+                    "DNPOFANDHPP": {
+                        "OutOfSurround": [
+                            "Monster_Hili_None_OutOfSurround"
+                        ]
+                    },
+                    "NOHGAIAMGLM": true,
+                    "DNEFGECPAAJ": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "Surround": {
+                    "$type": "BGNDILBMEIM",
+                    "DNPOFANDHPP": {
+                        "Surround": []
+                    },
+                    "NOHGAIAMGLM": true,
+                    "DNEFGECPAAJ": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "SurroundFree01": {
+                    "$type": "BGNDILBMEIM",
+                    "DNPOFANDHPP": {
+                        "SurroundFree01_NoWeapon": [],
+                        "SurroundFree01_Club": []
+                    },
+                    "NOHGAIAMGLM": true,
+                    "DNEFGECPAAJ": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "TurnToBuild": {
+                    "$type": "BGNDILBMEIM",
+                    "DNPOFANDHPP": {
+                        "TurnToBuild": [
+                            "Monster_Hili_None_TurnToBuild"
+                        ]
+                    },
+                    "NOHGAIAMGLM": true,
+                    "DNEFGECPAAJ": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "OutOfBuild": {
+                    "$type": "BGNDILBMEIM",
+                    "DNPOFANDHPP": {
+                        "OutOfBuild": [
+                            "Monster_Hili_None_OutOfBuild"
+                        ]
+                    },
+                    "NOHGAIAMGLM": true,
+                    "DNEFGECPAAJ": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "Build": {
+                    "$type": "BGNDILBMEIM",
+                    "DNPOFANDHPP": {
+                        "Build": [
+                            "Monster_Hili_None_Build"
+                        ]
+                    },
+                    "NOHGAIAMGLM": true,
+                    "DNEFGECPAAJ": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "TurnToMake": {
+                    "$type": "BGNDILBMEIM",
+                    "DNPOFANDHPP": {
+                        "TurnToMake": [
+                            "Monster_Hili_None_TurnToMake"
+                        ]
+                    },
+                    "NOHGAIAMGLM": true,
+                    "DNEFGECPAAJ": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "OutOfMake": {
+                    "$type": "BGNDILBMEIM",
+                    "DNPOFANDHPP": {
+                        "OutOfMake": [
+                            "Monster_Hili_None_OutOfMake"
+                        ]
+                    },
+                    "NOHGAIAMGLM": true,
+                    "DNEFGECPAAJ": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "Make": {
+                    "$type": "BGNDILBMEIM",
+                    "DNPOFANDHPP": {
+                        "Make": [
+                            "Monster_Hili_None_Make"
+                        ]
+                    },
+                    "NOHGAIAMGLM": true,
+                    "DNEFGECPAAJ": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "TurnToSearch": {
+                    "$type": "BGNDILBMEIM",
+                    "DNPOFANDHPP": {
+                        "TurnToSearch": [
+                            "Monster_Hili_None_TurnToSearch"
+                        ]
+                    },
+                    "NOHGAIAMGLM": true,
+                    "DNEFGECPAAJ": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "OutOfSearch": {
+                    "$type": "BGNDILBMEIM",
+                    "DNPOFANDHPP": {
+                        "OutOfSearch": [
+                            "Monster_Hili_None_OutOfSearch"
+                        ]
+                    },
+                    "NOHGAIAMGLM": true,
+                    "DNEFGECPAAJ": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "Search": {
+                    "$type": "BGNDILBMEIM",
+                    "DNPOFANDHPP": {
+                        "Search": [
+                            "Monster_Hili_None_Search"
+                        ]
+                    },
+                    "NOHGAIAMGLM": true,
+                    "DNEFGECPAAJ": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "TurnToDance": {
+                    "$type": "BGNDILBMEIM",
+                    "DNPOFANDHPP": {
+                        "TurnToDance": [
+                            "Monster_Hili_None_TurnToDance"
+                        ]
+                    },
+                    "NOHGAIAMGLM": true,
+                    "DNEFGECPAAJ": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "OutOfDance": {
+                    "$type": "BGNDILBMEIM",
+                    "DNPOFANDHPP": {
+                        "OutOfDance": [
+                            "Monster_Hili_None_OutOfDance"
+                        ]
+                    },
+                    "NOHGAIAMGLM": true,
+                    "DNEFGECPAAJ": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "Dance": {
+                    "$type": "BGNDILBMEIM",
+                    "DNPOFANDHPP": {
+                        "Dance": []
+                    },
+                    "NOHGAIAMGLM": true,
+                    "DNEFGECPAAJ": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "TurnToMining": {
+                    "$type": "BGNDILBMEIM",
+                    "DNPOFANDHPP": {
+                        "TurnToMining": [
+                            "Monster_Hili_None_TurnToMining"
+                        ]
+                    },
+                    "NOHGAIAMGLM": true,
+                    "DNEFGECPAAJ": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "OutOfMining": {
+                    "$type": "BGNDILBMEIM",
+                    "DNPOFANDHPP": {
+                        "OutOfMining": [
+                            "Monster_Hili_None_OutOfMining"
+                        ]
+                    },
+                    "NOHGAIAMGLM": true,
+                    "DNEFGECPAAJ": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "Mining": {
+                    "$type": "BGNDILBMEIM",
+                    "DNPOFANDHPP": {
+                        "Mining": []
+                    },
+                    "NOHGAIAMGLM": true,
+                    "DNEFGECPAAJ": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "MiningFree": {
+                    "$type": "BGNDILBMEIM",
+                    "DNPOFANDHPP": {
+                        "Mining_01": [
+                            "Monster_Hili_None_Mining_Sparkle_Weak",
+                            "Audio_Hili_Mining_01"
+                        ],
+                        "Mining_02": [
+                            "Monster_Hili_None_Mining_Sparkle_Strong",
+                            "Audio_Hili_Mining_02"
+                        ]
+                    },
+                    "NOHGAIAMGLM": true,
+                    "DNEFGECPAAJ": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "Life_AwakeAlertBS": {
+                    "$type": "BGNDILBMEIM",
+                    "DNPOFANDHPP": {
+                        "AwakeAlert_BS": [
+                            "Monster_Hili_None_AwakeAlert"
+                        ]
+                    },
+                    "DNEFGECPAAJ": [
+                        "BeHit",
+                        "DoSkill",
+                        "AwakeAlert"
+                    ]
+                },
+                "Life_AwakeAlertAS": {
+                    "$type": "BGNDILBMEIM",
+                    "DNPOFANDHPP": {
+                        "AwakeAlert_AS": []
+                    },
+                    "NOHGAIAMGLM": true,
+                    "DNEFGECPAAJ": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "Sword_TripleAttack": {
+                    "$type": "BGNDILBMEIM",
+                    "DNPOFANDHPP": {
+                        "Sword_TripleAttack_First_BS": [
+                            "Monster_Undead01_TripleAttack_First"
+                        ],
+                        "Sword_TripleAttack_First_Halt": [
+                            "Monster_Undead01_TripleAttack_First"
+                        ],
+                        "Sword_TripleAttack_First": [
+                            "Monster_Undead01_TripleAttack_First",
+                            "Audio_Hili_TripleAtk_01",
+                            "Audio_Hili_TripleAtk"
+                        ],
+                        "Sword_TripleAttack_Second_Halt": [
+                            "Monster_Undead01_TripleAttack_Second"
+                        ],
+                        "Sword_TripleAttack_Second": [
+                            "Monster_Undead01_TripleAttack_Second",
+                            "Audio_Hili_TripleAtk_01"
+                        ],
+                        "Sword_TripleAttack_Thrid_Halt": [
+                            "Monster_Undead01_TripleAttack_Thrid"
+                        ],
+                        "Sword_TripleAttack_Thrid": [
+                            "Monster_Undead01_TripleAttack_Thrid",
+                            "Audio_Hili_TripleAtk_02"
+                        ]
+                    },
+                    "DNEFGECPAAJ": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "Sword_ThumpAttack": {
+                    "$type": "BGNDILBMEIM",
+                    "DNPOFANDHPP": {
+                        "Sword_ThumpAttack_BS": [
+                            "Monster_Undead01_ThumpAttack",
+                            "Audio_Hili_ThumpAtk"
+                        ],
+                        "Sword_ThumpAttack_Halt": [
+                            "Monster_Undead01_ThumpAttack"
+                        ],
+                        "Sword_ThumpAttack": [
+                            "Monster_Undead01_ThumpAttack",
+                            "Audio_Hili_Sword_ThumpAttack"
+                        ]
+                    },
+                    "FHKLFMHPIIL": 0.6000000238418579,
+                    "DNEFGECPAAJ": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "Sword_NormalAttack": {
+                    "$type": "BGNDILBMEIM",
+                    "DNPOFANDHPP": {
+                        "Sword_NormalAttack": [
+                            "Monster_Hili_None_NormalAttack",
+                            "Audio_Hili_Sword_NormalAtk"
+                        ]
+                    },
+                    "DNEFGECPAAJ": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "NoWeapon_Attack": {
+                    "$type": "BGNDILBMEIM",
+                    "DNPOFANDHPP": {
+                        "NoWeapon_Attack": [
+                            "Monster_Hili_None_NoWeaponAttack",
+                            "Audio_Hili_NormalAtk"
+                        ]
+                    },
+                    "DNEFGECPAAJ": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "PickUp": {
+                    "$type": "BGNDILBMEIM",
+                    "DNPOFANDHPP": {
+                        "PickUp": [
+                            "Monster_Undead01_PickUp"
+                        ]
+                    },
+                    "DNEFGECPAAJ": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "Taunt": {
+                    "$type": "BGNDILBMEIM",
+                    "DNPOFANDHPP": {
+                        "Taunt_1": [
+                            "Audio_Hili_Taunt"
+                        ],
+                        "Taunt_2": [
+                            "Audio_Hili_Taunt"
+                        ],
+                        "Taunt_3": [
+                            "Audio_Hili_Taunt"
+                        ]
+                    },
+                    "DNEFGECPAAJ": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "Taunt_NoWeapon": {
+                    "$type": "BGNDILBMEIM",
+                    "DNPOFANDHPP": {
+                        "Taunt_NoWeapon_1": [
+                            "Audio_Hili_Taunt"
+                        ],
+                        "Taunt_NoWeapon_2": [
+                            "Audio_Hili_Taunt"
+                        ]
+                    },
+                    "DNEFGECPAAJ": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "Aim": {
+                    "$type": "BGNDILBMEIM",
+                    "DNPOFANDHPP": {
+                        "Aim": []
+                    },
+                    "DNEFGECPAAJ": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "Shoot": {
+                    "$type": "BGNDILBMEIM",
+                    "DNPOFANDHPP": {
+                        "Attack": [
+                            "Monster_Hili_Grass_Shoot_WithRandom",
+                            "Audio_Hili_Shoot_Atk"
+                        ]
+                    },
+                    "DNEFGECPAAJ": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "Dodge": {
+                    "$type": "BGNDILBMEIM",
+                    "DNPOFANDHPP": {
+                        "Dodge": [
+                            "Audio_Hili_Crossbow_Dodge"
+                        ]
+                    },
+                    "DNEFGECPAAJ": [
+                        "BeHit",
+                        "DoSkill",
+                        "DodgeTrigger"
+                    ]
+                },
+                "Defend": {
+                    "$type": "BGNDILBMEIM",
+                    "DNPOFANDHPP": {
+                        "Defend": [
+                            "Audio_Hili_DefendAtk_Defend"
+                        ]
+                    },
+                    "MKPCFKBHPDC": [
+                        "DefendTrigger"
+                    ],
+                    "DNEFGECPAAJ": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "DefendAttack": {
+                    "$type": "BGNDILBMEIM",
+                    "DNPOFANDHPP": {
+                        "DefendAttack_BS": [
+                            "Monster_Hili_None_DefendAttack_BS",
+                            "Audio_Hili_DefendAtk_BS"
+                        ],
+                        "DefendAttack_AS": [
+                            "Monster_Hili_None_DefendAttack_AS",
+                            "Audio_Hili_DefendAtk_AS"
+                        ]
+                    },
+                    "FHKLFMHPIIL": 0.6000000238418579,
+                    "MKPCFKBHPDC": [
+                        "DefendAttackTrigger"
+                    ],
+                    "DNEFGECPAAJ": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "ThrowPebble": {
+                    "$type": "BGNDILBMEIM",
+                    "DNPOFANDHPP": {
+                        "ThrowPebble": [
+                            "Monster_Hili_None_ThrowPebble",
+                            "Audio_Hili_ThrowPebble"
+                        ]
+                    },
+                    "NIOKPMKCCGN": 100.0,
+                    "DNEFGECPAAJ": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "ThrowPebble_Shield": {
+                    "$type": "BGNDILBMEIM",
+                    "DNPOFANDHPP": {
+                        "ThrowPebble_Shield": [
+                            "Monster_Hili_None_ThrowPebble_Shield",
+                            "Audio_Hili_ThrowPebble_Shield"
+                        ]
+                    },
+                    "NIOKPMKCCGN": 100.0,
+                    "DNEFGECPAAJ": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "LearnBox": {
+                    "$type": "BGNDILBMEIM",
+                    "DNPOFANDHPP": {
+                        "LearnBox": []
+                    },
+                    "NOHGAIAMGLM": true,
+                    "KDAJCNNPANO": true,
+                    "DNEFGECPAAJ": [
+                        "DoSkill"
+                    ]
+                },
+                "Life_LearnBox": {
+                    "$type": "BGNDILBMEIM",
+                    "DNPOFANDHPP": {
+                        "Boxing": []
+                    },
+                    "NOHGAIAMGLM": true,
+                    "DNEFGECPAAJ": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                }
+            }
+        }
+    },
+    "billboard": {
+        "$type": "JOBMBKHMEKJ",
+        "attachPoint": "BillboardAttach",
+        "offset": {
+            "x": -0.05000000074505806
+        },
+        "KIIONDAMCOE": "Character",
+        "HNBHIFHDHHP": 0.25,
+        "BAFOFKKNFAI": true
+    },
+    "PDGNHABAJOB": {
+        "Default": {},
+        "CrossBow_Fixed": {
+            "CJJJENBJBIE": 402,
+            "KNFNBEPPPCE": {
+                "KIBFCHNDOBM": {
+                    "CrossBow_Fixed": "true"
+                }
+            }
+        },
+        "Sleep": {
+            "CJJJENBJBIE": 9002,
+            "KNFNBEPPPCE": {
+                "KIBFCHNDOBM": {
+                    "Sleep": "true"
+                }
+            }
+        },
+        "Sit": {
+            "CJJJENBJBIE": 9003,
+            "KNFNBEPPPCE": {
+                "KIBFCHNDOBM": {
+                    "Sit": "true"
+                }
+            }
+        },
+        "Threat": {
+            "CJJJENBJBIE": 9010,
+            "KNFNBEPPPCE": {
+                "KIBFCHNDOBM": {
+                    "Threat": "true"
+                }
+            }
+        },
+        "Build": {
+            "CJJJENBJBIE": 9015,
+            "KNFNBEPPPCE": {
+                "KIBFCHNDOBM": {
+                    "Make": "true"
+                }
+            }
+        },
+        "Make": {
+            "CJJJENBJBIE": 9011,
+            "KNFNBEPPPCE": {
+                "KIBFCHNDOBM": {
+                    "Make": "true"
+                }
+            }
+        },
+        "Search": {
+            "CJJJENBJBIE": 9016,
+            "KNFNBEPPPCE": {
+                "KIBFCHNDOBM": {
+                    "Make": "true"
+                }
+            }
+        },
+        "Dance": {
+            "CJJJENBJBIE": 9012,
+            "KNFNBEPPPCE": {
+                "KIBFCHNDOBM": {
+                    "Dance": "true"
+                }
+            }
+        },
+        "Practice": {
+            "CJJJENBJBIE": 9013,
+            "KNFNBEPPPCE": {
+                "KIBFCHNDOBM": {
+                    "Practice": "true"
+                }
+            }
+        },
+        "Surround": {
+            "CJJJENBJBIE": 9014,
+            "KNFNBEPPPCE": {
+                "KIBFCHNDOBM": {
+                    "Surround": "true"
+                }
+            }
+        },
+        "Mining": {
+            "CJJJENBJBIE": 9017,
+            "KNFNBEPPPCE": {
+                "KIBFCHNDOBM": {
+                    "Mining": "true"
+                }
+            }
+        },
+        "LearnBox": {
+            "CJJJENBJBIE": 9018,
+            "KNFNBEPPPCE": {
+                "KIBFCHNDOBM": {
+                    "LearnBox": "true"
+                }
+            }
+        }
+    },
+    "NIHJKMJGBBE": [
+        {
+            "OBAOJLJHIDN": 201,
+            "PJGGFMLCLCO": 257,
+            "abilityName": ""
+        },
+        {
+            "OBAOJLJHIDN": 231,
+            "PJGGFMLCLCO": 258,
+            "abilityName": ""
+        },
+        {
+            "OBAOJLJHIDN": 211,
+            "PJGGFMLCLCO": 259,
+            "abilityName": ""
+        },
+        {
+            "OBAOJLJHIDN": 601,
+            "PJGGFMLCLCO": 260,
+            "abilityName": ""
+        },
+        {
+            "OBAOJLJHIDN": 221,
+            "PJGGFMLCLCO": 262,
+            "abilityName": ""
+        },
+        {
+            "OBAOJLJHIDN": 901,
+            "PJGGFMLCLCO": 261,
+            "abilityName": ""
+        },
+        {
+            "OBAOJLJHIDN": 301,
+            "PJGGFMLCLCO": 264,
+            "abilityName": ""
+        },
+        {
+            "OBAOJLJHIDN": 311,
+            "PJGGFMLCLCO": 265,
+            "abilityName": ""
+        }
+    ],
+    "IJLCLNIAPOM": {
+        "$type": "EGPKIJBLBBM",
+        "KEPJFGBECCO": "FourDirection",
+        "EKAKOIGPKEI": "StoopType",
+        "BGKPKBJPKKC": "RootNode"
+    },
+    "audio": {
+        "CDPGEDJOKEB": "",
+        "animAudio": {
+            "onTransitionIn": [
+                {
+                    "currentStateName": "OutOfBuild",
+                    "audioEvent": {
+                        "text": "Stop_sfx_monster_hili_build"
+                    }
+                },
+                {
+                    "currentStateName": "Alert",
+                    "audioEvent": {
+                        "text": "Stop_sfx_monster_hili_build"
+                    }
+                },
+                {
+                    "currentStateName": "BeHit",
+                    "audioEvent": {
+                        "text": "Stop_sfx_monster_hili_build"
+                    }
+                },
+                {
+                    "currentStateName": "Die",
+                    "audioEvent": {
+                        "text": "Stop_sfx_monster_hili_build"
+                    }
+                },
+                {
+                    "currentStateName": "Die1",
+                    "audioEvent": {
+                        "text": "Stop_sfx_monster_hili_build"
+                    }
+                },
+                {
+                    "currentStateName": "Die2",
+                    "audioEvent": {
+                        "text": "Stop_sfx_monster_hili_build"
+                    }
+                },
+                {
+                    "currentStateName": "OutOfMake",
+                    "audioEvent": {
+                        "text": "Stop_sfx_monster_hili_build"
+                    }
+                },
+                {
+                    "currentStateName": "Practice_Sword_Back",
+                    "audioEvent": {
+                        "text": "Play_sfx_monster_hili_practice_back"
+                    }
+                },
+                {
+                    "currentStateName": "Practice_NoWeapon_Back",
+                    "audioEvent": {
+                        "text": "Play_sfx_monster_hili_practice_back"
+                    }
+                },
+                {
+                    "currentStateName": "Practice_Shoot_Aim",
+                    "audioEvent": {
+                        "text": "Play_sfx_monster_hili_practice_shoot_aim"
+                    }
+                },
+                {
+                    "currentStateName": "Dance",
+                    "audioEvent": {
+                        "text": "Play_sfx_monster_hili_dance"
+                    }
+                },
+                {
+                    "currentStateName": "OutOfDance",
+                    "audioEvent": {
+                        "text": "Stop_sfx_monster_hili_dance"
+                    }
+                },
+                {
+                    "currentStateName": "SurroundFree01_Club",
+                    "audioEvent": {
+                        "text": "Play_sfx_monster_hili_dance"
+                    }
+                },
+                {
+                    "currentStateName": "SurroundFree01_NoWeapon",
+                    "audioEvent": {
+                        "text": "Play_sfx_monster_hili_dance"
+                    }
+                },
+                {
+                    "currentStateName": "OutOfSurround",
+                    "audioEvent": {
+                        "text": "Stop_sfx_monster_hili_dance"
+                    }
+                },
+                {
+                    "currentStateName": "Alert",
+                    "audioEvent": {
+                        "text": "Stop_sfx_monster_hili_dance"
+                    }
+                },
+                {
+                    "currentStateName": "BeHit",
+                    "audioEvent": {
+                        "text": "Stop_sfx_monster_hili_dance"
+                    }
+                },
+                {
+                    "currentStateName": "Die",
+                    "audioEvent": {
+                        "text": "Stop_sfx_monster_hili_dance"
+                    }
+                },
+                {
+                    "currentStateName": "Die1",
+                    "audioEvent": {
+                        "text": "Stop_sfx_monster_hili_dance"
+                    }
+                },
+                {
+                    "currentStateName": "Die2",
+                    "audioEvent": {
+                        "text": "Stop_sfx_monster_hili_dance"
+                    }
+                },
+                {
+                    "currentStateName": "ThreatFree01_NoWeapon",
+                    "audioEvent": {
+                        "text": "Play_sfx_monster_hili_dance"
+                    }
+                },
+                {
+                    "currentStateName": "ThreatFree02_NoWeapon",
+                    "audioEvent": {
+                        "text": "Play_sfx_monster_hili_dance"
+                    }
+                },
+                {
+                    "currentStateName": "ThreatFree01_Club",
+                    "audioEvent": {
+                        "text": "Play_sfx_monster_hili_dance"
+                    }
+                },
+                {
+                    "currentStateName": "ThreatFree02_Club",
+                    "audioEvent": {
+                        "text": "Play_sfx_monster_hili_dance"
+                    }
+                },
+                {
+                    "currentStateName": "OutOfThreat",
+                    "audioEvent": {
+                        "text": "Stop_sfx_monster_hili_dance"
+                    }
+                }
+            ],
+            "onTransitionOut": [
+                {
+                    "currentStateName": "Sword_TripleAttack",
+                    "audioEvent": {
+                        "text": "Stop_sfx_monster_hili_club_tripleAttack"
+                    }
+                },
+                {
+                    "currentStateName": "Sword_ThumpAttack",
+                    "audioEvent": {
+                        "text": "Stop_sfx_monster_hili_club_attack"
+                    }
+                },
+                {
+                    "currentStateName": "Build",
+                    "audioEvent": {
+                        "text": "Stop_sfx_monster_hili_build"
+                    }
+                },
+                {
+                    "currentStateName": "Make",
+                    "audioEvent": {
+                        "text": "Stop_sfx_monster_hili_build"
+                    }
+                },
+                {
+                    "currentStateName": "Practice_Sword",
+                    "audioEvent": {
+                        "text": "Stop_sfx_monster_hili_practice_sword"
+                    }
+                },
+                {
+                    "currentStateName": "Practice_NoWeapon",
+                    "audioEvent": {
+                        "text": "Stop_sfx_monster_hili_practice_sword"
+                    }
+                },
+                {
+                    "currentStateName": "Practice_Sword_Back",
+                    "audioEvent": {
+                        "text": "Stop_sfx_monster_hili_practice_back"
+                    }
+                },
+                {
+                    "currentStateName": "Practice_NoWeapon_Back",
+                    "audioEvent": {
+                        "text": "Stop_sfx_monster_hili_practice_back"
+                    }
+                },
+                {
+                    "currentStateName": "Practice_Shoot_Aim",
+                    "audioEvent": {
+                        "text": "Stop_sfx_monster_hili_practice_shoot_aim"
+                    },
+                    "otherStateNames": [
+                        "Practice_Shoot_Attack"
+                    ],
+                    "usage": "Except"
+                },
+                {
+                    "currentStateName": "Practice_Shoot_Attack",
+                    "audioEvent": {
+                        "text": "Stop_sfx_monster_hili_practice_shoot_aim"
+                    }
+                },
+                {
+                    "currentStateName": "Dance",
+                    "audioEvent": {
+                        "text": "Stop_sfx_monster_hili_dance"
+                    }
+                },
+                {
+                    "currentStateName": "SurroundFree01_Club",
+                    "audioEvent": {
+                        "text": "Stop_sfx_monster_hili_dance"
+                    }
+                },
+                {
+                    "currentStateName": "SurroundFree01_NoWeapon",
+                    "audioEvent": {
+                        "text": "Stop_sfx_monster_hili_dance"
+                    }
+                },
+                {
+                    "currentStateName": "ThreatFree01_NoWeapon",
+                    "audioEvent": {
+                        "text": "Stop_sfx_monster_hili_dance"
+                    }
+                },
+                {
+                    "currentStateName": "ThreatFree02_NoWeapon",
+                    "audioEvent": {
+                        "text": "Stop_sfx_monster_hili_dance"
+                    }
+                },
+                {
+                    "currentStateName": "ThreatFree01_Club",
+                    "audioEvent": {
+                        "text": "Stop_sfx_monster_hili_dance"
+                    }
+                },
+                {
+                    "currentStateName": "ThreatFree02_Club",
+                    "audioEvent": {
+                        "text": "Stop_sfx_monster_hili_dance"
+                    }
+                }
+            ]
+        },
+        "disableEvent": {
+            "text": "Stop_sfx_monster_hili_dance"
+        },
+        "destroyEvent": {
+            "text": "Stop_sfx_monster_hili_dance"
+        },
+        "HPFJNOEOMGI": {
+            "text": ""
+        },
+        "PACIPFBILMO": [
+            {
+                "text": ""
+            }
+        ]
+    }
+}

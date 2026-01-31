@@ -1,0 +1,1305 @@
+{
+    "Faruzan_Arrow_01": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "FCAGPAEOLPI": 0.5,
+                "HOJBBPFJMIL": 0.5
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            },
+            "animEvents": {
+                "Arrow_ATK01": {
+                    "attackPattern": {
+                        "$type": "BOIOFIPLBNK",
+                        "triggerType": "TriggerNoRepeat",
+                        "PINHPKJJOGC": "Both",
+                        "born": {
+                            "$type": "MNJLPLGJGLI",
+                            "offset": {
+                                "EMBMLEBGFOI": 0.0,
+                                "NABPJFNICAE": 0.0,
+                                "MLOLIKEJCKB": -0.5
+                            }
+                        },
+                        "size": {
+                            "EMBMLEBGFOI": 0.10000000149011612,
+                            "NABPJFNICAE": 0.10000000149011612,
+                            "MLOLIKEJCKB": 1.0
+                        }
+                    },
+                    "attackInfo": {
+                        "attackTag": "NormalAttack_01",
+                        "attenuationTag": "",
+                        "attenuationGroup": "default",
+                        "attackProperty": {
+                            "ACKCDHKEGCK": 0.0,
+                            "JIICGJODDDM": 0.0,
+                            "bonusCriticalHurt": 100.0,
+                            "strikeType": "Pierce",
+                            "enBreak": 15.603300094604492,
+                            "damagePercentage": 0.0
+                        },
+                        "hitPattern": {
+                            "onHitEffectName": "default",
+                            "hitImpulseType": "LV1"
+                        },
+                        "cameraShake": {
+                            "shakeRange": 0.019999999552965164,
+                            "shakeTime": 0.10000000149011612
+                        },
+                        "canBeModifiedBy": "OriginOwner"
+                    }
+                }
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Bullet_Faruzan_ShootArrow",
+                "abilityName": "Bullet_Faruzan_ShootArrow",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Bullet_Faruzan_ShootArrow_LightFX",
+                "abilityName": "Bullet_Faruzan_ShootArrow_LightFX",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 8.0
+        },
+        "move": {
+            "$type": "MPNKKNJBNCD",
+            "speed": 40.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "CIHFFMJBELB": 7.0,
+            "IPBPLMGOJKC": 15.0,
+            "HMOHCMJMLNE": 0.009999999776482582
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "BOHOOADOAKJ",
+                    "attackEvent": "Arrow_ATK01"
+                },
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Bullet_Faruzan_ShootArrow"
+                }
+            ],
+            "JHKBLJLPGEB": true
+        }
+    },
+    "Faruzan_Arrow_02": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "FCAGPAEOLPI": 0.5,
+                "HOJBBPFJMIL": 0.5
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            },
+            "animEvents": {
+                "Arrow_ATK02": {
+                    "attackPattern": {
+                        "$type": "BOIOFIPLBNK",
+                        "triggerType": "TriggerNoRepeat",
+                        "PINHPKJJOGC": "Both",
+                        "born": {
+                            "$type": "MNJLPLGJGLI",
+                            "offset": {
+                                "EMBMLEBGFOI": 0.0,
+                                "NABPJFNICAE": 0.0,
+                                "MLOLIKEJCKB": -0.5
+                            }
+                        },
+                        "size": {
+                            "EMBMLEBGFOI": 0.10000000149011612,
+                            "NABPJFNICAE": 0.10000000149011612,
+                            "MLOLIKEJCKB": 1.0
+                        }
+                    },
+                    "attackInfo": {
+                        "attackTag": "NormalAttack_02",
+                        "attenuationTag": "",
+                        "attenuationGroup": "default",
+                        "attackProperty": {
+                            "ACKCDHKEGCK": 0.0,
+                            "JIICGJODDDM": 0.0,
+                            "bonusCriticalHurt": 100.0,
+                            "strikeType": "Pierce",
+                            "enBreak": 14.71619987487793,
+                            "damagePercentage": 0.0
+                        },
+                        "hitPattern": {
+                            "onHitEffectName": "default",
+                            "hitImpulseType": "LV1"
+                        },
+                        "cameraShake": {
+                            "shakeRange": 0.019999999552965164,
+                            "shakeTime": 0.10000000149011612
+                        },
+                        "canBeModifiedBy": "OriginOwner"
+                    }
+                }
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Bullet_Faruzan_ShootArrow",
+                "abilityName": "Bullet_Faruzan_ShootArrow",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Bullet_Faruzan_ShootArrow_LightFX",
+                "abilityName": "Bullet_Faruzan_ShootArrow_LightFX",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 8.0
+        },
+        "move": {
+            "$type": "MPNKKNJBNCD",
+            "speed": 40.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "CIHFFMJBELB": 7.0,
+            "IPBPLMGOJKC": 15.0,
+            "HMOHCMJMLNE": 0.009999999776482582
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "BOHOOADOAKJ",
+                    "attackEvent": "Arrow_ATK02"
+                },
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Bullet_Faruzan_ShootArrow"
+                }
+            ],
+            "JHKBLJLPGEB": true
+        }
+    },
+    "Faruzan_Arrow_03": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "FCAGPAEOLPI": 0.5,
+                "HOJBBPFJMIL": 0.5
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            },
+            "animEvents": {
+                "Arrow_ATK03": {
+                    "attackPattern": {
+                        "$type": "BOIOFIPLBNK",
+                        "triggerType": "TriggerNoRepeat",
+                        "PINHPKJJOGC": "Both",
+                        "born": {
+                            "$type": "MNJLPLGJGLI",
+                            "offset": {
+                                "EMBMLEBGFOI": 0.0,
+                                "NABPJFNICAE": 0.0,
+                                "MLOLIKEJCKB": -0.5
+                            }
+                        },
+                        "size": {
+                            "EMBMLEBGFOI": 0.10000000149011612,
+                            "NABPJFNICAE": 0.10000000149011612,
+                            "MLOLIKEJCKB": 1.0
+                        }
+                    },
+                    "attackInfo": {
+                        "attackTag": "NormalAttack_03",
+                        "attenuationTag": "",
+                        "attenuationGroup": "default",
+                        "attackProperty": {
+                            "ACKCDHKEGCK": 0.0,
+                            "JIICGJODDDM": 0.0,
+                            "bonusCriticalHurt": 100.0,
+                            "strikeType": "Pierce",
+                            "enBreak": 18.545400619506836,
+                            "damagePercentage": 0.0
+                        },
+                        "hitPattern": {
+                            "onHitEffectName": "default",
+                            "hitImpulseType": "LV1"
+                        },
+                        "cameraShake": {
+                            "shakeRange": 0.019999999552965164,
+                            "shakeTime": 0.10000000149011612
+                        },
+                        "canBeModifiedBy": "OriginOwner"
+                    }
+                }
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Bullet_Faruzan_ShootArrow",
+                "abilityName": "Bullet_Faruzan_ShootArrow",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Bullet_Faruzan_ShootArrow_HeavyFX",
+                "abilityName": "Bullet_Faruzan_ShootArrow_HeavyFX",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 8.0
+        },
+        "move": {
+            "$type": "MPNKKNJBNCD",
+            "speed": 40.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "CIHFFMJBELB": 7.0,
+            "IPBPLMGOJKC": 15.0,
+            "HMOHCMJMLNE": 0.009999999776482582
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "BOHOOADOAKJ",
+                    "attackEvent": "Arrow_ATK03"
+                },
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Bullet_Faruzan_ShootArrow"
+                }
+            ],
+            "JHKBLJLPGEB": true
+        }
+    },
+    "Faruzan_Arrow_04": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "FCAGPAEOLPI": 0.5,
+                "HOJBBPFJMIL": 0.5
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            },
+            "animEvents": {
+                "Arrow_ATK04": {
+                    "attackPattern": {
+                        "$type": "BOIOFIPLBNK",
+                        "triggerType": "TriggerNoRepeat",
+                        "PINHPKJJOGC": "Both",
+                        "born": {
+                            "$type": "MNJLPLGJGLI",
+                            "offset": {
+                                "EMBMLEBGFOI": 0.0,
+                                "NABPJFNICAE": 0.0,
+                                "MLOLIKEJCKB": -0.5
+                            }
+                        },
+                        "size": {
+                            "EMBMLEBGFOI": 0.10000000149011612,
+                            "NABPJFNICAE": 0.10000000149011612,
+                            "MLOLIKEJCKB": 1.0
+                        }
+                    },
+                    "attackInfo": {
+                        "attackTag": "NormalAttack_04",
+                        "attenuationTag": "",
+                        "attenuationGroup": "default",
+                        "attackProperty": {
+                            "ACKCDHKEGCK": 0.0,
+                            "JIICGJODDDM": 0.0,
+                            "bonusCriticalHurt": 100.0,
+                            "strikeType": "Pierce",
+                            "enBreak": 24.635099411010742,
+                            "damagePercentage": 0.0
+                        },
+                        "hitPattern": {
+                            "onHitEffectName": "default",
+                            "hitImpulseType": "LV1"
+                        },
+                        "cameraShake": {
+                            "shakeRange": 0.019999999552965164,
+                            "shakeTime": 0.10000000149011612
+                        },
+                        "canBeModifiedBy": "OriginOwner"
+                    }
+                }
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Bullet_Faruzan_ShootArrow",
+                "abilityName": "Bullet_Faruzan_ShootArrow",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Bullet_Faruzan_ShootArrow_LightFX",
+                "abilityName": "Bullet_Faruzan_ShootArrow_LightFX",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 8.0
+        },
+        "move": {
+            "$type": "MPNKKNJBNCD",
+            "speed": 40.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "CIHFFMJBELB": 7.0,
+            "IPBPLMGOJKC": 15.0,
+            "HMOHCMJMLNE": 0.009999999776482582
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "BOHOOADOAKJ",
+                    "attackEvent": "Arrow_ATK04"
+                },
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Bullet_Faruzan_ShootArrow"
+                }
+            ],
+            "JHKBLJLPGEB": true
+        }
+    },
+    "Faruzan_Arrow_05": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "FCAGPAEOLPI": 0.5,
+                "HOJBBPFJMIL": 0.5
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            },
+            "animEvents": {
+                "Arrow_ATK05": {
+                    "attackPattern": {
+                        "$type": "BOIOFIPLBNK",
+                        "triggerType": "TriggerNoRepeat",
+                        "PINHPKJJOGC": "Both",
+                        "born": {
+                            "$type": "MNJLPLGJGLI",
+                            "offset": {
+                                "EMBMLEBGFOI": 0.0,
+                                "NABPJFNICAE": 0.0,
+                                "MLOLIKEJCKB": -0.5
+                            }
+                        },
+                        "size": {
+                            "EMBMLEBGFOI": 0.10000000149011612,
+                            "NABPJFNICAE": 0.10000000149011612,
+                            "MLOLIKEJCKB": 1.0
+                        }
+                    },
+                    "attackInfo": {
+                        "attackTag": "NormalAttack_05",
+                        "attenuationTag": "",
+                        "attenuationGroup": "default",
+                        "attackProperty": {
+                            "ACKCDHKEGCK": 0.0,
+                            "JIICGJODDDM": 0.0,
+                            "bonusCriticalHurt": 100.0,
+                            "strikeType": "Pierce",
+                            "enBreak": 16.829999923706055,
+                            "damagePercentage": 0.0
+                        },
+                        "hitPattern": {
+                            "onHitEffectName": "default",
+                            "hitImpulseType": "LV1"
+                        },
+                        "cameraShake": {
+                            "shakeRange": 0.019999999552965164,
+                            "shakeTime": 0.10000000149011612
+                        },
+                        "canBeModifiedBy": "OriginOwner"
+                    }
+                }
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Bullet_Faruzan_ShootArrow",
+                "abilityName": "Bullet_Faruzan_ShootArrow",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Bullet_Faruzan_ShootArrow_HeavyFX",
+                "abilityName": "Bullet_Faruzan_ShootArrow_HeavyFX",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 8.0
+        },
+        "move": {
+            "$type": "MPNKKNJBNCD",
+            "speed": 40.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "CIHFFMJBELB": 7.0,
+            "IPBPLMGOJKC": 15.0,
+            "HMOHCMJMLNE": 0.009999999776482582
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "BOHOOADOAKJ",
+                    "attackEvent": "Arrow_ATK05"
+                },
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Bullet_Faruzan_ShootArrow"
+                }
+            ],
+            "JHKBLJLPGEB": true
+        }
+    },
+    "Faruzan_Arrow_06": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "FCAGPAEOLPI": 0.5,
+                "HOJBBPFJMIL": 0.5
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            },
+            "animEvents": {
+                "Arrow_ATK06": {
+                    "attackPattern": {
+                        "$type": "BOIOFIPLBNK",
+                        "triggerType": "TriggerNoRepeat",
+                        "PINHPKJJOGC": "Both",
+                        "born": {
+                            "$type": "MNJLPLGJGLI",
+                            "offset": {
+                                "EMBMLEBGFOI": 0.0,
+                                "NABPJFNICAE": 0.0,
+                                "MLOLIKEJCKB": -0.5
+                            }
+                        },
+                        "size": {
+                            "EMBMLEBGFOI": 0.10000000149011612,
+                            "NABPJFNICAE": 0.10000000149011612,
+                            "MLOLIKEJCKB": 1.0
+                        }
+                    },
+                    "attackInfo": {
+                        "attackTag": "NormalAttack_06",
+                        "attenuationTag": "",
+                        "attenuationGroup": "default",
+                        "attackProperty": {
+                            "ACKCDHKEGCK": 0.0,
+                            "JIICGJODDDM": 0.0,
+                            "bonusCriticalHurt": 100.0,
+                            "strikeType": "Pierce",
+                            "enBreak": 20.100000381469727,
+                            "damagePercentage": 0.0
+                        },
+                        "hitPattern": {
+                            "onHitEffectName": "default",
+                            "hitImpulseType": "LV1"
+                        },
+                        "cameraShake": {
+                            "shakeRange": 0.019999999552965164,
+                            "shakeTime": 0.10000000149011612
+                        },
+                        "canBeModifiedBy": "OriginOwner"
+                    }
+                }
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Bullet_Faruzan_ShootArrow",
+                "abilityName": "Bullet_Faruzan_ShootArrow",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Bullet_Faruzan_ShootArrow_HeavyFX",
+                "abilityName": "Bullet_Faruzan_ShootArrow_HeavyFX",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 8.0
+        },
+        "move": {
+            "$type": "MPNKKNJBNCD",
+            "speed": 70.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "CIHFFMJBELB": 15.0,
+            "IPBPLMGOJKC": 30.0,
+            "HMOHCMJMLNE": 0.009999999776482582
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "BOHOOADOAKJ",
+                    "attackEvent": "Arrow_ATK06"
+                },
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Bullet_Faruzan_ShootArrow"
+                }
+            ],
+            "JHKBLJLPGEB": true
+        }
+    },
+    "Faruzan_AimingArrow_Wind": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "FCAGPAEOLPI": 0.5,
+                "HOJBBPFJMIL": 0.5
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Wind_Fx",
+                "abilityName": "Avatar_Faruzan_ShootArrow_Enchanted_Wind",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Arrow_Fx",
+                "abilityName": "Avatar_Faruzan_ShootAimingArrow_Material",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 20.0
+        },
+        "move": {
+            "$type": "MPNKKNJBNCD",
+            "speed": 50.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "CIHFFMJBELB": 25.0,
+            "IPBPLMGOJKC": 5.5,
+            "HMOHCMJMLNE": 0.009999999776482582
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Avatar_Faruzan_ShootArrow_Enchanted_Wind"
+                },
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Avatar_Faruzan_ShootAimingArrow_Material"
+                }
+            ],
+            "JHKBLJLPGEB": true
+        }
+    },
+    "Faruzan_AimingArrow_WithoutWind": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "FCAGPAEOLPI": 0.5,
+                "HOJBBPFJMIL": 0.5
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Arrow_WithoutWind",
+                "abilityName": "Avatar_Faruzan_ShootArrow_Enchanted_WithoutWind",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Arrow_Material",
+                "abilityName": "Avatar_Faruzan_ShootAimingArrowWithoutWind_Material",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 20.0
+        },
+        "move": {
+            "$type": "MPNKKNJBNCD",
+            "speed": 50.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "CIHFFMJBELB": 25.0,
+            "IPBPLMGOJKC": 5.5,
+            "HMOHCMJMLNE": 0.009999999776482582
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Avatar_Faruzan_ShootArrow_Enchanted_WithoutWind"
+                },
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Avatar_Faruzan_ShootAimingArrowWithoutWind_Material"
+                }
+            ],
+            "JHKBLJLPGEB": true
+        }
+    },
+    "Faruzan_Wind_Arashi": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            }
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 999999.0,
+                "defense": 999999.0
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Trigger",
+                "abilityName": "Avatar_Faruzan_Wind_Arashi_Bullet",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Material",
+                "abilityName": "Avatar_Faruzan_Wind_Arashi_Bullet_Material",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 0.5
+        },
+        "move": {
+            "$type": "KBENGKLMEAL",
+            "speed": 25.0,
+            "NNKNFFMKNNB": 0.0
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "ccd": {
+                    "type": "Always"
+                },
+                "triggerType": "TriggerNoRepeat",
+                "targetType": "Enemy",
+                "ignoreScene": true
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Avatar_Faruzan_Wind_Arashi_Bullet"
+                }
+            ]
+        }
+    },
+    "Faruzan_Aim_TrackBullet": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "FCAGPAEOLPI": 0.5,
+                "HOJBBPFJMIL": 0.5
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "Avatar_Faruzan_Aim_TrackBullet_Material",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "",
+                "abilityName": "Avatar_Faruzan_Bullet_Landed_WindBlackHole",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 2.0
+        },
+        "move": {
+            "$type": "MPNKKNJBNCD",
+            "MPMOPIIFDPO": {
+                "muteAll": true
+            },
+            "speed": 50.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "CIHFFMJBELB": 25.0,
+            "IPBPLMGOJKC": 5.5,
+            "HMOHCMJMLNE": 0.009999999776482582
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "AllExceptSelf"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Avatar_Faruzan_Aim_TrackBullet_Material"
+                },
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Avatar_Faruzan_Bullet_Landed_WindBlackHole"
+                }
+            ],
+            "JHKBLJLPGEB": true
+        }
+    },
+    "Faruzan_Constellation6_Bullet_Trigger": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "Avatar_Faruzan_Constellation6_AutoHurricaneArrow_BulletTrigger",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 2.0
+        },
+        "move": {
+            "$type": "EGIBMIADEHO",
+            "MPMOPIIFDPO": {
+                "muteAll": true
+            },
+            "speed": 0.009999999776482582,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "BCNECAMPGJJ": true
+        }
+    },
+    "Faruzan_Constellation6_Bullet": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "FCAGPAEOLPI": 0.5,
+                "HOJBBPFJMIL": 0.5
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "Avatar_Faruzan_Constellation6_TrackBullet_Material",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "",
+                "abilityName": "Avatar_Faruzan_Bullet_Landed_WindBlackHole",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 2.0
+        },
+        "move": {
+            "$type": "EGIBMIADEHO",
+            "MPMOPIIFDPO": {
+                "muteAll": true
+            },
+            "speed": 50.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "KGGKADOKFII": 0.10000000149011612,
+            "BCNECAMPGJJ": true
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Avatar_Faruzan_Constellation6_TrackBullet_Material"
+                },
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Avatar_Faruzan_Bullet_Landed_WindBlackHole"
+                }
+            ],
+            "JHKBLJLPGEB": true
+        }
+    },
+    "Faruzan_WindBlackHole": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            }
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "WindBlackHole",
+                "abilityName": "Avatar_Faruzan_WindBlackHole_Gadget",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 5.0
+        }
+    },
+    "Faruzan_ElementalBurst_Gadget": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            }
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            },
+            "die": {
+                "dieEndTime": 5.0,
+                "dieDisappearEffect": ""
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "Faruzan_ElementalBurst_Gadget",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "",
+                "abilityName": "Faruzan_ElementalBurst_Gadget_Born",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "",
+                "abilityName": "Faruzan_ElementalBurst_Gadget_Born_Attack",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "",
+                "abilityName": "Faruzan_ElementalBurst_Gadget_Controller",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "",
+                "abilityName": "Faruzan_WindSubHurtDown_Controller",
+                "abilityOverride": ""
+            }
+        ],
+        "field": {
+            "concernType": "AllAvatars",
+            "shape": "CircleR15",
+            "PMOHIIJOLNG": "",
+            "triggerInfinite": true,
+            "GLOOEHAEDID": 1.0,
+            "checkInterval": 0.10000000149011612,
+            "lifeTime": 60.0,
+            "overwriteCampType": true,
+            "campType": "All",
+            "useCollider": false,
+            "JHEKALHPHBK": "",
+            "JFLLEDMCPLF": ""
+        },
+        "AHCOGNAHOOF": {
+            "lifeTime": 60.0
+        },
+        "move": {
+            "$type": "ACEACPCIOLC",
+            "speed": 1.0,
+            "JPDKAELMNDJ": {
+                "JJPKBDAAIFH": 3.0,
+                "HOOIFDANBGN": 40.0,
+                "APHEEIPGAAP": 2.5,
+                "MAGKJGBJBPE": 2.0,
+                "LFCIJINPMNE": true,
+                "MFPFHOJOFDN": "Keep",
+                "IBAOIHMFNFE": "Keep"
+            },
+            "JPDDBBHJAAH": true
+        },
+        "stateLayers": {
+            "defaultLayer": {
+                "$type": "GMHKGJPLHFD",
+                "DLEKAADOFBI": "",
+                "stateIDs": {
+                    "Born": {
+                        "$type": "CCIEFDKKMLG",
+                        "DNPOFANDHPP": {
+                            "Born": [
+                                "Faruzan_ElementalBurst_Born"
+                            ]
+                        },
+                        "CGNNAJLBEMJ": true
+                    },
+                    "Idle": {
+                        "$type": "CCIEFDKKMLG",
+                        "DNPOFANDHPP": {
+                            "Idle": [
+                                "Faruzan_ElementalBurst_Idle"
+                            ]
+                        },
+                        "CGNNAJLBEMJ": true
+                    }
+                }
+            }
+        }
+    },
+    "Faruzan_SkillObj_WindZone_Hit": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            }
+        },
+        "combat": {
+            "property": {
+                "useCreatorBuffedProperty": false,
+                "HP": 99999.0,
+                "defense": 99999.0,
+                "isInvincible": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "Faruzan_SkillObjAbility_WindZone_Hit",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 1.0
+        }
+    }
+}

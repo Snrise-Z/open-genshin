@@ -1,0 +1,742 @@
+{
+    "common": {
+        "effectAttachShape": {
+            "$type": "ConfigEffectAttachSkinnedMesh",
+            "mesh": "EffectMesh"
+        },
+        "mass": 30.0,
+        "height": 1.0,
+        "affectedByWorld": true,
+        "checkInSurface": true,
+        "scale": 1.25,
+        "canTriggerElementReactionText": false,
+        "clearAnimatorOnSetLightDeactive": true,
+        "clearAIOnSetLightDeactive": true
+    },
+    "LBGLCHLIKJP": {
+        "$type": "NJIKCGBDNDF",
+        "HONCKGMDJEK": true,
+        "IKIJCPNMBHI": 60.0,
+        "FMKKBCJKMPH": 30.0,
+        "FDPCOFKGCHG": [
+            "NormalIdle/Standby",
+            "NormalIdle/Sit",
+            "NormalIdle/Prone",
+            "NormalMove/Walk",
+            "NormalMove/Run",
+            "StandbyToSit",
+            "StandbyToProne",
+            "SitToStandby",
+            "ProneToStandby"
+        ]
+    },
+    "model": {
+        "bornEffect": "",
+        "attachEffect": "",
+        "canBakeMesh": false
+    },
+    "MEMHBNEJBCL": {
+        "PJBCJPKPOLB": 1.0
+    },
+    "combat": {
+        "property": {
+            "endureType": "Monster_Minion",
+            "weight": 30.0,
+            "isInvincible": true
+        },
+        "beHit": {
+            "hitBloodEffect": "",
+            "DKIENFAAJPK": true,
+            "muteAllHitText": true
+        },
+        "combatLock": {
+            "lockShape": "CircleLockEnemy",
+            "denyLockOn": true,
+            "lockType": "Animal_Lv2"
+        },
+        "die": {
+            "dieEndTime": 2.0,
+            "dieForceDisappearTime": 10.0,
+            "dieDisappearEffect": ""
+        }
+    },
+    "abilities": [
+        {
+            "abilityID": "Homeworld_CommonInitial",
+            "abilityName": "Animal_Homeworld_Common_Initial",
+            "abilityOverride": ""
+        }
+    ],
+    "stateLayers": {
+        "defaultLayer": {
+            "$type": "ConfigNormalStateLayer",
+            "ACOCIAFGIAD": "",
+            "stateIDs": {
+                "Born": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Born": []
+                    },
+                    "resetAnimatorTriggerOnExit": [
+                        "DoSkill"
+                    ]
+                },
+                "Life_Alert": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Alert": [
+                            "Monster_Undead01_Warning",
+                            "Animal_Homeworld_Cat_OutOfSurround"
+                        ],
+                        "Aware": [
+                            "Monster_Undead01_Warning"
+                        ]
+                    },
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "NormalIdle": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Standby": [],
+                        "Sit": [],
+                        "Prone": []
+                    },
+                    "canDoSkill": true,
+                    "canSyncMove": true,
+                    "resetAnimatorTriggerOnExit": [
+                        "DoSkill"
+                    ]
+                },
+                "NormalMove": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Walk": [
+                            "Audio_Cat_Walk"
+                        ],
+                        "Run": [
+                            "Audio_Cat_Run"
+                        ]
+                    },
+                    "canSyncMove": true,
+                    "resetAnimatorTriggerOnExit": [
+                        "DoSkill"
+                    ],
+                    "LIPMJPLGIKD": true
+                },
+                "Disappear": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Flee": [],
+                        "Disappear": [
+                            "Audio_Cat_Run"
+                        ],
+                        "Disappear_Cautious": [
+                            "Audio_Cat_Run"
+                        ]
+                    },
+                    "canSyncMove": true,
+                    "resetAnimatorTriggerOnExit": [
+                        "DoSkill"
+                    ],
+                    "LIPMJPLGIKD": true
+                },
+                "Dodge": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Dodge1": [
+                            "Animal_Homeworld_Cat_Dodge",
+                            "Audio_Cat_Dodge1"
+                        ],
+                        "Dodge2": [
+                            "Animal_Homeworld_Cat_Dodge",
+                            "Audio_Cat_Dodge1"
+                        ],
+                        "Dodge3": [
+                            "Animal_Homeworld_Cat_Dodge",
+                            "Audio_Cat_Dodge1"
+                        ]
+                    },
+                    "AJBLILDCLBO": [
+                        "BeHit",
+                        "BeHitTrigger"
+                    ],
+                    "resetAnimatorTriggerOnExit": [
+                        "DoSkill",
+                        "BeHitTrigger"
+                    ]
+                },
+                "Die": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Die": [
+                            "Animal_Homeworld_Cat_Disappear"
+                        ]
+                    }
+                },
+                "StandbyToSit": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "StandbyToSit": [
+                            "Animal_Homeworld_Cat_SitDown",
+                            "Audio_Cat_StandbyToSit"
+                        ]
+                    },
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "StandbyToProne": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "StandbyToProne": [
+                            "Animal_Homeworld_Cat_Prone",
+                            "Audio_Cat_StandbyToProne"
+                        ]
+                    },
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "SitToStandby": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "SitToStandby": [
+                            "Animal_Homeworld_Cat_StandUp",
+                            "Audio_Cat_SitToStandby"
+                        ]
+                    },
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "ProneToStandby": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "ProneToStandby": [
+                            "Animal_Homeworld_Cat_StandUp",
+                            "Audio_Cat_ProneToStandby"
+                        ]
+                    },
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "Personality_Standby": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Personality_4": [
+                            "Audio_Cat_Personality_4"
+                        ]
+                    },
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "Personality_Sit1": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Personality_1": []
+                    },
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "Personality_Sit2": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Personality_2": [
+                            "Audio_Cat_Personality_2"
+                        ]
+                    },
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "Personality_Prone": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Personality_3": [
+                            "Audio_Cat_Personality_3"
+                        ]
+                    },
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                }
+            }
+        }
+    },
+    "initialPoses": {
+        "Default": {
+            "initialPoseID": 1,
+            "initialPoseParams": {
+                "LHMPJOKLEHI": {
+                    "RandomPose": "1"
+                }
+            }
+        }
+    },
+    "aibeta": {
+        "enable": true,
+        "friendliness": 1,
+        "decisionArchetype": "Animal_Homeworld",
+        "moveSetting": {
+            "navMeshAgentName": "Undead01",
+            "PJMBMPINKON": 0.25,
+            "NNPOPGCMKBH": 2.0
+        },
+        "sensing": {
+            "settings": {
+                "DefaultSetting": {
+                    "PHDIIPOBJGA": 10.0,
+                    "COENEFGMPFK": 90.0,
+                    "MPEJKBDNFGB": 45.0,
+                    "feelRange": 3.5
+                },
+                "HighAlert": {
+                    "PHDIIPOBJGA": 7.0,
+                    "COENEFGMPFK": 90.0,
+                    "MPEJKBDNFGB": 45.0
+                }
+            },
+            "templates": {
+                "DefaultTemplate": {
+                    "DefaultPoses": "DefaultSetting"
+                }
+            }
+        },
+        "neurons": {
+            "DefaultSetting": [
+                "HIT"
+            ]
+        },
+        "threat": {
+            "clearThreatTargetDistance": 15.0,
+            "clearThreatTimerByDistance": 1.0,
+            "DKMKABAEKJK": 200.0,
+            "KDPOCNEHGBJ": 500.0,
+            "BJLBMJLOPIP": [
+                {
+                    "LFALGCACJOF": 10.0,
+                    "IOHOACGNJHO": 10.0
+                },
+                {
+                    "LFALGCACJOF": 12.5,
+                    "IOHOACGNJHO": 10.0
+                },
+                {
+                    "LFALGCACJOF": 15.0,
+                    "IOHOACGNJHO": 2.0
+                },
+                {
+                    "LFALGCACJOF": 20.0,
+                    "IOHOACGNJHO": -1.0
+                },
+                {
+                    "LFALGCACJOF": 25.0,
+                    "IOHOACGNJHO": -2.0
+                },
+                {
+                    "LFALGCACJOF": 30.0,
+                    "IOHOACGNJHO": -2.0
+                }
+            ],
+            "JGFOPCOIJOI": ""
+        },
+        "defendArea": {
+            "defendRange": 100.0
+        },
+        "GFDCKHFMHMH": {
+            "CKMELLHBHNH": [
+                {
+                    "KLENJAFFEFE": 15.0,
+                    "BMJCOELLDOL": 25.0,
+                    "HJEFCLHLLLN": 1,
+                    "MHHHCHEOGCL": [
+                        2,
+                        3
+                    ],
+                    "MHEIPEDLGEP": true
+                },
+                {
+                    "KLENJAFFEFE": 120.0,
+                    "BMJCOELLDOL": 240.0,
+                    "HJEFCLHLLLN": 2,
+                    "MHHHCHEOGCL": [
+                        1
+                    ],
+                    "MHEIPEDLGEP": true
+                },
+                {
+                    "KLENJAFFEFE": 120.0,
+                    "BMJCOELLDOL": 240.0,
+                    "HJEFCLHLLLN": 3,
+                    "MHHHCHEOGCL": [
+                        1
+                    ],
+                    "MHEIPEDLGEP": true
+                },
+                {
+                    "KLENJAFFEFE": 7.0,
+                    "BMJCOELLDOL": 15.0,
+                    "HJEFCLHLLLN": 101,
+                    "MHHHCHEOGCL": [
+                        2,
+                        3
+                    ],
+                    "MHEIPEDLGEP": true
+                },
+                {
+                    "KLENJAFFEFE": 60.0,
+                    "BMJCOELLDOL": 120.0,
+                    "HJEFCLHLLLN": 201,
+                    "MHHHCHEOGCL": [
+                        1
+                    ],
+                    "MHEIPEDLGEP": true
+                },
+                {
+                    "KLENJAFFEFE": 60.0,
+                    "BMJCOELLDOL": 120.0,
+                    "HJEFCLHLLLN": 301,
+                    "MHHHCHEOGCL": [
+                        1
+                    ],
+                    "MHEIPEDLGEP": true
+                },
+                {
+                    "KLENJAFFEFE": 30.0,
+                    "BMJCOELLDOL": 60.0,
+                    "HJEFCLHLLLN": 4,
+                    "MHHHCHEOGCL": [
+                        1
+                    ],
+                    "MHEIPEDLGEP": true
+                },
+                {
+                    "KLENJAFFEFE": 60.0,
+                    "BMJCOELLDOL": 120.0,
+                    "HJEFCLHLLLN": 401,
+                    "MHHHCHEOGCL": [
+                        1
+                    ],
+                    "MHEIPEDLGEP": true
+                }
+            ]
+        },
+        "ui": {
+            "hasDirectionIndicator": false,
+            "FLMOHOODJBA": ""
+        },
+        "profiling": {
+            "lodStrategy": "Best"
+        },
+        "BNIENJNLAIJ": {
+            "201": {
+                "NOKKDDHKGAK": "PersonalitySit1",
+                "IKMCLKEPDFP": "Free",
+                "ENKLFBHHOJI": {
+                    "CEKMINILIFB": [
+                        2,
+                        12
+                    ],
+                    "JHPHNFCMCIL": true
+                },
+                "cd": 20.0,
+                "GPMLADFJAAH": 20.0,
+                "LKCFDIOMLCM": 10.0,
+                "KKAEGIJIDLG": 10.0,
+                "NOPNCNPCPJE": "",
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "Personality_Sit1"
+                ],
+                "PGPDNPMFFAG": "10",
+                "CCEAGFDONFH": "01",
+                "OKOFHICILMD": "10",
+                "CCFFFOIDOLP": "11"
+            },
+            "202": {
+                "NOKKDDHKGAK": "PersonalitySit2",
+                "IKMCLKEPDFP": "Free",
+                "ENKLFBHHOJI": {
+                    "CEKMINILIFB": [
+                        2,
+                        12
+                    ],
+                    "JHPHNFCMCIL": true
+                },
+                "cd": 45.0,
+                "GPMLADFJAAH": 30.0,
+                "LKCFDIOMLCM": 30.0,
+                "KKAEGIJIDLG": 30.0,
+                "NOPNCNPCPJE": "",
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "Personality_Sit2"
+                ],
+                "PGPDNPMFFAG": "10",
+                "CCEAGFDONFH": "01",
+                "OKOFHICILMD": "10",
+                "CCFFFOIDOLP": "11"
+            },
+            "302": {
+                "NOKKDDHKGAK": "Personality_Prone",
+                "IKMCLKEPDFP": "Free",
+                "ENKLFBHHOJI": {
+                    "CEKMINILIFB": [
+                        3
+                    ],
+                    "JHPHNFCMCIL": true
+                },
+                "cd": 30.0,
+                "GPMLADFJAAH": 30.0,
+                "LKCFDIOMLCM": 30.0,
+                "KKAEGIJIDLG": 30.0,
+                "NOPNCNPCPJE": "",
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "Personality_Prone"
+                ],
+                "PGPDNPMFFAG": "10",
+                "CCEAGFDONFH": "01",
+                "OKOFHICILMD": "10",
+                "CCFFFOIDOLP": "11"
+            },
+            "211": {
+                "NOKKDDHKGAK": "PersonalitySit1",
+                "ENKLFBHHOJI": {
+                    "CEKMINILIFB": [
+                        201,
+                        202
+                    ],
+                    "JHPHNFCMCIL": true,
+                    "MLFAMHDFHMM": 5.0
+                },
+                "cd": 20.0,
+                "GPMLADFJAAH": 20.0,
+                "LKCFDIOMLCM": 10.0,
+                "KKAEGIJIDLG": 10.0,
+                "NOPNCNPCPJE": "",
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "Personality_Sit1"
+                ],
+                "PGPDNPMFFAG": "10",
+                "CCEAGFDONFH": "01",
+                "OKOFHICILMD": "10",
+                "CCFFFOIDOLP": "11"
+            },
+            "212": {
+                "NOKKDDHKGAK": "PersonalitySit2",
+                "ENKLFBHHOJI": {
+                    "CEKMINILIFB": [
+                        201,
+                        202
+                    ],
+                    "JHPHNFCMCIL": true,
+                    "MLFAMHDFHMM": 5.0
+                },
+                "cd": 45.0,
+                "GPMLADFJAAH": 30.0,
+                "LKCFDIOMLCM": 30.0,
+                "KKAEGIJIDLG": 30.0,
+                "NOPNCNPCPJE": "",
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "Personality_Sit2"
+                ],
+                "PGPDNPMFFAG": "10",
+                "CCEAGFDONFH": "01",
+                "OKOFHICILMD": "10",
+                "CCFFFOIDOLP": "11"
+            },
+            "312": {
+                "NOKKDDHKGAK": "Personality_Prone",
+                "ENKLFBHHOJI": {
+                    "CEKMINILIFB": [
+                        301
+                    ],
+                    "JHPHNFCMCIL": true
+                },
+                "LKCFDIOMLCM": 15.0,
+                "KKAEGIJIDLG": 15.0,
+                "NOPNCNPCPJE": "",
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "Personality_Prone"
+                ],
+                "PGPDNPMFFAG": "10",
+                "CCEAGFDONFH": "01",
+                "OKOFHICILMD": "10",
+                "CCFFFOIDOLP": "11"
+            }
+        },
+        "EMBHEEALPLD": 5.0,
+        "ABANJDJJKBP": {
+            "POACCELMOJN": [
+                {
+                    "DGPPEMIKGJN": [
+                        1,
+                        2,
+                        3,
+                        4,
+                        101,
+                        201,
+                        301,
+                        401
+                    ],
+                    "settings": [
+                        {
+                            "MDCJFODDKOF": [
+                                "Avatar",
+                                "Monster",
+                                "Gadget",
+                                "Bullet"
+                            ],
+                            "KCJJGBCCIGI": {
+                                "POAPDDPFGCD": [
+                                    {
+                                        "PLKBJCOAOCM": "RandomPose",
+                                        "CIBLLGMLODF": 4
+                                    }
+                                ],
+                                "JFDPLCHDNJA": [
+                                    {
+                                        "KPIOBOMBOHG": "BeHitTrigger"
+                                    }
+                                ]
+                            },
+                            "EAIKHFBCEGE": {
+                                "POAPDDPFGCD": [
+                                    {
+                                        "PLKBJCOAOCM": "RandomPose",
+                                        "CIBLLGMLODF": 4
+                                    }
+                                ],
+                                "JFDPLCHDNJA": [
+                                    {
+                                        "KPIOBOMBOHG": "BeHitTrigger"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "combatFixedMoveTactic": [
+            {
+                "$type": "EBLOGIMNNJB"
+            },
+            {
+                "$type": "GIMIMAJNOPH",
+                "enable": true,
+                "FJANPNOAAFK": {
+                    "CEKMINILIFB": [
+                        1,
+                        2,
+                        3,
+                        101,
+                        201,
+                        301,
+                        401
+                    ]
+                },
+                "nerveTrigger": [
+                    "HIT"
+                ],
+                "defaultSetting": {
+                    "turnSpeedOverride": 1.0,
+                    "cd": 3.0,
+                    "triggerDistance": 0.0,
+                    "fleeDistanceMin": 5.0,
+                    "fleeDistanceMax": 6.0,
+                    "JOCOJHEICNA": ""
+                },
+                "specification": {
+                    "401": {
+                        "turnSpeedOverride": 1.0,
+                        "cd": 1.0,
+                        "fleeAngle": 75.0,
+                        "fleeDistanceMin": 7.5,
+                        "fleeDistanceMax": 10.0,
+                        "JOCOJHEICNA": ""
+                    }
+                }
+            },
+            {
+                "$type": "KMHBGMELMKD",
+                "enable": true,
+                "defaultSetting": {
+                    "KIHPEPHJMOG": 1,
+                    "JOCOJHEICNA": "",
+                    "DBIELIMGBMC": ""
+                }
+            },
+            {
+                "$type": "GGKADEIBMLG",
+                "enable": true,
+                "FJANPNOAAFK": {
+                    "CEKMINILIFB": [
+                        1,
+                        101,
+                        4,
+                        401
+                    ]
+                },
+                "FDIIDHNBFFE": [
+                    0,
+                    1,
+                    2
+                ],
+                "defaultSetting": {
+                    "turnSpeedOverride": 1.0,
+                    "JIFJFPJANHO": 10.0,
+                    "CBKHBGCPFBG": 5.0,
+                    "EKDHNAGGGAE": 30.0,
+                    "BFEJAKFKKFP": 4.0,
+                    "KOAMKCEFJED": 6.0,
+                    "JOCOJHEICNA": ""
+                }
+            }
+        ]
+    },
+    "GIBHCHHOJFI": [
+        {
+            "NPDDCIDNKMH": 201,
+            "KCAOBJOPJIC": 257,
+            "abilityName": ""
+        },
+        {
+            "NPDDCIDNKMH": 201,
+            "KCAOBJOPJIC": 258,
+            "abilityName": ""
+        },
+        {
+            "NPDDCIDNKMH": 301,
+            "KCAOBJOPJIC": 259,
+            "abilityName": ""
+        }
+    ],
+    "move": {
+        "$type": "IIGPJJNGCLE",
+        "KCPLNKCIOCI": "Walk",
+        "FACNOEFNHIB": "RootNode"
+    },
+    "animal": {
+        "tickAbilityElement": false,
+        "hasCharacterRenderering": false
+    }
+}

@@ -1,0 +1,211 @@
+{
+    "common": {
+        "effectAttachShape": {
+            "$type": "ConfigEffectAttachSkinnedMesh",
+            "mesh": "EffectMesh"
+        },
+        "mass": 10000.0,
+        "height": 2.0,
+        "useGrassDisplacement": true,
+        "clearAIOnSetLightDeactive": true,
+        "BKPPECPBMBF": true,
+        "LOGFKHMLOOL": true
+    },
+    "model": {
+        "bornEffect": "",
+        "attachEffect": "",
+        "canBakeMesh": false
+    },
+    "MEMHBNEJBCL": {
+        "PJBCJPKPOLB": 2.0
+    },
+    "combat": {
+        "property": {
+            "endureType": "Monster_Boss_Other",
+            "weight": 1000.0
+        },
+        "beHit": {
+            "hitBloodEffect": ""
+        },
+        "combatLock": {
+            "lockShape": "CircleLockEnemy",
+            "lockType": "Avatar&Monster_Lv4"
+        },
+        "die": {
+            "hasAnimatorDie": true,
+            "dieEndTime": 0.5,
+            "dieForceDisappearTime": 0.5,
+            "dieDisappearEffect": "Eff_SceneObj_FungusBalloon_Die_01",
+            "dieShaderData": "AvatarDie",
+            "LEDBOLGDENF": true,
+            "IEAKKMEDNDE": true,
+            "AAEANOPIAAL": true,
+            "BKIBMIAJOHP": true,
+            "MOFPBPPGPCL": true
+        }
+    },
+    "abilities": [
+        {
+            "abilityID": "",
+            "abilityName": "Monster_AutoMachine_FungusBalloon_Label",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "",
+            "abilityName": "Monster_AutoMachine_Balloon_Dither",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "",
+            "abilityName": "Monster_AutoMachine_Balloon_Effect",
+            "abilityOverride": ""
+        }
+    ],
+    "stateLayers": {
+        "defaultLayer": {
+            "$type": "ConfigNormalStateLayer",
+            "ACOCIAFGIAD": "",
+            "stateIDs": {
+                "Born": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Born": []
+                    },
+                    "canSyncMove": true,
+                    "resetAnimatorTriggerOnExit": [
+                        "DoSkill"
+                    ]
+                },
+                "Standby": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Standby": []
+                    },
+                    "canDoSkill": true,
+                    "canSyncMove": true,
+                    "resetAnimatorTriggerOnExit": [
+                        "DoSkill"
+                    ],
+                    "HMPOMAMKBEF": true
+                },
+                "WalkForward": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "WalkForward": []
+                    },
+                    "canDoSkill": true,
+                    "canSyncMove": true,
+                    "resetAnimatorTriggerOnExit": [
+                        "DoSkill"
+                    ],
+                    "LIPMJPLGIKD": true
+                },
+                "Die": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Die": []
+                    },
+                    "resetAnimatorTriggerOnExit": [
+                        "DoSkill"
+                    ]
+                }
+            }
+        }
+    },
+    "BPKMBFGIKHE": {
+        "LCCAAAFMJIN": 10002,
+        "BDICGPJLOKA": true
+    },
+    "initialPoses": {
+        "Default": {
+            "initialPoseID": 1
+        }
+    },
+    "aibeta": {
+        "enable": true,
+        "sensing": {
+            "settings": {
+                "DefaultSetting": {
+                    "enableVision": false,
+                    "PHDIIPOBJGA": 0.0,
+                    "hearAttractionRange": 0.0,
+                    "feelRange": 0.0
+                }
+            },
+            "templates": {
+                "DefaultTemplate": {
+                    "DefaultPoses": "DefaultSetting"
+                }
+            }
+        },
+        "threat": {
+            "PLCPHNHGFAC": 0.0,
+            "DMBNEKAFACI": true,
+            "clearThreatByTargetOutOfZone": true,
+            "GAIJJFPCMEG": 4.0,
+            "clearThreatTimerByTargetOutOfZone": 3.0,
+            "viewThreatGrow": 0.0,
+            "DKMKABAEKJK": 0.0,
+            "feelThreatGrow": 0.0,
+            "threatBroadcastRange": 0.0,
+            "IBGELAGCJFH": "Monster_TauntLevel_2",
+            "JGFOPCOIJOI": ""
+        },
+        "defendArea": {},
+        "CNAPABCFOAH": {
+            "LNFOCHIGPKF": true
+        },
+        "EMBHEEALPLD": 3.0,
+        "combatFixedMoveTactic": [
+            {
+                "$type": "LCIAFAFLKBC",
+                "enable": true,
+                "FJANPNOAAFK": {
+                    "CEKMINILIFB": [
+                        101
+                    ]
+                },
+                "defaultSetting": {
+                    "KIHPEPHJMOG": 1,
+                    "MHMCEHINFNL": 1.3452465257518244e-43,
+                    "IPGHDLJJBAM": 2.0000154972076416,
+                    "DCEODHLDKCJ": 9.10844001811131e-44,
+                    "GAHPENGCPFA": 8.96831017167883e-44,
+                    "NOEBILEBKGP": 2.3693737374965166e-38,
+                    "HDACKBIMJFA": {
+                        "LKDDCABPJNN": 9.88178749356412e-38
+                    }
+                }
+            },
+            {
+                "$type": "JLJLJCIJPDI"
+            }
+        ]
+    },
+    "GIBHCHHOJFI": [
+        {
+            "NPDDCIDNKMH": 101,
+            "KCAOBJOPJIC": 257,
+            "abilityName": ""
+        },
+        {
+            "NPDDCIDNKMH": 102,
+            "KCAOBJOPJIC": 258,
+            "abilityName": ""
+        },
+        {
+            "NPDDCIDNKMH": 10000,
+            "KCAOBJOPJIC": 259,
+            "abilityName": ""
+        }
+    ],
+    "move": {
+        "$type": "IIGPJJNGCLE",
+        "EIEIGIPKLAO": {
+            "BFHOPPHPHJK": [
+                "RetreatAirType"
+            ]
+        },
+        "FACNOEFNHIB": "RootNode"
+    }
+}

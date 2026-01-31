@@ -1,0 +1,29 @@
+{
+  "serverChatEnabled": true,
+  "serverChatFormat": "<color=#99CC99>{nickName}({uid})</color>: {message}",
+  "messageFreLimitPerMinute": 20,
+  "sendJoinMessage": true,
+  "joinMessage": "本服已启用聊天，/chat on 开启（默认），/chat off 屏蔽",
+  "bannedFeedback": "你已经被禁言！",
+  "msgTooFrequentFeedback": "服务器设置每分钟仅允许发言{limit}次",
+  "logChat": true,
+  "wsToken": "XwLynMCsNjR3jqdt8pkC2X6q7hUc1GsI",
+  "wsPath": "/openchat",
+  "groupId": 0,
+  "groupToGameFormat": "<color=#6699CC>[QQ]</color><color=#99CC99>{name}</color>: {message}",
+  "gameToGroupFormat": "[GC]{nickName}({uid}): {message}",
+  "isSendToBot": true,
+  "isSendToGame": true,
+  "adminIds": [
+    0
+  ],
+  "adminPrefix": "/",
+  "sendLoginMessageToBot": true,
+  "loginMessageFormat": "{nickName}({uid}) 加入了服务器",
+  "sendLoginMessageToGame": true,
+  "loginMessageFormatInGame": "<color=#99CC99>{nickName}({uid}) 加入了游戏</color>",
+  "sendLogoutMessageToBot": true,
+  "logoutMessageFormat": "{nickName}({uid}) 离开了服务器",
+  "sendLogoutMessageToGame": true,
+  "logoutMessageFormatInGame": "<color=#99CC99>{nickName}({uid}) 离开了游戏</color>"
+}

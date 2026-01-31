@@ -1,0 +1,959 @@
+[
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "Thoarder_MuscleMan_NoWeapon_Zeppeli_PoseManager",
+            "abilityMixins": [
+                {
+                    "$type": "AttachModifierToHPPercentMixin",
+                    "valueSteps": [
+                        0.800000011920929,
+                        0.4000000059604645
+                    ],
+                    "modifierNameSteps": [
+                        "HP_Stage1",
+                        "HP_Stage2",
+                        "HP_Stage3"
+                    ]
+                },
+                {
+                    "$type": "SteerAttackMixin",
+                    "LMMLIKMOKHL": [
+                        "Turn"
+                    ],
+                    "KNPBDOFJKKB": 360.0,
+                    "APILILGPPAD": ""
+                },
+                {
+                    "$type": "SteerAttackMixin",
+                    "LMMLIKMOKHL": [
+                        "Disappear_Trans_ToPowerStrike"
+                    ],
+                    "KNPBDOFJKKB": 700.0,
+                    "APILILGPPAD": ""
+                },
+                {
+                    "$type": "SteerAttackMixin",
+                    "LMMLIKMOKHL": [
+                        "NormalAtk_P1"
+                    ],
+                    "GGMOCFABGPD": 0.5600000023841858,
+                    "KNPBDOFJKKB": 360.0,
+                    "APILILGPPAD": ""
+                },
+                {
+                    "$type": "SteerAttackMixin",
+                    "LMMLIKMOKHL": [
+                        "PowerStrike_AS"
+                    ],
+                    "GGMOCFABGPD": 0.10499999672174454,
+                    "KNPBDOFJKKB": 600.0,
+                    "APILILGPPAD": ""
+                },
+                {
+                    "$type": "SteerAttackMixin",
+                    "LMMLIKMOKHL": [
+                        "PowerStrike_AS"
+                    ],
+                    "EIAGKLKHEFP": 0.6370000243186951,
+                    "GGMOCFABGPD": 0.7900000214576721,
+                    "KNPBDOFJKKB": 400.0,
+                    "APILILGPPAD": "",
+                    "OFBFPHOOBIK": "Right"
+                },
+                {
+                    "$type": "SteerAttackMixin",
+                    "LMMLIKMOKHL": [
+                        "LandStrike_BreakStone"
+                    ],
+                    "EIAGKLKHEFP": 0.5019999742507935,
+                    "GGMOCFABGPD": 0.7099999785423279,
+                    "KNPBDOFJKKB": 600.0,
+                    "APILILGPPAD": ""
+                }
+            ],
+            "modifiers": {
+                "Property_Control": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLPPKPOJEOA": {
+                        "Actor_EndureDelta": 0.75
+                    },
+                    "onAdded": [
+                        {
+                            "$type": "AttachAbilityStateResistance",
+                            "GHLGBFJLNGJ": [
+                                "ElementFreeze"
+                            ],
+                            "OMHOEDMGLMN": 0.8999999761581421
+                        }
+                    ]
+                },
+                "HP_Stage1": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "onAdded": [
+                        {
+                            "$type": "SetPoseBool",
+                            "CMLNMLEDGPA": "Enhanced"
+                        },
+                        {
+                            "$type": "SetAnimatorInt",
+                            "EGCALHMEFEC": "Stage",
+                            "value": 1.0
+                        }
+                    ]
+                },
+                "HP_Stage2": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "onAdded": [
+                        {
+                            "$type": "SetPoseBool",
+                            "CMLNMLEDGPA": "Enhanced",
+                            "value": true
+                        },
+                        {
+                            "$type": "SetAnimatorInt",
+                            "EGCALHMEFEC": "Stage",
+                            "value": 2.0
+                        }
+                    ]
+                },
+                "HP_Stage3": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLPPKPOJEOA": {
+                        "Actor_AttackRatio": 0.4000000059604645
+                    },
+                    "FJMPEOEHPJK": "AttackUp",
+                    "onAdded": [
+                        {
+                            "$type": "SetPoseBool",
+                            "CMLNMLEDGPA": "Enhanced",
+                            "value": true
+                        },
+                        {
+                            "$type": "SetAnimatorInt",
+                            "EGCALHMEFEC": "Stage",
+                            "value": 3.0
+                        }
+                    ],
+                    "LFBJFECLNGK": [
+                        {
+                            "$type": "RemoveModifier",
+                            "modifierName": "HP_Stage3"
+                        }
+                    ]
+                }
+            },
+            "onAdded": [
+                {
+                    "$type": "ApplyModifier",
+                    "modifierName": "Property_Control"
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "Thoarder_MuscleMan_NoWeapon_Zeppeli_LandStrike_Disappear_Manager",
+            "abilityMixins": [
+                {
+                    "$type": "AttachToStateIDMixin",
+                    "FHCHNMKMJJA": [
+                        "LandStrike_JusticeCrash_Disappear",
+                        "Disappear_Trans"
+                    ],
+                    "modifierName": "Disappear_Logic"
+                },
+                {
+                    "$type": "AttachToAnimatorStateIDMixin",
+                    "FHCHNMKMJJA": [
+                        "LandStrike_JusticeCrash_Disappear",
+                        "LandStrike_JusticeCrash_NoPush",
+                        "Disappear_Trans",
+                        "Disappear_Trans_ToPowerStrike"
+                    ],
+                    "modifierName": "Disappear_Push_Logic"
+                },
+                {
+                    "$type": "DoActionByAnimatorStateIDMixin",
+                    "FHCHNMKMJJA": [
+                        "Disappear_Trans_ToPowerStrike"
+                    ],
+                    "PLOCKLIHJKB": [
+                        {
+                            "$type": "TryFindBlinkPointByBorn",
+                            "CCNCMOGOFAG": {
+                                "$type": "DELDMCFKBBL",
+                                "LDMJACNGCID": {
+                                    "$type": "MIEJMAAEHFK",
+                                    "AANHIPHLAJC": 2.5,
+                                    "AOOEJDINDEK": 4.5
+                                },
+                                "FPDJOHEHNDD": true
+                            },
+                            "EFMNLNPCOJJ": "BlinkHitSceneTestByThreeSegments",
+                            "ALDFNGFNCID": 2.5
+                        },
+                        {
+                            "$type": "FireEffect",
+                            "LHHFHDEJOHC": "Eff_Monster_Thoarder_Common_Die_01",
+                            "CCNCMOGOFAG": {
+                                "$type": "MMFIGIGOPKE"
+                            },
+                            "PCLAEGHPNHE": -1.0
+                        },
+                        {
+                            "$type": "DoBlink"
+                        }
+                    ]
+                },
+                {
+                    "$type": "DoActionByAnimatorStateIDMixin",
+                    "FHCHNMKMJJA": [
+                        "Disappear_Trans"
+                    ],
+                    "EEGIIGFKBHC": [
+                        {
+                            "$type": "SetAnimatorFloat",
+                            "JFPNPOCKNIH": "RandomValue",
+                            "DNBIBMHCJAC": true,
+                            "MCMGHIHFKMK": 0.0,
+                            "ADHOLGOENEP": 1.0
+                        }
+                    ]
+                },
+                {
+                    "$type": "AttachModifierToSelfGlobalValueMixin",
+                    "globalValueKey": "_COUNTER_COOLDOWN",
+                    "defaultGlobalValueOnCreate": 0.0,
+                    "valueSteps": [
+                        -0.5,
+                        0.5,
+                        1.5
+                    ],
+                    "modifierNameSteps": [
+                        "Counter_Able",
+                        "Counter_Cooldown"
+                    ]
+                }
+            ],
+            "modifiers": {
+                "Counter_Able": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "modifierMixins": [
+                        {
+                            "$type": "DoActionByAnimatorStateIDMixin",
+                            "FHCHNMKMJJA": [
+                                "Hit_H",
+                                "HitThrowToGround"
+                            ],
+                            "PLOCKLIHJKB": [
+                                {
+                                    "$type": "SetGlobalValue",
+                                    "value": 1.0,
+                                    "NGGCNKPAODB": "_COUNTER_COOLDOWN",
+                                    "LBHGJKHHAKP": 0.0,
+                                    "EMGNPOKHMNN": 0.0
+                                }
+                            ]
+                        }
+                    ],
+                    "onAdded": [
+                        {
+                            "$type": "SetAnimatorBool",
+                            "CMLNMLEDGPA": "Counter_Able",
+                            "value": true
+                        }
+                    ]
+                },
+                "Counter_Cooldown": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "ANPDJHOGAFE": 5.0,
+                    "onAdded": [
+                        {
+                            "$type": "SetAnimatorBool",
+                            "CMLNMLEDGPA": "Counter_Able"
+                        }
+                    ],
+                    "MDPGEKAIFIM": [
+                        {
+                            "$type": "SetGlobalValue",
+                            "value": 0.0,
+                            "NGGCNKPAODB": "_COUNTER_COOLDOWN",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        }
+                    ]
+                },
+                "Disappear_Push_Logic": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "modifierMixins": [
+                        {
+                            "$type": "AttachActionToModifierMixin",
+                            "onAdded": [
+                                {
+                                    "$type": "EnablePushColliderName",
+                                    "MPJLFMGJJEM": [
+                                        "PushCollider"
+                                    ]
+                                }
+                            ],
+                            "NFKOGKMAIIE": [
+                                {
+                                    "$type": "EnablePushColliderName",
+                                    "MPJLFMGJJEM": [
+                                        "PushCollider"
+                                    ],
+                                    "DEHFCFDDEGB": true
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "Disappear_Logic": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "modifierMixins": [
+                        {
+                            "$type": "ChangeLockTypeMixin",
+                            "lockType": "Default",
+                            "overrideRange": 0.009999999776482582,
+                            "overrideCombatPri": 0.20000000298023224
+                        },
+                        {
+                            "$type": "AttachActionToModifierMixin",
+                            "onAdded": [
+                                {
+                                    "$type": "EnableHitBoxByName",
+                                    "DFBDHJKDLHI": [
+                                        "HitBox",
+                                        "HeadBox"
+                                    ]
+                                },
+                                {
+                                    "$type": "HideUIBillBoard",
+                                    "HCDOGJLANIM": true
+                                }
+                            ],
+                            "NFKOGKMAIIE": [
+                                {
+                                    "$type": "EnableHitBoxByName",
+                                    "DFBDHJKDLHI": [
+                                        "HitBox",
+                                        "HeadBox"
+                                    ],
+                                    "DEHFCFDDEGB": true
+                                },
+                                {
+                                    "$type": "HideUIBillBoard"
+                                }
+                            ]
+                        },
+                        {
+                            "$type": "EntityInVisibleMixin",
+                            "OLHFDKGIGGN": "SelfAbility"
+                        }
+                    ],
+                    "FJMPEOEHPJK": "DenyLockOn",
+                    "onAdded": [
+                        {
+                            "$type": "AttachModifier",
+                            "modifierName": "GhostState"
+                        },
+                        {
+                            "$type": "FireEffect",
+                            "LHHFHDEJOHC": "Eff_Monster_Thoarder_Common_Die_01",
+                            "PCLAEGHPNHE": -1.0
+                        }
+                    ]
+                },
+                "GhostState": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "FJMPEOEHPJK": "IsGhostToEnemy"
+                }
+            }
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "Thoarder_MuscleMan_NoWeapon_Zeppeli_LandStrike_JusticeCrash_Manager",
+            "abilityMixins": [
+                {
+                    "$type": "AttachToStateIDMixin",
+                    "FHCHNMKMJJA": [
+                        "LandStrike_JusticeCrash_Disappear"
+                    ],
+                    "modifierName": "JusticeCrash_Logic"
+                },
+                {
+                    "$type": "DoActionByAnimatorStateIDMixin",
+                    "FHCHNMKMJJA": [
+                        "LandStrike_JusticeCrash"
+                    ],
+                    "EEGIIGFKBHC": [
+                        {
+                            "$type": "TriggerAttackEvent",
+                            "FMDHJHAACGM": {
+                                "LOPCJCIFFBE": {
+                                    "$type": "PMGLIKAEELC",
+                                    "triggerType": "TriggerNoRepeat",
+                                    "CCNCMOGOFAG": {
+                                        "$type": "DELDMCFKBBL",
+                                        "offset": {
+                                            "KKKLBADAPPB": -2.0
+                                        },
+                                        "FPDJOHEHNDD": true
+                                    },
+                                    "height": 3.549999952316284,
+                                    "GGEJLLOCJDH": 4.860000133514404
+                                },
+                                "OIAMOBFMPAB": {
+                                    "KNOKCFHALLI": "",
+                                    "HOKPLNACNKG": "",
+                                    "ILLFBEHPCJA": "default",
+                                    "BAPFFKCLDPC": {
+                                        "OLLFABADCKH": 1.0,
+                                        "PDHAKJCMPHB": 0.0,
+                                        "bonusCritical": 100.0,
+                                        "GAOIEGMFFDJ": "Blunt",
+                                        "FFIIMACIKEA": 250.0,
+                                        "ELCPFOMENGK": "Range",
+                                        "AEOLDMAMNLM": 0.0
+                                    },
+                                    "OCHEEDIDOHI": {
+                                        "AIDMNBLLAIJ": "default",
+                                        "OEGAJNNFFPO": "",
+                                        "HMAALKAJCFB": {
+                                            "LNDONGHHKPJ": "Air",
+                                            "KIPGEFGLCFL": 150.0,
+                                            "BBNADHPONHO": 1030.0
+                                        }
+                                    },
+                                    "KPCBFANCGFH": true,
+                                    "FCDFPCPCJGO": {
+                                        "DFOAHDENBKP": "CustomVector",
+                                        "FIKIBNDMNEF": 1.600000023841858,
+                                        "NCDMOKAIAJD": 0.15000000596046448,
+                                        "JOLJAMKOCJL": 25.0,
+                                        "BOEOGMPKDBO": {
+                                            "y": -1.0
+                                        },
+                                        "LLNFDIKODIM": {
+                                            "LOCEENOGLOH": 0.30000001192092896,
+                                            "JBAENFBBNHF": 0.25
+                                        }
+                                    }
+                                }
+                            },
+                            "PFBJAFHFBDE": "Enemy"
+                        }
+                    ]
+                }
+            ],
+            "modifiers": {
+                "JusticeCrash_Logic": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "modifierMixins": [
+                        {
+                            "$type": "ChangeLockTypeMixin",
+                            "lockType": "Default",
+                            "overrideRange": 0.009999999776482582,
+                            "overrideCombatPri": 0.20000000298023224
+                        },
+                        {
+                            "$type": "AttachActionToModifierMixin",
+                            "onAdded": [
+                                {
+                                    "$type": "EnableHitBoxByName",
+                                    "DFBDHJKDLHI": [
+                                        "HitBox",
+                                        "HeadBox"
+                                    ]
+                                },
+                                {
+                                    "$type": "HideUIBillBoard",
+                                    "HCDOGJLANIM": true
+                                }
+                            ],
+                            "NFKOGKMAIIE": [
+                                {
+                                    "$type": "EnableHitBoxByName",
+                                    "DFBDHJKDLHI": [
+                                        "HitBox",
+                                        "HeadBox"
+                                    ],
+                                    "DEHFCFDDEGB": true
+                                },
+                                {
+                                    "$type": "HideUIBillBoard"
+                                }
+                            ]
+                        },
+                        {
+                            "$type": "EntityInVisibleMixin",
+                            "OLHFDKGIGGN": "SelfAbility"
+                        }
+                    ],
+                    "FJMPEOEHPJK": "DenyLockOn",
+                    "onAdded": [
+                        {
+                            "$type": "SetGlobalPos",
+                            "KMGAOOHMCPK": "SelfAttackActiveTarget",
+                            "NGGCNKPAODB": "_CRASH_POINT",
+                            "CCNCMOGOFAG": {
+                                "$type": "JGMGEEDIKPG",
+                                "OINHJGEGJLO": true,
+                                "FPDJOHEHNDD": true,
+                                "LDPGCLBGBFG": 0.30000001192092896,
+                                "IJBNLDCAKIP": true
+                            },
+                            "NMPAAMMEDAD": false
+                        },
+                        {
+                            "$type": "FireEffect",
+                            "LHHFHDEJOHC": "Eff_Monster_Thoarder_MuscleMan_NoWeapon_Zeppeli_LandStrike_WarningCircle",
+                            "CCNCMOGOFAG": {
+                                "$type": "MIJAAKJGAEJ",
+                                "POLCJDPOKCF": "_CRASH_POINT",
+                                "NHBEMFBAMNP": ""
+                            },
+                            "PCLAEGHPNHE": -1.0
+                        },
+                        {
+                            "$type": "AttachModifier",
+                            "modifierName": "GhostState"
+                        }
+                    ],
+                    "NFKOGKMAIIE": [
+                        {
+                            "$type": "DoBlinkByGlobalPos",
+                            "POLCJDPOKCF": "_CRASH_POINT",
+                            "NHBEMFBAMNP": "",
+                            "KCKNCIKJKAF": true
+                        }
+                    ]
+                },
+                "GhostState": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "FJMPEOEHPJK": "IsGhostToEnemy"
+                }
+            },
+            "onAdded": [
+                {
+                    "$type": "SetGlobalPos",
+                    "NGGCNKPAODB": "_CRASH_POINT",
+                    "CCNCMOGOFAG": {
+                        "$type": "DELDMCFKBBL",
+                        "OINHJGEGJLO": true,
+                        "FPDJOHEHNDD": true
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "Thoarder_MuscleMan_NoWeapon_Zeppeli_RushMove",
+            "onAbilityStart": [
+                {
+                    "$type": "RushMove",
+                    "OPOOFGHHJAE": {
+                        "$type": "DELDMCFKBBL",
+                        "offset": {
+                            "GENNNOANKOO": 1.2000000476837158
+                        },
+                        "OINHJGEGJLO": true,
+                        "FPDJOHEHNDD": true
+                    },
+                    "FLGDGOMOIHH": 1.2000000476837158,
+                    "NDAMECCCGAG": 0.07999999821186066
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "Thoarder_MuscleMan_NoWeapon_Zeppeli_LandStrike_BreakStone_CreateBullet_TypeI",
+            "onAbilityStart": [
+                {
+                    "$type": "TriggerBullet",
+                    "PMOEIMCLPBE": 42506021,
+                    "CCNCMOGOFAG": {
+                        "$type": "DELDMCFKBBL",
+                        "offset": {
+                            "NEEHMANEJKM": 0.0,
+                            "KKKLBADAPPB": 0.0,
+                            "GENNNOANKOO": 2.4000000953674316
+                        },
+                        "OINHJGEGJLO": true,
+                        "FNHBOFDBNNK": {
+                            "$type": "GPKIIMADEMG",
+                            "MLBICJBMCNL": {
+                                "NEEHMANEJKM": 0.0,
+                                "KKKLBADAPPB": 0.0,
+                                "GENNNOANKOO": 0.0
+                            }
+                        },
+                        "BOBAFJLJGEH": true,
+                        "FPDJOHEHNDD": true
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "Thoarder_MuscleMan_NoWeapon_Zeppeli_LandStrike_BreakStone_CreateBullet_TypeV",
+            "onAbilityStart": [
+                {
+                    "$type": "TriggerBullet",
+                    "PMOEIMCLPBE": 42506021,
+                    "CCNCMOGOFAG": {
+                        "$type": "DELDMCFKBBL",
+                        "offset": {
+                            "NEEHMANEJKM": -1.5,
+                            "KKKLBADAPPB": 0.0,
+                            "GENNNOANKOO": 2.0
+                        },
+                        "OINHJGEGJLO": true,
+                        "FNHBOFDBNNK": {
+                            "$type": "GPKIIMADEMG",
+                            "MLBICJBMCNL": {
+                                "NEEHMANEJKM": 0.0,
+                                "KKKLBADAPPB": -15.0,
+                                "GENNNOANKOO": 0.0
+                            }
+                        },
+                        "BOBAFJLJGEH": true,
+                        "FPDJOHEHNDD": true
+                    }
+                },
+                {
+                    "$type": "TriggerBullet",
+                    "PMOEIMCLPBE": 42506021,
+                    "CCNCMOGOFAG": {
+                        "$type": "DELDMCFKBBL",
+                        "offset": {
+                            "NEEHMANEJKM": 1.5,
+                            "KKKLBADAPPB": 0.0,
+                            "GENNNOANKOO": 2.0
+                        },
+                        "OINHJGEGJLO": true,
+                        "FNHBOFDBNNK": {
+                            "$type": "GPKIIMADEMG",
+                            "MLBICJBMCNL": {
+                                "NEEHMANEJKM": 0.0,
+                                "KKKLBADAPPB": 15.0,
+                                "GENNNOANKOO": 0.0
+                            }
+                        },
+                        "BOBAFJLJGEH": true,
+                        "FPDJOHEHNDD": true
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "Thoarder_MuscleMan_NoWeapon_Zeppeli_LandStrike_BreakStone_CreateBullet_TypeX",
+            "onAbilityStart": [
+                {
+                    "$type": "TriggerBullet",
+                    "PMOEIMCLPBE": 42506021,
+                    "CCNCMOGOFAG": {
+                        "$type": "DELDMCFKBBL",
+                        "offset": {
+                            "NEEHMANEJKM": 1.600000023841858,
+                            "KKKLBADAPPB": 0.0,
+                            "GENNNOANKOO": -1.600000023841858
+                        },
+                        "OINHJGEGJLO": true,
+                        "FNHBOFDBNNK": {
+                            "$type": "GPKIIMADEMG",
+                            "MLBICJBMCNL": {
+                                "NEEHMANEJKM": 0.0,
+                                "KKKLBADAPPB": 135.0,
+                                "GENNNOANKOO": 0.0
+                            }
+                        },
+                        "BOBAFJLJGEH": true,
+                        "FPDJOHEHNDD": true
+                    },
+                    "EMINLBKFOBM": "SelfAttackActiveTarget"
+                },
+                {
+                    "$type": "TriggerBullet",
+                    "PMOEIMCLPBE": 42506021,
+                    "CCNCMOGOFAG": {
+                        "$type": "DELDMCFKBBL",
+                        "offset": {
+                            "NEEHMANEJKM": -1.600000023841858,
+                            "KKKLBADAPPB": 0.0,
+                            "GENNNOANKOO": -1.600000023841858
+                        },
+                        "OINHJGEGJLO": true,
+                        "FNHBOFDBNNK": {
+                            "$type": "GPKIIMADEMG",
+                            "MLBICJBMCNL": {
+                                "NEEHMANEJKM": 0.0,
+                                "KKKLBADAPPB": -135.0,
+                                "GENNNOANKOO": 0.0
+                            }
+                        },
+                        "BOBAFJLJGEH": true,
+                        "FPDJOHEHNDD": true
+                    },
+                    "EMINLBKFOBM": "SelfAttackActiveTarget"
+                },
+                {
+                    "$type": "TriggerBullet",
+                    "PMOEIMCLPBE": 42506021,
+                    "CCNCMOGOFAG": {
+                        "$type": "DELDMCFKBBL",
+                        "offset": {
+                            "NEEHMANEJKM": 1.600000023841858,
+                            "KKKLBADAPPB": 0.0,
+                            "GENNNOANKOO": 1.600000023841858
+                        },
+                        "OINHJGEGJLO": true,
+                        "FNHBOFDBNNK": {
+                            "$type": "GPKIIMADEMG",
+                            "MLBICJBMCNL": {
+                                "NEEHMANEJKM": 0.0,
+                                "KKKLBADAPPB": 45.0,
+                                "GENNNOANKOO": 0.0
+                            }
+                        },
+                        "BOBAFJLJGEH": true,
+                        "FPDJOHEHNDD": true
+                    },
+                    "EMINLBKFOBM": "SelfAttackActiveTarget"
+                },
+                {
+                    "$type": "TriggerBullet",
+                    "PMOEIMCLPBE": 42506021,
+                    "CCNCMOGOFAG": {
+                        "$type": "DELDMCFKBBL",
+                        "offset": {
+                            "NEEHMANEJKM": -1.600000023841858,
+                            "KKKLBADAPPB": 0.0,
+                            "GENNNOANKOO": 1.600000023841858
+                        },
+                        "OINHJGEGJLO": true,
+                        "FNHBOFDBNNK": {
+                            "$type": "GPKIIMADEMG",
+                            "MLBICJBMCNL": {
+                                "NEEHMANEJKM": 0.0,
+                                "KKKLBADAPPB": -45.0,
+                                "GENNNOANKOO": 0.0
+                            }
+                        },
+                        "BOBAFJLJGEH": true,
+                        "FPDJOHEHNDD": true
+                    },
+                    "EMINLBKFOBM": "SelfAttackActiveTarget"
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "Thoarder_MuscleMan_NoWeapon_Zeppeli_LandStrike_BreakStone_BulletLogic",
+            "modifiers": {
+                "Bullet_TriggerDamage": {
+                    "modifierName": "",
+                    "FAFCPJJAIGK": 0.8100000023841858,
+                    "bonusCritical": 100.0,
+                    "ANPDJHOGAFE": 0.20000000298023224,
+                    "onAdded": [
+                        {
+                            "$type": "FireEffect",
+                            "LHHFHDEJOHC": "Eff_Monster_Thoarder_MuscleMan_NoWeapon_Zeppeli_LandStrike_Rock",
+                            "CCNCMOGOFAG": {
+                                "$type": "DELDMCFKBBL",
+                                "FPDJOHEHNDD": true
+                            },
+                            "PCLAEGHPNHE": -1.0
+                        },
+                        {
+                            "$type": "TriggerAttackEvent",
+                            "FMDHJHAACGM": {
+                                "LOPCJCIFFBE": {
+                                    "$type": "PMGLIKAEELC",
+                                    "triggerType": "TriggerNoRepeat",
+                                    "CCNCMOGOFAG": {
+                                        "$type": "DELDMCFKBBL",
+                                        "offset": {
+                                            "NEEHMANEJKM": 0.0,
+                                            "KKKLBADAPPB": -0.5,
+                                            "GENNNOANKOO": 0.0
+                                        },
+                                        "FPDJOHEHNDD": true
+                                    },
+                                    "height": 2.0,
+                                    "GGEJLLOCJDH": 1.5
+                                },
+                                "OIAMOBFMPAB": {
+                                    "KNOKCFHALLI": "",
+                                    "HOKPLNACNKG": "BreakStone_Damage",
+                                    "ILLFBEHPCJA": "Universal_RushAttack",
+                                    "BAPFFKCLDPC": {
+                                        "OLLFABADCKH": 0.6000000238418579,
+                                        "PDHAKJCMPHB": 0.0,
+                                        "bonusCritical": 100.0,
+                                        "GAOIEGMFFDJ": "Default",
+                                        "FFIIMACIKEA": 101.0,
+                                        "ELCPFOMENGK": "Range",
+                                        "AEOLDMAMNLM": 0.0
+                                    },
+                                    "OCHEEDIDOHI": {
+                                        "AIDMNBLLAIJ": "default",
+                                        "OEGAJNNFFPO": "LV5",
+                                        "MLDJMEACGKL": "ByOriginOwner"
+                                    },
+                                    "FAAOHGPLAFO": "OriginOwner"
+                                }
+                            },
+                            "PFBJAFHFBDE": "Enemy"
+                        }
+                    ],
+                    "MDPGEKAIFIM": [
+                        {
+                            "$type": "FireEffect",
+                            "LHHFHDEJOHC": "Eff_Monster_Thoarder_MuscleMan_NoWeapon_Zeppeli_LandStrike_Rock",
+                            "CCNCMOGOFAG": {
+                                "$type": "DELDMCFKBBL",
+                                "BOBAFJLJGEH": true,
+                                "FPDJOHEHNDD": true
+                            },
+                            "PCLAEGHPNHE": -1.0
+                        },
+                        {
+                            "$type": "TriggerAttackEvent",
+                            "FMDHJHAACGM": {
+                                "LOPCJCIFFBE": {
+                                    "$type": "PMGLIKAEELC",
+                                    "triggerType": "TriggerNoRepeat",
+                                    "CCNCMOGOFAG": {
+                                        "$type": "DELDMCFKBBL",
+                                        "offset": {
+                                            "NEEHMANEJKM": 0.0,
+                                            "KKKLBADAPPB": -0.5,
+                                            "GENNNOANKOO": 0.0
+                                        },
+                                        "FPDJOHEHNDD": true
+                                    },
+                                    "height": 2.0,
+                                    "GGEJLLOCJDH": 1.5
+                                },
+                                "OIAMOBFMPAB": {
+                                    "KNOKCFHALLI": "",
+                                    "HOKPLNACNKG": "BreakStone_Damage",
+                                    "ILLFBEHPCJA": "Universal_RushAttack",
+                                    "BAPFFKCLDPC": {
+                                        "OLLFABADCKH": 0.6000000238418579,
+                                        "PDHAKJCMPHB": 0.0,
+                                        "bonusCritical": 100.0,
+                                        "GAOIEGMFFDJ": "Default",
+                                        "FFIIMACIKEA": 101.0,
+                                        "ELCPFOMENGK": "Range",
+                                        "AEOLDMAMNLM": 0.0
+                                    },
+                                    "OCHEEDIDOHI": {
+                                        "AIDMNBLLAIJ": "default",
+                                        "OEGAJNNFFPO": "LV5",
+                                        "MLDJMEACGKL": "ByOriginOwner"
+                                    },
+                                    "FAAOHGPLAFO": "OriginOwner"
+                                }
+                            },
+                            "PFBJAFHFBDE": "Enemy"
+                        }
+                    ]
+                }
+            },
+            "onAdded": [
+                {
+                    "$type": "ApplyModifier",
+                    "modifierName": "Bullet_TriggerDamage"
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "Thoarder_MuscleMan_NoWeapon_Zeppeli_HitH_BreakFall",
+            "onAbilityStart": [
+                {
+                    "$type": "Predicated",
+                    "targetPredicates": [
+                        {
+                            "$type": "OMPKIEPKGPF",
+                            "KMGAOOHMCPK": "Self",
+                            "NGGCNKPAODB": "_COUNTER_COOLDOWN",
+                            "value": 0.0
+                        }
+                    ],
+                    "successActions": [
+                        {
+                            "$type": "Predicated",
+                            "targetPredicates": [
+                                {
+                                    "$type": "EBNMCHOCDPG",
+                                    "KMGAOOHMCPK": "Self",
+                                    "value": 1,
+                                    "HDBIEOFMAOD": "Stage"
+                                }
+                            ],
+                            "successActions": [
+                                {
+                                    "$type": "Randomed",
+                                    "NGLFOHEEJEJ": 0.4000000059604645,
+                                    "successActions": [
+                                        {
+                                            "$type": "SetAnimatorTrigger",
+                                            "POPKLBPMAJN": "BreakFall_H_LandStrike",
+                                            "BFIKMHMNOGK": true
+                                        }
+                                    ],
+                                    "failActions": [
+                                        {
+                                            "$type": "SetAnimatorTrigger",
+                                            "POPKLBPMAJN": "BreakFall_H_PowerStrike",
+                                            "BFIKMHMNOGK": true
+                                        }
+                                    ]
+                                }
+                            ],
+                            "failActions": [
+                                {
+                                    "$type": "SetAnimatorTrigger",
+                                    "POPKLBPMAJN": "BreakFall_H_PowerStrike",
+                                    "BFIKMHMNOGK": true
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+]

@@ -1,0 +1,616 @@
+{
+    "SceneObj_Area_Xm_Property_Ani_Prop_XuMiVisualizationplant_01": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "IOJMFPKFPFA",
+                "CDOIALFJGFK": "EffectMesh"
+            },
+            "affectedByWorld": true
+        },
+        "specialPoint": {
+            "elementAbsorb": "RootNode",
+            "elementPendant": "",
+            "elementDrop": "RootNode",
+            "bulletAim": "BulletAimPoint"
+        },
+        "hasModel": true,
+        "combat": {
+            "property": {
+                "HP": 99999.0,
+                "isLockHP": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "hitAutoRedirect": false,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "lockType": "Gadget_Lv1",
+                "overrideRange": 5.0
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "GrassGadget_ThreeState",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "",
+                "abilityName": "SceneObj_Area_Xm_Property_Ani_Prop_XuMiVisualizationplant_01_Ability",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "",
+                "abilityName": "Scene_RockGadget_Summon_Detect",
+                "abilityOverride": ""
+            }
+        ],
+        "move": {
+            "$type": "ConfigPlatformMove"
+        },
+        "stateLayers": {
+            "defaultLayer": {
+                "$type": "GMHKGJPLHFD",
+                "DLEKAADOFBI": "",
+                "stateIDs": {
+                    "All": {
+                        "$type": "CCIEFDKKMLG",
+                        "DNPOFANDHPP": {
+                            "Withered": [],
+                            "Normal": [],
+                            "Active": []
+                        }
+                    }
+                }
+            }
+        },
+        "FCNJGFDLPLB": "Gadget",
+        "JEKKDAKAGFD": true
+    },
+    "SceneObj_Area_Xm_Property_Ani_Prop_XuMiBombmushroom_01": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "IOJMFPKFPFA",
+                "CDOIALFJGFK": "EffectMesh"
+            },
+            "affectedByWorld": true
+        },
+        "specialPoint": {
+            "elementAbsorb": "RootNode",
+            "elementPendant": "",
+            "elementDrop": "RootNode",
+            "bulletAim": "BulletAimPoint"
+        },
+        "hasModel": true,
+        "combat": {
+            "property": {
+                "HP": 99999.0,
+                "isLockHP": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "hitAutoRedirect": false,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "lockType": "Gadget_Lv1",
+                "overrideRange": 5.0
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "GrassGadget_ThreeState",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "",
+                "abilityName": "SceneObj_Area_Xm_Property_Ani_Prop_XuMiBombmushroom_01_Ability",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "",
+                "abilityName": "SceneObj_Area_Xm_Property_Ani_Prop_XuMiBombmushroom_01_Attack01",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "",
+                "abilityName": "SceneObj_Area_Xm_Property_Ani_Prop_XuMiBombmushroom_01_Attack02",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "",
+                "abilityName": "Scene_RockGadget_Summon_Detect",
+                "abilityOverride": ""
+            }
+        ],
+        "field": {
+            "concernType": "AllAvatars",
+            "shape": "CircleR4",
+            "PMOHIIJOLNG": "",
+            "checkInterval": 0.10000000149011612,
+            "JHEKALHPHBK": "",
+            "JFLLEDMCPLF": ""
+        },
+        "stateLayers": {
+            "defaultLayer": {
+                "$type": "GMHKGJPLHFD",
+                "DLEKAADOFBI": "",
+                "stateIDs": {
+                    "Normal": {
+                        "$type": "CCIEFDKKMLG",
+                        "DNPOFANDHPP": {
+                            "AttackLoop": [
+                                "Gadget_Bombmushroom_Attack01"
+                            ]
+                        }
+                    },
+                    "Excited": {
+                        "$type": "CCIEFDKKMLG",
+                        "DNPOFANDHPP": {
+                            "ActiveBS": [],
+                            "ActiveLoop": [],
+                            "ActiveAS": []
+                        }
+                    }
+                }
+            }
+        },
+        "FCNJGFDLPLB": "Gadget"
+    },
+    "SceneObj_Area_Xm_Property_Ani_Prop_JumpMushroom_01": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "IOJMFPKFPFA",
+                "CDOIALFJGFK": "EffectMesh"
+            },
+            "affectedByWorld": true
+        },
+        "specialPoint": {
+            "elementAbsorb": "RootNode",
+            "elementPendant": "",
+            "elementDrop": "RootNode",
+            "bulletAim": "BulletAimPoint"
+        },
+        "hasModel": true,
+        "combat": {
+            "property": {
+                "HP": 99999.0,
+                "isLockHP": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "hitAutoRedirect": false,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "lockType": "Gadget_Lv1",
+                "overrideRange": 5.0
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "GrassGadget_ThreeState",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "",
+                "abilityName": "SceneObj_Area_Xm_Property_Ani_Prop_JumpMushroom_01_Ability",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "",
+                "abilityName": "Scene_RockGadget_Summon_Detect",
+                "abilityOverride": ""
+            }
+        ],
+        "move": {
+            "$type": "GBLCAJLLILH",
+            "attachPoint": "MoguCollider"
+        },
+        "CFEIPLEGNFH": {
+            "PLNCODIKIJB": {
+                "$type": "KBPBKHLHGMG",
+                "alias": "",
+                "IGNONNCOKPD": [
+                    "InteeTrigger"
+                ],
+                "NGPCBKMJOMH": 0.10000000149011612,
+                "KPNMLMPCFLA": 0.25
+            },
+            "APJGLOKDMCN": "",
+            "JAOGBEMPMCN": false
+        },
+        "stateLayers": {
+            "defaultLayer": {
+                "$type": "GMHKGJPLHFD",
+                "DLEKAADOFBI": "",
+                "stateIDs": {
+                    "All": {
+                        "$type": "CCIEFDKKMLG",
+                        "DNPOFANDHPP": {
+                            "Jump": [
+                                "TrampolineJump"
+                            ],
+                            "ToWithered": [
+                                "Audio_SceneObj_JumpMushroom_01_Dis"
+                            ],
+                            "ToNormal": [
+                                "Audio_SceneObj_JumpMushroom_01_Appear"
+                            ]
+                        },
+                        "CGNNAJLBEMJ": true
+                    }
+                }
+            }
+        },
+        "FCNJGFDLPLB": "Gadget",
+        "JEKKDAKAGFD": true
+    },
+    "SceneObj_Area_Xm_Property_Ani_Prop_XuMiLifeMushroom_01": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "IOJMFPKFPFA",
+                "CDOIALFJGFK": "EffectMesh"
+            },
+            "affectedByWorld": true
+        },
+        "specialPoint": {
+            "elementAbsorb": "RootNode",
+            "elementPendant": "",
+            "elementDrop": "RootNode",
+            "bulletAim": "BulletAimPoint"
+        },
+        "model": {
+            "bornEffect": "",
+            "attachEffect": "Eff_Item_Hint_Small"
+        },
+        "hasModel": true,
+        "combat": {
+            "property": {
+                "HP": 99999.0,
+                "isLockHP": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "hitAutoRedirect": false,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "GrassGadget_ThreeState",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "",
+                "abilityName": "SceneObj_Area_Xm_Property_Ani_Prop_XuMiLifeMushroom_01_Ability",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "",
+                "abilityName": "Scene_RockGadget_Summon_Detect",
+                "abilityOverride": ""
+            }
+        ],
+        "CFEIPLEGNFH": {
+            "KJKBBDBDBGN": {
+                "CNALECPIIHD": "Select",
+                "OLHFFEDLJGN": true,
+                "bornEffect": "",
+                "EJFBGNGILJB": "",
+                "MPJFHDHPAEA": ""
+            },
+            "APJGLOKDMCN": ""
+        },
+        "KINALCPOMHK": true,
+        "MFKPHCFMEJF": {
+            "NNKFJFIJEGD": [
+                {
+                    "$type": "MMFEHAKIIMB",
+                    "HOAMMDAFNCB": 101212
+                },
+                {
+                    "$type": "MMFEHAKIIMB",
+                    "MDBPPIHBJGG": "ExcitedState",
+                    "HOAMMDAFNCB": 101226
+                },
+                {
+                    "$type": "MMFEHAKIIMB",
+                    "MDBPPIHBJGG": "DestroyState",
+                    "HOAMMDAFNCB": 101227
+                },
+                {
+                    "$type": "MMFEHAKIIMB",
+                    "MDBPPIHBJGG": "CrystalResonate1",
+                    "HOAMMDAFNCB": 101227
+                },
+                {
+                    "$type": "DKAGMDFBKFG",
+                    "intID": "GadgetState",
+                    "BNBNPANFDGD": true
+                }
+            ]
+        },
+        "FCNJGFDLPLB": "Gadget"
+    },
+    "SceneObj_Area_Xm_Property_Ani_Prop_XuMiRisingShitou_01": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "IOJMFPKFPFA",
+                "CDOIALFJGFK": "EffectMesh"
+            },
+            "affectedByWorld": true
+        },
+        "specialPoint": {
+            "elementAbsorb": "RootNode",
+            "elementPendant": "",
+            "elementDrop": "RootNode",
+            "bulletAim": "BulletAimPoint"
+        },
+        "hasModel": true,
+        "combat": {
+            "property": {
+                "HP": 99999.0,
+                "isLockHP": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "hitAutoRedirect": false,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "lockType": "Gadget_Lv1",
+                "overrideRange": 5.0
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "GrassGadget_ThreeState",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "",
+                "abilityName": "SceneObj_Area_Xm_Property_Ani_Prop_XuMiRisingShitou_01_Ability",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "",
+                "abilityName": "Scene_RockGadget_Summon_Detect",
+                "abilityOverride": ""
+            }
+        ],
+        "move": {
+            "$type": "GBLCAJLLILH",
+            "attachPoint": "ColliderRoot"
+        },
+        "stateLayers": {
+            "defaultLayer": {
+                "$type": "GMHKGJPLHFD",
+                "DLEKAADOFBI": "",
+                "stateIDs": {
+                    "HasHitBox": {
+                        "$type": "CCIEFDKKMLG",
+                        "DNPOFANDHPP": {
+                            "Withered": [],
+                            "Normal": [],
+                            "Active": []
+                        }
+                    },
+                    "NoHitBox": {
+                        "$type": "CCIEFDKKMLG",
+                        "DNPOFANDHPP": {
+                            "WtoN": [
+                                "Gadget_XuMiRisingShitou_WtoN"
+                            ],
+                            "NtoW": [
+                                "Gadget_XuMiRisingShitou_NtoW"
+                            ],
+                            "NtoA": [
+                                "Gadget_XuMiRisingShitou_NtoA"
+                            ],
+                            "AtoN": [
+                                "Gadget_XuMiRisingShitou_AtoN"
+                            ]
+                        }
+                    }
+                }
+            }
+        },
+        "FCNJGFDLPLB": "Gadget"
+    },
+    "SceneObj_Area_Xm_Property_Prop_DreamlandFlower_01": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "IOJMFPKFPFA",
+                "CDOIALFJGFK": "EffectMesh"
+            },
+            "affectedByWorld": true
+        },
+        "specialPoint": {
+            "elementAbsorb": "RootNode",
+            "elementPendant": "",
+            "elementDrop": "RootNode",
+            "bulletAim": "BulletAimPoint"
+        },
+        "hasModel": true,
+        "combat": {
+            "property": {
+                "HP": 99999.0,
+                "isLockHP": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "hitAutoRedirect": false,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "lockType": "Gadget_Lv1",
+                "overrideRange": 5.0
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "ability_ThreeState",
+                "abilityName": "GrassGadget_ThreeState",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "ability_01",
+                "abilityName": "SceneObj_Area_Xm_Property_Prop_DreamlandFlower_01_Ability",
+                "abilityOverride": ""
+            }
+        ],
+        "field": {
+            "concernType": "AllAvatars",
+            "shape": "CircleR2.5",
+            "PMOHIIJOLNG": "",
+            "triggerInfinite": true,
+            "lifeInfinite": true,
+            "checkInterval": 0.20000000298023224,
+            "overwriteCampType": true,
+            "campType": "All",
+            "JHEKALHPHBK": "",
+            "JFLLEDMCPLF": ""
+        },
+        "FCNJGFDLPLB": "Gadget"
+    },
+    "SceneObj_Area_Xm_Property_Ani_Prop_Lens_01": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "IOJMFPKFPFA",
+                "CDOIALFJGFK": "EffectMesh"
+            },
+            "affectedByWorld": true
+        },
+        "specialPoint": {
+            "elementAbsorb": "RootNode",
+            "elementPendant": "",
+            "elementDrop": "RootNode",
+            "bulletAim": "BulletAimPoint",
+            "hitPoints": [
+                "BulletAimPoint"
+            ]
+        },
+        "model": {
+            "bornEffect": "",
+            "attachEffect": "Eff_SceneObj_Lens_01"
+        },
+        "globalValue": {
+            "serverGlobalValues": [
+                "SGV_Cur_Smoke_Count",
+                "SGV_Smoke_Count",
+                "SGV_Aranara_Count",
+                "SGV_Cur_Aranara_Count"
+            ],
+            "DHFCEBNMKDA": {
+                "SGV_Cur_Smoke_Count": 0.0,
+                "SGV_Smoke_Count": 0.0,
+                "SGV_Aranara_Count": 1.0,
+                "SGV_Cur_Aranara_Count": 0.0
+            }
+        },
+        "hasModel": true,
+        "combat": {
+            "property": {
+                "HP": 99999.0,
+                "isLockHP": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "hitAutoRedirect": false,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "lockType": "Gadget_Lv1",
+                "overrideRange": 5.0
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "ability_ThreeState",
+                "abilityName": "GrassGadget_ThreeState",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "ability_01",
+                "abilityName": "SceneObj_Area_Xm_Property_Ani_Prop_Lens_01_Ability",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "",
+                "abilityName": "Scene_RockGadget_Summon_Detect",
+                "abilityOverride": ""
+            }
+        ],
+        "field": {
+            "concernType": "AllAvatars",
+            "shape": "CircleR3H3",
+            "PMOHIIJOLNG": "",
+            "triggerInfinite": true,
+            "lifeInfinite": true,
+            "checkInterval": 0.20000000298023224,
+            "overwriteCampType": true,
+            "campType": "All",
+            "JHEKALHPHBK": "",
+            "JFLLEDMCPLF": ""
+        },
+        "EOLFAMFPCOL": {
+            "AOGIJKALGNB": "UI/open_xmLens_page",
+            "DLLLIKCMJMP": "UI_GADGET_SIGNALEQUIPMENT_ACTIVE",
+            "icon": "",
+            "GEALIGKGCBF": "",
+            "NFJICIGABPE": "",
+            "MIHHAGGNIIO": ""
+        },
+        "CFEIPLEGNFH": {
+            "JJMLICBBEAL": {
+                "JKBNFNEOPDO": 130110001,
+                "NABPKCAJKAJ": {
+                    "y": 2.5999999046325684
+                },
+                "CFFKEDHJFEA": {
+                    "BCFMMPMNDGA": 130120002,
+                    "LICFDDKCPAB": "SGV_Smoke_Count",
+                    "KKCCOJIOJEF": "SGV_Cur_Smoke_Count"
+                },
+                "JICONDHPOHJ": {
+                    "BCFMMPMNDGA": 130120001,
+                    "LICFDDKCPAB": "SGV_Aranara_Count",
+                    "KKCCOJIOJEF": "SGV_Cur_Aranara_Count"
+                }
+            },
+            "APJGLOKDMCN": ""
+        },
+        "FCNJGFDLPLB": "Gadget"
+    }
+}

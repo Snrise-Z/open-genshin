@@ -1,0 +1,1599 @@
+{
+    "Drake_DeepSea_MagicIceBall": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            },
+            "viewSize": 1.2999999523162842,
+            "affectedByWorld": true,
+            "checkInSurface": true,
+            "scale": 1.7999999523162842
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "Monster_Drake_DeepSea_MagicIceBall",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 3.0
+        },
+        "move": {
+            "$type": "KBENGKLMEAL",
+            "speed": 25.0
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy",
+                "ignoreWater": true
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Monster_Drake_DeepSea_MagicIceBall"
+                }
+            ]
+        }
+    },
+    "Drake_DeepSea_MagicElectricBall": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            },
+            "viewSize": 1.2999999523162842,
+            "affectedByWorld": true,
+            "checkInSurface": true,
+            "scale": 1.7999999523162842
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "Monster_Drake_DeepSea_MagicElectricBall",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 3.0
+        },
+        "move": {
+            "$type": "KBENGKLMEAL",
+            "speed": 25.0
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy",
+                "ignoreWater": true
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Monster_Drake_DeepSea_MagicElectricBall"
+                }
+            ]
+        }
+    },
+    "Drake_DeepSea_MagicWaterBall": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            },
+            "affectedByWorld": true,
+            "checkInSurface": true,
+            "scale": 0.699999988079071
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "Monster_Drake_DeepSea_MagicWaterBall",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 4.0
+        },
+        "move": {
+            "$type": "KBENGKLMEAL",
+            "speed": 25.0
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy",
+                "ignoreWater": true
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Monster_Drake_DeepSea_MagicWaterBall"
+                }
+            ]
+        }
+    },
+    "Drake_DeepSea_TaiRangeAttack_IceSpear": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            },
+            "affectedByWorld": true,
+            "checkInSurface": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "Monster_Drake_DeepSea_TaiRangeAttack_IceSpear",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 7.0
+        },
+        "move": {
+            "$type": "FHJABLDOPCE",
+            "speed": 30.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "JPDDBBHJAAH": true,
+            "LDOEEHMFPHN": 60.0,
+            "IPBPLMGOJKC": 40.0,
+            "NKKKMPEEEAP": {
+                "$type": "HHINGLNHGCK",
+                "PKKOKKLEFMB": 7.0,
+                "AHBLNOPFFIP": 30.0,
+                "minSpeed": 6.0,
+                "maxSpeed": 24.0
+            }
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Monster_Drake_DeepSea_TaiRangeAttack_IceSpear"
+                }
+            ]
+        }
+    },
+    "Drake_DeepSea_TaiRangeAttack_ElectricSpear": {
+        "$type": "ConfigGadget",
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "Monster_Drake_DeepSea_TaiRangeAttack_ElectricSpear",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 3.0
+        },
+        "move": {
+            "$type": "AMKPMPLFKHP",
+            "speed": 10.0,
+            "maxSpeed": 25.0,
+            "minSpeed": 15.0,
+            "GBPNCGHBJMC": 1000.0,
+            "AFIKDKDFKCJ": 10.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "BCHPBKHELJG": 0.30000001192092896,
+            "IAOOAMKFJFD": 500.0,
+            "HGADENJMNEB": 0.20000000298023224
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Monster_Drake_DeepSea_TaiRangeAttack_ElectricSpear"
+                }
+            ]
+        }
+    },
+    "Drake_DeepSea_TaiRangeAttack_WaterSpear": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            },
+            "viewSize": 0.5,
+            "affectedByWorld": true,
+            "checkInSurface": true,
+            "scale": 0.5
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "Monster_Drake_DeepSea_TaiRangeAttack_WaterSpear",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 5.0
+        },
+        "move": {
+            "$type": "KBENGKLMEAL",
+            "speed": 30.0
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Monster_Drake_DeepSea_TaiRangeAttack_WaterSpear"
+                }
+            ]
+        }
+    },
+    "Drake_DeepSea_WaterSpear_Earth": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            },
+            "viewSize": 0.5,
+            "affectedByWorld": true,
+            "checkInSurface": true,
+            "scale": 0.5
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "Monster_Drake_DeepSea_WaterSpear_Earth",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 5.0
+        },
+        "move": {
+            "$type": "KBENGKLMEAL",
+            "speed": 30.0
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "triggerType": "TriggerNoRepeat",
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Monster_Drake_DeepSea_WaterSpear_Earth"
+                }
+            ]
+        }
+    },
+    "Drake_DeepSea_TraceIceBall": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            },
+            "affectedByWorld": true,
+            "checkInSurface": true,
+            "scale": 1.7999999523162842
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "Monster_Drake_DeepSea_TraceIceBall",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 8.0
+        },
+        "move": {
+            "$type": "AMKPMPLFKHP",
+            "speed": 7.0,
+            "maxSpeed": 15.0,
+            "minSpeed": 10.0,
+            "GBPNCGHBJMC": 1000.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "BCHPBKHELJG": 0.4000000059604645,
+            "IAOOAMKFJFD": 1000.0,
+            "HGADENJMNEB": 2.0
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Monster_Drake_DeepSea_TraceIceBall"
+                }
+            ]
+        }
+    },
+    "Drake_DeepSea_TraceElectricBall": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            },
+            "affectedByWorld": true,
+            "checkInSurface": true,
+            "scale": 1.7999999523162842
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "Monster_Drake_DeepSea_TraceElectricBall",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 8.0
+        },
+        "move": {
+            "$type": "AMKPMPLFKHP",
+            "speed": 7.0,
+            "maxSpeed": 15.0,
+            "minSpeed": 10.0,
+            "GBPNCGHBJMC": 1000.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "BCHPBKHELJG": 0.4000000059604645,
+            "IAOOAMKFJFD": 1000.0,
+            "HGADENJMNEB": 2.0
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Monster_Drake_DeepSea_TraceElectricBall"
+                }
+            ]
+        }
+    },
+    "Drake_DeepSea_ChargeAttackIceSpear": {
+        "$type": "ConfigGadget",
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "Monster_Drake_DeepSea_ChargeAttackIceSpear",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 5.0
+        }
+    },
+    "Drake_DeepSea_ChargeAttackElectricSpear": {
+        "$type": "ConfigGadget",
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "Monster_Drake_DeepSea_ChargeAttackElectricSpear",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 5.0
+        }
+    },
+    "Drake_DeepSea_ChargeAttackWaterSpear": {
+        "$type": "ConfigGadget",
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "Monster_Drake_DeepSea_ChargeAttackWaterSpear",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 5.0
+        }
+    },
+    "Drake_DeepSea_LaserIce": {
+        "$type": "ConfigGadget",
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "Monster_Drake_DeepSea_Ice_Laser",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 7.0
+        },
+        "move": {
+            "$type": "DKAMCGDMNKI",
+            "target": "TargetEntity",
+            "attachPoint": "MouthLaserPoint",
+            "followRotation": true,
+            "BKIIIJCCCJF": true,
+            "AEGKCPBCIBB": 8.399999618530273,
+            "DOCBGJOCEMD": 128.0,
+            "HMPJAIBPNND": ""
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "ccd": {
+                    "type": "Always"
+                },
+                "triggerType": "TriggerAlways",
+                "triggerCD": 0.10000000149011612,
+                "targetType": "Enemy",
+                "ignoreScene": true
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Monster_Drake_DeepSea_Ice_Laser"
+                }
+            ]
+        }
+    },
+    "Drake_DeepSea_LaserElectric": {
+        "$type": "ConfigGadget",
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": ""
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "Monster_Drake_DeepSea_Electric_Laser",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 7.0
+        },
+        "move": {
+            "$type": "DKAMCGDMNKI",
+            "target": "TargetEntity",
+            "attachPoint": "MouthLaserPoint",
+            "followRotation": true,
+            "BKIIIJCCCJF": true,
+            "AEGKCPBCIBB": 8.399999618530273,
+            "DOCBGJOCEMD": 128.0,
+            "HMPJAIBPNND": ""
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "ccd": {
+                    "type": "Always"
+                },
+                "triggerType": "TriggerAlways",
+                "triggerCD": 0.10000000149011612,
+                "targetType": "Enemy",
+                "ignoreScene": true
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Monster_Drake_DeepSea_Electric_Laser"
+                }
+            ]
+        }
+    },
+    "Drake_DeepSea_Laser_HitWall": {
+        "$type": "ConfigGadget",
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "Monster_Drake_DeepSea_Laser_HitWall",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 7.0
+        },
+        "move": {
+            "$type": "DKAMCGDMNKI",
+            "target": "TargetEntity",
+            "attachPoint": "MouthLaserPoint",
+            "followRotation": true,
+            "BKIIIJCCCJF": true,
+            "AEGKCPBCIBB": 8.399999618530273,
+            "DOCBGJOCEMD": 128.0,
+            "HMPJAIBPNND": ""
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "ccd": {
+                    "type": "Always"
+                },
+                "triggerType": "TriggerAlways",
+                "targetType": "Alliance"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Monster_Drake_DeepSea_Laser_HitWall"
+                }
+            ]
+        }
+    },
+    "Drake_DeepSea_BrokeRock": {
+        "$type": "ConfigGadget",
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "SprintAtk_Scene",
+                "abilityName": "Monster_Drake_DeepSea_BrokeRock_Bullet",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 3.0
+        },
+        "move": {
+            "$type": "DKAMCGDMNKI",
+            "target": "TargetEntity",
+            "attachPoint": "",
+            "followRotation": true,
+            "HMPJAIBPNND": ""
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "ccd": {
+                    "type": "Always"
+                },
+                "triggerType": "TriggerNoRepeat",
+                "targetType": "AllExceptSelf"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Monster_Drake_DeepSea_BrokeRock_Bullet"
+                }
+            ]
+        }
+    },
+    "Drake_DeepSea_MagicIceBall_Small": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            },
+            "affectedByWorld": true,
+            "checkInSurface": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "Monster_Drake_DeepSea_MagicIceBall_Small",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 3.0
+        },
+        "move": {
+            "$type": "KBENGKLMEAL",
+            "speed": 25.0
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy",
+                "ignoreWater": true
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Monster_Drake_DeepSea_MagicIceBall_Small"
+                }
+            ]
+        }
+    },
+    "Drake_DeepSea_MagicElectricBall_Small": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            },
+            "affectedByWorld": true,
+            "checkInSurface": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "Monster_Drake_DeepSea_MagicElectricBall_Small",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 3.0
+        },
+        "move": {
+            "$type": "KBENGKLMEAL",
+            "speed": 25.0
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy",
+                "ignoreWater": true
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Monster_Drake_DeepSea_MagicElectricBall_Small"
+                }
+            ]
+        }
+    },
+    "Drake_DeepSea_MagicWaterBall_Small": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            },
+            "affectedByWorld": true,
+            "checkInSurface": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "Monster_Drake_DeepSea_MagicWaterBall_Small",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 4.0
+        },
+        "move": {
+            "$type": "KBENGKLMEAL",
+            "speed": 25.0
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy",
+                "ignoreWater": true
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Monster_Drake_DeepSea_MagicWaterBall_Small"
+                }
+            ]
+        }
+    },
+    "Drake_DeepSea_TaiRangeAttack_IceSpear_Small": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            },
+            "viewSize": 0.699999988079071,
+            "affectedByWorld": true,
+            "checkInSurface": true,
+            "scale": 0.5
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "Monster_Drake_DeepSea_TaiRangeAttack_IceSpear_Small",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 7.0
+        },
+        "move": {
+            "$type": "FHJABLDOPCE",
+            "speed": 20.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "JPDDBBHJAAH": true,
+            "LDOEEHMFPHN": 60.0,
+            "IPBPLMGOJKC": 40.0,
+            "NKKKMPEEEAP": {
+                "$type": "HHINGLNHGCK",
+                "PKKOKKLEFMB": 7.0,
+                "AHBLNOPFFIP": 30.0,
+                "minSpeed": 6.0,
+                "maxSpeed": 24.0
+            }
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Monster_Drake_DeepSea_TaiRangeAttack_IceSpear_Small"
+                }
+            ]
+        }
+    },
+    "Drake_DeepSea_TaiRangeAttack_ElectricSpear_Small": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            },
+            "viewSize": 0.699999988079071,
+            "affectedByWorld": true,
+            "checkInSurface": true,
+            "scale": 0.5
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "Monster_Drake_DeepSea_TaiRangeAttack_ElectricSpear_Small",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 3.0
+        },
+        "move": {
+            "$type": "AMKPMPLFKHP",
+            "speed": 10.0,
+            "maxSpeed": 25.0,
+            "minSpeed": 15.0,
+            "GBPNCGHBJMC": 1000.0,
+            "AFIKDKDFKCJ": 10.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "BCHPBKHELJG": 0.30000001192092896,
+            "IAOOAMKFJFD": 1000.0,
+            "HGADENJMNEB": 0.10000000149011612
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Monster_Drake_DeepSea_TaiRangeAttack_ElectricSpear_Small"
+                }
+            ]
+        }
+    },
+    "Drake_DeepSea_FitBullet_Ice": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            },
+            "affectedByWorld": true,
+            "checkInSurface": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "Monster_Drake_DeepSea_FitBullet_Ice",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 3.0
+        },
+        "move": {
+            "$type": "KBENGKLMEAL",
+            "speed": 25.0
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Monster_Drake_DeepSea_FitBullet_Ice"
+                }
+            ]
+        }
+    },
+    "Drake_DeepSea_FitBullet_Electric": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            },
+            "affectedByWorld": true,
+            "checkInSurface": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "Monster_Drake_DeepSea_FitBullet_Electric",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 3.0
+        },
+        "move": {
+            "$type": "KBENGKLMEAL",
+            "speed": 25.0
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Monster_Drake_DeepSea_FitBullet_Electric"
+                }
+            ]
+        }
+    },
+    "Drake_DeepSea_Swim_IceSpear": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            },
+            "viewSize": 2.0,
+            "affectedByWorld": true,
+            "checkInSurface": true,
+            "scale": 2.0
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "Monster_Drake_DeepSea_TaiRangeAttack_IceSpear",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 7.0
+        },
+        "move": {
+            "$type": "AMKPMPLFKHP",
+            "speed": 15.0,
+            "maxSpeed": 30.0,
+            "minSpeed": 15.0,
+            "GBPNCGHBJMC": 1000.0,
+            "AFIKDKDFKCJ": 10.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "BCHPBKHELJG": 0.5,
+            "IAOOAMKFJFD": 1000.0,
+            "HGADENJMNEB": 1.0
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Monster_Drake_DeepSea_TaiRangeAttack_IceSpear"
+                }
+            ]
+        }
+    },
+    "Drake_DeepSea_Swim_ElectricSpear": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            },
+            "viewSize": 2.0,
+            "affectedByWorld": true,
+            "checkInSurface": true,
+            "scale": 2.0
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "Monster_Drake_DeepSea_TaiRangeAttack_ElectricSpear",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 3.0
+        },
+        "move": {
+            "$type": "AMKPMPLFKHP",
+            "speed": 10.0,
+            "maxSpeed": 25.0,
+            "minSpeed": 15.0,
+            "GBPNCGHBJMC": 1000.0,
+            "AFIKDKDFKCJ": 10.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "BCHPBKHELJG": 0.5,
+            "IAOOAMKFJFD": 1000.0,
+            "HGADENJMNEB": 1.0
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Monster_Drake_DeepSea_TaiRangeAttack_ElectricSpear"
+                }
+            ]
+        }
+    },
+    "Drake_DeepSea_ElectricSpearTarget": {
+        "$type": "ConfigGadget",
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "isGhostToEnemy": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "Monster_Drake_DeepSea_ElectricSpearTarget",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 3.0
+        }
+    },
+    "Drake_DeepSea_BlackBall": {
+        "$type": "ConfigGadget",
+        "combat": {
+            "property": {
+                "HP": 9999.0,
+                "attack": 99.0,
+                "isInvincible": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "Monster_Drake_DeepSea_BlackBall",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeInfinite": true
+        }
+    },
+    "Drake_DeepSea_IcePillar": {
+        "$type": "ConfigGadget",
+        "specialPoint": {
+            "elementAbsorb": "RootNode",
+            "elementPendant": "",
+            "elementDrop": "RootNode",
+            "bulletAim": "BulletAim"
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isLockHP": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "lockType": "Avatar&Monster_Lv4"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "Monster_Drake_DeepSea_IcePillar",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeInfinite": true,
+            "lifeTime": 999.0
+        },
+        "billboard": {
+            "$type": "JOBMBKHMEKJ",
+            "attachPoint": "BillboardAttach",
+            "HNBHIFHDHHP": 3.0,
+            "showDistance": 48.0,
+            "BAFOFKKNFAI": true,
+            "JDBIAMOLEMB": 48.0,
+            "size": "Grand",
+            "OCLHINJIEBL": true
+        }
+    },
+    "Drake_DeepSea_ElectricArea": {
+        "$type": "ConfigGadget",
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "Monster_Drake_DeepSea_ElementBurst_ElectricArea",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 5.0
+        }
+    },
+    "Drake_DeepSea_IceArea": {
+        "$type": "ConfigGadget",
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "Monster_Drake_DeepSea_ElementBurst_IceArea",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 5.0
+        }
+    }
+}

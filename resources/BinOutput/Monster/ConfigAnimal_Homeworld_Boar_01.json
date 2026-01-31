@@ -1,0 +1,396 @@
+{
+    "common": {
+        "effectAttachShape": {
+            "$type": "ConfigEffectAttachSkinnedMesh",
+            "mesh": "EffectMesh"
+        },
+        "mass": 9999999.0,
+        "MECICKNEPGG": 1.5,
+        "affectedByWorld": true,
+        "checkInSurface": true,
+        "canTriggerElementReactionText": false,
+        "useGrassDisplacement": true,
+        "clearAnimatorOnSetLightDeactive": true,
+        "clearAIOnSetLightDeactive": true
+    },
+    "model": {
+        "bornEffect": "",
+        "attachEffect": "",
+        "canBakeMesh": false
+    },
+    "MEMHBNEJBCL": {
+        "PJBCJPKPOLB": 1.0
+    },
+    "combat": {
+        "property": {
+            "endureType": "Monster_Minion",
+            "weight": 80.0,
+            "isInvincible": true
+        },
+        "beHit": {
+            "hitBloodEffect": "",
+            "muteAllHitText": true
+        },
+        "combatLock": {
+            "lockShape": "CircleLockEnemy",
+            "lockType": "Animal_Lv2"
+        },
+        "die": {
+            "dieEndTime": 2.0,
+            "dieForceDisappearTime": 10.0,
+            "dieDisappearEffect": ""
+        }
+    },
+    "abilities": [
+        {
+            "abilityID": "Homeworld_CommonInitial",
+            "abilityName": "Animal_Homeworld_Common_Initial",
+            "abilityOverride": ""
+        }
+    ],
+    "stateLayers": {
+        "defaultLayer": {
+            "$type": "ConfigNormalStateLayer",
+            "ACOCIAFGIAD": "",
+            "stateIDs": {
+                "Born": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Born": []
+                    },
+                    "canDoSkill": true,
+                    "resetAnimatorTriggerOnExit": [
+                        "DoSkill"
+                    ]
+                },
+                "NormalIdle": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Standby": []
+                    },
+                    "canDoSkill": true,
+                    "canSyncMove": true,
+                    "resetAnimatorTriggerOnExit": [
+                        "DoSkill"
+                    ]
+                },
+                "NormalMove": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Walk": [
+                            "Audio_Boar_walk"
+                        ],
+                        "Run": [
+                            "Audio_Boar_run"
+                        ],
+                        "Disappear": []
+                    },
+                    "canDoSkill": true,
+                    "canSyncMove": true,
+                    "resetAnimatorTriggerOnExit": [
+                        "DoSkill"
+                    ],
+                    "LIPMJPLGIKD": true
+                },
+                "Turn": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "TurnLeft": [],
+                        "TurnRight": []
+                    },
+                    "canDoSkill": true,
+                    "canSyncMove": true,
+                    "resetAnimatorTriggerOnExit": [
+                        "DoSkill"
+                    ],
+                    "LIPMJPLGIKD": true
+                },
+                "BeHit": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Hit_L": [
+                            "Audio_Boar_hit_l"
+                        ]
+                    },
+                    "AJBLILDCLBO": [
+                        "BeHit"
+                    ],
+                    "resetAnimatorTriggerOnExit": [
+                        "DoSkill"
+                    ]
+                },
+                "Die": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Die": [
+                            "Animal_Homeworld_Boar_Die",
+                            "Audio_Boar_die"
+                        ],
+                        "Die_Disappear": [
+                            "Animal_Homeworld_Boar_Disappear"
+                        ]
+                    }
+                },
+                "Alert": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Alert": []
+                    },
+                    "canDoSkill": true,
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "Personality_101": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Personality_101": []
+                    },
+                    "canDoSkill": true,
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "Personality_102": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Personality_102": []
+                    },
+                    "canDoSkill": true,
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                }
+            }
+        }
+    },
+    "initialPoses": {
+        "Default": {}
+    },
+    "aibeta": {
+        "enable": true,
+        "friendliness": 1,
+        "decisionArchetype": "Animal_Homeworld",
+        "sensing": {
+            "settings": {
+                "DefaultSetting": {
+                    "PHDIIPOBJGA": 25.0,
+                    "COENEFGMPFK": 90.0,
+                    "MPEJKBDNFGB": 45.0,
+                    "feelRange": 10.0
+                }
+            }
+        },
+        "neurons": {
+            "DefaultSetting": [
+                "HIT"
+            ]
+        },
+        "threat": {
+            "feelThreatGrow": 1000.0,
+            "KDPOCNEHGBJ": 500.0,
+            "BJLBMJLOPIP": [
+                {
+                    "LFALGCACJOF": 10.0,
+                    "IOHOACGNJHO": 2.0
+                },
+                {
+                    "LFALGCACJOF": 15.0,
+                    "IOHOACGNJHO": 1.25
+                },
+                {
+                    "LFALGCACJOF": 20.0,
+                    "IOHOACGNJHO": 0.5
+                }
+            ],
+            "JGFOPCOIJOI": ""
+        },
+        "defendArea": {
+            "defendRange": 100.0
+        },
+        "ui": {
+            "hasDirectionIndicator": false,
+            "FLMOHOODJBA": ""
+        },
+        "BNIENJNLAIJ": {
+            "3": {
+                "NOKKDDHKGAK": "OnAlert",
+                "IKMCLKEPDFP": "OnAlert",
+                "NOPNCNPCPJE": "",
+                "LLNBBNIEGGO": true,
+                "IDPMFPAPNCE": false,
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "Alert"
+                ],
+                "PGPDNPMFFAG": "10",
+                "CCEAGFDONFH": "01",
+                "OKOFHICILMD": "10",
+                "CCFFFOIDOLP": "11"
+            },
+            "101": {
+                "NOKKDDHKGAK": "Personality_101",
+                "IKMCLKEPDFP": "Free",
+                "ENKLFBHHOJI": {
+                    "CEKMINILIFB": [
+                        1
+                    ],
+                    "JHPHNFCMCIL": true
+                },
+                "cd": 17.5,
+                "GPMLADFJAAH": 7.5,
+                "LKCFDIOMLCM": 5.0,
+                "KKAEGIJIDLG": 7.5,
+                "NOPNCNPCPJE": "",
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "Personality_101"
+                ],
+                "PGPDNPMFFAG": "10",
+                "CCEAGFDONFH": "01",
+                "OKOFHICILMD": "10",
+                "CCFFFOIDOLP": "11"
+            },
+            "102": {
+                "NOKKDDHKGAK": "Personality_102",
+                "IKMCLKEPDFP": "Free",
+                "ENKLFBHHOJI": {
+                    "CEKMINILIFB": [
+                        1
+                    ],
+                    "JHPHNFCMCIL": true
+                },
+                "cd": 17.5,
+                "GPMLADFJAAH": 7.5,
+                "LKCFDIOMLCM": 5.0,
+                "KKAEGIJIDLG": 7.5,
+                "NOPNCNPCPJE": "",
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "Personality_102"
+                ],
+                "PGPDNPMFFAG": "10",
+                "CCEAGFDONFH": "01",
+                "OKOFHICILMD": "10",
+                "CCFFFOIDOLP": "11"
+            },
+            "201": {
+                "NOKKDDHKGAK": "Personality_101",
+                "ENKLFBHHOJI": {
+                    "CEKMINILIFB": [
+                        101
+                    ],
+                    "JHPHNFCMCIL": true
+                },
+                "cd": 17.5,
+                "GPMLADFJAAH": 7.5,
+                "LKCFDIOMLCM": 5.0,
+                "KKAEGIJIDLG": 7.5,
+                "NOPNCNPCPJE": "",
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "Personality_101"
+                ],
+                "PGPDNPMFFAG": "10",
+                "CCEAGFDONFH": "01",
+                "OKOFHICILMD": "10",
+                "CCFFFOIDOLP": "11"
+            },
+            "202": {
+                "NOKKDDHKGAK": "Personality_102",
+                "ENKLFBHHOJI": {
+                    "CEKMINILIFB": [
+                        101
+                    ],
+                    "JHPHNFCMCIL": true
+                },
+                "cd": 17.5,
+                "GPMLADFJAAH": 7.5,
+                "LKCFDIOMLCM": 5.0,
+                "KKAEGIJIDLG": 7.5,
+                "NOPNCNPCPJE": "",
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "Personality_102"
+                ],
+                "PGPDNPMFFAG": "10",
+                "CCEAGFDONFH": "01",
+                "OKOFHICILMD": "10",
+                "CCFFFOIDOLP": "11"
+            }
+        },
+        "EMBHEEALPLD": 10.0,
+        "combatFixedMoveTactic": [
+            {
+                "$type": "EBLOGIMNNJB"
+            },
+            {
+                "$type": "GIMIMAJNOPH",
+                "enable": true,
+                "FJANPNOAAFK": {
+                    "CEKMINILIFB": [
+                        1,
+                        101
+                    ]
+                },
+                "nerveTrigger": [
+                    "HIT"
+                ],
+                "defaultSetting": {
+                    "turnSpeedOverride": 2.5,
+                    "cd": 3.0,
+                    "triggerDistance": 0.0,
+                    "fleeNumberMin": 2,
+                    "fleeNumberMax": 4,
+                    "fleeDistanceMin": 7.5,
+                    "fleeDistanceMax": 10.0,
+                    "JOCOJHEICNA": ""
+                }
+            },
+            {
+                "$type": "KMHBGMELMKD",
+                "enable": true,
+                "defaultSetting": {
+                    "JOCOJHEICNA": "",
+                    "DBIELIMGBMC": ""
+                }
+            },
+            {
+                "$type": "GGKADEIBMLG",
+                "enable": true,
+                "FJANPNOAAFK": {
+                    "CEKMINILIFB": [
+                        1,
+                        101
+                    ]
+                },
+                "FDIIDHNBFFE": [
+                    0,
+                    1,
+                    2
+                ],
+                "defaultSetting": {
+                    "turnSpeedOverride": 0.25,
+                    "JIFJFPJANHO": 17.5,
+                    "CBKHBGCPFBG": 12.5,
+                    "EKDHNAGGGAE": 10.0,
+                    "BFEJAKFKKFP": 3.0,
+                    "KOAMKCEFJED": 5.0,
+                    "JOCOJHEICNA": ""
+                }
+            }
+        ]
+    },
+    "move": {
+        "$type": "IIGPJJNGCLE",
+        "KCPLNKCIOCI": "Walk",
+        "FACNOEFNHIB": "RootNode"
+    },
+    "animal": {
+        "tickAbilityElement": false,
+        "hasCharacterRenderering": false
+    }
+}

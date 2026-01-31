@@ -1,0 +1,816 @@
+{
+    "Sorush_Normal_01": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            },
+            "mass": 10.0
+        },
+        "specialPoint": {
+            "elementAbsorb": "RootNode",
+            "elementPendant": "",
+            "elementDrop": "RootNode",
+            "bulletAim": "RootNode_FX"
+        },
+        "hasModel": true,
+        "combat": {
+            "property": {
+                "HP": 10000.0,
+                "attack": 100.0,
+                "weight": 500.0,
+                "ignorePurgeRate": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "lockType": "Gadget_Lv1"
+            },
+            "die": {
+                "dieForceDisappearTime": 0.0,
+                "dieDisappearEffect": "Eff_Sorush_Normal_Die"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Vehicle_Sorush_Normal_01",
+                "abilityName": "Vehicle_Sorush_Normal_01",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Vehicle_Sorush_AutoHeal",
+                "abilityName": "Vehicle_Sorush_AutoHeal",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "SorushStatue_WithOutAvatar",
+                "abilityName": "SorushStatue_WithOutAvatar",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "SorushStatue_WithAvatar",
+                "abilityName": "SorushStatue_WithAvatar",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Vehicle_Sorush_ActionSkill",
+                "abilityName": "Vehicle_Sorush_ActionSkill",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Vehicle_Sorush_ChargeSkill",
+                "abilityName": "Vehicle_Sorush_ChargeSkill",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Vehicle_Sorush_GrapplingHookSkill",
+                "abilityName": "Vehicle_Sorush_GrapplingHookSkill",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "ActivityAbility_Hitman_Sorush_FireBomb",
+                "abilityName": "ActivityAbility_Hitman_Sorush_FireBomb",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Vehicle_Sorush_HookPoint_DropHandler",
+                "abilityName": "Vehicle_Sorush_HookPoint_DropHandler",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Vehicle_Sorush_ActionSkillHighLight",
+                "abilityName": "Vehicle_Sorush_ActionSkillHighLight",
+                "abilityOverride": ""
+            }
+        ],
+        "field": {
+            "concernType": "AllAvatars",
+            "shape": "CircleR4",
+            "PMOHIIJOLNG": "",
+            "triggerInfinite": true,
+            "lifeInfinite": true,
+            "checkInterval": 0.5,
+            "JHEKALHPHBK": "",
+            "JFLLEDMCPLF": ""
+        },
+        "move": {
+            "$type": "BNIMMNOFLEK"
+        },
+        "LGBJNNEDJDF": {
+            "$type": "HMGGKIAHEGB"
+        },
+        "stateLayers": {
+            "defaultLayer": {
+                "$type": "GMHKGJPLHFD",
+                "DLEKAADOFBI": "",
+                "stateIDs": {
+                    "Born": {
+                        "$type": "IBEIHDAMPHM",
+                        "DNPOFANDHPP": {
+                            "Born": []
+                        },
+                        "NOHGAIAMGLM": true,
+                        "FKPEAEBOFKK": ""
+                    },
+                    "Idle": {
+                        "$type": "IBEIHDAMPHM",
+                        "DNPOFANDHPP": {
+                            "Idle": []
+                        },
+                        "NOHGAIAMGLM": true,
+                        "NIOKPMKCCGN": 10000.0,
+                        "FKPEAEBOFKK": ""
+                    },
+                    "Move": {
+                        "$type": "IBEIHDAMPHM",
+                        "DNPOFANDHPP": {
+                            "Move": []
+                        },
+                        "NOHGAIAMGLM": true,
+                        "FKPEAEBOFKK": ""
+                    },
+                    "Sprint": {
+                        "$type": "IBEIHDAMPHM",
+                        "DNPOFANDHPP": {
+                            "Sprint": []
+                        },
+                        "NOHGAIAMGLM": true,
+                        "FKPEAEBOFKK": ""
+                    },
+                    "ActionSkill_BS": {
+                        "$type": "IBEIHDAMPHM",
+                        "DNPOFANDHPP": {
+                            "Skill_BS": [
+                                "Sorush_Skill_BS"
+                            ]
+                        },
+                        "NOHGAIAMGLM": true,
+                        "NIOKPMKCCGN": 10000.0,
+                        "FKPEAEBOFKK": ""
+                    },
+                    "ActionSkill_Loop": {
+                        "$type": "IBEIHDAMPHM",
+                        "DNPOFANDHPP": {
+                            "Skill_Loop": []
+                        },
+                        "NOHGAIAMGLM": true,
+                        "NIOKPMKCCGN": 10000.0,
+                        "FKPEAEBOFKK": ""
+                    },
+                    "ActionSkill_AS": {
+                        "$type": "IBEIHDAMPHM",
+                        "DNPOFANDHPP": {
+                            "Skill_AS": []
+                        },
+                        "NOHGAIAMGLM": true,
+                        "NIOKPMKCCGN": 10000.0,
+                        "FKPEAEBOFKK": ""
+                    },
+                    "FastSkill": {
+                        "$type": "IBEIHDAMPHM",
+                        "DNPOFANDHPP": {
+                            "FastSkill": [
+                                "Sorush_FastSkill"
+                            ]
+                        },
+                        "NOHGAIAMGLM": true,
+                        "FKPEAEBOFKK": ""
+                    },
+                    "ChargeSkill": {
+                        "$type": "IBEIHDAMPHM",
+                        "DNPOFANDHPP": {
+                            "ChargeSkill": []
+                        },
+                        "NOHGAIAMGLM": true,
+                        "FKPEAEBOFKK": ""
+                    }
+                }
+            }
+        },
+        "audio": {
+            "$type": "DAEIMDGDGCL",
+            "CDPGEDJOKEB": "",
+            "BFLPLAHDHHI": {
+                "text": "Play_amb_sceneObj_Boat_Impact"
+            },
+            "IPIPFLICIFK": 6.0,
+            "PMBOPJKLNLG": 100,
+            "NCOCHOOCFNI": 0.10000000149011612
+        },
+        "IKLPBPABKGL": {
+            "ENALKJMLGMO": "Sorush",
+            "OANBMKLOIKH": "Vehicle_Sorush",
+            "MJHDIFMBCHB": "",
+            "FFFKAPKBIKE": 1,
+            "LONBLJJGDJC": [
+                {
+                    "HCIMOHLCHIN": "AvatarSeat",
+                    "LKMINKAHDMO": 1001
+                }
+            ],
+            "NPAPJHMBFPI": 30,
+            "KPGLHJHMCNJ": 600301,
+            "EHMLCAAGIMF": {
+                "DAFBPIDOFKL": 240.0,
+                "HGNMMBGFBOJ": 25.0,
+                "FDCDMAKFNMM": 1.5,
+                "MLCMCPAGOPP": 200.0,
+                "ADKBBKACNBL": 1.0,
+                "KEHPPBPKFNP": 10.199999809265137
+            },
+            "MCFANNLDFDG": 1.0,
+            "CGGMEDKIIJM": 1.5,
+            "DLLLLNCEEIC": false,
+            "HPDAOMHMDBA": [
+                "Skill_BS",
+                "Skill_Loop",
+                "Skill_AS"
+            ]
+        }
+    },
+    "Sorush_Normal_02": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            },
+            "mass": 10.0
+        },
+        "specialPoint": {
+            "elementAbsorb": "RootNode",
+            "elementPendant": "",
+            "elementDrop": "RootNode",
+            "bulletAim": "RootNode_FX"
+        },
+        "hasModel": true,
+        "combat": {
+            "property": {
+                "HP": 10000.0,
+                "attack": 100.0,
+                "weight": 500.0,
+                "ignorePurgeRate": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "lockType": "Gadget_Lv1"
+            },
+            "die": {
+                "dieForceDisappearTime": 0.0,
+                "dieDisappearEffect": "Eff_Sorush_Normal_Die"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Vehicle_Sorush_Normal_01",
+                "abilityName": "Vehicle_Sorush_Normal_01",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Vehicle_Sorush_AutoHeal",
+                "abilityName": "Vehicle_Sorush_AutoHeal",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "SorushStatue_WithOutAvatar",
+                "abilityName": "SorushStatue_WithOutAvatar",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "SorushStatue_WithAvatar",
+                "abilityName": "SorushStatue_WithAvatar",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Vehicle_Sorush_ActionSkill",
+                "abilityName": "Vehicle_Sorush_ActionSkill",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Vehicle_Sorush_ChargeSkill",
+                "abilityName": "Vehicle_Sorush_ChargeSkill",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Vehicle_Sorush_GrapplingHookSkill",
+                "abilityName": "Vehicle_Sorush_GrapplingHookSkill",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "ActivityAbility_Hitman_Sorush_FireBomb",
+                "abilityName": "ActivityAbility_Hitman_Sorush_FireBomb",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Vehicle_Sorush_HookPoint_DropHandler",
+                "abilityName": "Vehicle_Sorush_HookPoint_DropHandler",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Vehicle_Sorush_DynamicCollisionHandler",
+                "abilityName": "Vehicle_Sorush_DynamicCollisionHandler",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Vehicle_Sorush_SorushWithCrown",
+                "abilityName": "Vehicle_Sorush_SorushWithCrown",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Vehicle_Sorush_ActionSkillHighLight_WithCrown",
+                "abilityName": "Vehicle_Sorush_ActionSkillHighLight_WithCrown",
+                "abilityOverride": ""
+            }
+        ],
+        "field": {
+            "concernType": "AllAvatars",
+            "shape": "CircleR4",
+            "PMOHIIJOLNG": "",
+            "triggerInfinite": true,
+            "lifeInfinite": true,
+            "checkInterval": 0.5,
+            "JHEKALHPHBK": "",
+            "JFLLEDMCPLF": ""
+        },
+        "move": {
+            "$type": "BNIMMNOFLEK"
+        },
+        "LGBJNNEDJDF": {
+            "$type": "HMGGKIAHEGB"
+        },
+        "stateLayers": {
+            "defaultLayer": {
+                "$type": "GMHKGJPLHFD",
+                "DLEKAADOFBI": "",
+                "stateIDs": {
+                    "Born": {
+                        "$type": "IBEIHDAMPHM",
+                        "DNPOFANDHPP": {
+                            "Born": []
+                        },
+                        "NOHGAIAMGLM": true,
+                        "FKPEAEBOFKK": ""
+                    },
+                    "Idle": {
+                        "$type": "IBEIHDAMPHM",
+                        "DNPOFANDHPP": {
+                            "Idle": []
+                        },
+                        "NOHGAIAMGLM": true,
+                        "NIOKPMKCCGN": 10000.0,
+                        "FKPEAEBOFKK": ""
+                    },
+                    "Move": {
+                        "$type": "IBEIHDAMPHM",
+                        "DNPOFANDHPP": {
+                            "Move": []
+                        },
+                        "NOHGAIAMGLM": true,
+                        "FKPEAEBOFKK": ""
+                    },
+                    "Sprint": {
+                        "$type": "IBEIHDAMPHM",
+                        "DNPOFANDHPP": {
+                            "Sprint": []
+                        },
+                        "NOHGAIAMGLM": true,
+                        "FKPEAEBOFKK": ""
+                    },
+                    "ActionSkill_BS": {
+                        "$type": "IBEIHDAMPHM",
+                        "DNPOFANDHPP": {
+                            "Skill_BS": [
+                                "Sorush_Skill_BS"
+                            ]
+                        },
+                        "NOHGAIAMGLM": true,
+                        "NIOKPMKCCGN": 10000.0,
+                        "FKPEAEBOFKK": ""
+                    },
+                    "ActionSkill_Loop": {
+                        "$type": "IBEIHDAMPHM",
+                        "DNPOFANDHPP": {
+                            "Skill_Loop": []
+                        },
+                        "NOHGAIAMGLM": true,
+                        "NIOKPMKCCGN": 10000.0,
+                        "FKPEAEBOFKK": ""
+                    },
+                    "ActionSkill_AS": {
+                        "$type": "IBEIHDAMPHM",
+                        "DNPOFANDHPP": {
+                            "Skill_AS": []
+                        },
+                        "NOHGAIAMGLM": true,
+                        "NIOKPMKCCGN": 10000.0,
+                        "FKPEAEBOFKK": ""
+                    },
+                    "FastSkill": {
+                        "$type": "IBEIHDAMPHM",
+                        "DNPOFANDHPP": {
+                            "FastSkill": [
+                                "Sorush_FastSkill"
+                            ]
+                        },
+                        "NOHGAIAMGLM": true,
+                        "FKPEAEBOFKK": ""
+                    },
+                    "ChargeSkill": {
+                        "$type": "IBEIHDAMPHM",
+                        "DNPOFANDHPP": {
+                            "ChargeSkill": []
+                        },
+                        "NOHGAIAMGLM": true,
+                        "FKPEAEBOFKK": ""
+                    }
+                }
+            }
+        },
+        "audio": {
+            "$type": "DAEIMDGDGCL",
+            "CDPGEDJOKEB": "",
+            "BFLPLAHDHHI": {
+                "text": "Play_amb_sceneObj_Boat_Impact"
+            },
+            "IPIPFLICIFK": 6.0,
+            "PMBOPJKLNLG": 100,
+            "NCOCHOOCFNI": 0.10000000149011612
+        },
+        "IKLPBPABKGL": {
+            "ENALKJMLGMO": "Sorush",
+            "OANBMKLOIKH": "Vehicle_Sorush",
+            "MJHDIFMBCHB": "",
+            "FFFKAPKBIKE": 1,
+            "LONBLJJGDJC": [
+                {
+                    "HCIMOHLCHIN": "AvatarSeat",
+                    "LKMINKAHDMO": 1001
+                }
+            ],
+            "NPAPJHMBFPI": 30,
+            "KPGLHJHMCNJ": 600301,
+            "EHMLCAAGIMF": {
+                "DAFBPIDOFKL": 240.0,
+                "HGNMMBGFBOJ": 25.0,
+                "FDCDMAKFNMM": 1.5,
+                "MLCMCPAGOPP": 200.0,
+                "ADKBBKACNBL": 1.0,
+                "KEHPPBPKFNP": 10.199999809265137
+            },
+            "MCFANNLDFDG": 1.0,
+            "CGGMEDKIIJM": 1.5,
+            "DLLLLNCEEIC": false,
+            "HPDAOMHMDBA": [
+                "Skill_BS",
+                "Skill_Loop",
+                "Skill_AS"
+            ]
+        }
+    },
+    "Sorush_Normal_03": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            },
+            "mass": 10.0
+        },
+        "specialPoint": {
+            "elementAbsorb": "RootNode",
+            "elementPendant": "",
+            "elementDrop": "RootNode",
+            "bulletAim": "RootNode_FX"
+        },
+        "hasModel": true,
+        "combat": {
+            "property": {
+                "HP": 10000.0,
+                "attack": 100.0,
+                "weight": 500.0,
+                "ignorePurgeRate": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "lockType": "Gadget_Lv1"
+            },
+            "die": {
+                "dieForceDisappearTime": 0.0,
+                "dieDisappearEffect": "Eff_Sorush_Normal_Die"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Vehicle_Sorush_Normal_01",
+                "abilityName": "Vehicle_Sorush_Normal_01",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Vehicle_Sorush_AutoHeal",
+                "abilityName": "Vehicle_Sorush_AutoHeal",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "SorushStatue_WithOutAvatar",
+                "abilityName": "SorushStatue_WithOutAvatar",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "SorushStatue_WithAvatar",
+                "abilityName": "SorushStatue_WithAvatar",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Vehicle_Sorush_ActionSkill",
+                "abilityName": "Vehicle_Sorush_ActionSkill",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Vehicle_Sorush_ChargeSkill",
+                "abilityName": "Vehicle_Sorush_ChargeSkill",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Vehicle_Sorush_GrapplingHookSkill",
+                "abilityName": "Vehicle_Sorush_GrapplingHookSkill",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "ActivityAbility_Hitman_Sorush_FireBomb",
+                "abilityName": "ActivityAbility_Hitman_Sorush_FireBomb",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Vehicle_Sorush_HookPoint_DropHandler",
+                "abilityName": "Vehicle_Sorush_HookPoint_DropHandler",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Vehicle_Sorush_DynamicCollisionHandler",
+                "abilityName": "Vehicle_Sorush_DynamicCollisionHandler",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Vehicle_Sorush_ActivityVehicleMark",
+                "abilityName": "Vehicle_Sorush_ActivityVehicleMark",
+                "abilityOverride": ""
+            }
+        ],
+        "field": {
+            "concernType": "AllAvatars",
+            "shape": "CircleR4",
+            "PMOHIIJOLNG": "",
+            "triggerInfinite": true,
+            "lifeInfinite": true,
+            "checkInterval": 0.5,
+            "JHEKALHPHBK": "",
+            "JFLLEDMCPLF": ""
+        },
+        "move": {
+            "$type": "BNIMMNOFLEK"
+        },
+        "LGBJNNEDJDF": {
+            "$type": "HMGGKIAHEGB"
+        },
+        "stateLayers": {
+            "defaultLayer": {
+                "$type": "GMHKGJPLHFD",
+                "DLEKAADOFBI": "",
+                "stateIDs": {
+                    "Born": {
+                        "$type": "IBEIHDAMPHM",
+                        "DNPOFANDHPP": {
+                            "Born": []
+                        },
+                        "NOHGAIAMGLM": true,
+                        "FKPEAEBOFKK": ""
+                    },
+                    "Idle": {
+                        "$type": "IBEIHDAMPHM",
+                        "DNPOFANDHPP": {
+                            "Idle": []
+                        },
+                        "NOHGAIAMGLM": true,
+                        "NIOKPMKCCGN": 10000.0,
+                        "FKPEAEBOFKK": ""
+                    },
+                    "Move": {
+                        "$type": "IBEIHDAMPHM",
+                        "DNPOFANDHPP": {
+                            "Move": []
+                        },
+                        "NOHGAIAMGLM": true,
+                        "FKPEAEBOFKK": ""
+                    },
+                    "Sprint": {
+                        "$type": "IBEIHDAMPHM",
+                        "DNPOFANDHPP": {
+                            "Sprint": []
+                        },
+                        "NOHGAIAMGLM": true,
+                        "FKPEAEBOFKK": ""
+                    },
+                    "ActionSkill_BS": {
+                        "$type": "IBEIHDAMPHM",
+                        "DNPOFANDHPP": {
+                            "Skill_BS": [
+                                "Sorush_Skill_BS"
+                            ]
+                        },
+                        "NOHGAIAMGLM": true,
+                        "NIOKPMKCCGN": 10000.0,
+                        "FKPEAEBOFKK": ""
+                    },
+                    "ActionSkill_Loop": {
+                        "$type": "IBEIHDAMPHM",
+                        "DNPOFANDHPP": {
+                            "Skill_Loop": []
+                        },
+                        "NOHGAIAMGLM": true,
+                        "NIOKPMKCCGN": 10000.0,
+                        "FKPEAEBOFKK": ""
+                    },
+                    "ActionSkill_AS": {
+                        "$type": "IBEIHDAMPHM",
+                        "DNPOFANDHPP": {
+                            "Skill_AS": []
+                        },
+                        "NOHGAIAMGLM": true,
+                        "NIOKPMKCCGN": 10000.0,
+                        "FKPEAEBOFKK": ""
+                    },
+                    "FastSkill": {
+                        "$type": "IBEIHDAMPHM",
+                        "DNPOFANDHPP": {
+                            "FastSkill": [
+                                "Sorush_FastSkill"
+                            ]
+                        },
+                        "NOHGAIAMGLM": true,
+                        "FKPEAEBOFKK": ""
+                    },
+                    "ChargeSkill": {
+                        "$type": "IBEIHDAMPHM",
+                        "DNPOFANDHPP": {
+                            "ChargeSkill": []
+                        },
+                        "NOHGAIAMGLM": true,
+                        "FKPEAEBOFKK": ""
+                    }
+                }
+            }
+        },
+        "audio": {
+            "$type": "DAEIMDGDGCL",
+            "CDPGEDJOKEB": "",
+            "BFLPLAHDHHI": {
+                "text": "Play_amb_sceneObj_Boat_Impact"
+            },
+            "IPIPFLICIFK": 6.0,
+            "PMBOPJKLNLG": 100,
+            "NCOCHOOCFNI": 0.10000000149011612
+        },
+        "IKLPBPABKGL": {
+            "ENALKJMLGMO": "Sorush",
+            "OANBMKLOIKH": "Vehicle_Sorush",
+            "MJHDIFMBCHB": "",
+            "FFFKAPKBIKE": 1,
+            "LONBLJJGDJC": [
+                {
+                    "HCIMOHLCHIN": "AvatarSeat",
+                    "LKMINKAHDMO": 1001
+                }
+            ],
+            "NPAPJHMBFPI": 30,
+            "KPGLHJHMCNJ": 600301,
+            "EHMLCAAGIMF": {
+                "DAFBPIDOFKL": 240.0,
+                "HGNMMBGFBOJ": 25.0,
+                "FDCDMAKFNMM": 1.5,
+                "MLCMCPAGOPP": 200.0,
+                "ADKBBKACNBL": 1.0,
+                "KEHPPBPKFNP": 10.199999809265137
+            },
+            "MCFANNLDFDG": 1.0,
+            "CGGMEDKIIJM": 1.5,
+            "DLLLLNCEEIC": false,
+            "HPDAOMHMDBA": [
+                "Skill_BS",
+                "Skill_Loop",
+                "Skill_AS"
+            ]
+        }
+    },
+    "Bullet_Sorush_Bomb": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "CPGMBCECPEN": 0.4000000059604645
+            },
+            "mass": 10.0,
+            "affectedByWorld": true,
+            "checkInSurface": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 99999.0,
+                "isLockHP": true,
+                "isGhostToAllied": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Bullet_Sorush_Bomb",
+                "abilityName": "Bullet_Sorush_Bomb",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 15.0
+        },
+        "move": {
+            "$type": "FHJABLDOPCE",
+            "IPBPLMGOJKC": 80.0
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "ccd": {
+                    "type": "Always"
+                },
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Bullet_Sorush_Bomb"
+                }
+            ],
+            "GNGMJEIPCJE": true
+        }
+    },
+    "Bullet_Sorush_Hitman_FireBomb": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "CPGMBCECPEN": 0.4000000059604645
+            },
+            "mass": 10.0,
+            "affectedByWorld": true,
+            "checkInSurface": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 99999.0,
+                "isLockHP": true,
+                "isGhostToAllied": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Bullet_Sorush_Hitman_FireBomb",
+                "abilityName": "Bullet_Sorush_Hitman_FireBomb",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 15.0
+        },
+        "move": {
+            "$type": "FHJABLDOPCE",
+            "IPBPLMGOJKC": 80.0
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "ccd": {
+                    "type": "Always"
+                },
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Bullet_Sorush_Hitman_FireBomb"
+                }
+            ],
+            "GNGMJEIPCJE": true
+        }
+    }
+}

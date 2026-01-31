@@ -1,0 +1,286 @@
+{
+    "Player_Water_ElementalArt_Bullet_Short": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            }
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Player_Water_ElementalArt_Bullet_Hold",
+                "abilityName": "Player_Water_ElementalArt_Bullet_Hold",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 0.699999988079071
+        },
+        "move": {
+            "$type": "KBENGKLMEAL",
+            "MPMOPIIFDPO": {
+                "muteAll": true
+            },
+            "speed": 20.0,
+            "maxSpeed": 20.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            }
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "ccd": {
+                    "type": "Always"
+                },
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Player_Water_ElementalArt_Bullet_Hold"
+                }
+            ],
+            "JPNAMDFCBFN": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Player_Water_ElementalArt_Bullet_Hold"
+                }
+            ],
+            "FBBHIKAKGLB": 0.5,
+            "JHKBLJLPGEB": true,
+            "AEMONPKLPOP": true
+        }
+    },
+    "Player_Water_ElementalArt_Bullet_Hold": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            }
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Player_Water_ElementalArt_Bullet_Hold",
+                "abilityName": "Player_Water_ElementalArt_Bullet_Hold",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 0.699999988079071
+        },
+        "move": {
+            "$type": "EGIBMIADEHO",
+            "MPMOPIIFDPO": {
+                "muteAll": true
+            },
+            "speed": 20.0,
+            "maxSpeed": 20.0,
+            "GBPNCGHBJMC": 2.0,
+            "NNKNFFMKNNB": 2.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "BCNECAMPGJJ": true
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "ccd": {
+                    "type": "Always"
+                },
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Player_Water_ElementalArt_Bullet_Hold"
+                }
+            ],
+            "JPNAMDFCBFN": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Player_Water_ElementalArt_Bullet_Hold"
+                }
+            ],
+            "FBBHIKAKGLB": 0.5,
+            "JHKBLJLPGEB": true,
+            "AEMONPKLPOP": true
+        }
+    },
+    "Player_Water_ElementalArt_Core": {
+        "$type": "ConfigGadget",
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "useCreatorBuffedProperty": false,
+                "HP": 99999.0,
+                "defense": 99999.0,
+                "isLockHP": true,
+                "isGhostToEnemy": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Player_Water_ElementalArt_Core",
+                "abilityName": "Player_Water_ElementalArt_Core",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Player_Water_ElementalArt_Core_Eff",
+                "abilityName": "Player_Water_ElementalArt_Core_Eff",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Avatar_Neuvillette_Core_Gadget",
+                "abilityName": "Avatar_Neuvillette_Core_Gadget",
+                "abilityOverride": ""
+            }
+        ],
+        "field": {
+            "concernType": "AllAvatars",
+            "shape": "CircleR1",
+            "PMOHIIJOLNG": "",
+            "triggerInfinite": true,
+            "GLOOEHAEDID": 0.800000011920929,
+            "checkInterval": 0.10000000149011612,
+            "lifeTime": 15.0,
+            "overwriteCampType": true,
+            "campType": "All",
+            "useCollider": false,
+            "JHEKALHPHBK": "",
+            "JFLLEDMCPLF": ""
+        },
+        "move": {
+            "$type": "KPCHGIMLNOF",
+            "MPMOPIIFDPO": {
+                "includeForces": [
+                    "WindZoneType"
+                ]
+            },
+            "CFMOMNBLFLJ": false,
+            "KCKBEDCBJDO": false
+        }
+    },
+    "Player_Water_ElementalBurst_Bullet": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            }
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Player_Water_ElementalBurst_Bullet",
+                "abilityName": "Player_Water_ElementalBurst_Bullet",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 10.0
+        },
+        "move": {
+            "$type": "KBENGKLMEAL",
+            "MPMOPIIFDPO": {
+                "muteAll": true
+            },
+            "speed": 3.0,
+            "JPDKAELMNDJ": {
+                "JJPKBDAAIFH": 2.0,
+                "HOOIFDANBGN": 60.0,
+                "APHEEIPGAAP": 1.2999999523162842,
+                "MAGKJGBJBPE": 0.20000000298023224,
+                "LFCIJINPMNE": true,
+                "MFPFHOJOFDN": "Keep",
+                "IBAOIHMFNFE": "Keep"
+            },
+            "JPDDBBHJAAH": true
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "ccd": {
+                    "type": "Always"
+                },
+                "triggerType": "TriggerAlways",
+                "triggerCD": 0.5,
+                "targetType": "Enemy",
+                "ignoreScene": true,
+                "ignoreWater": true
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Player_Water_ElementalBurst_Bullet"
+                }
+            ],
+            "GNGMJEIPCJE": true,
+            "FBBHIKAKGLB": 0.5,
+            "JHKBLJLPGEB": true,
+            "AEMONPKLPOP": true
+        }
+    }
+}

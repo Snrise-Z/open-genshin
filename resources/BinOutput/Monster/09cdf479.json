@@ -1,0 +1,299 @@
+{
+    "common": {
+        "mass": 10.0,
+        "height": 0.5,
+        "affectedByWorld": true,
+        "checkInSurface": true,
+        "canTriggerElementReactionText": false,
+        "BKPPECPBMBF": true,
+        "LOGFKHMLOOL": true
+    },
+    "model": {
+        "bornEffect": "",
+        "attachEffect": "",
+        "canBakeMesh": false
+    },
+    "combat": {
+        "property": {
+            "endureType": "Monster_Slime",
+            "weight": 20.0,
+            "BIIJDINAPBA": true,
+            "JNPHOLLHNOE": true
+        },
+        "beHit": {
+            "hitBloodEffect": "",
+            "muteAllHitText": true,
+            "DMMABCCBDEC": true,
+            "CFMNIKLGLAL": true
+        },
+        "combatLock": {
+            "lockShape": "CircleLockEnemy",
+            "denyLockOn": true,
+            "lockType": "Default"
+        },
+        "die": {
+            "dieForceDisappearTime": 0.0,
+            "dieDisappearEffect": "",
+            "DKKJAHMOIIA": true,
+            "JLANFLCPPGC": true
+        }
+    },
+    "abilities": [
+        {
+            "abilityID": "",
+            "abilityName": "BoltBug_MachinaIustitia_LogicHandler",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "",
+            "abilityName": "Animal_Homeworld_Common_Initial",
+            "abilityOverride": ""
+        }
+    ],
+    "stateLayers": {
+        "defaultLayer": {
+            "$type": "ConfigNormalStateLayer",
+            "ACOCIAFGIAD": "",
+            "stateIDs": {
+                "Born": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Born": []
+                    }
+                },
+                "Fly": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "StandbyFly": [],
+                        "WorkingFly": []
+                    },
+                    "PBAOEAEEBNB": [
+                        {
+                            "NOKKDDHKGAK": "AirState"
+                        }
+                    ]
+                },
+                "Broken": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Broken": [],
+                        "Self_Check": []
+                    },
+                    "AJBLILDCLBO": [
+                        "BeHit"
+                    ]
+                },
+                "BeHitAir": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "HitThrow_BS": [
+                            "Audio_Creature_Boltbug_MachinaIustitia_Throw_BS"
+                        ],
+                        "HitThrow_Loop": []
+                    },
+                    "AJBLILDCLBO": [
+                        "BeHit"
+                    ],
+                    "PBAOEAEEBNB": [
+                        {
+                            "NOKKDDHKGAK": "AirState"
+                        }
+                    ],
+                    "JHAJFOOGLBA": true,
+                    "OOPPLFOAOGN": true
+                },
+                "BeHit": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "HitThrow_AS": [
+                            "Audio_Creature_Boltbug_MachinaIustitia_Hit"
+                        ]
+                    },
+                    "AJBLILDCLBO": [
+                        "BeHit"
+                    ]
+                }
+            }
+        }
+    },
+    "initialPoses": {
+        "FlyWorking": {
+            "initialPoseParams": {
+                "LHMPJOKLEHI": {
+                    "BrokenState": "0"
+                },
+                "boolParams": {
+                    "CanWork": "true"
+                }
+            }
+        }
+    },
+    "aibeta": {
+        "enable": true,
+        "friendliness": 1,
+        "moveSetting": {
+            "moveCategory": "Air",
+            "navMeshAgentName": "Undead01"
+        },
+        "sensing": {
+            "settings": {
+                "DefaultSetting": {
+                    "PHDIIPOBJGA": 5.0,
+                    "COENEFGMPFK": 80.0,
+                    "MPEJKBDNFGB": 50.0,
+                    "hearAttractionRange": 0.0,
+                    "feelRange": 2.200000047683716
+                }
+            }
+        },
+        "threat": {
+            "clearThreatTargetDistance": 2.4000000953674316,
+            "clearThreatTimerByDistance": 1.0,
+            "feelThreatGrow": 100.0,
+            "KDPOCNEHGBJ": 1000.0,
+            "threatBroadcastRange": 0.0,
+            "JGFOPCOIJOI": ""
+        },
+        "defendArea": {
+            "defendRange": 100.0
+        },
+        "LECMJLBKJHK": {
+            "enable": true,
+            "JMHNPPNGEJD": [
+                11,
+                12,
+                13
+            ]
+        },
+        "GFDCKHFMHMH": {
+            "CKMELLHBHNH": [
+                {
+                    "KLENJAFFEFE": 15.0,
+                    "BMJCOELLDOL": 25.0,
+                    "HJEFCLHLLLN": 11,
+                    "MHHHCHEOGCL": [
+                        12
+                    ]
+                },
+                {
+                    "KLENJAFFEFE": 6.0,
+                    "BMJCOELLDOL": 18.0,
+                    "HJEFCLHLLLN": 12,
+                    "MHHHCHEOGCL": [
+                        11
+                    ]
+                }
+            ]
+        },
+        "ui": {
+            "hasDirectionIndicator": false,
+            "FLMOHOODJBA": ""
+        }
+    },
+    "move": {
+        "$type": "IIGPJJNGCLE",
+        "EIEIGIPKLAO": {
+            "BFHOPPHPHJK": [
+                "RetreatType",
+                "RetreatAirType",
+                "WindZoneType",
+                "AirflowType"
+            ]
+        },
+        "MIPACKKJPPI": false,
+        "FACNOEFNHIB": "RootNode",
+        "CFDFNCLFFOG": true
+    },
+    "BEGHJJDCLLK": {
+        "KEEAIACIJBN": "",
+        "JIOEGJGNLEC": {
+            "NGKLCAOGKNG": [
+                {
+                    "ILNHPFBOKNK": "Self_Check",
+                    "CDMEEHAPNGE": {
+                        "KMNBEAJOBPE": "Play_Sfx_Creature_Boltbug_MachinaIustitia_Broken_LP"
+                    },
+                    "LFOAJJCBNPI": [
+                        "Self_Check"
+                    ],
+                    "JKPDEGAANLH": "Except"
+                },
+                {
+                    "ILNHPFBOKNK": "StandbyFly",
+                    "CDMEEHAPNGE": {
+                        "KMNBEAJOBPE": "Play_Sfx_Creature_Boltbug_MachinaIustitia_Fly_LP"
+                    },
+                    "LFOAJJCBNPI": [
+                        "StandbyFly",
+                        "WorkingFly"
+                    ],
+                    "JKPDEGAANLH": "Except"
+                },
+                {
+                    "ILNHPFBOKNK": "WorkingFly",
+                    "CDMEEHAPNGE": {
+                        "KMNBEAJOBPE": "Play_Sfx_Creature_Boltbug_MachinaIustitia_Fly_LP"
+                    },
+                    "LFOAJJCBNPI": [
+                        "WorkingFly",
+                        "StandbyFly"
+                    ],
+                    "JKPDEGAANLH": "Except"
+                }
+            ],
+            "MPLMIOAKNGG": [
+                {
+                    "ILNHPFBOKNK": "Self_Check",
+                    "CDMEEHAPNGE": {
+                        "KMNBEAJOBPE": "Stop_Sfx_Creature_Boltbug_MachinaIustitia_Broken_LP"
+                    },
+                    "LFOAJJCBNPI": [
+                        "Self_Check"
+                    ],
+                    "JKPDEGAANLH": "Except"
+                },
+                {
+                    "ILNHPFBOKNK": "StandbyFly",
+                    "CDMEEHAPNGE": {
+                        "KMNBEAJOBPE": "Stop_Sfx_Creature_Boltbug_MachinaIustitia_Fly_LP"
+                    },
+                    "LFOAJJCBNPI": [
+                        "StandbyFly",
+                        "WorkingFly"
+                    ],
+                    "JKPDEGAANLH": "Except"
+                },
+                {
+                    "ILNHPFBOKNK": "Self_Check",
+                    "CDMEEHAPNGE": {
+                        "KMNBEAJOBPE": "Stop_Sfx_Creature_Boltbug_MachinaIustitia_Fly_LP"
+                    },
+                    "LFOAJJCBNPI": [
+                        "WorkingFly",
+                        "StandbyFly"
+                    ],
+                    "JKPDEGAANLH": "Except"
+                },
+                {
+                    "ILNHPFBOKNK": "Working",
+                    "CDMEEHAPNGE": {
+                        "KMNBEAJOBPE": "Stop_Sfx_Creature_Boltbug_MachinaIustitia_Working"
+                    },
+                    "LFOAJJCBNPI": [
+                        "Working"
+                    ],
+                    "JKPDEGAANLH": "Except"
+                }
+            ]
+        }
+    },
+    "animal": {
+        "tickAbilityElement": false,
+        "hasCharacterRenderering": false
+    },
+    "EGGALDADMOL": {
+        "ILKLCFIONEC": {
+            "ABCJFMIGKJN": "Eff_SceneObj_CatchAnimal_CaughtSuccess"
+        }
+    }
+}

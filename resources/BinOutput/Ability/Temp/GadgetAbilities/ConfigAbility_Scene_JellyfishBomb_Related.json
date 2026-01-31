@@ -1,0 +1,1771 @@
+[
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "SceneObj_Area_Fd_Property_Ani_Prop_UnderseaBac_01",
+            "abilityMixins": [
+                {
+                    "$type": "FieldEntityCountChangeMixin",
+                    "CHPLPFBEPDN": "All",
+                    "targetPredicates": [
+                        {
+                            "$type": "FAGBAHBLACH",
+                            "MALHNOJHHDJ": [
+                                "Avatar"
+                            ]
+                        }
+                    ],
+                    "FPONOPAFFOF": "AvatarCount",
+                    "CEJDHGJGHBP": 0.0,
+                    "EINFKFKEECD": 0.0
+                },
+                {
+                    "$type": "AttachModifierToSelfGlobalValueNoInitMixin",
+                    "globalValueKey": "AttackCD",
+                    "valueSteps": [
+                        -0.5,
+                        0.5,
+                        1.5
+                    ],
+                    "modifierNameSteps": [
+                        "TryTrigger",
+                        "CDTimer"
+                    ],
+                    "EFKNGOLLJIB": false
+                },
+                {
+                    "$type": "AttachToGadgetStateMixin",
+                    "modifierName": "Normal"
+                },
+                {
+                    "$type": "AttachToGadgetStateMixin",
+                    "JBFLOAMNPBC": 201,
+                    "modifierName": "FakeDeath"
+                },
+                {
+                    "$type": "AttachToGadgetStateMixin",
+                    "JBFLOAMNPBC": 901,
+                    "modifierName": "TrueDeath"
+                }
+            ],
+            "modifiers": {
+                "CDTimer": {
+                    "modifierName": "",
+                    "FAFCPJJAIGK": 2.9000000953674316,
+                    "bonusCritical": 100.0,
+                    "NFKOGKMAIIE": [
+                        {
+                            "$type": "SetGlobalValue",
+                            "value": 0.0,
+                            "NGGCNKPAODB": "AttackCD",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        }
+                    ]
+                },
+                "TryTrigger": {
+                    "modifierName": "",
+                    "FAFCPJJAIGK": 0.10000000149011612,
+                    "bonusCritical": 100.0,
+                    "NFKOGKMAIIE": [
+                        {
+                            "$type": "Predicated",
+                            "targetPredicates": [
+                                {
+                                    "$type": "OMPKIEPKGPF",
+                                    "NGGCNKPAODB": "AvatarCount",
+                                    "value": 1.0,
+                                    "GAGKBNPOCAC": "MoreThanAndEqual"
+                                },
+                                {
+                                    "$type": "OMPKIEPKGPF",
+                                    "NGGCNKPAODB": "_IS_Fake_Death",
+                                    "value": 0.0
+                                }
+                            ],
+                            "successActions": [
+                                {
+                                    "$type": "SetAnimatorTrigger",
+                                    "POPKLBPMAJN": "Attack",
+                                    "BFIKMHMNOGK": true
+                                },
+                                {
+                                    "$type": "SetGlobalValue",
+                                    "value": 1.0,
+                                    "NGGCNKPAODB": "AttackCD",
+                                    "LBHGJKHHAKP": 0.0,
+                                    "EMGNPOKHMNN": 0.0
+                                },
+                                {
+                                    "$type": "TriggerAbility",
+                                    "abilityName": "SceneObj_Area_Fd_Property_Ani_Prop_UnderseaBac_01_Attack01"
+                                },
+                                {
+                                    "$type": "FireEffect",
+                                    "LHHFHDEJOHC": "Eff_SceneObj_Area_Fd_Property_Ani_Prop_UnderseaBac_01_Attack",
+                                    "PCLAEGHPNHE": -1.0
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "AttackManager": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "modifierMixins": [
+                        {
+                            "$type": "AttachModifierToSelfGlobalValueNoInitMixin",
+                            "globalValueKey": "AvatarCount",
+                            "valueSteps": [
+                                -0.5,
+                                0.5,
+                                4.5
+                            ],
+                            "modifierNameSteps": [
+                                "NoAvatar",
+                                "HasAvatar"
+                            ]
+                        }
+                    ]
+                },
+                "NoAvatar": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "onAdded": [
+                        {
+                            "$type": "SetAnimatorInt",
+                            "EGCALHMEFEC": "FieldEnter",
+                            "value": 0.0
+                        },
+                        {
+                            "$type": "ResetAnimatorTrigger",
+                            "POPKLBPMAJN": "Attack"
+                        }
+                    ]
+                },
+                "HasAvatar": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "onAdded": [
+                        {
+                            "$type": "SetAnimatorInt",
+                            "EGCALHMEFEC": "FieldEnter",
+                            "value": 1.0
+                        },
+                        {
+                            "$type": "Predicated",
+                            "targetPredicates": [
+                                {
+                                    "$type": "OMPKIEPKGPF",
+                                    "NGGCNKPAODB": "AttackCD",
+                                    "value": 0.0
+                                },
+                                {
+                                    "$type": "OMPKIEPKGPF",
+                                    "NGGCNKPAODB": "_IS_Fake_Death",
+                                    "value": 0.0
+                                }
+                            ],
+                            "successActions": [
+                                {
+                                    "$type": "SetAnimatorTrigger",
+                                    "POPKLBPMAJN": "Attack",
+                                    "BFIKMHMNOGK": true
+                                },
+                                {
+                                    "$type": "SetGlobalValue",
+                                    "value": 1.0,
+                                    "NGGCNKPAODB": "AttackCD",
+                                    "LBHGJKHHAKP": 0.0,
+                                    "EMGNPOKHMNN": 0.0
+                                },
+                                {
+                                    "$type": "TriggerAbility",
+                                    "abilityName": "SceneObj_Area_Fd_Property_Ani_Prop_UnderseaBac_01_Attack01"
+                                },
+                                {
+                                    "$type": "FireEffect",
+                                    "LHHFHDEJOHC": "Eff_SceneObj_Area_Fd_Property_Ani_Prop_UnderseaBac_01_Attack",
+                                    "PCLAEGHPNHE": -1.0
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "HitManager": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "EOMGJKEEICG": [
+                        {
+                            "$type": "Predicated",
+                            "targetPredicates": [
+                                {
+                                    "$type": "OMPKIEPKGPF",
+                                    "NGGCNKPAODB": "_IS_Fake_Death",
+                                    "value": 0.0
+                                }
+                            ],
+                            "successActions": [
+                                {
+                                    "$type": "ChangeGadgetState",
+                                    "LAKGGCIOMBH": 201
+                                },
+                                {
+                                    "$type": "ServerLuaCall",
+                                    "FNBGNCANKJF": "FromGroup",
+                                    "EMLPCEDPDIE": true,
+                                    "FDPMGLDLLIN": "SLC_player_hit_UnderseaBac_success",
+                                    "param1": 0.0,
+                                    "HFOIEKLCLEM": 0.0,
+                                    "MCLOKLEBGPH": 0.0
+                                }
+                            ]
+                        },
+                        {
+                            "$type": "DoWatcherSystemAction",
+                            "KMGAOOHMCPK": "Target",
+                            "DHOICEBJFEN": 10160
+                        }
+                    ]
+                },
+                "BallManager": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "onAdded": [
+                        {
+                            "$type": "AttachEffect",
+                            "LHHFHDEJOHC": "Eff_SceneObj_Area_Fd_Property_Ani_Prop_UnderseaBac_01_Idle",
+                            "CCNCMOGOFAG": {
+                                "$type": "IADBHDLMGJB",
+                                "FPDJOHEHNDD": true,
+                                "MDPMJPIOGLA": "AttachPoint"
+                            },
+                            "PCLAEGHPNHE": -1.0
+                        },
+                        {
+                            "$type": "SendEffectTrigger",
+                            "HDBIEOFMAOD": "GadgetState",
+                            "PAOPLDJGAKA": "",
+                            "type": "Int",
+                            "LHHFHDEJOHC": "Eff_SceneObj_Area_Fd_Property_Ani_Prop_UnderseaBac_01_Idle"
+                        }
+                    ]
+                },
+                "Normal": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "modifierMixins": [
+                        {
+                            "$type": "ShaderStateMachineSwitchMixin",
+                            "CEDEEIOGOHB": ""
+                        }
+                    ],
+                    "onAdded": [
+                        {
+                            "$type": "SetGlobalValue",
+                            "value": 0.0,
+                            "NGGCNKPAODB": "_IS_Fake_Death",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        },
+                        {
+                            "$type": "SetGlobalValue",
+                            "value": 1.0,
+                            "NGGCNKPAODB": "AttackCD",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        },
+                        {
+                            "$type": "SendEffectTrigger",
+                            "HDBIEOFMAOD": "GadgetState",
+                            "PAOPLDJGAKA": "",
+                            "type": "Int",
+                            "LHHFHDEJOHC": "Eff_SceneObj_Area_Fd_Property_Ani_Prop_UnderseaBac_01_Idle"
+                        },
+                        {
+                            "$type": "SetAnimatorInt",
+                            "EGCALHMEFEC": "GadgetState",
+                            "value": 0.0
+                        },
+                        {
+                            "$type": "Predicated",
+                            "targetPredicates": [
+                                {
+                                    "$type": "OMPKIEPKGPF",
+                                    "NGGCNKPAODB": "Already_FakeDeath",
+                                    "value": 1.0
+                                }
+                            ],
+                            "failActions": [
+                                {
+                                    "$type": "FireEffect",
+                                    "LHHFHDEJOHC": "Eff_SceneObj_Area_Fd_Property_Ani_Prop_UnderseaBac_01_Create",
+                                    "PCLAEGHPNHE": -1.0
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "FakeDeath": {
+                    "modifierName": "",
+                    "FAFCPJJAIGK": 2.0,
+                    "bonusCritical": 100.0,
+                    "modifierMixins": [
+                        {
+                            "$type": "ShaderStateMachineSwitchMixin",
+                            "EKECDFMGGJA": 1,
+                            "CEDEEIOGOHB": ""
+                        }
+                    ],
+                    "onAdded": [
+                        {
+                            "$type": "SetGlobalValue",
+                            "value": 1.0,
+                            "NGGCNKPAODB": "_IS_Fake_Death",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        },
+                        {
+                            "$type": "SetGlobalValue",
+                            "value": 1.0,
+                            "NGGCNKPAODB": "Already_FakeDeath",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        },
+                        {
+                            "$type": "SendEffectTrigger",
+                            "HDBIEOFMAOD": "GadgetState",
+                            "PAOPLDJGAKA": "",
+                            "type": "Int",
+                            "KHMNAHOBJAE": 2,
+                            "LHHFHDEJOHC": "Eff_SceneObj_Area_Fd_Property_Ani_Prop_UnderseaBac_01_Idle"
+                        },
+                        {
+                            "$type": "AttachEffect",
+                            "LHHFHDEJOHC": "Eff_SceneObj_UnderseaBac_01_Remnant",
+                            "CCNCMOGOFAG": {
+                                "$type": "IADBHDLMGJB",
+                                "FPDJOHEHNDD": true,
+                                "MDPMJPIOGLA": "RootNode"
+                            },
+                            "PCLAEGHPNHE": -1.0
+                        },
+                        {
+                            "$type": "AttachEffect",
+                            "LHHFHDEJOHC": "Eff_SceneObj_UnderseaBac_01_RemnantParticles",
+                            "CCNCMOGOFAG": {
+                                "$type": "IADBHDLMGJB",
+                                "FPDJOHEHNDD": true,
+                                "MDPMJPIOGLA": "RootNode"
+                            },
+                            "PCLAEGHPNHE": -1.0
+                        }
+                    ],
+                    "NFKOGKMAIIE": [
+                        {
+                            "$type": "Predicated",
+                            "targetPredicates": [
+                                {
+                                    "$type": "OMPKIEPKGPF",
+                                    "NGGCNKPAODB": "SGV_TrueDeath",
+                                    "value": 0.0
+                                }
+                            ],
+                            "successActions": [
+                                {
+                                    "$type": "ChangeGadgetState"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "TrueDeath": {
+                    "modifierName": "",
+                    "FAFCPJJAIGK": 2.0,
+                    "bonusCritical": 100.0,
+                    "modifierMixins": [
+                        {
+                            "$type": "ShaderStateMachineSwitchMixin",
+                            "EKECDFMGGJA": 2,
+                            "CEDEEIOGOHB": ""
+                        }
+                    ],
+                    "onAdded": [
+                        {
+                            "$type": "SetGlobalValue",
+                            "value": 1.0,
+                            "NGGCNKPAODB": "_IS_Fake_Death",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        },
+                        {
+                            "$type": "SetGlobalValue",
+                            "value": 1.0,
+                            "NGGCNKPAODB": "Already_FakeDeath",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        },
+                        {
+                            "$type": "SendEffectTrigger",
+                            "HDBIEOFMAOD": "GadgetState",
+                            "PAOPLDJGAKA": "",
+                            "type": "Int",
+                            "KHMNAHOBJAE": 1,
+                            "LHHFHDEJOHC": "Eff_SceneObj_Area_Fd_Property_Ani_Prop_UnderseaBac_01_Idle"
+                        },
+                        {
+                            "$type": "FireEffect",
+                            "LHHFHDEJOHC": "Eff_SceneObj_Area_Fd_Property_Ani_Prop_UnderseaBac_01_PlayDead",
+                            "PCLAEGHPNHE": -1.0
+                        },
+                        {
+                            "$type": "SetLightColorIntensity",
+                            "KHGMOFIADAH": "Light",
+                            "EHNIKBBDKME": {
+                                "r": 1.0,
+                                "g": 0.5450000166893005,
+                                "b": 0.5450000166893005,
+                                "a": 1.0
+                            },
+                            "HBPBNNLIAAC": true,
+                            "CADKFKLOBJB": true,
+                            "AMEIKCLCOPP": true,
+                            "FJPIPCAPJBP": 1.0
+                        }
+                    ],
+                    "NFKOGKMAIIE": [
+                        {
+                            "$type": "KillSelf"
+                        }
+                    ]
+                }
+            },
+            "onAdded": [
+                {
+                    "$type": "SetGlobalValue",
+                    "value": 1.0,
+                    "NGGCNKPAODB": "AttackCD",
+                    "LBHGJKHHAKP": 0.0,
+                    "EMGNPOKHMNN": 0.0
+                },
+                {
+                    "$type": "SetGlobalValue",
+                    "value": 0.0,
+                    "NGGCNKPAODB": "_IS_Fake_Death",
+                    "LBHGJKHHAKP": 0.0,
+                    "EMGNPOKHMNN": 0.0
+                },
+                {
+                    "$type": "SetGlobalValue",
+                    "value": 0.0,
+                    "NGGCNKPAODB": "Already_FakeDeath",
+                    "LBHGJKHHAKP": 0.0,
+                    "EMGNPOKHMNN": 0.0
+                },
+                {
+                    "$type": "ApplyModifier",
+                    "modifierName": "BallManager"
+                },
+                {
+                    "$type": "ApplyModifier",
+                    "modifierName": "AttackManager"
+                },
+                {
+                    "$type": "ApplyModifier",
+                    "modifierName": "HitManager"
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "SceneObj_Area_Fd_Property_Ani_Prop_UnderseaBac_01_Attack01",
+            "abilitySpecials": {
+                "AvatarDamageValue": 0.4000000059604645,
+                "MonsterDamageValue": 0.4000000059604645,
+                "DamageSystemValue": 1.0
+            },
+            "modifiers": {
+                "AttackWait": {
+                    "modifierName": "",
+                    "FAFCPJJAIGK": 0.10000000149011612,
+                    "bonusCritical": 100.0,
+                    "NFKOGKMAIIE": [
+                        {
+                            "$type": "ApplyModifier",
+                            "modifierName": "UnderseaBacAttack01"
+                        }
+                    ]
+                },
+                "UnderseaBacAttack01": {
+                    "HABNNJHCOCD": "MultipleRefresh",
+                    "FNNAEGKHFHN": {
+                        "KDGIJMLBBPL": "",
+                        "HDFMDCDJBPB": 1.0
+                    },
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "onAdded": [
+                        {
+                            "$type": "TriggerAttackEvent",
+                            "FMDHJHAACGM": {
+                                "LOPCJCIFFBE": {
+                                    "$type": "IHKJIHKGECH",
+                                    "triggerType": "TriggerNoRepeat",
+                                    "GGEJLLOCJDH": 4.0
+                                },
+                                "OIAMOBFMPAB": {
+                                    "KNOKCFHALLI": "",
+                                    "HOKPLNACNKG": "",
+                                    "ILLFBEHPCJA": "default",
+                                    "BAPFFKCLDPC": {
+                                        "OLLFABADCKH": 1.0,
+                                        "PDHAKJCMPHB": 0.0,
+                                        "bonusCritical": 100.0,
+                                        "GAOIEGMFFDJ": "Default",
+                                        "FFIIMACIKEA": 0.0,
+                                        "ELCPFOMENGK": "Range",
+                                        "AEOLDMAMNLM": 0.0
+                                    },
+                                    "OCHEEDIDOHI": {
+                                        "AIDMNBLLAIJ": "default",
+                                        "OEGAJNNFFPO": "LV6"
+                                    }
+                                }
+                            },
+                            "PFBJAFHFBDE": "Enemy",
+                            "MALHNOJHHDJ": [
+                                "Avatar"
+                            ]
+                        }
+                    ]
+                }
+            },
+            "onAdded": [
+                {
+                    "$type": "SetSystemValueToOverrideMap",
+                    "NGGCNKPAODB": "DamageSystemValue",
+                    "type": "ElementLevelCo"
+                }
+            ],
+            "onAbilityStart": [
+                {
+                    "$type": "ApplyModifier",
+                    "modifierName": "AttackWait"
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "SceneObj_Area_Fd_Property_Ani_Prop_UnderseaBac_02",
+            "abilityMixins": [
+                {
+                    "$type": "FieldEntityCountChangeMixin",
+                    "CHPLPFBEPDN": "All",
+                    "targetPredicates": [
+                        {
+                            "$type": "FAGBAHBLACH",
+                            "MALHNOJHHDJ": [
+                                "Avatar"
+                            ]
+                        }
+                    ],
+                    "FPONOPAFFOF": "AvatarCount",
+                    "CEJDHGJGHBP": 0.0,
+                    "EINFKFKEECD": 0.0
+                },
+                {
+                    "$type": "AttachModifierToSelfGlobalValueNoInitMixin",
+                    "globalValueKey": "AttackCD",
+                    "valueSteps": [
+                        -0.5,
+                        0.5,
+                        1.5
+                    ],
+                    "modifierNameSteps": [
+                        "TryTrigger",
+                        "CDTimer"
+                    ],
+                    "EFKNGOLLJIB": false
+                },
+                {
+                    "$type": "AttachToGadgetStateMixin",
+                    "modifierName": "Normal"
+                },
+                {
+                    "$type": "AttachToGadgetStateMixin",
+                    "JBFLOAMNPBC": 201,
+                    "modifierName": "FakeDeath"
+                },
+                {
+                    "$type": "AttachToGadgetStateMixin",
+                    "JBFLOAMNPBC": 901,
+                    "modifierName": "TrueDeath"
+                }
+            ],
+            "modifiers": {
+                "CDTimer": {
+                    "modifierName": "",
+                    "FAFCPJJAIGK": 2.9000000953674316,
+                    "bonusCritical": 100.0,
+                    "NFKOGKMAIIE": [
+                        {
+                            "$type": "SetGlobalValue",
+                            "value": 0.0,
+                            "NGGCNKPAODB": "AttackCD",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        }
+                    ]
+                },
+                "TryTrigger": {
+                    "modifierName": "",
+                    "FAFCPJJAIGK": 0.10000000149011612,
+                    "bonusCritical": 100.0,
+                    "NFKOGKMAIIE": [
+                        {
+                            "$type": "Predicated",
+                            "targetPredicates": [
+                                {
+                                    "$type": "OMPKIEPKGPF",
+                                    "NGGCNKPAODB": "AvatarCount",
+                                    "value": 1.0,
+                                    "GAGKBNPOCAC": "MoreThanAndEqual"
+                                },
+                                {
+                                    "$type": "OMPKIEPKGPF",
+                                    "NGGCNKPAODB": "_IS_Fake_Death",
+                                    "value": 0.0
+                                }
+                            ],
+                            "successActions": [
+                                {
+                                    "$type": "SetAnimatorTrigger",
+                                    "POPKLBPMAJN": "Attack",
+                                    "BFIKMHMNOGK": true
+                                },
+                                {
+                                    "$type": "SetGlobalValue",
+                                    "value": 1.0,
+                                    "NGGCNKPAODB": "AttackCD",
+                                    "LBHGJKHHAKP": 0.0,
+                                    "EMGNPOKHMNN": 0.0
+                                },
+                                {
+                                    "$type": "TriggerAbility",
+                                    "abilityName": "SceneObj_Area_Fd_Property_Ani_Prop_UnderseaBac_02_Attack01"
+                                },
+                                {
+                                    "$type": "FireEffect",
+                                    "LHHFHDEJOHC": "Eff_SceneObj_Area_Fd_Property_Ani_Prop_UnderseaBac_01_Attack",
+                                    "PCLAEGHPNHE": -1.0
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "AttackManager": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "modifierMixins": [
+                        {
+                            "$type": "AttachModifierToSelfGlobalValueNoInitMixin",
+                            "globalValueKey": "AvatarCount",
+                            "valueSteps": [
+                                -0.5,
+                                0.5,
+                                4.5
+                            ],
+                            "modifierNameSteps": [
+                                "NoAvatar",
+                                "HasAvatar"
+                            ]
+                        }
+                    ]
+                },
+                "NoAvatar": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "onAdded": [
+                        {
+                            "$type": "SetAnimatorInt",
+                            "EGCALHMEFEC": "FieldEnter",
+                            "value": 0.0
+                        },
+                        {
+                            "$type": "ResetAnimatorTrigger",
+                            "POPKLBPMAJN": "Attack"
+                        }
+                    ]
+                },
+                "HasAvatar": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "onAdded": [
+                        {
+                            "$type": "SetAnimatorInt",
+                            "EGCALHMEFEC": "FieldEnter",
+                            "value": 1.0
+                        },
+                        {
+                            "$type": "Predicated",
+                            "targetPredicates": [
+                                {
+                                    "$type": "OMPKIEPKGPF",
+                                    "NGGCNKPAODB": "AttackCD",
+                                    "value": 0.0
+                                },
+                                {
+                                    "$type": "OMPKIEPKGPF",
+                                    "NGGCNKPAODB": "_IS_Fake_Death",
+                                    "value": 0.0
+                                }
+                            ],
+                            "successActions": [
+                                {
+                                    "$type": "SetAnimatorTrigger",
+                                    "POPKLBPMAJN": "Attack",
+                                    "BFIKMHMNOGK": true
+                                },
+                                {
+                                    "$type": "SetGlobalValue",
+                                    "value": 1.0,
+                                    "NGGCNKPAODB": "AttackCD",
+                                    "LBHGJKHHAKP": 0.0,
+                                    "EMGNPOKHMNN": 0.0
+                                },
+                                {
+                                    "$type": "TriggerAbility",
+                                    "abilityName": "SceneObj_Area_Fd_Property_Ani_Prop_UnderseaBac_02_Attack01"
+                                },
+                                {
+                                    "$type": "FireEffect",
+                                    "LHHFHDEJOHC": "Eff_SceneObj_Area_Fd_Property_Ani_Prop_UnderseaBac_01_Attack",
+                                    "PCLAEGHPNHE": -1.0
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "HitManager": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "EOMGJKEEICG": [
+                        {
+                            "$type": "Predicated",
+                            "targetPredicates": [
+                                {
+                                    "$type": "OMPKIEPKGPF",
+                                    "NGGCNKPAODB": "_IS_Fake_Death",
+                                    "value": 0.0
+                                }
+                            ],
+                            "successActions": [
+                                {
+                                    "$type": "ChangeGadgetState",
+                                    "LAKGGCIOMBH": 201
+                                },
+                                {
+                                    "$type": "ServerLuaCall",
+                                    "FNBGNCANKJF": "FromGroup",
+                                    "EMLPCEDPDIE": true,
+                                    "FDPMGLDLLIN": "SLC_player_hit_UnderseaBac_success",
+                                    "param1": 0.0,
+                                    "HFOIEKLCLEM": 0.0,
+                                    "MCLOKLEBGPH": 0.0
+                                }
+                            ]
+                        },
+                        {
+                            "$type": "DoWatcherSystemAction",
+                            "KMGAOOHMCPK": "Target",
+                            "DHOICEBJFEN": 10160
+                        }
+                    ]
+                },
+                "BallManager": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "onAdded": [
+                        {
+                            "$type": "AttachEffect",
+                            "LHHFHDEJOHC": "Eff_SceneObj_Area_Fd_Property_Ani_Prop_UnderseaBac_01_Idle",
+                            "CCNCMOGOFAG": {
+                                "$type": "IADBHDLMGJB",
+                                "FPDJOHEHNDD": true,
+                                "MDPMJPIOGLA": "AttachPoint"
+                            },
+                            "scale": 1.5,
+                            "PCLAEGHPNHE": -1.0
+                        },
+                        {
+                            "$type": "SendEffectTrigger",
+                            "HDBIEOFMAOD": "GadgetState",
+                            "PAOPLDJGAKA": "",
+                            "type": "Int",
+                            "LHHFHDEJOHC": "Eff_SceneObj_Area_Fd_Property_Ani_Prop_UnderseaBac_01_Idle"
+                        }
+                    ]
+                },
+                "Normal": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "modifierMixins": [
+                        {
+                            "$type": "ShaderStateMachineSwitchMixin",
+                            "CEDEEIOGOHB": ""
+                        }
+                    ],
+                    "onAdded": [
+                        {
+                            "$type": "SetGlobalValue",
+                            "value": 0.0,
+                            "NGGCNKPAODB": "_IS_Fake_Death",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        },
+                        {
+                            "$type": "SetGlobalValue",
+                            "value": 1.0,
+                            "NGGCNKPAODB": "AttackCD",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        },
+                        {
+                            "$type": "SendEffectTrigger",
+                            "HDBIEOFMAOD": "GadgetState",
+                            "PAOPLDJGAKA": "",
+                            "type": "Int",
+                            "LHHFHDEJOHC": "Eff_SceneObj_Area_Fd_Property_Ani_Prop_UnderseaBac_01_Idle"
+                        },
+                        {
+                            "$type": "SetAnimatorInt",
+                            "EGCALHMEFEC": "GadgetState",
+                            "value": 0.0
+                        },
+                        {
+                            "$type": "Predicated",
+                            "targetPredicates": [
+                                {
+                                    "$type": "OMPKIEPKGPF",
+                                    "NGGCNKPAODB": "Already_FakeDeath",
+                                    "value": 1.0
+                                }
+                            ],
+                            "failActions": [
+                                {
+                                    "$type": "FireEffect",
+                                    "LHHFHDEJOHC": "Eff_SceneObj_Area_Fd_Property_Ani_Prop_UnderseaBac_01_Create",
+                                    "PCLAEGHPNHE": -1.0
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "FakeDeath": {
+                    "modifierName": "",
+                    "FAFCPJJAIGK": 2.0,
+                    "bonusCritical": 100.0,
+                    "modifierMixins": [
+                        {
+                            "$type": "ShaderStateMachineSwitchMixin",
+                            "EKECDFMGGJA": 1,
+                            "CEDEEIOGOHB": ""
+                        }
+                    ],
+                    "onAdded": [
+                        {
+                            "$type": "SetGlobalValue",
+                            "value": 1.0,
+                            "NGGCNKPAODB": "_IS_Fake_Death",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        },
+                        {
+                            "$type": "SetGlobalValue",
+                            "value": 1.0,
+                            "NGGCNKPAODB": "Already_FakeDeath",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        },
+                        {
+                            "$type": "SendEffectTrigger",
+                            "HDBIEOFMAOD": "GadgetState",
+                            "PAOPLDJGAKA": "",
+                            "type": "Int",
+                            "KHMNAHOBJAE": 2,
+                            "LHHFHDEJOHC": "Eff_SceneObj_Area_Fd_Property_Ani_Prop_UnderseaBac_01_Idle"
+                        },
+                        {
+                            "$type": "AttachEffect",
+                            "LHHFHDEJOHC": "Eff_SceneObj_UnderseaBac_01_Remnant",
+                            "CCNCMOGOFAG": {
+                                "$type": "IADBHDLMGJB",
+                                "FPDJOHEHNDD": true,
+                                "MDPMJPIOGLA": "RootNode"
+                            },
+                            "scale": 1.5,
+                            "PCLAEGHPNHE": -1.0
+                        },
+                        {
+                            "$type": "AttachEffect",
+                            "LHHFHDEJOHC": "Eff_SceneObj_UnderseaBac_01_RemnantParticles",
+                            "CCNCMOGOFAG": {
+                                "$type": "IADBHDLMGJB",
+                                "FPDJOHEHNDD": true,
+                                "MDPMJPIOGLA": "RootNode"
+                            },
+                            "scale": 1.5,
+                            "PCLAEGHPNHE": -1.0
+                        }
+                    ],
+                    "NFKOGKMAIIE": [
+                        {
+                            "$type": "Predicated",
+                            "targetPredicates": [
+                                {
+                                    "$type": "OMPKIEPKGPF",
+                                    "NGGCNKPAODB": "SGV_TrueDeath",
+                                    "value": 0.0
+                                }
+                            ],
+                            "successActions": [
+                                {
+                                    "$type": "ChangeGadgetState"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "TrueDeath": {
+                    "modifierName": "",
+                    "FAFCPJJAIGK": 2.0,
+                    "bonusCritical": 100.0,
+                    "modifierMixins": [
+                        {
+                            "$type": "ShaderStateMachineSwitchMixin",
+                            "EKECDFMGGJA": 2,
+                            "CEDEEIOGOHB": ""
+                        }
+                    ],
+                    "onAdded": [
+                        {
+                            "$type": "SetGlobalValue",
+                            "value": 1.0,
+                            "NGGCNKPAODB": "_IS_Fake_Death",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        },
+                        {
+                            "$type": "SetGlobalValue",
+                            "value": 1.0,
+                            "NGGCNKPAODB": "Already_FakeDeath",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        },
+                        {
+                            "$type": "SendEffectTrigger",
+                            "HDBIEOFMAOD": "GadgetState",
+                            "PAOPLDJGAKA": "",
+                            "type": "Int",
+                            "KHMNAHOBJAE": 1,
+                            "LHHFHDEJOHC": "Eff_SceneObj_Area_Fd_Property_Ani_Prop_UnderseaBac_01_Idle"
+                        },
+                        {
+                            "$type": "FireEffect",
+                            "LHHFHDEJOHC": "Eff_SceneObj_Area_Fd_Property_Ani_Prop_UnderseaBac_01_PlayDead",
+                            "PCLAEGHPNHE": -1.0
+                        },
+                        {
+                            "$type": "SetLightColorIntensity",
+                            "KHGMOFIADAH": "Light",
+                            "EHNIKBBDKME": {
+                                "r": 1.0,
+                                "g": 0.5450000166893005,
+                                "b": 0.5450000166893005,
+                                "a": 1.0
+                            },
+                            "HBPBNNLIAAC": true,
+                            "CADKFKLOBJB": true,
+                            "AMEIKCLCOPP": true,
+                            "FJPIPCAPJBP": 1.0
+                        }
+                    ],
+                    "NFKOGKMAIIE": [
+                        {
+                            "$type": "KillSelf"
+                        }
+                    ]
+                }
+            },
+            "onAdded": [
+                {
+                    "$type": "SetGlobalValue",
+                    "value": 1.0,
+                    "NGGCNKPAODB": "AttackCD",
+                    "LBHGJKHHAKP": 0.0,
+                    "EMGNPOKHMNN": 0.0
+                },
+                {
+                    "$type": "SetGlobalValue",
+                    "value": 0.0,
+                    "NGGCNKPAODB": "_IS_Fake_Death",
+                    "LBHGJKHHAKP": 0.0,
+                    "EMGNPOKHMNN": 0.0
+                },
+                {
+                    "$type": "SetGlobalValue",
+                    "value": 0.0,
+                    "NGGCNKPAODB": "Already_FakeDeath",
+                    "LBHGJKHHAKP": 0.0,
+                    "EMGNPOKHMNN": 0.0
+                },
+                {
+                    "$type": "ApplyModifier",
+                    "modifierName": "BallManager"
+                },
+                {
+                    "$type": "ApplyModifier",
+                    "modifierName": "AttackManager"
+                },
+                {
+                    "$type": "ApplyModifier",
+                    "modifierName": "HitManager"
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "SceneObj_Area_Fd_Property_Ani_Prop_UnderseaBac_02_Attack01",
+            "abilitySpecials": {
+                "AvatarDamageValue": 0.4000000059604645,
+                "MonsterDamageValue": 0.4000000059604645,
+                "DamageSystemValue": 1.0
+            },
+            "modifiers": {
+                "AttackWait": {
+                    "modifierName": "",
+                    "FAFCPJJAIGK": 0.10000000149011612,
+                    "bonusCritical": 100.0,
+                    "NFKOGKMAIIE": [
+                        {
+                            "$type": "ApplyModifier",
+                            "modifierName": "UnderseaBacAttack01"
+                        }
+                    ]
+                },
+                "UnderseaBacAttack01": {
+                    "HABNNJHCOCD": "MultipleRefresh",
+                    "FNNAEGKHFHN": {
+                        "KDGIJMLBBPL": "",
+                        "HDFMDCDJBPB": 1.0
+                    },
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "onAdded": [
+                        {
+                            "$type": "TriggerAttackEvent",
+                            "FMDHJHAACGM": {
+                                "LOPCJCIFFBE": {
+                                    "$type": "IHKJIHKGECH",
+                                    "triggerType": "TriggerNoRepeat",
+                                    "GGEJLLOCJDH": 4.0
+                                },
+                                "OIAMOBFMPAB": {
+                                    "KNOKCFHALLI": "",
+                                    "HOKPLNACNKG": "",
+                                    "ILLFBEHPCJA": "default",
+                                    "BAPFFKCLDPC": {
+                                        "OLLFABADCKH": 1.0,
+                                        "PDHAKJCMPHB": 0.0,
+                                        "bonusCritical": 100.0,
+                                        "GAOIEGMFFDJ": "Default",
+                                        "FFIIMACIKEA": 0.0,
+                                        "ELCPFOMENGK": "Range",
+                                        "AEOLDMAMNLM": 0.0
+                                    },
+                                    "OCHEEDIDOHI": {
+                                        "AIDMNBLLAIJ": "default",
+                                        "OEGAJNNFFPO": "LV6"
+                                    }
+                                }
+                            },
+                            "PFBJAFHFBDE": "Enemy",
+                            "MALHNOJHHDJ": [
+                                "Avatar"
+                            ]
+                        }
+                    ]
+                }
+            },
+            "onAbilityStart": [
+                {
+                    "$type": "ApplyModifier",
+                    "modifierName": "AttackWait"
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "SceneObj_Area_Fd_Property_Ani_Prop_UnderseaBacDoor_01",
+            "abilityMixins": [
+                {
+                    "$type": "AttachToGadgetStateMixin",
+                    "modifierName": "Close"
+                },
+                {
+                    "$type": "AttachToGadgetStateMixin",
+                    "JBFLOAMNPBC": 201,
+                    "modifierName": "Open"
+                }
+            ],
+            "modifiers": {
+                "Close": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "onAdded": [
+                        {
+                            "$type": "EnableSceneTransformByName",
+                            "HFFMMIDGGKN": [
+                                "AirWall"
+                            ],
+                            "DEHFCFDDEGB": true
+                        }
+                    ],
+                    "NFKOGKMAIIE": [
+                        {
+                            "$type": "FireEffect",
+                            "LHHFHDEJOHC": "Eff_SceneObj_UnderseaBacDoor_01_Die",
+                            "CCNCMOGOFAG": {
+                                "$type": "IADBHDLMGJB",
+                                "FPDJOHEHNDD": true,
+                                "MDPMJPIOGLA": "RootNode"
+                            },
+                            "PCLAEGHPNHE": -1.0
+                        }
+                    ]
+                },
+                "Open": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "onAdded": [
+                        {
+                            "$type": "SetAnimatorInt",
+                            "EGCALHMEFEC": "Disappear",
+                            "value": 201.0
+                        },
+                        {
+                            "$type": "EnableSceneTransformByName",
+                            "HFFMMIDGGKN": [
+                                "AirWall"
+                            ]
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "SceneObj_Area_Fd_Property_Ani_Prop_UnderseaBacDoor_02",
+            "abilityMixins": [
+                {
+                    "$type": "AttachToGadgetStateMixin",
+                    "modifierName": "Close"
+                },
+                {
+                    "$type": "AttachToGadgetStateMixin",
+                    "JBFLOAMNPBC": 201,
+                    "modifierName": "Open"
+                }
+            ],
+            "modifiers": {
+                "Close": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "onAdded": [
+                        {
+                            "$type": "EnableSceneTransformByName",
+                            "HFFMMIDGGKN": [
+                                "AirWall"
+                            ],
+                            "DEHFCFDDEGB": true
+                        }
+                    ],
+                    "NFKOGKMAIIE": [
+                        {
+                            "$type": "FireEffect",
+                            "LHHFHDEJOHC": "Eff_SceneObj_UnderseaBacDoor_01_Die",
+                            "CCNCMOGOFAG": {
+                                "$type": "IADBHDLMGJB",
+                                "FPDJOHEHNDD": true,
+                                "MDPMJPIOGLA": "RootNode"
+                            },
+                            "PCLAEGHPNHE": -1.0
+                        }
+                    ]
+                },
+                "Open": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "onAdded": [
+                        {
+                            "$type": "SetAnimatorInt",
+                            "EGCALHMEFEC": "Disappear",
+                            "value": 201.0
+                        },
+                        {
+                            "$type": "EnableSceneTransformByName",
+                            "HFFMMIDGGKN": [
+                                "AirWall"
+                            ]
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "SceneObj_Area_Fd_Property_Ani_Prop_UnderseaBacDoor_03",
+            "abilityMixins": [
+                {
+                    "$type": "AttachToGadgetStateMixin",
+                    "modifierName": "Close"
+                },
+                {
+                    "$type": "AttachToGadgetStateMixin",
+                    "JBFLOAMNPBC": 201,
+                    "modifierName": "Open"
+                }
+            ],
+            "modifiers": {
+                "Close": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "onAdded": [
+                        {
+                            "$type": "SetAnimatorInt",
+                            "EGCALHMEFEC": "Disappear",
+                            "value": 0.0
+                        },
+                        {
+                            "$type": "EnableSceneTransformByName",
+                            "HFFMMIDGGKN": [
+                                "AirWall"
+                            ],
+                            "DEHFCFDDEGB": true
+                        }
+                    ],
+                    "NFKOGKMAIIE": [
+                        {
+                            "$type": "FireEffect",
+                            "LHHFHDEJOHC": "Eff_SceneObj_UnderseaBacDoor_01_Die",
+                            "CCNCMOGOFAG": {
+                                "$type": "IADBHDLMGJB",
+                                "FPDJOHEHNDD": true,
+                                "MDPMJPIOGLA": "RootNode"
+                            },
+                            "PCLAEGHPNHE": -1.0
+                        }
+                    ]
+                },
+                "Open": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "onAdded": [
+                        {
+                            "$type": "SetAnimatorInt",
+                            "EGCALHMEFEC": "Disappear",
+                            "value": 201.0
+                        },
+                        {
+                            "$type": "EnableSceneTransformByName",
+                            "HFFMMIDGGKN": [
+                                "AirWall"
+                            ]
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "SceneObj_Area_Fd_Property_Ani_Prop_UnderseaBacRes_01",
+            "abilityMixins": [
+                {
+                    "$type": "AttachToGadgetStateMixin",
+                    "modifierName": "NormalState"
+                },
+                {
+                    "$type": "AttachToGadgetStateMixin",
+                    "JBFLOAMNPBC": 201,
+                    "modifierName": "FakeDeath"
+                }
+            ],
+            "modifiers": {
+                "NormalState": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0
+                },
+                "FakeDeath": {
+                    "modifierName": "",
+                    "FAFCPJJAIGK": 5.0,
+                    "bonusCritical": 100.0,
+                    "onAdded": [
+                        {
+                            "$type": "AttachEffect",
+                            "LHHFHDEJOHC": "Eff_Item_SpecialTreasureBox_LockIdle",
+                            "CCNCMOGOFAG": {
+                                "$type": "IADBHDLMGJB",
+                                "FPDJOHEHNDD": true,
+                                "MDPMJPIOGLA": "AttachPoint"
+                            },
+                            "PCLAEGHPNHE": -1.0
+                        }
+                    ],
+                    "NFKOGKMAIIE": [
+                        {
+                            "$type": "FireEffect",
+                            "LHHFHDEJOHC": "Eff_Item_SpecialTreasureBox_Unlock",
+                            "CCNCMOGOFAG": {
+                                "$type": "IADBHDLMGJB",
+                                "FPDJOHEHNDD": true,
+                                "MDPMJPIOGLA": "AttachPoint"
+                            },
+                            "PCLAEGHPNHE": -1.0
+                        },
+                        {
+                            "$type": "ChangeGadgetState"
+                        }
+                    ]
+                },
+                "HitManager": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "EOMGJKEEICG": [
+                        {
+                            "$type": "Predicated",
+                            "targetPredicates": [
+                                {
+                                    "$type": "AOBPABGGJHL",
+                                    "LBKHBAHAAIL": [
+                                        "JellyFish_Bomb_Special"
+                                    ]
+                                }
+                            ],
+                            "successActions": [
+                                {
+                                    "$type": "ChangeGadgetState",
+                                    "LAKGGCIOMBH": 201
+                                }
+                            ],
+                            "failActions": [
+                                {
+                                    "$type": "FireEffect",
+                                    "LHHFHDEJOHC": "Eff_SceneObj_ChargingStation_01_Building",
+                                    "CCNCMOGOFAG": {
+                                        "$type": "IADBHDLMGJB",
+                                        "FPDJOHEHNDD": true,
+                                        "MDPMJPIOGLA": "RootNode"
+                                    },
+                                    "PCLAEGHPNHE": -1.0
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            "onAdded": [
+                {
+                    "$type": "SetGlobalValue",
+                    "value": 1.0,
+                    "NGGCNKPAODB": "_IS_InUnderseaBacRes",
+                    "LBHGJKHHAKP": 0.0,
+                    "EMGNPOKHMNN": 0.0
+                },
+                {
+                    "$type": "ApplyModifier",
+                    "modifierName": "HitManager"
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "SceneObj_Area_Fd_Property_Ani_Prop_FDFacPipeValve_01",
+            "abilityMixins": [
+                {
+                    "$type": "AttachToGadgetStateMixin",
+                    "modifierName": "Lock"
+                },
+                {
+                    "$type": "AttachToGadgetStateMixin",
+                    "JBFLOAMNPBC": 101,
+                    "modifierName": "0Degree"
+                },
+                {
+                    "$type": "AttachToGadgetStateMixin",
+                    "JBFLOAMNPBC": 102,
+                    "modifierName": "90Degree"
+                },
+                {
+                    "$type": "AttachToGadgetStateMixin",
+                    "JBFLOAMNPBC": 103,
+                    "modifierName": "180Degree"
+                },
+                {
+                    "$type": "AttachToGadgetStateMixin",
+                    "JBFLOAMNPBC": 104,
+                    "modifierName": "270Degree"
+                },
+                {
+                    "$type": "AttachToGadgetStateMixin",
+                    "JBFLOAMNPBC": 201,
+                    "modifierName": "LackValve"
+                },
+                {
+                    "$type": "AttachToGadgetStateMixin",
+                    "JBFLOAMNPBC": 901,
+                    "modifierName": "SuccessState"
+                }
+            ],
+            "modifiers": {
+                "Lock": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "modifierMixins": [
+                        {
+                            "$type": "ShaderStateMachineSwitchMixin",
+                            "EKECDFMGGJA": 2,
+                            "CEDEEIOGOHB": ""
+                        }
+                    ],
+                    "onAdded": [
+                        {
+                            "$type": "EnableSceneTransformByName",
+                            "HFFMMIDGGKN": [
+                                "Valve"
+                            ],
+                            "DEHFCFDDEGB": true
+                        }
+                    ]
+                },
+                "0Degree": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "modifierMixins": [
+                        {
+                            "$type": "ShaderStateMachineSwitchMixin",
+                            "CEDEEIOGOHB": ""
+                        }
+                    ],
+                    "onAdded": [
+                        {
+                            "$type": "EnableSceneTransformByName",
+                            "HFFMMIDGGKN": [
+                                "Valve"
+                            ],
+                            "DEHFCFDDEGB": true
+                        },
+                        {
+                            "$type": "SetAnimatorInt",
+                            "EGCALHMEFEC": "degree",
+                            "value": 0.0
+                        },
+                        {
+                            "$type": "Predicated",
+                            "targetPredicates": [
+                                {
+                                    "$type": "OMPKIEPKGPF",
+                                    "KMGAOOHMCPK": "Self",
+                                    "NGGCNKPAODB": "SGV_PipeDegree",
+                                    "value": 1.0
+                                }
+                            ],
+                            "successActions": [
+                                {
+                                    "$type": "AttachModifier",
+                                    "modifierName": "UNIQUE_Pipe_RightState"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "90Degree": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "modifierMixins": [
+                        {
+                            "$type": "ShaderStateMachineSwitchMixin",
+                            "CEDEEIOGOHB": ""
+                        }
+                    ],
+                    "onAdded": [
+                        {
+                            "$type": "SetAnimatorInt",
+                            "EGCALHMEFEC": "degree",
+                            "value": 90.0
+                        },
+                        {
+                            "$type": "Predicated",
+                            "targetPredicates": [
+                                {
+                                    "$type": "OMPKIEPKGPF",
+                                    "KMGAOOHMCPK": "Self",
+                                    "NGGCNKPAODB": "SGV_PipeDegree",
+                                    "value": 2.0
+                                }
+                            ],
+                            "successActions": [
+                                {
+                                    "$type": "AttachModifier",
+                                    "modifierName": "UNIQUE_Pipe_RightState"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "180Degree": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "modifierMixins": [
+                        {
+                            "$type": "ShaderStateMachineSwitchMixin",
+                            "CEDEEIOGOHB": ""
+                        }
+                    ],
+                    "onAdded": [
+                        {
+                            "$type": "SetAnimatorInt",
+                            "EGCALHMEFEC": "degree",
+                            "value": 180.0
+                        },
+                        {
+                            "$type": "Predicated",
+                            "targetPredicates": [
+                                {
+                                    "$type": "OMPKIEPKGPF",
+                                    "KMGAOOHMCPK": "Self",
+                                    "NGGCNKPAODB": "SGV_PipeDegree",
+                                    "value": 3.0
+                                }
+                            ],
+                            "successActions": [
+                                {
+                                    "$type": "AttachModifier",
+                                    "modifierName": "UNIQUE_Pipe_RightState"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "270Degree": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "modifierMixins": [
+                        {
+                            "$type": "ShaderStateMachineSwitchMixin",
+                            "CEDEEIOGOHB": ""
+                        }
+                    ],
+                    "onAdded": [
+                        {
+                            "$type": "SetAnimatorInt",
+                            "EGCALHMEFEC": "degree",
+                            "value": 270.0
+                        },
+                        {
+                            "$type": "Predicated",
+                            "targetPredicates": [
+                                {
+                                    "$type": "OMPKIEPKGPF",
+                                    "KMGAOOHMCPK": "Self",
+                                    "NGGCNKPAODB": "SGV_PipeDegree",
+                                    "value": 4.0
+                                }
+                            ],
+                            "successActions": [
+                                {
+                                    "$type": "AttachModifier",
+                                    "modifierName": "UNIQUE_Pipe_RightState"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "LackValve": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "onAdded": [
+                        {
+                            "$type": "EnableSceneTransformByName",
+                            "HFFMMIDGGKN": [
+                                "Valve"
+                            ]
+                        }
+                    ]
+                },
+                "SuccessState": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "modifierMixins": [
+                        {
+                            "$type": "ShaderStateMachineSwitchMixin",
+                            "EKECDFMGGJA": 3,
+                            "CEDEEIOGOHB": ""
+                        }
+                    ]
+                },
+                "UNIQUE_Pipe_RightState": {
+                    "modifierName": "",
+                    "defaultDistanceBetweenAvatarAndCamera": true,
+                    "bonusCritical": 100.0
+                }
+            }
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "SceneObj_Area_Fd_Property_Ani_Prop_TransparentEel_01_Ability",
+            "abilityMixins": [
+                {
+                    "$type": "AttachToGadgetStateMixin",
+                    "modifierName": "MoveState"
+                },
+                {
+                    "$type": "AttachToGadgetStateMixin",
+                    "JBFLOAMNPBC": 202,
+                    "modifierName": "DeadState"
+                },
+                {
+                    "$type": "AttachToGadgetStateMixin",
+                    "JBFLOAMNPBC": 203,
+                    "modifierName": "AfterDeadState"
+                }
+            ],
+            "modifiers": {
+                "MoveState": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "onAdded": [
+                        {
+                            "$type": "AttachEffect",
+                            "LHHFHDEJOHC": "Eff_SceneObj_Area_Fd_Property_Ani_Prop_TransparentEel_01",
+                            "CCNCMOGOFAG": {
+                                "$type": "IADBHDLMGJB",
+                                "FPDJOHEHNDD": true,
+                                "MDPMJPIOGLA": "RootNode"
+                            },
+                            "PCLAEGHPNHE": -1.0
+                        }
+                    ],
+                    "EOMGJKEEICG": [
+                        {
+                            "$type": "Predicated",
+                            "KMGAOOHMCPK": "Other",
+                            "targetPredicates": [
+                                {
+                                    "$type": "AOBPABGGJHL",
+                                    "LBKHBAHAAIL": [
+                                        "JellyFish_Bomb",
+                                        "CrabShieldBlunt",
+                                        "Dive_Echo_Detect",
+                                        "Dive_Echo_Bullet",
+                                        "Dive_Slash"
+                                    ]
+                                }
+                            ],
+                            "successActions": [
+                                {
+                                    "$type": "ChangeGadgetState",
+                                    "LAKGGCIOMBH": 202
+                                },
+                                {
+                                    "$type": "Predicated",
+                                    "KMGAOOHMCPK": "Target",
+                                    "targetPredicates": [
+                                        {
+                                            "$type": "FAGBAHBLACH",
+                                            "MALHNOJHHDJ": [
+                                                "Avatar"
+                                            ]
+                                        }
+                                    ],
+                                    "successActions": [
+                                        {
+                                            "$type": "ApplyModifier",
+                                            "KMGAOOHMCPK": "Target",
+                                            "modifierName": "TransparentEel_Watcher"
+                                        }
+                                    ],
+                                    "failActions": [
+                                        {
+                                            "$type": "ApplyModifier",
+                                            "KMGAOOHMCPK": "TargetOriginOwner",
+                                            "modifierName": "TransparentEel_Watcher"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "TransparentEel_Watcher": {
+                    "modifierName": "",
+                    "FAFCPJJAIGK": 1.0,
+                    "bonusCritical": 100.0,
+                    "onAdded": [
+                        {
+                            "$type": "DoWatcherSystemAction",
+                            "DHOICEBJFEN": 10161,
+                            "JBLEPDIMKGN": true
+                        }
+                    ]
+                },
+                "DeadState": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "onAdded": [
+                        {
+                            "$type": "FireEffect",
+                            "LHHFHDEJOHC": "Eff_SceneObj_Area_Fd_Property_Ani_Prop_TransparentEel_02",
+                            "CCNCMOGOFAG": {
+                                "$type": "IADBHDLMGJB",
+                                "FPDJOHEHNDD": true,
+                                "MDPMJPIOGLA": "RootNode"
+                            },
+                            "PCLAEGHPNHE": -1.0
+                        },
+                        {
+                            "$type": "ChangeGadgetState",
+                            "LAKGGCIOMBH": 203
+                        }
+                    ]
+                },
+                "AfterDeadState": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "onAdded": [
+                        {
+                            "$type": "KillSelf"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+]

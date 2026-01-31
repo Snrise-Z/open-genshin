@@ -1,0 +1,55 @@
+# =========================
+# 通用（系统/编辑器）
+# =========================
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+*~
+*.swp
+*.swo
+
+.idea/
+*.iml
+.vscode/
+*.code-workspace
+
+.project
+.classpath
+.settings/
+
+
+# =========================
+# 构建产物（常见语言/工具）
+# =========================
+# Java / Gradle / Maven
+**/build/
+**/target/
+**/.gradle/
+**/*.class
+**/*.war
+**/*.ear
+
+# Node
+**/node_modules/
+**/.npm/
+**/.yarn/
+**/.pnpm-store/
+
+# Python
+**/__pycache__/
+**/*.py[cod]
+**/.pytest_cache/
+**/.mypy_cache/
+
+
+# =========================
+# 运行时输出（本地环境）
+# =========================
+logs/
+cache/
+nohup.out
+*.log
+*.pid
+*.tmp
+

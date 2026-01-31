@@ -1,0 +1,640 @@
+{
+    "SceneObj_Area_Common_Property_Prop_QunyugeDebris_Lit_01": {
+        "$type": "ConfigGadget",
+        "combat": {
+            "property": {
+                "HP": 99999.0,
+                "isInvincible": true,
+                "isLockHP": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "SceneObj_Area_Common_Property_Prop_QunyugeDebris_Lit_01",
+                "abilityName": "SceneObj_Area_Common_Property_Prop_QunyugeDebris_Lit_01",
+                "abilityOverride": ""
+            }
+        ],
+        "field": {
+            "concernType": "LocalAvatar",
+            "shape": "CircleR5H5",
+            "PMOHIIJOLNG": "",
+            "triggerInfinite": true,
+            "lifeInfinite": true,
+            "checkInterval": 0.20000000298023224,
+            "overwriteCampType": true,
+            "campType": "SelfCamp",
+            "JHEKALHPHBK": "",
+            "JFLLEDMCPLF": ""
+        },
+        "KINALCPOMHK": true
+    },
+    "SceneObj_Area_Common_Property_Prop_QunyugeDebris_Lit_02": {
+        "$type": "ConfigGadget",
+        "combat": {
+            "property": {
+                "HP": 99999.0,
+                "isInvincible": true,
+                "isLockHP": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "SceneObj_Area_Common_Property_Prop_QunyugeDebris_Lit_02",
+                "abilityName": "SceneObj_Area_Common_Property_Prop_QunyugeDebris_Lit_02",
+                "abilityOverride": ""
+            }
+        ],
+        "field": {
+            "concernType": "LocalAvatar",
+            "shape": "CircleR3H3",
+            "PMOHIIJOLNG": "",
+            "triggerInfinite": true,
+            "lifeInfinite": true,
+            "checkInterval": 0.20000000298023224,
+            "overwriteCampType": true,
+            "campType": "SelfCamp",
+            "JHEKALHPHBK": "",
+            "JFLLEDMCPLF": ""
+        },
+        "MFKPHCFMEJF": {
+            "NNKFJFIJEGD": [
+                {
+                    "$type": "DKAGMDFBKFG",
+                    "intID": "State",
+                    "BNBNPANFDGD": true
+                }
+            ]
+        }
+    },
+    "SceneObj_Area_Common_Property_Prop_FirecrackerChest_01": {
+        "$type": "ConfigGadget",
+        "hasModel": true,
+        "combat": {
+            "property": {
+                "HP": 8000.0,
+                "attack": 80.0,
+                "weight": 80.0,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true,
+                "ignorePurgeRate": false
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "SceneObj_Area_Common_Property_Prop_FirecrackerChest_01",
+                "abilityName": "SceneObj_Area_Common_Property_Prop_FirecrackerChest_01",
+                "abilityOverride": ""
+            }
+        ]
+    },
+    "SceneObj_Area_Common_Property_Prop_FirecrackerChest_Lit_01": {
+        "$type": "ConfigGadget",
+        "globalValue": {
+            "serverGlobalValues": [
+                "SGV_Show_Mark"
+            ]
+        },
+        "hasModel": true,
+        "combat": {
+            "property": {
+                "HP": 99999.0,
+                "weight": 50.0,
+                "isLockHP": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "hitAutoRedirect": false,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "SceneObj_Area_Common_Property_Prop_FirecrackerChest_Lit_01",
+                "abilityName": "SceneObj_Area_Common_Property_Prop_FirecrackerChest_Lit_01",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Scene_RockGadget_Summon_Detect",
+                "abilityName": "Scene_RockGadget_Summon_Detect",
+                "abilityOverride": ""
+            }
+        ],
+        "field": {
+            "concernType": "LocalAvatar",
+            "shape": "CircleR2H2",
+            "PMOHIIJOLNG": "",
+            "triggerInfinite": true,
+            "lifeInfinite": true,
+            "checkInterval": 0.20000000298023224,
+            "overwriteCampType": true,
+            "campType": "SelfCamp",
+            "JHEKALHPHBK": "",
+            "JFLLEDMCPLF": ""
+        },
+        "MFKPHCFMEJF": {
+            "NNKFJFIJEGD": [
+                {
+                    "$type": "DKAGMDFBKFG",
+                    "intID": "State",
+                    "BNBNPANFDGD": true
+                }
+            ]
+        }
+    },
+    "SceneObj_Area_Common_Property_Ani_Prop_FireworksLauncher_01": {
+        "$type": "ConfigGadget",
+        "hasModel": true,
+        "combat": {
+            "property": {
+                "HP": 99999.0,
+                "isInvincible": true,
+                "isLockHP": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "SceneObj_Area_Common_Property_Ani_Prop_FireworksLauncher_01",
+                "abilityName": "SceneObj_Area_Common_Property_Ani_Prop_FireworksLauncher_01",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Scene_RockGadget_Summon_Detect",
+                "abilityName": "Scene_RockGadget_Summon_Detect",
+                "abilityOverride": ""
+            }
+        ],
+        "EOLFAMFPCOL": {
+            "AOGIJKALGNB": "UI/open_activity_FireworkBagPage",
+            "DLLLIKCMJMP": "UI_WIDGET_FIREWORKS_MAKE",
+            "DEPPLAJNPOH": [
+                "NONE"
+            ],
+            "icon": "",
+            "GEALIGKGCBF": "",
+            "NFJICIGABPE": "",
+            "MIHHAGGNIIO": "",
+            "NFOBMJLLCBO": [
+                {
+                    "AOGIJKALGNB": "UI/open_activity_ShootFireworkPage",
+                    "DLLLIKCMJMP": "UI_WIDGET_FIREWORKS_LAUNCH",
+                    "DEPPLAJNPOH": [
+                        "NONE"
+                    ],
+                    "icon": "",
+                    "GEALIGKGCBF": "",
+                    "NFJICIGABPE": "",
+                    "MIHHAGGNIIO": "",
+                    "AMGBCDJJEIM": 2
+                }
+            ]
+        },
+        "PPLJLLCBMEC": {
+            "OONMLKGDJOL": 2.0,
+            "JEIMFGMIPFC": 4.0
+        },
+        "AEBNLNOAIHA": true
+    },
+    "SceneObj_Area_Common_Property_Ani_Prop_FireworksLauncher_Bullet_01": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "FCAGPAEOLPI": 0.5,
+                "HOJBBPFJMIL": 0.5
+            },
+            "affectedByWorld": true
+        },
+        "hasModel": true,
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "SceneObj_Area_Common_Property_Ani_Prop_FireworksLauncher_Bullet_01",
+                "abilityName": "SceneObj_Area_Common_Property_Ani_Prop_FireworksLauncher_Bullet_01",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 20.0
+        },
+        "move": {
+            "$type": "MPNKKNJBNCD",
+            "speed": 10.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "CIHFFMJBELB": 200.0,
+            "IPBPLMGOJKC": 0.009999999776482582,
+            "HMOHCMJMLNE": 0.009999999776482582
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "SceneObj_Area_Common_Property_Ani_Prop_FireworksLauncher_Bullet_01"
+                }
+            ],
+            "JHKBLJLPGEB": true
+        }
+    },
+    "SceneObj_Area_Ly_Property_Prop_ProjectionOrgan_01": {
+        "$type": "ConfigGadget",
+        "hasModel": true,
+        "combatTemplate": "",
+        "EOLFAMFPCOL": {
+            "AOGIJKALGNB": "UI/open_projection_game_page",
+            "DLLLIKCMJMP": "",
+            "DEPPLAJNPOH": [
+                "NONE"
+            ],
+            "icon": "",
+            "GEALIGKGCBF": "",
+            "NFJICIGABPE": "",
+            "MIHHAGGNIIO": ""
+        },
+        "PPLJLLCBMEC": {
+            "OONMLKGDJOL": 2.0,
+            "JEIMFGMIPFC": 4.0
+        },
+        "AEBNLNOAIHA": true
+    },
+    "SceneObj_Area_Common_Property_Ani_Prop_SeekerCloseEye_01": {
+        "$type": "ConfigGadget",
+        "hasModel": true,
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "SceneObj_Area_Common_Property_Ani_Prop_SeekerCloseEye_01",
+                "abilityName": "SceneObj_Area_Common_Property_Ani_Prop_SeekerCloseEye_01",
+                "abilityOverride": ""
+            }
+        ],
+        "MFKPHCFMEJF": {
+            "NNKFJFIJEGD": [
+                {
+                    "$type": "DKAGMDFBKFG",
+                    "intID": "State",
+                    "BNBNPANFDGD": true
+                }
+            ]
+        }
+    },
+    "SceneObj_Area_Common_Property_Ani_Prop_FireworksLauncher_02": {
+        "$type": "ConfigGadget",
+        "hasModel": true,
+        "combat": {
+            "property": {
+                "HP": 99999.0,
+                "isInvincible": true,
+                "isLockHP": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "SceneObj_Area_Common_Property_Ani_Prop_FireworksLauncher_02",
+                "abilityName": "SceneObj_Area_Common_Property_Ani_Prop_FireworksLauncher_02",
+                "abilityOverride": ""
+            }
+        ]
+    },
+    "SceneObj_Area_Common_Property_Prop_SeaExplosiveBarrel_02": {
+        "$type": "ConfigGadget",
+        "common": {
+            "mass": 200.0,
+            "disableTickDistance": 100000.0
+        },
+        "hasModel": true,
+        "combat": {
+            "property": {
+                "HP": 8000.0,
+                "attack": 80.0,
+                "weight": 80.0
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "hitAutoRedirect": false
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "lockType": "Boss_Lv5",
+                "overrideRange": 10.0
+            },
+            "die": {
+                "dieEndTime": 0.10000000149011612,
+                "dieForceDisappearTime": 0.20000000298023224,
+                "dieDisappearEffect": ""
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "SceneObj_Area_Common_Property_Prop_SeaExplosiveBarrel_02",
+                "abilityName": "SceneObj_Area_Common_Property_Prop_SeaExplosiveBarrel_02",
+                "abilityOverride": ""
+            }
+        ],
+        "CFEIPLEGNFH": {
+            "APJGLOKDMCN": "",
+            "IFOFJCIPNLE": 1.4500000476837158
+        }
+    },
+    "SceneObj_Area_Common_Property_Ani_Prop_Jinyudeng_01": {
+        "$type": "ConfigGadget",
+        "hasModel": true,
+        "combat": {
+            "property": {
+                "HP": 99999.0,
+                "isInvincible": true,
+                "isLockHP": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "SceneObj_Area_Common_Property_Ani_Prop_Jinyudeng_01",
+                "abilityName": "SceneObj_Area_Common_Property_Ani_Prop_Jinyudeng_01",
+                "abilityOverride": ""
+            }
+        ],
+        "MFKPHCFMEJF": {
+            "NNKFJFIJEGD": [
+                {
+                    "$type": "DKAGMDFBKFG",
+                    "intID": "State",
+                    "BNBNPANFDGD": true
+                }
+            ]
+        }
+    },
+    "SceneObj_Area_Common_Property_Prop_Seaobstacles_SeaLampActivity": {
+        "$type": "ConfigGadget",
+        "hasModel": true,
+        "combat": {
+            "property": {
+                "HP": 400.0,
+                "attack": 15.0,
+                "weight": 50.0,
+                "isLockHP": true
+            },
+            "beHit": {
+                "hitBloodEffect": "Eff_Hit_QQObject_Immortal",
+                "hitAutoRedirect": false,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "SceneObj_Area_Common_Property_Prop_Seaobstacles_01",
+                "abilityName": "SceneObj_Area_Common_Property_Prop_Seaobstacles_01",
+                "abilityOverride": ""
+            }
+        ],
+        "billboard": {
+            "$type": "JOBMBKHMEKJ",
+            "attachPoint": "RootNode",
+            "offset": {
+                "y": 4.0
+            },
+            "HNBHIFHDHHP": 1.0,
+            "MILPPPJLDIG": true,
+            "showDistance": 48.0,
+            "BAFOFKKNFAI": true,
+            "size": "Grand"
+        }
+    },
+    "SceneObj_Item_Hili_Cart_SeaLampActivity": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "IOJMFPKFPFA",
+                "CDOIALFJGFK": "EffectMesh"
+            },
+            "viewSize": 2.0,
+            "disableTickDistance": 100000.0
+        },
+        "specialPoint": {
+            "elementAbsorb": "RootNode",
+            "elementPendant": "",
+            "elementDrop": "RootNode",
+            "bulletAim": "BulletAim"
+        },
+        "hasModel": true,
+        "combat": {
+            "property": {
+                "HP": 15000.0,
+                "attack": 50.0,
+                "weight": 50.0,
+                "ignorePurgeRate": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "hitAutoRedirect": false
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "lockType": "Avatar&Monster_Lv4"
+            },
+            "die": {
+                "dieEndTime": 0.10000000149011612,
+                "dieForceDisappearTime": 1.0,
+                "dieDisappearEffect": "Eff_SceneObj_Hili_Cart_Destory_01"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "SceneObj_Item_Hili_Cart",
+                "abilityName": "SceneObj_Item_Hili_Cart",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "SceneObj_Item_Hili_Cart_SeaLampActivity",
+                "abilityName": "SceneObj_Item_Hili_Cart_SeaLampActivity",
+                "abilityOverride": ""
+            }
+        ],
+        "move": {
+            "$type": "ConfigPlatformMove"
+        },
+        "EOLFAMFPCOL": {
+            "AOGIJKALGNB": "TEST/TEST_Chest_Btn",
+            "DLLLIKCMJMP": "",
+            "icon": "",
+            "GEALIGKGCBF": "",
+            "NFJICIGABPE": "",
+            "MIHHAGGNIIO": ""
+        },
+        "CFEIPLEGNFH": {
+            "APJGLOKDMCN": "",
+            "IFOFJCIPNLE": 1.149999976158142
+        },
+        "stateLayers": {
+            "defaultLayer": {
+                "$type": "GMHKGJPLHFD",
+                "DLEKAADOFBI": "",
+                "stateIDs": {
+                    "All": {
+                        "$type": "CCIEFDKKMLG",
+                        "DNPOFANDHPP": {
+                            "Ani_Hili_Cart_01_Idle": [
+                                "Effect_Hili_Cart_Hitbox"
+                            ],
+                            "Ani_Hili_Cart_01_Take_Off": [
+                                "Effect_Hili_Cart_Hitbox"
+                            ],
+                            "Ani_Hili_Cart_01_Flight": [
+                                "Effect_Hili_Cart_Hitbox"
+                            ],
+                            "Start": [
+                                "Hide_Hili_Cart_Hitbox"
+                            ],
+                            "Ani_Hili_Cart_01_Failed": [
+                                "Hide_Hili_Cart_Hitbox"
+                            ]
+                        }
+                    }
+                }
+            }
+        },
+        "MFKPHCFMEJF": {
+            "NNKFJFIJEGD": [
+                {
+                    "$type": "DKAGMDFBKFG",
+                    "intID": "State",
+                    "BNBNPANFDGD": true
+                }
+            ],
+            "PDFBCBFBHLO": [
+                {
+                    "$type": "GNOFGJLHGKO",
+                    "OABBHFGJCEF": {
+                        "$type": "NEMMMKLHDDA"
+                    }
+                },
+                {
+                    "$type": "GNOFGJLHGKO",
+                    "OABBHFGJCEF": {
+                        "$type": "NEMMMKLHDDA",
+                        "BABCOGAGMMO": true
+                    }
+                }
+            ]
+        },
+        "billboard": {
+            "$type": "JOBMBKHMEKJ",
+            "attachPoint": "RootNode",
+            "offset": {
+                "y": 3.799999952316284
+            },
+            "HNBHIFHDHHP": 1.0,
+            "MILPPPJLDIG": true,
+            "showDistance": 48.0,
+            "BAFOFKKNFAI": true,
+            "size": "Grand"
+        }
+    },
+    "SceneObj_Area_Ly_Property_Prop_Raft_SeaLampActivity": {
+        "$type": "ConfigGadget",
+        "globalValue": {
+            "serverGlobalValues": [
+                "SGV_Need_SLC"
+            ]
+        },
+        "hasModel": true,
+        "combat": {
+            "property": {
+                "HP": 99999.0,
+                "isInvincible": true,
+                "isLockHP": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "SceneObj_Area_Ly_Property_Prop_Raft_SeaLampActivity",
+                "abilityName": "SceneObj_Area_Ly_Property_Prop_Raft_SeaLampActivity",
+                "abilityOverride": ""
+            }
+        ]
+    }
+}

@@ -1,0 +1,81 @@
+[
+  {
+    "DJNPCADKLGG": 1,
+    "type": "AVATAR_RENAME_TYPE_WANDERER",
+    "JFCMNFMGNCC": 10000075,
+    "MJBAJKOKFLN": 1301,
+    "KLJCDMABFAA": 303202,
+    "AADEIMEJPIC": 303205,
+    "MJPHPPCPILE": [
+      {
+        "PMDPEADEHHJ": "LANGUAGE_EN",
+        "NINACLNIKOM": "Wanderer"
+      },
+      {
+        "PMDPEADEHHJ": "LANGUAGE_SC",
+        "NINACLNIKOM": "流浪者"
+      },
+      {
+        "PMDPEADEHHJ": "LANGUAGE_TC",
+        "NINACLNIKOM": "流浪者"
+      },
+      {
+        "PMDPEADEHHJ": "LANGUAGE_FR",
+        "NINACLNIKOM": "Nomade"
+      },
+      {
+        "PMDPEADEHHJ": "LANGUAGE_DE",
+        "NINACLNIKOM": "Wanderer"
+      },
+      {
+        "PMDPEADEHHJ": "LANGUAGE_ES",
+        "NINACLNIKOM": "Trotamundos"
+      },
+      {
+        "PMDPEADEHHJ": "LANGUAGE_PT",
+        "NINACLNIKOM": "Andarilho"
+      },
+      {
+        "PMDPEADEHHJ": "LANGUAGE_RU",
+        "NINACLNIKOM": "Странник"
+      },
+      {
+        "PMDPEADEHHJ": "LANGUAGE_JP",
+        "NINACLNIKOM": "放浪者"
+      },
+      {
+        "PMDPEADEHHJ": "LANGUAGE_KR",
+        "NINACLNIKOM": "방랑자"
+      },
+      {
+        "PMDPEADEHHJ": "LANGUAGE_TH",
+        "NINACLNIKOM": "ผู้พเนจร"
+      },
+      {
+        "PMDPEADEHHJ": "LANGUAGE_VN",
+        "NINACLNIKOM": "Kẻ Lang Thang"
+      },
+      {
+        "PMDPEADEHHJ": "LANGUAGE_ID",
+        "NINACLNIKOM": "Wanderer"
+      },
+      {
+        "PMDPEADEHHJ": "LANGUAGE_TR",
+        "NINACLNIKOM": "Avare"
+      },
+      {
+        "PMDPEADEHHJ": "LANGUAGE_IT",
+        "NINACLNIKOM": "Vagabondo"
+      }
+    ],
+    "AHDPHFNJICO": "TMP_VALUE_KEY_TYPE_WANDERER_TMP_NAME",
+    "BCPMOBAJHPH": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ]
+  }
+]

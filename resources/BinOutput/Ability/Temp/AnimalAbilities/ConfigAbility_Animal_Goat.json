@@ -1,0 +1,310 @@
+[
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "Animal_Goat_StateChange",
+            "abilityMixins": [
+                {
+                    "$type": "AttachToAIAlertnessMixin",
+                    "FNLKHCKNFJI": [
+                        2
+                    ],
+                    "modifierName": "SetPoseFalse"
+                }
+            ],
+            "modifiers": {
+                "SetPoseFalse": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "SetPoseBool",
+                            "CMLNMLEDGPA": "LookAround"
+                        },
+                        {
+                            "$type": "SetPoseBool",
+                            "CMLNMLEDGPA": "Stretch"
+                        },
+                        {
+                            "$type": "SetPoseBool",
+                            "CMLNMLEDGPA": "AlertCrush"
+                        },
+                        {
+                            "$type": "HideUIBillBoard"
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "Animal_Goat_Random",
+            "abilityMixins": [
+                {
+                    "$type": "AttachToAnimatorStateIDMixin",
+                    "FHCHNMKMJJA": [
+                        "Personality_103_BS"
+                    ],
+                    "modifierName": "Random_MoveSpeedRatio"
+                }
+            ],
+            "abilitySpecials": {
+                "RandomTimes": 0.0
+            },
+            "modifiers": {
+                "Random_MoveSpeedRatio": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "SetRandomOverrideMapValue",
+                            "LJGFAINKJNC": 4.0,
+                            "OKKCBIKODOG": 2.0,
+                            "BPGLCPGHEEK": "RandomTimes"
+                        },
+                        {
+                            "$type": "SetAnimatorInt",
+                            "EGCALHMEFEC": "LoopTimes",
+                            "value": "RandomTimes"
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "Animal_Goat_Disappear",
+            "abilityMixins": [
+                {
+                    "$type": "AttachToAnimatorStateIDMixin",
+                    "FHCHNMKMJJA": [
+                        "Disappear"
+                    ],
+                    "modifierName": "DisappearTimer"
+                }
+            ],
+            "modifiers": {
+                "DisappearTimer": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "StartDither",
+                            "duration": 3.0
+                        },
+                        {
+                            "$type": "HideUIBillBoard",
+                            "HCDOGJLANIM": true
+                        },
+                        {
+                            "$type": "SetAnimatorBool",
+                            "CMLNMLEDGPA": "Disappear",
+                            "value": true
+                        },
+                        {
+                            "$type": "KillSelf",
+                            "duration": 1.5,
+                            "CHHLCPIHEGN": "Disappear",
+                            "PNBHIJBFMOP": true,
+                            "PMBKHLEAMMI": true
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "Animal_Goat_FleeMode",
+            "abilityMixins": [
+                {
+                    "$type": "AttachToPoseIDMixin",
+                    "OLJKDPFLMCF": [
+                        1,
+                        2
+                    ],
+                    "modifierName": "FleeMode_Monitor"
+                }
+            ],
+            "modifiers": {
+                "FleeMode_Monitor": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "SetPoseBool",
+                            "CMLNMLEDGPA": "FleeMode",
+                            "value": true
+                        }
+                    ],
+                    "EOMGJKEEICG": [
+                        {
+                            "$type": "SetPoseBool",
+                            "CMLNMLEDGPA": "FleeMode"
+                        },
+                        {
+                            "$type": "Predicated",
+                            "KMGAOOHMCPK": "Target",
+                            "targetPredicates": [
+                                {
+                                    "$type": "FJHPOHKCGED",
+                                    "JCMFILJLNFH": "GreaterOrEqual",
+                                    "value": 5.0
+                                }
+                            ],
+                            "successActions": [
+                                {
+                                    "$type": "SetPoseBool",
+                                    "CMLNMLEDGPA": "FleeMode",
+                                    "value": true
+                                }
+                            ]
+                        },
+                        {
+                            "$type": "Predicated",
+                            "KMGAOOHMCPK": "TargetOriginOwner",
+                            "targetPredicates": [
+                                {
+                                    "$type": "FJHPOHKCGED",
+                                    "JCMFILJLNFH": "GreaterOrEqual",
+                                    "value": 5.0
+                                }
+                            ],
+                            "successActions": [
+                                {
+                                    "$type": "SetPoseBool",
+                                    "CMLNMLEDGPA": "FleeMode",
+                                    "value": true
+                                }
+                            ]
+                        },
+                        {
+                            "$type": "SetPoseBool",
+                            "CMLNMLEDGPA": "HitFlag",
+                            "value": true
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "Animal_Goat_CrushAtk",
+            "abilityMixins": [
+                {
+                    "$type": "SteerAttackMixin",
+                    "LMMLIKMOKHL": [
+                        "CrushAtk"
+                    ],
+                    "EIAGKLKHEFP": 0.07999999821186066,
+                    "GGMOCFABGPD": 0.6169999837875366,
+                    "KNPBDOFJKKB": 180.0,
+                    "APILILGPPAD": "",
+                    "AJLDCMPMJIK": 1.5
+                },
+                {
+                    "$type": "SteerAttackMixin",
+                    "LMMLIKMOKHL": [
+                        "AlertCrush_BS"
+                    ],
+                    "EIAGKLKHEFP": 0.23999999463558197,
+                    "GGMOCFABGPD": 0.550000011920929,
+                    "KNPBDOFJKKB": 180.0,
+                    "APILILGPPAD": "",
+                    "AJLDCMPMJIK": 1.5
+                },
+                {
+                    "$type": "AttachToAnimatorStateIDMixin",
+                    "FHCHNMKMJJA": [
+                        "AlertCrush_Loop"
+                    ],
+                    "modifierName": "AlertCrush_TargetMonitor"
+                }
+            ],
+            "modifiers": {
+                "AlertCrush_TargetMonitor": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "ANPDJHOGAFE": 0.30000001192092896,
+                    "NFKOGKMAIIE": [
+                        {
+                            "$type": "SetPoseBool",
+                            "CMLNMLEDGPA": "FleeMode",
+                            "value": true
+                        }
+                    ],
+                    "MDPGEKAIFIM": [
+                        {
+                            "$type": "SetAnimatorTrigger",
+                            "FLEEHCIOPKA": [
+                                {
+                                    "$type": "FJHPOHKCGED",
+                                    "KMGAOOHMCPK": "SelfAttackTarget",
+                                    "JCMFILJLNFH": "LesserOrEqual",
+                                    "value": 6.0
+                                }
+                            ],
+                            "POPKLBPMAJN": "AlertCrush"
+                        }
+                    ]
+                }
+            },
+            "onAbilityStart": [
+                {
+                    "$type": "TriggerAttackEvent",
+                    "FMDHJHAACGM": {
+                        "LOPCJCIFFBE": {
+                            "$type": "JDNHMJKEPOH",
+                            "triggerType": "TriggerNoRepeat",
+                            "CCNCMOGOFAG": {
+                                "$type": "DELDMCFKBBL",
+                                "offset": {
+                                    "NEEHMANEJKM": 0.0,
+                                    "KKKLBADAPPB": 0.5,
+                                    "GENNNOANKOO": 0.0
+                                },
+                                "FPDJOHEHNDD": true
+                            },
+                            "DMIKDAOCFDG": {
+                                "NEEHMANEJKM": 1.5,
+                                "KKKLBADAPPB": 2.0,
+                                "GENNNOANKOO": 2.5
+                            }
+                        },
+                        "OIAMOBFMPAB": {
+                            "KNOKCFHALLI": "",
+                            "HOKPLNACNKG": "",
+                            "ILLFBEHPCJA": "default",
+                            "BAPFFKCLDPC": {
+                                "OLLFABADCKH": 1.0,
+                                "PDHAKJCMPHB": 0.0,
+                                "bonusCritical": 100.0,
+                                "GAOIEGMFFDJ": "Blunt",
+                                "FFIIMACIKEA": 1000.0,
+                                "AEOLDMAMNLM": 0.0
+                            },
+                            "OCHEEDIDOHI": {
+                                "AIDMNBLLAIJ": "default",
+                                "OEGAJNNFFPO": "LV4",
+                                "OPAIFMGBGDE": true
+                            }
+                        }
+                    },
+                    "PFBJAFHFBDE": "Enemy"
+                },
+                {
+                    "$type": "SetPoseBool",
+                    "CMLNMLEDGPA": "FleeMode",
+                    "value": true
+                }
+            ]
+        }
+    }
+]

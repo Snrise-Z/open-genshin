@@ -1,0 +1,397 @@
+{
+    "Mika_ElementalArt_Bullet_Main": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            }
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Mika_ElementalArt_Charge_Bullet_Main",
+                "abilityName": "Mika_ElementalArt_Charge_Bullet_Main",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 1.7000000476837158
+        },
+        "move": {
+            "$type": "EGIBMIADEHO",
+            "speed": 30.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD",
+                "MJFDEEKHOKP": true
+            },
+            "BCNECAMPGJJ": true
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "ccd": {
+                    "type": "Always"
+                },
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Mika_ElementalArt_Charge_Bullet_Main"
+                }
+            ],
+            "FBBHIKAKGLB": 0.5,
+            "JHKBLJLPGEB": true,
+            "AEMONPKLPOP": true
+        }
+    },
+    "Mika_ElementalArt_Bullet_Main_Short": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            }
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Mika_ElementalArt_NoCharge_Bullet_Main",
+                "abilityName": "Mika_ElementalArt_NoCharge_Bullet_Main",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 0.4000000059604645
+        },
+        "move": {
+            "$type": "KBENGKLMEAL",
+            "speed": 15.0
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "ccd": {
+                    "type": "Always"
+                },
+                "triggerType": "TriggerNoRepeat",
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Mika_ElementalArt_NoCharge_Bullet_Main"
+                }
+            ],
+            "FBBHIKAKGLB": 0.20000000298023224
+        }
+    },
+    "Mika_ElementalArt_Bullet_Main_NoTarget": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            }
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Mika_ElementalArt_Charge_Bullet_Main",
+                "abilityName": "Mika_ElementalArt_Charge_Bullet_Main",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 2.5
+        },
+        "move": {
+            "$type": "MPNKKNJBNCD",
+            "speed": 30.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "CIHFFMJBELB": 25.0,
+            "IPBPLMGOJKC": 5.5,
+            "HMOHCMJMLNE": 0.009999999776482582
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "ccd": {
+                    "type": "Always"
+                },
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Mika_ElementalArt_Charge_Bullet_Main"
+                }
+            ],
+            "JHKBLJLPGEB": true,
+            "AEMONPKLPOP": true
+        }
+    },
+    "Mika_ElementalArt_Bullet_Sub": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "FCAGPAEOLPI": 0.5,
+                "HOJBBPFJMIL": 0.5
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Mika_ElementalArt_Charge_Bullet_Sub",
+                "abilityName": "Mika_ElementalArt_Charge_Bullet_Sub",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 4.0
+        },
+        "move": {
+            "$type": "EGIBMIADEHO",
+            "MPMOPIIFDPO": {
+                "muteAll": true
+            },
+            "speed": 20.0,
+            "maxSpeed": 40.0,
+            "GBPNCGHBJMC": 20.0,
+            "AFIKDKDFKCJ": 2.0,
+            "NNKNFFMKNNB": 2.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "KGGKADOKFII": 0.5,
+            "BCNECAMPGJJ": true,
+            "FDECFKIJFPN": {
+                "$type": "OIPBNHOJLBF",
+                "KBOKKCAAOIP": {
+                    "$type": "AJCFIBNMGKO",
+                    "offset": {
+                        "EMBMLEBGFOI": 0.0,
+                        "NABPJFNICAE": 0.0,
+                        "MLOLIKEJCKB": 0.009999999776482582
+                    }
+                },
+                "radius": 0.5,
+                "LFJAPNIOCAF": 0.5
+            }
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "ccd": {
+                    "type": "Always"
+                },
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Mika_ElementalArt_Charge_Bullet_Sub"
+                }
+            ],
+            "FBBHIKAKGLB": 0.4000000059604645,
+            "JHKBLJLPGEB": true,
+            "ENBJBDDCLMC": 0.20000000298023224
+        }
+    },
+    "Mika_ExtraAttack_Bullet": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            }
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Avatar_Mika_ExtraAttack_Bullet",
+                "abilityName": "Avatar_Mika_ExtraAttack_Bullet",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 0.5
+        },
+        "move": {
+            "$type": "DKAMCGDMNKI",
+            "attachPoint": "",
+            "followRotation": true,
+            "offset": {
+                "y": 0.8999999761581421
+            },
+            "JGFLINDOJDF": {
+                "z": 1.0
+            },
+            "HMPJAIBPNND": ""
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "ccd": {
+                    "type": "Always"
+                },
+                "triggerType": "TriggerNoRepeat",
+                "targetType": "Enemy",
+                "ignoreScene": true
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Avatar_Mika_ExtraAttack_Bullet"
+                }
+            ]
+        }
+    },
+    "Mika_Sub_Bullet_Creator": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            }
+        },
+        "specialPoint": {
+            "elementAbsorb": "RootNode",
+            "elementPendant": "",
+            "elementDrop": "RootNode",
+            "bulletAim": "RootNode"
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true,
+                "ignorePurgeRate": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "Avatar_Mika_ElementalArt_Sub_Bullet_Launch",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "",
+                "abilityName": "Avatar_Mika_ElementalArt_Sub_Bullet_Launch",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 4.0
+        },
+        "move": {
+            "$type": "MPNKKNJBNCD",
+            "speed": 5.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "CIHFFMJBELB": 25.0,
+            "IPBPLMGOJKC": 5.5,
+            "HMOHCMJMLNE": 0.10000000149011612
+        }
+    }
+}

@@ -1,0 +1,1274 @@
+{
+    "common": {
+        "effectAttachShape": {
+            "$type": "ConfigEffectAttachSkinnedMesh",
+            "mesh": "EffectMesh"
+        },
+        "mass": 30.0,
+        "affectedByWorld": true,
+        "checkInSurface": true,
+        "shouldPauseAnimatorBeforeReady": true,
+        "clearAnimatorOnSetLightDeactive": true,
+        "clearAIOnSetLightDeactive": true
+    },
+    "MEMHBNEJBCL": {
+        "CMDNEPBHICB": {
+            "ADNPIILDCJH": 5.0
+        }
+    },
+    "combat": {
+        "property": {
+            "endureType": "Monster_Grunt_Humanoid",
+            "weight": 75.0
+        },
+        "beHit": {
+            "hitBloodEffect": ""
+        },
+        "combatLock": {
+            "lockShape": "CircleLockEnemy",
+            "lockType": "Avatar&Monster_Lv4"
+        },
+        "die": {
+            "hasAnimatorDie": true,
+            "dieEndTime": 2.0,
+            "dieForceDisappearTime": 4.0,
+            "dieDisappearEffect": "Eff_Death_Common",
+            "dieShaderData": "MonsterDie",
+            "LEDBOLGDENF": true,
+            "IEAKKMEDNDE": true,
+            "AAEANOPIAAL": true,
+            "IBBHGBHIHCI": true,
+            "BKIBMIAJOHP": true,
+            "MOFPBPPGPCL": true
+        }
+    },
+    "EOGPAIHDBFM": {
+        "EMHOEGGEKMH": "",
+        "JLFHFMOAFHP": {
+            "equip01": "WeaponR",
+            "equip02": "WeaponL"
+        }
+    },
+    "abilities": [
+        {
+            "abilityID": "Alert",
+            "abilityName": "Monster_Abyss_Alert",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "SacrificeAlert",
+            "abilityName": "Abyss_Ice_SacrificeAlert",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "IceArrow",
+            "abilityName": "Abyss_Ice_IceArrow",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "IceCone",
+            "abilityName": "Abyss_Ice_IceCone",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "BlinkEffect",
+            "abilityName": "Abyss_Ice_BlinkEffect",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "BlinkPoint",
+            "abilityName": "Abyss_Ice_BlinkPoint",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "DoBlink",
+            "abilityName": "Abyss_Ice_DoBlink",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "DoBlink_Visible",
+            "abilityName": "Abyss_Ice_DoBlink_Visible",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "DoBlink_Damage",
+            "abilityName": "Abyss_Ice_DoBlink_Damage",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "Blink_AS",
+            "abilityName": "Abyss_Ice_Blink_AS",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "ForceDefend",
+            "abilityName": "Abyss_Ice_ForceDefend",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "ForceBlink",
+            "abilityName": "Abyss_Ice_ForceBlink",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "ForceBlink_DoBlink",
+            "abilityName": "Abyss_Ice_ForceBlink_DoBlink",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "ForceBlink_Visible",
+            "abilityName": "Abyss_Ice_ForceBlink_Visible",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "ForceBlink_AS",
+            "abilityName": "Abyss_Ice_ForceBlink_AS",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "ElementShield",
+            "abilityName": "Abyss_Ice_ElementShield",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "ElementShield_Effect",
+            "abilityName": "Abyss_Ice_ElementShield_Effect",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "ElementShield_Remove",
+            "abilityName": "Abyss_Ice_ElementShield_Remove",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "DizzyTimer",
+            "abilityName": "Abyss_Ice_DizzyTimer",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "GatherStart",
+            "abilityName": "Abyss_Ice_GatherStart",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "GatherLoop",
+            "abilityName": "Abyss_Ice_GatherLoop",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "GatherAlert",
+            "abilityName": "Abyss_Ice_GatherAlert",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "GatherSuccess",
+            "abilityName": "Abyss_Ice_GatherSuccess",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "AnimationSteer",
+            "abilityName": "Abyss_Ice_AnimationSteer",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "ReturnToBorn",
+            "abilityName": "Abyss_Ice_ReturnToBorn",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "ReturnToBorn_AS",
+            "abilityName": "Abyss_Ice_ReturnToBorn_AS",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "ReturnToBorn_Visible",
+            "abilityName": "Abyss_Ice_ReturnToBorn_Visible",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "ReturnToBorn_ElementShield",
+            "abilityName": "Abyss_Ice_ReturnToBorn_ElementShield",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "ElementShield_Remove_NoBroken",
+            "abilityName": "Abyss_Ice_ElementShield_Remove_NoBroken",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "Monster_Abyss_SpecialsState",
+            "abilityName": "Monster_Abyss_SpecialsState",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "Monster_Abyss_Ice_SpecialsState",
+            "abilityName": "Monster_Abyss_Ice_SpecialsState",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "Monster_Abyss_ActionPointRegister",
+            "abilityName": "Monster_Abyss_ActionPointRegister",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "Monster_Abyss_Sacrifice_NeuronBroadcaster",
+            "abilityName": "Monster_Abyss_Sacrifice_NeuronBroadcaster",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "Monster_Abyss_TurnToSacrifice",
+            "abilityName": "Monster_Abyss_TurnToSacrifice",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "Monster_Abyss_OutOfSacrifice",
+            "abilityName": "Monster_Abyss_OutOfSacrifice",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "Monster_Abyss_Sacrifice_Effect",
+            "abilityName": "Monster_Abyss_Sacrifice_Effect",
+            "abilityOverride": ""
+        }
+    ],
+    "stateLayers": {
+        "defaultLayer": {
+            "$type": "ConfigNormalStateLayer",
+            "ACOCIAFGIAD": "",
+            "stateIDs": {
+                "Born": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Born": [
+                            "Monster_Abyss_Ice_Born"
+                        ]
+                    },
+                    "canDoSkill": true,
+                    "canSyncMove": true,
+                    "resetAnimatorTriggerOnExit": [
+                        "DoSkill"
+                    ]
+                },
+                "NormalIdle": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Standby": []
+                    },
+                    "canDoSkill": true,
+                    "canSyncMove": true,
+                    "resetAnimatorTriggerOnExit": [
+                        "DoSkill"
+                    ],
+                    "LIPMJPLGIKD": true,
+                    "HMPOMAMKBEF": true
+                },
+                "Standby_Dizzy": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Standby_Dizzy": []
+                    },
+                    "canDoSkill": true,
+                    "canSyncMove": true,
+                    "resetAnimatorTriggerOnExit": [
+                        "DoSkill"
+                    ]
+                },
+                "NormalMove": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Walk": [
+                            "Audio_Abyss_Walk"
+                        ]
+                    },
+                    "canDoSkill": true,
+                    "canSyncMove": true,
+                    "resetAnimatorTriggerOnExit": [
+                        "DoSkill"
+                    ],
+                    "LIPMJPLGIKD": true
+                },
+                "BeHit": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Hit_L": [
+                            "Audio_Abyss_Hit_L"
+                        ],
+                        "Hit_H": [
+                            "Audio_Abyss_Hit_H"
+                        ]
+                    },
+                    "AJBLILDCLBO": [
+                        "BeHit"
+                    ],
+                    "resetAnimatorTriggerOnExit": [
+                        "DoSkill"
+                    ]
+                },
+                "BeHitThrow": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "HitThrow": [
+                            "Audio_Abyss_HitThrow"
+                        ],
+                        "HitThrowDrop": [],
+                        "HitThrowToGround": [
+                            "Audio_Abyss_HitThrowToGround"
+                        ]
+                    },
+                    "AJBLILDCLBO": [
+                        "BeHit",
+                        "HitAir2HitDrop"
+                    ],
+                    "resetAnimatorTriggerOnExit": [
+                        "DoSkill"
+                    ]
+                },
+                "Struggle": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Struggle": []
+                    },
+                    "AJBLILDCLBO": [
+                        "BeHit",
+                        "HitAir2HitDrop"
+                    ],
+                    "resetAnimatorTriggerOnExit": [
+                        "DoSkill"
+                    ]
+                },
+                "Die": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Die": [
+                            "Monster_Abyss_Die",
+                            "Audio_Abyss_Die"
+                        ],
+                        "FallingDie": [
+                            "Monster_Abyss_Die",
+                            "Audio_Abyss_FallingDie"
+                        ],
+                        "SwimDie": [
+                            "Monster_Abyss_SwimDie"
+                        ],
+                        "AirDie": [
+                            "Monster_Abyss_AirDie",
+                            "Audio_Abyss_Die"
+                        ]
+                    }
+                },
+                "Alert": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Alert": [
+                            "Monster_Abyss_Alert",
+                            "Audio_Abyss_Alert"
+                        ]
+                    },
+                    "OGNDLAMHMPB": 0.0,
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "SacrificeAlert": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Aware": [
+                            "Monster_Abyss_Alert",
+                            "Monster_Abyss_Ice_SacrificeAlert",
+                            "Audio_Abyss_Alert"
+                        ]
+                    },
+                    "OGNDLAMHMPB": 0.0,
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "NormalAtk": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "NormalAtk": [
+                            "Monster_Abyss_Ice_NormalAtk",
+                            "Audio_Abyss_Ice_NormalAtk"
+                        ]
+                    },
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "SpecialAtk": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "SpecialAtk": [
+                            "Monster_Abyss_Ice_SpecialAtk",
+                            "Audio_Abyss_Ice_SpecialAtk"
+                        ]
+                    },
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "RandomAction": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "RandomAction_1": [
+                            "Audio_Abyss_RandomAction_1"
+                        ],
+                        "RandomAction_2": [
+                            "Audio_Abyss_RandomAction_2"
+                        ],
+                        "RandomAction_3": [
+                            "Audio_Abyss_RandomAction_3"
+                        ]
+                    },
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "GatherStart": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "GatherStart": [
+                            "Monster_Abyss_Ice_GatherStart",
+                            "Audio_Abyss_Ice_GatherStart"
+                        ]
+                    },
+                    "canSyncMove": true,
+                    "NKBIEPDEJAO": 100.0,
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "GatherLoop": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "GatherLoop": [
+                            "Audio_Abyss_Ice_GatherLoop"
+                        ],
+                        "GatherLoop_End": [
+                            "Audio_Abyss_Ice_GatherSuccess"
+                        ]
+                    },
+                    "canSyncMove": true,
+                    "NKBIEPDEJAO": 100.0,
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "GatherSuccess_Alert": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "GatherSuccess_Alert": [
+                            "Monster_Abyss_Ice_GatherSuccess_Alert"
+                        ]
+                    },
+                    "canSyncMove": true,
+                    "NKBIEPDEJAO": 100.0,
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "GatherSuccess": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "GatherSuccess": [
+                            "Monster_Abyss_Ice_GatherSuccess"
+                        ]
+                    },
+                    "canSyncMove": true,
+                    "NKBIEPDEJAO": 100.0,
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "Blink": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Blink_BS": [
+                            "Monster_Abyss_Ice_Blink_BS",
+                            "Audio_Abyss_Ice_Blink_BS"
+                        ],
+                        "Blink_AS": [
+                            "Monster_Abyss_Ice_Blink_AS",
+                            "Audio_Abyss_Ice_Blink_AS"
+                        ]
+                    },
+                    "LAKHIBAPNAB": true,
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "ForceBlink": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "ForceBlink": [
+                            "Monster_Abyss_Ice_ForceBlink"
+                        ]
+                    },
+                    "LAKHIBAPNAB": true,
+                    "OGNDLAMHMPB": 0.4000000059604645,
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "ElementShield_Broken": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "ElementShield_Broken": [
+                            "Monster_Abyss_Ice_ElementShield_Broken"
+                        ]
+                    },
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "ElementShield_Remove": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "ElementShield_Remove": [
+                            "Monster_Abyss_Ice_ElementShield_Remove"
+                        ]
+                    },
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "ReturnToBorn": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "ReturnToBorn": [],
+                        "ReturnToBorn_AS": [
+                            "Monster_Abyss_Ice_ReturnToBorn_AS"
+                        ]
+                    },
+                    "LAKHIBAPNAB": true,
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "TurnToSacrifice": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "TurnToSacrifice": [
+                            "Monster_Abyss_TurnToSacrifice"
+                        ]
+                    },
+                    "canDoSkill": true,
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "OutOfSacrifice": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "OutOfSacrifice": [
+                            "Monster_Abyss_OutOfSacrifice"
+                        ]
+                    },
+                    "canDoSkill": true,
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "Sacrifice": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Sacrifice": []
+                    },
+                    "canDoSkill": true,
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                }
+            }
+        }
+    },
+    "IEFGNHABHFH": {
+        "$type": "PAOBAEKGGBC",
+        "JBKMLLFNHAL": "BillboardAttach",
+        "NDKBHOOPGNA": {
+            "x": -0.019999999552965164
+        },
+        "EMFFJPOKEKF": "Character",
+        "LOMMBJLKPHE": 0.20000000298023224,
+        "KGHAGECNJPO": true
+    },
+    "initialPoses": {
+        "Default": {},
+        "Sacrifice": {
+            "initialPoseID": 9013,
+            "initialPoseParams": {
+                "boolParams": {
+                    "Sacrifice": "true"
+                }
+            }
+        }
+    },
+    "aibeta": {
+        "enable": true,
+        "sensing": {
+            "settings": {
+                "DefaultSetting": {
+                    "PHDIIPOBJGA": 45.0,
+                    "feelRange": 25.0
+                },
+                "Sacrifice": {
+                    "PHDIIPOBJGA": 10.0
+                },
+                "NeverCombat": {
+                    "enableVision": false,
+                    "hearAttractionRange": 0.0,
+                    "feelRange": 0.0
+                }
+            },
+            "templates": {
+                "DefaultTemplate": {
+                    "DefaultPoses": "DefaultSetting",
+                    "9013": "Sacrifice"
+                },
+                "NeverCombatTemplate": {
+                    "DefaultPoses": "NeverCombat",
+                    "9013": "NeverCombat"
+                }
+            }
+        },
+        "neurons": {
+            "DefaultSetting": [
+                "HIT"
+            ],
+            "Preach": [
+                "HIT",
+                "PREACH"
+            ],
+            "NeverCombat": []
+        },
+        "threat": {
+            "PLCPHNHGFAC": 7.5,
+            "clearThreatTimerByDistance": 1.75,
+            "viewThreatGrow": 35.0,
+            "feelThreatGrow": 100.0,
+            "KDPOCNEHGBJ": 10.0,
+            "IBGELAGCJFH": "Monster_TauntLevel_2",
+            "JGFOPCOIJOI": ""
+        },
+        "defendArea": {
+            "defendRange": 50.0
+        },
+        "HEJKJODINHK": {
+            "GMBKODANLGP": {
+                "1": [
+                    301,
+                    302,
+                    401
+                ],
+                "2": [
+                    301,
+                    302,
+                    401
+                ],
+                "3": [
+                    301,
+                    302,
+                    401
+                ],
+                "4": [
+                    302,
+                    303,
+                    304,
+                    305,
+                    403,
+                    502
+                ]
+            }
+        },
+        "BNIENJNLAIJ": {
+            "102": {
+                "NOKKDDHKGAK": "OnAlert",
+                "IKMCLKEPDFP": "OnAlert",
+                "HAOJJHNOGHO": true,
+                "NOPNCNPCPJE": "",
+                "LLNBBNIEGGO": true,
+                "IDPMFPAPNCE": false,
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "Alert"
+                ],
+                "NNJBOCFBGJG": 3.0,
+                "PGPDNPMFFAG": "10",
+                "CCEAGFDONFH": "01",
+                "OKOFHICILMD": "10",
+                "CCFFFOIDOLP": "11"
+            },
+            "103": {
+                "NOKKDDHKGAK": "OnSacrificeAlert",
+                "IKMCLKEPDFP": "OnAlert",
+                "HAOJJHNOGHO": true,
+                "ENKLFBHHOJI": {
+                    "CEKMINILIFB": [
+                        9013
+                    ]
+                },
+                "NOPNCNPCPJE": "",
+                "IDPMFPAPNCE": false,
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "SacrificeAlert"
+                ],
+                "NNJBOCFBGJG": 3.0,
+                "PGPDNPMFFAG": "10",
+                "CCEAGFDONFH": "01",
+                "OKOFHICILMD": "10",
+                "CCFFFOIDOLP": "11"
+            },
+            "104": {
+                "NOKKDDHKGAK": "OnSacrificeAlert",
+                "IKMCLKEPDFP": "OnNerve",
+                "HAOJJHNOGHO": true,
+                "ENKLFBHHOJI": {
+                    "CEKMINILIFB": [
+                        9013
+                    ]
+                },
+                "NOPNCNPCPJE": "",
+                "IDPMFPAPNCE": false,
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "SacrificeAlert"
+                ],
+                "NNJBOCFBGJG": 3.0,
+                "PGPDNPMFFAG": "10",
+                "CCEAGFDONFH": "01",
+                "OKOFHICILMD": "10",
+                "CCFFFOIDOLP": "11",
+                "nerveTrigger": [
+                    "HIT"
+                ]
+            },
+            "201": {
+                "NOKKDDHKGAK": "Gather",
+                "ENKLFBHHOJI": {
+                    "CEKMINILIFB": [
+                        201
+                    ]
+                },
+                "cd": 0.5,
+                "NOPNCNPCPJE": "",
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "GatherStart",
+                    "GatherLoop",
+                    "GatherSuccess_Alert",
+                    "GatherSuccess"
+                ],
+                "PGPDNPMFFAG": "11",
+                "CCEAGFDONFH": "01",
+                "OKOFHICILMD": "11",
+                "CCFFFOIDOLP": "11"
+            },
+            "301": {
+                "NOKKDDHKGAK": "Blink",
+                "HAOJJHNOGHO": true,
+                "ENKLFBHHOJI": {
+                    "CEKMINILIFB": [
+                        301
+                    ],
+                    "LAOLODOGIMK": 30.0,
+                    "MLFAMHDFHMM": 20.0
+                },
+                "cd": 10.0,
+                "GPMLADFJAAH": 10.0,
+                "LKCFDIOMLCM": 10.0,
+                "KKAEGIJIDLG": 10.0,
+                "NOPNCNPCPJE": "",
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "Blink"
+                ],
+                "PGPDNPMFFAG": "10",
+                "CCEAGFDONFH": "01",
+                "OKOFHICILMD": "10",
+                "CCFFFOIDOLP": "11"
+            },
+            "302": {
+                "NOKKDDHKGAK": "Blink_Charge",
+                "MBDAAADDHNL": 1,
+                "HAOJJHNOGHO": true,
+                "ENKLFBHHOJI": {
+                    "CEKMINILIFB": [
+                        301
+                    ],
+                    "LAOLODOGIMK": 30.0,
+                    "OLDIEKKCIOG": 20.0,
+                    "MLFAMHDFHMM": 50.0
+                },
+                "cd": 0.5,
+                "NOPNCNPCPJE": "",
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "Blink"
+                ],
+                "PGPDNPMFFAG": "11",
+                "CCEAGFDONFH": "01",
+                "OKOFHICILMD": "11",
+                "CCFFFOIDOLP": "11"
+            },
+            "303": {
+                "NOKKDDHKGAK": "Blink",
+                "HAOJJHNOGHO": true,
+                "ENKLFBHHOJI": {
+                    "CEKMINILIFB": [
+                        302
+                    ],
+                    "LAOLODOGIMK": 30.0,
+                    "MLFAMHDFHMM": 20.0
+                },
+                "cd": 0.5,
+                "LKCFDIOMLCM": 5.0,
+                "NOPNCNPCPJE": "",
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "Blink"
+                ],
+                "PGPDNPMFFAG": "10",
+                "CCEAGFDONFH": "01",
+                "OKOFHICILMD": "10",
+                "CCFFFOIDOLP": "11"
+            },
+            "304": {
+                "NOKKDDHKGAK": "Blink_Charge",
+                "MBDAAADDHNL": 1,
+                "HAOJJHNOGHO": true,
+                "ENKLFBHHOJI": {
+                    "CEKMINILIFB": [
+                        302
+                    ],
+                    "LAOLODOGIMK": 30.0,
+                    "OLDIEKKCIOG": 20.0,
+                    "MLFAMHDFHMM": 50.0
+                },
+                "cd": 0.5,
+                "LKCFDIOMLCM": 5.0,
+                "NOPNCNPCPJE": "",
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "Blink"
+                ],
+                "PGPDNPMFFAG": "11",
+                "CCEAGFDONFH": "01",
+                "OKOFHICILMD": "11",
+                "CCFFFOIDOLP": "11"
+            },
+            "305": {
+                "NOKKDDHKGAK": "Blink",
+                "HAOJJHNOGHO": true,
+                "ENKLFBHHOJI": {
+                    "CEKMINILIFB": [
+                        301
+                    ],
+                    "LAOLODOGIMK": 30.0,
+                    "MLFAMHDFHMM": 20.0
+                },
+                "cd": 999999.0,
+                "LKCFDIOMLCM": 5.0,
+                "NOPNCNPCPJE": "",
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "Blink"
+                ],
+                "PGPDNPMFFAG": "10",
+                "CCEAGFDONFH": "01",
+                "OKOFHICILMD": "10",
+                "CCFFFOIDOLP": "11"
+            },
+            "401": {
+                "NOKKDDHKGAK": "NormalAtk",
+                "HAOJJHNOGHO": true,
+                "ENKLFBHHOJI": {
+                    "CEKMINILIFB": [
+                        301
+                    ],
+                    "MLFAMHDFHMM": 30.0
+                },
+                "cd": 3.0,
+                "GPMLADFJAAH": 2.0,
+                "NOPNCNPCPJE": "",
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "NormalAtk"
+                ],
+                "PGPDNPMFFAG": "11",
+                "CCEAGFDONFH": "01",
+                "OKOFHICILMD": "11",
+                "CCFFFOIDOLP": "11"
+            },
+            "403": {
+                "NOKKDDHKGAK": "NormalAtk",
+                "HAOJJHNOGHO": true,
+                "ENKLFBHHOJI": {
+                    "CEKMINILIFB": [
+                        302
+                    ],
+                    "MLFAMHDFHMM": 30.0
+                },
+                "cd": 0.5,
+                "LKCFDIOMLCM": 5.0,
+                "NOPNCNPCPJE": "",
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "NormalAtk"
+                ],
+                "PGPDNPMFFAG": "11",
+                "CCEAGFDONFH": "01",
+                "OKOFHICILMD": "11",
+                "CCFFFOIDOLP": "11"
+            },
+            "501": {
+                "NOKKDDHKGAK": "SpecialAtk",
+                "MBDAAADDHNL": 1,
+                "HAOJJHNOGHO": true,
+                "ENKLFBHHOJI": {
+                    "CEKMINILIFB": [
+                        301
+                    ],
+                    "MLFAMHDFHMM": 20.0
+                },
+                "cd": 15.0,
+                "GPMLADFJAAH": 10.0,
+                "LKCFDIOMLCM": 15.0,
+                "KKAEGIJIDLG": 10.0,
+                "NOPNCNPCPJE": "",
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "SpecialAtk"
+                ],
+                "PGPDNPMFFAG": "11",
+                "CCEAGFDONFH": "01",
+                "OKOFHICILMD": "11",
+                "CCFFFOIDOLP": "11"
+            },
+            "502": {
+                "NOKKDDHKGAK": "SpecialAtk",
+                "MBDAAADDHNL": 1,
+                "HAOJJHNOGHO": true,
+                "ENKLFBHHOJI": {
+                    "CEKMINILIFB": [
+                        302
+                    ],
+                    "MLFAMHDFHMM": 20.0
+                },
+                "cd": 0.5,
+                "LKCFDIOMLCM": 5.0,
+                "NOPNCNPCPJE": "",
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "SpecialAtk"
+                ],
+                "PGPDNPMFFAG": "11",
+                "CCEAGFDONFH": "01",
+                "OKOFHICILMD": "11",
+                "CCFFFOIDOLP": "11"
+            },
+            "1301": {
+                "NOKKDDHKGAK": "TurnToSacrifice",
+                "IKMCLKEPDFP": "ActionPoint",
+                "ENKLFBHHOJI": {
+                    "CEKMINILIFB": [
+                        100,
+                        300
+                    ]
+                },
+                "NOPNCNPCPJE": "",
+                "IDPMFPAPNCE": false,
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "TurnToSacrifice"
+                ],
+                "NNJBOCFBGJG": 3.0,
+                "PGPDNPMFFAG": "10",
+                "CCEAGFDONFH": "01",
+                "OKOFHICILMD": "10",
+                "CCFFFOIDOLP": "11"
+            },
+            "1302": {
+                "NOKKDDHKGAK": "OutOfSacrifice",
+                "IKMCLKEPDFP": "OnNerve",
+                "ENKLFBHHOJI": {
+                    "CEKMINILIFB": [
+                        9013
+                    ]
+                },
+                "NOPNCNPCPJE": "",
+                "IDPMFPAPNCE": false,
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "OutOfSacrifice"
+                ],
+                "NNJBOCFBGJG": 3.0,
+                "PGPDNPMFFAG": "10",
+                "CCEAGFDONFH": "01",
+                "OKOFHICILMD": "10",
+                "CCFFFOIDOLP": "11",
+                "nerveTrigger": [
+                    "AWAKE"
+                ]
+            }
+        },
+        "EMBHEEALPLD": 0.5,
+        "combatFixedMoveTactic": [
+            {
+                "$type": "CMCHFECOPPI",
+                "enable": true,
+                "defaultSetting": {
+                    "DCEODHLDKCJ": 0.5,
+                    "GAHPENGCPFA": 0.5,
+                    "JOCOJHEICNA": "",
+                    "DBIELIMGBMC": ""
+                }
+            },
+            {
+                "$type": "CMFCOLEFCJI",
+                "enable": true,
+                "defaultSetting": {
+                    "BJBAALCCMGL": [
+                        {
+                            "LPJONBJGEKP": "PreachPoint",
+                            "CEKMINILIFB": [
+                                100,
+                                300
+                            ],
+                            "nerveTrigger": [
+                                "PREACH"
+                            ],
+                            "DMEANKABKMP": 1301
+                        }
+                    ]
+                }
+            },
+            {
+                "$type": "KMHBGMELMKD",
+                "enable": true,
+                "defaultSetting": {
+                    "KIHPEPHJMOG": 0,
+                    "FKIKEIAEEBO": 1.0,
+                    "BMLLGHNDPNE": 1.5,
+                    "JOCOJHEICNA": "",
+                    "DBIELIMGBMC": ""
+                },
+                "specification": {
+                    "301": {
+                        "KIHPEPHJMOG": 1,
+                        "FKIKEIAEEBO": 3.0,
+                        "BMLLGHNDPNE": 3.5,
+                        "JOCOJHEICNA": "",
+                        "DBIELIMGBMC": ""
+                    }
+                }
+            },
+            {
+                "$type": "GGKADEIBMLG",
+                "enable": true,
+                "FJANPNOAAFK": {
+                    "CEKMINILIFB": [
+                        100,
+                        300
+                    ]
+                },
+                "defaultSetting": {
+                    "turnSpeedOverride": 0.20000000298023224,
+                    "EKDHNAGGGAE": 25.0,
+                    "BFEJAKFKKFP": 7.5,
+                    "JOCOJHEICNA": ""
+                }
+            }
+        ]
+    },
+    "GIBHCHHOJFI": [
+        {
+            "NPDDCIDNKMH": 1,
+            "KCAOBJOPJIC": 257,
+            "abilityName": ""
+        },
+        {
+            "NPDDCIDNKMH": 201,
+            "KCAOBJOPJIC": 258,
+            "abilityName": ""
+        },
+        {
+            "NPDDCIDNKMH": 301,
+            "KCAOBJOPJIC": 259,
+            "abilityName": ""
+        },
+        {
+            "NPDDCIDNKMH": 401,
+            "KCAOBJOPJIC": 260,
+            "abilityName": ""
+        },
+        {
+            "NPDDCIDNKMH": 501,
+            "KCAOBJOPJIC": 261,
+            "abilityName": ""
+        }
+    ],
+    "move": {
+        "$type": "IIGPJJNGCLE",
+        "MLKCNHIIMCE": true,
+        "BEPOPLDKJOP": "StrongHumanoidType",
+        "JNDKCMPKBIK": {
+            "101": "None"
+        },
+        "FACNOEFNHIB": "RootNode"
+    },
+    "BEGHJJDCLLK": {
+        "KEEAIACIJBN": "",
+        "JIOEGJGNLEC": {
+            "NGKLCAOGKNG": [
+                {
+                    "ILNHPFBOKNK": "Sacrifice",
+                    "CDMEEHAPNGE": {
+                        "KMNBEAJOBPE": "Play_sfx_monster_abyss_sacrifice"
+                    }
+                },
+                {
+                    "ILNHPFBOKNK": "OutOfSacrifice",
+                    "CDMEEHAPNGE": {
+                        "KMNBEAJOBPE": "Play_sfx_monster_abyss_sacrifice"
+                    }
+                },
+                {
+                    "ILNHPFBOKNK": "Alert",
+                    "CDMEEHAPNGE": {
+                        "KMNBEAJOBPE": "Stop_sfx_monster_abyss_sacrifice"
+                    }
+                },
+                {
+                    "ILNHPFBOKNK": "BeHit",
+                    "CDMEEHAPNGE": {
+                        "KMNBEAJOBPE": "Stop_sfx_monster_abyss_sacrifice"
+                    }
+                },
+                {
+                    "ILNHPFBOKNK": "Die",
+                    "CDMEEHAPNGE": {
+                        "KMNBEAJOBPE": "Stop_sfx_monster_abyss_sacrifice"
+                    }
+                }
+            ],
+            "MPLMIOAKNGG": [
+                {
+                    "ILNHPFBOKNK": "Blink_BS",
+                    "CDMEEHAPNGE": {
+                        "KMNBEAJOBPE": "Stop_vo_monster_abyss_skill_blink"
+                    },
+                    "LFOAJJCBNPI": [
+                        "Blink"
+                    ],
+                    "JKPDEGAANLH": "Except"
+                },
+                {
+                    "ILNHPFBOKNK": "Blink",
+                    "CDMEEHAPNGE": {
+                        "KMNBEAJOBPE": "Stop_vo_monster_abyss_skill_blink"
+                    },
+                    "LFOAJJCBNPI": [
+                        "Blink_AS"
+                    ],
+                    "JKPDEGAANLH": "Except"
+                },
+                {
+                    "ILNHPFBOKNK": "SpecialAtk",
+                    "CDMEEHAPNGE": {
+                        "KMNBEAJOBPE": "Stop_vo_monster_abyss_specialAtk"
+                    },
+                    "LFOAJJCBNPI": [
+                        "RandomAction_1",
+                        "RandomAction_2",
+                        "RandomAction_3"
+                    ],
+                    "JKPDEGAANLH": "Except"
+                },
+                {
+                    "ILNHPFBOKNK": "Walk",
+                    "CDMEEHAPNGE": {
+                        "KMNBEAJOBPE": "Stop_sfx_monster_abyss_walk"
+                    }
+                },
+                {
+                    "ILNHPFBOKNK": "RandomAction_3",
+                    "CDMEEHAPNGE": {
+                        "KMNBEAJOBPE": "Stop_vo_monster_abyss_randomAction03"
+                    }
+                },
+                {
+                    "ILNHPFBOKNK": "RandomAction_2",
+                    "CDMEEHAPNGE": {
+                        "KMNBEAJOBPE": "Stop_vo_monster_abyss_randomAction02"
+                    }
+                },
+                {
+                    "ILNHPFBOKNK": "RandomAction_1",
+                    "CDMEEHAPNGE": {
+                        "KMNBEAJOBPE": "Stop_vo_monster_abyss_randomAction01"
+                    }
+                },
+                {
+                    "ILNHPFBOKNK": "GatherLoop",
+                    "CDMEEHAPNGE": {
+                        "KMNBEAJOBPE": "Stop_sfx_monster_abyss_Ice_gather"
+                    },
+                    "LFOAJJCBNPI": [
+                        "GatherLoop_End"
+                    ],
+                    "JKPDEGAANLH": "Except"
+                },
+                {
+                    "ILNHPFBOKNK": "GatherStart",
+                    "CDMEEHAPNGE": {
+                        "KMNBEAJOBPE": "Stop_vo_monster_abyss_superAtk_BS"
+                    },
+                    "LFOAJJCBNPI": [
+                        "GatherLoop"
+                    ],
+                    "JKPDEGAANLH": "Except"
+                },
+                {
+                    "ILNHPFBOKNK": "GatherSuccess_Alert",
+                    "CDMEEHAPNGE": {
+                        "KMNBEAJOBPE": "Stop_vo_monster_abyss_superAtk_AS"
+                    },
+                    "LFOAJJCBNPI": [
+                        "GatherLoop_End"
+                    ],
+                    "JKPDEGAANLH": "Except"
+                },
+                {
+                    "ILNHPFBOKNK": "Sacrifice",
+                    "CDMEEHAPNGE": {
+                        "KMNBEAJOBPE": "Stop_sfx_monster_abyss_sacrifice"
+                    }
+                }
+            ]
+        },
+        "ILECIBOLHCO": {
+            "KMNBEAJOBPE": "Stop_sfx_monster_abyss_sacrifice"
+        },
+        "KMDKAEHLABB": {
+            "KMNBEAJOBPE": "Stop_sfx_monster_abyss_sacrifice"
+        }
+    }
+}

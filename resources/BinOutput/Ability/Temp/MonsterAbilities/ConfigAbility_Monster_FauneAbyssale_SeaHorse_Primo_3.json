@@ -1,0 +1,1152 @@
+[
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "FauneAbyssale_SeaHorse_Primo_InAbyss",
+            "onAdded": [
+                {
+                    "$type": "SetGlobalValue",
+                    "value": 1.0,
+                    "NGGCNKPAODB": "_IS_IN_ABYSS",
+                    "LBHGJKHHAKP": 0.0,
+                    "EMGNPOKHMNN": 0.0
+                }
+            ],
+            "EGGOIPOIGJA": true
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "FauneAbyssale_SeaHorse_Primo_StageManager",
+            "abilityMixins": [
+                {
+                    "$type": "AttachModifierToGlobalValueMixin",
+                    "globalValueKey": "_SEA_DRAGON_STAGE_",
+                    "valueSteps": [
+                        -0.5,
+                        1.5,
+                        2.5,
+                        3.5,
+                        4.5
+                    ],
+                    "modifierNameSteps": [
+                        "SeaDragon_Stage_PearlShield_1",
+                        "SeaDragon_Stage_TryAnnihilation_2",
+                        "SeaDragon_Stage_Broken_3",
+                        "SeaDragon_Stage_TryRecover_4"
+                    ]
+                },
+                {
+                    "$type": "DoActionByPoseIDMixin",
+                    "OLJKDPFLMCF": [
+                        901
+                    ],
+                    "EEGIIGFKBHC": [
+                        {
+                            "$type": "SetGlobalValue",
+                            "value": 0.0,
+                            "NGGCNKPAODB": "_SEA_DRAGON_STAGE_",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        },
+                        {
+                            "$type": "SetGlobalValue",
+                            "value": 1.0,
+                            "NGGCNKPAODB": "_CORAL_GADGET_NOT_EXIST_",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        },
+                        {
+                            "$type": "SetGlobalValue",
+                            "value": 0.0,
+                            "NGGCNKPAODB": "_SHIELD_RECOVERED_",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        },
+                        {
+                            "$type": "SetGlobalValue",
+                            "value": 0.0,
+                            "NGGCNKPAODB": "_DISABLE_ANNIHILATION_",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        },
+                        {
+                            "$type": "SetPoseBool",
+                            "CMLNMLEDGPA": "AlertConfirm"
+                        },
+                        {
+                            "$type": "SetGlobalValue",
+                            "value": 0.0,
+                            "NGGCNKPAODB": "ACHIEVEMENT_82185_MARK",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        },
+                        {
+                            "$type": "SetGlobalValue",
+                            "value": 0.0,
+                            "NGGCNKPAODB": "ACHIEVEMENT_82186_MARK",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        },
+                        {
+                            "$type": "SetAnimatorTrigger",
+                            "POPKLBPMAJN": "ReturnToBorn",
+                            "BFIKMHMNOGK": true
+                        }
+                    ]
+                }
+            ],
+            "abilitySpecials": {
+                "broken_state_duration": 0.0
+            },
+            "modifiers": {
+                "SeaDragon_Stage_PearlShield_1": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "onAdded": [
+                        {
+                            "$type": "SetPoseInt",
+                            "EGCALHMEFEC": "StateControl",
+                            "KHMNAHOBJAE": 1
+                        },
+                        {
+                            "$type": "SetGlobalValue",
+                            "FLEEHCIOPKA": [
+                                {
+                                    "$type": "OMPKIEPKGPF",
+                                    "NGGCNKPAODB": "_CORAL_GADGET_NOT_EXIST_",
+                                    "value": 0.0
+                                }
+                            ],
+                            "value": 1.0,
+                            "NGGCNKPAODB": "_CORAL_GADGET_NOT_EXIST_",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        }
+                    ]
+                },
+                "SeaDragon_Stage_TryAnnihilation_2": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "onAdded": [
+                        {
+                            "$type": "SetPoseInt",
+                            "EGCALHMEFEC": "StateControl",
+                            "KHMNAHOBJAE": 2
+                        }
+                    ],
+                    "NFKOGKMAIIE": [
+                        {
+                            "$type": "SetGlobalValue",
+                            "FLEEHCIOPKA": [
+                                {
+                                    "$type": "OMPKIEPKGPF",
+                                    "NGGCNKPAODB": "_CORAL_GADGET_NOT_EXIST_",
+                                    "value": 0.0
+                                }
+                            ],
+                            "value": 1.0,
+                            "NGGCNKPAODB": "_CORAL_GADGET_NOT_EXIST_",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        }
+                    ]
+                },
+                "SeaDragon_Stage_Broken_3": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "ANPDJHOGAFE": "broken_state_duration",
+                    "onAdded": [
+                        {
+                            "$type": "SetPoseInt",
+                            "EGCALHMEFEC": "StateControl",
+                            "KHMNAHOBJAE": 3
+                        },
+                        {
+                            "$type": "SetGlobalValue",
+                            "FLEEHCIOPKA": [
+                                {
+                                    "$type": "OMPKIEPKGPF",
+                                    "NGGCNKPAODB": "_CORAL_GADGET_NOT_EXIST_",
+                                    "value": 0.0
+                                }
+                            ],
+                            "value": 1.0,
+                            "NGGCNKPAODB": "_CORAL_GADGET_NOT_EXIST_",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        }
+                    ],
+                    "MDPGEKAIFIM": [
+                        {
+                            "$type": "SetGlobalValue",
+                            "value": 4.0,
+                            "NGGCNKPAODB": "_SEA_DRAGON_STAGE_",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        }
+                    ]
+                },
+                "SeaDragon_Stage_TryRecover_4": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "onAdded": [
+                        {
+                            "$type": "SetPoseInt",
+                            "EGCALHMEFEC": "StateControl",
+                            "KHMNAHOBJAE": 4
+                        },
+                        {
+                            "$type": "SetGlobalValue",
+                            "value": 1.0,
+                            "NGGCNKPAODB": "_SHIELD_RECOVERED_",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        }
+                    ]
+                }
+            },
+            "onAdded": [
+                {
+                    "$type": "SetGlobalValue",
+                    "value": 1.0,
+                    "NGGCNKPAODB": "_CORAL_GADGET_NOT_EXIST_",
+                    "LBHGJKHHAKP": 0.0,
+                    "EMGNPOKHMNN": 0.0
+                },
+                {
+                    "$type": "AttachAbilityStateResistance",
+                    "BKFHNENKMAL": true,
+                    "GHLGBFJLNGJ": [
+                        "ElementFreeze",
+                        "Struggle",
+                        "ElementPetrifaction"
+                    ]
+                },
+                {
+                    "$type": "Predicated",
+                    "targetPredicates": [
+                        {
+                            "$type": "OMPKIEPKGPF",
+                            "KMGAOOHMCPK": "Self",
+                            "NGGCNKPAODB": "_IS_IN_ABYSS",
+                            "value": 1.0
+                        }
+                    ],
+                    "successActions": [
+                        {
+                            "$type": "SetOverrideMapValue",
+                            "value": 20.0,
+                            "BPGLCPGHEEK": "broken_state_duration",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        }
+                    ],
+                    "failActions": [
+                        {
+                            "$type": "SetOverrideMapValue",
+                            "value": 30.0,
+                            "BPGLCPGHEEK": "broken_state_duration",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        }
+                    ]
+                }
+            ],
+            "onAbilityStart": [
+                {
+                    "$type": "SetGlobalValue",
+                    "value": 1.0,
+                    "NGGCNKPAODB": "_SEA_DRAGON_STAGE_",
+                    "LBHGJKHHAKP": 0.0,
+                    "EMGNPOKHMNN": 0.0
+                },
+                {
+                    "$type": "ServerMonsterLog",
+                    "KCOMCHEOHOC": [
+                        0,
+                        0,
+                        2
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "FauneAbyssale_SeaHorse_Primo_Alert",
+            "onAbilityStart": [
+                {
+                    "$type": "SetGlobalValue",
+                    "value": 1.0,
+                    "NGGCNKPAODB": "_SEA_DRAGON_STAGE_",
+                    "LBHGJKHHAKP": 0.0,
+                    "EMGNPOKHMNN": 0.0
+                },
+                {
+                    "$type": "SetPoseBool",
+                    "CMLNMLEDGPA": "AlertConfirm",
+                    "value": true
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "FauneAbyssale_SeaHorse_Primo_CameraManager",
+            "abilityMixins": [
+                {
+                    "$type": "DoActionByStateIDMixin",
+                    "FHCHNMKMJJA": [
+                        "Standby",
+                        "LeapingStab_AS"
+                    ],
+                    "EEGIIGFKBHC": [
+                        {
+                            "$type": "SetLockingV3Config",
+                            "enable": true,
+                            "JCOLNHGCLBK": "default",
+                            "IKAKHAFIKIA": 1,
+                            "GJGCANAIADC": ""
+                        }
+                    ]
+                },
+                {
+                    "$type": "DoActionByAnimatorStateIDMixin",
+                    "FHCHNMKMJJA": [
+                        "Annihilation_BS",
+                        "Annihilation_Jump",
+                        "Annihilation_FarJump",
+                        "Annihilation_JumpEnd",
+                        "Annihilation_Cast",
+                        "Annihilation_Loop"
+                    ],
+                    "EEGIIGFKBHC": [
+                        {
+                            "$type": "SetLockingV3Config",
+                            "enable": true,
+                            "JCOLNHGCLBK": "AnnihilationView",
+                            "IKAKHAFIKIA": 1,
+                            "GJGCANAIADC": ""
+                        }
+                    ]
+                },
+                {
+                    "$type": "DoActionByStateIDMixin",
+                    "FHCHNMKMJJA": [
+                        "LeapingStab_03"
+                    ],
+                    "EEGIIGFKBHC": [
+                        {
+                            "$type": "SetLockingV3Config",
+                            "enable": true,
+                            "JCOLNHGCLBK": "LeapingStabView",
+                            "IKAKHAFIKIA": 1,
+                            "GJGCANAIADC": ""
+                        }
+                    ]
+                },
+                {
+                    "$type": "DoActionByStateIDMixin",
+                    "FHCHNMKMJJA": [
+                        "ShieldRecover"
+                    ],
+                    "EEGIIGFKBHC": [
+                        {
+                            "$type": "SetLockingV3Config",
+                            "enable": true,
+                            "JCOLNHGCLBK": "ShieldRecoverView",
+                            "IKAKHAFIKIA": 1,
+                            "GJGCANAIADC": ""
+                        }
+                    ]
+                }
+            ],
+            "onAbilityStart": [
+                {
+                    "$type": "SetLockingV3Config",
+                    "enable": true,
+                    "JCOLNHGCLBK": "default",
+                    "IKAKHAFIKIA": 1,
+                    "GJGCANAIADC": ""
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "FauneAbyssale_SeaHorse_Primo_PushCollider_Enable",
+            "abilityMixins": [
+                {
+                    "$type": "DoActionByAnimatorStateIDMixin",
+                    "FHCHNMKMJJA": [
+                        "Standby",
+                        "Annihilation_BS",
+                        "LeapingStab_AS",
+                        "Stun_AS"
+                    ],
+                    "EEGIIGFKBHC": [
+                        {
+                            "$type": "EnablePushColliderName",
+                            "MPJLFMGJJEM": [
+                                "BasicPushCollider"
+                            ],
+                            "DEHFCFDDEGB": true
+                        }
+                    ]
+                }
+            ],
+            "onAdded": [
+                {
+                    "$type": "EnablePushColliderName",
+                    "MPJLFMGJJEM": [
+                        "FlyPushCollider"
+                    ]
+                }
+            ],
+            "onAbilityStart": [
+                {
+                    "$type": "EnablePushColliderName",
+                    "MPJLFMGJJEM": [
+                        "BasicPushCollider"
+                    ],
+                    "DEHFCFDDEGB": true
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "FauneAbyssale_SeaHorse_Primo_PushCollider_Disable",
+            "abilityMixins": [
+                {
+                    "$type": "DoActionByAnimatorStateIDMixin",
+                    "FHCHNMKMJJA": [
+                        "Annihilation_Jump",
+                        "Annihilation_FarJump",
+                        "Annihilation_Loop",
+                        "Annihilation_AS1",
+                        "LeapingStab_01"
+                    ],
+                    "EEGIIGFKBHC": [
+                        {
+                            "$type": "EnablePushColliderName",
+                            "MPJLFMGJJEM": [
+                                "BasicPushCollider"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "onAbilityStart": [
+                {
+                    "$type": "EnablePushColliderName",
+                    "MPJLFMGJJEM": [
+                        "BasicPushCollider"
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "FauneAbyssale_SeaHorse_Primo_BasicHitBox_Enable",
+            "abilityMixins": [
+                {
+                    "$type": "DoActionByAnimatorStateIDMixin",
+                    "FHCHNMKMJJA": [
+                        "TailWhipTrans",
+                        "TailWhip02",
+                        "LeapingStab_AS",
+                        "FishBarrage",
+                        "ShieldRecover"
+                    ],
+                    "EEGIIGFKBHC": [
+                        {
+                            "$type": "EnableHitBoxByName",
+                            "DFBDHJKDLHI": [
+                                "BasicHitBox"
+                            ],
+                            "DEHFCFDDEGB": true
+                        }
+                    ]
+                }
+            ],
+            "onAbilityStart": [
+                {
+                    "$type": "EnableHitBoxByName",
+                    "DFBDHJKDLHI": [
+                        "BasicHitBox"
+                    ],
+                    "DEHFCFDDEGB": true
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "FauneAbyssale_SeaHorse_Primo_BasicHitBox_Disable",
+            "abilityMixins": [
+                {
+                    "$type": "DoActionByAnimatorStateIDMixin",
+                    "FHCHNMKMJJA": [
+                        "Standby",
+                        "StunHigh",
+                        "StunLow",
+                        "StunGround",
+                        "Stun_AS"
+                    ],
+                    "EEGIIGFKBHC": [
+                        {
+                            "$type": "EnableHitBoxByName",
+                            "DFBDHJKDLHI": [
+                                "BasicHitBox"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "onAbilityStart": [
+                {
+                    "$type": "EnableHitBoxByName",
+                    "DFBDHJKDLHI": [
+                        "BasicHitBox"
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "FauneAbyssale_SeaHorse_Primo_FreePoseFishVFX",
+            "abilityMixins": [
+                {
+                    "$type": "AttachToStateIDMixin",
+                    "FHCHNMKMJJA": [
+                        "Personality01",
+                        "Alert"
+                    ],
+                    "modifierName": "Fish_VFX"
+                },
+                {
+                    "$type": "AttachToStateIDMixin",
+                    "FHCHNMKMJJA": [
+                        "Personality01"
+                    ],
+                    "modifierName": "Fish_Surround_VFX"
+                },
+                {
+                    "$type": "DoActionByStateIDMixin",
+                    "FHCHNMKMJJA": [
+                        "Alert"
+                    ],
+                    "EEGIIGFKBHC": [
+                        {
+                            "$type": "SendEffectTrigger",
+                            "HDBIEOFMAOD": "Alert",
+                            "PAOPLDJGAKA": "",
+                            "LHHFHDEJOHC": "Eff_Monster_FauneAbyssale_SeaHorse_Primo_Personality"
+                        }
+                    ]
+                },
+                {
+                    "$type": "DoActionByStateIDMixin",
+                    "FHCHNMKMJJA": [
+                        "Die"
+                    ],
+                    "EEGIIGFKBHC": [
+                        {
+                            "$type": "SetGlobalValue",
+                            "FLEEHCIOPKA": [
+                                {
+                                    "$type": "OMPKIEPKGPF",
+                                    "KMGAOOHMCPK": "Self",
+                                    "NGGCNKPAODB": "_SEA_DRAGON_STAGE_",
+                                    "value": 0.5,
+                                    "LBHGJKHHAKP": 2.5,
+                                    "GAGKBNPOCAC": "Between"
+                                }
+                            ],
+                            "value": 0.0,
+                            "NGGCNKPAODB": "_SEA_DRAGON_STAGE_",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        }
+                    ]
+                }
+            ],
+            "modifiers": {
+                "Fish_VFX": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "onAdded": [
+                        {
+                            "$type": "AttachEffect",
+                            "LHHFHDEJOHC": "Eff_Monster_FauneAbyssale_SeaHorse_Primo_Personality",
+                            "PCLAEGHPNHE": -1.0
+                        }
+                    ]
+                },
+                "Fish_Surround_VFX": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "onAdded": [
+                        {
+                            "$type": "AttachEffect",
+                            "LHHFHDEJOHC": "Eff_Monster_FauneAbyssale_SeaHorse_Primo_FreePose_Decoration",
+                            "PCLAEGHPNHE": -1.0
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "FauneAbyssale_SeaHorse_Primo_FlyPoseManager",
+            "abilityMixins": [
+                {
+                    "$type": "SteerAttackTraceToPosMixin",
+                    "LMMLIKMOKHL": [
+                        "Annihilation_BS"
+                    ],
+                    "GGMOCFABGPD": 0.4000000059604645,
+                    "KNPBDOFJKKB": 250.0,
+                    "APILILGPPAD": "",
+                    "AJPCIOEMAKN": "_CENTER_POS"
+                },
+                {
+                    "$type": "DoActionByAnimatorStateIDMixin",
+                    "FHCHNMKMJJA": [
+                        "Annihilation_Jump"
+                    ],
+                    "EEGIIGFKBHC": [
+                        {
+                            "$type": "TurnDirectionToPos",
+                            "OPOOFGHHJAE": {
+                                "$type": "MIJAAKJGAEJ",
+                                "POLCJDPOKCF": "_CENTER_POS",
+                                "NHBEMFBAMNP": ""
+                            }
+                        },
+                        {
+                            "$type": "FixedMonsterRushMove",
+                            "OPOOFGHHJAE": {
+                                "$type": "MIJAAKJGAEJ",
+                                "POLCJDPOKCF": "_CENTER_POS",
+                                "NHBEMFBAMNP": ""
+                            },
+                            "IEDKNNAAHGA": 1.1200000047683716,
+                            "FLGDGOMOIHH": -1.0,
+                            "KFEJJAIDPIC": [
+                                "Annihilation_Jump",
+                                "Annihilation_JumpEnd"
+                            ],
+                            "EECLAMCAGAN": ""
+                        }
+                    ]
+                },
+                {
+                    "$type": "DoActionByAnimatorStateIDMixin",
+                    "FHCHNMKMJJA": [
+                        "Annihilation_FarJump"
+                    ],
+                    "EEGIIGFKBHC": [
+                        {
+                            "$type": "TurnDirectionToPos",
+                            "OPOOFGHHJAE": {
+                                "$type": "MIJAAKJGAEJ",
+                                "POLCJDPOKCF": "_CENTER_POS",
+                                "NHBEMFBAMNP": ""
+                            }
+                        },
+                        {
+                            "$type": "FixedMonsterRushMove",
+                            "OPOOFGHHJAE": {
+                                "$type": "MIJAAKJGAEJ",
+                                "POLCJDPOKCF": "_CENTER_POS",
+                                "NHBEMFBAMNP": ""
+                            },
+                            "IEDKNNAAHGA": 1.6200000047683716,
+                            "FLGDGOMOIHH": -1.0,
+                            "KFEJJAIDPIC": [
+                                "Annihilation_FarJump",
+                                "Annihilation_JumpEnd"
+                            ],
+                            "EECLAMCAGAN": ""
+                        }
+                    ]
+                },
+                {
+                    "$type": "AttachToStateIDMixin",
+                    "FHCHNMKMJJA": [
+                        "Annihilation_BS",
+                        "Annihilation_Jump",
+                        "Annihilation_JumpEnd",
+                        "Annihilation_Cast",
+                        "Annihilation_Loop"
+                    ],
+                    "modifierName": "Annihilation_Change_Weather_Handler"
+                },
+                {
+                    "$type": "SteerAttackMixin",
+                    "LMMLIKMOKHL": [
+                        "Annihilation_AS"
+                    ],
+                    "EIAGKLKHEFP": 0.4429999887943268,
+                    "GGMOCFABGPD": 0.7099999785423279,
+                    "KNPBDOFJKKB": 55.0,
+                    "APILILGPPAD": ""
+                },
+                {
+                    "$type": "SteerAttackMixin",
+                    "LMMLIKMOKHL": [
+                        "Alert"
+                    ],
+                    "EIAGKLKHEFP": 0.37299999594688416,
+                    "GGMOCFABGPD": 0.44999998807907104,
+                    "KNPBDOFJKKB": 160.0,
+                    "APILILGPPAD": ""
+                },
+                {
+                    "$type": "SteerAttackMixin",
+                    "LMMLIKMOKHL": [
+                        "Alert"
+                    ],
+                    "EIAGKLKHEFP": 0.44999998807907104,
+                    "GGMOCFABGPD": 0.7099999785423279,
+                    "KNPBDOFJKKB": 60.0,
+                    "APILILGPPAD": ""
+                },
+                {
+                    "$type": "SteerAttackMixin",
+                    "LMMLIKMOKHL": [
+                        "TailWhip01"
+                    ],
+                    "EIAGKLKHEFP": 0.05000000074505806,
+                    "GGMOCFABGPD": 0.20000000298023224,
+                    "KNPBDOFJKKB": 90.0,
+                    "APILILGPPAD": ""
+                },
+                {
+                    "$type": "SteerAttackMixin",
+                    "LMMLIKMOKHL": [
+                        "TailWhip01"
+                    ],
+                    "EIAGKLKHEFP": 0.27000001072883606,
+                    "GGMOCFABGPD": 0.8999999761581421,
+                    "KNPBDOFJKKB": 360.0,
+                    "APILILGPPAD": ""
+                },
+                {
+                    "$type": "SteerAttackMixin",
+                    "LMMLIKMOKHL": [
+                        "TailWhip01"
+                    ],
+                    "EIAGKLKHEFP": 0.5199999809265137,
+                    "GGMOCFABGPD": 0.6899999976158142,
+                    "KNPBDOFJKKB": 90.0,
+                    "APILILGPPAD": ""
+                },
+                {
+                    "$type": "SteerAttackMixin",
+                    "LMMLIKMOKHL": [
+                        "TailWhipTrans"
+                    ],
+                    "KNPBDOFJKKB": 400.0,
+                    "APILILGPPAD": ""
+                },
+                {
+                    "$type": "SteerAttackMixin",
+                    "LMMLIKMOKHL": [
+                        "TailWhip02"
+                    ],
+                    "EIAGKLKHEFP": 0.10000000149011612,
+                    "GGMOCFABGPD": 0.18700000643730164,
+                    "KNPBDOFJKKB": 120.0,
+                    "APILILGPPAD": ""
+                },
+                {
+                    "$type": "SteerAttackMixin",
+                    "LMMLIKMOKHL": [
+                        "TailWhip02"
+                    ],
+                    "EIAGKLKHEFP": 0.23199999332427979,
+                    "GGMOCFABGPD": 0.3100000023841858,
+                    "KNPBDOFJKKB": 410.0,
+                    "APILILGPPAD": ""
+                },
+                {
+                    "$type": "SteerAttackMixin",
+                    "LMMLIKMOKHL": [
+                        "TailWhip02"
+                    ],
+                    "EIAGKLKHEFP": 0.3499999940395355,
+                    "GGMOCFABGPD": 0.5669999718666077,
+                    "KNPBDOFJKKB": 60.0,
+                    "APILILGPPAD": ""
+                },
+                {
+                    "$type": "SteerAttackMixin",
+                    "LMMLIKMOKHL": [
+                        "FishBarrage"
+                    ],
+                    "GGMOCFABGPD": 0.699999988079071,
+                    "KNPBDOFJKKB": 75.0,
+                    "APILILGPPAD": ""
+                },
+                {
+                    "$type": "SteerAttackMixin",
+                    "LMMLIKMOKHL": [
+                        "ElectronCharge_BS"
+                    ],
+                    "EIAGKLKHEFP": 0.20999999344348907,
+                    "KNPBDOFJKKB": 120.0,
+                    "APILILGPPAD": ""
+                },
+                {
+                    "$type": "SteerAttackMixin",
+                    "LMMLIKMOKHL": [
+                        "ElectronCharge"
+                    ],
+                    "GGMOCFABGPD": 0.2800000011920929,
+                    "KNPBDOFJKKB": 60.0,
+                    "APILILGPPAD": ""
+                },
+                {
+                    "$type": "SteerAttackMixin",
+                    "LMMLIKMOKHL": [
+                        "ElectronChargeWeak"
+                    ],
+                    "GGMOCFABGPD": 0.30000001192092896,
+                    "KNPBDOFJKKB": 36.0,
+                    "APILILGPPAD": ""
+                },
+                {
+                    "$type": "SteerAttackMixin",
+                    "LMMLIKMOKHL": [
+                        "LeapingStab_01"
+                    ],
+                    "EIAGKLKHEFP": 0.5,
+                    "KNPBDOFJKKB": 160.0,
+                    "APILILGPPAD": ""
+                },
+                {
+                    "$type": "SteerAttackMixin",
+                    "LMMLIKMOKHL": [
+                        "LeapingStab_01"
+                    ],
+                    "EIAGKLKHEFP": 0.7900000214576721,
+                    "KNPBDOFJKKB": 75.0,
+                    "APILILGPPAD": ""
+                },
+                {
+                    "$type": "SteerAttackMixin",
+                    "LMMLIKMOKHL": [
+                        "LeapingStab_02"
+                    ],
+                    "KNPBDOFJKKB": 75.0,
+                    "APILILGPPAD": ""
+                },
+                {
+                    "$type": "SteerAttackTraceToPosMixin",
+                    "LMMLIKMOKHL": [
+                        "LeapingStab_03"
+                    ],
+                    "GGMOCFABGPD": 0.4000000059604645,
+                    "KNPBDOFJKKB": 400.0,
+                    "APILILGPPAD": "",
+                    "AJPCIOEMAKN": "_STAB_POS"
+                },
+                {
+                    "$type": "SteerAttackMixin",
+                    "LMMLIKMOKHL": [
+                        "LeapingStab_AS"
+                    ],
+                    "EIAGKLKHEFP": 0.3310000002384186,
+                    "GGMOCFABGPD": 0.4000000059604645,
+                    "KNPBDOFJKKB": 250.0,
+                    "APILILGPPAD": ""
+                },
+                {
+                    "$type": "SteerAttackMixin",
+                    "LMMLIKMOKHL": [
+                        "LeapingStab_AS"
+                    ],
+                    "EIAGKLKHEFP": 0.4000000059604645,
+                    "KNPBDOFJKKB": 40.0,
+                    "APILILGPPAD": ""
+                },
+                {
+                    "$type": "SteerAttackMixin",
+                    "LMMLIKMOKHL": [
+                        "ShieldRecover"
+                    ],
+                    "GGMOCFABGPD": 0.6119999885559082,
+                    "KNPBDOFJKKB": 45.0,
+                    "APILILGPPAD": ""
+                },
+                {
+                    "$type": "SteerAttackMixin",
+                    "LMMLIKMOKHL": [
+                        "ShieldRecover"
+                    ],
+                    "EIAGKLKHEFP": 0.6119999885559082,
+                    "GGMOCFABGPD": 0.6700000166893005,
+                    "KNPBDOFJKKB": 600.0,
+                    "APILILGPPAD": ""
+                },
+                {
+                    "$type": "SteerAttackMixin",
+                    "LMMLIKMOKHL": [
+                        "ShieldRecover"
+                    ],
+                    "EIAGKLKHEFP": 0.7860000133514404,
+                    "GGMOCFABGPD": 0.9100000262260437,
+                    "KNPBDOFJKKB": 40.0,
+                    "APILILGPPAD": ""
+                },
+                {
+                    "$type": "DoActionByAnimatorStateIDMixin",
+                    "FHCHNMKMJJA": [
+                        "LeapingStab_03"
+                    ],
+                    "EEGIIGFKBHC": [
+                        {
+                            "$type": "SetGlobalPos",
+                            "KMGAOOHMCPK": "SelfAttackActiveTarget",
+                            "NGGCNKPAODB": "_STAB_POS",
+                            "CCNCMOGOFAG": {
+                                "$type": "PKFCGGCKPNE",
+                                "NCFCJBAGKBF": 0.5,
+                                "AKCGKOPIHIN": 0.0,
+                                "DDMPDKPIGDL": 15.0
+                            },
+                            "NMPAAMMEDAD": false
+                        },
+                        {
+                            "$type": "FireEffect",
+                            "LHHFHDEJOHC": "Eff_Monster_FauneAbyssale_SeaHorse_Primo_LeapingStab_WarningCircle",
+                            "CCNCMOGOFAG": {
+                                "$type": "MIJAAKJGAEJ",
+                                "POLCJDPOKCF": "_STAB_POS",
+                                "NHBEMFBAMNP": ""
+                            },
+                            "PCLAEGHPNHE": -1.0
+                        }
+                    ]
+                },
+                {
+                    "$type": "DoActionByAnimatorStateIDMixin",
+                    "FHCHNMKMJJA": [
+                        "LeapingStab_AS"
+                    ],
+                    "EEGIIGFKBHC": [
+                        {
+                            "$type": "Predicated",
+                            "targetPredicates": [
+                                {
+                                    "$type": "OMPKIEPKGPF",
+                                    "KMGAOOHMCPK": "Self",
+                                    "NGGCNKPAODB": "_IS_IN_ABYSS",
+                                    "value": 1.0
+                                }
+                            ],
+                            "successActions": [
+                                {
+                                    "$type": "CreateTile",
+                                    "tileName": "Monster_FauneAbyssale_Seahorse_Primo_Tile_Dungeon",
+                                    "LOPCJCIFFBE": {
+                                        "$type": "IHKJIHKGECH",
+                                        "triggerType": "TriggerNoRepeat",
+                                        "GGEJLLOCJDH": 6.599999904632568
+                                    }
+                                }
+                            ],
+                            "failActions": [
+                                {
+                                    "$type": "CreateTile",
+                                    "tileName": "Monster_FauneAbyssale_Seahorse_Primo_Tile",
+                                    "LOPCJCIFFBE": {
+                                        "$type": "IHKJIHKGECH",
+                                        "triggerType": "TriggerNoRepeat",
+                                        "GGEJLLOCJDH": 6.599999904632568
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "$type": "AttachToAnimatorStateIDMixin",
+                    "FHCHNMKMJJA": [
+                        "LeapingStab_02",
+                        "LeapingStab_03",
+                        "Annihilation_Jump",
+                        "Annihilation_FarJump"
+                    ],
+                    "modifierName": "Trail_VFX"
+                },
+                {
+                    "$type": "AttachToAnimatorStateIDMixin",
+                    "FHCHNMKMJJA": [
+                        "LeapingStab_03"
+                    ],
+                    "modifierName": "Elbow_VFX"
+                },
+                {
+                    "$type": "AttachToNormalizedTimeMixin",
+                    "GEAPDIDEKFG": "ShieldRecover",
+                    "modifierName": "Achievement_82186_Monitor",
+                    "IJPEIOCAFBA": 0.6110000014305115
+                },
+                {
+                    "$type": "ServerFinishWatcherMixin",
+                    "DHOICEBJFEN": 82186,
+                    "FLEEHCIOPKA": [
+                        {
+                            "$type": "OMPKIEPKGPF",
+                            "KMGAOOHMCPK": "Self",
+                            "NGGCNKPAODB": "ACHIEVEMENT_82186_MARK",
+                            "value": 1.0
+                        }
+                    ]
+                }
+            ],
+            "modifiers": {
+                "Trail_VFX": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "onAdded": [
+                        {
+                            "$type": "AttachEffect",
+                            "LHHFHDEJOHC": "Eff_Monster_FauneAbyssale_SeaHorse_Primo_Common_Trail",
+                            "PCLAEGHPNHE": -1.0
+                        }
+                    ]
+                },
+                "Elbow_VFX": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "onAdded": [
+                        {
+                            "$type": "AttachEffect",
+                            "LHHFHDEJOHC": "Eff_Monster_FauneAbyssale_SeaHorse_Primo_LeapingStab_BS",
+                            "PCLAEGHPNHE": -1.0
+                        },
+                        {
+                            "$type": "SetEffectFollowPath",
+                            "LAHGKDJIIJH": "ElbowR",
+                            "LHHFHDEJOHC": "Eff_Monster_FauneAbyssale_SeaHorse_Primo_LeapingStab_BS",
+                            "PAOPLDJGAKA": ""
+                        },
+                        {
+                            "$type": "AttachEffect",
+                            "LHHFHDEJOHC": "Eff_Monster_FauneAbyssale_SeaHorse_Primo_LeapingStab_BS",
+                            "PCLAEGHPNHE": -1.0
+                        }
+                    ]
+                },
+                "Annihilation_Change_Weather_Handler": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "onAdded": [
+                        {
+                            "$type": "AttachModifier",
+                            "KMGAOOHMCPK": "AllTeams",
+                            "FLEEHCIOPKA": [
+                                {
+                                    "$type": "GMINFNBLOFC"
+                                }
+                            ],
+                            "modifierName": "Annihilation_Change_Weather"
+                        }
+                    ]
+                },
+                "Annihilation_Change_Weather": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "modifierMixins": [
+                        {
+                            "$type": "TriggerWeatherMixin",
+                            "type": "Skill",
+                            "MMHFELPDHGP": "Weather_Monster_SeaHorse_Primo_Annihilation"
+                        }
+                    ]
+                },
+                "Achievement_82186_Monitor": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "onAdded": [
+                        {
+                            "$type": "SetGlobalValue",
+                            "value": 1.0,
+                            "NGGCNKPAODB": "ACHIEVEMENT_82186_MARK",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        }
+                    ],
+                    "NFKOGKMAIIE": [
+                        {
+                            "$type": "SetGlobalValue",
+                            "value": 0.0,
+                            "NGGCNKPAODB": "ACHIEVEMENT_82186_MARK",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        }
+                    ]
+                }
+            },
+            "onAdded": [
+                {
+                    "$type": "SetGlobalPos",
+                    "NGGCNKPAODB": "_CENTER_POS",
+                    "CCNCMOGOFAG": {
+                        "$type": "DELDMCFKBBL",
+                        "FPDJOHEHNDD": true
+                    }
+                },
+                {
+                    "$type": "SetGlobalValue",
+                    "value": 0.0,
+                    "NGGCNKPAODB": "ACHIEVEMENT_82186_MARK",
+                    "LBHGJKHHAKP": 0.0,
+                    "EMGNPOKHMNN": 0.0
+                }
+            ],
+            "onAbilityStart": [
+                {
+                    "$type": "FixedMonsterRushMove",
+                    "OPOOFGHHJAE": {
+                        "$type": "MIJAAKJGAEJ",
+                        "POLCJDPOKCF": "_STAB_POS",
+                        "NHBEMFBAMNP": ""
+                    },
+                    "IEDKNNAAHGA": 0.36000001430511475,
+                    "FLGDGOMOIHH": -1.0,
+                    "KFEJJAIDPIC": [
+                        "LeapingStab_03"
+                    ],
+                    "EECLAMCAGAN": "",
+                    "BDOEPIEKGII": true
+                },
+                {
+                    "$type": "ReTriggerAISkillInitialCD",
+                    "AGAIJDENKJE": [
+                        701,
+                        702
+                    ]
+                }
+            ]
+        }
+    }
+]

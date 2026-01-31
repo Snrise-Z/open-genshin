@@ -1,0 +1,1665 @@
+[
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "Ability_Avatar_Dive_JellyfishBomb",
+            "modifiers": {
+                "Avatar_Dive_JellyfishBomb_AddSkillInfo": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "AddAvatarSkillInfo",
+                            "BKFHNENKMAL": true,
+                            "GCOFBECOEFF": 20060
+                        },
+                        {
+                            "$type": "AddAvatarSkillInfo",
+                            "BKFHNENKMAL": true,
+                            "GCOFBECOEFF": 20061
+                        }
+                    ],
+                    "NFKOGKMAIIE": [
+                        {
+                            "$type": "RemoveAvatarSkillInfo",
+                            "BKFHNENKMAL": true,
+                            "GCOFBECOEFF": 20060,
+                            "AMDMJFDEKKN": true
+                        },
+                        {
+                            "$type": "RemoveAvatarSkillInfo",
+                            "BKFHNENKMAL": true,
+                            "GCOFBECOEFF": 20061,
+                            "AMDMJFDEKKN": true
+                        }
+                    ]
+                },
+                "Avatar_Dive_JellyfishBomb_Hold_Handler": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "modifierMixins": [
+                        {
+                            "$type": "ButtonHoldChargeMixin",
+                            "GCOFBECOEFF": 20060,
+                            "APJEHKNNCEE": 0.25,
+                            "FFOAGEDGOPI": [
+                                {
+                                    "$type": "RemoveUniqueModifier",
+                                    "BKFHNENKMAL": true,
+                                    "modifierName": "UNIQUE_Dive_JellyfishBomb_SwitchToTrigger"
+                                },
+                                {
+                                    "$type": "ApplyModifier",
+                                    "BKFHNENKMAL": true,
+                                    "modifierName": "JellyFish_Short"
+                                },
+                                {
+                                    "$type": "AttachModifier",
+                                    "BKFHNENKMAL": true,
+                                    "modifierName": "UNIQUE_Dive_JellyfishBomb_SwitchToTrigger"
+                                }
+                            ],
+                            "LPNPIIMIMKK": [
+                                {
+                                    "$type": "RemoveModifier",
+                                    "BKFHNENKMAL": true,
+                                    "modifierName": "Focus_Father"
+                                },
+                                {
+                                    "$type": "SetAnimatorTrigger",
+                                    "POPKLBPMAJN": "StartDiveCastTrigger"
+                                },
+                                {
+                                    "$type": "SetAnimatorTrigger",
+                                    "POPKLBPMAJN": "StartDiveCastTrigger2"
+                                },
+                                {
+                                    "$type": "ApplyModifier",
+                                    "FLEEHCIOPKA": [
+                                        {
+                                            "$type": "OMPKIEPKGPF",
+                                            "KMGAOOHMCPK": "Self",
+                                            "NGGCNKPAODB": "_ABILITY_Diving_Skill_In_Focus_Skill_Mark",
+                                            "value": 0.0,
+                                            "GAGKBNPOCAC": "NoneOrEqual"
+                                        }
+                                    ],
+                                    "modifierName": "Focus_Father"
+                                }
+                            ],
+                            "KFDLHBNGAAD": [
+                                {
+                                    "$type": "SetAnimatorTrigger",
+                                    "POPKLBPMAJN": "EndDiveCastTrigger"
+                                }
+                            ],
+                            "PHILPADDGOJ": [
+                                {
+                                    "$type": "SetAnimatorTrigger",
+                                    "POPKLBPMAJN": "EndDiveCastTrigger"
+                                },
+                                {
+                                    "$type": "ApplyModifier",
+                                    "FLEEHCIOPKA": [
+                                        {
+                                            "$type": "OMPKIEPKGPF",
+                                            "KMGAOOHMCPK": "Self",
+                                            "NGGCNKPAODB": "_ABILITY_Diving_Skill_In_Focus_Skill_Mark",
+                                            "value": 2.0
+                                        }
+                                    ],
+                                    "modifierName": "Focus_Remove_Delay"
+                                }
+                            ],
+                            "NKJCPBIKHFI": [
+                                "DiveCast_BS",
+                                "DiveCast_Loop"
+                            ]
+                        },
+                        {
+                            "$type": "AttachModifierToGlobalValueMixin",
+                            "MJLPLOIAKOK": "Team",
+                            "globalValueKey": "_ABILITY_Dive_isInFondanieWater",
+                            "valueSteps": [
+                                -0.5,
+                                0.5
+                            ],
+                            "modifierNameSteps": [
+                                "Clear_Focus_Father"
+                            ]
+                        }
+                    ]
+                },
+                "Clear_Focus_Father": {
+                    "HABNNJHCOCD": "Multiple",
+                    "modifierName": "",
+                    "FAFCPJJAIGK": 0.20000000298023224,
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "RemoveModifier",
+                            "BKFHNENKMAL": true,
+                            "modifierName": "Focus_Father"
+                        }
+                    ]
+                },
+                "Focus_Father": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "modifierMixins": [
+                        {
+                            "$type": "AttachToMultiNormalizedTimeMixin",
+                            "BHMAPCJJKMM": [
+                                {
+                                    "GEAPDIDEKFG": "DiveCast_BS"
+                                },
+                                {
+                                    "GEAPDIDEKFG": "DiveCast_Loop"
+                                },
+                                {
+                                    "GEAPDIDEKFG": "DiveCast_AS",
+                                    "IJPEIOCAFBA": 0.14499999582767487
+                                }
+                            ],
+                            "modifierName": "Focus"
+                        },
+                        {
+                            "$type": "AttachToStateIDMixin",
+                            "FHCHNMKMJJA": [
+                                "DiveCast_BS",
+                                "DiveCast_Loop"
+                            ],
+                            "modifierName": "Focus_Remove_Delay_Trigger",
+                            "PEBFINBALPJ": true
+                        }
+                    ],
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "SetGlobalValue",
+                            "BKFHNENKMAL": true,
+                            "value": 2.0,
+                            "NGGCNKPAODB": "_ABILITY_Diving_Skill_In_Focus_Skill_Mark",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        }
+                    ],
+                    "NFKOGKMAIIE": [
+                        {
+                            "$type": "SetGlobalValue",
+                            "BKFHNENKMAL": true,
+                            "value": 0.0,
+                            "NGGCNKPAODB": "_ABILITY_Diving_Skill_In_Focus_Skill_Mark",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        }
+                    ]
+                },
+                "Focus_Remove_Delay_Trigger": {
+                    "modifierName": "",
+                    "FAFCPJJAIGK": 10.0,
+                    "bonusCritical": 100.0,
+                    "NFKOGKMAIIE": [
+                        {
+                            "$type": "SetAnimatorTrigger",
+                            "POPKLBPMAJN": "EndDiveCastTrigger"
+                        },
+                        {
+                            "$type": "ApplyModifier",
+                            "FLEEHCIOPKA": [
+                                {
+                                    "$type": "OMPKIEPKGPF",
+                                    "KMGAOOHMCPK": "Self",
+                                    "NGGCNKPAODB": "_ABILITY_Diving_Skill_In_Focus_Skill_Mark",
+                                    "value": 2.0
+                                }
+                            ],
+                            "modifierName": "Focus_Remove_Delay"
+                        }
+                    ]
+                },
+                "Focus_Remove_Delay": {
+                    "HABNNJHCOCD": "Unique",
+                    "modifierName": "",
+                    "FAFCPJJAIGK": 0.5,
+                    "bonusCritical": 100.0,
+                    "ANPDJHOGAFE": 0.12999999523162842,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "SendDungeonFogEffectTrigger",
+                            "FMIDIADJIBK": true,
+                            "HDBIEOFMAOD": "Aim_Close",
+                            "HNFJABPPGDA": "Eff_SkillObj_Absorb_Avatar_Aim"
+                        }
+                    ],
+                    "NFKOGKMAIIE": [
+                        {
+                            "$type": "RemoveModifier",
+                            "BKFHNENKMAL": true,
+                            "modifierName": "Focus"
+                        }
+                    ],
+                    "MDPGEKAIFIM": [
+                        {
+                            "$type": "ApplyModifier",
+                            "BKFHNENKMAL": true,
+                            "modifierName": "JellyFish_Long"
+                        }
+                    ],
+                    "ANKALKKLIPK": true,
+                    "JPBJEOPOKPM": [
+                        {
+                            "$type": "RemoveModifier",
+                            "BKFHNENKMAL": true,
+                            "modifierName": "Focus"
+                        }
+                    ]
+                },
+                "Focus": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "modifierMixins": [
+                        {
+                            "$type": "UseShootingConfigMixin",
+                            "ICCMFHFIKHN": {
+                                "IGBIJJJBKCO": {
+                                    "OGABMKHAOOF": "FocusAnchor",
+                                    "IICHNFBOILH": 100.0,
+                                    "BOONNOFMLOJ": 2.0,
+                                    "MAPPBJKPFKF": 7.0
+                                },
+                                "HCBKODGEOKL": {
+                                    "OGABMKHAOOF": "FocusAnchor",
+                                    "IICHNFBOILH": 100.0,
+                                    "CJMFADIJBMA": 0.15000000596046448,
+                                    "BOONNOFMLOJ": 2.0,
+                                    "MAPPBJKPFKF": 25.0
+                                }
+                            }
+                        },
+                        {
+                            "$type": "DisableMotionBlurMixin"
+                        },
+                        {
+                            "$type": "EffectChangeAlphaMixin",
+                            "KMGAOOHMCPK": "Team",
+                            "DFODPIBGMHM": 0.20000000298023224,
+                            "AKODEOMDHFH": 0.30000001192092896,
+                            "KJEFJJAPBOO": true
+                        },
+                        {
+                            "$type": "EffectChangeAlphaMixin",
+                            "DFODPIBGMHM": 0.20000000298023224,
+                            "AKODEOMDHFH": 0.30000001192092896,
+                            "KJEFJJAPBOO": true
+                        }
+                    ],
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "AttachModifier",
+                            "KMGAOOHMCPK": "Team",
+                            "modifierName": "Aim_Camera_Eff"
+                        },
+                        {
+                            "$type": "AttachModifier",
+                            "modifierName": "Gadget_Loop"
+                        },
+                        {
+                            "$type": "Predicated",
+                            "targetPredicates": [
+                                {
+                                    "$type": "KHPPMJAPEJL",
+                                    "HKBHMGGLBHI": [
+                                        1044
+                                    ]
+                                }
+                            ],
+                            "successActions": [
+                                {
+                                    "$type": "AvatarEnterFocus",
+                                    "AIGAOEEMOFM": {
+                                        "x": 1.0,
+                                        "y": -0.05000000074505806,
+                                        "z": -1.5
+                                    },
+                                    "AHJNBFHIBAD": {
+                                        "x": 1.0,
+                                        "y": -0.05000000074505806,
+                                        "z": -1.2000000476837158
+                                    },
+                                    "EKBFPABJKJK": true,
+                                    "CBIPHGDHPBB": "Skill2",
+                                    "DEHDHEAIHKI": {
+                                        "ps4": {},
+                                        "ps5": {},
+                                        "other": {
+                                            "OOJNPBOAENI": true
+                                        }
+                                    },
+                                    "IGHHEFJNFFJ": false,
+                                    "GHGIMBCONBG": false,
+                                    "AHCOOPMABIE": ""
+                                }
+                            ]
+                        },
+                        {
+                            "$type": "Predicated",
+                            "targetPredicates": [
+                                {
+                                    "$type": "KHPPMJAPEJL",
+                                    "HKBHMGGLBHI": [
+                                        1043
+                                    ]
+                                }
+                            ],
+                            "successActions": [
+                                {
+                                    "$type": "AvatarEnterFocus",
+                                    "AIGAOEEMOFM": {
+                                        "x": 0.800000011920929,
+                                        "y": 0.10000000149011612,
+                                        "z": -1.600000023841858
+                                    },
+                                    "AHJNBFHIBAD": {
+                                        "x": 0.800000011920929,
+                                        "y": 0.10000000149011612,
+                                        "z": -1.2000000476837158
+                                    },
+                                    "EKBFPABJKJK": true,
+                                    "CBIPHGDHPBB": "Skill2",
+                                    "DEHDHEAIHKI": {
+                                        "ps4": {},
+                                        "ps5": {},
+                                        "other": {
+                                            "OOJNPBOAENI": true
+                                        }
+                                    },
+                                    "IGHHEFJNFFJ": false,
+                                    "GHGIMBCONBG": false,
+                                    "AHCOOPMABIE": ""
+                                }
+                            ]
+                        },
+                        {
+                            "$type": "Predicated",
+                            "targetPredicates": [
+                                {
+                                    "$type": "KHPPMJAPEJL",
+                                    "HKBHMGGLBHI": [
+                                        1042
+                                    ]
+                                }
+                            ],
+                            "successActions": [
+                                {
+                                    "$type": "AvatarEnterFocus",
+                                    "AIGAOEEMOFM": {
+                                        "x": 1.100000023841858,
+                                        "y": 0.15000000596046448,
+                                        "z": -1.5
+                                    },
+                                    "AHJNBFHIBAD": {
+                                        "x": 1.100000023841858,
+                                        "y": 0.15000000596046448,
+                                        "z": -1.100000023841858
+                                    },
+                                    "EKBFPABJKJK": true,
+                                    "CBIPHGDHPBB": "Skill2",
+                                    "DEHDHEAIHKI": {
+                                        "ps4": {},
+                                        "ps5": {},
+                                        "other": {
+                                            "OOJNPBOAENI": true
+                                        }
+                                    },
+                                    "IGHHEFJNFFJ": false,
+                                    "GHGIMBCONBG": false,
+                                    "AHCOOPMABIE": ""
+                                }
+                            ]
+                        },
+                        {
+                            "$type": "Predicated",
+                            "targetPredicates": [
+                                {
+                                    "$type": "KHPPMJAPEJL",
+                                    "HKBHMGGLBHI": [
+                                        1041
+                                    ]
+                                }
+                            ],
+                            "successActions": [
+                                {
+                                    "$type": "AvatarEnterFocus",
+                                    "AIGAOEEMOFM": {
+                                        "x": 0.8999999761581421,
+                                        "y": 0.30000001192092896,
+                                        "z": -1.600000023841858
+                                    },
+                                    "AHJNBFHIBAD": {
+                                        "x": 0.8999999761581421,
+                                        "y": 0.30000001192092896,
+                                        "z": -1.2000000476837158
+                                    },
+                                    "EKBFPABJKJK": true,
+                                    "CBIPHGDHPBB": "Skill2",
+                                    "DEHDHEAIHKI": {
+                                        "ps4": {},
+                                        "ps5": {},
+                                        "other": {
+                                            "OOJNPBOAENI": true
+                                        }
+                                    },
+                                    "IGHHEFJNFFJ": false,
+                                    "GHGIMBCONBG": false,
+                                    "AHCOOPMABIE": ""
+                                }
+                            ]
+                        },
+                        {
+                            "$type": "Predicated",
+                            "targetPredicates": [
+                                {
+                                    "$type": "KHPPMJAPEJL",
+                                    "HKBHMGGLBHI": [
+                                        1045
+                                    ]
+                                }
+                            ],
+                            "successActions": [
+                                {
+                                    "$type": "AvatarEnterFocus",
+                                    "AIGAOEEMOFM": {
+                                        "x": 1.100000023841858,
+                                        "y": -0.30000001192092896,
+                                        "z": -1.600000023841858
+                                    },
+                                    "AHJNBFHIBAD": {
+                                        "x": 1.100000023841858,
+                                        "y": -0.30000001192092896,
+                                        "z": -1.2000000476837158
+                                    },
+                                    "EKBFPABJKJK": true,
+                                    "CBIPHGDHPBB": "Skill2",
+                                    "DEHDHEAIHKI": {
+                                        "ps4": {},
+                                        "ps5": {},
+                                        "other": {
+                                            "OOJNPBOAENI": true
+                                        }
+                                    },
+                                    "IGHHEFJNFFJ": false,
+                                    "GHGIMBCONBG": false,
+                                    "AHCOOPMABIE": ""
+                                }
+                            ]
+                        },
+                        {
+                            "$type": "AttachModifier",
+                            "modifierName": "VFX"
+                        },
+                        {
+                            "$type": "SetAnimatorBool",
+                            "CMLNMLEDGPA": "LockMotionFlagExitChannel",
+                            "value": true
+                        },
+                        {
+                            "$type": "SetGlobalValue",
+                            "value": 1.0,
+                            "NGGCNKPAODB": "_ABILITY_Common_IsChannelState",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        }
+                    ],
+                    "NFKOGKMAIIE": [
+                        {
+                            "$type": "AvatarExitFocus",
+                            "BKFHNENKMAL": true
+                        },
+                        {
+                            "$type": "SetAnimatorBool",
+                            "BKFHNENKMAL": true,
+                            "CMLNMLEDGPA": "LockMotionFlagExitChannel"
+                        },
+                        {
+                            "$type": "SetGlobalValue",
+                            "BKFHNENKMAL": true,
+                            "value": 0.0,
+                            "NGGCNKPAODB": "_ABILITY_Common_IsChannelState",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        },
+                        {
+                            "$type": "RemoveModifier",
+                            "BKFHNENKMAL": true,
+                            "modifierName": "Focus_Father"
+                        }
+                    ]
+                },
+                "Gadget_Loop": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "SetGlobalValue",
+                            "KMGAOOHMCPK": "Team",
+                            "value": 2.0,
+                            "NGGCNKPAODB": "_ABILITY_WhiteBox_Dive_Team_Trigger",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        }
+                    ],
+                    "NFKOGKMAIIE": [
+                        {
+                            "$type": "SetGlobalValue",
+                            "KMGAOOHMCPK": "Team",
+                            "value": 3.0,
+                            "NGGCNKPAODB": "_ABILITY_WhiteBox_Dive_Team_Trigger",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        }
+                    ]
+                },
+                "Aim_Camera_Eff": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "modifierMixins": [
+                        {
+                            "$type": "AttachActionToModifierMixin",
+                            "NLFIGALMIPD": [
+                                {
+                                    "$type": "DungeonFogEffects",
+                                    "DBNEEEGIJGN": true,
+                                    "FMIDIADJIBK": true,
+                                    "enable": true,
+                                    "HNFJABPPGDA": "Eff_SkillObj_Absorb_Avatar_Aim",
+                                    "AHKPFEFGJGJ": ""
+                                }
+                            ],
+                            "NFKOGKMAIIE": [
+                                {
+                                    "$type": "DungeonFogEffects",
+                                    "BKFHNENKMAL": true,
+                                    "DBNEEEGIJGN": true,
+                                    "FMIDIADJIBK": true,
+                                    "HNFJABPPGDA": "Eff_SkillObj_Absorb_Avatar_Aim",
+                                    "AHKPFEFGJGJ": ""
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "VFX_Trigger": {
+                    "HABNNJHCOCD": "Multiple",
+                    "modifierName": "",
+                    "FAFCPJJAIGK": 0.5,
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "FireEffect",
+                            "FLEEHCIOPKA": [
+                                {
+                                    "$type": "CDPHOKIPLGH",
+                                    "FLEEHCIOPKA": [
+                                        {
+                                            "$type": "KHPPMJAPEJL",
+                                            "HKBHMGGLBHI": [
+                                                1044
+                                            ]
+                                        },
+                                        {
+                                            "$type": "KHPPMJAPEJL",
+                                            "HKBHMGGLBHI": [
+                                                1042
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "LHHFHDEJOHC": "Eff_Avatar_Diving_Gadget_Loop_Attack",
+                            "PCLAEGHPNHE": -1.0
+                        },
+                        {
+                            "$type": "FireEffect",
+                            "FLEEHCIOPKA": [
+                                {
+                                    "$type": "CDPHOKIPLGH",
+                                    "FLEEHCIOPKA": [
+                                        {
+                                            "$type": "KHPPMJAPEJL",
+                                            "HKBHMGGLBHI": [
+                                                1043
+                                            ]
+                                        },
+                                        {
+                                            "$type": "KHPPMJAPEJL",
+                                            "HKBHMGGLBHI": [
+                                                1041
+                                            ]
+                                        },
+                                        {
+                                            "$type": "KHPPMJAPEJL",
+                                            "HKBHMGGLBHI": [
+                                                1045
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "LHHFHDEJOHC": "Eff_Avatar_Diving_Gadget_Loop_2_Attack",
+                            "PCLAEGHPNHE": -1.0
+                        }
+                    ]
+                },
+                "VFX": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "Predicated",
+                            "targetPredicates": [
+                                {
+                                    "$type": "KHPPMJAPEJL",
+                                    "HKBHMGGLBHI": [
+                                        1044
+                                    ]
+                                }
+                            ],
+                            "successActions": [
+                                {
+                                    "$type": "AttachModifier",
+                                    "modifierName": "VFX_L"
+                                }
+                            ]
+                        },
+                        {
+                            "$type": "Predicated",
+                            "targetPredicates": [
+                                {
+                                    "$type": "KHPPMJAPEJL",
+                                    "HKBHMGGLBHI": [
+                                        1042
+                                    ]
+                                }
+                            ],
+                            "successActions": [
+                                {
+                                    "$type": "AttachModifier",
+                                    "modifierName": "VFX_L"
+                                }
+                            ]
+                        },
+                        {
+                            "$type": "Predicated",
+                            "targetPredicates": [
+                                {
+                                    "$type": "KHPPMJAPEJL",
+                                    "HKBHMGGLBHI": [
+                                        1043
+                                    ]
+                                }
+                            ],
+                            "successActions": [
+                                {
+                                    "$type": "AttachModifier",
+                                    "modifierName": "VFX_R"
+                                }
+                            ]
+                        },
+                        {
+                            "$type": "Predicated",
+                            "targetPredicates": [
+                                {
+                                    "$type": "KHPPMJAPEJL",
+                                    "HKBHMGGLBHI": [
+                                        1041
+                                    ]
+                                }
+                            ],
+                            "successActions": [
+                                {
+                                    "$type": "AttachModifier",
+                                    "modifierName": "VFX_R"
+                                }
+                            ]
+                        },
+                        {
+                            "$type": "Predicated",
+                            "targetPredicates": [
+                                {
+                                    "$type": "KHPPMJAPEJL",
+                                    "HKBHMGGLBHI": [
+                                        1045
+                                    ]
+                                }
+                            ],
+                            "successActions": [
+                                {
+                                    "$type": "AttachModifier",
+                                    "modifierName": "VFX_R"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "VFX_L": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "AttachEffect",
+                            "LHHFHDEJOHC": "Eff_Avatar_Diving_Gadget_Loop",
+                            "PCLAEGHPNHE": -1.0
+                        }
+                    ]
+                },
+                "VFX_R": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "AttachEffect",
+                            "LHHFHDEJOHC": "Eff_Avatar_Diving_Gadget_Loop_2",
+                            "PCLAEGHPNHE": -1.0
+                        }
+                    ]
+                },
+                "JellyFish_Short": {
+                    "HABNNJHCOCD": "Multiple",
+                    "modifierName": "",
+                    "FAFCPJJAIGK": 0.5,
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "SetGlobalValue",
+                            "KMGAOOHMCPK": "Team",
+                            "value": 1.0,
+                            "NGGCNKPAODB": "_ABILITY_WhiteBox_Dive_Team_Trigger",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        },
+                        {
+                            "$type": "SetGlobalValue",
+                            "musicSubStates": {
+                                "$type": "GNHODBHJPLP",
+                                "HADIOIIIHBI": 40034107
+                            },
+                            "BKFHNENKMAL": true,
+                            "value": 1.0,
+                            "NGGCNKPAODB": "_ABILITY_Jellyfish_Bomb_Kill_Mark",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        },
+                        {
+                            "$type": "SetGlobalValue",
+                            "musicSubStates": {
+                                "$type": "GNHODBHJPLP",
+                                "HADIOIIIHBI": 40034108
+                            },
+                            "BKFHNENKMAL": true,
+                            "value": 1.0,
+                            "NGGCNKPAODB": "_ABILITY_Jellyfish_Bomb_Kill_Mark",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        },
+                        {
+                            "$type": "CreateGadget",
+                            "BKFHNENKMAL": true,
+                            "CCNCMOGOFAG": {
+                                "$type": "DELDMCFKBBL",
+                                "offset": {
+                                    "NEEHMANEJKM": 0.0,
+                                    "KKKLBADAPPB": 0.75,
+                                    "GENNNOANKOO": 1.100000023841858
+                                },
+                                "FPDJOHEHNDD": true
+                            },
+                            "BLPPFMNOOIO": 40034107
+                        }
+                    ]
+                },
+                "JellyFish_Long": {
+                    "HABNNJHCOCD": "Unique",
+                    "modifierName": "",
+                    "FAFCPJJAIGK": 0.5,
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "RemoveUniqueModifier",
+                            "BKFHNENKMAL": true,
+                            "modifierName": "UNIQUE_Dive_JellyfishBomb_SwitchToTrigger"
+                        },
+                        {
+                            "$type": "ApplyModifier",
+                            "BKFHNENKMAL": true,
+                            "modifierName": "UNIQUE_Dive_JellyfishBomb_SwitchToTrigger"
+                        },
+                        {
+                            "$type": "ApplyModifier",
+                            "modifierName": "VFX_Trigger"
+                        },
+                        {
+                            "$type": "SetGlobalValue",
+                            "musicSubStates": {
+                                "$type": "GNHODBHJPLP",
+                                "HADIOIIIHBI": 40034107
+                            },
+                            "BKFHNENKMAL": true,
+                            "value": 1.0,
+                            "NGGCNKPAODB": "_ABILITY_Jellyfish_Bomb_Kill_Mark",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        },
+                        {
+                            "$type": "SetGlobalValue",
+                            "musicSubStates": {
+                                "$type": "GNHODBHJPLP",
+                                "HADIOIIIHBI": 40034108
+                            },
+                            "BKFHNENKMAL": true,
+                            "value": 1.0,
+                            "NGGCNKPAODB": "_ABILITY_Jellyfish_Bomb_Kill_Mark",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        },
+                        {
+                            "$type": "TriggerBullet",
+                            "PMOEIMCLPBE": 40034108,
+                            "CCNCMOGOFAG": {
+                                "$type": "IADBHDLMGJB",
+                                "offset": {
+                                    "NEEHMANEJKM": 0.0,
+                                    "KKKLBADAPPB": -0.30000001192092896,
+                                    "GENNNOANKOO": 0.800000011920929
+                                },
+                                "FNHBOFDBNNK": {
+                                    "$type": "KLGGPHDOCPJ",
+                                    "MLBICJBMCNL": {
+                                        "NEEHMANEJKM": 0.0,
+                                        "KKKLBADAPPB": 0.0,
+                                        "GENNNOANKOO": 0.0
+                                    },
+                                    "MDPMJPIOGLA": "FocusAnchor",
+                                    "JPEOGPAHPDM": "Self"
+                                },
+                                "FPDJOHEHNDD": true,
+                                "MDPMJPIOGLA": "FocusAnchor",
+                                "JPEOGPAHPDM": "Self"
+                            }
+                        },
+                        {
+                            "$type": "SetAnimatorTrigger",
+                            "BKFHNENKMAL": true,
+                            "POPKLBPMAJN": "EndDiveCastTrigger"
+                        }
+                    ]
+                },
+                "UNIQUE_Dive_JellyfishBomb_SwitchToTrigger": {
+                    "modifierName": "",
+                    "defaultDistanceBetweenAvatarAndCamera": true,
+                    "FAFCPJJAIGK": 60.0,
+                    "bonusCritical": 100.0,
+                    "modifierMixins": [
+                        {
+                            "$type": "SwitchSkillIDMixin",
+                            "priority": "PlaymodeExtra1",
+                            "BKCGPKCJEFD": 1,
+                            "GCOFBECOEFF": 20061,
+                            "BPKNJDPHKKD": true
+                        }
+                    ],
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "AvatarSkillStart",
+                            "GCOFBECOEFF": 20061,
+                            "JDAPHJGNLIH": 0.029999999329447746,
+                            "NBPCGNFDPHJ": 1.0
+                        }
+                    ],
+                    "NFKOGKMAIIE": [
+                        {
+                            "$type": "Predicated",
+                            "KMGAOOHMCPK": "CurLocalAvatar",
+                            "targetPredicates": [
+                                {
+                                    "$type": "OMPKIEPKGPF",
+                                    "NGGCNKPAODB": "_ABILITY_Diving_SkillCDReduction",
+                                    "value": 1.0
+                                }
+                            ],
+                            "successActions": [
+                                {
+                                    "$type": "AvatarShareCDSkillStart",
+                                    "GCOFBECOEFF": 20060,
+                                    "DMGPMFKKGMJ": 1
+                                }
+                            ],
+                            "failActions": [
+                                {
+                                    "$type": "AvatarShareCDSkillStart",
+                                    "GCOFBECOEFF": 20060
+                                }
+                            ]
+                        },
+                        {
+                            "$type": "SetGlobalValue",
+                            "KMGAOOHMCPK": "Team",
+                            "value": 1.0,
+                            "NGGCNKPAODB": "_ABILITY_WhiteBox_Dive_Team_Trigger",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        },
+                        {
+                            "$type": "SetGlobalValue",
+                            "musicSubStates": {
+                                "$type": "GNHODBHJPLP",
+                                "HADIOIIIHBI": 40034107
+                            },
+                            "BKFHNENKMAL": true,
+                            "value": 1.0,
+                            "NGGCNKPAODB": "_ABILITY_Jellyfish_Bomb_Kill_Mark",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        },
+                        {
+                            "$type": "SetGlobalValue",
+                            "musicSubStates": {
+                                "$type": "GNHODBHJPLP",
+                                "HADIOIIIHBI": 40034108
+                            },
+                            "BKFHNENKMAL": true,
+                            "value": 1.0,
+                            "NGGCNKPAODB": "_ABILITY_Jellyfish_Bomb_Kill_Mark",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        }
+                    ]
+                }
+            },
+            "NLFIGALMIPD": [
+                {
+                    "$type": "AttachModifier",
+                    "modifierName": "Avatar_Dive_JellyfishBomb_AddSkillInfo"
+                },
+                {
+                    "$type": "AttachModifier",
+                    "modifierName": "Avatar_Dive_JellyfishBomb_Hold_Handler"
+                }
+            ],
+            "NFKOGKMAIIE": [
+                {
+                    "$type": "RemoveUniqueModifier",
+                    "modifierName": "UNIQUE_Dive_JellyfishBomb_SwitchToTrigger"
+                }
+            ],
+            "EGGOIPOIGJA": true,
+            "PHJPADHBLIJ": true
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "Ability_Avatar_Dive_JellyfishBomb_Trigger",
+            "onAbilityStart": [
+                {
+                    "$type": "ForceUseSkillSuccess",
+                    "GCOFBECOEFF": 20061,
+                    "type": "Skill"
+                },
+                {
+                    "$type": "RemoveUniqueModifier",
+                    "BKFHNENKMAL": true,
+                    "modifierName": "UNIQUE_Dive_JellyfishBomb_SwitchToTrigger"
+                }
+            ],
+            "EGGOIPOIGJA": true,
+            "PHJPADHBLIJ": true
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "Ability_Absorb_JellyfishBomb_Short",
+            "abilitySpecials": {
+                "DamageSystemValue": 0.0,
+                "DamageRatio": 0.0
+            },
+            "modifiers": {
+                "JellyfishBomb": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "ANPDJHOGAFE": 0.5,
+                    "modifierMixins": [
+                        {
+                            "$type": "AttachModifierToGlobalValueMixin",
+                            "globalValueKey": "_ABILITY_Jellyfish_Bomb_Kill_Mark",
+                            "valueSteps": [
+                                0.5,
+                                1.5
+                            ],
+                            "modifierNameSteps": [
+                                "ExplodeDelay"
+                            ]
+                        }
+                    ],
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "AttachEffect",
+                            "LHHFHDEJOHC": "Eff_Avatar_Diving_Jellyfish_Boom_Short",
+                            "PCLAEGHPNHE": -1.0
+                        }
+                    ],
+                    "MDPGEKAIFIM": [
+                        {
+                            "$type": "SetGlobalPos",
+                            "NGGCNKPAODB": "_ABILITY_JellyFishBomb_Owner_Pos",
+                            "CCNCMOGOFAG": {
+                                "$type": "DHJCDDEIDEP",
+                                "FPDJOHEHNDD": true
+                            }
+                        },
+                        {
+                            "$type": "RemoveUniqueModifier",
+                            "KMGAOOHMCPK": "OriginOwner",
+                            "FLEEHCIOPKA": [
+                                {
+                                    "$type": "KGBLHCJNCGM",
+                                    "KMGAOOHMCPK": "Self",
+                                    "GAGKBNPOCAC": "XYZ",
+                                    "value": 65.0,
+                                    "POLCJDPOKCF": "_ABILITY_JellyFishBomb_Owner_Pos"
+                                }
+                            ],
+                            "modifierName": "UNIQUE_Dive_JellyfishBomb_SwitchToTrigger"
+                        },
+                        {
+                            "$type": "SetGlobalValue",
+                            "FLEEHCIOPKA": [
+                                {
+                                    "$type": "KGBLHCJNCGM",
+                                    "KMGAOOHMCPK": "Self",
+                                    "GAGKBNPOCAC": "XYZ",
+                                    "value": 65.0,
+                                    "POLCJDPOKCF": "_ABILITY_JellyFishBomb_Owner_Pos"
+                                }
+                            ],
+                            "value": 1.0,
+                            "NGGCNKPAODB": "_ABILITY_Jellyfish_Bomb_Kill_Mark",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        }
+                    ],
+                    "LFBJFECLNGK": [
+                        {
+                            "$type": "FireEffect",
+                            "LHHFHDEJOHC": "Eff_Avatar_Diving_Jellyfish_Boom_Short_Explode",
+                            "PCLAEGHPNHE": -1.0
+                        },
+                        {
+                            "$type": "SetSystemValueToOverrideMap",
+                            "BKFHNENKMAL": true,
+                            "NGGCNKPAODB": "DamageSystemValue",
+                            "type": "ElementLevelCo"
+                        },
+                        {
+                            "$type": "TriggerAttackEvent",
+                            "FMDHJHAACGM": {
+                                "LOPCJCIFFBE": {
+                                    "$type": "IHKJIHKGECH",
+                                    "triggerType": "TriggerNoRepeat",
+                                    "CCNCMOGOFAG": {
+                                        "$type": "DELDMCFKBBL",
+                                        "FPDJOHEHNDD": true
+                                    },
+                                    "IIKJHECAHJG": true,
+                                    "NGCDDOGNMOE": 3.0,
+                                    "GGEJLLOCJDH": 4.0
+                                },
+                                "OIAMOBFMPAB": {
+                                    "KNOKCFHALLI": "JellyFish_Bomb",
+                                    "HOKPLNACNKG": "",
+                                    "ILLFBEHPCJA": "default",
+                                    "BAPFFKCLDPC": {
+                                        "OLLFABADCKH": 0.0,
+                                        "PDHAKJCMPHB": 0.0,
+                                        "bonusCritical": 0.0,
+                                        "BLOMOIHOBBI": true,
+                                        "GAOIEGMFFDJ": "Blunt",
+                                        "FFIIMACIKEA": 90.0,
+                                        "PGDDACECJLG": [
+                                            "DamageRatio",
+                                            "DamageSystemValue",
+                                            "MUL"
+                                        ],
+                                        "OBNJIGIHGEO": true,
+                                        "AEOLDMAMNLM": 0.0
+                                    },
+                                    "OCHEEDIDOHI": {
+                                        "AIDMNBLLAIJ": "",
+                                        "OEGAJNNFFPO": "LV5",
+                                        "EPGLCHLENNG": 0.05000000074505806
+                                    },
+                                    "FAAOHGPLAFO": "OriginOwner"
+                                }
+                            },
+                            "PFBJAFHFBDE": "Enemy"
+                        },
+                        {
+                            "$type": "RemoveModifier",
+                            "modifierName": "JellyfishBomb"
+                        }
+                    ]
+                },
+                "JellyfishBomb_Gadget_Checker": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "AMGMCDEAKDN": [
+                        {
+                            "$type": "Predicated",
+                            "KMGAOOHMCPK": "Other",
+                            "FLEEHCIOPKA": [
+                                {
+                                    "$type": "FAGBAHBLACH",
+                                    "MALHNOJHHDJ": [
+                                        "Gadget"
+                                    ]
+                                }
+                            ],
+                            "targetPredicates": [
+                                {
+                                    "$type": "OMPKIEPKGPF",
+                                    "NGGCNKPAODB": "_IS_InUnderseaBacDoor",
+                                    "value": 1.0
+                                },
+                                {
+                                    "$type": "BAAMNICLMHN",
+                                    "JCMFILJLNFH": "LesserOrEqual",
+                                    "value": 90.0
+                                },
+                                {
+                                    "$type": "AOBPABGGJHL",
+                                    "LBKHBAHAAIL": [
+                                        "JellyFish_Bomb"
+                                    ]
+                                }
+                            ],
+                            "successActions": [
+                                {
+                                    "$type": "ApplyModifier",
+                                    "KMGAOOHMCPK": "Other",
+                                    "modifierName": "JellyFish_Bomb_Special_Tag_On_Gadget"
+                                }
+                            ]
+                        },
+                        {
+                            "$type": "Predicated",
+                            "KMGAOOHMCPK": "Other",
+                            "FLEEHCIOPKA": [
+                                {
+                                    "$type": "FAGBAHBLACH",
+                                    "MALHNOJHHDJ": [
+                                        "Platform"
+                                    ]
+                                }
+                            ],
+                            "targetPredicates": [
+                                {
+                                    "$type": "OMPKIEPKGPF",
+                                    "NGGCNKPAODB": "_IS_InUnderseaBacRes",
+                                    "value": 1.0
+                                },
+                                {
+                                    "$type": "BAAMNICLMHN",
+                                    "JCMFILJLNFH": "LesserOrEqual",
+                                    "value": 75.0
+                                },
+                                {
+                                    "$type": "AOBPABGGJHL",
+                                    "LBKHBAHAAIL": [
+                                        "JellyFish_Bomb"
+                                    ]
+                                }
+                            ],
+                            "successActions": [
+                                {
+                                    "$type": "ApplyModifier",
+                                    "KMGAOOHMCPK": "Other",
+                                    "modifierName": "JellyFish_Bomb_Special_Tag_On_Gadget"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "ExplodeDelay": {
+                    "modifierName": "",
+                    "FAFCPJJAIGK": 0.20000000298023224,
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "SendEffectTrigger",
+                            "HDBIEOFMAOD": "Trigger",
+                            "PAOPLDJGAKA": "",
+                            "type": "Int",
+                            "KHMNAHOBJAE": 2,
+                            "LHHFHDEJOHC": "Eff_Avatar_Diving_Jellyfish_Boom_Short"
+                        }
+                    ],
+                    "NFKOGKMAIIE": [
+                        {
+                            "$type": "KillSelf"
+                        }
+                    ]
+                },
+                "JellyFish_Bomb_Special_Tag_On_Gadget": {
+                    "HABNNJHCOCD": "Multiple",
+                    "modifierName": "",
+                    "FAFCPJJAIGK": 1.0,
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "DamageByAttackValue",
+                            "OIAMOBFMPAB": {
+                                "KNOKCFHALLI": "JellyFish_Bomb_Special",
+                                "HOKPLNACNKG": "",
+                                "ILLFBEHPCJA": "default",
+                                "BAPFFKCLDPC": {
+                                    "OLLFABADCKH": 0.0,
+                                    "PDHAKJCMPHB": 0.0,
+                                    "elementType": "Water",
+                                    "bonusCritical": 25.0,
+                                    "GAOIEGMFFDJ": "Slash",
+                                    "FFIIMACIKEA": 150.0,
+                                    "ELCPFOMENGK": "Melee",
+                                    "PGDDACECJLG": 0.0,
+                                    "AEOLDMAMNLM": 0.0
+                                },
+                                "OCHEEDIDOHI": {
+                                    "AIDMNBLLAIJ": "none",
+                                    "OEGAJNNFFPO": "LV0",
+                                    "EPGLCHLENNG": 0.009999999776482582,
+                                    "BPPOFFGJPGL": true
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            "NLFIGALMIPD": [
+                {
+                    "$type": "SetGlobalValue",
+                    "value": 0.0,
+                    "NGGCNKPAODB": "_ABILITY_Jellyfish_Bomb_Kill_Mark",
+                    "LBHGJKHHAKP": 0.0,
+                    "EMGNPOKHMNN": 0.0
+                },
+                {
+                    "$type": "AttachModifier",
+                    "modifierName": "JellyfishBomb"
+                },
+                {
+                    "$type": "AttachModifier",
+                    "modifierName": "JellyfishBomb_Gadget_Checker"
+                },
+                {
+                    "$type": "SetSystemValueToOverrideMap",
+                    "BKFHNENKMAL": true,
+                    "NGGCNKPAODB": "DamageSystemValue",
+                    "type": "ElementLevelCo"
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "Ability_Absorb_JellyfishBomb_Hold",
+            "abilitySpecials": {
+                "DamageSystemValue": 0.0,
+                "DamageRatio": 0.0
+            },
+            "modifiers": {
+                "JellyfishBomb": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "ANPDJHOGAFE": 0.5,
+                    "modifierMixins": [
+                        {
+                            "$type": "AttachModifierToGlobalValueMixin",
+                            "globalValueKey": "_ABILITY_Jellyfish_Bomb_Kill_Mark",
+                            "valueSteps": [
+                                0.5,
+                                1.5
+                            ],
+                            "modifierNameSteps": [
+                                "ExplodeDelay"
+                            ]
+                        }
+                    ],
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "AttachEffect",
+                            "LHHFHDEJOHC": "Eff_Avatar_Diving_Jellyfish_Boom_Hold",
+                            "CCNCMOGOFAG": {
+                                "$type": "IADBHDLMGJB",
+                                "FNHBOFDBNNK": {
+                                    "$type": "IMMAAKKPKIC",
+                                    "NHBEMFBAMNP": "_ABILITY_JellyfishBomb_Hold_Initial_Dir"
+                                },
+                                "FPDJOHEHNDD": true,
+                                "MDPMJPIOGLA": "RootNode"
+                            },
+                            "PCLAEGHPNHE": -1.0
+                        }
+                    ],
+                    "MDPGEKAIFIM": [
+                        {
+                            "$type": "SetGlobalPos",
+                            "NGGCNKPAODB": "_ABILITY_JellyFishBomb_Owner_Pos",
+                            "CCNCMOGOFAG": {
+                                "$type": "DHJCDDEIDEP",
+                                "FPDJOHEHNDD": true
+                            }
+                        },
+                        {
+                            "$type": "RemoveUniqueModifier",
+                            "KMGAOOHMCPK": "OriginOwner",
+                            "FLEEHCIOPKA": [
+                                {
+                                    "$type": "KGBLHCJNCGM",
+                                    "KMGAOOHMCPK": "Self",
+                                    "GAGKBNPOCAC": "XYZ",
+                                    "value": 65.0,
+                                    "POLCJDPOKCF": "_ABILITY_JellyFishBomb_Owner_Pos"
+                                }
+                            ],
+                            "modifierName": "UNIQUE_Dive_JellyfishBomb_SwitchToTrigger"
+                        },
+                        {
+                            "$type": "SetGlobalValue",
+                            "FLEEHCIOPKA": [
+                                {
+                                    "$type": "KGBLHCJNCGM",
+                                    "KMGAOOHMCPK": "Self",
+                                    "GAGKBNPOCAC": "XYZ",
+                                    "value": 65.0,
+                                    "POLCJDPOKCF": "_ABILITY_JellyFishBomb_Owner_Pos"
+                                }
+                            ],
+                            "value": 1.0,
+                            "NGGCNKPAODB": "_ABILITY_Jellyfish_Bomb_Kill_Mark",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        },
+                        {
+                            "$type": "ApplyModifier",
+                            "FLEEHCIOPKA": [
+                                {
+                                    "$type": "KGBLHCJNCGM",
+                                    "KMGAOOHMCPK": "Self",
+                                    "GAGKBNPOCAC": "XYZ",
+                                    "value": 40.0,
+                                    "POLCJDPOKCF": "_ABILITY_JellyFishBomb_Owner_Pos"
+                                }
+                            ],
+                            "modifierName": "Hit_Scene_Stop"
+                        }
+                    ],
+                    "LFBJFECLNGK": [
+                        {
+                            "$type": "FireEffect",
+                            "LHHFHDEJOHC": "Eff_Avatar_Diving_Jellyfish_Boom_Hold_Explode",
+                            "PCLAEGHPNHE": -1.0
+                        },
+                        {
+                            "$type": "SetSystemValueToOverrideMap",
+                            "BKFHNENKMAL": true,
+                            "NGGCNKPAODB": "DamageSystemValue",
+                            "type": "ElementLevelCo"
+                        },
+                        {
+                            "$type": "TriggerAttackEvent",
+                            "FMDHJHAACGM": {
+                                "LOPCJCIFFBE": {
+                                    "$type": "IHKJIHKGECH",
+                                    "triggerType": "TriggerNoRepeat",
+                                    "CCNCMOGOFAG": {
+                                        "$type": "DELDMCFKBBL",
+                                        "FPDJOHEHNDD": true
+                                    },
+                                    "IIKJHECAHJG": true,
+                                    "NGCDDOGNMOE": 8.0,
+                                    "GGEJLLOCJDH": 10.0
+                                },
+                                "OIAMOBFMPAB": {
+                                    "KNOKCFHALLI": "JellyFish_Bomb",
+                                    "HOKPLNACNKG": "",
+                                    "ILLFBEHPCJA": "default",
+                                    "BAPFFKCLDPC": {
+                                        "OLLFABADCKH": 0.0,
+                                        "PDHAKJCMPHB": 0.0,
+                                        "bonusCritical": 0.0,
+                                        "BLOMOIHOBBI": true,
+                                        "GAOIEGMFFDJ": "Blunt",
+                                        "FFIIMACIKEA": 90.0,
+                                        "PGDDACECJLG": [
+                                            "DamageRatio",
+                                            "DamageSystemValue",
+                                            "MUL"
+                                        ],
+                                        "OBNJIGIHGEO": true,
+                                        "AEOLDMAMNLM": 0.0
+                                    },
+                                    "OCHEEDIDOHI": {
+                                        "AIDMNBLLAIJ": "None",
+                                        "OEGAJNNFFPO": "LV5",
+                                        "EPGLCHLENNG": 0.05000000074505806
+                                    },
+                                    "FAAOHGPLAFO": "OriginOwner"
+                                }
+                            },
+                            "PFBJAFHFBDE": "Enemy"
+                        },
+                        {
+                            "$type": "RemoveModifier",
+                            "modifierName": "JellyfishBomb"
+                        }
+                    ]
+                },
+                "ExplodeDelay": {
+                    "modifierName": "",
+                    "FAFCPJJAIGK": 0.20000000298023224,
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "SendEffectTrigger",
+                            "HDBIEOFMAOD": "Trigger",
+                            "PAOPLDJGAKA": "",
+                            "type": "Int",
+                            "KHMNAHOBJAE": 2,
+                            "LHHFHDEJOHC": "Eff_Avatar_Diving_Jellyfish_Boom_Hold"
+                        }
+                    ],
+                    "NFKOGKMAIIE": [
+                        {
+                            "$type": "KillSelf"
+                        }
+                    ]
+                },
+                "JellyfishBomb_Entity_Checker": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0
+                },
+                "JellyfishBomb_Gadget_Checker": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "AMGMCDEAKDN": [
+                        {
+                            "$type": "Predicated",
+                            "KMGAOOHMCPK": "Other",
+                            "FLEEHCIOPKA": [
+                                {
+                                    "$type": "FAGBAHBLACH",
+                                    "MALHNOJHHDJ": [
+                                        "Gadget"
+                                    ]
+                                }
+                            ],
+                            "targetPredicates": [
+                                {
+                                    "$type": "OMPKIEPKGPF",
+                                    "NGGCNKPAODB": "_IS_InUnderseaBacDoor",
+                                    "value": 1.0
+                                },
+                                {
+                                    "$type": "BAAMNICLMHN",
+                                    "JCMFILJLNFH": "LesserOrEqual",
+                                    "value": 90.0
+                                },
+                                {
+                                    "$type": "AOBPABGGJHL",
+                                    "LBKHBAHAAIL": [
+                                        "JellyFish_Bomb"
+                                    ]
+                                }
+                            ],
+                            "successActions": [
+                                {
+                                    "$type": "ApplyModifier",
+                                    "KMGAOOHMCPK": "Other",
+                                    "modifierName": "JellyFish_Bomb_Special_Tag_On_Gadget"
+                                }
+                            ]
+                        },
+                        {
+                            "$type": "Predicated",
+                            "KMGAOOHMCPK": "Other",
+                            "FLEEHCIOPKA": [
+                                {
+                                    "$type": "FAGBAHBLACH",
+                                    "MALHNOJHHDJ": [
+                                        "Platform"
+                                    ]
+                                }
+                            ],
+                            "targetPredicates": [
+                                {
+                                    "$type": "OMPKIEPKGPF",
+                                    "NGGCNKPAODB": "_IS_InUnderseaBacRes",
+                                    "value": 1.0
+                                },
+                                {
+                                    "$type": "BAAMNICLMHN",
+                                    "JCMFILJLNFH": "LesserOrEqual",
+                                    "value": 75.0
+                                },
+                                {
+                                    "$type": "AOBPABGGJHL",
+                                    "LBKHBAHAAIL": [
+                                        "JellyFish_Bomb"
+                                    ]
+                                }
+                            ],
+                            "successActions": [
+                                {
+                                    "$type": "ApplyModifier",
+                                    "KMGAOOHMCPK": "Other",
+                                    "modifierName": "JellyFish_Bomb_Special_Tag_On_Gadget"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "JellyFish_Bomb_Special_Tag_On_Gadget": {
+                    "HABNNJHCOCD": "Multiple",
+                    "modifierName": "",
+                    "FAFCPJJAIGK": 1.0,
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "DamageByAttackValue",
+                            "OIAMOBFMPAB": {
+                                "KNOKCFHALLI": "JellyFish_Bomb_Special",
+                                "HOKPLNACNKG": "",
+                                "ILLFBEHPCJA": "default",
+                                "BAPFFKCLDPC": {
+                                    "OLLFABADCKH": 0.0,
+                                    "PDHAKJCMPHB": 0.0,
+                                    "elementType": "Water",
+                                    "bonusCritical": 25.0,
+                                    "GAOIEGMFFDJ": "Slash",
+                                    "FFIIMACIKEA": 150.0,
+                                    "ELCPFOMENGK": "Melee",
+                                    "PGDDACECJLG": 0.0,
+                                    "AEOLDMAMNLM": 0.0
+                                },
+                                "OCHEEDIDOHI": {
+                                    "AIDMNBLLAIJ": "none",
+                                    "OEGAJNNFFPO": "LV0",
+                                    "EPGLCHLENNG": 0.009999999776482582,
+                                    "BPPOFFGJPGL": true
+                                }
+                            }
+                        }
+                    ]
+                },
+                "Hit_Scene_Stop": {
+                    "HABNNJHCOCD": "Unique",
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLPPKPOJEOA": {
+                        "Actor_BulletMoveSpeedRatio": -1.0
+                    },
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "SendEffectTrigger",
+                            "HDBIEOFMAOD": "Trigger",
+                            "PAOPLDJGAKA": "",
+                            "type": "Int",
+                            "KHMNAHOBJAE": 1,
+                            "LHHFHDEJOHC": "Eff_Avatar_Diving_Jellyfish_Boom_Hold"
+                        }
+                    ]
+                }
+            },
+            "NLFIGALMIPD": [
+                {
+                    "$type": "SetGlobalValue",
+                    "value": 0.0,
+                    "NGGCNKPAODB": "_ABILITY_Jellyfish_Bomb_Kill_Mark",
+                    "LBHGJKHHAKP": 0.0,
+                    "EMGNPOKHMNN": 0.0
+                },
+                {
+                    "$type": "SetGlobalDir",
+                    "NGGCNKPAODB": "_ABILITY_JellyfishBomb_Hold_Initial_Dir",
+                    "CCNCMOGOFAG": {
+                        "$type": "DHJCDDEIDEP",
+                        "FPDJOHEHNDD": true
+                    }
+                },
+                {
+                    "$type": "AttachModifier",
+                    "modifierName": "JellyfishBomb"
+                },
+                {
+                    "$type": "AttachModifier",
+                    "modifierName": "JellyfishBomb_Gadget_Checker"
+                },
+                {
+                    "$type": "SetSystemValueToOverrideMap",
+                    "BKFHNENKMAL": true,
+                    "NGGCNKPAODB": "DamageSystemValue",
+                    "type": "ElementLevelCo"
+                }
+            ],
+            "onAbilityStart": [
+                {
+                    "$type": "ApplyModifier",
+                    "modifierName": "Hit_Scene_Stop"
+                },
+                {
+                    "$type": "EnableBulletCollisionPluginTrigger"
+                }
+            ]
+        }
+    }
+]

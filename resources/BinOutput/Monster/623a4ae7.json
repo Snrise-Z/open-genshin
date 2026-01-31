@@ -1,0 +1,1147 @@
+{
+    "common": {
+        "effectAttachShape": {
+            "$type": "ConfigEffectAttachSkinnedMesh",
+            "mesh": "EffectMesh"
+        },
+        "mass": 1000000000.0,
+        "ECKMFAADIFN": 0.0,
+        "scale": 1.2999999523162842,
+        "HPIJDAKGABA": 100000.0,
+        "BKPPECPBMBF": true,
+        "BCMIJKHBFCH": true
+    },
+    "PMJIKOJNNBO": {
+        "MPDPMNBOOEB": "RootNode",
+        "BBMFBOMLHHG": "",
+        "JMDOINIPPJL": "RootNode",
+        "ACEEJPFDCPP": "LockPoint01",
+        "EPDNNFIJHMD": [
+            "LockPoint01",
+            "LockPoint02",
+            "LockPoint03",
+            "LockPoint04",
+            "LockPoint05",
+            "LockPoint06",
+            "LockPoint07",
+            "LockPoint08",
+            "LockPoint09",
+            "LockPoint10",
+            "LockPoint11",
+            "LockPoint12",
+            "LockPoint13",
+            "LockPoint14"
+        ],
+        "NEGLBHADBFE": [
+            "LockPoint01",
+            "LockPoint02",
+            "LockPoint03",
+            "LockPoint04",
+            "LockPoint05",
+            "LockPoint06",
+            "LockPoint07",
+            "LockPoint08",
+            "LockPoint09",
+            "LockPoint10",
+            "LockPoint11",
+            "LockPoint12",
+            "LockPoint13",
+            "LockPoint14"
+        ],
+        "NKNGALBLMJJ": true
+    },
+    "model": {
+        "bornEffect": "",
+        "attachEffect": "",
+        "canBakeMesh": false
+    },
+    "MEMHBNEJBCL": {
+        "CMDNEPBHICB": {
+            "ADNPIILDCJH": 20.0
+        }
+    },
+    "BNICEDEJBIE": {
+        "ALNLOJKEBIL": [
+            "SGV_MONSTER_NADA",
+            "SGV_DungeonDifficulty"
+        ],
+        "DGLOPGOFMCC": {
+            "SGV_MONSTER_NADA": 0.0,
+            "SGV_DungeonDifficulty": 0.0
+        }
+    },
+    "combat": {
+        "property": {
+            "endureType": "Monster_Boss_Other",
+            "weight": 20000.0
+        },
+        "beHit": {
+            "hitBloodEffect": ""
+        },
+        "combatLock": {
+            "lockShape": "CircleLockEnemy",
+            "lockType": "Boss_Lv5"
+        },
+        "die": {
+            "hasAnimatorDie": true,
+            "dieEndTime": 0.10000000149011612,
+            "dieForceDisappearTime": 4.0,
+            "dieDisappearEffect": "",
+            "LEDBOLGDENF": true,
+            "IEAKKMEDNDE": true,
+            "AAEANOPIAAL": true,
+            "IBBHGBHIHCI": true,
+            "BKIBMIAJOHP": true,
+            "MOFPBPPGPCL": true
+        }
+    },
+    "abilities": [
+        {
+            "abilityID": "",
+            "abilityName": "Monster_Nada_Stage01_Controller",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "",
+            "abilityName": "Monster_Nada_Stage01_WeakState",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "",
+            "abilityName": "Monster_Nada_HandLightNormal",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "",
+            "abilityName": "Monster_Nada_HandLightElectric",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "",
+            "abilityName": "Monster_Nada_HandLightWind",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "",
+            "abilityName": "Monster_Nada_HandLightWater",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "",
+            "abilityName": "Monster_Nada_HandLightIce",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "",
+            "abilityName": "Monster_Nada_HandLightFire",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "",
+            "abilityName": "Monster_Nada_Stage01_Alert",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "",
+            "abilityName": "Monster_Nada_SlamAtkL_Attack",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "",
+            "abilityName": "Monster_Nada_SlamAtkR_Attack",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "",
+            "abilityName": "Monster_Nada_SwapAtkL",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "",
+            "abilityName": "Monster_Nada_SwapAtkR",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "",
+            "abilityName": "Monster_Nada_EnergySprayL_SprayAttack",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "",
+            "abilityName": "Monster_Nada_EnergySprayR_SprayAttack",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "",
+            "abilityName": "Monster_Nada_EnergySprayL_Slam",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "",
+            "abilityName": "Monster_Nada_EnergySprayR_Slam",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "",
+            "abilityName": "Monster_Nada_LaserArray",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "",
+            "abilityName": "Monster_Nada_EnergyFire",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "",
+            "abilityName": "Monster_Nada_EnergySpire",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "",
+            "abilityName": "Monster_Nada_CoreExplode",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "",
+            "abilityName": "Monster_Nada_Stage01_WeakAtk",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "",
+            "abilityName": "Monster_Nada_Circle",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "",
+            "abilityName": "Monster_Nada_CreateEnergyCube",
+            "abilityOverride": ""
+        }
+    ],
+    "stateLayers": {
+        "defaultLayer": {
+            "$type": "ConfigNormalStateLayer",
+            "ACOCIAFGIAD": "",
+            "stateIDs": {
+                "Born": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Born": []
+                    },
+                    "resetAnimatorTriggerOnExit": [
+                        "DoSkill"
+                    ]
+                },
+                "NormalIdle": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Standby_Free": [],
+                        "StandbyM": []
+                    },
+                    "canDoSkill": true,
+                    "canSyncMove": true,
+                    "AJBLILDCLBO": [
+                        "HandNormal"
+                    ],
+                    "resetAnimatorTriggerOnExit": [
+                        "DoSkill"
+                    ]
+                },
+                "Die": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Die": [
+                            "Monster_Nada_Stage01_Die",
+                            "Audio_Monster_Nada_Stage_Die"
+                        ]
+                    }
+                },
+                "Alert": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Alert": [
+                            "Audio_Monster_Nada_Alert"
+                        ]
+                    },
+                    "resetAnimatorTriggerOnExit": [
+                        "DoSkill"
+                    ]
+                },
+                "Show01": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Show01": []
+                    },
+                    "resetAnimatorTriggerOnExit": [
+                        "DoSkill"
+                    ]
+                },
+                "AlertASM": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "AlertASM": [
+                            "Audio_Monster_Nada_Alert_ASM"
+                        ]
+                    },
+                    "resetAnimatorTriggerOnExit": [
+                        "DoSkill"
+                    ]
+                },
+                "SlamAtkL": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "SlamAtkLBS": [
+                            "Monster_Nada_SlamAtkLBS",
+                            "Audio_Monster_Nada_SlamAtkL_BS"
+                        ],
+                        "SlamAtkL": [
+                            "Monster_Nada_SlamAtkL",
+                            "Audio_Monster_Nada_SlamAtkL"
+                        ],
+                        "SlamAtkLASM": [
+                            "Audio_Monster_Nada_SlamAtkL_ASM"
+                        ]
+                    },
+                    "AJBLILDCLBO": [
+                        "HandFire"
+                    ],
+                    "resetAnimatorTriggerOnExit": [
+                        "DoSkill"
+                    ]
+                },
+                "SlamAtkR": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "SlamAtkRBS": [
+                            "Monster_Nada_SlamAtkRBS",
+                            "Audio_Monster_Nada_SlamAtkL_BS"
+                        ],
+                        "SlamAtkR": [
+                            "Monster_Nada_SlamAtkR",
+                            "Audio_Monster_Nada_SlamAtkL"
+                        ],
+                        "SlamAtkRASM": [
+                            "Audio_Monster_Nada_SlamAtkL_ASM"
+                        ]
+                    },
+                    "AJBLILDCLBO": [
+                        "HandIce"
+                    ],
+                    "resetAnimatorTriggerOnExit": [
+                        "DoSkill"
+                    ]
+                },
+                "SwapAtkL": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "SwapAtkL": [
+                            "Monster_Nada_SwapAtkL",
+                            "Audio_Monster_Nada_SwapAtkR"
+                        ],
+                        "SwapAtkLASM": [
+                            "Audio_Monster_Nada_SwapAtkR_ASM"
+                        ]
+                    },
+                    "AJBLILDCLBO": [
+                        "HandFire"
+                    ],
+                    "resetAnimatorTriggerOnExit": [
+                        "DoSkill"
+                    ]
+                },
+                "SwapAtkR": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "SwapAtkR": [
+                            "Monster_Nada_SwapAtkR",
+                            "Audio_Monster_Nada_SwapAtkR"
+                        ],
+                        "SwapAtkRASM": [
+                            "Audio_Monster_Nada_SwapAtkR_ASM"
+                        ]
+                    },
+                    "AJBLILDCLBO": [
+                        "HandIce"
+                    ],
+                    "resetAnimatorTriggerOnExit": [
+                        "DoSkill"
+                    ]
+                },
+                "EnergySprayL": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "EnergySprayLBS": [
+                            "Monster_Nada_EnergySprayLBS",
+                            "Audio_Monster_Nada_EnergySpray_BS"
+                        ],
+                        "EnergySprayL": [
+                            "Monster_Nada_EnergySprayL",
+                            "Audio_Monster_Nada_EnergySpray"
+                        ],
+                        "EnergySprayLASM": [
+                            "Audio_Monster_Nada_EnergySpray_ASM"
+                        ]
+                    },
+                    "AJBLILDCLBO": [
+                        "HandFire"
+                    ],
+                    "resetAnimatorTriggerOnExit": [
+                        "DoSkill"
+                    ]
+                },
+                "EnergySprayR": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "EnergySprayRBS": [
+                            "Monster_Nada_EnergySprayRBS",
+                            "Audio_Monster_Nada_EnergySpray_BS"
+                        ],
+                        "EnergySprayR": [
+                            "Monster_Nada_EnergySprayR",
+                            "Audio_Monster_Nada_EnergySpray"
+                        ],
+                        "EnergySprayRASM": [
+                            "Audio_Monster_Nada_EnergySpray_ASM"
+                        ]
+                    },
+                    "AJBLILDCLBO": [
+                        "HandIce"
+                    ],
+                    "resetAnimatorTriggerOnExit": [
+                        "DoSkill"
+                    ]
+                },
+                "EnergySpire": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "EnergySpireBS": [
+                            "Audio_Monster_Nada_EnergySpire_BS"
+                        ],
+                        "EnergySpire": [
+                            "Monster_Nada_EnergySpire",
+                            "Audio_Monster_Nada_EnergySpire"
+                        ],
+                        "EnergySpireASM": [
+                            "Audio_Monster_Nada_EnergySpire_ASM"
+                        ]
+                    },
+                    "AJBLILDCLBO": [
+                        "HandWind"
+                    ],
+                    "resetAnimatorTriggerOnExit": [
+                        "DoSkill"
+                    ]
+                },
+                "EnergyFire": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "EnergyFireBS": [
+                            "Monster_Nada_EnergyFireBS",
+                            "Audio_Monster_Nada_EnergyFire_BS"
+                        ],
+                        "EnergyFireAS": [
+                            "Monster_Nada_EnergyFire",
+                            "Audio_Monster_Nada_EnergyFire_AS"
+                        ],
+                        "EnergyFireASM": [
+                            "Audio_Monster_Nada_EnergyFire_ASM"
+                        ]
+                    },
+                    "AJBLILDCLBO": [
+                        "HandElectric"
+                    ],
+                    "resetAnimatorTriggerOnExit": [
+                        "DoSkill"
+                    ]
+                },
+                "CoreExplode": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "CoreExplodeBS": [
+                            "Monster_Nada_CoreExplodeBS",
+                            "Audio_Monster_Nada_CoreExplode_BS"
+                        ],
+                        "CoreExplode": [
+                            "Monster_Nada_CoreExplode",
+                            "Audio_Monster_Nada_CoreExplode"
+                        ],
+                        "CoreExplodeASM": [
+                            "Audio_Monster_Nada_CoreExplode_ASM"
+                        ]
+                    },
+                    "AJBLILDCLBO": [
+                        "HandElectric"
+                    ],
+                    "resetAnimatorTriggerOnExit": [
+                        "DoSkill"
+                    ]
+                },
+                "LaserArray": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "LaserArrayBS": [
+                            "Audio_Monster_Nada_LaserArray_BS"
+                        ],
+                        "LaserArray": [
+                            "Monster_Nada_LaserArray",
+                            "Audio_Monster_Nada_LaserArray"
+                        ],
+                        "LaserArrayASM": []
+                    },
+                    "AJBLILDCLBO": [
+                        "HandElectric"
+                    ],
+                    "resetAnimatorTriggerOnExit": [
+                        "DoSkill"
+                    ]
+                },
+                "WeakStateL": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "WeakStateLBS": [
+                            "Monster_Nada_WeakAtkL_BS",
+                            "Audio_Monster_Nada_WeakStateL_BS"
+                        ],
+                        "WeakStateLLoop": [],
+                        "WeakStateLAS": [
+                            "Monster_Nada_WeakAtkAS",
+                            "Audio_Monster_Nada_WeakStateL_AS"
+                        ],
+                        "WeakStateLASM": [
+                            "Audio_Monster_Nada_WeakStateL_ASM"
+                        ]
+                    },
+                    "AJBLILDCLBO": [
+                        "WeakStateStart"
+                    ],
+                    "resetAnimatorTriggerOnExit": [
+                        "DoSkill",
+                        "WeakStateEnd"
+                    ]
+                },
+                "WeakStateR": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "WeakStateRBS": [
+                            "Monster_Nada_WeakAtkR_BS",
+                            "Audio_Monster_Nada_WeakStateL_BS"
+                        ],
+                        "WeakStateRLoop": [],
+                        "WeakStateRAS": [
+                            "Monster_Nada_WeakAtkAS",
+                            "Audio_Monster_Nada_WeakStateL_AS"
+                        ],
+                        "WeakStateRASM": [
+                            "Audio_Monster_Nada_WeakStateL_ASM"
+                        ]
+                    },
+                    "AJBLILDCLBO": [
+                        "WeakStateStart"
+                    ],
+                    "resetAnimatorTriggerOnExit": [
+                        "DoSkill",
+                        "WeakStateEnd"
+                    ]
+                },
+                "WeakCritL": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "WeakCritLBS": [
+                            "Monster_Nada_WeakCritBS",
+                            "Audio_Monster_Nada_WeakCritL_BS"
+                        ],
+                        "WeakCritLLoop": [],
+                        "WeakCritLAS": [
+                            "Monster_Nada_WeakCritAS",
+                            "Audio_Monster_Nada_WeakCritL_AS"
+                        ],
+                        "WeakCritLASM": [
+                            "Audio_Monster_Nada_WeakCritL_ASM"
+                        ]
+                    },
+                    "AJBLILDCLBO": [
+                        "WeakCritStart"
+                    ],
+                    "resetAnimatorTriggerOnExit": [
+                        "DoSkill",
+                        "WeakCritEnd"
+                    ]
+                },
+                "WeakCritR": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "WeakCritRBS": [
+                            "Monster_Nada_WeakCritBS",
+                            "Audio_Monster_Nada_WeakCritL_BS"
+                        ],
+                        "WeakCritRLoop": [],
+                        "WeakCritRAS": [
+                            "Monster_Nada_WeakCritAS",
+                            "Audio_Monster_Nada_WeakCritL_AS"
+                        ],
+                        "WeakCritRASM": [
+                            "Audio_Monster_Nada_WeakCritL_ASM"
+                        ]
+                    },
+                    "AJBLILDCLBO": [
+                        "WeakCritStart"
+                    ],
+                    "resetAnimatorTriggerOnExit": [
+                        "DoSkill",
+                        "WeakCritEnd"
+                    ]
+                },
+                "Return": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Return": []
+                    },
+                    "resetAnimatorTriggerOnExit": [
+                        "DoSkill"
+                    ]
+                }
+            }
+        }
+    },
+    "IEFGNHABHFH": {
+        "$type": "PAOBAEKGGBC",
+        "JBKMLLFNHAL": "BillboardAttach",
+        "NDKBHOOPGNA": {
+            "y": 1.0
+        },
+        "LOMMBJLKPHE": 1.0,
+        "MGDADGKCGHM": 200.0,
+        "KGHAGECNJPO": true,
+        "MGLEAPLEHFN": "Grand"
+    },
+    "initialPoses": {
+        "Default": {},
+        "Quest": {
+            "initialPoseID": 11,
+            "initialPoseParams": {
+                "boolParams": {
+                    "QuestFlag": "true"
+                }
+            }
+        }
+    },
+    "aibeta": {
+        "enable": true,
+        "moveSetting": {
+            "useNavMesh": false,
+            "navMeshAgentName": "Undead01"
+        },
+        "MLFDLABBFJK": {},
+        "sensing": {
+            "settings": {
+                "DefaultSetting": {
+                    "PHDIIPOBJGA": 24.799999237060547,
+                    "MELADMKNPHC": true,
+                    "hearAttractionRange": 0.0,
+                    "feelRange": 24.0
+                }
+            },
+            "templates": {
+                "DefaultTemplate": {
+                    "DefaultPoses": "DefaultSetting",
+                    "11": "DefaultSetting"
+                }
+            }
+        },
+        "threat": {
+            "clearThreatTargetDistance": 1000.0,
+            "PLCPHNHGFAC": 10.0,
+            "clearThreatTimerByDistance": 10.0,
+            "viewThreatGrow": 10.0,
+            "DKMKABAEKJK": 0.0,
+            "feelThreatGrow": 1000.0,
+            "IBGELAGCJFH": "Monster_TauntLevel_5",
+            "JGFOPCOIJOI": ""
+        },
+        "defendArea": {
+            "defendRange": 100.0
+        },
+        "ui": {
+            "hasDirectionIndicator": false,
+            "FLMOHOODJBA": ""
+        },
+        "profiling": {
+            "lodStrategy": "Best"
+        },
+        "CNAPABCFOAH": {
+            "LNFOCHIGPKF": true,
+            "MJGGALAFJOL": false
+        },
+        "IEMFHBCDJFP": [
+            {
+                "BIMBEJCAFLP": 1,
+                "DIAPGOFDGLC": 10.0
+            },
+            {
+                "BIMBEJCAFLP": 2,
+                "DIAPGOFDGLC": 15.0
+            },
+            {
+                "BIMBEJCAFLP": 3,
+                "DIAPGOFDGLC": 30.0
+            },
+            {
+                "BIMBEJCAFLP": 4,
+                "DIAPGOFDGLC": 20.0
+            },
+            {
+                "BIMBEJCAFLP": 5,
+                "DIAPGOFDGLC": 10.0
+            },
+            {
+                "BIMBEJCAFLP": 6,
+                "DIAPGOFDGLC": 10.0
+            }
+        ],
+        "HEJKJODINHK": {
+            "GMBKODANLGP": {
+                "1": [
+                    1,
+                    101,
+                    102,
+                    201,
+                    202,
+                    301,
+                    401,
+                    501,
+                    601
+                ],
+                "2": [
+                    11,
+                    101,
+                    102,
+                    201,
+                    202,
+                    301,
+                    401,
+                    501,
+                    601,
+                    901
+                ],
+                "3": [
+                    1,
+                    101,
+                    102,
+                    201,
+                    202,
+                    301,
+                    401,
+                    502,
+                    602
+                ]
+            }
+        },
+        "BNIENJNLAIJ": {
+            "1": {
+                "NOKKDDHKGAK": "OnAlert",
+                "IKMCLKEPDFP": "OnAlert",
+                "ENKLFBHHOJI": {
+                    "CEKMINILIFB": [
+                        1
+                    ]
+                },
+                "cd": 999999.0,
+                "NOPNCNPCPJE": "",
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "Alert",
+                    "AlertASM"
+                ],
+                "NNJBOCFBGJG": 3.5,
+                "PGPDNPMFFAG": "10",
+                "CCEAGFDONFH": "01",
+                "OKOFHICILMD": "10",
+                "CCFFFOIDOLP": "11"
+            },
+            "11": {
+                "NOKKDDHKGAK": "OnAlert",
+                "IKMCLKEPDFP": "OnAlert",
+                "ENKLFBHHOJI": {
+                    "CEKMINILIFB": [
+                        11
+                    ]
+                },
+                "cd": 999999.0,
+                "NOPNCNPCPJE": "",
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "Show01",
+                    "AlertASM"
+                ],
+                "NNJBOCFBGJG": 3.5,
+                "PGPDNPMFFAG": "10",
+                "CCEAGFDONFH": "01",
+                "OKOFHICILMD": "10",
+                "CCFFFOIDOLP": "11"
+            },
+            "101": {
+                "NOKKDDHKGAK": "SlamAtk",
+                "MBDAAADDHNL": 4,
+                "ENKLFBHHOJI": {
+                    "CEKMINILIFB": [
+                        101
+                    ],
+                    "CNBHICKKAHM": 10.0,
+                    "OLKBBCIPHJB": 0.0,
+                    "MLFAMHDFHMM": 50.0
+                },
+                "cd": 7.5,
+                "GPMLADFJAAH": 5.0,
+                "NOPNCNPCPJE": "",
+                "BIMBEJCAFLP": 1,
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "SlamAtkL",
+                    "SlamAtkR"
+                ],
+                "NNJBOCFBGJG": 3.0,
+                "PGPDNPMFFAG": "10",
+                "CCEAGFDONFH": "11",
+                "OKOFHICILMD": "10",
+                "CCFFFOIDOLP": "11"
+            },
+            "102": {
+                "NOKKDDHKGAK": "SlamAtk",
+                "MBDAAADDHNL": 3,
+                "ENKLFBHHOJI": {
+                    "CEKMINILIFB": [
+                        101
+                    ],
+                    "CNBHICKKAHM": 10.0,
+                    "MLFAMHDFHMM": 50.0
+                },
+                "cd": 15.0,
+                "GPMLADFJAAH": 7.5,
+                "NOPNCNPCPJE": "",
+                "BIMBEJCAFLP": 1,
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "SlamAtkL",
+                    "SlamAtkR"
+                ],
+                "NNJBOCFBGJG": 3.0,
+                "PGPDNPMFFAG": "10",
+                "CCEAGFDONFH": "11",
+                "OKOFHICILMD": "10",
+                "CCFFFOIDOLP": "11"
+            },
+            "201": {
+                "NOKKDDHKGAK": "EnergySpray",
+                "MBDAAADDHNL": 4,
+                "ENKLFBHHOJI": {
+                    "CEKMINILIFB": [
+                        101
+                    ],
+                    "CNBHICKKAHM": 10.0,
+                    "OLKBBCIPHJB": 0.0,
+                    "MLFAMHDFHMM": 50.0
+                },
+                "cd": 10.0,
+                "GPMLADFJAAH": 7.5,
+                "NOPNCNPCPJE": "",
+                "BIMBEJCAFLP": 2,
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "EnergySprayL",
+                    "EnergySprayR"
+                ],
+                "NNJBOCFBGJG": 3.0,
+                "PGPDNPMFFAG": "10",
+                "CCEAGFDONFH": "11",
+                "OKOFHICILMD": "10",
+                "CCFFFOIDOLP": "11"
+            },
+            "202": {
+                "NOKKDDHKGAK": "EnergySpray",
+                "MBDAAADDHNL": 3,
+                "ENKLFBHHOJI": {
+                    "CEKMINILIFB": [
+                        101
+                    ],
+                    "CNBHICKKAHM": 10.0,
+                    "MLFAMHDFHMM": 50.0
+                },
+                "cd": 15.0,
+                "GPMLADFJAAH": 7.5,
+                "NOPNCNPCPJE": "",
+                "BIMBEJCAFLP": 2,
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "EnergySprayL",
+                    "EnergySprayR"
+                ],
+                "NNJBOCFBGJG": 3.0,
+                "PGPDNPMFFAG": "10",
+                "CCEAGFDONFH": "11",
+                "OKOFHICILMD": "10",
+                "CCFFFOIDOLP": "11"
+            },
+            "301": {
+                "NOKKDDHKGAK": "EnergyFire",
+                "MBDAAADDHNL": 4,
+                "ENKLFBHHOJI": {
+                    "CEKMINILIFB": [
+                        101
+                    ],
+                    "MLFAMHDFHMM": 50.0
+                },
+                "cd": 20.0,
+                "GPMLADFJAAH": 7.5,
+                "NOPNCNPCPJE": "",
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "EnergyFire"
+                ],
+                "NNJBOCFBGJG": 3.0,
+                "PGPDNPMFFAG": "10",
+                "CCEAGFDONFH": "11",
+                "OKOFHICILMD": "10",
+                "CCFFFOIDOLP": "11"
+            },
+            "401": {
+                "NOKKDDHKGAK": "EnergySpire",
+                "MBDAAADDHNL": 4,
+                "ENKLFBHHOJI": {
+                    "CEKMINILIFB": [
+                        101
+                    ],
+                    "MLFAMHDFHMM": 50.0
+                },
+                "cd": 15.0,
+                "GPMLADFJAAH": 7.5,
+                "NOPNCNPCPJE": "",
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "EnergySpire"
+                ],
+                "NNJBOCFBGJG": 3.0,
+                "PGPDNPMFFAG": "10",
+                "CCEAGFDONFH": "11",
+                "OKOFHICILMD": "10",
+                "CCFFFOIDOLP": "11"
+            },
+            "501": {
+                "NOKKDDHKGAK": "CoreExplode",
+                "MBDAAADDHNL": 1,
+                "ENKLFBHHOJI": {
+                    "CEKMINILIFB": [
+                        101
+                    ],
+                    "MLFAMHDFHMM": 50.0
+                },
+                "cd": 75.0,
+                "GPMLADFJAAH": 15.0,
+                "LKCFDIOMLCM": 30.0,
+                "KKAEGIJIDLG": 5.0,
+                "NOPNCNPCPJE": "",
+                "BIMBEJCAFLP": 3,
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "CoreExplode"
+                ],
+                "NNJBOCFBGJG": 3.0,
+                "PGPDNPMFFAG": "10",
+                "CCEAGFDONFH": "11",
+                "OKOFHICILMD": "10",
+                "CCFFFOIDOLP": "11"
+            },
+            "502": {
+                "NOKKDDHKGAK": "CoreExplode",
+                "MBDAAADDHNL": 1,
+                "ENKLFBHHOJI": {
+                    "CEKMINILIFB": [
+                        101
+                    ],
+                    "MLFAMHDFHMM": 50.0
+                },
+                "cd": 90.0,
+                "GPMLADFJAAH": 10.0,
+                "LKCFDIOMLCM": 25.0,
+                "KKAEGIJIDLG": 5.0,
+                "NOPNCNPCPJE": "",
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "CoreExplode"
+                ],
+                "NNJBOCFBGJG": 3.0,
+                "PGPDNPMFFAG": "10",
+                "CCEAGFDONFH": "11",
+                "OKOFHICILMD": "10",
+                "CCFFFOIDOLP": "11"
+            },
+            "601": {
+                "NOKKDDHKGAK": "LaserArray",
+                "MBDAAADDHNL": 1,
+                "ENKLFBHHOJI": {
+                    "CEKMINILIFB": [
+                        101
+                    ],
+                    "MLFAMHDFHMM": 50.0
+                },
+                "cd": 75.0,
+                "GPMLADFJAAH": 15.0,
+                "LKCFDIOMLCM": 30.0,
+                "KKAEGIJIDLG": 5.0,
+                "NOPNCNPCPJE": "",
+                "BIMBEJCAFLP": 3,
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "LaserArray"
+                ],
+                "NNJBOCFBGJG": 3.0,
+                "PGPDNPMFFAG": "10",
+                "CCEAGFDONFH": "11",
+                "OKOFHICILMD": "10",
+                "CCFFFOIDOLP": "11"
+            },
+            "602": {
+                "NOKKDDHKGAK": "LaserArray",
+                "MBDAAADDHNL": 1,
+                "ENKLFBHHOJI": {
+                    "CEKMINILIFB": [
+                        101
+                    ],
+                    "MLFAMHDFHMM": 50.0
+                },
+                "cd": 95.0,
+                "GPMLADFJAAH": 15.0,
+                "LKCFDIOMLCM": 60.0,
+                "KKAEGIJIDLG": 5.0,
+                "NOPNCNPCPJE": "",
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "LaserArray"
+                ],
+                "NNJBOCFBGJG": 3.0,
+                "PGPDNPMFFAG": "10",
+                "CCEAGFDONFH": "11",
+                "OKOFHICILMD": "10",
+                "CCFFFOIDOLP": "11"
+            },
+            "901": {
+                "NOKKDDHKGAK": "Return",
+                "MBDAAADDHNL": 1,
+                "ENKLFBHHOJI": {
+                    "CEKMINILIFB": [
+                        901
+                    ]
+                },
+                "cd": 999999.0,
+                "NOPNCNPCPJE": "",
+                "HMEHILHEEFE": false,
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "Return"
+                ],
+                "NNJBOCFBGJG": 3.0,
+                "PGPDNPMFFAG": "10",
+                "CCEAGFDONFH": "01",
+                "OKOFHICILMD": "10",
+                "CCFFFOIDOLP": "11"
+            }
+        },
+        "EMBHEEALPLD": 0.0
+    },
+    "GIBHCHHOJFI": [
+        {
+            "NPDDCIDNKMH": 101,
+            "KCAOBJOPJIC": 257,
+            "abilityName": ""
+        },
+        {
+            "NPDDCIDNKMH": 151,
+            "KCAOBJOPJIC": 258,
+            "abilityName": ""
+        },
+        {
+            "NPDDCIDNKMH": 201,
+            "KCAOBJOPJIC": 259,
+            "abilityName": ""
+        },
+        {
+            "NPDDCIDNKMH": 251,
+            "KCAOBJOPJIC": 260,
+            "abilityName": ""
+        },
+        {
+            "NPDDCIDNKMH": 301,
+            "KCAOBJOPJIC": 261,
+            "abilityName": ""
+        },
+        {
+            "NPDDCIDNKMH": 401,
+            "KCAOBJOPJIC": 262,
+            "abilityName": ""
+        },
+        {
+            "NPDDCIDNKMH": 501,
+            "KCAOBJOPJIC": 263,
+            "abilityName": ""
+        },
+        {
+            "NPDDCIDNKMH": 601,
+            "KCAOBJOPJIC": 264,
+            "abilityName": ""
+        },
+        {
+            "NPDDCIDNKMH": 901,
+            "KCAOBJOPJIC": 265,
+            "abilityName": ""
+        },
+        {
+            "NPDDCIDNKMH": 902,
+            "KCAOBJOPJIC": 266,
+            "abilityName": ""
+        },
+        {
+            "NPDDCIDNKMH": 903,
+            "KCAOBJOPJIC": 266,
+            "abilityName": ""
+        },
+        {
+            "NPDDCIDNKMH": 1,
+            "KCAOBJOPJIC": 267,
+            "abilityName": ""
+        }
+    ],
+    "move": {
+        "$type": "IIGPJJNGCLE",
+        "EIEIGIPKLAO": {
+            "FAHKNGPHIIP": true
+        },
+        "EPDJOKGCLPD": true,
+        "KCPLNKCIOCI": "None",
+        "EBOIFGIJOOJ": true,
+        "FACNOEFNHIB": "RootNode"
+    },
+    "BEGHJJDCLLK": {
+        "KEEAIACIJBN": ""
+    },
+    "LMHBPOFDMGB": {
+        "default": {
+            "$type": "ALDGBHOFGNJ",
+            "MBDAAADDHNL": 1.0,
+            "CFHLGBDKNNE": 150.0,
+            "MFHGHLBIABP": 150.0,
+            "ODGOPJOMIOD": 1.5,
+            "NEEJKCEAEOH": 42.5,
+            "HNELLIFDCEJ": 11.0,
+            "LAFEEHPNFJE": 1.5,
+            "LHMKDKDKCMK": false,
+            "CINOLDJDIME": 45.0,
+            "JAOHLHPPBDE": 30.0,
+            "PNABBNBKPKL": 10.0,
+            "KAJCHFLHBDJ": 10.0,
+            "DDKDCMMBADD": 150.0,
+            "ADOADIMFHKL": 150.0,
+            "BKEJGFMMHCD": "CircleR25",
+            "EBJKIPGGECO": "CircleR200",
+            "OHGODJLICDB": true,
+            "FDLCMNHALEN": true
+        }
+    }
+}

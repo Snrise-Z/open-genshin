@@ -1,0 +1,317 @@
+{
+    "common": {
+        "effectAttachShape": {
+            "$type": "ConfigEffectAttachSkinnedMesh",
+            "mesh": "EffectMesh"
+        },
+        "mass": 1000.0,
+        "height": 2.4000000953674316,
+        "INNNMDJACOJ": 2.4000000953674316,
+        "MECICKNEPGG": 2.0,
+        "affectedByWorld": true,
+        "checkInSurface": true,
+        "scale": 0.800000011920929,
+        "HPIJDAKGABA": 100000.0,
+        "useGrassDisplacement": true,
+        "clearAnimatorOnSetLightDeactive": true,
+        "clearAIOnSetLightDeactive": true,
+        "BKPPECPBMBF": true,
+        "LOGFKHMLOOL": true
+    },
+    "MEMHBNEJBCL": {
+        "PJBCJPKPOLB": 2.0
+    },
+    "combat": {
+        "property": {
+            "endureType": "Monster_Demiboss_Other",
+            "weight": 100.0
+        },
+        "beHit": {
+            "hitBloodEffect": ""
+        },
+        "combatLock": {
+            "lockShape": "CircleLockEnemy",
+            "lockType": "Avatar&Monster_Lv4"
+        },
+        "die": {
+            "dieEndTime": 0.800000011920929,
+            "dieForceDisappearTime": 1.0,
+            "dieDisappearEffect": "Eff_Death_Common",
+            "dieShaderData": "MonsterDie",
+            "LEDBOLGDENF": true,
+            "IEAKKMEDNDE": true,
+            "AAEANOPIAAL": true,
+            "IBBHGBHIHCI": true,
+            "BKIBMIAJOHP": true,
+            "MOFPBPPGPCL": true
+        }
+    },
+    "abilities": [
+        {
+            "abilityID": "",
+            "abilityName": "Monster_Apep_Underling_Core_Halo_Shiva",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "",
+            "abilityName": "Monster_Apep_Underling_Summon_Underground",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "",
+            "abilityName": "Monster_Apep_Underling_SeedOfShiva_ExplodeTrigger",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "",
+            "abilityName": "Monster_Apep_Underling_Broadcast",
+            "abilityOverride": ""
+        }
+    ],
+    "stateLayers": {
+        "defaultLayer": {
+            "$type": "ConfigNormalStateLayer",
+            "ACOCIAFGIAD": "",
+            "stateIDs": {
+                "Born": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Born": [
+                            "Audio_monster_Apep_Underling_SeedOfShiva_born"
+                        ],
+                        "Born_Underground": []
+                    },
+                    "canSyncMove": true,
+                    "resetAnimatorTriggerOnExit": [
+                        "DoSkill"
+                    ]
+                },
+                "NormalIdle": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Standby": []
+                    },
+                    "canDoSkill": true,
+                    "canSyncMove": true,
+                    "resetAnimatorTriggerOnExit": [
+                        "DoSkill"
+                    ]
+                },
+                "NormalMove": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Run": []
+                    },
+                    "canDoSkill": true,
+                    "canSyncMove": true,
+                    "resetAnimatorTriggerOnExit": [
+                        "DoSkill"
+                    ],
+                    "LIPMJPLGIKD": true
+                },
+                "Explode": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Explode": [
+                            "Monster_Apep_Underling_SeedOfShiva_Explode",
+                            "Audio_monster_Apep_Underling_SeedOfShiva_die_Die_Explode"
+                        ]
+                    },
+                    "canSyncMove": true,
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ],
+                    "LIPMJPLGIKD": true
+                },
+                "Die": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Die": [
+                            "Audio_monster_Apep_Underling_SeedOfShiva_die"
+                        ],
+                        "Die_Explode": [
+                            "Monster_Apep_Underling_SeedOfShiva_ExplodeDie",
+                            "Audio_monster_Apep_Underling_SeedOfShiva_die_Die_Explode"
+                        ]
+                    },
+                    "AJBLILDCLBO": [
+                        "DoSkill"
+                    ]
+                }
+            }
+        }
+    },
+    "IEFGNHABHFH": {
+        "$type": "PAOBAEKGGBC",
+        "JBKMLLFNHAL": "BillboardAttach",
+        "NDKBHOOPGNA": {
+            "x": 0.03999999910593033
+        },
+        "EMFFJPOKEKF": "Character",
+        "LOMMBJLKPHE": 0.7200000286102295,
+        "KGHAGECNJPO": true,
+        "MGLEAPLEHFN": "Big"
+    },
+    "initialPoses": {
+        "Default": {}
+    },
+    "aibeta": {
+        "enable": true,
+        "sensing": {
+            "settings": {
+                "DefaultSetting": {
+                    "PHDIIPOBJGA": 40.0,
+                    "MELADMKNPHC": true,
+                    "feelRange": 50.0
+                },
+                "Apep_NoBroadCast": {
+                    "PHDIIPOBJGA": 40.0,
+                    "MELADMKNPHC": true,
+                    "feelRange": 50.0
+                }
+            },
+            "templates": {
+                "DefaultTemplate": {
+                    "DefaultPoses": "DefaultSetting"
+                },
+                "Apep_NoBroadCast": {
+                    "DefaultPoses": "Apep_NoBroadCast"
+                }
+            }
+        },
+        "neurons": {
+            "DefaultSetting": [
+                "HIT"
+            ],
+            "Apep_NoBroadCast": [
+                "HIT"
+            ]
+        },
+        "threat": {
+            "DMBNEKAFACI": true,
+            "BJLBMJLOPIP": [
+                {
+                    "LFALGCACJOF": 10.0,
+                    "IOHOACGNJHO": 2.0
+                },
+                {
+                    "LFALGCACJOF": 15.0,
+                    "IOHOACGNJHO": 0.800000011920929
+                },
+                {
+                    "LFALGCACJOF": 20.0,
+                    "IOHOACGNJHO": 0.5
+                },
+                {
+                    "LFALGCACJOF": 25.0,
+                    "IOHOACGNJHO": 0.30000001192092896
+                },
+                {
+                    "LFALGCACJOF": 30.0,
+                    "IOHOACGNJHO": 0.20000000298023224
+                }
+            ],
+            "IBGELAGCJFH": "Monster_TauntLevel_2",
+            "OHFIEECNCHI": true,
+            "JGFOPCOIJOI": ""
+        },
+        "defendArea": {
+            "defendRange": 50.0
+        },
+        "profiling": {
+            "IHFAOEGNINI": [
+                301,
+                401
+            ]
+        },
+        "BNIENJNLAIJ": {
+            "201": {
+                "NOKKDDHKGAK": "Explode",
+                "ENKLFBHHOJI": {
+                    "CEKMINILIFB": [
+                        102
+                    ]
+                },
+                "cd": 0.10000000149011612,
+                "NOPNCNPCPJE": "",
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "Explode"
+                ],
+                "PGPDNPMFFAG": "11",
+                "CCEAGFDONFH": "01",
+                "OKOFHICILMD": "11",
+                "CCFFFOIDOLP": "11"
+            }
+        },
+        "EMBHEEALPLD": 5.0,
+        "combatFixedMoveTactic": [
+            {
+                "$type": "BNAGECKMCIB",
+                "enable": true,
+                "FJANPNOAAFK": {
+                    "CEKMINILIFB": [
+                        101
+                    ]
+                },
+                "defaultSetting": {
+                    "MPEMBMLOEDG": 2.5,
+                    "IJLGPEJGLEH": 99.0,
+                    "JKOGPCLFHCP": 2.5,
+                    "IHCAFCNDANA": 0.0,
+                    "JOCOJHEICNA": ""
+                }
+            },
+            {
+                "$type": "KMHBGMELMKD",
+                "enable": true,
+                "defaultSetting": {
+                    "JOCOJHEICNA": "",
+                    "DBIELIMGBMC": ""
+                }
+            }
+        ]
+    },
+    "GIBHCHHOJFI": [
+        {
+            "NPDDCIDNKMH": 201,
+            "KCAOBJOPJIC": 257,
+            "abilityName": ""
+        }
+    ],
+    "move": {
+        "$type": "IIGPJJNGCLE",
+        "MIPNOGBEANL": "ForwardBackward",
+        "FACNOEFNHIB": "RootNode"
+    },
+    "BEGHJJDCLLK": {
+        "KEEAIACIJBN": "",
+        "JIOEGJGNLEC": {
+            "NGKLCAOGKNG": [
+                {
+                    "ILNHPFBOKNK": "Run",
+                    "CDMEEHAPNGE": {
+                        "KMNBEAJOBPE": "Play_sfx_monster_Apep_Underling_SeedOfShiva_run_LP"
+                    },
+                    "LFOAJJCBNPI": [
+                        "Run"
+                    ],
+                    "JKPDEGAANLH": "Except"
+                }
+            ],
+            "MPLMIOAKNGG": [
+                {
+                    "ILNHPFBOKNK": "Run",
+                    "CDMEEHAPNGE": {
+                        "KMNBEAJOBPE": "Stop_sfx_monster_Apep_Underling_SeedOfShiva_run_LP"
+                    },
+                    "LFOAJJCBNPI": [
+                        "Run"
+                    ],
+                    "JKPDEGAANLH": "Except"
+                }
+            ]
+        }
+    }
+}

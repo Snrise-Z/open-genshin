@@ -1,0 +1,251 @@
+{
+  "folderStructure": {
+    "resources": "./resources/",
+    "data": "./data/",
+    "packets": "./packets/",
+    "scripts": "resources:Scripts/",
+    "plugins": "./plugins/",
+    "cache": "./cache/"
+  },
+  "databaseInfo": {
+    "server": {
+      "connectionUri": "mongodb://localhost:27017",
+      "collection": "GodKillers"
+    },
+    "game": {
+      "connectionUri": "mongodb://localhost:27017",
+      "collection": "GodKillers"
+    }
+  },
+  "language": {
+    "language": "zh_CN",
+    "fallback": "en_US",
+    "document": "EN"
+  },
+  "account": {
+    "autoCreate": true,
+    "EXPERIMENTAL_RealPassword": false,
+    "defaultPermissions": [""],
+    "maxPlayer": -1,
+    "loginMaxConnNum": 2,
+    "ipBlackListTimeWindow": 600000,
+    "ipBlackListCount": 12
+  },
+  "server": {
+    "debugWhitelist": [],
+    "debugBlacklist": [],
+    "runMode": "HYBRID",
+    "logCommands": false,
+    "fastRequire": false,
+    "http": {
+      "startImmediately": true,
+      "bindAddress": "0.0.0.0",
+      "bindPort": 500,
+      "accessAddress": "192.168.1.4",
+      "accessPort": 0,
+      "encryption": {
+        "useEncryption": false,
+        "useInRouting": false,
+        "keystore": "./keystore.p12",
+        "keystorePassword": "1234565201314"
+      },
+      "policies": {
+        "cors": {
+          "enabled": true,
+          "allowedOrigins": [
+            "*"
+          ]
+        }
+      },
+      "files": {
+        "indexFile": "./index.html",
+        "errorFile": "./404.html"
+      }
+    },
+    "game": {
+      "bindAddress": "0.0.0.0",
+      "bindPort": 22102,
+      "accessAddress": "192.168.1.4",
+      "accessPort": 0,
+      "useUniquePacketKey": true,
+      "loadEntitiesForPlayerRange": 300,
+      "enableScriptInBigWorld": true,
+      "enableConsole": true,
+      "defaultUnlockAllMap": true,
+      "enabledOpenStateAllMap": false,
+      "kcpInterval": 20,
+      "logPackets": "NONE",
+      "isShowPacketPayload": false,
+      "isShowLoopPackets": false,
+      "cacheSceneEntitiesEveryRun": false,
+      "gameOptions": {
+        "inventoryLimits": {
+          "weapons": 9999999,
+          "relics": 9999999,
+          "materials": 9999999,
+          "furniture": 9999999,
+          "all": 9999999
+        },
+        "avatarLimits": {
+          "singlePlayerTeam": 4,
+          "multiplayerTeam": 4
+        },
+        "sceneEntityLimit": 4000,
+        "watchGachaConfig": true,
+        "enableShopItems": true,
+        "staminaUsage": true,
+        "energyUsage": true,
+        "fishhookTeleport": true,
+        "trialCostumes": false,
+        "questing": {
+          "enabled": true
+        },
+        "resinOptions": {
+          "resinUsage": false,
+          "cap": 200,
+          "rechargeTime": 480
+        },
+        "rates": {
+          "adventureExp": 1.0,
+          "mora": 1.0,
+          "leyLines": 1.0
+        },
+        "handbook": {
+          "enable": false,
+          "allowCommands": true,
+          "limits": {
+            "enabled": false,
+            "interval": 3,
+            "maxRequests": 10,
+            "maxEntities": 25
+          },
+          "server": {
+            "enforced": false,
+            "address": "192.168.1.4",
+            "port": 500,
+            "canChange": true
+          }
+        }
+      },
+      "joinOptions": {
+        "welcomeEmotes": [
+          2007,
+          1002,
+          4010
+        ],
+        "welcomeMessage": "
+┌指令器网址：zl.zzcv.cc
+├玩指令服必须用指令器！
+└浏览器打开复制指令发给
+┌常用指令
+├解锁全状态:/unlockall
+├开启风之翼:/prop fly on
+├无敌:/prop god on
+├无限能量：/prop ue on
+├无限体力：/prop ns on
+├开启大地图：/prop um on
+├所有满级武器*5：\n/give weapons lv91 x5 r5
+└所有物品+角色：\n/give all x999 lv90 c6 r5 sl10
+", 
+        "welcomeMail": {
+          "title": "欢迎游玩原神5.0剧情版",
+          "content": "欢迎游玩原神5.0",
+          "sender": "管理员",
+          "items": [
+            {
+              "itemId": 201,
+              "itemCount": 100000,
+              "itemLevel": 1
+            },
+            {
+              "itemId": 202,
+              "itemCount": 10000000,
+              "itemLevel": 1
+            },
+            {
+              "itemId": 203,
+              "itemCount": 64800,
+              "itemLevel": 1
+            }
+          ]
+        }
+      },
+      "serverAccount": {
+        "avatarId": 10000007,
+        "nameCardId": 210001,
+        "adventureRank": 1,
+        "worldLevel": 0,
+        "nickName": "指令发给我",
+        "signature": "欢迎游玩"
+      },
+      "visionOptions": [
+        {
+          "name": "VISION_LEVEL_NORMAL",
+          "visionRange": 80,
+          "gridWidth": 20
+        },
+        {
+          "name": "VISION_LEVEL_LITTLE_REMOTE",
+          "visionRange": 16,
+          "gridWidth": 40
+        },
+        {
+          "name": "VISION_LEVEL_REMOTE",
+          "visionRange": 1000,
+          "gridWidth": 250
+        },
+        {
+          "name": "VISION_LEVEL_SUPER",
+          "visionRange": 4000,
+          "gridWidth": 1000
+        },
+        {
+          "name": "VISION_LEVEL_NEARBY",
+          "visionRange": 40,
+          "gridWidth": 20
+        },
+        {
+          "name": "VISION_LEVEL_SUPER_NEARBY",
+          "visionRange": 20,
+          "gridWidth": 20
+        }
+      ]
+    },
+    "dispatch": {
+      "regions": [
+        {
+          "Name": "os_usa",
+          "Title": "一区（随意选择）",
+          "Ip": "127.0.0.1",
+          "Port": 22102
+        },
+        {
+          "Name": "2",
+          "Title": "二区（随意选择）",
+          "Ip": "127.0.0.1",
+          "Port": 22102
+        }
+      ],
+      "dispatchUrl": "ws://192.168.1.4:1111",
+      "encryptionKey": "8/YVct5n1/9GhdJ48xUUJq0JWfSDIlkEFFenUUx97FI=",
+      "dispatchKey": "/rUmQokXPjU5HDWN+rR9EFihCfC5ocLHtgXQqCiCZ14=",
+      "defaultName": "Grasscutter",
+      "logRequests": "NONE"
+    },
+    "debugMode": {
+      "serverLoggerLevel": {
+        "levelInt": 10000,
+        "levelStr": "DEBUG"
+      },
+      "servicesLoggersLevel": {
+        "levelInt": 20000,
+        "levelStr": "INFO"
+      },
+      "logPackets": "ALL",
+      "isShowPacketPayload": false,
+      "isShowLoopPackets": false,
+      "logRequests": "ALL"
+    }
+  },
+  "version": 13
+}

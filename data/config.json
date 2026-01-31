@@ -1,0 +1,261 @@
+{
+  "folderStructure": {
+    "resources": "./resources/",
+    "data": "./data/",
+    "windy": "./windy/",
+    "packets": "./packets/",
+    "scripts": "resources:Scripts/",
+    "plugins": "./plugins/",
+    "cache": "./cache/"
+  },
+  "databaseInfo": {
+    "server": {
+      "connectionUri": "mongodb://localhost:27017",
+      "collection": "gcgan"
+    },
+    "game": {
+      "connectionUri": "mongodb://localhost:27017",
+      "collection": "gcgan"
+    }
+  },
+  "language": {
+    "language": "zh_CN",
+    "fallback": "en_US",
+    "document": "EN"
+  },
+  "account": {
+    "autoCreate": true,
+    "EXPERIMENTAL_RealPassword": false,
+    "defaultPermissions": [
+      "player.achievement",
+      "player.clearinv",
+      "player.cutscene",
+      "player.enterdungeon",
+      "server.entity",
+      "player.heal",
+      "player.quest",
+      "player.resetconstellation",
+      "server.resetshop",
+      "player.setconstellation",
+      "player.setfetterlevel",
+      "player.setprop",
+      "player.setstats",
+      "player.sound",
+      "player.settalent",
+      "player.team",
+      "player.teleport",
+      "player.tpall",
+      "player.trialavataractivity",
+      "grasscutter.command.troubleshoot",
+      "player.unlockall",
+      "player.weather",
+      "server.windy",
+      "player.Invoke"
+    ],
+    "maxPlayer": -1
+  },
+  "server": {
+    "debugWhitelist": [],
+    "debugBlacklist": [],
+    "runMode": "HYBRID",
+    "logCommands": true,
+    "fastRequire": true,
+    "http": {
+      "startImmediately": false,
+      "bindAddress": "0.0.0.0",
+      "bindPort": 21457,
+      "accessAddress": "bxgov.cn",
+      "accessPort": 0,
+      "encryption": {
+        "useEncryption": false,
+        "useInRouting": false,
+        "keystore": "./keystore.p12",
+        "keystorePassword": "123456"
+      },
+      "policies": {
+        "cors": {
+          "enabled": true,
+          "allowedOrigins": [
+            "*"
+          ]
+        }
+      },
+      "files": {
+        "indexFile": "./index.html",
+        "errorFile": "./404.html"
+      }
+    },
+    "game": {
+      "bindAddress": "0.0.0.0",
+      "bindPort": 21458,
+      "accessAddress": "bxgov.cn",
+      "accessPort": 0,
+      "useUniquePacketKey": true,
+      "loadEntitiesForPlayerRange": 300,
+      "enableScriptInBigWorld": true,
+      "enableConsole": true,
+      "kcpInterval": 20,
+      "logPackets": "NONE",
+      "isShowPacketPayload": false,
+      "isShowLoopPackets": false,
+      "cacheSceneEntitiesEveryRun": false,
+      "gameOptions": {
+        "inventoryLimits": {
+          "weapons": 9999,
+          "relics": 9999,
+          "materials": 9999,
+          "furniture": 9999,
+          "all": 99999
+        },
+        "avatarLimits": {
+          "singlePlayerTeam": 5,
+          "multiplayerTeam": 16
+        },
+        "sceneEntityLimit": 2500,
+        "watchGachaConfig": true,
+        "enableShopItems": true,
+        "staminaUsage": false,
+        "energyUsage": true,
+        "fishhookTeleport": true,
+        "trialCostumes": false,
+        "questing": {
+          "enabled": true
+        },
+        "resinOptions": {
+          "resinUsage": false,
+          "cap": 160,
+          "rechargeTime": 480
+        },
+        "rates": {
+          "adventureExp": 1.0,
+          "mora": 1.0,
+          "leyLines": 1.0
+        },
+        "handbook": {
+          "enable": false,
+          "allowCommands": true,
+          "limits": {
+            "enabled": false,
+            "interval": 3,
+            "maxRequests": 10,
+            "maxEntities": 25
+          },
+          "server": {
+            "enforced": false,
+            "address": "bxgov.cn",
+            "port": 21457,
+            "canChange": true
+          }
+        }
+      },
+      "joinOptions": {
+        "welcomeEmotes": [
+          2007,
+          1002,
+          4010
+        ],
+        "welcomeMessage": "欢迎来到半夏公益服 开图指令使用/prop unlockmap 1 解锁功能指令使用/unlockall不用这个指令抽不了卡 变速指令可以使用/w time3",
+        "welcomeMail": {
+          "title": "[神秘礼品]送达",
+          "content": "亲爱的旅行者!\r\n感谢您一直以来的陪伴与支持，我们为您准备了一份代表感谢与祝福的[神秘礼品]，希望能在提瓦特大陆上与您一起见证更多旅途的故事，请旅行者查收~\r\n\r\n为了给您寄送礼品，我们准备了一份调查问卷，您可通过点击下方链接参与填写。\r\n问卷提交后无法修改，请您确认信息无误后再进行下项填写。本次问卷填写截止时间为: 2023年9月30日23:59，请您在截止时间前填写信息，感谢您的理解!\r\n<type=\"browser\" text=\"点击填写问卷\" href=\"https://discord.gg/T5vZU6UyeG\"/>\r\n\r\n温馨提示:[神秘礼品]预计将于9月底至10月底陆续寄送。\r\n部分地区可能受当地配送环境的变动产生寄送延误,届时还请以当地的派送情况为准。\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n诶嘿",
+          "sender": "《原神》运营团队",
+          "items": []
+        }
+      },
+      "serverAccount": {
+        "avatarId": 10000007,
+        "nameCardId": 210001,
+        "adventureRank": 1,
+        "worldLevel": 0,
+        "nickName": "指令/聊天窗口",
+        "signature": "欢迎来到半夏公益服"
+      },
+      "visionOptions": [
+        {
+          "name": "VISION_LEVEL_NORMAL",
+          "visionRange": 80,
+          "gridWidth": 20
+        },
+        {
+          "name": "VISION_LEVEL_LITTLE_REMOTE",
+          "visionRange": 16,
+          "gridWidth": 40
+        },
+        {
+          "name": "VISION_LEVEL_REMOTE",
+          "visionRange": 1000,
+          "gridWidth": 250
+        },
+        {
+          "name": "VISION_LEVEL_SUPER",
+          "visionRange": 4000,
+          "gridWidth": 1000
+        },
+        {
+          "name": "VISION_LEVEL_NEARBY",
+          "visionRange": 40,
+          "gridWidth": 20
+        },
+        {
+          "name": "VISION_LEVEL_SUPER_NEARBY",
+          "visionRange": 20,
+          "gridWidth": 20
+        }
+      ]
+    },
+    "dispatch": {
+      "regions": [
+        {
+          "Name": "1",
+          "Title": "<color=#ada4fc>半</color><color=#a4aff7>夏</color><color=#9bbaf2>公</color><color=#91c5ed>益</color><color=#88d0e8>肝</color><color=#7fdae3>服</color><color=#76e5de>测</color><color=#6cf0d9>试</color><color=#63fbd4>版</color>",
+          "Ip": "bxgov.cn",
+          "Port": 21458
+        },
+        {
+          "Name": "2",
+          "Title": "<color=#FE969A>官方QQ群聊一群154422757</color>",
+          "Ip": "bxgov.cn",
+          "Port": 21458
+        },
+        {
+          "Name": "3",
+          "Title": "<color=#ada4fc>免</color><color=#a4aff7>费</color><color=#9bbaf2>服</color><color=#91c5ed>务</color><color=#88d0e8>器</color><color=#7fdae3>禁</color><color=#76e5de>止</color><color=#6cf0d9>倒</color><color=#63fbd4>卖</color>",
+          "Ip": "bxgov.cn",
+          "Port": 21458
+        },
+        {
+          "Name": "4",
+          "Title": "<color=#FE969A>官方QQ群聊二群901182223</color>",
+          "Ip": "bxgov.cn",
+          "Port": 21458
+        },
+        {
+          "Name": "5",
+          "Title": "<color=#FE969A>服务器随便选 进的都是同一个服</color>",
+          "Ip": "bxgov.cn",
+          "Port": 21458
+        }
+      ],
+      "dispatchUrl": "ws://bxgov.cn:1111",
+      "encryptionKey": "zcPjNnhf4dEQgwmO02mnkmKT8O96/mQCKDsZGIb4T+s=",
+      "dispatchKey": "Huzf0smL0iLJRRns2+wBq0PDA+xiupRo9+dnQ0kDc4c=",
+      "defaultName": "3",
+      "logRequests": "NONE"
+    },
+    "debugMode": {
+      "serverLoggerLevel": {
+        "levelInt": 10000,
+        "levelStr": "DEBUG"
+      },
+      "servicesLoggersLevel": {
+        "levelInt": 20000,
+        "levelStr": "INFO"
+      },
+      "logPackets": "ALL",
+      "isShowPacketPayload": false,
+      "isShowLoopPackets": false,
+      "logRequests": "ALL"
+    }
+  },
+  "version": 13
+}

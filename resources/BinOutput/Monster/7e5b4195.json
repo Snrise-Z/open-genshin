@@ -1,0 +1,182 @@
+{
+    "common": {
+        "effectAttachShape": {
+            "$type": "ConfigEffectAttachSkinnedMesh",
+            "mesh": "EffectMesh"
+        },
+        "mass": 1000.0,
+        "height": 30.0,
+        "affectedByWorld": true,
+        "checkInSurface": true,
+        "scale": 1.5,
+        "shouldPauseAnimatorBeforeReady": true,
+        "clearAIOnSetLightDeactive": true,
+        "BKPPECPBMBF": true,
+        "LOGFKHMLOOL": true
+    },
+    "LBGLCHLIKJP": {
+        "$type": "NJIKCGBDNDF",
+        "HONCKGMDJEK": true,
+        "IKIJCPNMBHI": 60.0,
+        "FMKKBCJKMPH": 30.0,
+        "OLKEDEPPDOH": 3.0,
+        "FDPCOFKGCHG": [
+            "NormalIdle/Standby",
+            "NormalIdle/Born"
+        ]
+    },
+    "model": {
+        "bornEffect": "",
+        "attachEffect": "",
+        "canBakeMesh": false
+    },
+    "MEMHBNEJBCL": {
+        "CMDNEPBHICB": {
+            "ADNPIILDCJH": 5.0
+        }
+    },
+    "combat": {
+        "property": {
+            "endureType": "Monster_Boss_Other",
+            "weight": 20000.0
+        },
+        "beHit": {
+            "hitBloodEffect": ""
+        },
+        "combatLock": {
+            "lockShape": "CircleLockEnemy",
+            "lockType": "Boss_Lv5"
+        },
+        "die": {
+            "hasAnimatorDie": true,
+            "dieEndTime": 1.0,
+            "dieForceDisappearTime": 3.5,
+            "dieDisappearEffect": "",
+            "LEDBOLGDENF": true,
+            "IEAKKMEDNDE": true,
+            "AAEANOPIAAL": true,
+            "IBBHGBHIHCI": true,
+            "BKIBMIAJOHP": true,
+            "MOFPBPPGPCL": true
+        }
+    },
+    "abilities": [
+        {
+            "abilityID": "",
+            "abilityName": "Monster_Apep_Flat_MovingState",
+            "abilityOverride": ""
+        }
+    ],
+    "stateLayers": {
+        "defaultLayer": {
+            "$type": "ConfigNormalStateLayer",
+            "ACOCIAFGIAD": "",
+            "stateIDs": {
+                "NormalIdle": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Born": [
+                            "Audio_monster_Apep_Stage2_Flat_gadgetchange"
+                        ],
+                        "Standby": [
+                            "Audio_monster_Apep_Stage2_Flat_run"
+                        ]
+                    },
+                    "canDoSkill": true,
+                    "canSyncMove": true,
+                    "resetAnimatorTriggerOnExit": [
+                        "DoSkill"
+                    ]
+                }
+            }
+        }
+    },
+    "IEFGNHABHFH": {
+        "$type": "PAOBAEKGGBC",
+        "JBKMLLFNHAL": "BillboardAttach",
+        "LOMMBJLKPHE": 1.0,
+        "MGDADGKCGHM": 200.0,
+        "KGHAGECNJPO": true,
+        "MGLEAPLEHFN": "Grand"
+    },
+    "initialPoses": {
+        "Default": {}
+    },
+    "aibeta": {
+        "enable": true,
+        "sensing": {
+            "settings": {
+                "DefaultSetting": {
+                    "PHDIIPOBJGA": 100.0,
+                    "MELADMKNPHC": true,
+                    "feelRange": 25.0
+                }
+            }
+        },
+        "threat": {
+            "clearThreatTargetDistance": 999.0,
+            "PLCPHNHGFAC": 999.0,
+            "clearThreatByTargetOutOfZone": true,
+            "clearThreatTimerByTargetOutOfZone": 999.0,
+            "IBGELAGCJFH": "Monster_TauntLevel_5",
+            "JGFOPCOIJOI": ""
+        },
+        "defendArea": {
+            "defendRange": 120.0
+        },
+        "HEJKJODINHK": {},
+        "BNIENJNLAIJ": {
+            "301": {
+                "NOKKDDHKGAK": "RushMoveL",
+                "MBDAAADDHNL": 1,
+                "ENKLFBHHOJI": {
+                    "CEKMINILIFB": [
+                        101
+                    ]
+                },
+                "cd": 9999.0,
+                "NOPNCNPCPJE": "",
+                "LLNBBNIEGGO": true,
+                "IDPMFPAPNCE": false,
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "RushMoveL",
+                    "RushMoveL_Turn",
+                    "RushMoveL_Move"
+                ],
+                "PGPDNPMFFAG": "11",
+                "CCEAGFDONFH": "01",
+                "OKOFHICILMD": "10",
+                "CCFFFOIDOLP": "11"
+            }
+        },
+        "EMBHEEALPLD": 0.5
+    },
+    "GIBHCHHOJFI": [
+        {
+            "NPDDCIDNKMH": 401,
+            "KCAOBJOPJIC": 257,
+            "abilityName": ""
+        },
+        {
+            "NPDDCIDNKMH": 201,
+            "KCAOBJOPJIC": 258,
+            "abilityName": ""
+        },
+        {
+            "NPDDCIDNKMH": 211,
+            "KCAOBJOPJIC": 259,
+            "abilityName": ""
+        },
+        {
+            "NPDDCIDNKMH": 231,
+            "KCAOBJOPJIC": 260,
+            "abilityName": ""
+        },
+        {
+            "NPDDCIDNKMH": 241,
+            "KCAOBJOPJIC": 261,
+            "abilityName": ""
+        }
+    ]
+}

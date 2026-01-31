@@ -1,0 +1,450 @@
+{
+    "Fatuus_Maiden_WaterSpear_Normal": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "FCAGPAEOLPI": 0.5,
+                "HOJBBPFJMIL": 0.5
+            }
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isLockHP": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Damage",
+                "abilityName": "Monster_Fatuus_Maiden_WaterSpear_Normal",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 8.0
+        },
+        "move": {
+            "$type": "MPNKKNJBNCD",
+            "speed": 30.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "CIHFFMJBELB": 40.0,
+            "IPBPLMGOJKC": 10.0,
+            "HMOHCMJMLNE": 0.009999999776482582
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Monster_Fatuus_Maiden_WaterSpear_Normal"
+                }
+            ]
+        }
+    },
+    "Fatuus_Maiden_WaterSpear_Power": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "FCAGPAEOLPI": 0.5,
+                "HOJBBPFJMIL": 0.5
+            }
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isLockHP": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Damage",
+                "abilityName": "Monster_Fatuus_Maiden_WaterSpear_Power",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 5.0
+        },
+        "move": {
+            "$type": "AMKPMPLFKHP",
+            "speed": 10.0,
+            "maxSpeed": 15.0,
+            "minSpeed": 12.0,
+            "GBPNCGHBJMC": 1000.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "BCHPBKHELJG": 0.25,
+            "IAOOAMKFJFD": 1000.0,
+            "HGADENJMNEB": 0.800000011920929
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Monster_Fatuus_Maiden_WaterSpear_Power"
+                }
+            ]
+        }
+    },
+    "Fatuus_Maiden_Water_DetectObj": {
+        "$type": "ConfigGadget",
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 99999.0,
+                "isInvincible": true,
+                "isGhostToEnemy": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Fatuus_Maiden_Detect",
+                "abilityName": "Monster_Fatuus_Maiden_Water_DetectObj",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 5.0
+        },
+        "move": {
+            "$type": "DKAMCGDMNKI",
+            "MPMOPIIFDPO": {
+                "muteAll": true
+            },
+            "target": "TargetEntity",
+            "attachPoint": "",
+            "followRotation": true,
+            "offset": {
+                "y": 10.0
+            },
+            "HMPJAIBPNND": ""
+        }
+    },
+    "Fatuus_Maiden_Water_DetectLockObj": {
+        "$type": "ConfigGadget",
+        "combat": {
+            "property": {
+                "HP": 99999.0,
+                "isInvincible": true,
+                "isGhostToEnemy": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Fatuus_Maiden_Water_DetectLockObj",
+                "abilityName": "Monster_Fatuus_Maiden_Water_DetectLockObj",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 600.0
+        },
+        "move": {
+            "$type": "DKAMCGDMNKI",
+            "MPMOPIIFDPO": {
+                "muteAll": true
+            },
+            "target": "TargetEntity",
+            "attachPoint": "",
+            "followRotation": true,
+            "HMPJAIBPNND": ""
+        }
+    },
+    "Fatuus_Maiden_Water_DetectOnce": {
+        "$type": "ConfigGadget",
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 99999.0,
+                "isInvincible": true,
+                "isGhostToEnemy": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Fatuus_Maiden_Water_DetectOnce",
+                "abilityName": "Monster_Fatuus_Maiden_Water_DetectOnceFollow",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 3.0
+        },
+        "move": {
+            "$type": "DKAMCGDMNKI",
+            "MPMOPIIFDPO": {
+                "muteAll": true
+            },
+            "target": "TargetEntity",
+            "attachPoint": "",
+            "followRotation": true,
+            "HMPJAIBPNND": ""
+        }
+    },
+    "Fatuus_Maiden_Water_Capture": {
+        "$type": "ConfigGadget",
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 99999.0,
+                "isInvincible": true,
+                "isGhostToEnemy": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Fatuus_Maiden_Water_Capture",
+                "abilityName": "Monster_Fatuus_Maiden_Water_Capture",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 5.300000190734863
+        }
+    },
+    "Fatuus_Maiden_Water_BlinkGate": {
+        "$type": "ConfigGadget",
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 99999.0,
+                "isInvincible": true,
+                "isGhostToEnemy": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Fatuus_Maiden_Water_BlinkGate",
+                "abilityName": "Monster_Fatuus_Maiden_Water_BlinkGate",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 4.300000190734863
+        }
+    },
+    "Fatuus_Maiden_WaterTomb": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "CPGMBCECPEN": 0.4000000059604645
+            },
+            "mass": 5.0,
+            "affectedByWorld": true,
+            "checkInSurface": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 1.0,
+                "defense": 999999.0,
+                "isLockHP": true,
+                "isGhostToEnemy": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Monster_Fatuus_Maiden_WaterTomb_Damage",
+                "abilityName": "Monster_Fatuus_Maiden_WaterTomb_Damage",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 5.0
+        }
+    },
+    "Fatuus_Maiden_WaterTomb_LockEffect": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "CPGMBCECPEN": 0.4000000059604645
+            },
+            "mass": 5.0,
+            "affectedByWorld": true,
+            "checkInSurface": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 1.0,
+                "defense": 999999.0,
+                "isLockHP": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Monster_Fatuus_Maiden_WaterTomb_Lock",
+                "abilityName": "Monster_Fatuus_Maiden_WaterTomb_Lock",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 2.0
+        },
+        "move": {
+            "$type": "GFMMGDGALAP",
+            "MPMOPIIFDPO": {
+                "excludeForces": [
+                    "WindZoneType"
+                ]
+            },
+            "speed": 10.0,
+            "CMGJNBNLKNI": true,
+            "radius": 1.5,
+            "BCNECAMPGJJ": true,
+            "EGLLIJOBGDB": true
+        }
+    },
+    "Fatuus_Maiden_Water_DieDeleteOBJ": {
+        "$type": "ConfigGadget",
+        "combat": {
+            "property": {
+                "HP": 99999.0,
+                "isInvincible": true,
+                "isGhostToEnemy": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Fatuus_Maiden_Water_DieDeleteOBJ",
+                "abilityName": "Monster_Fatuus_Maiden_Water_DieDeleteOBJ",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 5.0
+        }
+    }
+}

@@ -1,0 +1,1422 @@
+{
+    "Fischl_Arrow_01": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "FCAGPAEOLPI": 0.5,
+                "HOJBBPFJMIL": 0.5
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            },
+            "animEvents": {
+                "ATK01": {
+                    "attackPattern": {
+                        "$type": "BOIOFIPLBNK",
+                        "triggerType": "TriggerNoRepeat",
+                        "PINHPKJJOGC": "Both",
+                        "born": {
+                            "$type": "MNJLPLGJGLI",
+                            "offset": {
+                                "EMBMLEBGFOI": 0.0,
+                                "NABPJFNICAE": 0.0,
+                                "MLOLIKEJCKB": -0.5
+                            }
+                        },
+                        "size": {
+                            "EMBMLEBGFOI": 0.10000000149011612,
+                            "NABPJFNICAE": 0.10000000149011612,
+                            "MLOLIKEJCKB": 1.0
+                        }
+                    },
+                    "attackInfo": {
+                        "attackTag": "NormalAttack_01",
+                        "attenuationTag": "",
+                        "attenuationGroup": "default",
+                        "attackProperty": {
+                            "ACKCDHKEGCK": 0.4000000059604645,
+                            "JIICGJODDDM": 0.0,
+                            "bonusCriticalHurt": 100.0,
+                            "strikeType": "Pierce",
+                            "enBreak": 12.0,
+                            "damagePercentage": 0.0
+                        },
+                        "hitPattern": {
+                            "onHitEffectName": "default",
+                            "hitImpulseType": "LV1",
+                            "hitHaltTimeScale": 0.009999999776482582
+                        },
+                        "cameraShake": {
+                            "shakeRange": 0.019999999552965164,
+                            "shakeTime": 0.10000000149011612
+                        },
+                        "canBeModifiedBy": "OriginOwner"
+                    }
+                }
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Trail_Fx",
+                "abilityName": "Effect_Fischl_ShootArrow_Trail_Light_Fx",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Hit_Fx",
+                "abilityName": "Effect_Fischl_ShootArrow_Hit_Fx",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 8.0
+        },
+        "move": {
+            "$type": "MPNKKNJBNCD",
+            "speed": 40.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "CIHFFMJBELB": 7.0,
+            "IPBPLMGOJKC": 15.0,
+            "HMOHCMJMLNE": 0.009999999776482582
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "BOHOOADOAKJ",
+                    "attackEvent": "ATK01"
+                },
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Effect_Fischl_ShootArrow_Hit_Fx"
+                }
+            ],
+            "JHKBLJLPGEB": true
+        }
+    },
+    "Fischl_Arrow_02": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "FCAGPAEOLPI": 0.5,
+                "HOJBBPFJMIL": 0.5
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            },
+            "animEvents": {
+                "ATK01": {
+                    "attackPattern": {
+                        "$type": "BOIOFIPLBNK",
+                        "triggerType": "TriggerNoRepeat",
+                        "PINHPKJJOGC": "Both",
+                        "born": {
+                            "$type": "MNJLPLGJGLI",
+                            "offset": {
+                                "EMBMLEBGFOI": 0.0,
+                                "NABPJFNICAE": 0.0,
+                                "MLOLIKEJCKB": -0.5
+                            }
+                        },
+                        "size": {
+                            "EMBMLEBGFOI": 0.10000000149011612,
+                            "NABPJFNICAE": 0.10000000149011612,
+                            "MLOLIKEJCKB": 1.0
+                        }
+                    },
+                    "attackInfo": {
+                        "attackTag": "NormalAttack_02",
+                        "attenuationTag": "",
+                        "attenuationGroup": "default",
+                        "attackProperty": {
+                            "ACKCDHKEGCK": 0.4300000071525574,
+                            "JIICGJODDDM": 0.0,
+                            "bonusCriticalHurt": 100.0,
+                            "strikeType": "Pierce",
+                            "enBreak": 12.899999618530273,
+                            "damagePercentage": 0.0
+                        },
+                        "hitPattern": {
+                            "onHitEffectName": "default",
+                            "hitImpulseType": "LV1",
+                            "hitHaltTimeScale": 0.009999999776482582
+                        },
+                        "cameraShake": {
+                            "shakeRange": 0.019999999552965164,
+                            "shakeTime": 0.10000000149011612
+                        },
+                        "canBeModifiedBy": "OriginOwner"
+                    }
+                }
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Trail_Fx",
+                "abilityName": "Effect_Fischl_ShootArrow_Trail_Light_Fx",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Hit_Fx",
+                "abilityName": "Effect_Fischl_ShootArrow_Hit_Fx",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 8.0
+        },
+        "move": {
+            "$type": "MPNKKNJBNCD",
+            "speed": 40.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "CIHFFMJBELB": 7.0,
+            "IPBPLMGOJKC": 15.0,
+            "HMOHCMJMLNE": 0.009999999776482582
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "BOHOOADOAKJ",
+                    "attackEvent": "ATK01"
+                },
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Effect_Fischl_ShootArrow_Hit_Fx"
+                }
+            ],
+            "JHKBLJLPGEB": true
+        }
+    },
+    "Fischl_Arrow_03": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "FCAGPAEOLPI": 0.5,
+                "HOJBBPFJMIL": 0.5
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            },
+            "animEvents": {
+                "ATK01": {
+                    "attackPattern": {
+                        "$type": "BOIOFIPLBNK",
+                        "triggerType": "TriggerNoRepeat",
+                        "PINHPKJJOGC": "Both",
+                        "born": {
+                            "$type": "MNJLPLGJGLI",
+                            "offset": {
+                                "EMBMLEBGFOI": 0.0,
+                                "NABPJFNICAE": 0.0,
+                                "MLOLIKEJCKB": -0.5
+                            }
+                        },
+                        "size": {
+                            "EMBMLEBGFOI": 0.10000000149011612,
+                            "NABPJFNICAE": 0.10000000149011612,
+                            "MLOLIKEJCKB": 1.0
+                        }
+                    },
+                    "attackInfo": {
+                        "attackTag": "NormalAttack_03",
+                        "attenuationTag": "",
+                        "attenuationGroup": "default",
+                        "attackProperty": {
+                            "ACKCDHKEGCK": 0.5299999713897705,
+                            "JIICGJODDDM": 0.0,
+                            "bonusCriticalHurt": 100.0,
+                            "strikeType": "Pierce",
+                            "enBreak": 15.899999618530273,
+                            "damagePercentage": 0.0
+                        },
+                        "hitPattern": {
+                            "onHitEffectName": "default",
+                            "hitImpulseType": "LV1",
+                            "hitHaltTimeScale": 0.009999999776482582
+                        },
+                        "cameraShake": {
+                            "shakeRange": 0.019999999552965164,
+                            "shakeTime": 0.10000000149011612
+                        },
+                        "canBeModifiedBy": "OriginOwner"
+                    }
+                }
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Trail_Fx",
+                "abilityName": "Effect_Fischl_ShootArrow_Trail_Fx",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Hit_Fx",
+                "abilityName": "Effect_Fischl_ShootArrow_Hit_Fx",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 8.0
+        },
+        "move": {
+            "$type": "MPNKKNJBNCD",
+            "speed": 40.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "CIHFFMJBELB": 7.0,
+            "IPBPLMGOJKC": 15.0,
+            "HMOHCMJMLNE": 0.009999999776482582
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "BOHOOADOAKJ",
+                    "attackEvent": "ATK01"
+                },
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Effect_Fischl_ShootArrow_Hit_Fx"
+                }
+            ],
+            "JHKBLJLPGEB": true
+        }
+    },
+    "Fischl_Arrow_04": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "FCAGPAEOLPI": 0.5,
+                "HOJBBPFJMIL": 0.5
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            },
+            "animEvents": {
+                "ATK01": {
+                    "attackPattern": {
+                        "$type": "BOIOFIPLBNK",
+                        "triggerType": "TriggerNoRepeat",
+                        "PINHPKJJOGC": "Both",
+                        "born": {
+                            "$type": "MNJLPLGJGLI",
+                            "offset": {
+                                "EMBMLEBGFOI": 0.0,
+                                "NABPJFNICAE": 0.0,
+                                "MLOLIKEJCKB": -0.5
+                            }
+                        },
+                        "size": {
+                            "EMBMLEBGFOI": 0.10000000149011612,
+                            "NABPJFNICAE": 0.10000000149011612,
+                            "MLOLIKEJCKB": 1.0
+                        }
+                    },
+                    "attackInfo": {
+                        "attackTag": "NormalAttack_04",
+                        "attenuationTag": "",
+                        "attenuationGroup": "default",
+                        "attackProperty": {
+                            "ACKCDHKEGCK": 0.5199999809265137,
+                            "JIICGJODDDM": 0.0,
+                            "bonusCriticalHurt": 100.0,
+                            "strikeType": "Pierce",
+                            "enBreak": 15.600000381469727,
+                            "damagePercentage": 0.0
+                        },
+                        "hitPattern": {
+                            "onHitEffectName": "default",
+                            "hitImpulseType": "LV1",
+                            "hitHaltTimeScale": 0.009999999776482582
+                        },
+                        "cameraShake": {
+                            "shakeRange": 0.019999999552965164,
+                            "shakeTime": 0.10000000149011612
+                        },
+                        "canBeModifiedBy": "OriginOwner"
+                    }
+                }
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Trail_Fx",
+                "abilityName": "Effect_Fischl_ShootArrow_Trail_Light_Fx",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Hit_Fx",
+                "abilityName": "Effect_Fischl_ShootArrow_Hit_Fx",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 8.0
+        },
+        "move": {
+            "$type": "MPNKKNJBNCD",
+            "speed": 40.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "CIHFFMJBELB": 7.0,
+            "IPBPLMGOJKC": 15.0,
+            "HMOHCMJMLNE": 0.009999999776482582
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "BOHOOADOAKJ",
+                    "attackEvent": "ATK01"
+                },
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Effect_Fischl_ShootArrow_Hit_Fx"
+                }
+            ],
+            "JHKBLJLPGEB": true
+        }
+    },
+    "Fischl_Arrow_05": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "FCAGPAEOLPI": 0.5,
+                "HOJBBPFJMIL": 0.5
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            },
+            "animEvents": {
+                "ATK01": {
+                    "attackPattern": {
+                        "$type": "BOIOFIPLBNK",
+                        "triggerType": "TriggerNoRepeat",
+                        "PINHPKJJOGC": "Both",
+                        "born": {
+                            "$type": "MNJLPLGJGLI",
+                            "offset": {
+                                "EMBMLEBGFOI": 0.0,
+                                "NABPJFNICAE": 0.0,
+                                "MLOLIKEJCKB": -0.5
+                            }
+                        },
+                        "size": {
+                            "EMBMLEBGFOI": 0.10000000149011612,
+                            "NABPJFNICAE": 0.10000000149011612,
+                            "MLOLIKEJCKB": 1.0
+                        }
+                    },
+                    "attackInfo": {
+                        "attackTag": "NormalAttack_05",
+                        "attenuationTag": "",
+                        "attenuationGroup": "default",
+                        "attackProperty": {
+                            "ACKCDHKEGCK": 0.6600000262260437,
+                            "JIICGJODDDM": 0.0,
+                            "bonusCriticalHurt": 100.0,
+                            "strikeType": "Pierce",
+                            "enBreak": 19.709999084472656,
+                            "damagePercentage": 0.0
+                        },
+                        "hitPattern": {
+                            "onHitEffectName": "default",
+                            "hitImpulseType": "LV1",
+                            "hitHaltTimeScale": 0.009999999776482582
+                        },
+                        "cameraShake": {
+                            "shakeRange": 0.019999999552965164,
+                            "shakeTime": 0.10000000149011612
+                        },
+                        "canBeModifiedBy": "OriginOwner"
+                    }
+                }
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Trail_Fx",
+                "abilityName": "Effect_Fischl_ShootArrow_Trail_Fx",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Hit_Fx",
+                "abilityName": "Effect_Fischl_ShootArrow_Hit_Fx",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 8.0
+        },
+        "move": {
+            "$type": "MPNKKNJBNCD",
+            "speed": 70.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "CIHFFMJBELB": 15.0,
+            "IPBPLMGOJKC": 30.0,
+            "HMOHCMJMLNE": 0.009999999776482582
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "BOHOOADOAKJ",
+                    "attackEvent": "ATK01"
+                },
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Effect_Fischl_ShootArrow_Hit_Fx"
+                }
+            ],
+            "JHKBLJLPGEB": true
+        }
+    },
+    "Fischl_AimingArrow_WithoutThunder": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "FCAGPAEOLPI": 0.5,
+                "HOJBBPFJMIL": 0.5
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Avatar_Fischl_ExtraAttack_WithoutElement_Hit",
+                "abilityName": "Avatar_Fischl_ExtraAttack_WithoutElement_Hit",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Avatar_Fischl_ExtraAttack_WithoutElement_BulletFx",
+                "abilityName": "Avatar_Fischl_ExtraAttack_WithoutElement_BulletFx",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 20.0
+        },
+        "move": {
+            "$type": "MPNKKNJBNCD",
+            "speed": 50.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "CIHFFMJBELB": 25.0,
+            "IPBPLMGOJKC": 5.5,
+            "HMOHCMJMLNE": 0.009999999776482582
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Avatar_Fischl_ExtraAttack_WithoutElement_Hit"
+                },
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Avatar_Fischl_ExtraAttack_WithoutElement_BulletFx"
+                }
+            ],
+            "JHKBLJLPGEB": true
+        }
+    },
+    "Fischl_AimingArrow_Thunder": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "FCAGPAEOLPI": 0.5,
+                "HOJBBPFJMIL": 0.5
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Avatar_Fischl_ExtraAttack_Element_Hit",
+                "abilityName": "Avatar_Fischl_ExtraAttack_Element_Hit",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Avatar_Fischl_ExtraAttack_Element_BulletFx",
+                "abilityName": "Avatar_Fischl_ExtraAttack_Element_BulletFx",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Avatar_Fischl_ExtraAttack_Element_FindCrow",
+                "abilityName": "Avatar_Fischl_ExtraAttack_Element_FindCrow",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 20.0
+        },
+        "move": {
+            "$type": "MPNKKNJBNCD",
+            "speed": 50.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "CIHFFMJBELB": 25.0,
+            "IPBPLMGOJKC": 5.5,
+            "HMOHCMJMLNE": 0.009999999776482582
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Avatar_Fischl_ExtraAttack_Element_Hit"
+                },
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Avatar_Fischl_ExtraAttack_Element_BulletFx"
+                }
+            ]
+        }
+    },
+    "Fischl_Crow": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            },
+            "viewSize": 0.800000011920929,
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "weight": 0.0,
+                "isLockHP": true,
+                "isGhostToEnemy": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            },
+            "die": {
+                "dieForceDisappearTime": 0.0,
+                "dieDisappearEffect": ""
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Avatar_Fischl_Skill_S_Crow_Handle",
+                "abilityName": "Avatar_Fischl_Skill_S_Crow_Handle",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Avatar_Fischl_Talent_D_Crow_NormalAttack",
+                "abilityName": "Avatar_Fischl_Talent_D_Crow_NormalAttack",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Avatar_Fischl_ProudSkill_ExteaAttackThunder",
+                "abilityName": "Avatar_Fischl_ProudSkill_ExteaAttackThunder",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Avatar_Fischl_ProudSkill_ElementReactionAttackThunder",
+                "abilityName": "Avatar_Fischl_ProudSkill_ElementReactionAttackThunder",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 60.0
+        }
+    },
+    "Fischl_Crow_BeAttackedTrigger": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            },
+            "affectedByWorld": true,
+            "checkInSurface": true
+        },
+        "combat": {
+            "property": {
+                "weight": 0.0,
+                "isLockHP": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Avatar_Fischl_Crow_BeAttackedTrigger_Init",
+                "abilityName": "Avatar_Fischl_Crow_BeAttackedTrigger_Init",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 99.0
+        },
+        "move": {
+            "$type": "DKAMCGDMNKI",
+            "target": "TargetEntity",
+            "attachPoint": "",
+            "HMPJAIBPNND": ""
+        }
+    },
+    "Fischl_Crow_NormalAttack_01": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "FCAGPAEOLPI": 0.5,
+                "HOJBBPFJMIL": 0.5
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Avatar_Fischl_Talent_D_Crow_NormalAttack_01",
+                "abilityName": "Avatar_Fischl_Talent_D_Crow_NormalAttack_01",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 1.5
+        },
+        "move": {
+            "$type": "EGIBMIADEHO",
+            "speed": 24.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "EGLLIJOBGDB": true,
+            "BCNECAMPGJJ": true
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Avatar_Fischl_Talent_D_Crow_NormalAttack_01"
+                }
+            ],
+            "JHKBLJLPGEB": true
+        }
+    },
+    "Fischl_SummonCrow_CheckPosition": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "FCAGPAEOLPI": 2.4000000953674316,
+                "HOJBBPFJMIL": 2.4000000953674316,
+                "CPGMBCECPEN": 2.4000000953674316
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Ability_Fischl_Skill_S_CrowSummon_Aim_TriggerBullet",
+                "abilityName": "Ability_Fischl_Skill_S_CrowSummon_Aim_TriggerBullet",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Ability_Fischl_Skill_S_CrowSummon_Aim_TriggerBullet_LifeOver",
+                "abilityName": "Ability_Fischl_Skill_S_CrowSummon_Aim_TriggerBullet_LifeOver",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 0.20000000298023224
+        },
+        "move": {
+            "$type": "KBENGKLMEAL",
+            "speed": 40.0,
+            "JPDDBBHJAAH": true
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "ccd": {
+                    "type": "Always"
+                },
+                "targetType": "Enemy",
+                "ignoreWater": true
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Ability_Fischl_Skill_S_CrowSummon_Aim_TriggerBullet"
+                }
+            ],
+            "JPNAMDFCBFN": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Ability_Fischl_Skill_S_CrowSummon_Aim_TriggerBullet_LifeOver"
+                }
+            ]
+        }
+    },
+    "Fischl_Talent_A_NormalAttack": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "FCAGPAEOLPI": 0.5,
+                "HOJBBPFJMIL": 0.5
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Avatar_Fischl_Talent_A_NormalAttack_Hit",
+                "abilityName": "Avatar_Fischl_Talent_A_NormalAttack_Hit",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 1.2000000476837158
+        },
+        "move": {
+            "$type": "EGIBMIADEHO",
+            "speed": 32.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "EGLLIJOBGDB": true,
+            "BCNECAMPGJJ": true
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Avatar_Fischl_Talent_A_NormalAttack_Hit"
+                }
+            ],
+            "JHKBLJLPGEB": true
+        }
+    },
+    "Fischl_Talent_C_Attack": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            },
+            "affectedByWorld": true,
+            "checkInSurface": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Avatar_Fischl_Talent_C_Hit",
+                "abilityName": "Avatar_Fischl_Talent_ExteaAttackThunder_Hit",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 8.0
+        },
+        "move": {
+            "$type": "EGIBMIADEHO",
+            "speed": 24.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "EGLLIJOBGDB": true,
+            "BCNECAMPGJJ": true
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Avatar_Fischl_Talent_ExteaAttackThunder_Hit"
+                }
+            ],
+            "JHKBLJLPGEB": true
+        }
+    },
+    "Fischl_AutoAttack_01": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "FCAGPAEOLPI": 0.5,
+                "HOJBBPFJMIL": 0.5
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Avatar_Fischl_Skill_S_Crow_AutoAttack_Hit_01",
+                "abilityName": "Avatar_Fischl_Skill_S_Crow_AutoAttack_Hit_01",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 1.5
+        },
+        "move": {
+            "$type": "EGIBMIADEHO",
+            "speed": 18.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "EGLLIJOBGDB": true,
+            "BCNECAMPGJJ": true
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Avatar_Fischl_Skill_S_Crow_AutoAttack_Hit_01"
+                }
+            ],
+            "JHKBLJLPGEB": true
+        }
+    },
+    "Fischl_AutoAttack_02": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "FCAGPAEOLPI": 0.5,
+                "HOJBBPFJMIL": 0.5
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "AHCOGNAHOOF": {
+            "lifeTime": 1.5
+        },
+        "move": {
+            "$type": "EGIBMIADEHO",
+            "speed": 18.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "EGLLIJOBGDB": true,
+            "BCNECAMPGJJ": true
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy"
+            },
+            "JHKBLJLPGEB": true
+        }
+    },
+    "Fischl_AutoAttack_Talent_01": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "FCAGPAEOLPI": 0.5,
+                "HOJBBPFJMIL": 0.5
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "AHCOGNAHOOF": {
+            "lifeTime": 1.5
+        },
+        "move": {
+            "$type": "EGIBMIADEHO",
+            "speed": 18.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "EGLLIJOBGDB": true,
+            "BCNECAMPGJJ": true
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy"
+            },
+            "JHKBLJLPGEB": true
+        }
+    },
+    "Fischl_AutoAttack_Talent_02": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "FCAGPAEOLPI": 0.5,
+                "HOJBBPFJMIL": 0.5
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "AHCOGNAHOOF": {
+            "lifeTime": 1.5
+        },
+        "move": {
+            "$type": "EGIBMIADEHO",
+            "speed": 18.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "EGLLIJOBGDB": true,
+            "BCNECAMPGJJ": true
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy"
+            },
+            "JHKBLJLPGEB": true
+        }
+    },
+    "Fischl_ControlCrow_CheckPosition": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "FCAGPAEOLPI": 2.4000000953674316,
+                "HOJBBPFJMIL": 2.4000000953674316,
+                "CPGMBCECPEN": 2.4000000953674316
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true
+            }
+        },
+        "combatTemplate": "",
+        "AHCOGNAHOOF": {
+            "lifeTime": 0.20000000298023224
+        },
+        "move": {
+            "$type": "KBENGKLMEAL",
+            "speed": 40.0,
+            "JPDDBBHJAAH": true
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "ccd": {
+                    "type": "Always"
+                },
+                "targetType": "Enemy",
+                "ignoreWater": true
+            }
+        }
+    },
+    "Fischl_Crow_NormalAttack_02": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "FCAGPAEOLPI": 0.5,
+                "HOJBBPFJMIL": 0.5
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "ignorePurgeRate": false
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "AHCOGNAHOOF": {
+            "lifeTime": 1.5
+        },
+        "move": {
+            "$type": "EGIBMIADEHO",
+            "speed": 24.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "EGLLIJOBGDB": true,
+            "BCNECAMPGJJ": true
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy"
+            },
+            "JHKBLJLPGEB": true
+        }
+    },
+    "Fischl_AimingArrow_CrowArrow": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            },
+            "affectedByWorld": true,
+            "checkInSurface": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Avatar_Fischl_Talent_C_Hit",
+                "abilityName": "Avatar_Fischl_Talent_ExteaAttackThunder_Hit",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 8.0
+        },
+        "move": {
+            "$type": "EGIBMIADEHO",
+            "speed": 24.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "EGLLIJOBGDB": true,
+            "BCNECAMPGJJ": true
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Avatar_Fischl_Talent_ExteaAttackThunder_Hit"
+                }
+            ],
+            "JHKBLJLPGEB": true
+        }
+    }
+}

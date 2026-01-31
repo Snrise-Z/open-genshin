@@ -1,0 +1,217 @@
+{
+    "common": {
+        "effectAttachShape": {
+            "$type": "ConfigEffectAttachSkinnedMesh",
+            "mesh": "EffectMesh"
+        },
+        "mass": 20.0,
+        "height": 0.800000011920929,
+        "affectedByWorld": true,
+        "checkInSurface": true,
+        "canTriggerElementReactionText": false
+    },
+    "model": {
+        "bornEffect": "",
+        "attachEffect": "",
+        "canBakeMesh": false
+    },
+    "combat": {
+        "property": {
+            "endureType": "Monster_Minion",
+            "weight": 30.0,
+            "isInvincible": true
+        },
+        "beHit": {
+            "hitBloodEffect": "",
+            "muteAllHitText": true
+        },
+        "combatLock": {
+            "lockShape": "CircleLockEnemy",
+            "denyLockOn": true,
+            "lockType": "Default"
+        },
+        "die": {
+            "dieEndTime": 0.009999999776482582,
+            "dieForceDisappearTime": 10.0,
+            "dieDisappearEffect": "Eff_Animal_Common_Die"
+        }
+    },
+    "stateLayers": {
+        "defaultLayer": {
+            "$type": "ConfigNormalStateLayer",
+            "ACOCIAFGIAD": "",
+            "stateIDs": {
+                "Born": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Born": []
+                    },
+                    "resetAnimatorTriggerOnExit": [
+                        "DoSkill"
+                    ]
+                },
+                "NormalIdle": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Standby": []
+                    },
+                    "canSyncMove": true,
+                    "resetAnimatorTriggerOnExit": [
+                        "DoSkill"
+                    ]
+                },
+                "NormalMove": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Walk": [
+                            "Animal_Fishable_Maritime_Walk"
+                        ],
+                        "Run": [
+                            "Animal_Fishable_Maritime_Run"
+                        ]
+                    },
+                    "canSyncMove": true,
+                    "resetAnimatorTriggerOnExit": [
+                        "DoSkill"
+                    ],
+                    "LIPMJPLGIKD": true
+                },
+                "Turn": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Turn_Walk": [
+                            "Animal_Fishable_Maritime_Walk"
+                        ],
+                        "Turn_Run": [
+                            "Animal_Fishable_Maritime_Turn_Run"
+                        ]
+                    },
+                    "canSyncMove": true,
+                    "resetAnimatorTriggerOnExit": [
+                        "DoSkill"
+                    ],
+                    "LIPMJPLGIKD": true
+                },
+                "BeHit": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Hit_L": []
+                    },
+                    "AJBLILDCLBO": [
+                        "BeHit"
+                    ],
+                    "resetAnimatorTriggerOnExit": [
+                        "DoSkill"
+                    ]
+                },
+                "Die": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Die": [
+                            "Animal_Fish_Die"
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    "initialPoses": {
+        "Default": {}
+    },
+    "aibeta": {
+        "enable": true,
+        "friendliness": 1,
+        "decisionArchetype": "Animal_Homeworld",
+        "moveSetting": {
+            "moveCategory": "Water",
+            "useNavMesh": false,
+            "navMeshAgentName": "Undead01"
+        },
+        "sensing": {
+            "settings": {
+                "DefaultSetting": {
+                    "enableVision": false,
+                    "feelRange": 6.5
+                }
+            }
+        },
+        "neurons": {
+            "DefaultSetting": [
+                "HIT"
+            ]
+        },
+        "threat": {
+            "clearThreatTargetDistance": 10.0,
+            "clearThreatByTargetOutOfZone": true,
+            "clearThreatTimerByDistance": 0.800000011920929,
+            "clearThreatTimerByTargetOutOfZone": 1.0,
+            "viewThreatGrow": 75.0,
+            "feelThreatGrow": 1000.0,
+            "threatBroadcastRange": 5.0,
+            "JGFOPCOIJOI": ""
+        },
+        "defendArea": {
+            "defendRange": 9.0
+        },
+        "ui": {
+            "hasDirectionIndicator": false,
+            "FLMOHOODJBA": ""
+        },
+        "profiling": {
+            "lodStrategy": "MinorAnimal",
+            "moveCullingLevel": 3
+        },
+        "combatFixedMoveTactic": [
+            {
+                "$type": "GIMIMAJNOPH",
+                "enable": true,
+                "nerveTrigger": [
+                    "HIT"
+                ],
+                "defaultSetting": {
+                    "turnSpeedOverride": 2.0,
+                    "cd": 1.0,
+                    "triggerDistance": 1.0,
+                    "fleeAngle": 360.0,
+                    "fleeNumberMin": 4,
+                    "fleeNumberMax": 5,
+                    "fleeDistanceMin": 0.5,
+                    "fleeDistanceMax": 2.0,
+                    "LNPHGOECMMJ": true,
+                    "JOCOJHEICNA": ""
+                }
+            },
+            {
+                "$type": "KMHBGMELMKD"
+            },
+            {
+                "$type": "GGKADEIBMLG",
+                "enable": true,
+                "FDIIDHNBFFE": [
+                    0,
+                    1,
+                    2
+                ],
+                "defaultSetting": {
+                    "turnSpeedOverride": 0.5,
+                    "EKDHNAGGGAE": 20.0,
+                    "BFEJAKFKKFP": 3.200000047683716,
+                    "KOAMKCEFJED": 6.400000095367432,
+                    "JOCOJHEICNA": ""
+                }
+            }
+        ]
+    },
+    "move": {
+        "$type": "IIGPJJNGCLE",
+        "AGJAKLGIBAB": false,
+        "MLKCNHIIMCE": true,
+        "AFOGPFALECN": 0.5,
+        "FACNOEFNHIB": "RootNode"
+    },
+    "animal": {
+        "hasAbility": false,
+        "tickAbilityElement": false,
+        "hasCharacterRenderering": false
+    }
+}

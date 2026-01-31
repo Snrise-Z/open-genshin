@@ -1,0 +1,669 @@
+{
+    "Default_Weapon": {
+        "$type": "ConfigGadget",
+        "combatTemplate": "",
+        "CFEIPLEGNFH": {
+            "KJKBBDBDBGN": {
+                "CNALECPIIHD": "Select",
+                "bornEffect": "",
+                "EJFBGNGILJB": "",
+                "IKHLCLNCMIE": true,
+                "LGPGLEOELON": 0.30000001192092896,
+                "FFLKNKGCGGB": -45.0,
+                "LPCHKDOHMCG": {
+                    "x": 3.0,
+                    "y": 3.0,
+                    "z": 10.0
+                },
+                "MPJFHDHPAEA": ""
+            },
+            "APJGLOKDMCN": ""
+        }
+    },
+    "Lv1_Weapon": {
+        "$type": "ConfigGadget",
+        "combatTemplate": "",
+        "CFEIPLEGNFH": {
+            "KJKBBDBDBGN": {
+                "CNALECPIIHD": "Select",
+                "OPCCJJOOCML": 2.0,
+                "DJDGFMHIOAL": 3.0,
+                "bornEffect": "Eff_DropItem_Trail",
+                "EJFBGNGILJB": "Eff_DropWeapon_Lv1",
+                "LPCHKDOHMCG": {
+                    "x": 5.0,
+                    "y": 5.0,
+                    "z": -3.0
+                },
+                "MPJFHDHPAEA": ""
+            },
+            "APJGLOKDMCN": ""
+        }
+    },
+    "Lv2_Weapon": {
+        "$type": "ConfigGadget",
+        "combatTemplate": "",
+        "CFEIPLEGNFH": {
+            "KJKBBDBDBGN": {
+                "CNALECPIIHD": "Select",
+                "OPCCJJOOCML": 2.0,
+                "DJDGFMHIOAL": 3.0,
+                "bornEffect": "Eff_DropItem_Trail",
+                "EJFBGNGILJB": "Eff_DropWeapon_Lv2",
+                "LPCHKDOHMCG": {
+                    "x": 5.0,
+                    "y": 5.0,
+                    "z": -3.0
+                },
+                "MPJFHDHPAEA": ""
+            },
+            "APJGLOKDMCN": ""
+        }
+    },
+    "Lv3_Weapon": {
+        "$type": "ConfigGadget",
+        "combatTemplate": "",
+        "CFEIPLEGNFH": {
+            "KJKBBDBDBGN": {
+                "CNALECPIIHD": "Select",
+                "OPCCJJOOCML": 2.0,
+                "DJDGFMHIOAL": 3.0,
+                "bornEffect": "Eff_DropItem_Trail",
+                "EJFBGNGILJB": "Eff_DropWeapon_Lv3",
+                "LPCHKDOHMCG": {
+                    "x": 5.0,
+                    "y": 5.0,
+                    "z": -3.0
+                },
+                "MPJFHDHPAEA": ""
+            },
+            "APJGLOKDMCN": ""
+        }
+    },
+    "Lv4_Weapon": {
+        "$type": "ConfigGadget",
+        "combatTemplate": "",
+        "CFEIPLEGNFH": {
+            "KJKBBDBDBGN": {
+                "CNALECPIIHD": "Select",
+                "OPCCJJOOCML": 2.0,
+                "DJDGFMHIOAL": 3.0,
+                "bornEffect": "Eff_DropItem_Trail",
+                "EJFBGNGILJB": "Eff_DropWeapon_Lv4",
+                "LPCHKDOHMCG": {
+                    "x": 5.0,
+                    "y": 5.0,
+                    "z": -3.0
+                },
+                "MPJFHDHPAEA": ""
+            },
+            "APJGLOKDMCN": ""
+        }
+    },
+    "Lv5_Weapon": {
+        "$type": "ConfigGadget",
+        "combatTemplate": "",
+        "CFEIPLEGNFH": {
+            "KJKBBDBDBGN": {
+                "CNALECPIIHD": "Select",
+                "OPCCJJOOCML": 2.0,
+                "DJDGFMHIOAL": 3.0,
+                "bornEffect": "Eff_DropItem_Trail",
+                "EJFBGNGILJB": "Eff_DropWeapon_Lv5",
+                "LPCHKDOHMCG": {
+                    "x": 5.0,
+                    "y": 5.0,
+                    "z": -3.0
+                },
+                "MPJFHDHPAEA": ""
+            },
+            "APJGLOKDMCN": ""
+        }
+    },
+    "Lv1_Catalyst": {
+        "$type": "ConfigGadget",
+        "combatTemplate": "",
+        "CFEIPLEGNFH": {
+            "KJKBBDBDBGN": {
+                "CNALECPIIHD": "Select",
+                "OPCCJJOOCML": 2.0,
+                "DJDGFMHIOAL": 3.0,
+                "bornEffect": "Eff_DropItem_Trail",
+                "EJFBGNGILJB": "Eff_DropWeapon_Catalyst_Lv1",
+                "LPCHKDOHMCG": {
+                    "x": 5.0,
+                    "y": 5.0,
+                    "z": -3.0
+                },
+                "MPJFHDHPAEA": ""
+            },
+            "APJGLOKDMCN": ""
+        }
+    },
+    "Lv2_Catalyst": {
+        "$type": "ConfigGadget",
+        "combatTemplate": "",
+        "CFEIPLEGNFH": {
+            "KJKBBDBDBGN": {
+                "CNALECPIIHD": "Select",
+                "OPCCJJOOCML": 2.0,
+                "DJDGFMHIOAL": 3.0,
+                "bornEffect": "Eff_DropItem_Trail",
+                "EJFBGNGILJB": "Eff_DropWeapon_Catalyst_Lv2",
+                "LPCHKDOHMCG": {
+                    "x": 5.0,
+                    "y": 5.0,
+                    "z": -3.0
+                },
+                "MPJFHDHPAEA": ""
+            },
+            "APJGLOKDMCN": ""
+        }
+    },
+    "Lv3_Catalyst": {
+        "$type": "ConfigGadget",
+        "combatTemplate": "",
+        "CFEIPLEGNFH": {
+            "KJKBBDBDBGN": {
+                "CNALECPIIHD": "Select",
+                "OPCCJJOOCML": 2.0,
+                "DJDGFMHIOAL": 3.0,
+                "bornEffect": "Eff_DropItem_Trail",
+                "EJFBGNGILJB": "Eff_DropWeapon_Catalyst_Lv3",
+                "LPCHKDOHMCG": {
+                    "x": 5.0,
+                    "y": 5.0,
+                    "z": -3.0
+                },
+                "MPJFHDHPAEA": ""
+            },
+            "APJGLOKDMCN": ""
+        }
+    },
+    "Lv4_Catalyst": {
+        "$type": "ConfigGadget",
+        "combatTemplate": "",
+        "CFEIPLEGNFH": {
+            "KJKBBDBDBGN": {
+                "CNALECPIIHD": "Select",
+                "OPCCJJOOCML": 2.0,
+                "DJDGFMHIOAL": 3.0,
+                "bornEffect": "Eff_DropItem_Trail",
+                "EJFBGNGILJB": "Eff_DropWeapon_Catalyst_Lv4",
+                "LPCHKDOHMCG": {
+                    "x": 5.0,
+                    "y": 5.0,
+                    "z": -3.0
+                },
+                "MPJFHDHPAEA": ""
+            },
+            "APJGLOKDMCN": ""
+        }
+    },
+    "Lv5_Catalyst": {
+        "$type": "ConfigGadget",
+        "combatTemplate": "",
+        "CFEIPLEGNFH": {
+            "KJKBBDBDBGN": {
+                "CNALECPIIHD": "Select",
+                "OPCCJJOOCML": 2.0,
+                "DJDGFMHIOAL": 3.0,
+                "bornEffect": "Eff_DropItem_Trail",
+                "EJFBGNGILJB": "Eff_DropWeapon_Catalyst_Lv5",
+                "LPCHKDOHMCG": {
+                    "x": 5.0,
+                    "y": 5.0,
+                    "z": -3.0
+                },
+                "MPJFHDHPAEA": ""
+            },
+            "APJGLOKDMCN": ""
+        }
+    },
+    "Default_Item": {
+        "$type": "ConfigGadget",
+        "combatTemplate": "",
+        "CFEIPLEGNFH": {
+            "KJKBBDBDBGN": {
+                "CNALECPIIHD": "Select",
+                "bornEffect": "",
+                "EJFBGNGILJB": "Eff_Item_Hint_Small",
+                "MPJFHDHPAEA": ""
+            },
+            "APJGLOKDMCN": ""
+        }
+    },
+    "Lv1_Item": {
+        "$type": "ConfigGadget",
+        "model": {
+            "bornEffect": "",
+            "attachEffect": "Eff_DropItem_Trail"
+        },
+        "hasModel": true,
+        "combatTemplate": "",
+        "CFEIPLEGNFH": {
+            "KJKBBDBDBGN": {
+                "CNALECPIIHD": "Select",
+                "OPCCJJOOCML": 2.0,
+                "DJDGFMHIOAL": 3.0,
+                "bornEffect": "",
+                "EJFBGNGILJB": "Eff_DropWeapon_Lv1",
+                "LPCHKDOHMCG": {
+                    "x": 5.0,
+                    "y": 5.0,
+                    "z": -3.0
+                },
+                "MPJFHDHPAEA": ""
+            },
+            "APJGLOKDMCN": ""
+        }
+    },
+    "Lv2_Item": {
+        "$type": "ConfigGadget",
+        "model": {
+            "bornEffect": "",
+            "attachEffect": "Eff_DropItem_Trail"
+        },
+        "hasModel": true,
+        "combatTemplate": "",
+        "CFEIPLEGNFH": {
+            "KJKBBDBDBGN": {
+                "CNALECPIIHD": "Select",
+                "OPCCJJOOCML": 2.0,
+                "DJDGFMHIOAL": 3.0,
+                "bornEffect": "",
+                "EJFBGNGILJB": "Eff_DropWeapon_Lv2",
+                "LPCHKDOHMCG": {
+                    "x": 5.0,
+                    "y": 5.0,
+                    "z": -3.0
+                },
+                "MPJFHDHPAEA": ""
+            },
+            "APJGLOKDMCN": ""
+        }
+    },
+    "Lv3_Item": {
+        "$type": "ConfigGadget",
+        "model": {
+            "bornEffect": "",
+            "attachEffect": "Eff_DropItem_Trail"
+        },
+        "hasModel": true,
+        "combatTemplate": "",
+        "CFEIPLEGNFH": {
+            "KJKBBDBDBGN": {
+                "CNALECPIIHD": "Select",
+                "OPCCJJOOCML": 2.0,
+                "DJDGFMHIOAL": 3.0,
+                "bornEffect": "",
+                "EJFBGNGILJB": "Eff_DropWeapon_Lv3",
+                "LPCHKDOHMCG": {
+                    "x": 5.0,
+                    "y": 5.0,
+                    "z": -3.0
+                },
+                "MPJFHDHPAEA": ""
+            },
+            "APJGLOKDMCN": ""
+        }
+    },
+    "Lv4_Item": {
+        "$type": "ConfigGadget",
+        "model": {
+            "bornEffect": "",
+            "attachEffect": "Eff_DropItem_Trail"
+        },
+        "hasModel": true,
+        "combatTemplate": "",
+        "CFEIPLEGNFH": {
+            "KJKBBDBDBGN": {
+                "CNALECPIIHD": "Select",
+                "OPCCJJOOCML": 2.0,
+                "DJDGFMHIOAL": 3.0,
+                "bornEffect": "",
+                "EJFBGNGILJB": "Eff_DropWeapon_Lv4",
+                "LPCHKDOHMCG": {
+                    "x": 5.0,
+                    "y": 5.0,
+                    "z": -3.0
+                },
+                "MPJFHDHPAEA": ""
+            },
+            "APJGLOKDMCN": ""
+        }
+    },
+    "Lv5_Item": {
+        "$type": "ConfigGadget",
+        "model": {
+            "bornEffect": "",
+            "attachEffect": "Eff_DropItem_Trail"
+        },
+        "hasModel": true,
+        "combatTemplate": "",
+        "CFEIPLEGNFH": {
+            "KJKBBDBDBGN": {
+                "CNALECPIIHD": "Select",
+                "OPCCJJOOCML": 2.0,
+                "DJDGFMHIOAL": 3.0,
+                "bornEffect": "",
+                "EJFBGNGILJB": "Eff_DropWeapon_Lv5",
+                "LPCHKDOHMCG": {
+                    "x": 5.0,
+                    "y": 5.0,
+                    "z": -3.0
+                },
+                "MPJFHDHPAEA": ""
+            },
+            "APJGLOKDMCN": ""
+        }
+    },
+    "Default_NoDrop_Item": {
+        "$type": "ConfigGadget",
+        "combatTemplate": "",
+        "CFEIPLEGNFH": {
+            "KJKBBDBDBGN": {
+                "CNALECPIIHD": "Select",
+                "OLHFFEDLJGN": true,
+                "bornEffect": "",
+                "EJFBGNGILJB": "",
+                "MPJFHDHPAEA": ""
+            },
+            "APJGLOKDMCN": ""
+        }
+    },
+    "Default_Task_Item": {
+        "$type": "ConfigGadget",
+        "combatTemplate": "",
+        "CFEIPLEGNFH": {
+            "KJKBBDBDBGN": {
+                "CNALECPIIHD": "Attract",
+                "bornEffect": "",
+                "EJFBGNGILJB": "",
+                "MKJHCLJLEDM": {
+                    "x": 2.0,
+                    "y": 6.0
+                },
+                "MPJFHDHPAEA": ""
+            },
+            "APJGLOKDMCN": ""
+        }
+    },
+    "Default_MonsterWeapon": {
+        "$type": "ConfigGadget",
+        "combatTemplate": "",
+        "CFEIPLEGNFH": {
+            "KJKBBDBDBGN": {
+                "CNALECPIIHD": "Monster",
+                "bornEffect": "",
+                "EJFBGNGILJB": "",
+                "MPJFHDHPAEA": ""
+            },
+            "APJGLOKDMCN": ""
+        }
+    },
+    "Default_UncarvedGem": {
+        "$type": "ConfigGadget",
+        "combatTemplate": "",
+        "CFEIPLEGNFH": {
+            "KJKBBDBDBGN": {
+                "CNALECPIIHD": "Attract",
+                "bornEffect": "",
+                "EJFBGNGILJB": "SceneObj_Test_IceBall",
+                "MKJHCLJLEDM": {
+                    "x": 2.0,
+                    "y": 6.0
+                },
+                "MPJFHDHPAEA": ""
+            },
+            "APJGLOKDMCN": ""
+        }
+    },
+    "Default_Mora": {
+        "$type": "ConfigGadget",
+        "combatTemplate": "",
+        "CFEIPLEGNFH": {
+            "KJKBBDBDBGN": {
+                "CNALECPIIHD": "GroupAuto",
+                "bornEffect": "",
+                "EJFBGNGILJB": "",
+                "LGPGLEOELON": 0.07000000029802322,
+                "LPCHKDOHMCG": {
+                    "x": 3.0,
+                    "y": 3.0,
+                    "z": 10.0
+                },
+                "MCIGCGEJEAC": 1.5,
+                "FGMCNKGHPEA": {
+                    "MIENLNILFCN": {
+                        "x": 0.800000011920929,
+                        "y": 5.0
+                    },
+                    "ODLNPCKKEHD": {
+                        "x": 1.0,
+                        "y": 6.0
+                    },
+                    "maxNum": 8,
+                    "BIPBLPPMADD": 4
+                },
+                "MPJFHDHPAEA": ""
+            },
+            "APJGLOKDMCN": ""
+        }
+    },
+    "Default_Item_WithQuest": {
+        "$type": "ConfigGadget",
+        "model": {
+            "bornEffect": "",
+            "attachEffect": "Eff_Quest_SiteInteract"
+        },
+        "hasModel": true,
+        "combatTemplate": "",
+        "CFEIPLEGNFH": {
+            "KJKBBDBDBGN": {
+                "CNALECPIIHD": "Select",
+                "bornEffect": "",
+                "EJFBGNGILJB": "Eff_Item_Hint_Small",
+                "MPJFHDHPAEA": ""
+            },
+            "APJGLOKDMCN": ""
+        }
+    },
+    "SceneObj_Area_Common_Property_Prop_BlankCoin_01": {
+        "$type": "ConfigGadget",
+        "combatTemplate": "",
+        "CFEIPLEGNFH": {
+            "KJKBBDBDBGN": {
+                "CNALECPIIHD": "Attract",
+                "bornEffect": "",
+                "EJFBGNGILJB": "",
+                "MKJHCLJLEDM": {
+                    "x": 2.0,
+                    "y": 6.0
+                },
+                "MPJFHDHPAEA": ""
+            },
+            "APJGLOKDMCN": ""
+        }
+    },
+    "Default_Attract_Item": {
+        "$type": "ConfigGadget",
+        "combatTemplate": "",
+        "CFEIPLEGNFH": {
+            "KJKBBDBDBGN": {
+                "CNALECPIIHD": "Attract",
+                "bornEffect": "",
+                "EJFBGNGILJB": "",
+                "LPCHKDOHMCG": {
+                    "x": 600.0,
+                    "y": 600.0,
+                    "z": 600.0
+                },
+                "MCIGCGEJEAC": 2.0,
+                "KNJEKJFNCPB": true,
+                "EAKKEILMOKN": 3.0,
+                "ELCDDGKKBMF": 170.0,
+                "OKCPOLFBODJ": 150.0,
+                "INGHNEHBBLJ": 2.0,
+                "JKAFKENPMLI": 30.0,
+                "KPAFHKJBNID": 0.6000000238418579,
+                "MPJFHDHPAEA": "Play_sfx_pickups_object_wood_get"
+            },
+            "APJGLOKDMCN": ""
+        }
+    },
+    "Default_Attract_CatchAnimal": {
+        "$type": "ConfigGadget",
+        "model": {
+            "bornEffect": "",
+            "attachEffect": "Eff_SceneObj_CatchAnimal_Bullet"
+        },
+        "hasModel": true,
+        "combat": {
+            "property": {
+                "HP": 10.0,
+                "isInvincible": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            },
+            "die": {
+                "dieDisappearEffect": "Eff_SceneObj_CatchAnimal_Shoot"
+            }
+        },
+        "combatTemplate": "",
+        "CFEIPLEGNFH": {
+            "KJKBBDBDBGN": {
+                "CNALECPIIHD": "Attract",
+                "bornEffect": "",
+                "EJFBGNGILJB": "Eff_SceneObj_CatchAnimal_Bullet",
+                "LPCHKDOHMCG": {
+                    "x": 600.0,
+                    "y": 600.0,
+                    "z": 600.0
+                },
+                "MCIGCGEJEAC": 2.0,
+                "EAKKEILMOKN": 3.0,
+                "ELCDDGKKBMF": 170.0,
+                "OKCPOLFBODJ": 150.0,
+                "INGHNEHBBLJ": 2.0,
+                "JKAFKENPMLI": 30.0,
+                "KPAFHKJBNID": 0.6000000238418579,
+                "MPJFHDHPAEA": ""
+            },
+            "APJGLOKDMCN": ""
+        }
+    },
+    "Default_Attract_CatchAnimal_Activity": {
+        "$type": "ConfigGadget",
+        "model": {
+            "bornEffect": "",
+            "attachEffect": "Eff_SceneObj_CatchAnimal_Bullet"
+        },
+        "hasModel": true,
+        "combat": {
+            "property": {
+                "HP": 10.0,
+                "isInvincible": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            },
+            "die": {
+                "dieDisappearEffect": "Eff_SceneObj_CatchAnimal_Shoot"
+            }
+        },
+        "combatTemplate": "",
+        "CFEIPLEGNFH": {
+            "KJKBBDBDBGN": {
+                "CNALECPIIHD": "Attract",
+                "bornEffect": "",
+                "EJFBGNGILJB": "Eff_SceneObj_CatchAnimal_Bullet",
+                "LPCHKDOHMCG": {
+                    "x": 600.0,
+                    "y": 600.0,
+                    "z": 600.0
+                },
+                "MCIGCGEJEAC": 2.0,
+                "EAKKEILMOKN": 3.0,
+                "ELCDDGKKBMF": 170.0,
+                "OKCPOLFBODJ": 150.0,
+                "INGHNEHBBLJ": 2.0,
+                "JKAFKENPMLI": 30.0,
+                "KPAFHKJBNID": 0.6000000238418579,
+                "MPJFHDHPAEA": "",
+                "MGLBKIIDCGB": true,
+                "BMCDGPIHLGE": true
+            },
+            "APJGLOKDMCN": ""
+        }
+    },
+    "Default_Attract_BoatRaceNitrogen_Activity": {
+        "$type": "ConfigGadget",
+        "model": {
+            "bornEffect": "",
+            "attachEffect": "Eff_SceneObj_BoatRaceNitrogen_01_Trail"
+        },
+        "hasModel": true,
+        "combat": {
+            "property": {
+                "HP": 10.0,
+                "isInvincible": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "CFEIPLEGNFH": {
+            "KJKBBDBDBGN": {
+                "CNALECPIIHD": "Attract",
+                "bornEffect": "",
+                "EJFBGNGILJB": "Eff_SceneObj_BoatRaceNitrogen_01_Trail",
+                "MCIGCGEJEAC": 0.0,
+                "KNJEKJFNCPB": true,
+                "EAKKEILMOKN": 2.0999999046325684,
+                "DIAPMFGMHHG": 0.10000000149011612,
+                "ELCDDGKKBMF": 180.0,
+                "OKCPOLFBODJ": 180.0,
+                "CFDJBDLLJKP": 0,
+                "INGHNEHBBLJ": 2.0999999046325684,
+                "JKAFKENPMLI": 300.0,
+                "MPJFHDHPAEA": "",
+                "MGLBKIIDCGB": true,
+                "BMCDGPIHLGE": true
+            },
+            "APJGLOKDMCN": ""
+        }
+    }
+}

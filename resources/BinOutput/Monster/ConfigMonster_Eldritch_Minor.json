@@ -1,0 +1,821 @@
+{
+    "common": {
+        "mass": 10000.0,
+        "height": 50.0,
+        "MECICKNEPGG": 3.0,
+        "affectedByWorld": true,
+        "checkInSurface": true,
+        "HPIJDAKGABA": 10000.0,
+        "clearAnimatorOnSetLightDeactive": true,
+        "clearAIOnSetLightDeactive": true
+    },
+    "LBGLCHLIKJP": {
+        "$type": "NJIKCGBDNDF",
+        "HONCKGMDJEK": true,
+        "IKIJCPNMBHI": 360.0,
+        "FMKKBCJKMPH": 360.0,
+        "FDPCOFKGCHG": [
+            "NormalIdle/Standby"
+        ]
+    },
+    "PMJIKOJNNBO": {
+        "MPDPMNBOOEB": "RootNode",
+        "BBMFBOMLHHG": "",
+        "JMDOINIPPJL": "RootNode",
+        "ACEEJPFDCPP": "AimPoint",
+        "EPDNNFIJHMD": [
+            "SelectedPoint1",
+            "SelectedPoint2",
+            "SelectedPoint3",
+            "SelectedPoint4",
+            "SelectedPoint5",
+            "SelectedPoint6"
+        ],
+        "NEGLBHADBFE": [
+            "SelectedPoint1",
+            "SelectedPoint2",
+            "SelectedPoint3",
+            "SelectedPoint4",
+            "SelectedPoint5",
+            "SelectedPoint6"
+        ]
+    },
+    "model": {
+        "bornEffect": "",
+        "attachEffect": "",
+        "canBakeMesh": false
+    },
+    "MEMHBNEJBCL": {
+        "PJBCJPKPOLB": 2.0,
+        "CMDNEPBHICB": {
+            "ADNPIILDCJH": 25.0
+        }
+    },
+    "BNICEDEJBIE": {
+        "ALNLOJKEBIL": [
+            "SGV_Mini_Osial"
+        ]
+    },
+    "combat": {
+        "property": {
+            "endureType": "Monster_Boss_Other",
+            "weight": 20000.0
+        },
+        "beHit": {
+            "hitBloodEffect": "",
+            "ABOPKJFEGBP": {
+                "$type": "FOPPDMLOPJG",
+                "BHGKANCOMNF": [
+                    {
+                        "DFDJFCEEEPD": 0.33000001311302185,
+                        "ICJCCJILFON": [
+                            "BodyBox01",
+                            "BodyBox02",
+                            "BodyBox03",
+                            "BodyBox04",
+                            "BodyBox05",
+                            "BodyBox06",
+                            "BodyBox07",
+                            "BodyBox08",
+                            "BodyBox09"
+                        ]
+                    },
+                    {
+                        "DFDJFCEEEPD": 0.6600000262260437,
+                        "ICJCCJILFON": [
+                            "BodyBox09",
+                            "BodyBox10",
+                            "BodyBox11"
+                        ]
+                    },
+                    {
+                        "DFDJFCEEEPD": 1.0,
+                        "ICJCCJILFON": [
+                            "BodyBox12",
+                            "HeadBox"
+                        ]
+                    }
+                ]
+            }
+        },
+        "combatLock": {
+            "lockShape": "CircleLockEnemy",
+            "lockType": "Boss_Lv5"
+        },
+        "die": {
+            "hasAnimatorDie": true,
+            "dieEndTime": 4.0,
+            "dieForceDisappearTime": 4.0,
+            "dieDisappearEffect": "",
+            "CEJEBJMECHD": 4.0,
+            "LEDBOLGDENF": true,
+            "IEAKKMEDNDE": true,
+            "AAEANOPIAAL": true,
+            "IBBHGBHIHCI": true,
+            "BKIBMIAJOHP": true,
+            "MOFPBPPGPCL": true
+        }
+    },
+    "abilities": [
+        {
+            "abilityID": "",
+            "abilityName": "Monster_Eldritch_Minor_Initialize",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "",
+            "abilityName": "Monster_Eldritch_Minor_StateSwitch",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "",
+            "abilityName": "Monster_Eldritch_Minor_SkillMonitor",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "",
+            "abilityName": "Monster_Eldritch_Minor_SkillManager",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "",
+            "abilityName": "Monster_Eldritch_Minor_SkillPosition_Manager",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "",
+            "abilityName": "Monster_Eldritch_Minor_DiveIn",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "",
+            "abilityName": "Monster_Eldritch_Minor_MainHead_NewRoundBlink",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "",
+            "abilityName": "Monster_Eldritch_Minor_DiveOut",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "",
+            "abilityName": "Monster_Eldritch_Minor_Gnaw",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "",
+            "abilityName": "Monster_Eldritch_Minor_WaterJet",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "",
+            "abilityName": "Monster_Eldritch_Minor_WaterImpulse",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "",
+            "abilityName": "Monster_Eldritch_Minor_WaterBall",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "",
+            "abilityName": "Monster_Eldritch_Minor_Alert",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "",
+            "abilityName": "Monster_Eldritch_Minor_Alert_BulletManager",
+            "abilityOverride": ""
+        }
+    ],
+    "stateLayers": {
+        "defaultLayer": {
+            "$type": "ConfigNormalStateLayer",
+            "ACOCIAFGIAD": "",
+            "stateIDs": {
+                "NormalIdle": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Standby": [],
+                        "UnderWater": []
+                    },
+                    "canDoSkill": true,
+                    "canSyncMove": true,
+                    "resetAnimatorTriggerOnExit": [
+                        "DoSkill"
+                    ]
+                },
+                "Moving": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Moving": []
+                    },
+                    "canSyncMove": true,
+                    "resetAnimatorTriggerOnExit": [
+                        "DoSkill"
+                    ],
+                    "LIPMJPLGIKD": true
+                },
+                "Die": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "DieMain": [
+                            "Monster_Eldritch_Minor_DieMain",
+                            "Audio_Monster_Eldritch_Minor_Die"
+                        ],
+                        "DieSub": [
+                            "Monster_Eldritch_Minor_DieSub",
+                            "Audio_Monster_Eldritch_Minor_Die"
+                        ]
+                    }
+                },
+                "Alert": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "AlertL": [
+                            "Monster_Eldritch_Minor_AlertL"
+                        ],
+                        "AlertM": [
+                            "Monster_Eldritch_Minor_AlertM"
+                        ],
+                        "AlertR": [
+                            "Monster_Eldritch_Minor_AlertR"
+                        ],
+                        "AlertUnderWater": []
+                    },
+                    "LAKHIBAPNAB": true,
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "DiveIn": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "DiveIn": [
+                            "Monster_Eldritch_Minor_DiveIn",
+                            "Audio_Monster_Eldritch_Minor_DiveIn"
+                        ]
+                    },
+                    "LAKHIBAPNAB": true,
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "DiveOut": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "DiveOut": [
+                            "Monster_Eldritch_Minor_DiveOut",
+                            "Audio_Monster_Eldritch_Minor_DiveOut"
+                        ]
+                    },
+                    "LAKHIBAPNAB": true,
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "SkillDiveIn": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "SkillDiveIn": [
+                            "Monster_Eldritch_Minor_DiveIn",
+                            "Audio_Monster_Eldritch_Minor_DiveIn"
+                        ],
+                        "SkillDiveInAS": []
+                    },
+                    "LAKHIBAPNAB": true,
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "SkillDiveOut": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "SkillDiveOut": [
+                            "Monster_Eldritch_Minor_DiveOut",
+                            "Audio_Monster_Eldritch_Minor_DiveOut"
+                        ]
+                    },
+                    "LAKHIBAPNAB": true,
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "SkillStandby": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "SkillStandby": []
+                    },
+                    "LAKHIBAPNAB": true,
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "Gnaw": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Gnaw_DiveOut": [
+                            "Audio_Monster_Eldritch_Minor_Gnaw_DiveOut"
+                        ],
+                        "Gnaw_BS": [],
+                        "Gnaw_Attack": [
+                            "Monster_Eldritch_Minor_Gnaw_Attack",
+                            "Audio_Monster_Eldritch_Minor_Gnaw_Attack"
+                        ],
+                        "Gnaw_OnBoard01": [
+                            "Audio_Monster_Eldritch_Minor_Gnaw_OnBoard"
+                        ],
+                        "Gnaw_OnBoard02": [
+                            "Audio_Monster_Eldritch_Minor_Gnaw_OnBoard"
+                        ],
+                        "Gnaw_OnBoard01_Fast": [
+                            "Audio_Monster_Eldritch_Minor_Gnaw_OnBoard"
+                        ],
+                        "Gnaw_OnBoard02_Fast": [
+                            "Audio_Monster_Eldritch_Minor_Gnaw_OnBoard"
+                        ],
+                        "Gnaw_AS": [
+                            "Audio_Monster_Eldritch_Minor_DiveIn"
+                        ],
+                        "Gnaw_UnderWater": []
+                    },
+                    "LAKHIBAPNAB": true,
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "WaterJet": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "WaterJet_Move": [
+                            "Audio_Monster_Eldritch_Minor_Gnaw_WaterJet"
+                        ],
+                        "WaterJet_Laser": [
+                            "Audio_Monster_Eldritch_Minor_Gnaw_WaterJet"
+                        ],
+                        "WaterJet_AS": [
+                            "Audio_Monster_Eldritch_Minor_Gnaw_WaterJet"
+                        ],
+                        "WaterJet_DiveIn": [
+                            "Audio_Monster_Eldritch_Minor_Gnaw_WaterJet"
+                        ],
+                        "WaterJet_UnderWater": []
+                    },
+                    "canSyncMove": true,
+                    "LAKHIBAPNAB": true,
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ],
+                    "LIPMJPLGIKD": true,
+                    "ODINBNMGLGA": true
+                },
+                "WaterImpulse": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "WaterImpulse": [
+                            "Monster_Eldritch_Minor_WaterImpulse",
+                            "Audio_Monster_Eldritch_Minor_Gnaw_WaterImpulse"
+                        ]
+                    },
+                    "LAKHIBAPNAB": true,
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "WaterBall": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "WaterBall": [
+                            "Monster_Eldritch_Minor_WaterBall",
+                            "Audio_Monster_Eldritch_Minor_Gnaw_WaterBall"
+                        ]
+                    },
+                    "LAKHIBAPNAB": true,
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                }
+            }
+        }
+    },
+    "IEFGNHABHFH": {
+        "$type": "PAOBAEKGGBC",
+        "JBKMLLFNHAL": "BillboardAttach",
+        "NDKBHOOPGNA": {
+            "y": 1.5
+        },
+        "LOMMBJLKPHE": 1.0,
+        "FMJAGHIMLEI": true,
+        "KGHAGECNJPO": true,
+        "MGLEAPLEHFN": "Big"
+    },
+    "initialPoses": {
+        "Default": {
+            "initialPoseID": 101,
+            "initialPoseParams": {
+                "boolParams": {
+                    "UnderWater": "false"
+                }
+            }
+        },
+        "PowerOff": {
+            "initialPoseID": 102,
+            "initialPoseParams": {
+                "boolParams": {
+                    "UnderWater": "true"
+                }
+            }
+        }
+    },
+    "aibeta": {
+        "enable": true,
+        "moveSetting": {
+            "useNavMesh": false,
+            "navMeshAgentName": "Undead01"
+        },
+        "sensing": {
+            "settings": {
+                "DefaultSetting": {
+                    "PHDIIPOBJGA": 200.0,
+                    "MELADMKNPHC": true,
+                    "feelRange": 200.0
+                }
+            },
+            "templates": {
+                "DefaultTemplate": {
+                    "DefaultPoses": "DefaultSetting"
+                }
+            }
+        },
+        "threat": {
+            "clearThreatTargetDistance": 999.0,
+            "PLCPHNHGFAC": 999.0,
+            "clearThreatByTargetOutOfZone": true,
+            "clearThreatTimerByTargetOutOfZone": 999.0,
+            "IBGELAGCJFH": "Monster_TauntLevel_5",
+            "JGFOPCOIJOI": ""
+        },
+        "defendArea": {
+            "defendRange": 50.0
+        },
+        "profiling": {
+            "lodStrategy": "Best"
+        },
+        "CNAPABCFOAH": {
+            "LNFOCHIGPKF": true,
+            "MJGGALAFJOL": false
+        },
+        "IEMFHBCDJFP": [
+            {
+                "BIMBEJCAFLP": 2,
+                "DIAPGOFDGLC": 15.0
+            }
+        ],
+        "HEJKJODINHK": {
+            "GMBKODANLGP": {
+                "0": [
+                    241,
+                    251
+                ],
+                "1": [
+                    221,
+                    231,
+                    241,
+                    251
+                ],
+                "2": [
+                    231,
+                    241,
+                    251
+                ],
+                "3": [
+                    221,
+                    241,
+                    251
+                ],
+                "4": [
+                    221,
+                    231,
+                    251
+                ],
+                "5": [
+                    221,
+                    231,
+                    241
+                ],
+                "6": [
+                    222
+                ],
+                "7": [
+                    233
+                ],
+                "8": [
+                    242,
+                    252
+                ]
+            }
+        },
+        "BNIENJNLAIJ": {
+            "221": {
+                "NOKKDDHKGAK": "Gnaw",
+                "MBDAAADDHNL": 3,
+                "ENKLFBHHOJI": {
+                    "CEKMINILIFB": [
+                        102,
+                        201
+                    ]
+                },
+                "cd": 5.0,
+                "LKCFDIOMLCM": 1.0,
+                "KKAEGIJIDLG": 2.0,
+                "NOPNCNPCPJE": "",
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "Gnaw"
+                ],
+                "PGPDNPMFFAG": "11",
+                "CCEAGFDONFH": "01",
+                "OKOFHICILMD": "11",
+                "CCFFFOIDOLP": "11"
+            },
+            "222": {
+                "NOKKDDHKGAK": "Gnaw",
+                "MBDAAADDHNL": 3,
+                "ENKLFBHHOJI": {
+                    "CEKMINILIFB": [
+                        102,
+                        201
+                    ]
+                },
+                "cd": 5.0,
+                "LKCFDIOMLCM": 1.0,
+                "KKAEGIJIDLG": 2.0,
+                "NOPNCNPCPJE": "",
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "Gnaw"
+                ],
+                "PGPDNPMFFAG": "11",
+                "CCEAGFDONFH": "01",
+                "OKOFHICILMD": "11",
+                "CCFFFOIDOLP": "11"
+            },
+            "231": {
+                "NOKKDDHKGAK": "WaterJet",
+                "MBDAAADDHNL": 2,
+                "ENKLFBHHOJI": {
+                    "CEKMINILIFB": [
+                        201
+                    ]
+                },
+                "cd": 5.0,
+                "LKCFDIOMLCM": 1.0,
+                "KKAEGIJIDLG": 1.0,
+                "NOPNCNPCPJE": "",
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "SkillDiveOut",
+                    "WaterJet"
+                ],
+                "PGPDNPMFFAG": "11",
+                "CCEAGFDONFH": "01",
+                "OKOFHICILMD": "11",
+                "CCFFFOIDOLP": "11"
+            },
+            "232": {
+                "NOKKDDHKGAK": "WaterJet",
+                "MBDAAADDHNL": 2,
+                "ENKLFBHHOJI": {
+                    "CEKMINILIFB": [
+                        201
+                    ]
+                },
+                "cd": 5.0,
+                "LKCFDIOMLCM": 1.0,
+                "KKAEGIJIDLG": 1.0,
+                "NOPNCNPCPJE": "",
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "SkillDiveOut",
+                    "WaterJet"
+                ],
+                "PGPDNPMFFAG": "11",
+                "CCEAGFDONFH": "01",
+                "OKOFHICILMD": "11",
+                "CCFFFOIDOLP": "11"
+            },
+            "233": {
+                "NOKKDDHKGAK": "WaterJet",
+                "MBDAAADDHNL": 2,
+                "ENKLFBHHOJI": {
+                    "CEKMINILIFB": [
+                        102,
+                        201
+                    ]
+                },
+                "cd": 5.0,
+                "LKCFDIOMLCM": 1.0,
+                "KKAEGIJIDLG": 1.0,
+                "NOPNCNPCPJE": "",
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "SkillDiveOut",
+                    "WaterJet"
+                ],
+                "PGPDNPMFFAG": "11",
+                "CCEAGFDONFH": "01",
+                "OKOFHICILMD": "11",
+                "CCFFFOIDOLP": "11"
+            },
+            "241": {
+                "NOKKDDHKGAK": "WaterImpulse",
+                "MBDAAADDHNL": 4,
+                "ENKLFBHHOJI": {
+                    "CEKMINILIFB": [
+                        102,
+                        201,
+                        202
+                    ]
+                },
+                "cd": 5.0,
+                "LKCFDIOMLCM": 1.0,
+                "KKAEGIJIDLG": 2.0,
+                "NOPNCNPCPJE": "",
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "SkillDiveOut",
+                    "WaterImpulse",
+                    "SkillStandby",
+                    "SkillDiveIn"
+                ],
+                "PGPDNPMFFAG": "11",
+                "CCEAGFDONFH": "01",
+                "OKOFHICILMD": "11",
+                "CCFFFOIDOLP": "11"
+            },
+            "242": {
+                "NOKKDDHKGAK": "WaterImpulse",
+                "MBDAAADDHNL": 4,
+                "ENKLFBHHOJI": {
+                    "CEKMINILIFB": [
+                        101
+                    ]
+                },
+                "cd": 5.0,
+                "LKCFDIOMLCM": 12.0,
+                "NOPNCNPCPJE": "",
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "WaterImpulse",
+                    "SkillStandby",
+                    "SkillDiveIn"
+                ],
+                "PGPDNPMFFAG": "11",
+                "CCEAGFDONFH": "01",
+                "OKOFHICILMD": "11",
+                "CCFFFOIDOLP": "11"
+            },
+            "251": {
+                "NOKKDDHKGAK": "WaterBall",
+                "MBDAAADDHNL": 4,
+                "ENKLFBHHOJI": {
+                    "CEKMINILIFB": [
+                        102,
+                        201,
+                        202
+                    ]
+                },
+                "cd": 5.0,
+                "LKCFDIOMLCM": 1.0,
+                "KKAEGIJIDLG": 2.0,
+                "NOPNCNPCPJE": "",
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "SkillDiveOut",
+                    "WaterBall",
+                    "SkillStandby",
+                    "SkillDiveIn"
+                ],
+                "PGPDNPMFFAG": "11",
+                "CCEAGFDONFH": "01",
+                "OKOFHICILMD": "11",
+                "CCFFFOIDOLP": "11"
+            },
+            "252": {
+                "NOKKDDHKGAK": "WaterBall",
+                "MBDAAADDHNL": 4,
+                "ENKLFBHHOJI": {
+                    "CEKMINILIFB": [
+                        101
+                    ]
+                },
+                "cd": 5.0,
+                "LKCFDIOMLCM": 5.0,
+                "NOPNCNPCPJE": "",
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "WaterBall"
+                ],
+                "PGPDNPMFFAG": "11",
+                "CCEAGFDONFH": "01",
+                "OKOFHICILMD": "11",
+                "CCFFFOIDOLP": "11"
+            }
+        },
+        "EMBHEEALPLD": 1.5,
+        "combatFixedMoveTactic": [
+            {
+                "$type": "ILOIKGFEEEL",
+                "enable": true,
+                "FJANPNOAAFK": {
+                    "CEKMINILIFB": [
+                        104
+                    ]
+                },
+                "defaultSetting": {
+                    "KIHPEPHJMOG": 2,
+                    "turnSpeedOverride": 50.0,
+                    "EMBDNCDHGHP": 0.0,
+                    "PJAHNJHJBIH": 36.0,
+                    "FOPJPGEEPEC": 30.5,
+                    "NMGNEGKJKNL": 2.0,
+                    "JOCOJHEICNA": ""
+                }
+            }
+        ]
+    },
+    "GIBHCHHOJFI": [
+        {
+            "NPDDCIDNKMH": 201,
+            "KCAOBJOPJIC": 257,
+            "abilityName": ""
+        },
+        {
+            "NPDDCIDNKMH": 211,
+            "KCAOBJOPJIC": 258,
+            "abilityName": ""
+        },
+        {
+            "NPDDCIDNKMH": 221,
+            "KCAOBJOPJIC": 259,
+            "abilityName": ""
+        },
+        {
+            "NPDDCIDNKMH": 231,
+            "KCAOBJOPJIC": 260,
+            "abilityName": ""
+        },
+        {
+            "NPDDCIDNKMH": 241,
+            "KCAOBJOPJIC": 261,
+            "abilityName": ""
+        },
+        {
+            "NPDDCIDNKMH": 251,
+            "KCAOBJOPJIC": 262,
+            "abilityName": ""
+        }
+    ],
+    "move": {
+        "$type": "IIGPJJNGCLE",
+        "MLKCNHIIMCE": true,
+        "AFOGPFALECN": 20.770000457763672,
+        "KCPLNKCIOCI": "None",
+        "EBOIFGIJOOJ": true,
+        "FACNOEFNHIB": "RootNode"
+    },
+    "BEGHJJDCLLK": {
+        "KEEAIACIJBN": ""
+    },
+    "LMHBPOFDMGB": {
+        "default": {
+            "$type": "ALDGBHOFGNJ",
+            "MBDAAADDHNL": 1.0,
+            "CFHLGBDKNNE": 150.0,
+            "MFHGHLBIABP": 150.0,
+            "ODGOPJOMIOD": 0.5,
+            "NEEJKCEAEOH": 48.5,
+            "HNELLIFDCEJ": 10.0,
+            "LAFEEHPNFJE": 10.0,
+            "LHMKDKDKCMK": false,
+            "CINOLDJDIME": 30.0,
+            "JAOHLHPPBDE": 45.0,
+            "PNABBNBKPKL": 50.0,
+            "KAJCHFLHBDJ": 40.0,
+            "DDKDCMMBADD": 100.0,
+            "ADOADIMFHKL": 145.0,
+            "BKEJGFMMHCD": "CircleR150",
+            "EBJKIPGGECO": "CircleR150"
+        }
+    }
+}

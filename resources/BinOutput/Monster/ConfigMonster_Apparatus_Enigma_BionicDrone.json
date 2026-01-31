@@ -1,0 +1,809 @@
+{
+    "common": {
+        "effectAttachShape": {
+            "$type": "PBJLPIBAGLF",
+            "BLAAHOEKBED": 2.0,
+            "JAGCLOLMPNL": 2.0,
+            "CGEDBGCPFKM": 2.0
+        },
+        "mass": 1000.0,
+        "height": 2.200000047683716,
+        "MECICKNEPGG": 1.5,
+        "affectedByWorld": true,
+        "checkInSurface": true,
+        "useGrassDisplacement": true,
+        "clearAnimatorOnSetLightDeactive": true,
+        "clearAIOnSetLightDeactive": true
+    },
+    "model": {
+        "bornEffect": "",
+        "attachEffect": "",
+        "canBakeMesh": false
+    },
+    "MEMHBNEJBCL": {
+        "PJBCJPKPOLB": 2.0,
+        "CMDNEPBHICB": {
+            "ADNPIILDCJH": 5.0
+        }
+    },
+    "combat": {
+        "property": {
+            "endureType": "Monster_Demiboss_Other",
+            "weight": 300.0
+        },
+        "beHit": {
+            "hitBloodEffect": "",
+            "KGBJBNEBABH": false
+        },
+        "combatLock": {
+            "lockShape": "CircleLockEnemy",
+            "lockType": "Avatar&Monster_Lv4"
+        },
+        "die": {
+            "hasAnimatorDie": true,
+            "dieEndTime": 1.7999999523162842,
+            "dieForceDisappearTime": 3.5,
+            "dieDisappearEffect": "Eff_Death_Common",
+            "dieShaderData": "MonsterDie",
+            "AHGCGJLAMJJ": true,
+            "LEDBOLGDENF": true,
+            "IEAKKMEDNDE": true,
+            "AAEANOPIAAL": true,
+            "IBBHGBHIHCI": true,
+            "BKIBMIAJOHP": true,
+            "MOFPBPPGPCL": true
+        }
+    },
+    "abilities": [
+        {
+            "abilityID": "",
+            "abilityName": "AbilityResistStruggle",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "",
+            "abilityName": "Monster_Apparatus_Enigma_Born",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "",
+            "abilityName": "Monster_Apparatus_Enigma_PowerOff",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "",
+            "abilityName": "Monster_Apparatus_Enigma_PowerOff_Remove",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "",
+            "abilityName": "Monster_Apparatus_Enigma_Weakness",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "",
+            "abilityName": "Monster_Apparatus_Enigma_Weakness_Remove",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "",
+            "abilityName": "Monster_Apparatus_Enigma_Break_Remove",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "",
+            "abilityName": "Monster_Apparatus_Enigma_Weak",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "",
+            "abilityName": "Monster_Apparatus_Enigma_Weak_Effect",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "",
+            "abilityName": "Monster_Apparatus_Enigma_Weak_End",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "",
+            "abilityName": "Monster_Apparatus_Enigma_ReturnToBorn",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "",
+            "abilityName": "Monster_Apparatus_Enigma_BionicDrone_Initialization",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "",
+            "abilityName": "Monster_Apparatus_Enigma_BionicDrone_CoreActive",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "",
+            "abilityName": "Monster_Apparatus_Enigma_BionicDrone_AimAtk",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "",
+            "abilityName": "Monster_Apparatus_Enigma_BionicDrone_AimAtk_TriggerBullet",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "",
+            "abilityName": "Monster_Apparatus_Enigma_BionicDrone_ChargeAtk",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "",
+            "abilityName": "Monster_Apparatus_Enigma_BionicDrone_ChargeAtk_TriggerBullet",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "",
+            "abilityName": "Monster_Apparatus_Enigma_BionicDrone_VoltSwitch",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "",
+            "abilityName": "Monster_Apparatus_Enigma_BionicDrone_CoveringFire",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "",
+            "abilityName": "Monster_Apparatus_Enigma_BionicDrone_Steer",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "",
+            "abilityName": "Monster_Apparatus_Enigma_Machinery",
+            "abilityOverride": ""
+        }
+    ],
+    "stateLayers": {
+        "defaultLayer": {
+            "$type": "ConfigNormalStateLayer",
+            "ACOCIAFGIAD": "",
+            "stateIDs": {
+                "Born": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Born": []
+                    },
+                    "canSyncMove": true,
+                    "resetAnimatorTriggerOnExit": [
+                        "DoSkill"
+                    ]
+                },
+                "NormalIdle": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Standby": [],
+                        "Standby_Machinery": []
+                    },
+                    "canDoSkill": true,
+                    "canSyncMove": true,
+                    "resetAnimatorTriggerOnExit": [
+                        "DoSkill"
+                    ]
+                },
+                "NormalIdle_WeakLoop": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "WeakLoop": []
+                    },
+                    "canDoSkill": true,
+                    "canSyncMove": true,
+                    "resetAnimatorTriggerOnExit": [
+                        "DoSkill"
+                    ]
+                },
+                "NormalIdle_PowerOff": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "PowerOff": []
+                    },
+                    "canDoSkill": true,
+                    "canSyncMove": true,
+                    "resetAnimatorTriggerOnExit": [
+                        "DoSkill"
+                    ]
+                },
+                "Turn": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Turn": []
+                    },
+                    "canDoSkill": true,
+                    "canSyncMove": true,
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit"
+                    ]
+                },
+                "NormalMove": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "WalkForward": [],
+                        "WalkBack": []
+                    },
+                    "canDoSkill": true,
+                    "canSyncMove": true,
+                    "resetAnimatorTriggerOnExit": [
+                        "DoSkill"
+                    ],
+                    "LIPMJPLGIKD": true
+                },
+                "Weak_Start": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Weak_Start": [
+                            "Monster_Apparatus_Enigma_BionicDrone_WeakStart",
+                            "Audio_Apparatus_BionicDrone_Weak_Start"
+                        ]
+                    },
+                    "AJBLILDCLBO": [
+                        "BeHit",
+                        "WeakStartTrigger",
+                        "BreakTrigger"
+                    ],
+                    "resetAnimatorTriggerOnExit": [
+                        "DoSkill"
+                    ]
+                },
+                "Weak_End": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Weak_End": [
+                            "Audio_Apparatus_BionicDrone_Weak_End"
+                        ]
+                    },
+                    "AJBLILDCLBO": [
+                        "BeHit"
+                    ],
+                    "resetAnimatorTriggerOnExit": [
+                        "DoSkill"
+                    ]
+                },
+                "Break": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Break": [
+                            "Monster_Apparatus_Enigma_BionicDrone_Break",
+                            "Audio_Apparatus_BionicDrone_Break"
+                        ]
+                    },
+                    "AJBLILDCLBO": [
+                        "BeHit",
+                        "BreakTrigger"
+                    ],
+                    "resetAnimatorTriggerOnExit": [
+                        "DoSkill"
+                    ]
+                },
+                "Die": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Die_BS": [
+                            "Monster_Apparatus_Enigma_BionicDrone_Die",
+                            "Audio_Apparatus_BionicDrone_Die"
+                        ],
+                        "WeakDie_BS": [
+                            "Monster_Apparatus_Enigma_BionicDrone_WeakDie",
+                            "Audio_Apparatus_BionicDrone_WeakDie"
+                        ],
+                        "SwimDie": []
+                    }
+                },
+                "Die_RagDoll": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Die": [],
+                        "WeakDie": []
+                    },
+                    "CPOLOGIELCD": true
+                },
+                "PowerOff_WakeUp": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "PowerOff_WakeUp": [
+                            "Monster_Apparatus_Enigma_BionicDrone_WakeUp",
+                            "Audio_Apparatus_BionicDrone_PowerOff_WalkUp"
+                        ]
+                    },
+                    "LAKHIBAPNAB": true,
+                    "AJBLILDCLBO": [
+                        "BeHit"
+                    ],
+                    "resetAnimatorTriggerOnExit": [
+                        "DoSkill",
+                        "LevelEnterBattle"
+                    ]
+                },
+                "AimAtk": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "AimAtk": [
+                            "Monster_Apparatus_Enigma_BionicDrone_AimAtk",
+                            "Audio_Apparatus_BionicDrone_AimAtk"
+                        ]
+                    },
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "ChargeAtk": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "ChargeAtk": [
+                            "Monster_Apparatus_Enigma_BionicDrone_ChargeAtk",
+                            "Audio_Apparatus_BionicDrone_ChargeAtk"
+                        ]
+                    },
+                    "AJBLILDCLBO": [
+                        "SwipeTrigger"
+                    ],
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "VoltSwitch": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "VoltSwitch": [
+                            "Monster_Apparatus_Enigma_BionicDrone_VoltSwitch",
+                            "Audio_Apparatus_BionicDrone_VoltSwitch"
+                        ]
+                    },
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "CoveringFireBS": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "CoveringFireBS": [
+                            "Audio_Apparatus_BionicDrone_CoveringFireBS"
+                        ]
+                    },
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "CoveringFireLoop": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "CoveringFireLoop": [
+                            "Monster_Apparatus_Enigma_BionicDrone_CoveringFireLoop"
+                        ]
+                    },
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "CoveringFireAS": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "CoveringFireAS": [
+                            "Audio_Apparatus_BionicDrone_CoveringFireAS"
+                        ]
+                    },
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "Machinery": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Alert_Machinery": [
+                            "Monster_Apparatus_Enigma_BionicDrone_Alert_Machinery"
+                        ]
+                    },
+                    "LAKHIBAPNAB": true,
+                    "AJBLILDCLBO": [
+                        "BeHit"
+                    ],
+                    "resetAnimatorTriggerOnExit": [
+                        "DoSkill"
+                    ]
+                }
+            }
+        }
+    },
+    "IEFGNHABHFH": {
+        "$type": "PAOBAEKGGBC",
+        "JBKMLLFNHAL": "BillboardAttach",
+        "NDKBHOOPGNA": {
+            "y": 0.5
+        },
+        "EMFFJPOKEKF": "Character",
+        "LOMMBJLKPHE": 2.5,
+        "FMJAGHIMLEI": true,
+        "MGDADGKCGHM": 48.0,
+        "KGHAGECNJPO": true,
+        "MGLEAPLEHFN": "Big"
+    },
+    "initialPoses": {
+        "Default": {
+            "initialPoseID": 100,
+            "initialPoseParams": {
+                "boolParams": {
+                    "PowerOff": "false"
+                }
+            }
+        },
+        "PowerOff": {
+            "initialPoseID": 101,
+            "initialPoseParams": {
+                "boolParams": {
+                    "PowerOff": "true"
+                }
+            }
+        },
+        "Machinery": {
+            "initialPoseID": 111,
+            "initialPoseParams": {
+                "boolParams": {
+                    "Machinery": "true"
+                }
+            }
+        }
+    },
+    "aibeta": {
+        "enable": true,
+        "moveSetting": {
+            "navMeshAgentName": "Undead01",
+            "PJMBMPINKON": 2.0
+        },
+        "sensing": {
+            "settings": {
+                "DefaultSetting": {
+                    "MPEJKBDNFGB": 120.0,
+                    "feelRange": 12.0
+                },
+                "PowerOff_Active": {
+                    "enableVision": false,
+                    "feelRange": 8.0
+                },
+                "PowerOff_Passive": {
+                    "enableVision": false,
+                    "hearAttractionRange": 0.0,
+                    "feelRange": 0.0
+                },
+                "NeverCombat": {
+                    "enableVision": false,
+                    "hearAttractionRange": 0.0,
+                    "feelRange": 0.0
+                },
+                "Machinery": {
+                    "enableVision": false,
+                    "hearAttractionRange": 0.0,
+                    "feelRange": 0.0
+                }
+            },
+            "templates": {
+                "DefaultTemplate": {
+                    "DefaultPoses": "DefaultSetting",
+                    "101": "PowerOff_Active"
+                },
+                "PowerOff_Passive": {
+                    "DefaultPoses": "DefaultSetting",
+                    "101": "PowerOff_Passive"
+                },
+                "NeverCombatTemplate": {
+                    "DefaultPoses": "NeverCombat",
+                    "101": "NeverCombat"
+                },
+                "Machinery": {
+                    "DefaultPoses": "DefaultSetting",
+                    "111": "Machinery"
+                }
+            }
+        },
+        "neurons": {
+            "DefaultSetting": [
+                "HIT"
+            ],
+            "PowerOff_Passive": [],
+            "NeverCombat": [],
+            "Machinery": []
+        },
+        "threat": {
+            "DMBNEKAFACI": true,
+            "BJLBMJLOPIP": [
+                {
+                    "LFALGCACJOF": 10.0,
+                    "IOHOACGNJHO": 2.0
+                },
+                {
+                    "LFALGCACJOF": 20.0,
+                    "IOHOACGNJHO": 1.0
+                },
+                {
+                    "LFALGCACJOF": 30.0,
+                    "IOHOACGNJHO": 0.5
+                },
+                {
+                    "LFALGCACJOF": 50.0,
+                    "IOHOACGNJHO": 0.10000000149011612
+                }
+            ],
+            "IBGELAGCJFH": "Monster_TauntLevel_2",
+            "JGFOPCOIJOI": ""
+        },
+        "defendArea": {
+            "defendRange": 50.0
+        },
+        "profiling": {
+            "IHFAOEGNINI": [
+                101
+            ]
+        },
+        "BNIENJNLAIJ": {
+            "101": {
+                "NOKKDDHKGAK": "OnAlert",
+                "IKMCLKEPDFP": "OnAlert",
+                "ENKLFBHHOJI": {
+                    "CEKMINILIFB": [
+                        101
+                    ]
+                },
+                "NOPNCNPCPJE": "",
+                "IDPMFPAPNCE": false,
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "PowerOff_WakeUp"
+                ],
+                "NNJBOCFBGJG": 3.0,
+                "PGPDNPMFFAG": "10",
+                "CCEAGFDONFH": "01",
+                "OKOFHICILMD": "10",
+                "CCFFFOIDOLP": "11"
+            },
+            "102": {
+                "NOKKDDHKGAK": "OnHitAlert",
+                "IKMCLKEPDFP": "OnNerve",
+                "ENKLFBHHOJI": {
+                    "CEKMINILIFB": [
+                        101
+                    ]
+                },
+                "NOPNCNPCPJE": "",
+                "IDPMFPAPNCE": false,
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "PowerOff_WakeUp"
+                ],
+                "NNJBOCFBGJG": 3.0,
+                "PGPDNPMFFAG": "10",
+                "CCEAGFDONFH": "01",
+                "OKOFHICILMD": "10",
+                "CCFFFOIDOLP": "11",
+                "nerveTrigger": [
+                    "HIT"
+                ]
+            },
+            "111": {
+                "NOKKDDHKGAK": "WeakEnd",
+                "ENKLFBHHOJI": {
+                    "CEKMINILIFB": [
+                        202
+                    ]
+                },
+                "cd": 1.0,
+                "NOPNCNPCPJE": "",
+                "LLNBBNIEGGO": true,
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "Weak_End"
+                ],
+                "PGPDNPMFFAG": "11",
+                "CCEAGFDONFH": "11",
+                "OKOFHICILMD": "11",
+                "CCFFFOIDOLP": "11"
+            },
+            "121": {
+                "NOKKDDHKGAK": "OnAlert",
+                "IKMCLKEPDFP": "OnAlert",
+                "ENKLFBHHOJI": {
+                    "CEKMINILIFB": [
+                        111
+                    ]
+                },
+                "NOPNCNPCPJE": "",
+                "IDPMFPAPNCE": false,
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "Machinery"
+                ],
+                "NNJBOCFBGJG": 3.0,
+                "PGPDNPMFFAG": "10",
+                "CCEAGFDONFH": "01",
+                "OKOFHICILMD": "10",
+                "CCFFFOIDOLP": "11"
+            },
+            "201": {
+                "NOKKDDHKGAK": "AimAtk",
+                "ENKLFBHHOJI": {
+                    "CEKMINILIFB": [
+                        201
+                    ],
+                    "MLFAMHDFHMM": 35.0
+                },
+                "cd": 5.0,
+                "LKCFDIOMLCM": 5.0,
+                "NOPNCNPCPJE": "Perpetual_Enigma_RangeAttack",
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "AimAtk"
+                ],
+                "PGPDNPMFFAG": "11",
+                "CCEAGFDONFH": "01",
+                "OKOFHICILMD": "11",
+                "CCFFFOIDOLP": "11"
+            },
+            "211": {
+                "NOKKDDHKGAK": "ChargeAtk",
+                "ENKLFBHHOJI": {
+                    "CEKMINILIFB": [
+                        201
+                    ],
+                    "MLFAMHDFHMM": 35.0
+                },
+                "cd": 12.0,
+                "GPMLADFJAAH": 12.0,
+                "NOPNCNPCPJE": "Perpetual_Enigma_RangeAttack",
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "ChargeAtk"
+                ],
+                "PGPDNPMFFAG": "11",
+                "CCEAGFDONFH": "01",
+                "OKOFHICILMD": "11",
+                "CCFFFOIDOLP": "11"
+            },
+            "221": {
+                "NOKKDDHKGAK": "VoltSwitch",
+                "ENKLFBHHOJI": {
+                    "CEKMINILIFB": [
+                        201
+                    ],
+                    "OLKBBCIPHJB": 90.0,
+                    "MLFAMHDFHMM": 4.0
+                },
+                "cd": 15.0,
+                "GPMLADFJAAH": 15.0,
+                "NOPNCNPCPJE": "Perpetual_Enigma_MeleeAttack",
+                "IDPMFPAPNCE": false,
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "VoltSwitch"
+                ],
+                "PGPDNPMFFAG": "10",
+                "CCEAGFDONFH": "01",
+                "OKOFHICILMD": "10",
+                "CCFFFOIDOLP": "11"
+            },
+            "231": {
+                "NOKKDDHKGAK": "CoveringFire",
+                "ENKLFBHHOJI": {
+                    "CEKMINILIFB": [
+                        201
+                    ],
+                    "MLFAMHDFHMM": 40.0,
+                    "GAKHIDNEDNN": 5.5
+                },
+                "cd": 20.0,
+                "GPMLADFJAAH": 20.0,
+                "NOPNCNPCPJE": "Perpetual_Enigma_RangeAttack",
+                "IDPMFPAPNCE": false,
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "CoveringFireBS",
+                    "CoveringFireLoop",
+                    "CoveringFireAS"
+                ],
+                "PGPDNPMFFAG": "11",
+                "CCEAGFDONFH": "01",
+                "OKOFHICILMD": "11",
+                "CCFFFOIDOLP": "11"
+            }
+        },
+        "EMBHEEALPLD": 3.0,
+        "combatFixedMoveTactic": [
+            {
+                "$type": "BNAGECKMCIB",
+                "enable": true,
+                "FJANPNOAAFK": {
+                    "CEKMINILIFB": [
+                        201
+                    ]
+                },
+                "defaultSetting": {
+                    "KIHPEPHJMOG": 1,
+                    "MPEMBMLOEDG": 20.0,
+                    "IJLGPEJGLEH": 99.0,
+                    "JKOGPCLFHCP": 10.0,
+                    "NKGJBMONBFL": false,
+                    "JOCOJHEICNA": ""
+                }
+            },
+            {
+                "$type": "KMHBGMELMKD",
+                "enable": true,
+                "defaultSetting": {
+                    "KIHPEPHJMOG": 0,
+                    "FKIKEIAEEBO": 1.0,
+                    "BMLLGHNDPNE": 3.0,
+                    "JOCOJHEICNA": "",
+                    "DBIELIMGBMC": ""
+                },
+                "specification": {
+                    "201": {
+                        "KIHPEPHJMOG": 1,
+                        "FKIKEIAEEBO": 4.0,
+                        "BMLLGHNDPNE": 6.0,
+                        "JOCOJHEICNA": "",
+                        "DBIELIMGBMC": ""
+                    }
+                }
+            },
+            {
+                "$type": "GGKADEIBMLG",
+                "enable": true,
+                "FJANPNOAAFK": {
+                    "CEKMINILIFB": [
+                        100
+                    ]
+                },
+                "defaultSetting": {
+                    "turnSpeedOverride": 0.25,
+                    "JIFJFPJANHO": 5.0,
+                    "CBKHBGCPFBG": 3.0,
+                    "EKDHNAGGGAE": 30.0,
+                    "BFEJAKFKKFP": 10.0,
+                    "KOAMKCEFJED": 15.0,
+                    "JOCOJHEICNA": ""
+                }
+            }
+        ]
+    },
+    "GIBHCHHOJFI": [
+        {
+            "NPDDCIDNKMH": 201,
+            "KCAOBJOPJIC": 257,
+            "abilityName": ""
+        },
+        {
+            "NPDDCIDNKMH": 211,
+            "KCAOBJOPJIC": 258,
+            "abilityName": ""
+        },
+        {
+            "NPDDCIDNKMH": 221,
+            "KCAOBJOPJIC": 259,
+            "abilityName": ""
+        },
+        {
+            "NPDDCIDNKMH": 231,
+            "KCAOBJOPJIC": 260,
+            "abilityName": ""
+        },
+        {
+            "NPDDCIDNKMH": 101,
+            "KCAOBJOPJIC": 261,
+            "abilityName": ""
+        }
+    ],
+    "move": {
+        "$type": "IIGPJJNGCLE",
+        "EBOIFGIJOOJ": true,
+        "FACNOEFNHIB": "RootNode"
+    }
+}

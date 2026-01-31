@@ -1,0 +1,620 @@
+{
+    "Absorb_CrabShield_Hitbox": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            }
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 999999.0,
+                "isLockHP": true,
+                "ignorePurgeRate": true
+            },
+            "beHit": {
+                "hitBloodEffect": ""
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            },
+            "die": {
+                "dieEndTime": 0.5,
+                "dieForceDisappearTime": 0.5,
+                "dieDisappearEffect": ""
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Avatar_Dive_CrabShield_HitBox",
+                "abilityName": "Avatar_Dive_CrabShield_HitBox",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 1.5
+        },
+        "move": {
+            "$type": "DKAMCGDMNKI",
+            "attachPoint": "",
+            "followRotation": true,
+            "JGFLINDOJDF": {
+                "z": 1.0
+            },
+            "JHIDLJOPJML": true,
+            "JDDHGLLAOJP": true,
+            "HMPJAIBPNND": ""
+        },
+        "PCADANJPFND": true
+    },
+    "Absorb_CrabShield_Hitbox_Long": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            }
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 999999.0,
+                "isLockHP": true,
+                "ignorePurgeRate": true
+            },
+            "beHit": {
+                "hitBloodEffect": ""
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            },
+            "die": {
+                "dieEndTime": 0.5,
+                "dieForceDisappearTime": 0.5,
+                "dieDisappearEffect": ""
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Avatar_Dive_CrabShield_HitBox",
+                "abilityName": "Avatar_Dive_CrabShield_HitBox",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 10.0
+        },
+        "move": {
+            "$type": "KBENGKLMEAL",
+            "speed": 15.0,
+            "maxSpeed": 20.0,
+            "minSpeed": 15.0,
+            "AFIKDKDFKCJ": 5.0
+        },
+        "PCADANJPFND": true
+    },
+    "Absorb_CrabShield_Back_Bullet_01": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "CPGMBCECPEN": 0.4000000059604645
+            }
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 999999.0,
+                "defense": 999999.0,
+                "isInvincible": true,
+                "isLockHP": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Absorb_CrabShield_Back_Bullet_01",
+                "abilityName": "Absorb_CrabShield_Back_Bullet_01",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 5.0
+        },
+        "move": {
+            "$type": "EGIBMIADEHO",
+            "MPMOPIIFDPO": {
+                "muteAll": true
+            },
+            "speed": 20.0,
+            "maxSpeed": 20.0,
+            "AFIKDKDFKCJ": 5.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "DHODNAPCIEF": {
+                "BKAADAIPNBC": true
+            },
+            "BCNECAMPGJJ": true
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy",
+                "ignoreWater": true
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Absorb_CrabShield_Back_Bullet_01"
+                }
+            ],
+            "JPNAMDFCBFN": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Absorb_CrabShield_Back_Bullet_01"
+                }
+            ],
+            "GNGMJEIPCJE": true,
+            "FBBHIKAKGLB": 0.5,
+            "JHKBLJLPGEB": true
+        }
+    },
+    "Absorb_CrabShield_Back_Bullet_02": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "CPGMBCECPEN": 0.4000000059604645
+            }
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 999999.0,
+                "defense": 999999.0,
+                "isInvincible": true,
+                "isLockHP": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Absorb_CrabShield_Back_Bullet_01",
+                "abilityName": "Absorb_CrabShield_Back_Bullet_01",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 5.0
+        },
+        "move": {
+            "$type": "KBENGKLMEAL",
+            "MPMOPIIFDPO": {
+                "muteAll": true
+            },
+            "speed": 20.0,
+            "maxSpeed": 20.0,
+            "minSpeed": 15.0,
+            "AFIKDKDFKCJ": 5.0,
+            "DHODNAPCIEF": {
+                "BKAADAIPNBC": true
+            }
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy",
+                "ignoreWater": true
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Absorb_CrabShield_Back_Bullet_01"
+                }
+            ],
+            "JPNAMDFCBFN": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Absorb_CrabShield_Back_Bullet_01"
+                }
+            ],
+            "GNGMJEIPCJE": true,
+            "FBBHIKAKGLB": 0.5,
+            "JHKBLJLPGEB": true
+        }
+    },
+    "Absorb_Echo_Bullet_02": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            }
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Absorb_SealEcho_Bullet_02",
+                "abilityName": "Absorb_SealEcho_Bullet_02",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 1.5
+        },
+        "move": {
+            "$type": "KBENGKLMEAL",
+            "MPMOPIIFDPO": {
+                "muteAll": true
+            },
+            "speed": 10.0,
+            "maxSpeed": 20.0,
+            "minSpeed": 10.0,
+            "AFIKDKDFKCJ": 2.0,
+            "DHODNAPCIEF": {
+                "BKAADAIPNBC": true
+            }
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "ccd": {
+                    "type": "Always"
+                },
+                "triggerType": "TriggerNoRepeat",
+                "targetType": "Enemy",
+                "ignoreScene": true,
+                "ignoreWater": true
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Absorb_SealEcho_Bullet_02"
+                }
+            ]
+        }
+    },
+    "Absorb_Echo_Bullet_01": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            }
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Absorb_SealEcho_Bullet_01",
+                "abilityName": "Absorb_SealEcho_Bullet_01",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 2.0
+        },
+        "move": {
+            "$type": "KBENGKLMEAL",
+            "MPMOPIIFDPO": {
+                "muteAll": true
+            },
+            "speed": 10.0,
+            "maxSpeed": 20.0,
+            "minSpeed": 10.0,
+            "AFIKDKDFKCJ": 2.0,
+            "DHODNAPCIEF": {
+                "BKAADAIPNBC": true
+            }
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "ccd": {
+                    "type": "Always"
+                },
+                "triggerType": "TriggerNoRepeat",
+                "targetType": "Enemy",
+                "ignoreScene": true,
+                "ignoreWater": true
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Absorb_SealEcho_Bullet_01"
+                }
+            ]
+        }
+    },
+    "Absorb_Aim_Driver_CrabShield": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            }
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 99999.0,
+                "defense": 99999.0,
+                "isInvincible": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Avatar_Dive_Lock_Collider_Driver_CrabShield",
+                "abilityName": "Avatar_Dive_Lock_Collider_Driver_CrabShield",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 30.0
+        },
+        "move": {
+            "$type": "DKAMCGDMNKI",
+            "MPMOPIIFDPO": {
+                "muteAll": true
+            },
+            "attachPoint": "RootNode",
+            "followRotation": true,
+            "HMPJAIBPNND": ""
+        }
+    },
+    "Absorb_JellyfishBomb_Short": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            }
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 999999.0,
+                "isInvincible": true,
+                "isLockHP": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true,
+                "ignorePurgeRate": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            },
+            "die": {
+                "dieEndTime": 0.5,
+                "dieForceDisappearTime": 0.5,
+                "dieDisappearEffect": ""
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Ability_Absorb_JellyfishBomb_Short",
+                "abilityName": "Ability_Absorb_JellyfishBomb_Short",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 60.0
+        },
+        "PCADANJPFND": true
+    },
+    "Absorb_JellyfishBomb_Hold": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            }
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 999999.0,
+                "attack": 50.0,
+                "defense": 999999.0,
+                "isInvincible": true,
+                "isLockHP": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Ability_Absorb_JellyfishBomb_Hold",
+                "abilityName": "Ability_Absorb_JellyfishBomb_Hold",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 60.0
+        },
+        "move": {
+            "$type": "KBENGKLMEAL",
+            "MPMOPIIFDPO": {
+                "muteAll": true
+            },
+            "speed": 3.0,
+            "maxSpeed": 20.0,
+            "minSpeed": 15.0,
+            "AFIKDKDFKCJ": 5.0,
+            "DHODNAPCIEF": {
+                "BKAADAIPNBC": true
+            }
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "ccd": {
+                    "type": "Always",
+                    "HDMAJFMCKBC": 0.10000000149011612
+                },
+                "triggerType": "TriggerAlways",
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Ability_Absorb_JellyfishBomb_Hold"
+                }
+            ],
+            "JPNAMDFCBFN": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Ability_Absorb_JellyfishBomb_Hold"
+                }
+            ],
+            "GNGMJEIPCJE": true,
+            "JHKBLJLPGEB": true
+        }
+    },
+    "Absorb_Aim_Driver_Octopus": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            }
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 99999.0,
+                "defense": 99999.0,
+                "isInvincible": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Avatar_DiveSkill_Octopus_AimGadget",
+                "abilityName": "Avatar_DiveSkill_Octopus_AimGadget",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 30.0
+        },
+        "move": {
+            "$type": "DKAMCGDMNKI",
+            "MPMOPIIFDPO": {
+                "muteAll": true
+            },
+            "attachPoint": "RootNode",
+            "followRotation": true,
+            "HMPJAIBPNND": ""
+        }
+    }
+}

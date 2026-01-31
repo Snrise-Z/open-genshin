@@ -1,0 +1,674 @@
+{
+    "FauneAbyssale_SeaHorse_Primo_Pearl": {
+        "$type": "ConfigGadget",
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isLockHP": true,
+                "ignorePurgeRate": false,
+                "denyElementStick": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "FauneAbyssale_SeaHorse_Primo_PearlGadget",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "",
+                "abilityName": "FauneAbyssale_SeaHorse_Primo_PearlGadget_PlusElement",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "",
+                "abilityName": "FauneAbyssale_SeaHorse_Primo_PearlGadget_MinusElement",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeInfinite": true
+        },
+        "move": {
+            "$type": "DKAMCGDMNKI",
+            "target": "TargetEntity",
+            "attachPoint": "Neck",
+            "followRotation": true,
+            "HMPJAIBPNND": ""
+        },
+        "billboard": {
+            "$type": "JOBMBKHMEKJ",
+            "attachPoint": "BillboardAttach",
+            "offset": {
+                "x": 0.8999999761581421,
+                "y": 0.30000001192092896
+            },
+            "KIIONDAMCOE": "Character",
+            "HNBHIFHDHHP": 1.0,
+            "showDistance": 48.0,
+            "BAFOFKKNFAI": true,
+            "JDBIAMOLEMB": 36.0,
+            "size": "Big",
+            "OCLHINJIEBL": true
+        }
+    },
+    "FauneAbyssale_SeaHorse_Primo_CoralGadget": {
+        "$type": "ConfigGadget",
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isLockHP": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "lockType": "Avatar&Monster_Lv4"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "FauneAbyssale_SeaHorse_Primo_CoralGadget",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeInfinite": true
+        },
+        "billboard": {
+            "$type": "JOBMBKHMEKJ",
+            "attachPoint": "BillboardAttach",
+            "HNBHIFHDHHP": 0.30000001192092896,
+            "showDistance": 48.0,
+            "BAFOFKKNFAI": true,
+            "JDBIAMOLEMB": 36.0,
+            "OCLHINJIEBL": true
+        }
+    },
+    "FauneAbyssale_SeaHorse_Primo_FishBarrage": {
+        "$type": "ConfigGadget",
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            },
+            "simulatePhysics": {
+                "enable": true,
+                "radius": 0.15000000596046448,
+                "KGGKADOKFII": 2.25,
+                "KONOGHICBAN": 0.02500000037252903
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "FauneAbyssale_SeaHorse_Primo_FishBarrage_Bullet",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 12.0
+        },
+        "move": {
+            "$type": "DGFHGKIONHF"
+        },
+        "LGBJNNEDJDF": {
+            "$type": "OANGKAJJAPC",
+            "collision": {
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "FauneAbyssale_SeaHorse_Primo_FishBarrage_Bullet"
+                }
+            ],
+            "GNGMJEIPCJE": true,
+            "ABEEECCLELB": {
+                "$type": "OGGEHAJAGHJ",
+                "shieldHP": "Eff_Monster_FauneAbyssale_SeaHorse_Primo_FishBarrage"
+            }
+        },
+        "LNJIIEDIOEM": true
+    },
+    "FauneAbyssale_SeaHorse_Primo_Annihilation_Thunder": {
+        "$type": "ConfigGadget",
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isLockHP": true,
+                "isGhostToEnemy": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Avatar&Monster_Lv4"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "FauneAbyssale_SeaHorse_Primo_Annihilation_ThunderPoint",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 1.5
+        },
+        "billboard": {
+            "$type": "JOBMBKHMEKJ",
+            "attachPoint": "BillboardAttach",
+            "offset": {
+                "y": 0.5
+            },
+            "HNBHIFHDHHP": 0.5,
+            "showDistance": 48.0,
+            "BAFOFKKNFAI": true,
+            "JDBIAMOLEMB": 30.0,
+            "OCLHINJIEBL": true
+        }
+    },
+    "FauneAbyssale_SeaHorse_Primo_Annihilation_Decoration_DummyGadget": {
+        "$type": "ConfigGadget",
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            },
+            "simulatePhysics": {
+                "enable": true,
+                "radius": 0.5
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "FauneAbyssale_SeaHorse_Primo_Annihilation_Decoration",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 18.0
+        },
+        "move": {
+            "$type": "DGFHGKIONHF",
+            "MPMOPIIFDPO": {
+                "excludeForces": [
+                    "WindZoneType"
+                ]
+            }
+        },
+        "LGBJNNEDJDF": {
+            "$type": "OANGKAJJAPC",
+            "collision": {
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "FauneAbyssale_SeaHorse_Primo_Annihilation_Decoration"
+                }
+            ],
+            "JPNAMDFCBFN": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "FauneAbyssale_SeaHorse_Primo_Annihilation_Decoration"
+                }
+            ],
+            "GNGMJEIPCJE": true,
+            "ABEEECCLELB": {
+                "$type": "OGGEHAJAGHJ",
+                "shieldHP": "Eff_Monster_FauneAbyssale_SeaHorse_Primo_Annihilation_Thunder_Decoration"
+            }
+        }
+    },
+    "FauneAbyssale_SeaHorse_Primo_Annihilation_Thunder_Attack": {
+        "$type": "ConfigGadget",
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isLockHP": true,
+                "isGhostToEnemy": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Avatar&Monster_Lv4"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "FauneAbyssale_SeaHorse_Primo_Annihilation_ThunderStrike",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 1.0
+        }
+    },
+    "FauneAbyssale_SeaHorse_Primo_ThunderStrike_Point": {
+        "$type": "ConfigGadget",
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isLockHP": true,
+                "isGhostToEnemy": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Avatar&Monster_Lv4"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "FauneAbyssale_SeaHorse_Primo_ThunderStrike_AttackGadget",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 1.0
+        },
+        "billboard": {
+            "$type": "JOBMBKHMEKJ",
+            "attachPoint": "BillboardAttach",
+            "offset": {
+                "y": 0.5
+            },
+            "HNBHIFHDHHP": 0.5,
+            "showDistance": 48.0,
+            "BAFOFKKNFAI": true,
+            "JDBIAMOLEMB": 30.0,
+            "OCLHINJIEBL": true
+        }
+    },
+    "FauneAbyssale_SeaHorse_Primo_ElectronCharge_Electric": {
+        "$type": "ConfigGadget",
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "isGhostToEnemy": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            },
+            "animEvents": {
+                "Atk": {
+                    "attackPattern": {
+                        "$type": "AHDHJOAODLF",
+                        "triggerType": "TriggerNoRepeat",
+                        "born": {
+                            "$type": "MNJLPLGJGLI"
+                        },
+                        "DLFACKMBPCH": 0.25
+                    },
+                    "attackInfo": {
+                        "attackTag": "",
+                        "attenuationTag": "SeaHorse_Primo_HitProtection",
+                        "attenuationGroup": "SeaHorse_Primo_HitProtection",
+                        "attackProperty": {
+                            "ACKCDHKEGCK": 0.800000011920929,
+                            "JIICGJODDDM": 0.0,
+                            "elementType": "Electric",
+                            "bonusCriticalHurt": 25.0,
+                            "strikeType": "Default",
+                            "enBreak": 250.0,
+                            "attackType": "Melee",
+                            "damagePercentage": 0.0
+                        },
+                        "hitPattern": {
+                            "onHitEffectName": "default",
+                            "hitImpulseType": "",
+                            "overrideHitImpulse": {
+                                "hitLevel": "Air",
+                                "LPIJAJONFHC": 600.0,
+                                "hitImpulseY": 500.0
+                            },
+                            "retreatType": "ByAttackerForward"
+                        },
+                        "cameraShake": {
+                            "shakeRange": 1.600000023841858,
+                            "shakeTime": 0.25,
+                            "extension": {
+                                "baseCycle": 0.25,
+                                "cycleDamping": 0.25
+                            }
+                        },
+                        "canBeModifiedBy": "Owner"
+                    }
+                }
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "FauneAbyssale_SeaHorse_Primo_ElectronCharge_DummyBullet_LifeTimeControl",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 2.0
+        },
+        "move": {
+            "$type": "DKAMCGDMNKI",
+            "target": "TargetEntity",
+            "attachPoint": "Motion_Root",
+            "followRotation": true,
+            "HMPJAIBPNND": ""
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "triggerType": "TriggerNoRepeat",
+                "targetType": "Enemy",
+                "ignoreScene": true
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "BOHOOADOAKJ",
+                    "attackEvent": "Atk"
+                }
+            ]
+        },
+        "LNJIIEDIOEM": true
+    },
+    "FauneAbyssale_SeaHorse_Primo_ElectronCharge_Physic": {
+        "$type": "ConfigGadget",
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isLockHP": true,
+                "isGhostToEnemy": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            },
+            "animEvents": {
+                "Atk": {
+                    "attackPattern": {
+                        "$type": "AHDHJOAODLF",
+                        "triggerType": "TriggerNoRepeat",
+                        "born": {
+                            "$type": "MNJLPLGJGLI"
+                        },
+                        "DLFACKMBPCH": 0.25
+                    },
+                    "attackInfo": {
+                        "attackTag": "",
+                        "attenuationTag": "SeaHorse_Primo_HitProtection",
+                        "attenuationGroup": "SeaHorse_Primo_HitProtection",
+                        "attackProperty": {
+                            "ACKCDHKEGCK": 0.6499999761581421,
+                            "JIICGJODDDM": 0.0,
+                            "bonusCriticalHurt": 100.0,
+                            "strikeType": "Default",
+                            "enBreak": 250.0,
+                            "attackType": "Melee",
+                            "damagePercentage": 0.0
+                        },
+                        "hitPattern": {
+                            "onHitEffectName": "default",
+                            "hitImpulseType": "",
+                            "overrideHitImpulse": {
+                                "hitLevel": "Air",
+                                "LPIJAJONFHC": 400.0,
+                                "hitImpulseY": 500.0
+                            },
+                            "retreatType": "ByAttackerForward"
+                        },
+                        "cameraShake": {
+                            "shakeRange": 1.600000023841858,
+                            "shakeTime": 0.25,
+                            "extension": {
+                                "baseCycle": 0.25,
+                                "cycleDamping": 0.25
+                            }
+                        },
+                        "canBeModifiedBy": "Owner"
+                    }
+                }
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "FauneAbyssale_SeaHorse_Primo_ElectronCharge_DummyBullet_LifeTimeControl",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 2.0
+        },
+        "move": {
+            "$type": "DKAMCGDMNKI",
+            "target": "TargetEntity",
+            "attachPoint": "Motion_Root",
+            "followRotation": true,
+            "HMPJAIBPNND": ""
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "triggerType": "TriggerNoRepeat",
+                "targetType": "Enemy",
+                "ignoreScene": true
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "BOHOOADOAKJ",
+                    "attackEvent": "Atk"
+                },
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "FauneAbyssale_SeaHorse_Primo_ElectronCharge_DummyBullet_LifeTimeControl"
+                }
+            ]
+        },
+        "LNJIIEDIOEM": true
+    },
+    "FauneAbyssale_SeaHorse_Primo_AirWall": {
+        "$type": "ConfigGadget",
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isLockHP": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "AHCOGNAHOOF": {
+            "lifeInfinite": true
+        }
+    },
+    "FauneAbyssale_SeaHorse_Primo_RockGadget_Crasher": {
+        "$type": "ConfigGadget",
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "isGhostToEnemy": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "FauneAbyssale_SeaHorse_Primo_Rock_Crasher",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeInfinite": true
+        },
+        "move": {
+            "$type": "DKAMCGDMNKI",
+            "target": "TargetEntity",
+            "attachPoint": "Motion_Root",
+            "followRotation": true,
+            "HMPJAIBPNND": ""
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "triggerType": "TriggerNoRepeat",
+                "targetType": "AllExceptSelf",
+                "ignoreScene": true
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "FauneAbyssale_SeaHorse_Primo_Rock_Crasher"
+                }
+            ]
+        }
+    },
+    "FauneAbyssale_SeaHorse_Primo_DummyGadget": {
+        "$type": "ConfigGadget",
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isLockHP": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "lockType": "Avatar&Monster_Lv4"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "FauneAbyssale_SeaHorse_Primo_CoralGadget",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeInfinite": true
+        },
+        "billboard": {
+            "$type": "JOBMBKHMEKJ",
+            "attachPoint": "BillboardAttach",
+            "offset": {
+                "y": 0.5
+            },
+            "HNBHIFHDHHP": 0.5,
+            "showDistance": 48.0,
+            "BAFOFKKNFAI": true,
+            "JDBIAMOLEMB": 30.0,
+            "OCLHINJIEBL": true
+        }
+    }
+}

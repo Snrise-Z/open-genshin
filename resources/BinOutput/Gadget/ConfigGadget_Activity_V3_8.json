@@ -1,0 +1,617 @@
+{
+    "SceneObj_Level_Common_Property_Ani_Prop_MuticharacterOperator_01": {
+        "$type": "ConfigGadget",
+        "model": {
+            "bornEffect": "",
+            "attachEffect": "Eff_Gear_ElementDungeon_Operator"
+        },
+        "hasModel": true,
+        "combatTemplate": "default",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "SceneObj_Level_Common_Property_Ani_Prop_MuticharacterOperator_01_Ability",
+                "abilityOverride": ""
+            }
+        ],
+        "EOLFAMFPCOL": {
+            "AOGIJKALGNB": "UI/open_MultiCharacter_Team_Page",
+            "DLLLIKCMJMP": "",
+            "DEPPLAJNPOH": [
+                "HOST"
+            ],
+            "icon": "",
+            "GEALIGKGCBF": "",
+            "NFJICIGABPE": "",
+            "MIHHAGGNIIO": ""
+        },
+        "CFEIPLEGNFH": {
+            "APJGLOKDMCN": "",
+            "JMBCIFKMMOF": true,
+            "GCGMPOAJPGF": 2.0
+        },
+        "MFKPHCFMEJF": {
+            "NNKFJFIJEGD": [
+                {
+                    "$type": "DKAGMDFBKFG",
+                    "intID": "gadgetState",
+                    "BNBNPANFDGD": true
+                },
+                {
+                    "$type": "EBBDJBHDBKL",
+                    "parameter": "gadgetState",
+                    "type": "Int",
+                    "shieldHP": "Eff_Gear_ElementDungeon_Operator"
+                },
+                {
+                    "$type": "EBBDJBHDBKL",
+                    "MDBPPIHBJGG": "GearStop",
+                    "parameter": "gadgetState",
+                    "type": "Int",
+                    "value": 202,
+                    "shieldHP": "Eff_Gear_ElementDungeon_Operator"
+                },
+                {
+                    "$type": "GNOFGJLHGKO",
+                    "enable": true
+                },
+                {
+                    "$type": "GNOFGJLHGKO",
+                    "MDBPPIHBJGG": "GearStop"
+                }
+            ]
+        }
+    },
+    "SceneObj_Ticket_Chest_Locked_Lv1": {
+        "$type": "ConfigGadget",
+        "model": {
+            "bornEffect": "Eff_Item_SpecialTreasureBox_Born",
+            "attachEffect": ""
+        },
+        "hasModel": true,
+        "combat": {
+            "property": {
+                "HP": 99999.0,
+                "weight": 50.0,
+                "isLockHP": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            },
+            "die": {
+                "dieEndTime": 4.800000190734863,
+                "dieForceDisappearTime": 4.800000190734863,
+                "dieDisappearEffect": "",
+                "dieShaderData": "GadgetDie",
+                "dieModelFadeDelay": 3.0
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Ability_01",
+                "abilityName": "SceneObj_Ticket_Chest_Open_Eff_Lv1",
+                "abilityOverride": ""
+            }
+        ],
+        "EOLFAMFPCOL": {
+            "AOGIJKALGNB": "TEST/TEST_Chest_Btn",
+            "DLLLIKCMJMP": "",
+            "IGMHLCNPBHI": "NormalChest",
+            "icon": "",
+            "GEALIGKGCBF": "",
+            "NFJICIGABPE": "",
+            "MIHHAGGNIIO": ""
+        },
+        "CFEIPLEGNFH": {
+            "KMJBOBAHGNO": {
+                "MFPJJBHGEHA": "Eff_Chest_Open_Continuous_LV1",
+                "LOOBNPCFEJN": true
+            },
+            "KJKBBDBDBGN": {
+                "bornEffect": "",
+                "EJFBGNGILJB": "",
+                "MPJFHDHPAEA": ""
+            },
+            "APJGLOKDMCN": "",
+            "IFOFJCIPNLE": 1.149999976158142
+        },
+        "stateLayers": {
+            "defaultLayer": {
+                "$type": "GMHKGJPLHFD",
+                "DLEKAADOFBI": "",
+                "stateIDs": {
+                    "All": {
+                        "$type": "CCIEFDKKMLG",
+                        "DNPOFANDHPP": {
+                            "Default": [],
+                            "ChestOpen": [
+                                "Audio_SceneObj_Item_Treasurebox01_102_ChestOpen"
+                            ],
+                            "Unlock_State": [
+                                "Chest_Unlock"
+                            ]
+                        }
+                    },
+                    "Lock": {
+                        "$type": "CCIEFDKKMLG",
+                        "DNPOFANDHPP": {
+                            "Special_State": [
+                                "Chest_Lock"
+                            ]
+                        }
+                    }
+                }
+            }
+        },
+        "MFKPHCFMEJF": {
+            "NNKFJFIJEGD": [
+                {
+                    "$type": "GNOFGJLHGKO",
+                    "enable": true
+                },
+                {
+                    "$type": "DKAGMDFBKFG",
+                    "intID": "ChestState",
+                    "value": 1
+                },
+                {
+                    "$type": "GNOFGJLHGKO",
+                    "MDBPPIHBJGG": "ChestLocked"
+                },
+                {
+                    "$type": "DKAGMDFBKFG",
+                    "MDBPPIHBJGG": "ChestLocked",
+                    "intID": "ChestState"
+                }
+            ]
+        }
+    },
+    "SceneObj_Ticket_Chest_Locked_Lv2": {
+        "$type": "ConfigGadget",
+        "model": {
+            "bornEffect": "Eff_Item_SpecialTreasureBox_Born",
+            "attachEffect": ""
+        },
+        "hasModel": true,
+        "combat": {
+            "property": {
+                "HP": 99999.0,
+                "weight": 50.0,
+                "isLockHP": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            },
+            "die": {
+                "dieEndTime": 4.800000190734863,
+                "dieForceDisappearTime": 4.800000190734863,
+                "dieDisappearEffect": "",
+                "dieShaderData": "GadgetDie",
+                "dieModelFadeDelay": 3.0
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Ability_01",
+                "abilityName": "SceneObj_Ticket_Chest_Open_Eff_Lv2",
+                "abilityOverride": ""
+            }
+        ],
+        "EOLFAMFPCOL": {
+            "AOGIJKALGNB": "TEST/TEST_Chest_Btn",
+            "DLLLIKCMJMP": "",
+            "IGMHLCNPBHI": "NormalChest",
+            "icon": "",
+            "GEALIGKGCBF": "",
+            "NFJICIGABPE": "",
+            "MIHHAGGNIIO": ""
+        },
+        "CFEIPLEGNFH": {
+            "KMJBOBAHGNO": {
+                "MFPJJBHGEHA": "Eff_Chest_Open_Continuous_LV2",
+                "LOOBNPCFEJN": true
+            },
+            "KJKBBDBDBGN": {
+                "bornEffect": "",
+                "EJFBGNGILJB": "",
+                "MPJFHDHPAEA": ""
+            },
+            "APJGLOKDMCN": "",
+            "IFOFJCIPNLE": 1.350000023841858
+        },
+        "stateLayers": {
+            "defaultLayer": {
+                "$type": "GMHKGJPLHFD",
+                "DLEKAADOFBI": "",
+                "stateIDs": {
+                    "All": {
+                        "$type": "CCIEFDKKMLG",
+                        "DNPOFANDHPP": {
+                            "Default": [],
+                            "ChestOpen": [
+                                "Audio_SceneObj_Item_Treasurebox01_102_ChestOpen"
+                            ],
+                            "Unlock_State": [
+                                "Chest_Unlock"
+                            ]
+                        }
+                    },
+                    "Lock": {
+                        "$type": "CCIEFDKKMLG",
+                        "DNPOFANDHPP": {
+                            "Special_State": [
+                                "Chest_Lock"
+                            ]
+                        }
+                    }
+                }
+            }
+        },
+        "MFKPHCFMEJF": {
+            "NNKFJFIJEGD": [
+                {
+                    "$type": "GNOFGJLHGKO",
+                    "enable": true
+                },
+                {
+                    "$type": "DKAGMDFBKFG",
+                    "intID": "ChestState",
+                    "value": 1
+                },
+                {
+                    "$type": "GNOFGJLHGKO",
+                    "MDBPPIHBJGG": "ChestLocked"
+                },
+                {
+                    "$type": "DKAGMDFBKFG",
+                    "MDBPPIHBJGG": "ChestLocked",
+                    "intID": "ChestState"
+                }
+            ]
+        }
+    },
+    "SceneObj_Ticket_Chest_Locked_Lv4": {
+        "$type": "ConfigGadget",
+        "model": {
+            "bornEffect": "Eff_Item_SpecialTreasureBox_Born",
+            "attachEffect": ""
+        },
+        "hasModel": true,
+        "combat": {
+            "property": {
+                "HP": 99999.0,
+                "weight": 50.0,
+                "isLockHP": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            },
+            "die": {
+                "dieEndTime": 4.800000190734863,
+                "dieForceDisappearTime": 4.800000190734863,
+                "dieDisappearEffect": "",
+                "dieShaderData": "GadgetDie",
+                "dieModelFadeDelay": 3.0
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Ability_01",
+                "abilityName": "SceneObj_Ticket_Chest_Open_Eff_Lv4",
+                "abilityOverride": ""
+            }
+        ],
+        "EOLFAMFPCOL": {
+            "AOGIJKALGNB": "TEST/TEST_Chest_Btn",
+            "DLLLIKCMJMP": "",
+            "IGMHLCNPBHI": "NormalChest",
+            "icon": "",
+            "GEALIGKGCBF": "",
+            "NFJICIGABPE": "",
+            "MIHHAGGNIIO": ""
+        },
+        "CFEIPLEGNFH": {
+            "KMJBOBAHGNO": {
+                "MFPJJBHGEHA": "Eff_Chest_Open_Continuous_LV4",
+                "LOOBNPCFEJN": true
+            },
+            "KJKBBDBDBGN": {
+                "bornEffect": "",
+                "EJFBGNGILJB": "",
+                "MPJFHDHPAEA": ""
+            },
+            "APJGLOKDMCN": "",
+            "IFOFJCIPNLE": 1.7000000476837158
+        },
+        "stateLayers": {
+            "defaultLayer": {
+                "$type": "GMHKGJPLHFD",
+                "DLEKAADOFBI": "",
+                "stateIDs": {
+                    "All": {
+                        "$type": "CCIEFDKKMLG",
+                        "DNPOFANDHPP": {
+                            "Default": [],
+                            "ChestOpen": [
+                                "Audio_SceneObj_Item_Treasurebox01_102_ChestOpen"
+                            ],
+                            "Unlock_State": [
+                                "Chest_Unlock"
+                            ]
+                        }
+                    },
+                    "Lock": {
+                        "$type": "CCIEFDKKMLG",
+                        "DNPOFANDHPP": {
+                            "Special_State": [
+                                "Chest_Lock"
+                            ]
+                        }
+                    }
+                }
+            }
+        },
+        "MFKPHCFMEJF": {
+            "NNKFJFIJEGD": [
+                {
+                    "$type": "GNOFGJLHGKO",
+                    "enable": true
+                },
+                {
+                    "$type": "DKAGMDFBKFG",
+                    "intID": "ChestState",
+                    "value": 1
+                },
+                {
+                    "$type": "GNOFGJLHGKO",
+                    "MDBPPIHBJGG": "ChestLocked"
+                },
+                {
+                    "$type": "DKAGMDFBKFG",
+                    "MDBPPIHBJGG": "ChestLocked",
+                    "intID": "ChestState"
+                }
+            ]
+        }
+    },
+    "SceneObj_Ticket_Chest_Locked_Lv5": {
+        "$type": "ConfigGadget",
+        "model": {
+            "bornEffect": "Eff_Item_SpecialTreasureBox_Born",
+            "attachEffect": ""
+        },
+        "hasModel": true,
+        "combat": {
+            "property": {
+                "HP": 99999.0,
+                "weight": 50.0,
+                "isLockHP": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            },
+            "die": {
+                "dieEndTime": 4.800000190734863,
+                "dieForceDisappearTime": 4.800000190734863,
+                "dieDisappearEffect": "",
+                "dieShaderData": "GadgetDie",
+                "dieModelFadeDelay": 3.0
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Ability_01",
+                "abilityName": "SceneObj_Ticket_Chest_Open_Eff_Lv5",
+                "abilityOverride": ""
+            }
+        ],
+        "EOLFAMFPCOL": {
+            "AOGIJKALGNB": "TEST/TEST_Chest_Btn",
+            "DLLLIKCMJMP": "",
+            "IGMHLCNPBHI": "NormalChest",
+            "icon": "",
+            "GEALIGKGCBF": "",
+            "NFJICIGABPE": "",
+            "MIHHAGGNIIO": ""
+        },
+        "CFEIPLEGNFH": {
+            "KMJBOBAHGNO": {
+                "MFPJJBHGEHA": "Eff_Chest_Open_Continuous_LV5",
+                "LOOBNPCFEJN": true
+            },
+            "KJKBBDBDBGN": {
+                "bornEffect": "",
+                "EJFBGNGILJB": "",
+                "MPJFHDHPAEA": ""
+            },
+            "APJGLOKDMCN": "",
+            "IFOFJCIPNLE": 1.5499999523162842
+        },
+        "stateLayers": {
+            "defaultLayer": {
+                "$type": "GMHKGJPLHFD",
+                "DLEKAADOFBI": "",
+                "stateIDs": {
+                    "All": {
+                        "$type": "CCIEFDKKMLG",
+                        "DNPOFANDHPP": {
+                            "Default": [],
+                            "ChestOpen": [
+                                "Audio_SceneObj_Item_Treasurebox01_102_ChestOpen"
+                            ],
+                            "Unlock_State": [
+                                "Chest_Unlock"
+                            ]
+                        }
+                    },
+                    "Lock": {
+                        "$type": "CCIEFDKKMLG",
+                        "DNPOFANDHPP": {
+                            "Special_State": [
+                                "Chest_Lock"
+                            ]
+                        }
+                    }
+                }
+            }
+        },
+        "MFKPHCFMEJF": {
+            "NNKFJFIJEGD": [
+                {
+                    "$type": "GNOFGJLHGKO",
+                    "enable": true
+                },
+                {
+                    "$type": "DKAGMDFBKFG",
+                    "intID": "ChestState",
+                    "value": 1
+                },
+                {
+                    "$type": "GNOFGJLHGKO",
+                    "MDBPPIHBJGG": "ChestLocked"
+                },
+                {
+                    "$type": "DKAGMDFBKFG",
+                    "MDBPPIHBJGG": "ChestLocked",
+                    "intID": "ChestState"
+                }
+            ]
+        }
+    },
+    "SceneObj_Gather_Ticket_Box_3_8": {
+        "$type": "ConfigGadget",
+        "model": {
+            "bornEffect": "",
+            "attachEffect": ""
+        },
+        "hasModel": true,
+        "combat": {
+            "property": {
+                "HP": 99999.0,
+                "weight": 50.0,
+                "isInvincible": true,
+                "isLockHP": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "hitAutoRedirect": false,
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            },
+            "die": {
+                "dieEndTime": 2.0,
+                "dieForceDisappearTime": 2.0,
+                "dieDisappearEffect": ""
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Ability_01",
+                "abilityName": "SceneObj_Gather_Ticket_Box_3_8",
+                "abilityOverride": ""
+            }
+        ],
+        "CFEIPLEGNFH": {
+            "KJKBBDBDBGN": {
+                "CNALECPIIHD": "AutoSelect",
+                "OLHFFEDLJGN": true,
+                "bornEffect": "",
+                "EJFBGNGILJB": "",
+                "MPJFHDHPAEA": ""
+            },
+            "APJGLOKDMCN": ""
+        },
+        "KINALCPOMHK": true
+    },
+    "SceneObj_Gather_Fake_Ticket_Box_3_8": {
+        "$type": "ConfigGadget",
+        "model": {
+            "bornEffect": "",
+            "attachEffect": ""
+        },
+        "hasModel": true,
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Ability_01",
+                "abilityName": "SceneObj_Gather_Fake_Ticket_Box_3_8",
+                "abilityOverride": ""
+            }
+        ],
+        "CFEIPLEGNFH": {
+            "APJGLOKDMCN": ""
+        },
+        "audio": {
+            "$type": "KKJKECCLPJI",
+            "CDPGEDJOKEB": "",
+            "animAudio": {},
+            "initEvent": {
+                "text": "Play_amb_sceneObj_item_windCrystal_idle"
+            },
+            "disableEvent": {
+                "text": "Stop_amb_sceneObj_item_windCrystal_idle"
+            },
+            "destroyEvent": {
+                "text": "Stop_amb_sceneObj_item_windCrystal_idle"
+            }
+        },
+        "KINALCPOMHK": true,
+        "JEKKDAKAGFD": true
+    },
+    "SceneObj_Gather_Ticket_Box_Fly_3_8": {
+        "$type": "ConfigGadget",
+        "model": {
+            "bornEffect": "",
+            "attachEffect": "Eff_SceneObj_PenumbraTicket_Fly_01"
+        },
+        "hasModel": true,
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Ability_01",
+                "abilityName": "SceneObj_Gather_Ticket_Box_Fly_3_8",
+                "abilityOverride": ""
+            }
+        ]
+    }
+}

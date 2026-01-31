@@ -1,0 +1,1177 @@
+{
+    "Raijin_AirWall": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            },
+            "mass": 5.0,
+            "affectedByWorld": true,
+            "checkInSurface": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 1.0,
+                "defense": 999999.0,
+                "isLockHP": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true,
+                "ignorePurgeRate": false
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "Monster_Raijin_AirWall",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 999999.0
+        }
+    },
+    "Raijin_BornPoint": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "CPGMBCECPEN": 0.4000000059604645
+            },
+            "mass": 5.0,
+            "affectedByWorld": true,
+            "checkInSurface": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 1.0,
+                "defense": 999999.0,
+                "isLockHP": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true,
+                "ignorePurgeRate": false
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "Monster_Raijin_BornPoint",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 999999.0
+        }
+    },
+    "Raijin_ThunderCrystal_Bullet": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "CPGMBCECPEN": 0.4000000059604645
+            },
+            "mass": 5.0,
+            "affectedByWorld": true,
+            "checkInSurface": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 1.0,
+                "defense": 999999.0,
+                "isLockHP": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true,
+                "ignorePurgeRate": false
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "Monster_Raijin_ThunderCrystal_Bullet",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 3.0
+        },
+        "move": {
+            "$type": "KBENGKLMEAL",
+            "speed": 60.0
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "triggerType": "TriggerNoRepeat",
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Monster_Raijin_ThunderCrystal_Bullet"
+                }
+            ],
+            "GNGMJEIPCJE": true
+        }
+    },
+    "Raijin_ThunderCrystal_Gadget": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "CPGMBCECPEN": 0.4000000059604645
+            },
+            "mass": 5.0,
+            "affectedByWorld": true,
+            "checkInSurface": true
+        },
+        "combat": {
+            "property": {
+                "HP": 9999.0,
+                "attack": 1000.0,
+                "defense": 999999.0,
+                "isLockHP": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true,
+                "ignorePurgeRate": false
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "Monster_Raijin_ThunderCrystal_Gadget",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 21.0
+        }
+    },
+    "Raijin_SummonThunder": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "CPGMBCECPEN": 0.4000000059604645
+            },
+            "mass": 5.0,
+            "affectedByWorld": true,
+            "checkInSurface": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 1.0,
+                "defense": 999999.0,
+                "isLockHP": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true,
+                "ignorePurgeRate": false
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "Monster_Raijin_SummonThunder_Gadget",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 10.0
+        }
+    },
+    "Raijin_SummonThunder_Children": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "CPGMBCECPEN": 0.4000000059604645
+            },
+            "mass": 5.0,
+            "affectedByWorld": true,
+            "checkInSurface": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 1.0,
+                "defense": 999999.0,
+                "isLockHP": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true,
+                "ignorePurgeRate": false
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "Monster_Raijin_SummonThunder_Children",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 10.0
+        }
+    },
+    "Raijin_ThunderSpear": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "CPGMBCECPEN": 0.4000000059604645
+            },
+            "mass": 5.0,
+            "affectedByWorld": true,
+            "checkInSurface": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 1.0,
+                "defense": 999999.0,
+                "isLockHP": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true,
+                "ignorePurgeRate": false
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "Monster_Raijin_ThunderSpear_Bullet",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 3.0
+        },
+        "move": {
+            "$type": "KBENGKLMEAL",
+            "speed": 50.0
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "triggerType": "TriggerNoRepeat",
+                "targetType": "Enemy",
+                "ignoreScene": true
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Monster_Raijin_ThunderSpear_Bullet"
+                }
+            ],
+            "GNGMJEIPCJE": true
+        }
+    },
+    "Raijin_ThunderPunish_Warning": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "FCAGPAEOLPI": 1.2000000476837158,
+                "HOJBBPFJMIL": 1.2000000476837158,
+                "CPGMBCECPEN": 1.2000000476837158
+            },
+            "scale": 1.2000000476837158
+        },
+        "hasModel": true,
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 999999.0,
+                "attack": 15.0,
+                "defense": 999999.0,
+                "isInvincible": true,
+                "isGhostToEnemy": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "hitAutoRedirect": false,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "Monster_Raijin_ThunderPunish_Warning",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 11.0
+        }
+    },
+    "Raijin_ThunderPunish": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "FCAGPAEOLPI": 1.2000000476837158,
+                "HOJBBPFJMIL": 1.2000000476837158,
+                "CPGMBCECPEN": 1.2000000476837158
+            },
+            "scale": 1.2000000476837158
+        },
+        "hasModel": true,
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 999999.0,
+                "attack": 15.0,
+                "defense": 999999.0,
+                "isInvincible": true,
+                "isGhostToEnemy": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "hitAutoRedirect": false,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "Monster_Raijin_ThunderPunish_Gadget",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 7.5
+        },
+        "move": {
+            "$type": "EGIBMIADEHO",
+            "MPMOPIIFDPO": {
+                "excludeForces": [
+                    "WindZoneType"
+                ]
+            },
+            "speed": 5.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD",
+                "GMLPDHMOONH": 360.0
+            },
+            "JPDKAELMNDJ": {
+                "JJPKBDAAIFH": 0.5,
+                "HOOIFDANBGN": 60.0,
+                "APHEEIPGAAP": 0.20000000298023224,
+                "MAGKJGBJBPE": 0.30000001192092896,
+                "LFCIJINPMNE": true,
+                "MFPFHOJOFDN": "Keep",
+                "IBAOIHMFNFE": "Keep"
+            }
+        }
+    },
+    "Raijin_ThunderNet_Born": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "FCAGPAEOLPI": 1.2000000476837158,
+                "HOJBBPFJMIL": 1.2000000476837158,
+                "CPGMBCECPEN": 1.2000000476837158
+            },
+            "scale": 1.2000000476837158
+        },
+        "hasModel": true,
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 999999.0,
+                "attack": 15.0,
+                "defense": 999999.0,
+                "isInvincible": true,
+                "isGhostToEnemy": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "hitAutoRedirect": false,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "Monster_Raijin_ThunderNet_Born",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "",
+                "abilityName": "Monster_Raijin_ThunderNet_BornLValue",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 3.0
+        }
+    },
+    "Raijin_ThunderNet_BornR": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "FCAGPAEOLPI": 1.2000000476837158,
+                "HOJBBPFJMIL": 1.2000000476837158,
+                "CPGMBCECPEN": 1.2000000476837158
+            },
+            "scale": 1.2000000476837158
+        },
+        "hasModel": true,
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 999999.0,
+                "attack": 15.0,
+                "defense": 999999.0,
+                "isInvincible": true,
+                "isGhostToEnemy": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "hitAutoRedirect": false,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "Monster_Raijin_ThunderNet_Born",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "",
+                "abilityName": "Monster_Raijin_ThunderNet_BornRValue",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 3.0
+        }
+    },
+    "Raijin_ThunderNet_TargetPoint": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "FCAGPAEOLPI": 1.2000000476837158,
+                "HOJBBPFJMIL": 1.2000000476837158,
+                "CPGMBCECPEN": 1.2000000476837158
+            },
+            "scale": 1.2000000476837158
+        },
+        "hasModel": true,
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 999999.0,
+                "attack": 15.0,
+                "defense": 999999.0,
+                "isInvincible": true,
+                "isGhostToEnemy": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "hitAutoRedirect": false,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "Monster_Raijin_ThunderNet_TargetPoint",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 3.0
+        }
+    },
+    "Raijin_ThunderNet": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "FCAGPAEOLPI": 1.2000000476837158,
+                "HOJBBPFJMIL": 1.2000000476837158,
+                "CPGMBCECPEN": 1.2000000476837158
+            },
+            "scale": 1.2000000476837158
+        },
+        "hasModel": true,
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 999999.0,
+                "attack": 15.0,
+                "defense": 999999.0,
+                "isInvincible": true,
+                "isGhostToEnemy": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "hitAutoRedirect": false,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "Monster_Raijin_ThunderNet_Gadget",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 3.0
+        },
+        "move": {
+            "$type": "EGIBMIADEHO",
+            "MPMOPIIFDPO": {
+                "excludeForces": [
+                    "WindZoneType"
+                ]
+            },
+            "speed": 5.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD",
+                "GMLPDHMOONH": 360.0
+            },
+            "JPDKAELMNDJ": {
+                "JJPKBDAAIFH": 0.5,
+                "HOOIFDANBGN": 60.0,
+                "APHEEIPGAAP": 0.20000000298023224,
+                "MAGKJGBJBPE": 0.30000001192092896,
+                "LFCIJINPMNE": true,
+                "KLNGBJHEOMO": true,
+                "MFPFHOJOFDN": "Keep",
+                "IBAOIHMFNFE": "Keep"
+            }
+        }
+    },
+    "Raijin_ElectricCrystal": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "CPGMBCECPEN": 0.4000000059604645
+            }
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 9999.0,
+                "attack": 1000.0,
+                "defense": 999999.0,
+                "isLockHP": true,
+                "isGhostToAllied": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "lockType": "Avatar&Monster_Lv4"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "Monster_Raijin_ThunderCrystal_Gadget",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeInfinite": true,
+            "lifeTime": 21.0
+        }
+    },
+    "Raijin_ElectricStormBullet": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            }
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 999999.0,
+                "attack": 10.0,
+                "defense": 999999.0,
+                "isInvincible": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            },
+            "simulatePhysics": {
+                "enable": true,
+                "radius": 0.5
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "Raijin_ElectricStormBullet_Hit",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 10.0
+        },
+        "move": {
+            "$type": "DGFHGKIONHF"
+        },
+        "LGBJNNEDJDF": {
+            "$type": "OANGKAJJAPC",
+            "collision": {
+                "triggerType": "TriggerNoRepeat",
+                "targetType": "Enemy",
+                "ignoreWater": true
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Raijin_ElectricStormBullet_Hit"
+                }
+            ],
+            "GNGMJEIPCJE": true,
+            "ABEEECCLELB": {
+                "$type": "OGGEHAJAGHJ",
+                "shieldHP": "Eff_Monster_Raijin_Improve_ElectricStormBullet"
+            }
+        }
+    },
+    "Raijin_Echo": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "BNMOHLDPIIH",
+                "CDOIALFJGFK": "EffectMesh"
+            },
+            "mass": 100000000.0,
+            "viewSize": 1.899999976158142,
+            "scale": 1.899999976158142
+        },
+        "IEHEGOJPGFG": true,
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 100.0,
+                "attack": 10.0,
+                "isInvincible": true,
+                "isGhostToEnemy": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "Raijin_Echo_CommonState",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 20.0
+        },
+        "stateLayers": {
+            "defaultLayer": {
+                "$type": "GMHKGJPLHFD",
+                "DLEKAADOFBI": "",
+                "stateIDs": {
+                    "Standby": {
+                        "$type": "CCIEFDKKMLG",
+                        "DNPOFANDHPP": {
+                            "Standby": []
+                        }
+                    },
+                    "MeleeAttack_BS": {
+                        "$type": "CCIEFDKKMLG",
+                        "DNPOFANDHPP": {
+                            "MeleeAttack_BS": [
+                                "Monster_Raijin_MeleeAttack_02_BS",
+                                "Audio_Fairfolk_Raijin_MeleeAtk_BS"
+                            ]
+                        },
+                        "NOHGAIAMGLM": true,
+                        "MKPCFKBHPDC": [
+                            "MeleeAttack"
+                        ]
+                    },
+                    "MeleeAttack": {
+                        "$type": "CCIEFDKKMLG",
+                        "DNPOFANDHPP": {
+                            "MeleeAttack": []
+                        },
+                        "NOHGAIAMGLM": true
+                    },
+                    "MeleeAttack_AS": {
+                        "$type": "CCIEFDKKMLG",
+                        "DNPOFANDHPP": {
+                            "MeleeAttack_AS": [
+                                "Monster_Raijin_MeleeAttack_02_AS",
+                                "Audio_Fairfolk_Raijin_MeleeAtk_AS"
+                            ]
+                        },
+                        "NOHGAIAMGLM": true
+                    },
+                    "FlyBomb_Prepare": {
+                        "$type": "CCIEFDKKMLG",
+                        "DNPOFANDHPP": {
+                            "FlyBomb_Prepare": [
+                                "Audio_Fairfolk_Raijin_FlyBomb_Prepare"
+                            ]
+                        },
+                        "NOHGAIAMGLM": true,
+                        "MKPCFKBHPDC": [
+                            "FlyBomb"
+                        ]
+                    },
+                    "FlyBomb_BS": {
+                        "$type": "CCIEFDKKMLG",
+                        "DNPOFANDHPP": {
+                            "FlyBomb_BS": [
+                                "Audio_Fairfolk_Raijin_FlyBomb_BS"
+                            ]
+                        },
+                        "NOHGAIAMGLM": true
+                    },
+                    "FlyBomb_Loop": {
+                        "$type": "CCIEFDKKMLG",
+                        "DNPOFANDHPP": {
+                            "FlyBomb_Loop": []
+                        },
+                        "NOHGAIAMGLM": true
+                    },
+                    "FlyBomb_AS": {
+                        "$type": "CCIEFDKKMLG",
+                        "DNPOFANDHPP": {
+                            "FlyBomb_AS": [
+                                "Audio_Fairfolk_Raijin_FlyBomb_AS"
+                            ]
+                        },
+                        "NOHGAIAMGLM": true
+                    },
+                    "FlyBomb_Over": {
+                        "$type": "CCIEFDKKMLG",
+                        "DNPOFANDHPP": {
+                            "FlyBomb_Over": [
+                                "Audio_Fairfolk_Raijin_FlyBomb_Over"
+                            ]
+                        },
+                        "NOHGAIAMGLM": true
+                    },
+                    "ThunderSpear": {
+                        "$type": "CCIEFDKKMLG",
+                        "DNPOFANDHPP": {
+                            "ThunderSpear": [
+                                "Audio_Fairfolk_Raijin_ThunderSpear"
+                            ]
+                        },
+                        "NOHGAIAMGLM": true,
+                        "DNEFGECPAAJ": [
+                            "ThunderSpear"
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    "Raijin_Camera_ElectricCrystal": {
+        "$type": "ConfigGadget",
+        "specialPoint": {
+            "elementAbsorb": "RootNode",
+            "elementPendant": "",
+            "elementDrop": "RootNode",
+            "bulletAim": "BulletAimPoint",
+            "hitPoints": [
+                "BulletAimPoint"
+            ],
+            "selectedPoints": [
+                "BulletAimPoint"
+            ]
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 100.0,
+                "attack": 10.0,
+                "isLockHP": true,
+                "isGhostToAllied": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "lockType": "Avatar&Monster_Lv4"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "Raijin_Camera_ElectricCrystal",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeInfinite": true,
+            "lifeTime": 20.0
+        },
+        "billboard": {
+            "$type": "JOBMBKHMEKJ",
+            "attachPoint": "BillboardAttach",
+            "offset": {
+                "y": 0.75
+            },
+            "MILPPPJLDIG": true,
+            "showDistance": 48.0,
+            "BAFOFKKNFAI": true,
+            "JDBIAMOLEMB": 48.0,
+            "size": "Big",
+            "OCLHINJIEBL": true
+        }
+    },
+    "Raijin_ElectricCage_Surround_01": {
+        "$type": "ConfigGadget",
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 100.0,
+                "attack": 10.0,
+                "isInvincible": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true,
+                "ignorePurgeRate": false
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "Raijin_ElectricCage_Surround_01",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 25.0
+        },
+        "move": {
+            "$type": "GFMMGDGALAP",
+            "MPMOPIIFDPO": {
+                "excludeForces": [
+                    "WindZoneType"
+                ]
+            },
+            "speed": 9.0,
+            "GBPNCGHBJMC": 360.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "KGGKADOKFII": 2.5,
+            "JPDKAELMNDJ": {
+                "JJPKBDAAIFH": 0.5,
+                "HOOIFDANBGN": 60.0,
+                "APHEEIPGAAP": 0.20000000298023224,
+                "MAGKJGBJBPE": 0.30000001192092896,
+                "LFCIJINPMNE": true,
+                "MFPFHOJOFDN": "Keep",
+                "IBAOIHMFNFE": "Keep"
+            },
+            "CMGJNBNLKNI": true,
+            "radius": 22.5,
+            "EGLLIJOBGDB": true
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "triggerType": "TriggerNoRepeat",
+                "targetType": "Enemy",
+                "ignoreScene": true
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Raijin_ElectricCage_Surround_01"
+                }
+            ]
+        }
+    },
+    "Raijin_ElectricCage_Surround_02": {
+        "$type": "ConfigGadget",
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 100.0,
+                "attack": 10.0,
+                "isInvincible": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true,
+                "ignorePurgeRate": false
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "Raijin_ElectricCage_Surround_01",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 25.0
+        },
+        "move": {
+            "$type": "GFMMGDGALAP",
+            "MPMOPIIFDPO": {
+                "excludeForces": [
+                    "WindZoneType"
+                ]
+            },
+            "speed": 5.0,
+            "GBPNCGHBJMC": 360.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "KGGKADOKFII": 2.5,
+            "JPDKAELMNDJ": {
+                "JJPKBDAAIFH": 0.5,
+                "HOOIFDANBGN": 60.0,
+                "APHEEIPGAAP": 0.20000000298023224,
+                "MAGKJGBJBPE": 0.30000001192092896,
+                "LFCIJINPMNE": true,
+                "MFPFHOJOFDN": "Keep",
+                "IBAOIHMFNFE": "Keep"
+            },
+            "radius": 12.5,
+            "EGLLIJOBGDB": true
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "triggerType": "TriggerNoRepeat",
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Raijin_ElectricCage_Surround_01"
+                }
+            ]
+        }
+    },
+    "Raijin_ElectricWallPos": {
+        "$type": "ConfigGadget",
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 100.0,
+                "attack": 10.0,
+                "weight": 9999.0,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Avatar&Monster_Lv4"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "Raijin_ElectricWallPos",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 20.0
+        }
+    },
+    "Raijin_ElectricWall": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "FCAGPAEOLPI": 1.2000000476837158,
+                "HOJBBPFJMIL": 1.2000000476837158,
+                "CPGMBCECPEN": 1.2000000476837158
+            },
+            "scale": 1.2000000476837158
+        },
+        "hasModel": true,
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 999999.0,
+                "attack": 15.0,
+                "defense": 999999.0,
+                "isInvincible": true,
+                "isGhostToEnemy": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "hitAutoRedirect": false,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "Raijin_ElectricWall",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 6.0
+        },
+        "move": {
+            "$type": "EGIBMIADEHO",
+            "MPMOPIIFDPO": {
+                "excludeForces": [
+                    "WindZoneType"
+                ]
+            },
+            "speed": 5.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD",
+                "GMLPDHMOONH": 360.0
+            },
+            "JPDKAELMNDJ": {
+                "JJPKBDAAIFH": 0.5,
+                "HOOIFDANBGN": 60.0,
+                "APHEEIPGAAP": 0.20000000298023224,
+                "MAGKJGBJBPE": 0.30000001192092896,
+                "LFCIJINPMNE": true,
+                "KLNGBJHEOMO": true,
+                "MFPFHOJOFDN": "Keep",
+                "IBAOIHMFNFE": "Keep"
+            }
+        }
+    }
+}

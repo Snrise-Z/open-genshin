@@ -1,0 +1,400 @@
+{
+    "common": {
+        "effectAttachShape": {
+            "$type": "ConfigEffectAttachSkinnedMesh",
+            "mesh": "EffectMesh"
+        },
+        "mass": 100000.0,
+        "MECICKNEPGG": 2.0,
+        "affectedByWorld": true,
+        "scale": 1.2000000476837158,
+        "HPIJDAKGABA": 100000.0
+    },
+    "model": {
+        "bornEffect": "",
+        "attachEffect": "",
+        "canBakeMesh": false
+    },
+    "MEMHBNEJBCL": {
+        "CMDNEPBHICB": {
+            "ADNPIILDCJH": 150.0
+        }
+    },
+    "combat": {
+        "property": {
+            "endureType": "Monster_Boss_Other",
+            "weight": 20000.0
+        },
+        "beHit": {
+            "hitBloodEffect": "",
+            "DKIENFAAJPK": true,
+            "muteAllHitText": true
+        },
+        "combatLock": {
+            "lockShape": "CircleLockEnemy",
+            "lockType": "Boss_Lv5"
+        },
+        "die": {
+            "hasAnimatorDie": true,
+            "dieEndTime": 10.0,
+            "dieForceDisappearTime": 10.0,
+            "dieDisappearEffect": "Eff_Death_Common",
+            "dieShaderData": "CharacterDie",
+            "LEDBOLGDENF": true,
+            "IEAKKMEDNDE": true,
+            "AAEANOPIAAL": true,
+            "IBBHGBHIHCI": true,
+            "BKIBMIAJOHP": true,
+            "MOFPBPPGPCL": true
+        }
+    },
+    "abilities": [
+        {
+            "abilityID": "Dvalin_S01_Enviroment",
+            "abilityName": "Dvalin_S01_Enviroment",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "Dvalin_S01_StateCommon",
+            "abilityName": "Dvalin_S01_StateCommon",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "Dvalin_S00_StateController",
+            "abilityName": "Dvalin_S00_StateController",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "Dvalin_AirMass_Up",
+            "abilityName": "Dvalin_AirMass_Up",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "Dvalin_AirMass_Down",
+            "abilityName": "Dvalin_AirMass_Down",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "Dvalin_AirMass_Left",
+            "abilityName": "Dvalin_AirMass_Left",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "Dvalin_AirMass_Right",
+            "abilityName": "Dvalin_AirMass_Right",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "Dvalin_S01_BeHit",
+            "abilityName": "Dvalin_S01_BeHit",
+            "abilityOverride": ""
+        }
+    ],
+    "stateLayers": {
+        "defaultLayer": {
+            "$type": "ConfigNormalStateLayer",
+            "ACOCIAFGIAD": "",
+            "stateIDs": {
+                "NormalFly": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "NormalFly": [
+                            "Audio_Monster_Dvalin_S01_NormalFly"
+                        ]
+                    }
+                },
+                "DFM_Fly": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "DFM_Fly": []
+                    }
+                },
+                "DFM_Up_BS": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "DFM_Up_BS": [
+                            "DFM_Up_BS",
+                            "Audio_Monster_Dvalin_S01_Right_BS"
+                        ]
+                    }
+                },
+                "DFM_Up_Loop": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "DFM_Up_Loop": []
+                    }
+                },
+                "DFM_Up_AS": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "DFM_Up_AS": [
+                            "Audio_Monster_Dvalin_S01_Right_AS"
+                        ]
+                    }
+                },
+                "DFM_Down_BS": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "DFM_Down_BS": [
+                            "DFM_Down_BS",
+                            "Audio_Monster_Dvalin_S01_Right_BS"
+                        ]
+                    }
+                },
+                "DFM_Down_Loop": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "DFM_Down_Loop": []
+                    }
+                },
+                "DFM_Down_AS": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "DFM_Down_AS": [
+                            "Audio_Monster_Dvalin_S01_Right_AS"
+                        ]
+                    }
+                },
+                "DFM_Left_BS": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "DFM_Left_BS": [
+                            "DFM_Left_BS",
+                            "Audio_Monster_Dvalin_S01_Right_BS"
+                        ]
+                    }
+                },
+                "DFM_Left_Loop": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "DFM_Left_Loop": []
+                    }
+                },
+                "DFM_Left_AS": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "DFM_Left_AS": [
+                            "Audio_Monster_Dvalin_S01_Right_AS"
+                        ]
+                    }
+                },
+                "DFM_Right_BS": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "DFM_Right_BS": [
+                            "DFM_Right_BS",
+                            "Audio_Monster_Dvalin_S01_Right_BS"
+                        ]
+                    }
+                },
+                "DFM_Right_Loop": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "DFM_Right_Loop": []
+                    }
+                },
+                "DFM_Right_AS": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "DFM_Right_AS": [
+                            "Audio_Monster_Dvalin_S01_Right_AS"
+                        ]
+                    }
+                },
+                "Die": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Die": []
+                    }
+                }
+            }
+        }
+    },
+    "IEFGNHABHFH": {
+        "$type": "PAOBAEKGGBC",
+        "JBKMLLFNHAL": "BillboardAttach",
+        "NDKBHOOPGNA": {
+            "y": 1.7999999523162842
+        },
+        "LOMMBJLKPHE": 1.0,
+        "MGDADGKCGHM": 0.0,
+        "KGHAGECNJPO": true,
+        "MGLEAPLEHFN": "Big"
+    },
+    "initialPoses": {
+        "Default": {}
+    },
+    "aibeta": {
+        "enable": true,
+        "moveSetting": {
+            "useNavMesh": false,
+            "navMeshAgentName": "Undead01"
+        },
+        "sensing": {
+            "enable": false
+        },
+        "threat": {
+            "clearThreatTargetDistance": 999.0,
+            "BJLBMJLOPIP": [
+                {
+                    "LFALGCACJOF": 10.0,
+                    "IOHOACGNJHO": 2.0
+                },
+                {
+                    "LFALGCACJOF": 15.0,
+                    "IOHOACGNJHO": 0.800000011920929
+                },
+                {
+                    "LFALGCACJOF": 20.0,
+                    "IOHOACGNJHO": 0.5
+                },
+                {
+                    "LFALGCACJOF": 25.0,
+                    "IOHOACGNJHO": 0.30000001192092896
+                },
+                {
+                    "LFALGCACJOF": 30.0,
+                    "IOHOACGNJHO": 0.20000000298023224
+                }
+            ],
+            "IBGELAGCJFH": "Monster_TauntLevel_5",
+            "JGFOPCOIJOI": ""
+        },
+        "defendArea": {
+            "enable": false,
+            "defendRange": 120.0
+        },
+        "CNAPABCFOAH": {
+            "MJGGALAFJOL": false
+        },
+        "BNIENJNLAIJ": {
+            "103": {
+                "NOKKDDHKGAK": "OnAlert",
+                "IKMCLKEPDFP": "OnAlert",
+                "HAOJJHNOGHO": true,
+                "NOPNCNPCPJE": "",
+                "IDPMFPAPNCE": false,
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "Life_Warning"
+                ],
+                "NNJBOCFBGJG": 3.0,
+                "PGPDNPMFFAG": "10",
+                "CCEAGFDONFH": "01",
+                "OKOFHICILMD": "10",
+                "CCFFFOIDOLP": "11"
+            },
+            "210": {
+                "NOKKDDHKGAK": "Attack01",
+                "AOHJOJFGBFA": true,
+                "ENKLFBHHOJI": {
+                    "CEKMINILIFB": [
+                        211,
+                        212
+                    ],
+                    "OLKBBCIPHJB": 90.0,
+                    "MLFAMHDFHMM": 8.0,
+                    "PPICOEKIJNJ": 3.0
+                },
+                "cd": 2.0,
+                "NOPNCNPCPJE": "",
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "Attack01",
+                    "Attack02",
+                    "Attack03"
+                ],
+                "PGPDNPMFFAG": "10",
+                "CCEAGFDONFH": "01",
+                "OKOFHICILMD": "10",
+                "CCFFFOIDOLP": "11"
+            }
+        },
+        "combatFixedMoveTactic": [
+            {
+                "$type": "DIIPKNMAPAC",
+                "FJANPNOAAFK": {
+                    "CEKMINILIFB": [
+                        211,
+                        212
+                    ]
+                },
+                "defaultSetting": {
+                    "AGCMPDABMIA": 4.0,
+                    "GDPAONNEBCO": 8.0,
+                    "MMKHHBIBJEN": {
+                        "GECJAGFGHKL": 0.0,
+                        "JNJFKLDABCB": 0.0,
+                        "BEJLOBBENJJ": 0.0
+                    },
+                    "HEGPGPBKGFH": "1111",
+                    "AFCLIFKCEKM": "1111",
+                    "JOCOJHEICNA": ""
+                }
+            },
+            {
+                "$type": "BNAGECKMCIB",
+                "FJANPNOAAFK": {
+                    "CEKMINILIFB": [
+                        111,
+                        211,
+                        212
+                    ]
+                },
+                "defaultSetting": {
+                    "MPEMBMLOEDG": 10.0,
+                    "IJLGPEJGLEH": 99.0,
+                    "JKOGPCLFHCP": 8.0,
+                    "IHCAFCNDANA": 0.0,
+                    "JOCOJHEICNA": ""
+                }
+            },
+            {
+                "$type": "GGKADEIBMLG",
+                "defaultSetting": {
+                    "JIFJFPJANHO": 3.0,
+                    "CBKHBGCPFBG": 1.5,
+                    "EKDHNAGGGAE": 15.0,
+                    "BFEJAKFKKFP": 3.75,
+                    "KOAMKCEFJED": 7.5,
+                    "JOCOJHEICNA": ""
+                }
+            }
+        ]
+    },
+    "GIBHCHHOJFI": [
+        {
+            "NPDDCIDNKMH": 210,
+            "KCAOBJOPJIC": 257,
+            "abilityName": "Dvalin_ItanoCircus_01",
+            "GKLFKFGAPJN": 0.009999999776482582
+        },
+        {
+            "NPDDCIDNKMH": 211,
+            "KCAOBJOPJIC": 258,
+            "abilityName": "Dvalin_ItanoCircus_02",
+            "GKLFKFGAPJN": 0.009999999776482582
+        }
+    ],
+    "move": {
+        "$type": "IIGPJJNGCLE",
+        "EIEIGIPKLAO": {
+            "FAHKNGPHIIP": true
+        },
+        "MEKENCHCEEN": false,
+        "FACNOEFNHIB": "RootNode"
+    },
+    "BEGHJJDCLLK": {
+        "KEEAIACIJBN": "",
+        "JIOEGJGNLEC": {},
+        "GNANMCMJIHM": {
+            "KMNBEAJOBPE": "Play_sfx_monster_dvalin_flying_airFlow"
+        },
+        "ILECIBOLHCO": {
+            "KMNBEAJOBPE": "Stop_sfx_monster_dvalin_flying_airFlow"
+        },
+        "KMDKAEHLABB": {
+            "KMNBEAJOBPE": "Stop_sfx_monster_dvalin_flying_airFlow"
+        }
+    }
+}

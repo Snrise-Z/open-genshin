@@ -1,0 +1,5903 @@
+{
+    "IceSpine_Old": {
+        "$type": "ConfigGadget",
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 100.0,
+                "isGhostToEnemy": true,
+                "ignorePurgeRate": false
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "IceSpine_Strike",
+                "abilityName": "Avatar_Aquaria_Icespine_Strike",
+                "abilityOverride": ""
+            }
+        ],
+        "field": {
+            "shape": "CircleR1",
+            "PMOHIIJOLNG": "",
+            "triggerInfinite": true,
+            "checkInterval": 6.0,
+            "lifeTime": 2.5,
+            "JHEKALHPHBK": "",
+            "JFLLEDMCPLF": ""
+        }
+    },
+    "IceSpine_Strike": {
+        "$type": "ConfigGadget",
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 100.0,
+                "ignorePurgeRate": false
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "field": {
+            "shape": "CircleR1",
+            "PMOHIIJOLNG": "",
+            "triggerInfinite": true,
+            "checkInterval": 6.0,
+            "lifeTime": 3.5,
+            "JHEKALHPHBK": "",
+            "JFLLEDMCPLF": ""
+        }
+    },
+    "IceSpine_Large": {
+        "$type": "ConfigGadget",
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 100.0,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true,
+                "ignorePurgeRate": false
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "IceSpine_Strike",
+                "abilityName": "Avatar_Ayaka_Icespine_Strike_New",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 3.5
+        }
+    },
+    "FrozenWindmill": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "CPGMBCECPEN": 0.4000000059604645
+            }
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 999999.0,
+                "attack": 30.0,
+                "defense": 999999.0,
+                "isInvincible": true,
+                "isGhostToEnemy": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Material",
+                "abilityName": "Avatar_Ayaka_FrozenWindmill_Material",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Damage",
+                "abilityName": "Avatar_Ayaka_FrozenWindmillDamage",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Dissipate",
+                "abilityName": "Avatar_Ayaka_FrozenWindmillDissipate",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 5.0
+        },
+        "move": {
+            "$type": "KBENGKLMEAL",
+            "MPMOPIIFDPO": {
+                "muteAll": true
+            },
+            "speed": 3.5,
+            "JPDKAELMNDJ": {
+                "JJPKBDAAIFH": 2.0,
+                "HOOIFDANBGN": 60.0,
+                "APHEEIPGAAP": 1.0,
+                "MAGKJGBJBPE": 0.10000000149011612,
+                "LFCIJINPMNE": true,
+                "MFPFHOJOFDN": "Keep",
+                "IBAOIHMFNFE": "Stay"
+            },
+            "JPDDBBHJAAH": true,
+            "LHPOMIMCKMJ": 3.0
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "triggerType": "TriggerAlways",
+                "triggerCD": 10.0,
+                "targetType": "Enemy"
+            },
+            "JPNAMDFCBFN": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Avatar_Ayaka_FrozenWindmillDissipate"
+                }
+            ]
+        }
+    },
+    "FrozenWindmill_Sub": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "CPGMBCECPEN": 0.4000000059604645
+            }
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 999999.0,
+                "attack": 30.0,
+                "defense": 999999.0,
+                "isInvincible": true,
+                "isGhostToEnemy": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Material",
+                "abilityName": "Avatar_Ayaka_FrozenWindmill_Sub_Material",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Damage",
+                "abilityName": "Avatar_Ayaka_FrozenWindmill_Sub_Damage",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Dissipate",
+                "abilityName": "Avatar_Ayaka_FrozenWindmill_Sub_Dissipate",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 5.0
+        },
+        "move": {
+            "$type": "KBENGKLMEAL",
+            "MPMOPIIFDPO": {
+                "muteAll": true
+            },
+            "speed": 3.5,
+            "JPDKAELMNDJ": {
+                "JJPKBDAAIFH": 2.0,
+                "HOOIFDANBGN": 60.0,
+                "APHEEIPGAAP": 1.0,
+                "MAGKJGBJBPE": 0.10000000149011612,
+                "LFCIJINPMNE": true,
+                "MFPFHOJOFDN": "Keep",
+                "IBAOIHMFNFE": "Stay"
+            },
+            "JPDDBBHJAAH": true,
+            "LHPOMIMCKMJ": 1.5
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "triggerType": "TriggerAlways",
+                "triggerCD": 10.0,
+                "targetType": "Enemy"
+            },
+            "JPNAMDFCBFN": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Avatar_Ayaka_FrozenWindmill_Sub_Dissipate"
+                }
+            ]
+        }
+    },
+    "Frozen_Butterfly_Area_Material": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            }
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "FrozenButterfly_Area_Material",
+                "abilityName": "Avatar_Ayaka_FrozenButterfly_Area_Material",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 18.0
+        }
+    },
+    "Ayaka_ExtraAttack": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            }
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 999999.0,
+                "attack": 30.0,
+                "defense": 999999.0,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "TriggerDamage",
+                "abilityName": "Avatar_Ayaka_ExtraAttack_Damage_Gadget",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 3.0
+        }
+    },
+    "Ayaka_NormalAttack_05": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            }
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "TriggerDamage",
+                "abilityName": "Avatar_Ayaka_NormalAttack05_Bullet",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 0.20000000298023224
+        },
+        "move": {
+            "$type": "DKAMCGDMNKI",
+            "attachPoint": "RootNode",
+            "followRotation": true,
+            "JGFLINDOJDF": {
+                "z": 1.0
+            },
+            "HMPJAIBPNND": ""
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "ccd": {
+                    "type": "Always"
+                },
+                "triggerType": "TriggerNoRepeat",
+                "targetType": "Enemy",
+                "ignoreScene": true
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Avatar_Ayaka_NormalAttack05_Bullet"
+                }
+            ]
+        }
+    },
+    "Ayaka_YayoiKaeshi": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            }
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 999999.0,
+                "attack": 30.0,
+                "defense": 999999.0
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "TriggerDamage",
+                "abilityName": "Avatar_Ayaka_LiquidStrike_YayoiKaeshi",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 1.0
+        }
+    },
+    "FlickerWave": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            }
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 999999.0,
+                "attack": 30.0,
+                "defense": 999999.0,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "TriggerSpurt",
+                "abilityName": "Avatar_Lisa_FlickerWaveDamage",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Trigger_FlickerWave_Hit_Effect",
+                "abilityName": "Avatar_Lisa_FlickerWave_Hit_Fx",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Trigger_FlickerWave_Burst",
+                "abilityName": "Avatar_FlickerWave_Burst",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 3.0
+        },
+        "move": {
+            "$type": "EGIBMIADEHO",
+            "speed": 5.0,
+            "AFIKDKDFKCJ": 10.0,
+            "BCNECAMPGJJ": true
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Avatar_Lisa_FlickerWaveDamage"
+                },
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Avatar_Lisa_FlickerWave_Hit_Fx"
+                }
+            ],
+            "JPNAMDFCBFN": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Avatar_FlickerWave_Burst"
+                }
+            ]
+        }
+    },
+    "PierceLightning_Ball_Bullet": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            }
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 999999.0,
+                "attack": 30.0,
+                "defense": 999999.0
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Material",
+                "abilityName": "PierceLightning_Ball_Bullet_Material",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Trigger_FlickerWave_Burst",
+                "abilityName": "Avatar_FlickerWave_Burst",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 3.0
+        },
+        "move": {
+            "$type": "EGIBMIADEHO",
+            "speed": 15.0,
+            "AFIKDKDFKCJ": 10.0,
+            "BCNECAMPGJJ": true
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "PierceLightning_Ball_Bullet_Material"
+                }
+            ],
+            "JPNAMDFCBFN": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Avatar_FlickerWave_Burst"
+                }
+            ]
+        }
+    },
+    "Lisa_Attack01": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            }
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 999999.0,
+                "attack": 30.0,
+                "defense": 999999.0
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Trigger_NormalAttack_Hit_Effect",
+                "abilityName": "Avatar_Lisa_NormalAttack_Hit_Fx",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Trigger_NormalAttack_Effect",
+                "abilityName": "Avatar_Lisa_NormalAttack_Burst",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Bullet_Lightning_Material",
+                "abilityName": "Bullet_Lightning_Material",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 0.6000000238418579
+        },
+        "move": {
+            "$type": "KBENGKLMEAL",
+            "speed": 50.0
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Avatar_Lisa_NormalAttack_Hit_Fx"
+                }
+            ],
+            "JPNAMDFCBFN": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Avatar_Lisa_NormalAttack_Burst"
+                }
+            ]
+        }
+    },
+    "Lisa_Attack02": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            }
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 999999.0,
+                "attack": 30.0,
+                "defense": 999999.0
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Trigger_NormalAttack_Hit_Effect",
+                "abilityName": "Avatar_Lisa_NormalAttack_Hit_Fx",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Trigger_NormalAttack_Effect",
+                "abilityName": "Avatar_Lisa_NormalAttack_Burst",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 3.0
+        },
+        "move": {
+            "$type": "KBENGKLMEAL",
+            "speed": 7.0
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Avatar_Lisa_NormalAttack_Hit_Fx"
+                }
+            ],
+            "JPNAMDFCBFN": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Avatar_Lisa_NormalAttack_Burst"
+                }
+            ]
+        }
+    },
+    "Lisa_Attack03": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            }
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 999999.0,
+                "attack": 30.0,
+                "defense": 999999.0
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Trigger_NormalAttack_Hit_Effect",
+                "abilityName": "Avatar_Lisa_NormalAttack_Hit_Fx",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Trigger_NormalAttack_Effect",
+                "abilityName": "Avatar_Lisa_NormalAttack_Burst",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 3.0
+        },
+        "move": {
+            "$type": "KBENGKLMEAL",
+            "speed": 7.0
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Avatar_Lisa_NormalAttack_Hit_Fx"
+                }
+            ],
+            "JPNAMDFCBFN": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Avatar_Lisa_NormalAttack_Burst"
+                }
+            ]
+        }
+    },
+    "Kevin_RockImpact": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 999999.0,
+                "attack": 30.0,
+                "defense": 999999.0,
+                "weight": 150.0
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            },
+            "animEvents": {
+                "ATK01": {
+                    "attackPattern": {
+                        "$type": "BOIOFIPLBNK",
+                        "triggerType": "TriggerNoRepeat",
+                        "born": {
+                            "$type": "MNJLPLGJGLI"
+                        },
+                        "size": {
+                            "EMBMLEBGFOI": 0.4000000059604645,
+                            "NABPJFNICAE": 0.4000000059604645,
+                            "MLOLIKEJCKB": 1.0
+                        }
+                    },
+                    "attackInfo": {
+                        "attackTag": "",
+                        "attenuationTag": "",
+                        "attenuationGroup": "default",
+                        "attackProperty": {
+                            "ACKCDHKEGCK": 2.0,
+                            "JIICGJODDDM": 0.0,
+                            "elementType": "Rock",
+                            "bonusCriticalHurt": 0.0,
+                            "damagePercentage": 0.0
+                        },
+                        "hitPattern": {
+                            "onHitEffectName": "default",
+                            "hitImpulseType": "LV3",
+                            "hitHaltTime": 0.11999999731779099,
+                            "hitHaltTimeScale": 0.009999999776482582
+                        },
+                        "cameraShake": {
+                            "shakeRange": 0.07000000029802322,
+                            "shakeTime": 0.10000000149011612
+                        }
+                    }
+                }
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "FireEffect",
+                "abilityName": "Avatar_Kevin_RockImpact_FireEffect",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Test_RockImpactDamage",
+                "abilityName": "Test_RockImpactDamage",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 1.0
+        },
+        "move": {
+            "$type": "KBENGKLMEAL",
+            "speed": 10.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "JPDKAELMNDJ": {
+                "JJPKBDAAIFH": 0.5,
+                "HOOIFDANBGN": 60.0,
+                "APHEEIPGAAP": 0.5,
+                "MAGKJGBJBPE": 0.05000000074505806
+            }
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "triggerType": "TriggerNoRepeat",
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Test_RockImpactDamage"
+                },
+                {
+                    "$type": "BOHOOADOAKJ",
+                    "attackEvent": "ATK01"
+                }
+            ],
+            "GNGMJEIPCJE": true
+        }
+    },
+    "Barbara_Attack01": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            }
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 999999.0,
+                "attack": 30.0,
+                "defense": 999999.0
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "AHCOGNAHOOF": {
+            "lifeTime": 3.0
+        },
+        "move": {
+            "$type": "KBENGKLMEAL",
+            "speed": 7.0
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy"
+            },
+            "JPNAMDFCBFN": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": ""
+                }
+            ]
+        }
+    },
+    "Barbara_Attack02": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            }
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 999999.0,
+                "attack": 30.0,
+                "defense": 999999.0
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "TriggerDamage",
+                "abilityName": "Avatar_Barbara_Attack04Damage",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 1.0
+        }
+    },
+    "Barbara_Attack03": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            }
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 999999.0,
+                "attack": 30.0,
+                "defense": 999999.0
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "AHCOGNAHOOF": {
+            "lifeTime": 3.0
+        },
+        "move": {
+            "$type": "KBENGKLMEAL",
+            "speed": 7.0
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy"
+            },
+            "JPNAMDFCBFN": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": ""
+                }
+            ]
+        }
+    },
+    "Barbara_WetShiled": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            }
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 99999.0,
+                "defense": 99999.0,
+                "isGhostToEnemy": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "WetShiled_Heal",
+                "abilityName": "Avatar_Barbara_WetShiled_Heal",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "WetShiled_Impact",
+                "abilityName": "Avatar_Barbara_WetShiled_Impact",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "WetShiled_Eff",
+                "abilityName": "Barbara_Eff_WetShiled",
+                "abilityOverride": ""
+            }
+        ],
+        "field": {
+            "shape": "CircleR0_5",
+            "PMOHIIJOLNG": "",
+            "lifeTime": 15.0,
+            "useCollider": false,
+            "JHEKALHPHBK": "",
+            "JFLLEDMCPLF": ""
+        },
+        "move": {
+            "$type": "DKAMCGDMNKI",
+            "attachPoint": "RootNode",
+            "JGFLINDOJDF": {
+                "z": 1.0
+            },
+            "HMPJAIBPNND": ""
+        }
+    },
+    "Eff_WetShiled": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            }
+        },
+        "hasModel": true,
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 99999.0,
+                "defense": 99999.0,
+                "isInvincible": true,
+                "isGhostToEnemy": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            },
+            "animEvents": {
+                "ATK01": {
+                    "attackPattern": {
+                        "$type": "FPJICLLGBLO",
+                        "triggerType": "TriggerNoRepeat",
+                        "born": {
+                            "$type": "AJCFIBNMGKO",
+                            "offset": {
+                                "EMBMLEBGFOI": 0.0,
+                                "NABPJFNICAE": -0.25,
+                                "MLOLIKEJCKB": 0.0
+                            }
+                        },
+                        "height": 0.5,
+                        "DLFACKMBPCH": 1.0
+                    },
+                    "attackInfo": {
+                        "attackTag": "",
+                        "attenuationTag": "Elemental_Art",
+                        "attenuationGroup": "Barbara_WetShield",
+                        "attackProperty": {
+                            "ACKCDHKEGCK": 0.0,
+                            "JIICGJODDDM": 0.0,
+                            "elementType": "Water",
+                            "elementRank": 1.5,
+                            "bonusCriticalHurt": 25.0,
+                            "strikeType": "Default",
+                            "enBreak": 0.0,
+                            "damagePercentage": 0.0
+                        },
+                        "hitPattern": {
+                            "onHitEffectName": "none",
+                            "hitImpulseType": "LV0",
+                            "retreatType": "ByHitDirection",
+                            "hitHaltTime": 0.05000000074505806,
+                            "hitHaltTimeScale": 0.05000000074505806,
+                            "canBeDefenceHalt": true
+                        },
+                        "canBeModifiedBy": "OriginOwner"
+                    }
+                }
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "WetShiled_Heal",
+                "abilityName": "Avatar_Barbara_WetShiled_Heal",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "WetShiled_Impact",
+                "abilityName": "Avatar_Barbara_WetShiled_Impact",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "WetShiled_Eff",
+                "abilityName": "Barbara_Eff_WetShiled",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "WetShiled_Eff_LifeOver",
+                "abilityName": "Barbara_Eff_WetShiled_LifeOver",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "HittingOthers",
+                "abilityName": "Barbara_Eff_WetShiled_HittingOthers",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 16.799999237060547
+        },
+        "move": {
+            "$type": "DKAMCGDMNKI",
+            "attachPoint": "RootNode",
+            "JGFLINDOJDF": {
+                "z": 1.0
+            },
+            "JHIDLJOPJML": true,
+            "HMPJAIBPNND": ""
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "triggerType": "TriggerAlways",
+                "triggerCD": 1.5,
+                "targetType": "Enemy",
+                "ignoreScene": true
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Avatar_Barbara_WetShiled_Impact"
+                },
+                {
+                    "$type": "BOHOOADOAKJ",
+                    "attackEvent": "ATK01"
+                }
+            ],
+            "JPNAMDFCBFN": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Barbara_Eff_WetShiled_LifeOver"
+                }
+            ]
+        }
+    },
+    "WindBreathe_Tornado": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            }
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 99999.0,
+                "defense": 99999.0,
+                "isInvincible": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "WindBreathe_Tornado",
+                "abilityName": "Avatar_Player_WindBreathe_Tornado",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "WindBreathe_Tornado_Dissipate",
+                "abilityName": "Avatar_Player_WindBreathe_Dissipate",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "WindBreathe_Tornado_Mix",
+                "abilityName": "Avatar_Player_WindBreathe_Tornado_Mix",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 6.0
+        },
+        "move": {
+            "$type": "KBENGKLMEAL",
+            "MPMOPIIFDPO": {
+                "excludeForces": [
+                    "WindZoneType",
+                    "AirflowType",
+                    "RiseType",
+                    "SpeedupType",
+                    "AirflowAccType"
+                ]
+            },
+            "speed": 15.0,
+            "AFIKDKDFKCJ": -35.0,
+            "NNKNFFMKNNB": 0.30000001192092896,
+            "KGGKADOKFII": 1.0,
+            "JPDKAELMNDJ": {
+                "JJPKBDAAIFH": 2.5,
+                "HOOIFDANBGN": 60.0,
+                "APHEEIPGAAP": 1.5,
+                "MAGKJGBJBPE": 0.5,
+                "LFCIJINPMNE": true,
+                "MFPFHOJOFDN": "Keep",
+                "IBAOIHMFNFE": "Stay"
+            },
+            "JPDDBBHJAAH": true
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "triggerType": "TriggerAlways",
+                "triggerCD": 0.30000001192092896,
+                "targetType": "Enemy"
+            }
+        }
+    },
+    "Player_Wind_Arashi": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            }
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 999999.0,
+                "defense": 999999.0,
+                "isInvincible": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Trigger",
+                "abilityName": "Avatar_Player_Wind_Arashi_Bullet",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Material",
+                "abilityName": "Avatar_Player_Wind_Arashi_Bullet_Material",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 0.5
+        },
+        "move": {
+            "$type": "KBENGKLMEAL",
+            "speed": 25.0,
+            "NNKNFFMKNNB": 0.0
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "ccd": {
+                    "type": "Always"
+                },
+                "triggerType": "TriggerNoRepeat",
+                "targetType": "Enemy",
+                "ignoreScene": true
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Avatar_Player_Wind_Arashi_Bullet"
+                }
+            ]
+        }
+    },
+    "PlayerBoy_ExtraAttack_Wave": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            }
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 999999.0,
+                "defense": 999999.0
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Trigger",
+                "abilityName": "Avatar_Player_ExtraAttack_Damage",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 1.0
+        },
+        "move": {
+            "$type": "KBENGKLMEAL",
+            "MPMOPIIFDPO": {
+                "muteAll": true
+            },
+            "speed": 25.0
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "triggerType": "TriggerNoRepeat",
+                "targetType": "Enemy",
+                "ignoreScene": true
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Avatar_Player_ExtraAttack_Damage"
+                }
+            ],
+            "JPNAMDFCBFN": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Avatar_Player_ExtraAttack_Damage"
+                }
+            ]
+        }
+    },
+    "Hogyoku_Base": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            }
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 999999.0,
+                "defense": 999999.0,
+                "weight": 150.0,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Barrier_Generate",
+                "abilityName": "Avatar_Player_Hogyoku_Base",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 15.0
+        }
+    },
+    "Hogyoku_Barrier": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            }
+        },
+        "KHBLBFEGFKJ": {
+            "IDDADMDNJND": true,
+            "BABINGGMJIP": true,
+            "FFMEBENHJAC": ""
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "weight": 150.0
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "hitAutoRedirect": false,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            },
+            "die": {
+                "dieDisappearEffect": ""
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Barrier_Ability",
+                "abilityName": "Avatar_Player_Hogyoku_Barrier",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Barrier_Material",
+                "abilityName": "Avatar_Player_Hogyoku_Barrier_Material",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Barrier_Summon_Detect",
+                "abilityName": "Avatar_RockGadget_Summon_Detect",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "WeightRatio",
+                "abilityName": "RocketGadget_WeightRatio",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "",
+                "abilityName": "Avatar_RockGadget_KillByBlunt",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 40.0
+        }
+    },
+    "Hogyoku_Barrier_EndBoom": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true,
+                "ignorePurgeRate": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Avatar_Player_Hogyoku_Barrier_EndBoom",
+                "abilityName": "Avatar_Player_Hogyoku_Barrier_EndBoom",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 2.0
+        }
+    },
+    "Hogyoku_Bullet": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "FCAGPAEOLPI": 2.4000000953674316,
+                "HOJBBPFJMIL": 2.4000000953674316,
+                "CPGMBCECPEN": 2.4000000953674316
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "CreateHogyoku",
+                "abilityName": "Avatar_Player_HogyokuBullet",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "LifeOver_Action",
+                "abilityName": "Avatar_Player_HogyokuBullet_LifeOver",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 0.20000000298023224
+        },
+        "move": {
+            "$type": "KBENGKLMEAL",
+            "speed": 50.0,
+            "JPDDBBHJAAH": true
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "ccd": {
+                    "type": "Always"
+                },
+                "targetType": "Enemy",
+                "ignoreWater": true
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Avatar_Player_HogyokuBullet"
+                }
+            ],
+            "JPNAMDFCBFN": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Avatar_Player_HogyokuBullet_LifeOver"
+                }
+            ]
+        }
+    },
+    "RockTide": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            }
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            },
+            "die": {
+                "dieDisappearEffect": ""
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "RockTide_Attack",
+                "abilityName": "Avatar_Player_RockTide_AttackWave",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "RockTide_Barrier_Appear",
+                "abilityName": "Avatar_Player_RockTide_Barrier_Appear",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 23.0
+        }
+    },
+    "RockTide_Barrier": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "FCAGPAEOLPI": 4.199999809265137,
+                "HOJBBPFJMIL": 2.0,
+                "CPGMBCECPEN": 1.2000000476837158
+            }
+        },
+        "KHBLBFEGFKJ": {
+            "IDDADMDNJND": true,
+            "FFMEBENHJAC": ""
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "weight": 150.0
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "hitAutoRedirect": false,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            },
+            "die": {
+                "dieDisappearEffect": ""
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Barrier_Ability",
+                "abilityName": "Avatar_Player_RockTide_Barrier",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Barrier_Summon_Detect",
+                "abilityName": "Avatar_RockGadget_Summon_Detect",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "WeightRatio",
+                "abilityName": "RocketGadget_WeightRatio",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "",
+                "abilityName": "Avatar_RockGadget_KillByBlunt",
+                "abilityOverride": ""
+            }
+        ],
+        "field": {
+            "shape": "RockTide_Barrier",
+            "PMOHIIJOLNG": "",
+            "lifeTime": 20.0,
+            "JHEKALHPHBK": "",
+            "JFLLEDMCPLF": ""
+        }
+    },
+    "PierceLightning_Ball": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            }
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 100.0,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            },
+            "die": {
+                "dieDisappearEffect": "Eff_Lisa_PierceLightning_Ball_Fade"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "PierceLightning_Ball_Attack",
+                "abilityName": "Avatar_Lisa_PierceLightning_Ball_Attack",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "PierceLightning_Ball_FX",
+                "abilityName": "Avatar_Lisa_PierceLightning_Ball_FX",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 16.0
+        }
+    },
+    "Venti_Arrow_01": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "FCAGPAEOLPI": 0.5,
+                "HOJBBPFJMIL": 0.5
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            },
+            "animEvents": {
+                "ATK01": {
+                    "attackPattern": {
+                        "$type": "BOIOFIPLBNK",
+                        "triggerType": "TriggerNoRepeat",
+                        "PINHPKJJOGC": "Both",
+                        "born": {
+                            "$type": "MNJLPLGJGLI",
+                            "offset": {
+                                "EMBMLEBGFOI": 0.0,
+                                "NABPJFNICAE": 0.0,
+                                "MLOLIKEJCKB": -0.5
+                            }
+                        },
+                        "size": {
+                            "EMBMLEBGFOI": 0.10000000149011612,
+                            "NABPJFNICAE": 0.10000000149011612,
+                            "MLOLIKEJCKB": 1.0
+                        }
+                    },
+                    "attackInfo": {
+                        "attackTag": "NormalAttack_01",
+                        "attenuationTag": "",
+                        "attenuationGroup": "default",
+                        "attackProperty": {
+                            "ACKCDHKEGCK": 0.20499999821186066,
+                            "JIICGJODDDM": 0.0,
+                            "bonusCriticalHurt": 100.0,
+                            "strikeType": "Pierce",
+                            "enBreak": 6.0,
+                            "damagePercentage": 0.0
+                        },
+                        "hitPattern": {
+                            "onHitEffectName": "default",
+                            "hitImpulseType": "LV1"
+                        },
+                        "cameraShake": {
+                            "shakeRange": 0.019999999552965164,
+                            "shakeTime": 0.10000000149011612
+                        },
+                        "canBeModifiedBy": "OriginOwner"
+                    }
+                }
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Arrow_Material",
+                "abilityName": "Avatar_Venti_ShootArrow_Light_Material",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 8.0
+        },
+        "move": {
+            "$type": "MPNKKNJBNCD",
+            "speed": 40.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "CIHFFMJBELB": 7.0,
+            "IPBPLMGOJKC": 15.0,
+            "HMOHCMJMLNE": 0.009999999776482582
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "BOHOOADOAKJ",
+                    "attackEvent": "ATK01"
+                },
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Avatar_Venti_ShootArrow_Light_Material"
+                }
+            ],
+            "JHKBLJLPGEB": true
+        }
+    },
+    "Venti_Arrow_02": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "FCAGPAEOLPI": 0.5,
+                "HOJBBPFJMIL": 0.5
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            },
+            "animEvents": {
+                "ATK01": {
+                    "attackPattern": {
+                        "$type": "BOIOFIPLBNK",
+                        "triggerType": "TriggerNoRepeat",
+                        "PINHPKJJOGC": "Both",
+                        "born": {
+                            "$type": "MNJLPLGJGLI",
+                            "offset": {
+                                "EMBMLEBGFOI": 0.0,
+                                "NABPJFNICAE": 0.0,
+                                "MLOLIKEJCKB": -0.5
+                            }
+                        },
+                        "size": {
+                            "EMBMLEBGFOI": 0.10000000149011612,
+                            "NABPJFNICAE": 0.10000000149011612,
+                            "MLOLIKEJCKB": 1.0
+                        }
+                    },
+                    "attackInfo": {
+                        "attackTag": "NormalAttack_02",
+                        "attenuationTag": "",
+                        "attenuationGroup": "default",
+                        "attackProperty": {
+                            "ACKCDHKEGCK": 0.46000000834465027,
+                            "JIICGJODDDM": 0.0,
+                            "bonusCriticalHurt": 100.0,
+                            "strikeType": "Pierce",
+                            "enBreak": 13.800000190734863,
+                            "damagePercentage": 0.0
+                        },
+                        "hitPattern": {
+                            "onHitEffectName": "default",
+                            "hitImpulseType": "LV1"
+                        },
+                        "cameraShake": {
+                            "shakeRange": 0.019999999552965164,
+                            "shakeTime": 0.10000000149011612
+                        },
+                        "canBeModifiedBy": "OriginOwner"
+                    }
+                }
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Arrow_Material",
+                "abilityName": "Avatar_Venti_ShootArrow_Heavy_Material",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 8.0
+        },
+        "move": {
+            "$type": "MPNKKNJBNCD",
+            "speed": 40.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "CIHFFMJBELB": 7.0,
+            "IPBPLMGOJKC": 15.0,
+            "HMOHCMJMLNE": 0.009999999776482582
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "BOHOOADOAKJ",
+                    "attackEvent": "ATK01"
+                },
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Avatar_Venti_ShootArrow_Heavy_Material"
+                }
+            ],
+            "JHKBLJLPGEB": true
+        }
+    },
+    "Venti_Arrow_03": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "FCAGPAEOLPI": 0.5,
+                "HOJBBPFJMIL": 0.5
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            },
+            "animEvents": {
+                "ATK01": {
+                    "attackPattern": {
+                        "$type": "BOIOFIPLBNK",
+                        "triggerType": "TriggerNoRepeat",
+                        "PINHPKJJOGC": "Both",
+                        "born": {
+                            "$type": "MNJLPLGJGLI",
+                            "offset": {
+                                "EMBMLEBGFOI": 0.0,
+                                "NABPJFNICAE": 0.0,
+                                "MLOLIKEJCKB": -0.5
+                            }
+                        },
+                        "size": {
+                            "EMBMLEBGFOI": 0.10000000149011612,
+                            "NABPJFNICAE": 0.10000000149011612,
+                            "MLOLIKEJCKB": 1.0
+                        }
+                    },
+                    "attackInfo": {
+                        "attackTag": "NormalAttack_03",
+                        "attenuationTag": "",
+                        "attenuationGroup": "default",
+                        "attackProperty": {
+                            "ACKCDHKEGCK": 0.5199999809265137,
+                            "JIICGJODDDM": 0.0,
+                            "bonusCriticalHurt": 100.0,
+                            "strikeType": "Pierce",
+                            "enBreak": 15.600000381469727,
+                            "damagePercentage": 0.0
+                        },
+                        "hitPattern": {
+                            "onHitEffectName": "default",
+                            "hitImpulseType": "LV1"
+                        },
+                        "cameraShake": {
+                            "shakeRange": 0.019999999552965164,
+                            "shakeTime": 0.10000000149011612
+                        },
+                        "canBeModifiedBy": "OriginOwner"
+                    }
+                }
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Arrow_Material",
+                "abilityName": "Avatar_Venti_ShootArrow_Heavy_Material",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 8.0
+        },
+        "move": {
+            "$type": "MPNKKNJBNCD",
+            "speed": 40.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "CIHFFMJBELB": 7.0,
+            "IPBPLMGOJKC": 15.0,
+            "HMOHCMJMLNE": 0.009999999776482582
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "BOHOOADOAKJ",
+                    "attackEvent": "ATK01"
+                },
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Avatar_Venti_ShootArrow_Heavy_Material"
+                }
+            ],
+            "JHKBLJLPGEB": true
+        }
+    },
+    "Venti_Arrow_04": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "FCAGPAEOLPI": 0.5,
+                "HOJBBPFJMIL": 0.5
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            },
+            "animEvents": {
+                "ATK01": {
+                    "attackPattern": {
+                        "$type": "BOIOFIPLBNK",
+                        "triggerType": "TriggerNoRepeat",
+                        "PINHPKJJOGC": "Both",
+                        "born": {
+                            "$type": "MNJLPLGJGLI",
+                            "offset": {
+                                "EMBMLEBGFOI": 0.0,
+                                "NABPJFNICAE": 0.0,
+                                "MLOLIKEJCKB": -0.5
+                            }
+                        },
+                        "size": {
+                            "EMBMLEBGFOI": 0.10000000149011612,
+                            "NABPJFNICAE": 0.10000000149011612,
+                            "MLOLIKEJCKB": 1.0
+                        }
+                    },
+                    "attackInfo": {
+                        "attackTag": "NormalAttack_04",
+                        "attenuationTag": "",
+                        "attenuationGroup": "default",
+                        "attackProperty": {
+                            "ACKCDHKEGCK": 0.26499998569488525,
+                            "JIICGJODDDM": 0.0,
+                            "bonusCriticalHurt": 100.0,
+                            "strikeType": "Pierce",
+                            "enBreak": 7.679999828338623,
+                            "damagePercentage": 0.0
+                        },
+                        "hitPattern": {
+                            "onHitEffectName": "default",
+                            "hitImpulseType": "LV1"
+                        },
+                        "cameraShake": {
+                            "shakeRange": 0.019999999552965164,
+                            "shakeTime": 0.10000000149011612
+                        },
+                        "canBeModifiedBy": "OriginOwner"
+                    }
+                }
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Arrow_Material",
+                "abilityName": "Avatar_Venti_ShootArrow_Light_Material",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 8.0
+        },
+        "move": {
+            "$type": "MPNKKNJBNCD",
+            "speed": 40.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "CIHFFMJBELB": 7.0,
+            "IPBPLMGOJKC": 15.0,
+            "HMOHCMJMLNE": 0.009999999776482582
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "BOHOOADOAKJ",
+                    "attackEvent": "ATK01"
+                },
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Avatar_Venti_ShootArrow_Light_Material"
+                }
+            ],
+            "JHKBLJLPGEB": true
+        }
+    },
+    "Venti_Arrow_05": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "FCAGPAEOLPI": 0.5,
+                "HOJBBPFJMIL": 0.5
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            },
+            "animEvents": {
+                "ATK01": {
+                    "attackPattern": {
+                        "$type": "BOIOFIPLBNK",
+                        "triggerType": "TriggerNoRepeat",
+                        "PINHPKJJOGC": "Both",
+                        "born": {
+                            "$type": "MNJLPLGJGLI",
+                            "offset": {
+                                "EMBMLEBGFOI": 0.0,
+                                "NABPJFNICAE": 0.0,
+                                "MLOLIKEJCKB": -0.5
+                            }
+                        },
+                        "size": {
+                            "EMBMLEBGFOI": 0.10000000149011612,
+                            "NABPJFNICAE": 0.10000000149011612,
+                            "MLOLIKEJCKB": 1.0
+                        }
+                    },
+                    "attackInfo": {
+                        "attackTag": "NormalAttack_05",
+                        "attenuationTag": "",
+                        "attenuationGroup": "default",
+                        "attackProperty": {
+                            "ACKCDHKEGCK": 0.5,
+                            "JIICGJODDDM": 0.0,
+                            "bonusCriticalHurt": 100.0,
+                            "strikeType": "Pierce",
+                            "enBreak": 15.0,
+                            "damagePercentage": 0.0
+                        },
+                        "hitPattern": {
+                            "onHitEffectName": "default",
+                            "hitImpulseType": "LV1"
+                        },
+                        "cameraShake": {
+                            "shakeRange": 0.019999999552965164,
+                            "shakeTime": 0.10000000149011612
+                        },
+                        "canBeModifiedBy": "OriginOwner"
+                    }
+                }
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Arrow_Material",
+                "abilityName": "Avatar_Venti_ShootArrow_Heavy_Material",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 8.0
+        },
+        "move": {
+            "$type": "MPNKKNJBNCD",
+            "speed": 40.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "CIHFFMJBELB": 7.0,
+            "IPBPLMGOJKC": 15.0,
+            "HMOHCMJMLNE": 0.009999999776482582
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "BOHOOADOAKJ",
+                    "attackEvent": "ATK01"
+                },
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Avatar_Venti_ShootArrow_Heavy_Material"
+                }
+            ],
+            "JHKBLJLPGEB": true
+        }
+    },
+    "Venti_Arrow_06": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "FCAGPAEOLPI": 0.5,
+                "HOJBBPFJMIL": 0.5
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            },
+            "animEvents": {
+                "ATK01": {
+                    "attackPattern": {
+                        "$type": "BOIOFIPLBNK",
+                        "triggerType": "TriggerNoRepeat",
+                        "PINHPKJJOGC": "Both",
+                        "born": {
+                            "$type": "MNJLPLGJGLI",
+                            "offset": {
+                                "EMBMLEBGFOI": 0.0,
+                                "NABPJFNICAE": 0.0,
+                                "MLOLIKEJCKB": -0.5
+                            }
+                        },
+                        "size": {
+                            "EMBMLEBGFOI": 0.10000000149011612,
+                            "NABPJFNICAE": 0.10000000149011612,
+                            "MLOLIKEJCKB": 1.0
+                        }
+                    },
+                    "attackInfo": {
+                        "attackTag": "NormalAttack_06",
+                        "attenuationTag": "",
+                        "attenuationGroup": "default",
+                        "attackProperty": {
+                            "ACKCDHKEGCK": 0.6800000071525574,
+                            "JIICGJODDDM": 0.0,
+                            "bonusCriticalHurt": 100.0,
+                            "strikeType": "Pierce",
+                            "enBreak": 20.399999618530273,
+                            "damagePercentage": 0.0
+                        },
+                        "hitPattern": {
+                            "onHitEffectName": "default",
+                            "hitImpulseType": "LV1"
+                        },
+                        "cameraShake": {
+                            "shakeRange": 0.019999999552965164,
+                            "shakeTime": 0.10000000149011612
+                        },
+                        "canBeModifiedBy": "OriginOwner"
+                    }
+                }
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Arrow_Material",
+                "abilityName": "Avatar_Venti_ShootArrow_Heavy_Material",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 8.0
+        },
+        "move": {
+            "$type": "MPNKKNJBNCD",
+            "speed": 70.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "CIHFFMJBELB": 10.0,
+            "IPBPLMGOJKC": 30.0,
+            "HMOHCMJMLNE": 0.009999999776482582
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "BOHOOADOAKJ",
+                    "attackEvent": "ATK01"
+                },
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Avatar_Venti_ShootArrow_Heavy_Material"
+                }
+            ],
+            "JHKBLJLPGEB": true
+        }
+    },
+    "AimingArrow_Wind": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "FCAGPAEOLPI": 0.5,
+                "HOJBBPFJMIL": 0.5
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Wind_Fx",
+                "abilityName": "Avatar_Venti_ShootArrow_Enchanted_Wind",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Arrow_Fx",
+                "abilityName": "Avatar_Venti_ShootAimingArrow_Material",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 20.0
+        },
+        "move": {
+            "$type": "MPNKKNJBNCD",
+            "speed": 50.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "CIHFFMJBELB": 25.0,
+            "IPBPLMGOJKC": 5.5,
+            "HMOHCMJMLNE": 0.009999999776482582
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Avatar_Venti_ShootArrow_Enchanted_Wind"
+                },
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Avatar_Venti_ShootAimingArrow_Material"
+                }
+            ]
+        }
+    },
+    "AimingArrow_WithoutWind": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "FCAGPAEOLPI": 0.5,
+                "HOJBBPFJMIL": 0.5
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Arrow_WithoutWind",
+                "abilityName": "Avatar_Venti_ShootArrow_Enchanted_WithoutWind",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Arrow_Material",
+                "abilityName": "Avatar_Venti_ShootAimingArrowWithoutWind_Material",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 20.0
+        },
+        "move": {
+            "$type": "MPNKKNJBNCD",
+            "speed": 50.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "CIHFFMJBELB": 25.0,
+            "IPBPLMGOJKC": 5.5,
+            "HMOHCMJMLNE": 0.009999999776482582
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Avatar_Venti_ShootArrow_Enchanted_WithoutWind"
+                },
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Avatar_Venti_ShootAimingArrowWithoutWind_Material"
+                }
+            ],
+            "JHKBLJLPGEB": true
+        }
+    },
+    "Venti_Talent_AimingArrow_Wind": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "FCAGPAEOLPI": 0.5,
+                "HOJBBPFJMIL": 0.5
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Wind_Fx",
+                "abilityName": "Avatar_Venti_Talnet_ShootArrow_Enchanted_Wind",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Arrow_Fx",
+                "abilityName": "Avatar_Venti_ShootAimingArrow_Material",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 20.0
+        },
+        "move": {
+            "$type": "MPNKKNJBNCD",
+            "speed": 50.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "CIHFFMJBELB": 25.0,
+            "IPBPLMGOJKC": 5.5,
+            "HMOHCMJMLNE": 0.009999999776482582
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Avatar_Venti_Talnet_ShootArrow_Enchanted_Wind"
+                },
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Avatar_Venti_ShootAimingArrow_Material"
+                }
+            ]
+        }
+    },
+    "Venti_Talent_AimingArrow_WithoutWind": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "FCAGPAEOLPI": 0.5,
+                "HOJBBPFJMIL": 0.5
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Arrow_Material",
+                "abilityName": "Avatar_Venti_ShootAimingArrowWithoutWind_Material",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "WithoutWind_Fx",
+                "abilityName": "Avatar_Venti_Talnet_ShootArrow_Enchanted_WithoutWind",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 20.0
+        },
+        "move": {
+            "$type": "MPNKKNJBNCD",
+            "speed": 50.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "CIHFFMJBELB": 25.0,
+            "IPBPLMGOJKC": 5.5,
+            "HMOHCMJMLNE": 0.009999999776482582
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Avatar_Venti_Talnet_ShootArrow_Enchanted_WithoutWind"
+                },
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Avatar_Venti_ShootAimingArrowWithoutWind_Material"
+                }
+            ],
+            "JHKBLJLPGEB": true
+        }
+    },
+    "Hurricane_Arrow": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            }
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 99999.0,
+                "defense": 99999.0,
+                "isInvincible": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Hurricane",
+                "abilityName": "Hurricane_FX",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Hurricane_Mix",
+                "abilityName": "Avatar_Venti_Hurricane_Mix",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Hurricane_Dissipate",
+                "abilityName": "Avatar_Venti_Hurricane_Dissipate",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Hurricane_DropBall",
+                "abilityName": "Avatar_Venti_Hurricane_DropBall",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 20.0
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {}
+        }
+    },
+    "Venti_WindBlade": {
+        "$type": "ConfigGadget",
+        "common": {
+            "scale": 3.0
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 100.0,
+                "attack": 10.0,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true,
+                "ignorePurgeRate": false
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "WindBlade_FX",
+                "abilityName": "Venti_WindBlade_FX",
+                "abilityOverride": ""
+            }
+        ],
+        "field": {
+            "shape": "CircleR3",
+            "PMOHIIJOLNG": "",
+            "triggerInfinite": true,
+            "checkInterval": 0.5,
+            "lifeTime": 3.0,
+            "JHEKALHPHBK": "",
+            "JFLLEDMCPLF": ""
+        }
+    },
+    "Venti_WindBlade_Land": {
+        "$type": "ConfigGadget",
+        "common": {
+            "scale": 3.0
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 100.0,
+                "attack": 10.0,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true,
+                "ignorePurgeRate": false
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "WindBlade_FX_Land",
+                "abilityName": "Venti_WindBlade_FX_Land",
+                "abilityOverride": ""
+            }
+        ],
+        "field": {
+            "shape": "CircleR3",
+            "PMOHIIJOLNG": "",
+            "triggerInfinite": true,
+            "checkInterval": 0.5,
+            "lifeTime": 3.0,
+            "JHEKALHPHBK": "",
+            "JFLLEDMCPLF": ""
+        }
+    },
+    "Venti_WindField": {
+        "$type": "ConfigGadget",
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Venti_WindField",
+                "abilityName": "Avatar_Venti_WindField",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 20.0
+        },
+        "CFEIPLEGNFH": {
+            "PLNCODIKIJB": {
+                "$type": "OHPMALFEOKJ",
+                "alias": "",
+                "velocity": 10.0,
+                "scale": 1.5,
+                "stayEffect": "Eff_Windfield_Stay",
+                "enterEffect": "Eff_Windfield_Enter"
+            },
+            "APJGLOKDMCN": ""
+        }
+    },
+    "ClawMark_Mark": {
+        "$type": "ConfigGadget",
+        "combatTemplate": ""
+    },
+    "ClawMark_Mark_Lycan": {
+        "$type": "ConfigGadget",
+        "combatTemplate": ""
+    },
+    "Sneak_Crouch_Throw": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "FCAGPAEOLPI": 0.5,
+                "HOJBBPFJMIL": 0.5
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "CreateCrouchThrow",
+                "abilityName": "Avatar_PlayerBoy_CreateCrouchThrow",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "SpeedFix",
+                "abilityName": "Avatar_PlayerBoy_CrouchThrow_Speed_Fix",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 10.0
+        },
+        "move": {
+            "$type": "FHJABLDOPCE",
+            "speed": 10.0,
+            "JPDDBBHJAAH": true,
+            "LDOEEHMFPHN": 27.0,
+            "IPBPLMGOJKC": 30.0
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Avatar_PlayerBoy_CreateCrouchThrow"
+                }
+            ]
+        },
+        "audio": {
+            "$type": "KKJKECCLPJI",
+            "CDPGEDJOKEB": "",
+            "animAudio": {}
+        }
+    },
+    "FindCat_Dummy": {
+        "$type": "ConfigGadget",
+        "model": {
+            "bornEffect": "",
+            "attachEffect": "Eff_Item_Hint_Small"
+        },
+        "hasModel": true,
+        "combatTemplate": "",
+        "AHCOGNAHOOF": {
+            "lifeTime": 10.0
+        },
+        "CFEIPLEGNFH": {
+            "KJKBBDBDBGN": {
+                "CNALECPIIHD": "Select",
+                "OLHFFEDLJGN": true,
+                "bornEffect": "",
+                "EJFBGNGILJB": "",
+                "MPJFHDHPAEA": ""
+            },
+            "APJGLOKDMCN": ""
+        }
+    },
+    "FindCat_Crouch_Throw": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "FCAGPAEOLPI": 2.4000000953674316,
+                "HOJBBPFJMIL": 2.4000000953674316,
+                "CPGMBCECPEN": 2.4000000953674316
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "HP": 500.0,
+                "isInvincible": true,
+                "isGhostToEnemy": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "CreateFindCatThrow",
+                "abilityName": "Avatar_PlayerBoy_CreateFindCatThrow",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "SpeedFix",
+                "abilityName": "Avatar_PlayerBoy_FindCatThrow_Speed_Fix",
+                "abilityOverride": ""
+            }
+        ],
+        "move": {
+            "$type": "FHJABLDOPCE",
+            "speed": 10.0,
+            "JPDDBBHJAAH": true,
+            "LDOEEHMFPHN": 27.0,
+            "IPBPLMGOJKC": 30.0
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "ccd": {
+                    "type": "Always"
+                }
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Avatar_PlayerBoy_CreateFindCatThrow"
+                }
+            ]
+        }
+    },
+    "Quest_Bean_Throw": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "FCAGPAEOLPI": 0.5,
+                "HOJBBPFJMIL": 0.5
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Gadget_Quest_Bean",
+                "abilityName": "Gadget_Quest_Bean",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 10.0
+        },
+        "move": {
+            "$type": "FHJABLDOPCE",
+            "speed": 10.0,
+            "JPDDBBHJAAH": true,
+            "LDOEEHMFPHN": 27.0,
+            "IPBPLMGOJKC": 30.0
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Gadget_Quest_Bean"
+                }
+            ]
+        }
+    },
+    "IceVirus": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            }
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "animEvents": {
+                "Ice_Virus_Explode": {
+                    "attackPattern": {
+                        "$type": "AHDHJOAODLF",
+                        "triggerType": "TriggerNoRepeat",
+                        "born": {
+                            "$type": "MNJLPLGJGLI"
+                        },
+                        "DLFACKMBPCH": 3.0
+                    },
+                    "attackInfo": {
+                        "attackTag": "IceVirus_Ein",
+                        "attenuationTag": "",
+                        "attenuationGroup": "default",
+                        "attackProperty": {
+                            "ACKCDHKEGCK": 1.5,
+                            "JIICGJODDDM": 0.0,
+                            "elementType": "Ice",
+                            "bonusCriticalHurt": 40.0,
+                            "strikeType": "Blunt",
+                            "damagePercentage": 0.0
+                        },
+                        "hitPattern": {
+                            "onHitEffectName": "default",
+                            "hitLevel": "Heavy",
+                            "LPIJAJONFHC": 200.0,
+                            "hitImpulseY": 0.0,
+                            "hitImpulseType": "",
+                            "hitHaltTime": 0.11999999731779099,
+                            "hitHaltTimeScale": 0.009999999776482582
+                        },
+                        "cameraShake": {}
+                    }
+                }
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Trigger",
+                "abilityName": "Avatar_Aquaria_IceVirus_Bullet",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Material",
+                "abilityName": "Avatar_Aquaria_IceVirus_Bullet_Material",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 2.5
+        },
+        "move": {
+            "$type": "KBENGKLMEAL",
+            "speed": 8.0,
+            "JPDKAELMNDJ": {
+                "JJPKBDAAIFH": 2.0,
+                "HOOIFDANBGN": 60.0,
+                "APHEEIPGAAP": 1.2000000476837158,
+                "MAGKJGBJBPE": 0.20000000298023224,
+                "LFCIJINPMNE": true,
+                "MFPFHOJOFDN": "Keep",
+                "IBAOIHMFNFE": "Stay"
+            }
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy",
+                "ignoreScene": true
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Avatar_Aquaria_IceVirus_Bullet"
+                }
+            ]
+        }
+    },
+    "AmborFlyBullet": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "CPGMBCECPEN": 0.4000000059604645
+            },
+            "mass": 10.0,
+            "affectedByWorld": true,
+            "checkInSurface": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 99999.0,
+                "isLockHP": true,
+                "isGhostToAllied": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Ambor_Explode",
+                "abilityName": "AmborFlyBullet_Explode",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 15.0
+        },
+        "move": {
+            "$type": "FHJABLDOPCE",
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "IPBPLMGOJKC": 80.0,
+            "NKKKMPEEEAP": {
+                "$type": "HHINGLNHGCK",
+                "AHBLNOPFFIP": 110.0,
+                "maxSpeed": 50.0
+            }
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "AmborFlyBullet_Explode"
+                }
+            ],
+            "GNGMJEIPCJE": true
+        },
+        "DMLCOCHDCEH": {
+            "HCIMOHLCHIN": "equip03",
+            "GFKFOBMIGBP": "",
+            "GJMCMBJONKF": "",
+            "MPIOHPDIFAA": "Spear"
+        }
+    },
+    "Pole_Attack": {
+        "$type": "ConfigGadget",
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 100.0,
+                "ignorePurgeRate": false
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Pole_Attack",
+                "abilityName": "Avatar_Prototype_Pole_Attack",
+                "abilityOverride": ""
+            }
+        ],
+        "field": {
+            "shape": "CircleR1",
+            "PMOHIIJOLNG": "",
+            "triggerInfinite": true,
+            "checkInterval": 6.0,
+            "lifeTime": 2.5,
+            "JHEKALHPHBK": "",
+            "JFLLEDMCPLF": ""
+        }
+    },
+    "Lisa_ExtraAttack": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            }
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            },
+            "die": {
+                "dieDisappearEffect": ""
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Lisa_ExtraAttack",
+                "abilityName": "Lisa_ExtraAttack_Material",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 1.0
+        }
+    },
+    "IceSpell_Wards_Trap": {
+        "$type": "ConfigGadget",
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 99999.0,
+                "defense": 99999.0
+            },
+            "die": {
+                "dieDisappearEffect": "Eff_Ambor_Dummy_Explode"
+            }
+        },
+        "combatTemplate": "",
+        "field": {
+            "shape": "CircleR2",
+            "PMOHIIJOLNG": "",
+            "triggerInfinite": true,
+            "GLOOEHAEDID": 9.0,
+            "checkInterval": 9.0,
+            "lifeTime": 9.5,
+            "JHEKALHPHBK": "",
+            "JFLLEDMCPLF": ""
+        }
+    },
+    "Xiao_DevilDash": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            }
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "TriggerDamage",
+                "abilityName": "Avatar_Xiao_DevilDash_Bullet",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 0.20000000298023224
+        },
+        "move": {
+            "$type": "DKAMCGDMNKI",
+            "attachPoint": "RootNode",
+            "followRotation": true,
+            "JGFLINDOJDF": {
+                "z": 1.0
+            },
+            "HMPJAIBPNND": ""
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "ccd": {
+                    "type": "Always"
+                },
+                "triggerType": "TriggerNoRepeat",
+                "targetType": "Enemy",
+                "ignoreScene": true
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Avatar_Xiao_DevilDash_Bullet"
+                }
+            ]
+        }
+    },
+    "EmptyGadget": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            }
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 100.0,
+                "isLockHP": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true,
+                "ignorePurgeRate": false
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "AHCOGNAHOOF": {
+            "lifeTime": 5.0
+        }
+    },
+    "CreationLimit_Dummy": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            }
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 999999.0,
+                "defense": 999999.0,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            }
+        },
+        "combatTemplate": "",
+        "AHCOGNAHOOF": {
+            "lifeTime": 1.0
+        }
+    },
+    "SkillObj_LevelEntity_TowerBuff_SprintAreaAttack": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true,
+                "ignorePurgeRate": false
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            },
+            "die": {
+                "dieForceDisappearTime": 0.0,
+                "dieDisappearEffect": ""
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "LevelEntity_TowerBuff_SprintAreaAttack_Gadget",
+                "abilityName": "LevelEntity_TowerBuff_SprintAreaAttack_Gadget",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 60.0
+        }
+    },
+    "SkillObj_LevelEntity_RogueBuff_SprintAreaAttack": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true,
+                "ignorePurgeRate": false
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            },
+            "die": {
+                "dieForceDisappearTime": 0.0,
+                "dieDisappearEffect": ""
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "LevelEntity_RogueBuff_SprintAreaAttack_Gadget",
+                "abilityName": "LevelEntity_RogueBuff_SprintAreaAttack_Gadget",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 60.0
+        }
+    },
+    "SkillObj_LevelEntity_RogueBuff_SprintAreaAttack2": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true,
+                "ignorePurgeRate": false
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            },
+            "die": {
+                "dieForceDisappearTime": 0.0,
+                "dieDisappearEffect": ""
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "LevelEntity_RogueBuff_SprintAreaAttack_Gadget2",
+                "abilityName": "LevelEntity_RogueBuff_SprintAreaAttack_Gadget2",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 60.0
+        }
+    },
+    "SkillObj_LevelEntity_DecalEffectMesh": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            }
+        },
+        "combat": {
+            "property": {
+                "HP": 999999.0,
+                "isInvincible": true,
+                "isLockHP": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true,
+                "ignorePurgeRate": false
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "AHCOGNAHOOF": {
+            "lifeInfinite": true
+        }
+    },
+    "SkillObj_GlidingChallenge_AirDash_Forward": {
+        "$type": "ConfigGadget",
+        "combatTemplate": "",
+        "AHCOGNAHOOF": {
+            "lifeTime": 0.5
+        },
+        "CFEIPLEGNFH": {
+            "PLNCODIKIJB": {
+                "$type": "FOODCAOGPIF",
+                "alias": "",
+                "velocity": 8.0,
+                "attenuation": 2.299999952316284
+            },
+            "APJGLOKDMCN": ""
+        }
+    },
+    "SkillObj_GlidingChallenge_AirDash_Upward1": {
+        "$type": "ConfigGadget",
+        "combatTemplate": "",
+        "AHCOGNAHOOF": {
+            "lifeTime": 0.30000001192092896
+        },
+        "CFEIPLEGNFH": {
+            "PLNCODIKIJB": {
+                "$type": "OHPMALFEOKJ",
+                "alias": "",
+                "velocity": 18.0,
+                "stayEffect": "Eff_Windfield_Stay",
+                "enterEffect": "Eff_Windfield_Enter"
+            },
+            "APJGLOKDMCN": ""
+        }
+    },
+    "SkillObj_GlidingChallenge_AirDash_Upward2": {
+        "$type": "ConfigGadget",
+        "combatTemplate": "",
+        "AHCOGNAHOOF": {
+            "lifeTime": 0.5
+        },
+        "move": {
+            "$type": "DKAMCGDMNKI",
+            "MPMOPIIFDPO": {
+                "muteAll": true
+            },
+            "attachPoint": "RootNode",
+            "JGFLINDOJDF": {
+                "y": 90.0
+            },
+            "HMPJAIBPNND": ""
+        },
+        "CFEIPLEGNFH": {
+            "PLNCODIKIJB": {
+                "$type": "FOODCAOGPIF",
+                "alias": "",
+                "velocity": 12.0,
+                "attenuation": 2.299999952316284
+            },
+            "APJGLOKDMCN": ""
+        }
+    },
+    "SceneObj_ChargeEfficiency_RecoverAllState": {
+        "$type": "ConfigGadget",
+        "combat": {
+            "property": {
+                "HP": 99999.0,
+                "isInvincible": true,
+                "isLockHP": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "LevelAbility_Challenge_RecoverAllState",
+                "abilityName": "LevelAbility_Challenge_RecoverAllState",
+                "abilityOverride": ""
+            }
+        ]
+    },
+    "SceneObj_ChargeEfficiency_RecoverAllState_Big": {
+        "$type": "ConfigGadget",
+        "combat": {
+            "property": {
+                "HP": 99999.0,
+                "isInvincible": true,
+                "isLockHP": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "LevelAbility_Challenge_RecoverAllState_Big",
+                "abilityName": "LevelAbility_Challenge_RecoverAllState_Big",
+                "abilityOverride": ""
+            }
+        ]
+    },
+    "SkillObj_LevelEntity_TowerBuff_AreaAttackLowHP": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true,
+                "ignorePurgeRate": false
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            },
+            "die": {
+                "dieForceDisappearTime": 0.0,
+                "dieDisappearEffect": ""
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "LevelEntity_TowerBuff_AreaAttackLowHP_Gadget_Ver_1_13",
+                "abilityName": "LevelEntity_TowerBuff_AreaAttackLowHP_Gadget_Ver_1_13",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 8.0
+        }
+    },
+    "Activity_Endora": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "HP": 99999.0,
+                "isInvincible": true,
+                "isLockHP": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "AHCOGNAHOOF": {
+            "lifeInfinite": true
+        },
+        "move": {
+            "$type": "DKAMCGDMNKI",
+            "attachPoint": "CameraLook",
+            "followRotation": true,
+            "JGFLINDOJDF": {
+                "z": 1.0
+            },
+            "JHIDLJOPJML": true,
+            "HMPJAIBPNND": ""
+        }
+    },
+    "Activity_Endora_Bubble_Bullet_01_Short": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "HP": 99999.0,
+                "isInvincible": true,
+                "isLockHP": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Activity_EndoraGadgetSkill_BubbleBullet",
+                "abilityName": "Activity_EndoraGadgetSkill_BubbleBullet",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 15.0
+        },
+        "move": {
+            "$type": "FHJABLDOPCE",
+            "speed": 8.0,
+            "JPDDBBHJAAH": true,
+            "LDOEEHMFPHN": 45.0,
+            "IPBPLMGOJKC": 25.0
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "ccd": {
+                    "type": "Always"
+                },
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Activity_EndoraGadgetSkill_BubbleBullet"
+                }
+            ],
+            "JHKBLJLPGEB": true
+        }
+    },
+    "Activity_Endora_Bubble_Bullet_01": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "HP": 99999.0,
+                "isInvincible": true,
+                "isLockHP": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Activity_EndoraGadgetSkill_BubbleBullet",
+                "abilityName": "Activity_EndoraGadgetSkill_BubbleBullet",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Activity_EndoraGadgetSkill_BubbleBulletSpeed_Fix",
+                "abilityName": "Activity_EndoraGadgetSkill_BubbleBulletSpeed_Fix",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 30.0
+        },
+        "move": {
+            "$type": "FHJABLDOPCE",
+            "speed": 9.0,
+            "JPDDBBHJAAH": true,
+            "LDOEEHMFPHN": 30.0,
+            "IPBPLMGOJKC": 25.0
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "ccd": {
+                    "type": "Always"
+                },
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Activity_EndoraGadgetSkill_BubbleBullet"
+                }
+            ],
+            "FBBHIKAKGLB": 10.0,
+            "JHKBLJLPGEB": true
+        }
+    },
+    "Activity_Endora_Bubble_Bullet_02": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "HOJBBPFJMIL": 0.10000000149011612
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "HP": 99999.0,
+                "isInvincible": true,
+                "isLockHP": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Activity_EndoraGadgetSkill_BubbleArea",
+                "abilityName": "Activity_EndoraGadgetSkill_BubbleArea",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 8.0
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "ccd": {
+                    "type": "Always"
+                },
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Activity_EndoraGadgetSkill_BubbleArea"
+                }
+            ],
+            "JHKBLJLPGEB": true
+        }
+    },
+    "Activity_Endora_Bubble_Bullet_Area": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "HOJBBPFJMIL": 0.10000000149011612
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "HP": 99999.0,
+                "isInvincible": true,
+                "isLockHP": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Activity_EndoraGadgetSkill_BubbleTrigger",
+                "abilityName": "Activity_EndoraGadgetSkill_BubbleTrigger",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 8.0
+        }
+    },
+    "SceneObj_ActivityAbility_Challenge_SprintAreaAttack_Gadget": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "HP": 99999.0,
+                "isInvincible": true,
+                "isLockHP": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "ActivityAbility_Challenge_SprintAreaAttack_Gadget",
+                "abilityName": "ActivityAbility_Challenge_SprintAreaAttack_Gadget",
+                "abilityOverride": ""
+            }
+        ]
+    },
+    "LevelEntity_TowerBuff_AreaNoEnemyAttackUp": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            }
+        },
+        "combat": {
+            "property": {
+                "HP": 99999.0,
+                "isInvincible": true,
+                "isLockHP": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "LevelEntity_TowerBuff_AreaNoEnemyAttackUp_Gadget_Ver_1_14",
+                "abilityName": "LevelEntity_TowerBuff_AreaNoEnemyAttackUp_Gadget_Ver_1_14",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeInfinite": true
+        },
+        "move": {
+            "$type": "DKAMCGDMNKI",
+            "attachPoint": "",
+            "JHIDLJOPJML": true,
+            "JDDHGLLAOJP": true,
+            "HMPJAIBPNND": ""
+        }
+    },
+    "ActivityAbility_LudiHarpastum_ParabolaBall_Short": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "HP": 99999.0,
+                "isInvincible": true,
+                "isLockHP": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "ActivityAbility_LudiHarpastumGadgetSkill_ParabolaBall",
+                "abilityName": "ActivityAbility_LudiHarpastumGadgetSkill_ParabolaBall",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 10.0
+        },
+        "move": {
+            "$type": "FHJABLDOPCE",
+            "speed": 10.0,
+            "JPDDBBHJAAH": true,
+            "LDOEEHMFPHN": 30.0,
+            "IPBPLMGOJKC": 25.0
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "ccd": {
+                    "type": "Always"
+                },
+                "triggerType": "TriggerNoRepeat",
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "ActivityAbility_LudiHarpastumGadgetSkill_ParabolaBall"
+                }
+            ],
+            "FBBHIKAKGLB": 1.0,
+            "JHKBLJLPGEB": true
+        }
+    },
+    "ActivityAbility_LudiHarpastum_ParabolaBall": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "HP": 99999.0,
+                "isInvincible": true,
+                "isLockHP": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "ActivityAbility_LudiHarpastumGadgetSkill_ParabolaBall",
+                "abilityName": "ActivityAbility_LudiHarpastumGadgetSkill_ParabolaBall",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 30.0
+        },
+        "move": {
+            "$type": "MPNKKNJBNCD",
+            "speed": 25.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "CIHFFMJBELB": 5.0,
+            "IPBPLMGOJKC": 30.0,
+            "HMOHCMJMLNE": 0.009999999776482582
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "ccd": {
+                    "type": "Always"
+                },
+                "triggerType": "TriggerNoRepeat",
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "ActivityAbility_LudiHarpastumGadgetSkill_ParabolaBall"
+                }
+            ],
+            "FBBHIKAKGLB": 1.0,
+            "JHKBLJLPGEB": true
+        }
+    },
+    "ActivityAbility_LudiHarpastum_Camear_01": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "HP": 99999.0,
+                "isInvincible": true,
+                "isLockHP": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "AHCOGNAHOOF": {
+            "lifeTime": 600.0
+        }
+    },
+    "ActivityAbility_LudiHarpastum_Camear_02": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "HP": 99999.0,
+                "isInvincible": true,
+                "isLockHP": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "AHCOGNAHOOF": {
+            "lifeTime": 600.0
+        }
+    },
+    "LevelEntity_EffigyChallenge2_WindLv3": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "HP": 99999.0,
+                "isInvincible": true,
+                "isLockHP": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "ActivityAbility_BuoyantCombat_WindLv3GadgetSkill_WindZone",
+                "abilityName": "ActivityAbility_BuoyantCombat_WindLv3GadgetSkill_WindZone",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 600.0
+        }
+    },
+    "ActivityAbility_LudiHarpastum_CounterBall": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "HP": 99999.0,
+                "isInvincible": true,
+                "isLockHP": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "ActivityAbility_LudiHarpastumGadgetSkill_CounterBall",
+                "abilityName": "ActivityAbility_LudiHarpastumGadgetSkill_CounterBall",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 30.0
+        },
+        "move": {
+            "$type": "MPNKKNJBNCD",
+            "speed": 18.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "CIHFFMJBELB": 2.0,
+            "IPBPLMGOJKC": 2.0
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "ccd": {
+                    "type": "Always"
+                },
+                "targetType": "Alliance"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "ActivityAbility_LudiHarpastumGadgetSkill_CounterBall"
+                }
+            ],
+            "JHKBLJLPGEB": true
+        }
+    },
+    "ActivityAbility_LudiHarpastum_BombTypeA_Short": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "HP": 99999.0,
+                "isInvincible": true,
+                "isLockHP": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "ActivityAbility_LudiHarpastumGadgetSkill_BombTypeA",
+                "abilityName": "ActivityAbility_LudiHarpastumGadgetSkill_BombTypeA",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 30.0
+        },
+        "move": {
+            "$type": "MPNKKNJBNCD",
+            "MPMOPIIFDPO": {
+                "muteAll": true
+            },
+            "speed": 5.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "CIHFFMJBELB": 0.10000000149011612,
+            "IPBPLMGOJKC": 20.0,
+            "HMOHCMJMLNE": 0.009999999776482582
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "ccd": {
+                    "type": "Always"
+                },
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "ActivityAbility_LudiHarpastumGadgetSkill_BombTypeA"
+                }
+            ],
+            "FBBHIKAKGLB": 1.0,
+            "JHKBLJLPGEB": true
+        }
+    },
+    "ActivityAbility_LudiHarpastum_BombTypeB_Short": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "HP": 99999.0,
+                "isInvincible": true,
+                "isLockHP": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "ActivityAbility_LudiHarpastumGadgetSkill_BombTypeB",
+                "abilityName": "ActivityAbility_LudiHarpastumGadgetSkill_BombTypeB",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 30.0
+        },
+        "move": {
+            "$type": "MPNKKNJBNCD",
+            "speed": 5.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "CIHFFMJBELB": 0.10000000149011612,
+            "IPBPLMGOJKC": 7.0,
+            "HMOHCMJMLNE": 0.009999999776482582
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "ccd": {
+                    "type": "Always"
+                },
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "ActivityAbility_LudiHarpastumGadgetSkill_BombTypeB"
+                }
+            ],
+            "FBBHIKAKGLB": 1.0,
+            "JHKBLJLPGEB": true
+        }
+    },
+    "ActivityAbility_LudiHarpastum_BombTypeC_Short": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "HP": 99999.0,
+                "isInvincible": true,
+                "isLockHP": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "ActivityAbility_LudiHarpastumGadgetSkill_BombTypeC",
+                "abilityName": "ActivityAbility_LudiHarpastumGadgetSkill_BombTypeC",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 30.0
+        },
+        "move": {
+            "$type": "MPNKKNJBNCD",
+            "speed": 5.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "CIHFFMJBELB": 0.10000000149011612,
+            "IPBPLMGOJKC": 20.0,
+            "HMOHCMJMLNE": 0.009999999776482582
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "ccd": {
+                    "type": "Always"
+                },
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "ActivityAbility_LudiHarpastumGadgetSkill_BombTypeC"
+                }
+            ],
+            "FBBHIKAKGLB": 1.0,
+            "JHKBLJLPGEB": true
+        }
+    },
+    "ActivityAbility_LudiHarpastum_BombTypeA": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "HP": 99999.0,
+                "isInvincible": true,
+                "isLockHP": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "ActivityAbility_LudiHarpastumGadgetSkill_BombTypeA",
+                "abilityName": "ActivityAbility_LudiHarpastumGadgetSkill_BombTypeA",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 30.0
+        },
+        "move": {
+            "$type": "MPNKKNJBNCD",
+            "speed": 45.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "CIHFFMJBELB": 0.10000000149011612,
+            "IPBPLMGOJKC": 20.0,
+            "HMOHCMJMLNE": 0.009999999776482582
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "ccd": {
+                    "type": "Always"
+                },
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "ActivityAbility_LudiHarpastumGadgetSkill_BombTypeA"
+                }
+            ],
+            "FBBHIKAKGLB": 1.0,
+            "JHKBLJLPGEB": true
+        }
+    },
+    "ActivityAbility_LudiHarpastum_BombTypeB": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "HP": 99999.0,
+                "isInvincible": true,
+                "isLockHP": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "ActivityAbility_LudiHarpastumGadgetSkill_BombTypeB",
+                "abilityName": "ActivityAbility_LudiHarpastumGadgetSkill_BombTypeB",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 30.0
+        },
+        "move": {
+            "$type": "MPNKKNJBNCD",
+            "speed": 45.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "CIHFFMJBELB": 0.10000000149011612,
+            "IPBPLMGOJKC": 20.0,
+            "HMOHCMJMLNE": 0.009999999776482582
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "ccd": {
+                    "type": "Always"
+                },
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "ActivityAbility_LudiHarpastumGadgetSkill_BombTypeB"
+                }
+            ],
+            "FBBHIKAKGLB": 1.0,
+            "JHKBLJLPGEB": true
+        }
+    },
+    "ActivityAbility_LudiHarpastum_BombTypeC": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "HP": 99999.0,
+                "isInvincible": true,
+                "isLockHP": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "ActivityAbility_LudiHarpastumGadgetSkill_BombTypeC",
+                "abilityName": "ActivityAbility_LudiHarpastumGadgetSkill_BombTypeC",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 30.0
+        },
+        "move": {
+            "$type": "MPNKKNJBNCD",
+            "speed": 45.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "CIHFFMJBELB": 0.10000000149011612,
+            "IPBPLMGOJKC": 20.0,
+            "HMOHCMJMLNE": 0.009999999776482582
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "ccd": {
+                    "type": "Always"
+                },
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "ActivityAbility_LudiHarpastumGadgetSkill_BombTypeC"
+                }
+            ],
+            "FBBHIKAKGLB": 1.0,
+            "JHKBLJLPGEB": true
+        }
+    },
+    "ActivityAbility_CatchAnimal_Bullet_Short": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "HP": 99999.0,
+                "isInvincible": true,
+                "isLockHP": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "ActivityAbility_CatchAnimal_Bullet",
+                "abilityName": "ActivityAbility_CatchAnimal_Bullet",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 1.0
+        },
+        "move": {
+            "$type": "FHJABLDOPCE",
+            "speed": 10.0,
+            "JPDDBBHJAAH": true,
+            "LDOEEHMFPHN": 30.0,
+            "IPBPLMGOJKC": 25.0
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "ccd": {
+                    "type": "Always"
+                },
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "ActivityAbility_CatchAnimal_Bullet"
+                }
+            ],
+            "JHKBLJLPGEB": true
+        }
+    },
+    "ActivityAbility_CatchAnimal_Bullet_Long": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "HP": 99999.0,
+                "isInvincible": true,
+                "isLockHP": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "ActivityAbility_CatchAnimal_Bullet",
+                "abilityName": "ActivityAbility_CatchAnimal_Bullet",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 1.0
+        },
+        "move": {
+            "$type": "MPNKKNJBNCD",
+            "speed": 30.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "CIHFFMJBELB": 20.0,
+            "IPBPLMGOJKC": 5.5,
+            "HMOHCMJMLNE": 0.009999999776482582
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "ccd": {
+                    "type": "Always"
+                },
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "ActivityAbility_CatchAnimal_Bullet"
+                }
+            ],
+            "JHKBLJLPGEB": true
+        }
+    },
+    "ActivityAbility_CatchAnimal_Bullet_Short_DogGame": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "HP": 99999.0,
+                "isInvincible": true,
+                "isLockHP": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "ActivityAbility_CatchAnimal_Bullet_DogGame",
+                "abilityName": "ActivityAbility_CatchAnimal_Bullet_DogGame",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 1.0
+        },
+        "move": {
+            "$type": "FHJABLDOPCE",
+            "speed": 12.0,
+            "JPDDBBHJAAH": true,
+            "LDOEEHMFPHN": 20.0,
+            "IPBPLMGOJKC": 35.0
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "ccd": {
+                    "type": "Always"
+                },
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "ActivityAbility_CatchAnimal_Bullet_DogGame"
+                }
+            ],
+            "JHKBLJLPGEB": true
+        }
+    },
+    "ActivityAbility_CatchAnimal_Bullet_Long_DogGame": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "HP": 99999.0,
+                "isInvincible": true,
+                "isLockHP": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "ActivityAbility_CatchAnimal_Bullet_DogGame",
+                "abilityName": "ActivityAbility_CatchAnimal_Bullet_DogGame",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 1.0
+        },
+        "move": {
+            "$type": "MPNKKNJBNCD",
+            "speed": 15.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "CIHFFMJBELB": 20.0,
+            "IPBPLMGOJKC": 5.5,
+            "HMOHCMJMLNE": 0.009999999776482582
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "ccd": {
+                    "type": "Always"
+                },
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "ActivityAbility_CatchAnimal_Bullet_DogGame"
+                }
+            ],
+            "JHKBLJLPGEB": true
+        }
+    },
+    "Activity_Gadget_CatchMushroomMonster_Aim_Driver": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            }
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 99999.0,
+                "defense": 99999.0,
+                "isInvincible": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "ActivityAbility_CatchMushroomMonster_Aim_Driver",
+                "abilityName": "ActivityAbility_CatchMushroomMonster_Aim_Driver",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeInfinite": true
+        },
+        "move": {
+            "$type": "DKAMCGDMNKI",
+            "attachPoint": "RootNode",
+            "followRotation": true,
+            "HMPJAIBPNND": ""
+        }
+    },
+    "ActivityAbility_CatchMushroomBeast_Bullet_Short": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "HP": 99999.0,
+                "isInvincible": true,
+                "isLockHP": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "ActivityAbility_CatchMushroomBeast_Bullet",
+                "abilityName": "ActivityAbility_CatchMushroomBeast_Bullet",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 1.0
+        },
+        "move": {
+            "$type": "FHJABLDOPCE",
+            "speed": 10.0,
+            "JPDDBBHJAAH": true,
+            "LDOEEHMFPHN": 30.0,
+            "IPBPLMGOJKC": 25.0
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "ccd": {
+                    "type": "Always"
+                },
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "ActivityAbility_CatchMushroomBeast_Bullet"
+                }
+            ],
+            "JHKBLJLPGEB": true
+        }
+    },
+    "ActivityAbility_CatchMushroomBeast_Bullet_Long": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "HP": 99999.0,
+                "isInvincible": true,
+                "isLockHP": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "ActivityAbility_CatchMushroomBeast_Bullet",
+                "abilityName": "ActivityAbility_CatchMushroomBeast_Bullet",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 1.0
+        },
+        "move": {
+            "$type": "MPNKKNJBNCD",
+            "speed": 30.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "CIHFFMJBELB": 20.0,
+            "IPBPLMGOJKC": 5.5,
+            "HMOHCMJMLNE": 0.009999999776482582
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "ccd": {
+                    "type": "Always"
+                },
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "ActivityAbility_CatchMushroomBeast_Bullet"
+                }
+            ],
+            "JHKBLJLPGEB": true
+        }
+    },
+    "ActivityAbility_CatchAnimal_Bullet_Throw": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "FCAGPAEOLPI": 0.5,
+                "HOJBBPFJMIL": 0.5
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Ability_Bullet_CatchAnimal_Throw",
+                "abilityName": "Ability_Bullet_CatchAnimal_Throw",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 10.0
+        },
+        "move": {
+            "$type": "FHJABLDOPCE",
+            "speed": 11.5,
+            "JPDDBBHJAAH": true,
+            "LDOEEHMFPHN": 39.0,
+            "IPBPLMGOJKC": 30.0
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Ability_Bullet_CatchAnimal_Throw"
+                }
+            ]
+        }
+    },
+    "ActivityAbility_HideSeek_Investigate_Bullet_Short": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "HP": 99999.0,
+                "isInvincible": true,
+                "isLockHP": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "ActivityAbility_HideSeek_Investigate_Bullet",
+                "abilityName": "ActivityAbility_HideSeek_Investigate_Bullet",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 1.0
+        },
+        "move": {
+            "$type": "FHJABLDOPCE",
+            "speed": 10.0,
+            "JPDDBBHJAAH": true,
+            "LDOEEHMFPHN": 30.0,
+            "IPBPLMGOJKC": 25.0
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "ccd": {
+                    "type": "Always"
+                },
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "ActivityAbility_HideSeek_Investigate_Bullet"
+                }
+            ],
+            "JHKBLJLPGEB": true
+        }
+    },
+    "ActivityAbility_HideSeek_Investigate_Bullet_Long": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "HP": 99999.0,
+                "isInvincible": true,
+                "isLockHP": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "ActivityAbility_HideSeek_Investigate_Bullet",
+                "abilityName": "ActivityAbility_HideSeek_Investigate_Bullet",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 1.0
+        },
+        "move": {
+            "$type": "MPNKKNJBNCD",
+            "speed": 30.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "CIHFFMJBELB": 20.0,
+            "IPBPLMGOJKC": 5.5,
+            "HMOHCMJMLNE": 0.009999999776482582
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "ccd": {
+                    "type": "Always"
+                },
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "ActivityAbility_HideSeek_Investigate_Bullet"
+                }
+            ],
+            "JHKBLJLPGEB": true
+        }
+    },
+    "LevelEntity_TowerBuff_SwirlDoField": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            }
+        },
+        "combat": {
+            "property": {
+                "HP": 99999.0,
+                "isInvincible": true,
+                "isLockHP": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "LevelEntityTowerBuff_GadgetSkill_SwirlDoField",
+                "abilityName": "LevelEntityTowerBuff_GadgetSkill_SwirlDoField",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 8.0
+        }
+    },
+    "ActivityAbility_LudiHarpastum_GlodBat": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "HP": 99999.0,
+                "isInvincible": true,
+                "isLockHP": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "ActivityAbility_LudiHarpastumGadgetSkill_GlodBat",
+                "abilityName": "ActivityAbility_LudiHarpastumGadgetSkill_GlodBat",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 30.0
+        },
+        "move": {
+            "$type": "DKAMCGDMNKI",
+            "attachPoint": "",
+            "JHIDLJOPJML": true,
+            "HMPJAIBPNND": ""
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "ccd": {
+                    "type": "Always"
+                },
+                "triggerType": "TriggerNoRepeat",
+                "targetType": "Enemy"
+            },
+            "FBBHIKAKGLB": 1.0,
+            "JHKBLJLPGEB": true
+        }
+    },
+    "Sumo_WindZone": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            }
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 99999.0,
+                "defense": 99999.0,
+                "isInvincible": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Activity_Sumo_WindZone_Gadget",
+                "abilityName": "Activity_Sumo_WindZone_Gadget",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 20.0
+        }
+    },
+    "Sumo_WaterZone": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            }
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 99999.0,
+                "defense": 99999.0,
+                "isInvincible": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Activity_Sumo_WaterZone_Gadget",
+                "abilityName": "Activity_Sumo_WaterZone_Gadget",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 20.0
+        },
+        "move": {
+            "$type": "DKAMCGDMNKI",
+            "attachPoint": "RootNode",
+            "followRotation": true,
+            "JGFLINDOJDF": {
+                "z": -1.0
+            },
+            "HMPJAIBPNND": ""
+        }
+    },
+    "Sumo_Cannon_Bullet": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            }
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Activity_Sumo_Cannon_Bullet",
+                "abilityName": "Activity_Sumo_Cannon_Bullet",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 3.0
+        },
+        "move": {
+            "$type": "EGIBMIADEHO",
+            "speed": 10.0,
+            "maxSpeed": 30.0,
+            "minSpeed": 10.0,
+            "GBPNCGHBJMC": 360.0,
+            "AFIKDKDFKCJ": 30.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD",
+                "GMLPDHMOONH": 360.0
+            },
+            "BCNECAMPGJJ": true
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Activity_Sumo_Cannon_Bullet"
+                }
+            ],
+            "JPNAMDFCBFN": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Activity_Sumo_Cannon_Bullet"
+                }
+            ]
+        }
+    },
+    "Activity_Blocking_Blade": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            }
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 999999.0,
+                "defense": 999999.0
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "ActivityAbility_Avatar_Blocking_Blade",
+                "abilityName": "ActivityAbility_Avatar_Blocking_Blade",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 1.2000000476837158
+        },
+        "move": {
+            "$type": "KBENGKLMEAL",
+            "MPMOPIIFDPO": {
+                "excludeForces": [
+                    "WindZoneType"
+                ]
+            },
+            "speed": 20.0,
+            "maxSpeed": 30.0,
+            "AFIKDKDFKCJ": 10.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            }
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "ccd": {
+                    "type": "Always"
+                },
+                "triggerType": "TriggerNoRepeat",
+                "targetType": "Enemy",
+                "ignoreScene": true
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "ActivityAbility_Avatar_Blocking_Blade"
+                }
+            ]
+        }
+    },
+    "ActivityAbility_Avatar_Blocking_Blade_V2": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            }
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 999999.0,
+                "defense": 999999.0
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "ActivityAbility_Avatar_Blocking_Blade_V2",
+                "abilityName": "ActivityAbility_Avatar_Blocking_Blade_V2",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 1.2000000476837158
+        },
+        "move": {
+            "$type": "KBENGKLMEAL",
+            "MPMOPIIFDPO": {
+                "excludeForces": [
+                    "WindZoneType"
+                ]
+            },
+            "speed": 20.0,
+            "maxSpeed": 30.0,
+            "AFIKDKDFKCJ": 10.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            }
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "ccd": {
+                    "type": "Always"
+                },
+                "triggerType": "TriggerNoRepeat",
+                "targetType": "Enemy",
+                "ignoreScene": true
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "ActivityAbility_Avatar_Blocking_Blade_V2"
+                }
+            ]
+        }
+    },
+    "ActivityAbility_Avatar_Blocking_Blade_Burst": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            }
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 999999.0,
+                "defense": 999999.0
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "ActivityAbility_Avatar_Blocking_Blade_Burst",
+                "abilityName": "ActivityAbility_Avatar_Blocking_Blade_Burst",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 1.2000000476837158
+        },
+        "move": {
+            "$type": "KBENGKLMEAL",
+            "MPMOPIIFDPO": {
+                "excludeForces": [
+                    "WindZoneType"
+                ]
+            },
+            "speed": 20.0,
+            "maxSpeed": 30.0,
+            "AFIKDKDFKCJ": 10.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            }
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "ccd": {
+                    "type": "Always"
+                },
+                "triggerType": "TriggerNoRepeat",
+                "targetType": "Enemy",
+                "ignoreScene": true
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "ActivityAbility_Avatar_Blocking_Blade_Burst"
+                }
+            ]
+        }
+    },
+    "RogueV2_WindZone": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            }
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 99999.0,
+                "defense": 99999.0,
+                "isInvincible": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Activity_RogueV2_WindZone_Gadget",
+                "abilityName": "Activity_RogueV2_WindZone_Gadget",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 2.0
+        }
+    },
+    "ActivityAbility_Lannaluo_Shooter": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            }
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "ActivityAbility_Lannaluo_Shooter",
+                "abilityName": "ActivityAbility_Lannaluo_Shooter",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 0.30000001192092896
+        },
+        "move": {
+            "$type": "KBENGKLMEAL",
+            "speed": 50.0,
+            "JPDDBBHJAAH": true
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "ccd": {
+                    "type": "Always"
+                },
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "ActivityAbility_Lannaluo_Shooter"
+                }
+            ],
+            "JPNAMDFCBFN": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "ActivityAbility_Lannaluo_Shooter"
+                }
+            ],
+            "JHKBLJLPGEB": true
+        }
+    },
+    "ActivityAbility_Lannaluo_Gadget": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            },
+            "enableCrashDamage": false
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true
+            },
+            "beHit": {
+                "hitBloodEffect": ""
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "ActivityAbility_Lannaluo_Gadget",
+                "abilityName": "ActivityAbility_Lannaluo_Gadget",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 3.0
+        },
+        "PCADANJPFND": true
+    },
+    "SceneObj_ClearLocalGadget": {
+        "$type": "ConfigGadget",
+        "combat": {
+            "property": {
+                "HP": 99999.0,
+                "isInvincible": true,
+                "isLockHP": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "LevelAbility_SceneObj_ClearLocalGadget",
+                "abilityName": "LevelAbility_SceneObj_ClearLocalGadget",
+                "abilityOverride": ""
+            }
+        ]
+    }
+}

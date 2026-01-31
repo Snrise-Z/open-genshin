@@ -1,0 +1,2653 @@
+[
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "SceneObj_Activity_Common_Property_Ani_Prop_Snipper_01",
+            "abilityMixins": [
+                {
+                    "$type": "AttachModifierToSelfGlobalValueNoInitMixin",
+                    "globalValueKey": "_CURRENT_AMMO_NUMBER",
+                    "valueSteps": [
+                        -0.5,
+                        0.5
+                    ],
+                    "modifierNameSteps": [
+                        "Auto_Trigger_Reload"
+                    ]
+                },
+                {
+                    "$type": "DoActionOnGlobalValueChangeMixin",
+                    "globalValueKey": "GV_Filmfest_Sniper_Pos",
+                    "actions": [
+                        {
+                            "$type": "CopyGlobalValue",
+                            "musicSubStates": {
+                                "$type": "CJCOPNEGNGB",
+                                "tag": "Is_SniperCamera"
+                            },
+                            "BKFHNENKMAL": true,
+                            "CAAICNJMPCD": "Self",
+                            "INODFCIEOPP": "Other",
+                            "OHLDODBILJD": "GV_Filmfest_Sniper_Pos",
+                            "DCOAHDNGMHH": "GV_Filmfest_Sniper_Pos"
+                        }
+                    ]
+                },
+                {
+                    "$type": "DoActionOnGlobalValueChangeMixin",
+                    "globalValueKey": "GV_Is_Scope_On",
+                    "actions": [
+                        {
+                            "$type": "CopyGlobalValue",
+                            "musicSubStates": {
+                                "$type": "CJCOPNEGNGB",
+                                "tag": "Is_SniperCamera"
+                            },
+                            "BKFHNENKMAL": true,
+                            "CAAICNJMPCD": "Self",
+                            "INODFCIEOPP": "Other",
+                            "OHLDODBILJD": "GV_Is_Scope_On",
+                            "DCOAHDNGMHH": "GV_Is_Scope_On"
+                        }
+                    ]
+                },
+                {
+                    "$type": "ShootFromCameraMixin",
+                    "JFBPBPLIBKE": "FireBullet_FromCamera",
+                    "MPDDHOCNGPK": {
+                        "x": -0.029999999329447746,
+                        "y": -0.15000000596046448,
+                        "z": -2.0
+                    },
+                    "OAHBMEEDCPM": "GV_ShootPos",
+                    "LBINLGANCOO": "GV_ShootDir",
+                    "JNAOMAGIAJI": [
+                        {
+                            "$type": "Predicated",
+                            "FLEEHCIOPKA": [
+                                {
+                                    "$type": "OMPKIEPKGPF",
+                                    "KMGAOOHMCPK": "Self",
+                                    "NGGCNKPAODB": "_CURRENT_AMMO_NUMBER",
+                                    "value": 1.0,
+                                    "GAGKBNPOCAC": "MoreThanAndEqual"
+                                }
+                            ],
+                            "successActions": [
+                                {
+                                    "$type": "TriggerBullet",
+                                    "PMOEIMCLPBE": 70331002,
+                                    "CCNCMOGOFAG": {
+                                        "$type": "MIJAAKJGAEJ",
+                                        "POLCJDPOKCF": "GV_ShootPos",
+                                        "NHBEMFBAMNP": "GV_ShootDir"
+                                    }
+                                },
+                                {
+                                    "$type": "ActCameraShake",
+                                    "FCDFPCPCJGO": {
+                                        "DFOAHDENBKP": "CustomVector",
+                                        "FIKIBNDMNEF": 1.2000000476837158,
+                                        "NCDMOKAIAJD": 0.6000000238418579,
+                                        "JOLJAMKOCJL": 500.0,
+                                        "BOEOGMPKDBO": {
+                                            "y": 1.0
+                                        },
+                                        "LLNFDIKODIM": {
+                                            "IHLFAKGAOPO": true,
+                                            "LOCEENOGLOH": 1.0,
+                                            "JBAENFBBNHF": 0.0,
+                                            "JMGEPMNEIGC": 0.10000000149011612
+                                        }
+                                    }
+                                },
+                                {
+                                    "$type": "AddGlobalValueV2",
+                                    "value": -1.0,
+                                    "NGGCNKPAODB": "_CURRENT_AMMO_NUMBER",
+                                    "LBHGJKHHAKP": 0.0,
+                                    "EMGNPOKHMNN": 0.0
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "GKCBNBOCMFI": [
+                "_AMMO_COST"
+            ],
+            "modifiers": {
+                "Reload_Performance": {
+                    "modifierName": "",
+                    "FAFCPJJAIGK": 1.2000000476837158,
+                    "bonusCritical": 100.0,
+                    "ANPDJHOGAFE": 1.0,
+                    "MDPGEKAIFIM": [
+                        {
+                            "$type": "ActCameraShake",
+                            "FCDFPCPCJGO": {
+                                "DFOAHDENBKP": "CustomVector",
+                                "FIKIBNDMNEF": 0.5,
+                                "NCDMOKAIAJD": 1.5,
+                                "JOLJAMKOCJL": 500.0,
+                                "BOEOGMPKDBO": {
+                                    "x": 1.0,
+                                    "y": 1.0
+                                },
+                                "LLNFDIKODIM": {
+                                    "IHLFAKGAOPO": true,
+                                    "LOCEENOGLOH": 1.0
+                                }
+                            }
+                        }
+                    ]
+                },
+                "Reload_Performance_UI": {
+                    "modifierName": "",
+                    "FAFCPJJAIGK": 1.0,
+                    "bonusCritical": 100.0,
+                    "ANPDJHOGAFE": 0.800000011920929,
+                    "MDPGEKAIFIM": [
+                        {
+                            "$type": "NotifyUI",
+                            "GKFGKFBLPJJ": "FilmfestSniperPlayPage",
+                            "ECNCGFEEHKJ": "ReloadStart",
+                            "isFreshmanGuide": 1.2000000476837158,
+                            "JJFBHHJMHBH": ""
+                        }
+                    ]
+                },
+                "Auto_Trigger_Reload": {
+                    "modifierName": "",
+                    "FAFCPJJAIGK": 0.20000000298023224,
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "ApplyModifier",
+                            "modifierName": "Reload_Performance_UI"
+                        },
+                        {
+                            "$type": "Predicated",
+                            "targetPredicates": [
+                                {
+                                    "$type": "OMPKIEPKGPF",
+                                    "NGGCNKPAODB": "SGV_FilmFestSniper_HasBullet",
+                                    "value": 1.0,
+                                    "GAGKBNPOCAC": "NoneOrEqual"
+                                }
+                            ],
+                            "successActions": [
+                                {
+                                    "$type": "TriggerAbility",
+                                    "abilityName": "SceneObj_Activity_Common_Property_Ani_Prop_Snipper_Reload"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            "NLFIGALMIPD": [
+                {
+                    "$type": "SetGlobalValueV2",
+                    "value": 0.0,
+                    "NGGCNKPAODB": "_AMMO_RELOADING",
+                    "LBHGJKHHAKP": 0.0,
+                    "EMGNPOKHMNN": 0.0
+                },
+                {
+                    "$type": "SetGlobalValueV2",
+                    "value": 1.0,
+                    "NGGCNKPAODB": "_CURRENT_AMMO_NUMBER",
+                    "LBHGJKHHAKP": 0.0,
+                    "EMGNPOKHMNN": 0.0
+                },
+                {
+                    "$type": "SetGlobalValueV2",
+                    "value": 0.0,
+                    "NGGCNKPAODB": "_AMMO_COST",
+                    "LBHGJKHHAKP": 0.0,
+                    "EMGNPOKHMNN": 0.0
+                },
+                {
+                    "$type": "SetGlobalValueV2",
+                    "value": 0.0,
+                    "NGGCNKPAODB": "GV_Filmfest_Sniper_Pos",
+                    "LBHGJKHHAKP": 0.0,
+                    "EMGNPOKHMNN": 0.0
+                },
+                {
+                    "$type": "ServerLuaCall",
+                    "FNBGNCANKJF": "CurGalleryControlGroup",
+                    "FDPMGLDLLIN": "SLC_Filmfest_Sniper_OnInit",
+                    "param1": 0.0,
+                    "HFOIEKLCLEM": 0.0,
+                    "MCLOKLEBGPH": 0.0
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "SceneObj_Activity_Common_Property_Ani_Prop_Snipper_Reload",
+            "modifiers": {
+                "Snipper_Reload": {
+                    "modifierName": "",
+                    "FAFCPJJAIGK": 2.0,
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "SetGlobalValue",
+                            "value": 1.0,
+                            "NGGCNKPAODB": "_AMMO_RELOADING",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        },
+                        {
+                            "$type": "AddGlobalValueV2",
+                            "value": 1.0,
+                            "NGGCNKPAODB": "_AMMO_COST",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        }
+                    ],
+                    "NFKOGKMAIIE": [
+                        {
+                            "$type": "SetGlobalValue",
+                            "value": 0.0,
+                            "NGGCNKPAODB": "_AMMO_RELOADING",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        },
+                        {
+                            "$type": "AddGlobalValueV2",
+                            "value": 1.0,
+                            "NGGCNKPAODB": "_CURRENT_AMMO_NUMBER",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        }
+                    ]
+                }
+            },
+            "onAbilityStart": [
+                {
+                    "$type": "ApplyModifier",
+                    "modifierName": "Snipper_Reload"
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "SceneObj_Level_Fd_Property_Ani_Prop_FilmfestSniper_BalloonBomb_01",
+            "abilityMixins": [
+                {
+                    "$type": "AttachToGadgetStateMixin",
+                    "JBFLOAMNPBC": 202,
+                    "modifierName": "BalloonBomb_Suicide"
+                }
+            ],
+            "modifiers": {
+                "BalloonBomb_Eff": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "AttachEffect",
+                            "LHHFHDEJOHC": "Eff_SceneObj_FilmfestSniper_01_BalloonBombMoving",
+                            "PCLAEGHPNHE": -1.0
+                        }
+                    ]
+                },
+                "BalloonBomb_Suicide": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "KillSelf"
+                        }
+                    ]
+                }
+            },
+            "NLFIGALMIPD": [
+                {
+                    "$type": "FireEffect",
+                    "LHHFHDEJOHC": "Eff_SceneObj_FilmfestSniper_01_BalloonBombAppear",
+                    "PCLAEGHPNHE": -1.0
+                },
+                {
+                    "$type": "SetGlobalValueV2",
+                    "value": 1.0,
+                    "NGGCNKPAODB": "Is_FilmfestSniper_Breakable",
+                    "LBHGJKHHAKP": 0.0,
+                    "EMGNPOKHMNN": 0.0
+                },
+                {
+                    "$type": "AttachModifier",
+                    "modifierName": "BalloonBomb_Eff"
+                }
+            ],
+            "LFBJFECLNGK": [
+                {
+                    "$type": "FireEffect",
+                    "LHHFHDEJOHC": "Eff_SceneObj_FilmfestSniper_01_BalloonBombExplode",
+                    "PCLAEGHPNHE": -1.0
+                },
+                {
+                    "$type": "TriggerAttackEvent",
+                    "FMDHJHAACGM": {
+                        "LOPCJCIFFBE": {
+                            "$type": "IHKJIHKGECH",
+                            "triggerType": "TriggerNoRepeat",
+                            "JFINDMLDADP": true,
+                            "CCNCMOGOFAG": {
+                                "$type": "PHDFAKODIBC",
+                                "offset": {
+                                    "NEEHMANEJKM": 0.0,
+                                    "KKKLBADAPPB": 0.5,
+                                    "GENNNOANKOO": 0.0
+                                }
+                            },
+                            "GGEJLLOCJDH": 6.0
+                        },
+                        "OIAMOBFMPAB": {
+                            "KNOKCFHALLI": "FilmfestSniper_Bomb",
+                            "HOKPLNACNKG": "",
+                            "ILLFBEHPCJA": "default",
+                            "BAPFFKCLDPC": {
+                                "OLLFABADCKH": 9999999.0,
+                                "PDHAKJCMPHB": 0.0,
+                                "bonusCritical": 50.0,
+                                "GAOIEGMFFDJ": "Blunt",
+                                "FFIIMACIKEA": 9999999.0,
+                                "AEOLDMAMNLM": 0.0
+                            },
+                            "OCHEEDIDOHI": {
+                                "AIDMNBLLAIJ": "default",
+                                "OEGAJNNFFPO": "LV6",
+                                "EPGLCHLENNG": 0.05000000074505806
+                            },
+                            "KPCBFANCGFH": true,
+                            "FCDFPCPCJGO": {
+                                "FIKIBNDMNEF": 0.36000001430511475,
+                                "NCDMOKAIAJD": 0.36000001430511475
+                            }
+                        }
+                    },
+                    "PFBJAFHFBDE": "Enemy"
+                },
+                {
+                    "$type": "TriggerAttackEvent",
+                    "FMDHJHAACGM": {
+                        "LOPCJCIFFBE": {
+                            "$type": "IHKJIHKGECH",
+                            "triggerType": "TriggerNoRepeat",
+                            "CCNCMOGOFAG": {
+                                "$type": "PHDFAKODIBC"
+                            },
+                            "GGEJLLOCJDH": 2.0
+                        },
+                        "OIAMOBFMPAB": {
+                            "KNOKCFHALLI": "",
+                            "HOKPLNACNKG": "",
+                            "ILLFBEHPCJA": "default",
+                            "BAPFFKCLDPC": {
+                                "OLLFABADCKH": 1.0,
+                                "PDHAKJCMPHB": 0.0,
+                                "bonusCritical": 50.0,
+                                "GAOIEGMFFDJ": "Blunt",
+                                "FFIIMACIKEA": 0.0,
+                                "AEOLDMAMNLM": 0.0
+                            }
+                        }
+                    },
+                    "PFBJAFHFBDE": "All"
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "SceneObj_Level_Fd_Property_Ani_Prop_FilmfestSniper_GateForbidArea_01",
+            "modifiers": {
+                "GateForbidArea_GateMarkRemove": {
+                    "modifierName": "",
+                    "FAFCPJJAIGK": 0.10000000149011612,
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "RemoveModifier",
+                            "modifierName": "GateForbidArea_GateMark"
+                        },
+                        {
+                            "$type": "SetGlobalValueV2",
+                            "value": 0.0,
+                            "NGGCNKPAODB": "GV_GateForbidArea_GateMark",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        }
+                    ]
+                },
+                "GateForbidArea_GateMark": {
+                    "modifierName": "",
+                    "FAFCPJJAIGK": 0.10000000149011612,
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "RemoveModifier",
+                            "modifierName": "GateForbidArea_GateMarkRemove"
+                        },
+                        {
+                            "$type": "CopyGlobalValue",
+                            "BKFHNENKMAL": true,
+                            "INODFCIEOPP": "Self",
+                            "OHLDODBILJD": "SGV_GateForbidArea_GateMark",
+                            "DCOAHDNGMHH": "GV_GateForbidArea_GateMark"
+                        }
+                    ]
+                }
+            },
+            "MENHKHPHIKK": [
+                {
+                    "$type": "Predicated",
+                    "KMGAOOHMCPK": "Target",
+                    "targetPredicates": [
+                        {
+                            "$type": "FAGBAHBLACH",
+                            "MALHNOJHHDJ": [
+                                "Avatar"
+                            ]
+                        }
+                    ],
+                    "successActions": [
+                        {
+                            "$type": "ApplyModifier",
+                            "KMGAOOHMCPK": "TargetTeam",
+                            "modifierName": "GateForbidArea_GateMark"
+                        }
+                    ]
+                }
+            ],
+            "HONEMNFNBMO": [
+                {
+                    "$type": "Predicated",
+                    "KMGAOOHMCPK": "Target",
+                    "targetPredicates": [
+                        {
+                            "$type": "FAGBAHBLACH",
+                            "MALHNOJHHDJ": [
+                                "Avatar"
+                            ]
+                        }
+                    ],
+                    "successActions": [
+                        {
+                            "$type": "ApplyModifier",
+                            "KMGAOOHMCPK": "TargetTeam",
+                            "modifierName": "GateForbidArea_GateMarkRemove"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "SceneObj_Activity_Common_Property_Ani_Prop_SnipperBullet_01",
+            "abilitySpecials": {
+                "DamagePercentage": 0.0,
+                "LevelEntity_AvatarDot_SystemValue": 1.0
+            },
+            "modifiers": {
+                "Blank": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0
+                },
+                "FilmFest_SniperBullet_HitGroundRespond": {
+                    "modifierName": "",
+                    "FAFCPJJAIGK": 0.5,
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "SetGlobalValueV2",
+                            "value": 2.0,
+                            "NGGCNKPAODB": "GV_RespondType",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        },
+                        {
+                            "$type": "TriggerAbility",
+                            "abilityName": "MonsterAffix_FilmFest_Shooting_MonsterStateSwitch"
+                        }
+                    ]
+                },
+                "FilmFest_SniperBullet_HitGadgetRespond": {
+                    "modifierName": "",
+                    "FAFCPJJAIGK": 0.5,
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "SetGlobalValueV2",
+                            "value": 3.0,
+                            "NGGCNKPAODB": "GV_RespondType",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        },
+                        {
+                            "$type": "TriggerAbility",
+                            "abilityName": "MonsterAffix_FilmFest_Shooting_MonsterStateSwitch"
+                        }
+                    ]
+                },
+                "FilmFest_SniperBullet_HitMonsterRespond": {
+                    "modifierName": "",
+                    "FAFCPJJAIGK": 0.5,
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "SetGlobalValueV2",
+                            "value": 3.0,
+                            "NGGCNKPAODB": "GV_RespondType",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        },
+                        {
+                            "$type": "TriggerAbility",
+                            "abilityName": "MonsterAffix_FilmFest_Shooting_MonsterStateSwitch"
+                        }
+                    ]
+                },
+                "FilmFest_SniperBullet_Killer": {
+                    "modifierName": "",
+                    "FAFCPJJAIGK": 0.5,
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "ServerLuaCall",
+                            "KMGAOOHMCPK": "CasterOwner",
+                            "FNBGNCANKJF": "CurGalleryControlGroup",
+                            "FDPMGLDLLIN": "SLC_Filmfest_Sniper_HitMonster",
+                            "param1": 0.0,
+                            "HFOIEKLCLEM": 0.0,
+                            "MCLOKLEBGPH": 0.0
+                        },
+                        {
+                            "$type": "Predicated",
+                            "targetPredicates": [
+                                {
+                                    "$type": "CDPHOKIPLGH",
+                                    "FLEEHCIOPKA": [
+                                        {
+                                            "$type": "OGKLKNAFOAB",
+                                            "JCMFILJLNFH": "Lesser",
+                                            "KAFEGOCEDLK": 0.5
+                                        },
+                                        {
+                                            "$type": "OMPKIEPKGPF",
+                                            "NGGCNKPAODB": "_FilmFest_Shooting_MonsterLabel",
+                                            "value": 1.0,
+                                            "GAGKBNPOCAC": "NoneOrEqual"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "successActions": [
+                                {
+                                    "$type": "NotifyUI",
+                                    "GKFGKFBLPJJ": "FilmfestSniperPlayPage",
+                                    "ECNCGFEEHKJ": "MonsterKill",
+                                    "CGFKCDOBBML": 1,
+                                    "JJFBHHJMHBH": ""
+                                },
+                                {
+                                    "$type": "SetGlobalValueV2",
+                                    "value": 0.0,
+                                    "NGGCNKPAODB": "GV_FilmfestSniper_MonsterResponsable",
+                                    "LBHGJKHHAKP": 0.0,
+                                    "EMGNPOKHMNN": 0.0
+                                }
+                            ],
+                            "failActions": [
+                                {
+                                    "$type": "NotifyUI",
+                                    "GKFGKFBLPJJ": "FilmfestSniperPlayPage",
+                                    "ECNCGFEEHKJ": "MonsterKill",
+                                    "JJFBHHJMHBH": ""
+                                }
+                            ]
+                        },
+                        {
+                            "$type": "Predicated",
+                            "targetPredicates": [
+                                {
+                                    "$type": "OMPKIEPKGPF",
+                                    "NGGCNKPAODB": "_FilmFest_Shooting_MonsterLabel",
+                                    "value": 1.0,
+                                    "GAGKBNPOCAC": "NoneOrEqual"
+                                }
+                            ],
+                            "successActions": [
+                                {
+                                    "$type": "LoseHP",
+                                    "BFFEOHLLMHA": 1.0,
+                                    "DKEIJGBAKME": ""
+                                }
+                            ],
+                            "failActions": [
+                                {
+                                    "$type": "LoseHP",
+                                    "BFFEOHLLMHA": 0.5099999904632568,
+                                    "DKEIJGBAKME": ""
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "FilmFest_SniperBullet_Effect": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "AttachEffect",
+                            "LHHFHDEJOHC": "Eff_FilmfestSniper_Bullet_01",
+                            "PCLAEGHPNHE": -1.0
+                        },
+                        {
+                            "$type": "AttachEffect",
+                            "LHHFHDEJOHC": "Eff_FilmfestSniper_Bullet_01_Trail",
+                            "PCLAEGHPNHE": -1.0
+                        }
+                    ]
+                }
+            },
+            "NLFIGALMIPD": [
+                {
+                    "$type": "ApplyModifier",
+                    "modifierName": "FilmFest_SniperBullet_Effect"
+                },
+                {
+                    "$type": "SetSystemValueToOverrideMap",
+                    "NGGCNKPAODB": "LevelEntity_AvatarDot_SystemValue",
+                    "type": "ElementLevelCo"
+                }
+            ],
+            "onAbilityStart": [
+                {
+                    "$type": "Predicated",
+                    "KMGAOOHMCPK": "Target",
+                    "FLEEHCIOPKA": [
+                        {
+                            "$type": "OMPKIEPKGPF",
+                            "KMGAOOHMCPK": "Self",
+                            "NGGCNKPAODB": "GV_Filmfest_SniperBullet_Triggered",
+                            "value": 0.0,
+                            "GAGKBNPOCAC": "NoneOrEqual"
+                        }
+                    ],
+                    "targetPredicates": [
+                        {
+                            "$type": "FAGBAHBLACH",
+                            "MALHNOJHHDJ": [
+                                "Monster"
+                            ]
+                        }
+                    ],
+                    "successActions": [
+                        {
+                            "$type": "FireEffect",
+                            "KMGAOOHMCPK": "Target",
+                            "LHHFHDEJOHC": "Eff_FilmfestSniper_Bullet_HitEffect_01",
+                            "CCNCMOGOFAG": {
+                                "$type": "MHHEHGKJIJB"
+                            },
+                            "PCLAEGHPNHE": -1.0
+                        },
+                        {
+                            "$type": "DebugLog",
+                            "GOMJPONMJII": "############# HitMonster ###############"
+                        },
+                        {
+                            "$type": "SetGlobalValueV2",
+                            "value": 1.0,
+                            "NGGCNKPAODB": "GV_Filmfest_SniperBullet_Triggered",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        },
+                        {
+                            "$type": "DamageByAttackValue",
+                            "KMGAOOHMCPK": "Other",
+                            "FLEEHCIOPKA": [
+                                {
+                                    "$type": "OMPKIEPKGPF",
+                                    "NGGCNKPAODB": "_FilmFest_Shooting_MonsterLabel",
+                                    "value": 1.0,
+                                    "GAGKBNPOCAC": "NoneOrEqual"
+                                }
+                            ],
+                            "OIAMOBFMPAB": {
+                                "KNOKCFHALLI": "",
+                                "HOKPLNACNKG": "",
+                                "ILLFBEHPCJA": "default",
+                                "BAPFFKCLDPC": {
+                                    "OLLFABADCKH": 0.0,
+                                    "PDHAKJCMPHB": 0.0,
+                                    "bonusCritical": 0.0,
+                                    "GAOIEGMFFDJ": "Blunt",
+                                    "FFIIMACIKEA": 99999.0,
+                                    "DDAPGDBNABG": true,
+                                    "AEOLDMAMNLM": 0.0
+                                },
+                                "OCHEEDIDOHI": {
+                                    "AIDMNBLLAIJ": "none",
+                                    "OEGAJNNFFPO": "LV5",
+                                    "EPGLCHLENNG": 0.009999999776482582,
+                                    "BPPOFFGJPGL": true
+                                }
+                            }
+                        },
+                        {
+                            "$type": "DamageByAttackValue",
+                            "KMGAOOHMCPK": "Other",
+                            "FLEEHCIOPKA": [
+                                {
+                                    "$type": "OMPKIEPKGPF",
+                                    "NGGCNKPAODB": "_FilmFest_Shooting_MonsterLabel",
+                                    "value": 2.0
+                                }
+                            ],
+                            "OIAMOBFMPAB": {
+                                "KNOKCFHALLI": "",
+                                "HOKPLNACNKG": "",
+                                "ILLFBEHPCJA": "default",
+                                "BAPFFKCLDPC": {
+                                    "OLLFABADCKH": 0.0,
+                                    "PDHAKJCMPHB": 0.0,
+                                    "bonusCritical": 0.0,
+                                    "GAOIEGMFFDJ": "Blunt",
+                                    "FFIIMACIKEA": 99999.0,
+                                    "DDAPGDBNABG": true,
+                                    "AEOLDMAMNLM": 0.0
+                                },
+                                "OCHEEDIDOHI": {
+                                    "AIDMNBLLAIJ": "none",
+                                    "OEGAJNNFFPO": "LV4",
+                                    "EPGLCHLENNG": 0.009999999776482582,
+                                    "BPPOFFGJPGL": true
+                                }
+                            }
+                        },
+                        {
+                            "$type": "ApplyModifier",
+                            "KMGAOOHMCPK": "Target",
+                            "modifierName": "FilmFest_SniperBullet_Killer"
+                        },
+                        {
+                            "$type": "SetGlobalPos",
+                            "KMGAOOHMCPK": "Target",
+                            "NGGCNKPAODB": "GV_Hit_Pos",
+                            "CCNCMOGOFAG": {
+                                "$type": "MHHEHGKJIJB"
+                            },
+                            "NMPAAMMEDAD": false
+                        },
+                        {
+                            "$type": "Predicated",
+                            "musicSubStates": {
+                                "$type": "CJCOPNEGNGB",
+                                "tag": "Filmfest_Monster"
+                            },
+                            "successActions": [
+                                {
+                                    "$type": "Predicated",
+                                    "KMGAOOHMCPK": "Target",
+                                    "targetPredicates": [
+                                        {
+                                            "$type": "OMPKIEPKGPF",
+                                            "NGGCNKPAODB": "GV_FilmfestSniper_MonsterResponsable",
+                                            "value": 1.0
+                                        }
+                                    ],
+                                    "successActions": [
+                                        {
+                                            "$type": "CopyGlobalValue",
+                                            "KMGAOOHMCPK": "Target",
+                                            "CAAICNJMPCD": "Self",
+                                            "OHLDODBILJD": "GV_Hit_Pos_0",
+                                            "DCOAHDNGMHH": "GV_Hit_Pos_0"
+                                        },
+                                        {
+                                            "$type": "CopyGlobalValue",
+                                            "KMGAOOHMCPK": "Target",
+                                            "CAAICNJMPCD": "Self",
+                                            "OHLDODBILJD": "GV_Hit_Pos_1",
+                                            "DCOAHDNGMHH": "GV_Hit_Pos_1"
+                                        },
+                                        {
+                                            "$type": "CopyGlobalValue",
+                                            "KMGAOOHMCPK": "Target",
+                                            "CAAICNJMPCD": "Self",
+                                            "OHLDODBILJD": "GV_Hit_Pos_2",
+                                            "DCOAHDNGMHH": "GV_Hit_Pos_2"
+                                        },
+                                        {
+                                            "$type": "ApplyModifier",
+                                            "KMGAOOHMCPK": "Target",
+                                            "modifierName": "FilmFest_SniperBullet_HitMonsterRespond"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "failActions": [
+                        {
+                            "$type": "Predicated",
+                            "KMGAOOHMCPK": "Target",
+                            "targetPredicates": [
+                                {
+                                    "$type": "OMPKIEPKGPF",
+                                    "NGGCNKPAODB": "Is_FilmfestSniper_Breakable",
+                                    "value": 1.0,
+                                    "GAGKBNPOCAC": "MoreThanAndEqual"
+                                }
+                            ],
+                            "successActions": [
+                                {
+                                    "$type": "DebugLog",
+                                    "GOMJPONMJII": "############# HitGadget ###############"
+                                },
+                                {
+                                    "$type": "SetGlobalPos",
+                                    "KMGAOOHMCPK": "Target",
+                                    "NGGCNKPAODB": "GV_Hit_Pos",
+                                    "CCNCMOGOFAG": {
+                                        "$type": "MHHEHGKJIJB"
+                                    },
+                                    "NMPAAMMEDAD": false
+                                },
+                                {
+                                    "$type": "Predicated",
+                                    "musicSubStates": {
+                                        "$type": "CJCOPNEGNGB",
+                                        "tag": "Filmfest_Monster"
+                                    },
+                                    "successActions": [
+                                        {
+                                            "$type": "Predicated",
+                                            "KMGAOOHMCPK": "Target",
+                                            "targetPredicates": [
+                                                {
+                                                    "$type": "OMPKIEPKGPF",
+                                                    "NGGCNKPAODB": "GV_FilmfestSniper_MonsterResponsable",
+                                                    "value": 1.0
+                                                }
+                                            ],
+                                            "successActions": [
+                                                {
+                                                    "$type": "CopyGlobalValue",
+                                                    "KMGAOOHMCPK": "Other",
+                                                    "CAAICNJMPCD": "Self",
+                                                    "INODFCIEOPP": "Other",
+                                                    "OHLDODBILJD": "GV_Hit_Pos_0",
+                                                    "DCOAHDNGMHH": "GV_Hit_Pos_0"
+                                                },
+                                                {
+                                                    "$type": "CopyGlobalValue",
+                                                    "KMGAOOHMCPK": "Other",
+                                                    "CAAICNJMPCD": "Self",
+                                                    "INODFCIEOPP": "Other",
+                                                    "OHLDODBILJD": "GV_Hit_Pos_1",
+                                                    "DCOAHDNGMHH": "GV_Hit_Pos_1"
+                                                },
+                                                {
+                                                    "$type": "CopyGlobalValue",
+                                                    "KMGAOOHMCPK": "Other",
+                                                    "CAAICNJMPCD": "Self",
+                                                    "INODFCIEOPP": "Other",
+                                                    "OHLDODBILJD": "GV_Hit_Pos_2",
+                                                    "DCOAHDNGMHH": "GV_Hit_Pos_2"
+                                                },
+                                                {
+                                                    "$type": "ApplyModifier",
+                                                    "KMGAOOHMCPK": "Other",
+                                                    "modifierName": "FilmFest_SniperBullet_HitGadgetRespond"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "$type": "FireEffect",
+                                    "KMGAOOHMCPK": "Target",
+                                    "LHHFHDEJOHC": "Eff_FilmfestSniper_Bullet_HitEffect_01",
+                                    "CCNCMOGOFAG": {
+                                        "$type": "MHHEHGKJIJB"
+                                    },
+                                    "PCLAEGHPNHE": -1.0
+                                },
+                                {
+                                    "$type": "SetGlobalValueV2",
+                                    "value": 1.0,
+                                    "NGGCNKPAODB": "GV_Filmfest_SniperBullet_Triggered",
+                                    "LBHGJKHHAKP": 0.0,
+                                    "EMGNPOKHMNN": 0.0
+                                },
+                                {
+                                    "$type": "ServerLuaCall",
+                                    "KMGAOOHMCPK": "CasterOwner",
+                                    "BKFHNENKMAL": true,
+                                    "FNBGNCANKJF": "CurGalleryControlGroup",
+                                    "FDPMGLDLLIN": "SLC_Filmfest_Sniper_HitGadget",
+                                    "param1": 0.0,
+                                    "HFOIEKLCLEM": 0.0,
+                                    "MCLOKLEBGPH": 0.0
+                                },
+                                {
+                                    "$type": "DamageByAttackValue",
+                                    "KMGAOOHMCPK": "Target",
+                                    "OIAMOBFMPAB": {
+                                        "KNOKCFHALLI": "FilmfestSniper_Bullet",
+                                        "HOKPLNACNKG": "",
+                                        "ILLFBEHPCJA": "default",
+                                        "BAPFFKCLDPC": {
+                                            "OLLFABADCKH": 1.0,
+                                            "PDHAKJCMPHB": 0.0,
+                                            "bonusCritical": 25.0,
+                                            "GAOIEGMFFDJ": "Default",
+                                            "PGDDACECJLG": 99999.0,
+                                            "AEOLDMAMNLM": 0.0
+                                        },
+                                        "OCHEEDIDOHI": {
+                                            "AIDMNBLLAIJ": "default",
+                                            "OEGAJNNFFPO": "LV1",
+                                            "EPGLCHLENNG": 0.05000000074505806
+                                        }
+                                    }
+                                }
+                            ],
+                            "failActions": [
+                                {
+                                    "$type": "SetGlobalPos",
+                                    "KMGAOOHMCPK": "Target",
+                                    "NGGCNKPAODB": "GV_Hit_Pos",
+                                    "CCNCMOGOFAG": {
+                                        "$type": "MHHEHGKJIJB"
+                                    },
+                                    "NMPAAMMEDAD": false
+                                },
+                                {
+                                    "$type": "Predicated",
+                                    "KMGAOOHMCPK": "Target",
+                                    "targetPredicates": [
+                                        {
+                                            "$type": "FAGBAHBLACH",
+                                            "MALHNOJHHDJ": [
+                                                "Gadget"
+                                            ]
+                                        }
+                                    ],
+                                    "successActions": [
+                                        {
+                                            "$type": "DebugLog",
+                                            "GOMJPONMJII": "############# HitGround(Gadget) ###############"
+                                        },
+                                        {
+                                            "$type": "Predicated",
+                                            "musicSubStates": {
+                                                "$type": "CJCOPNEGNGB",
+                                                "tag": "Filmfest_Monster"
+                                            },
+                                            "successActions": [
+                                                {
+                                                    "$type": "Predicated",
+                                                    "KMGAOOHMCPK": "Target",
+                                                    "targetPredicates": [
+                                                        {
+                                                            "$type": "OMPKIEPKGPF",
+                                                            "NGGCNKPAODB": "GV_FilmfestSniper_MonsterResponsable",
+                                                            "value": 1.0
+                                                        }
+                                                    ],
+                                                    "successActions": [
+                                                        {
+                                                            "$type": "CopyGlobalValue",
+                                                            "KMGAOOHMCPK": "Target",
+                                                            "CAAICNJMPCD": "Self",
+                                                            "OHLDODBILJD": "GV_Hit_Pos_0",
+                                                            "DCOAHDNGMHH": "GV_Hit_Pos_0"
+                                                        },
+                                                        {
+                                                            "$type": "CopyGlobalValue",
+                                                            "KMGAOOHMCPK": "Target",
+                                                            "CAAICNJMPCD": "Self",
+                                                            "OHLDODBILJD": "GV_Hit_Pos_1",
+                                                            "DCOAHDNGMHH": "GV_Hit_Pos_1"
+                                                        },
+                                                        {
+                                                            "$type": "CopyGlobalValue",
+                                                            "KMGAOOHMCPK": "Target",
+                                                            "CAAICNJMPCD": "Self",
+                                                            "OHLDODBILJD": "GV_Hit_Pos_2",
+                                                            "DCOAHDNGMHH": "GV_Hit_Pos_2"
+                                                        },
+                                                        {
+                                                            "$type": "ApplyModifier",
+                                                            "KMGAOOHMCPK": "Target",
+                                                            "modifierName": "FilmFest_SniperBullet_HitGroundRespond"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$type": "FireEffect",
+                                            "KMGAOOHMCPK": "Target",
+                                            "LHHFHDEJOHC": "Eff_FilmfestSniper_Bullet_HitEffect_01",
+                                            "CCNCMOGOFAG": {
+                                                "$type": "MHHEHGKJIJB"
+                                            },
+                                            "PCLAEGHPNHE": -1.0
+                                        },
+                                        {
+                                            "$type": "SetGlobalValueV2",
+                                            "value": 1.0,
+                                            "NGGCNKPAODB": "GV_Filmfest_SniperBullet_Triggered",
+                                            "LBHGJKHHAKP": 0.0,
+                                            "EMGNPOKHMNN": 0.0
+                                        },
+                                        {
+                                            "$type": "ServerLuaCall",
+                                            "KMGAOOHMCPK": "CasterOwner",
+                                            "FNBGNCANKJF": "CurGalleryControlGroup",
+                                            "FDPMGLDLLIN": "SLC_Filmfest_Sniper_HitGround",
+                                            "param1": 0.0,
+                                            "HFOIEKLCLEM": 0.0,
+                                            "MCLOKLEBGPH": 0.0
+                                        }
+                                    ],
+                                    "failActions": [
+                                        {
+                                            "$type": "DebugLog",
+                                            "GOMJPONMJII": "############# HitGround ###############"
+                                        },
+                                        {
+                                            "$type": "ServerLuaCall",
+                                            "KMGAOOHMCPK": "CasterOwner",
+                                            "FNBGNCANKJF": "CurGalleryControlGroup",
+                                            "FDPMGLDLLIN": "SLC_Filmfest_Sniper_HitGround",
+                                            "param1": 0.0,
+                                            "HFOIEKLCLEM": 0.0,
+                                            "MCLOKLEBGPH": 0.0
+                                        },
+                                        {
+                                            "$type": "Predicated",
+                                            "musicSubStates": {
+                                                "$type": "CJCOPNEGNGB",
+                                                "tag": "Filmfest_Monster"
+                                            },
+                                            "successActions": [
+                                                {
+                                                    "$type": "Predicated",
+                                                    "KMGAOOHMCPK": "Target",
+                                                    "targetPredicates": [
+                                                        {
+                                                            "$type": "OMPKIEPKGPF",
+                                                            "NGGCNKPAODB": "GV_FilmfestSniper_MonsterResponsable",
+                                                            "value": 1.0
+                                                        }
+                                                    ],
+                                                    "successActions": [
+                                                        {
+                                                            "$type": "CopyGlobalValue",
+                                                            "KMGAOOHMCPK": "Target",
+                                                            "CAAICNJMPCD": "Self",
+                                                            "OHLDODBILJD": "GV_Hit_Pos_0",
+                                                            "DCOAHDNGMHH": "GV_Hit_Pos_0"
+                                                        },
+                                                        {
+                                                            "$type": "CopyGlobalValue",
+                                                            "KMGAOOHMCPK": "Target",
+                                                            "CAAICNJMPCD": "Self",
+                                                            "OHLDODBILJD": "GV_Hit_Pos_1",
+                                                            "DCOAHDNGMHH": "GV_Hit_Pos_1"
+                                                        },
+                                                        {
+                                                            "$type": "CopyGlobalValue",
+                                                            "KMGAOOHMCPK": "Target",
+                                                            "CAAICNJMPCD": "Self",
+                                                            "OHLDODBILJD": "GV_Hit_Pos_2",
+                                                            "DCOAHDNGMHH": "GV_Hit_Pos_2"
+                                                        },
+                                                        {
+                                                            "$type": "ApplyModifier",
+                                                            "KMGAOOHMCPK": "Target",
+                                                            "modifierName": "FilmFest_SniperBullet_HitGroundRespond"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$type": "FireHitEffect",
+                                            "KOCNKAKDKII": "",
+                                            "CAMEMAMPOMA": {
+                                                "LJJEBGDNMON": "Eff_Arrow_Hit_Earth",
+                                                "HMJFFPMFLHJ": {
+                                                    "Water": "Eff_Arrow_Hit_Water"
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "$type": "SetGlobalValueV2",
+                                            "value": 1.0,
+                                            "NGGCNKPAODB": "GV_Filmfest_SniperBullet_Triggered",
+                                            "LBHGJKHHAKP": 0.0,
+                                            "EMGNPOKHMNN": 0.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "SceneObj_Activity_Common_Property_Ani_Prop_FilmFestSniperCamera_01",
+            "abilityMixins": [
+                {
+                    "$type": "AttachModifierToSelfGlobalValueMixin",
+                    "globalValueKey": "GV_Filmfest_Sniper_Pos",
+                    "defaultGlobalValueOnCreate": 0.0,
+                    "valueSteps": [
+                        -0.5,
+                        1.5
+                    ],
+                    "modifierNameSteps": [
+                        "CameraPos_01_Normal"
+                    ]
+                }
+            ],
+            "modifiers": {
+                "CameraPos_01_Normal": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "modifierMixins": [
+                        {
+                            "$type": "SpawnCameraStateMixin",
+                            "FHFAFMOBKHM": {
+                                "$type": "FDBAAGDFFAN",
+                                "MMANEPOEIFL": "CameraPivot_1",
+                                "MDFGOHAFPBN": {
+                                    "z": -1.0
+                                },
+                                "PEHHGFGHCKK": 0.10000000149011612,
+                                "NDGJODFPGIJ": 40.0,
+                                "PFODHJHOFJF": -20.0,
+                                "BIPKMFJNOMD": 35.0,
+                                "GKHJEMJINNB": -55.0,
+                                "MGJGLFCMENI": 55.0,
+                                "NGAANBGKBKK": true,
+                                "LALDEIFHKOB": 150.0,
+                                "PIMCHOOLLDN": [
+                                    21010105,
+                                    21020704,
+                                    21010404,
+                                    24060903,
+                                    24061103,
+                                    25010226,
+                                    70331003,
+                                    70331033
+                                ],
+                                "NOANMBHMBGL": 1.0,
+                                "EIKGDCDLFGK": 4.411799907684326
+                            }
+                        }
+                    ]
+                }
+            },
+            "NLFIGALMIPD": [
+                {
+                    "$type": "ChangeTag",
+                    "GMLGHDNGILP": true,
+                    "tag": "Is_SniperCamera"
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "SceneObj_Activity_Common_Property_Ani_Prop_FilmFestSniperCamera_02",
+            "abilityMixins": [
+                {
+                    "$type": "AttachModifierToSelfGlobalValueMixin",
+                    "globalValueKey": "GV_Filmfest_Sniper_Pos",
+                    "defaultGlobalValueOnCreate": 0.0,
+                    "valueSteps": [
+                        -0.5,
+                        0.5,
+                        1.5
+                    ],
+                    "modifierNameSteps": [
+                        "CameraPos_01_Normal",
+                        "CameraPos_02_Normal"
+                    ]
+                }
+            ],
+            "modifiers": {
+                "CameraPos_01_Normal": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "modifierMixins": [
+                        {
+                            "$type": "SpawnCameraStateMixin",
+                            "FHFAFMOBKHM": {
+                                "$type": "FDBAAGDFFAN",
+                                "MMANEPOEIFL": "CameraPivot_1",
+                                "MDFGOHAFPBN": {
+                                    "z": -1.0
+                                },
+                                "PEHHGFGHCKK": 0.10000000149011612,
+                                "NDGJODFPGIJ": 40.0,
+                                "PFODHJHOFJF": -20.0,
+                                "BIPKMFJNOMD": 30.0,
+                                "GKHJEMJINNB": -50.0,
+                                "MGJGLFCMENI": 80.0,
+                                "NGAANBGKBKK": true,
+                                "LALDEIFHKOB": 150.0,
+                                "PIMCHOOLLDN": [
+                                    21010105,
+                                    21020704,
+                                    21010404,
+                                    24060903,
+                                    24061103,
+                                    25010226,
+                                    70331003,
+                                    70331033
+                                ],
+                                "NOANMBHMBGL": 1.0,
+                                "EIKGDCDLFGK": 4.411799907684326
+                            }
+                        }
+                    ]
+                },
+                "CameraPos_02_Normal": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "modifierMixins": [
+                        {
+                            "$type": "SpawnCameraStateMixin",
+                            "FHFAFMOBKHM": {
+                                "$type": "FDBAAGDFFAN",
+                                "MMANEPOEIFL": "CameraPivot_2",
+                                "MDFGOHAFPBN": {
+                                    "z": -1.0
+                                },
+                                "PEHHGFGHCKK": 0.10000000149011612,
+                                "NDGJODFPGIJ": 40.0,
+                                "PFODHJHOFJF": -30.0,
+                                "BIPKMFJNOMD": 30.0,
+                                "GKHJEMJINNB": -40.0,
+                                "MGJGLFCMENI": 80.0,
+                                "NGAANBGKBKK": true,
+                                "LALDEIFHKOB": 150.0,
+                                "PIMCHOOLLDN": [
+                                    21010105,
+                                    21020704,
+                                    21010404,
+                                    24060903,
+                                    24061103,
+                                    25010226,
+                                    70331003,
+                                    70331033
+                                ],
+                                "NOANMBHMBGL": 1.0,
+                                "EIKGDCDLFGK": 4.411799907684326
+                            }
+                        }
+                    ]
+                }
+            },
+            "NLFIGALMIPD": [
+                {
+                    "$type": "ChangeTag",
+                    "GMLGHDNGILP": true,
+                    "tag": "Is_SniperCamera"
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "SceneObj_Activity_Common_Property_Ani_Prop_FilmFestSniperCamera_03",
+            "abilityMixins": [
+                {
+                    "$type": "AttachModifierToSelfGlobalValueMixin",
+                    "globalValueKey": "GV_Filmfest_Sniper_Pos",
+                    "defaultGlobalValueOnCreate": 0.0,
+                    "valueSteps": [
+                        -0.5,
+                        1.5
+                    ],
+                    "modifierNameSteps": [
+                        "CameraPos_01_Normal"
+                    ]
+                }
+            ],
+            "modifiers": {
+                "CameraPos_01_Normal": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "modifierMixins": [
+                        {
+                            "$type": "SpawnCameraStateMixin",
+                            "FHFAFMOBKHM": {
+                                "$type": "FDBAAGDFFAN",
+                                "MMANEPOEIFL": "CameraPivot_1",
+                                "MDFGOHAFPBN": {
+                                    "z": -1.0
+                                },
+                                "PEHHGFGHCKK": 0.10000000149011612,
+                                "NDGJODFPGIJ": 40.0,
+                                "PFODHJHOFJF": -30.0,
+                                "BIPKMFJNOMD": 40.0,
+                                "GKHJEMJINNB": -50.0,
+                                "MGJGLFCMENI": 80.0,
+                                "NGAANBGKBKK": true,
+                                "LALDEIFHKOB": 150.0,
+                                "PIMCHOOLLDN": [
+                                    21010105,
+                                    21020704,
+                                    21010404,
+                                    24060903,
+                                    24061103,
+                                    25010226,
+                                    70331003,
+                                    70331033
+                                ],
+                                "NOANMBHMBGL": 1.0,
+                                "EIKGDCDLFGK": 4.411799907684326
+                            }
+                        }
+                    ]
+                }
+            },
+            "NLFIGALMIPD": [
+                {
+                    "$type": "ChangeTag",
+                    "GMLGHDNGILP": true,
+                    "tag": "Is_SniperCamera"
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "SceneObj_Activity_Common_Property_Ani_Prop_FilmFestSniperCamera_04",
+            "abilityMixins": [
+                {
+                    "$type": "AttachModifierToSelfGlobalValueMixin",
+                    "globalValueKey": "GV_Filmfest_Sniper_Pos",
+                    "defaultGlobalValueOnCreate": 0.0,
+                    "valueSteps": [
+                        -0.5,
+                        0.5,
+                        1.5
+                    ],
+                    "modifierNameSteps": [
+                        "CameraPos_01_Normal",
+                        "CameraPos_02_Normal"
+                    ]
+                }
+            ],
+            "modifiers": {
+                "CameraPos_01_Normal": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "modifierMixins": [
+                        {
+                            "$type": "SpawnCameraStateMixin",
+                            "FHFAFMOBKHM": {
+                                "$type": "FDBAAGDFFAN",
+                                "MMANEPOEIFL": "CameraPivot_1",
+                                "MDFGOHAFPBN": {
+                                    "z": -1.0
+                                },
+                                "PEHHGFGHCKK": 0.10000000149011612,
+                                "NDGJODFPGIJ": 40.0,
+                                "PFODHJHOFJF": -30.0,
+                                "BIPKMFJNOMD": 25.0,
+                                "GKHJEMJINNB": -25.0,
+                                "MGJGLFCMENI": 85.0,
+                                "NGAANBGKBKK": true,
+                                "LALDEIFHKOB": 150.0,
+                                "PIMCHOOLLDN": [
+                                    21010105,
+                                    21020704,
+                                    21010404,
+                                    24060903,
+                                    24061103,
+                                    25010226,
+                                    70331003,
+                                    70331033
+                                ],
+                                "NOANMBHMBGL": 1.0,
+                                "EIKGDCDLFGK": 4.411799907684326
+                            }
+                        }
+                    ]
+                },
+                "CameraPos_02_Normal": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "modifierMixins": [
+                        {
+                            "$type": "SpawnCameraStateMixin",
+                            "FHFAFMOBKHM": {
+                                "$type": "FDBAAGDFFAN",
+                                "MMANEPOEIFL": "CameraPivot_2",
+                                "MDFGOHAFPBN": {
+                                    "z": -1.0
+                                },
+                                "PEHHGFGHCKK": 0.10000000149011612,
+                                "NDGJODFPGIJ": 40.0,
+                                "PFODHJHOFJF": -30.0,
+                                "BIPKMFJNOMD": 30.0,
+                                "GKHJEMJINNB": -90.0,
+                                "MGJGLFCMENI": 60.0,
+                                "NGAANBGKBKK": true,
+                                "LALDEIFHKOB": 150.0,
+                                "PIMCHOOLLDN": [
+                                    21010105,
+                                    21020704,
+                                    21010404,
+                                    24060903,
+                                    24061103,
+                                    25010226,
+                                    70331003,
+                                    70331033
+                                ],
+                                "NOANMBHMBGL": 1.0,
+                                "EIKGDCDLFGK": 4.411799907684326
+                            }
+                        }
+                    ]
+                }
+            },
+            "NLFIGALMIPD": [
+                {
+                    "$type": "ChangeTag",
+                    "GMLGHDNGILP": true,
+                    "tag": "Is_SniperCamera"
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "SceneObj_Activity_Common_Property_Ani_Prop_FilmFestSniperCamera_05",
+            "abilityMixins": [
+                {
+                    "$type": "AttachModifierToSelfGlobalValueMixin",
+                    "globalValueKey": "GV_Filmfest_Sniper_Pos",
+                    "defaultGlobalValueOnCreate": 0.0,
+                    "valueSteps": [
+                        -0.5,
+                        1.5
+                    ],
+                    "modifierNameSteps": [
+                        "CameraPos_01_Normal"
+                    ]
+                }
+            ],
+            "modifiers": {
+                "CameraPos_01_Normal": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "modifierMixins": [
+                        {
+                            "$type": "SpawnCameraStateMixin",
+                            "FHFAFMOBKHM": {
+                                "$type": "FDBAAGDFFAN",
+                                "MMANEPOEIFL": "CameraPivot_1",
+                                "MDFGOHAFPBN": {
+                                    "z": -1.0
+                                },
+                                "PEHHGFGHCKK": 0.10000000149011612,
+                                "NDGJODFPGIJ": 40.0,
+                                "PFODHJHOFJF": -30.0,
+                                "BIPKMFJNOMD": 20.0,
+                                "GKHJEMJINNB": -55.0,
+                                "MGJGLFCMENI": 55.0,
+                                "NGAANBGKBKK": true,
+                                "LALDEIFHKOB": 150.0,
+                                "PIMCHOOLLDN": [
+                                    21010105,
+                                    21020704,
+                                    21010404,
+                                    24060903,
+                                    24061103,
+                                    25010226,
+                                    70331003,
+                                    70331033
+                                ],
+                                "NOANMBHMBGL": 1.0,
+                                "EIKGDCDLFGK": 4.411799907684326
+                            }
+                        }
+                    ]
+                }
+            },
+            "NLFIGALMIPD": [
+                {
+                    "$type": "ChangeTag",
+                    "GMLGHDNGILP": true,
+                    "tag": "Is_SniperCamera"
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "SceneObj_Level_Fd_Property_Ani_Prop_FilmfestSniper_Blindage_01",
+            "NLFIGALMIPD": [
+                {
+                    "$type": "FireEffect",
+                    "LHHFHDEJOHC": "Eff_SceneObj_FilmfestSniper_01_Appear",
+                    "scale": 1.2000000476837158,
+                    "PCLAEGHPNHE": -1.0
+                }
+            ],
+            "LFBJFECLNGK": [
+                {
+                    "$type": "FireEffect",
+                    "LHHFHDEJOHC": "Eff_SceneObj_FilmfestSniper_01_Appear",
+                    "scale": 1.2000000476837158,
+                    "PCLAEGHPNHE": -1.0
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "SceneObj_Activity_Common_Property_Ani_Prop_FilmFestBallGame_01",
+            "modifiers": {
+                "FilmfestBallGame": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "modifierMixins": [
+                        {
+                            "$type": "ActivityFilmfestBallGameMixin",
+                            "EJHFKDBBKNP": "SGV_FilmFestBallGame_Start",
+                            "DKDNKNFAFCN": 100,
+                            "KFHPCHDHPIJ": 3.0,
+                            "NPALCECFGMA": 300,
+                            "AKLEHGPDECN": 100
+                        }
+                    ]
+                },
+                "FilmfestBallGame_Preload": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "FireEffect",
+                            "LHHFHDEJOHC": "Eff_SceneObj_FilmfestBallGame_SealBall_01_Appear",
+                            "PCLAEGHPNHE": -1.0
+                        },
+                        {
+                            "$type": "FireEffect",
+                            "LHHFHDEJOHC": "Eff_SceneObj_FilmfestBallGame_SealBall_01_Die",
+                            "PCLAEGHPNHE": -1.0
+                        },
+                        {
+                            "$type": "AttachEffect",
+                            "LHHFHDEJOHC": "Eff_SceneObj_FilmfestBallGame_SealBall_01_Loop",
+                            "PCLAEGHPNHE": -1.0
+                        },
+                        {
+                            "$type": "FireEffect",
+                            "LHHFHDEJOHC": "Eff_SceneObj_FilmfestBallGame_SealBall_02_Appear",
+                            "PCLAEGHPNHE": -1.0
+                        },
+                        {
+                            "$type": "FireEffect",
+                            "LHHFHDEJOHC": "Eff_SceneObj_FilmfestBallGame_SealBall_02_Die",
+                            "PCLAEGHPNHE": -1.0
+                        },
+                        {
+                            "$type": "AttachEffect",
+                            "LHHFHDEJOHC": "Eff_SceneObj_FilmfestBallGame_SealBall_02_Loop",
+                            "PCLAEGHPNHE": -1.0
+                        }
+                    ]
+                }
+            },
+            "NLFIGALMIPD": [
+                {
+                    "$type": "AttachModifier",
+                    "modifierName": "FilmfestBallGame"
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "SceneObj_Level_Fd_Property_Ani_Prop_FilmfestSniper_BalloonCart_01",
+            "abilityMixins": [
+                {
+                    "$type": "AttachToGadgetStateMixin",
+                    "JBFLOAMNPBC": 204,
+                    "modifierName": "Finish"
+                }
+            ],
+            "GKCBNBOCMFI": [
+                "GV_FilmfestBalloon_HP_PERCENT"
+            ],
+            "modifiers": {
+                "BalloonCart_Normal": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0
+                },
+                "BalloonCart_Hited": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "ExecuteGadgetLua",
+                            "JLOHDOKDPDL": 202
+                        }
+                    ]
+                },
+                "BalloonCart_Borken": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "ExecuteGadgetLua",
+                            "JLOHDOKDPDL": 203
+                        }
+                    ]
+                },
+                "Finish": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "HideUIBillBoard",
+                            "HCDOGJLANIM": true
+                        },
+                        {
+                            "$type": "RemoveModifier",
+                            "modifierName": "Taunting"
+                        }
+                    ]
+                },
+                "Taunting": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "ANPDJHOGAFE": 2.0,
+                    "EOMGJKEEICG": [
+                        {
+                            "$type": "ServerLuaCall",
+                            "FLEEHCIOPKA": [
+                                {
+                                    "$type": "MODAEKIEDEN",
+                                    "FHBHAPHLNCP": 0.0
+                                }
+                            ],
+                            "FNBGNCANKJF": "CurGalleryControlGroup",
+                            "FDPMGLDLLIN": "SLC_Filmfest_Sniper_BalloonHPDown",
+                            "param1": 0.0,
+                            "HFOIEKLCLEM": 0.0,
+                            "MCLOKLEBGPH": 0.0
+                        }
+                    ],
+                    "MDPGEKAIFIM": [
+                        {
+                            "$type": "TriggerTaunt",
+                            "musicSubStates": {
+                                "$type": "HGNAFICLGFP",
+                                "IBPOJODNMHO": "CircleR25",
+                                "CHPLPFBEPDN": "Enemy",
+                                "CHGLFBPDMKF": 1.0
+                            },
+                            "FLEEHCIOPKA": [
+                                {
+                                    "$type": "FAGBAHBLACH",
+                                    "MALHNOJHHDJ": [
+                                        "Monster"
+                                    ]
+                                }
+                            ],
+                            "NKCIEFLMBMK": 10.0
+                        }
+                    ]
+                }
+            },
+            "NLFIGALMIPD": [
+                {
+                    "$type": "FireEffect",
+                    "LHHFHDEJOHC": "Eff_SceneObj_FilmfestSniper_01_Appear",
+                    "scale": 2.299999952316284,
+                    "PCLAEGHPNHE": -1.0
+                },
+                {
+                    "$type": "ApplyModifier",
+                    "modifierName": "Taunting"
+                },
+                {
+                    "$type": "SetGlobalValue",
+                    "value": 1.0,
+                    "NGGCNKPAODB": "Is_Filmfest_Balloon",
+                    "LBHGJKHHAKP": 0.0,
+                    "EMGNPOKHMNN": 0.0
+                },
+                {
+                    "$type": "ChangeTag",
+                    "GMLGHDNGILP": true,
+                    "tag": "SniperEscort"
+                }
+            ],
+            "onAbilityStart": [
+                {
+                    "$type": "ApplyModifier",
+                    "modifierName": "Taunting"
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "SceneObj_Level_Fd_Property_Ani_Prop_FilmfestSniper_BalloonCart_Brk1",
+            "modifiers": {
+                "Cart_Brk1_Effect": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "AttachEffect",
+                            "LHHFHDEJOHC": "Eff_Balloon_Broken_FanBase_01",
+                            "PCLAEGHPNHE": -1.0
+                        },
+                        {
+                            "$type": "AttachEffect",
+                            "LHHFHDEJOHC": "Eff_Balloon_Broken_Base_01",
+                            "PCLAEGHPNHE": -1.0
+                        }
+                    ]
+                }
+            },
+            "onAbilityStart": [
+                {
+                    "$type": "ApplyModifier",
+                    "modifierName": "Cart_Brk1_Effect"
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "SceneObj_Level_Fd_Property_Ani_Prop_FilmfestSniper_BalloonCart_Brk2",
+            "modifiers": {
+                "Cart_Brk2_Effect": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "AttachEffect",
+                            "LHHFHDEJOHC": "Eff_Balloon_Broken_Fan_01",
+                            "PCLAEGHPNHE": -1.0
+                        },
+                        {
+                            "$type": "AttachEffect",
+                            "LHHFHDEJOHC": "Eff_Balloon_Broken_Balloon_01",
+                            "PCLAEGHPNHE": -1.0
+                        }
+                    ]
+                }
+            },
+            "onAbilityStart": [
+                {
+                    "$type": "ApplyModifier",
+                    "modifierName": "Cart_Brk2_Effect"
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "SceneObj_Activity_Common_Property_Ani_Prop_FilmFestBallGameGate_01",
+            "modifiers": {
+                "UNIQUE_FilmFestBallGameGate_MonsterKillSelf": {
+                    "HABNNJHCOCD": "RefreshUniqueDurability",
+                    "FNNAEGKHFHN": {
+                        "KDGIJMLBBPL": "",
+                        "NGAONBEFEAH": true
+                    },
+                    "modifierName": "",
+                    "defaultDistanceBetweenAvatarAndCamera": true,
+                    "bonusCritical": 100.0,
+                    "modifierMixins": [
+                        {
+                            "$type": "DiePatternSwitchMixin",
+                            "EJLBMNFLOBA": 2.0,
+                            "DOLNKIGJNFP": "",
+                            "ECMNBLOGDCM": true,
+                            "DILDKFAJLIB": true
+                        },
+                        {
+                            "$type": "ReplaceEventPatternMixin",
+                            "GOKOHGENGHB": [
+                                "Monster_Slime_Electric_02_Die",
+                                "Monster_Slime_Electric_03_Die",
+                                "Monster_Slime_Fire_Die_02",
+                                "Monster_Slime_Fire_Die_03"
+                            ],
+                            "NMDJDCDMHLD": [
+                                "Monster_Slime_Fire_Die_03_WithFire",
+                                "Monster_Slime_Fire_Die_03_WithFire",
+                                "Monster_Slime_Fire_Die_03_WithFire",
+                                "Monster_Slime_Fire_Die_03_WithFire"
+                            ]
+                        }
+                    ],
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "KillSelf"
+                        },
+                        {
+                            "$type": "HideUIBillBoard",
+                            "HCDOGJLANIM": true
+                        },
+                        {
+                            "$type": "FireEffect",
+                            "LHHFHDEJOHC": "Eff_Monster_Slime_Fire_Die",
+                            "PCLAEGHPNHE": -1.0
+                        }
+                    ]
+                }
+            },
+            "MENHKHPHIKK": [
+                {
+                    "$type": "Predicated",
+                    "KMGAOOHMCPK": "Target",
+                    "targetPredicates": [
+                        {
+                            "$type": "FAGBAHBLACH",
+                            "MALHNOJHHDJ": [
+                                "Monster"
+                            ]
+                        },
+                        {
+                            "$type": "BLIEHOICPMH",
+                            "FLEEHCIOPKA": [
+                                {
+                                    "$type": "NLBPNOHOGKC",
+                                    "modifierName": "UNIQUE_FilmFestBallGameGate_MonsterKillSelf"
+                                }
+                            ]
+                        }
+                    ],
+                    "successActions": [
+                        {
+                            "$type": "ApplyModifier",
+                            "KMGAOOHMCPK": "Target",
+                            "modifierName": "UNIQUE_FilmFestBallGameGate_MonsterKillSelf"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "SceneObj_Activity_Common_Property_Ani_Prop_FilmFestWoodenObject_01",
+            "modifiers": {
+                "WoodMaterial": {
+                    "modifierName": "",
+                    "elementType": "Wood",
+                    "bonusCritical": 30.0,
+                    "FJMPEOEHPJK": "Limbo",
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "AttachModifier",
+                            "modifierName": "Die_Effect"
+                        }
+                    ],
+                    "NFKOGKMAIIE": [
+                        {
+                            "$type": "AddGlobalValue",
+                            "value": 1.0,
+                            "NGGCNKPAODB": "_WoodenObject_DeathType",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        }
+                    ],
+                    "EOMGJKEEICG": [
+                        {
+                            "$type": "Predicated",
+                            "targetPredicates": [
+                                {
+                                    "$type": "BLIEHOICPMH",
+                                    "FLEEHCIOPKA": [
+                                        {
+                                            "$type": "HNPLMECOEJL",
+                                            "ADONMFJCHOA": "Fire"
+                                        },
+                                        {
+                                            "$type": "MODAEKIEDEN",
+                                            "JCMFILJLNFH": "Equal",
+                                            "FHBHAPHLNCP": 0.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "$type": "BLIEHOICPMH",
+                                    "FLEEHCIOPKA": [
+                                        {
+                                            "$type": "LCJKNDLFHCB",
+                                            "ADONMFJCHOA": "Fire"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "successActions": [
+                                {
+                                    "$type": "FireEffect",
+                                    "LHHFHDEJOHC": "Eff_SceneObj_WoodenObject_Broken",
+                                    "PCLAEGHPNHE": -1.0
+                                },
+                                {
+                                    "$type": "KillSelf"
+                                }
+                            ]
+                        },
+                        {
+                            "$type": "Predicated",
+                            "targetPredicates": [
+                                {
+                                    "$type": "LCJKNDLFHCB",
+                                    "ADONMFJCHOA": "Water"
+                                },
+                                {
+                                    "$type": "BLIEHOICPMH",
+                                    "FLEEHCIOPKA": [
+                                        {
+                                            "$type": "MODAEKIEDEN",
+                                            "JCMFILJLNFH": "Equal",
+                                            "FHBHAPHLNCP": 0.0
+                                        }
+                                    ]
+                                }
+                            ],
+                            "successActions": [
+                                {
+                                    "$type": "FireEffect",
+                                    "LHHFHDEJOHC": "Eff_SceneObj_WoodenObject_Broken",
+                                    "PCLAEGHPNHE": -1.0
+                                },
+                                {
+                                    "$type": "KillSelf"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "Die_Effect": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NFKOGKMAIIE": [
+                        {
+                            "$type": "FireEffect",
+                            "FLEEHCIOPKA": [
+                                {
+                                    "$type": "OMPKIEPKGPF",
+                                    "NGGCNKPAODB": "_WoodenObject_DeathType",
+                                    "value": 0.0,
+                                    "GAGKBNPOCAC": "MoreThan"
+                                }
+                            ],
+                            "LHHFHDEJOHC": "Eff_SceneObj_HiliWoodenBox_01_BurnOut",
+                            "PCLAEGHPNHE": -1.0
+                        },
+                        {
+                            "$type": "KillSelf",
+                            "FLEEHCIOPKA": [
+                                {
+                                    "$type": "OMPKIEPKGPF",
+                                    "NGGCNKPAODB": "_WoodenObject_DeathType",
+                                    "value": 0.0,
+                                    "GAGKBNPOCAC": "MoreThan"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            "NLFIGALMIPD": [
+                {
+                    "$type": "FireEffect",
+                    "LHHFHDEJOHC": "Eff_SceneObj_FilmfestSniper_01_Appear",
+                    "scale": 0.8999999761581421,
+                    "PCLAEGHPNHE": -1.0
+                },
+                {
+                    "$type": "ApplyModifier",
+                    "modifierName": "WoodMaterial"
+                },
+                {
+                    "$type": "AddGlobalValue",
+                    "value": 0.0,
+                    "NGGCNKPAODB": "_WoodenObject_DeathType",
+                    "LBHGJKHHAKP": 0.0,
+                    "EMGNPOKHMNN": 0.0
+                },
+                {
+                    "$type": "SetGlobalValueV2",
+                    "value": 1.0,
+                    "NGGCNKPAODB": "Is_FilmfestSniper_Breakable",
+                    "LBHGJKHHAKP": 0.0,
+                    "EMGNPOKHMNN": 0.0
+                },
+                {
+                    "$type": "AddGlobalValue",
+                    "value": 1.0,
+                    "NGGCNKPAODB": "_ABILITY_BURNING_IGNITE_ONLY",
+                    "AJKBEKOCMKF": true,
+                    "LBHGJKHHAKP": 1.0,
+                    "EMGNPOKHMNN": 1.0
+                }
+            ],
+            "LFBJFECLNGK": [
+                {
+                    "$type": "FireEffect",
+                    "FLEEHCIOPKA": [
+                        {
+                            "$type": "OMPKIEPKGPF",
+                            "NGGCNKPAODB": "_WoodenObject_DeathType",
+                            "value": 0.0,
+                            "GAGKBNPOCAC": "NoneOrEqual"
+                        }
+                    ],
+                    "LHHFHDEJOHC": "Eff_SceneObj_WoodenObject_Broken",
+                    "PCLAEGHPNHE": -1.0
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "SceneObj_Activity_Common_Property_Ani_Prop_FilmFestQQTarget_01",
+            "NLFIGALMIPD": [
+                {
+                    "$type": "FireEffect",
+                    "LHHFHDEJOHC": "Eff_SceneObj_FilmfestSniper_01_Appear",
+                    "scale": 0.44999998807907104,
+                    "PCLAEGHPNHE": -1.0
+                },
+                {
+                    "$type": "SetGlobalValueV2",
+                    "value": 1.0,
+                    "NGGCNKPAODB": "Is_FilmfestSniper_Breakable",
+                    "LBHGJKHHAKP": 0.0,
+                    "EMGNPOKHMNN": 0.0
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "SceneObj_Level_Fd_Property_Ani_Prop_FilmfestSniper_BombBox_01",
+            "modifiers": {
+                "BombBoxLoop": {
+                    "modifierName": "",
+                    "elementType": "Wood",
+                    "bonusCritical": 1.0,
+                    "NFKOGKMAIIE": [
+                        {
+                            "$type": "FireEffect",
+                            "LHHFHDEJOHC": "Eff_SceneObj_BombBarrel_03_Explode",
+                            "PCLAEGHPNHE": -1.0
+                        },
+                        {
+                            "$type": "TriggerAttackEvent",
+                            "FMDHJHAACGM": {
+                                "LOPCJCIFFBE": {
+                                    "$type": "IHKJIHKGECH",
+                                    "triggerType": "TriggerNoRepeat",
+                                    "JFINDMLDADP": true,
+                                    "CCNCMOGOFAG": {
+                                        "$type": "PHDFAKODIBC",
+                                        "offset": {
+                                            "NEEHMANEJKM": 0.0,
+                                            "KKKLBADAPPB": 0.5,
+                                            "GENNNOANKOO": 0.0
+                                        }
+                                    },
+                                    "GGEJLLOCJDH": 6.0
+                                },
+                                "OIAMOBFMPAB": {
+                                    "KNOKCFHALLI": "FilmfestSniper_Bomb",
+                                    "HOKPLNACNKG": "",
+                                    "ILLFBEHPCJA": "default",
+                                    "BAPFFKCLDPC": {
+                                        "OLLFABADCKH": 9999999.0,
+                                        "PDHAKJCMPHB": 0.0,
+                                        "bonusCritical": 50.0,
+                                        "GAOIEGMFFDJ": "Blunt",
+                                        "FFIIMACIKEA": 9999999.0,
+                                        "AEOLDMAMNLM": 0.0
+                                    },
+                                    "OCHEEDIDOHI": {
+                                        "AIDMNBLLAIJ": "default",
+                                        "OEGAJNNFFPO": "LV6",
+                                        "EPGLCHLENNG": 0.05000000074505806
+                                    },
+                                    "KPCBFANCGFH": true,
+                                    "FCDFPCPCJGO": {
+                                        "FIKIBNDMNEF": 0.36000001430511475,
+                                        "NCDMOKAIAJD": 0.36000001430511475
+                                    }
+                                }
+                            },
+                            "PFBJAFHFBDE": "Enemy"
+                        },
+                        {
+                            "$type": "TriggerAttackEvent",
+                            "FMDHJHAACGM": {
+                                "LOPCJCIFFBE": {
+                                    "$type": "IHKJIHKGECH",
+                                    "triggerType": "TriggerNoRepeat",
+                                    "CCNCMOGOFAG": {
+                                        "$type": "PHDFAKODIBC"
+                                    },
+                                    "GGEJLLOCJDH": 2.0
+                                },
+                                "OIAMOBFMPAB": {
+                                    "KNOKCFHALLI": "",
+                                    "HOKPLNACNKG": "",
+                                    "ILLFBEHPCJA": "default",
+                                    "BAPFFKCLDPC": {
+                                        "OLLFABADCKH": 1.0,
+                                        "PDHAKJCMPHB": 0.0,
+                                        "bonusCritical": 50.0,
+                                        "GAOIEGMFFDJ": "Blunt",
+                                        "FFIIMACIKEA": 0.0,
+                                        "AEOLDMAMNLM": 0.0
+                                    }
+                                }
+                            },
+                            "PFBJAFHFBDE": "All"
+                        },
+                        {
+                            "$type": "KillSelf",
+                            "duration": 1.0,
+                            "KNHCJMCGNFD": true
+                        }
+                    ],
+                    "EOMGJKEEICG": [
+                        {
+                            "$type": "RemoveModifier",
+                            "FLEEHCIOPKA": [
+                                {
+                                    "$type": "BLIEHOICPMH",
+                                    "FLEEHCIOPKA": [
+                                        {
+                                            "$type": "MODAEKIEDEN",
+                                            "JCMFILJLNFH": "Equal",
+                                            "FHBHAPHLNCP": 0.0
+                                        }
+                                    ]
+                                }
+                            ],
+                            "modifierName": "BombBoxLoop"
+                        }
+                    ],
+                    "FGBDHCLMELK": [
+                        {
+                            "$type": "RemoveModifier",
+                            "modifierName": "BombBoxLoop"
+                        }
+                    ]
+                }
+            },
+            "NLFIGALMIPD": [
+                {
+                    "$type": "ApplyModifier",
+                    "modifierName": "BombBoxLoop"
+                },
+                {
+                    "$type": "SetGlobalValueV2",
+                    "value": 1.0,
+                    "NGGCNKPAODB": "Is_FilmfestSniper_Breakable",
+                    "LBHGJKHHAKP": 0.0,
+                    "EMGNPOKHMNN": 0.0
+                },
+                {
+                    "$type": "FireEffect",
+                    "LHHFHDEJOHC": "Eff_SceneObj_FilmfestSniper_01_Appear",
+                    "scale": 0.44999998807907104,
+                    "PCLAEGHPNHE": -1.0
+                }
+            ],
+            "LFBJFECLNGK": [
+                {
+                    "$type": "FireEffect",
+                    "FLEEHCIOPKA": [
+                        {
+                            "$type": "NLBPNOHOGKC",
+                            "modifierName": "BombBoxLoop"
+                        }
+                    ],
+                    "LHHFHDEJOHC": "Eff_SceneObj_FilmfestSniper_01_Appear",
+                    "scale": 0.44999998807907104,
+                    "PCLAEGHPNHE": -1.0
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "SceneObj_Activity_Common_Property_Ani_Prop_FilmFestBallGameCam_01",
+            "NLFIGALMIPD": [
+                {
+                    "$type": "EnableGadgetSpecialCamera",
+                    "DBNEEEGIJGN": true,
+                    "enable": true
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "SceneObj_Gear_Common_Property_Prop_JumpUp_03",
+            "abilityMixins": [
+                {
+                    "$type": "AttachModifierToSelfGlobalValueNoInitMixin",
+                    "globalValueKey": "CharAmusement_JumpUp",
+                    "valueSteps": [
+                        -1.5,
+                        0.5,
+                        1.5
+                    ],
+                    "modifierNameSteps": [
+                        "Mute",
+                        "Interactable"
+                    ]
+                }
+            ],
+            "modifiers": {
+                "Filmfest_BallGame_BuffPicked": {
+                    "modifierName": "",
+                    "FAFCPJJAIGK": 0.10000000149011612,
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "ServerLuaCall",
+                            "FNBGNCANKJF": "CurGalleryControlGroup",
+                            "FDPMGLDLLIN": "SLC_Filmfest_BallGame_BuffPicked",
+                            "param1": 0.0,
+                            "HFOIEKLCLEM": 0.0,
+                            "MCLOKLEBGPH": 0.0
+                        }
+                    ]
+                },
+                "UNIQUE_JumpUpuff_Filmfest_BallGame": {
+                    "HABNNJHCOCD": "RefreshUniqueDurability",
+                    "modifierName": "",
+                    "defaultDistanceBetweenAvatarAndCamera": true,
+                    "FAFCPJJAIGK": 10.0,
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "SetGlobalValue",
+                            "KMGAOOHMCPK": "Team",
+                            "value": 1.0,
+                            "NGGCNKPAODB": "GV_JumpUpBuff",
+                            "AJKBEKOCMKF": true,
+                            "LBHGJKHHAKP": 1.0,
+                            "EMGNPOKHMNN": 0.0
+                        }
+                    ],
+                    "NFKOGKMAIIE": [
+                        {
+                            "$type": "SetGlobalValue",
+                            "KMGAOOHMCPK": "Team",
+                            "value": 0.0,
+                            "NGGCNKPAODB": "GV_JumpUpBuff",
+                            "AJKBEKOCMKF": true,
+                            "LBHGJKHHAKP": 1.0,
+                            "EMGNPOKHMNN": 0.0
+                        }
+                    ]
+                },
+                "Interactable": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "AttachEffect",
+                            "LHHFHDEJOHC": "Eff_SceneObj_JumpUp_01",
+                            "PCLAEGHPNHE": -1.0
+                        }
+                    ],
+                    "NFKOGKMAIIE": [
+                        {
+                            "$type": "FireEffect",
+                            "LHHFHDEJOHC": "Eff_SceneObj_JumpUp_01_Dis",
+                            "PCLAEGHPNHE": -1.0
+                        }
+                    ]
+                },
+                "Mute": {
+                    "modifierName": "",
+                    "FAFCPJJAIGK": 1.0,
+                    "bonusCritical": 100.0,
+                    "NFKOGKMAIIE": [
+                        {
+                            "$type": "SetGlobalValue",
+                            "value": 1.0,
+                            "NGGCNKPAODB": "CharAmusement_JumpUp",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        }
+                    ]
+                }
+            },
+            "NLFIGALMIPD": [
+                {
+                    "$type": "SetGlobalValue",
+                    "value": 1.0,
+                    "NGGCNKPAODB": "CharAmusement_JumpUp",
+                    "LBHGJKHHAKP": 0.0,
+                    "EMGNPOKHMNN": 0.0
+                }
+            ],
+            "MENHKHPHIKK": [
+                {
+                    "$type": "Predicated",
+                    "KMGAOOHMCPK": "Target",
+                    "targetPredicates": [
+                        {
+                            "$type": "OMPKIEPKGPF",
+                            "KMGAOOHMCPK": "Self",
+                            "NGGCNKPAODB": "CharAmusement_JumpUp",
+                            "value": 1.0
+                        }
+                    ],
+                    "successActions": [
+                        {
+                            "$type": "ApplyModifier",
+                            "KMGAOOHMCPK": "TargetTeam",
+                            "modifierName": "UNIQUE_JumpUpuff_Filmfest_BallGame"
+                        },
+                        {
+                            "$type": "ApplyModifier",
+                            "KMGAOOHMCPK": "TargetTeam",
+                            "modifierName": "Filmfest_BallGame_BuffPicked"
+                        },
+                        {
+                            "$type": "SetGlobalValue",
+                            "value": 0.0,
+                            "NGGCNKPAODB": "CharAmusement_JumpUp",
+                            "LBHGJKHHAKP": 0.0,
+                            "EMGNPOKHMNN": 0.0
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "SceneObj_Level_Common_Property_Ani_Light_GoalFollowSpot_01",
+            "modifiers": {
+                "LightManager": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "AttachEffect",
+                            "LHHFHDEJOHC": "Eff_SceneObj_GoalFollowSpot",
+                            "CCNCMOGOFAG": {
+                                "$type": "IADBHDLMGJB",
+                                "FPDJOHEHNDD": true,
+                                "MDPMJPIOGLA": "LightAttachPoint"
+                            },
+                            "PCLAEGHPNHE": -1.0
+                        }
+                    ]
+                },
+                "StateManager": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "modifierMixins": [
+                        {
+                            "$type": "AttachToGadgetStateMixin",
+                            "modifierName": "CloseState"
+                        },
+                        {
+                            "$type": "AttachToGadgetStateMixin",
+                            "JBFLOAMNPBC": 201,
+                            "modifierName": "LightOn"
+                        }
+                    ]
+                },
+                "CloseState": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "modifierMixins": [
+                        {
+                            "$type": "ShaderStateMachineSwitchMixin",
+                            "MHAECJKHLKH": true,
+                            "CEDEEIOGOHB": ""
+                        }
+                    ],
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "EnableSceneTransformByName",
+                            "HFFMMIDGGKN": [
+                                "Light"
+                            ]
+                        },
+                        {
+                            "$type": "SendEffectTrigger",
+                            "HDBIEOFMAOD": "State",
+                            "PAOPLDJGAKA": "",
+                            "type": "Int",
+                            "LHHFHDEJOHC": "Eff_SceneObj_GoalFollowSpot"
+                        }
+                    ]
+                },
+                "LightOn": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "modifierMixins": [
+                        {
+                            "$type": "ShaderStateMachineSwitchMixin",
+                            "EKECDFMGGJA": 1,
+                            "MHAECJKHLKH": true,
+                            "CEDEEIOGOHB": ""
+                        }
+                    ],
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "EnableSceneTransformByName",
+                            "HFFMMIDGGKN": [
+                                "Light"
+                            ],
+                            "DEHFCFDDEGB": true
+                        },
+                        {
+                            "$type": "SendEffectTrigger",
+                            "HDBIEOFMAOD": "State",
+                            "PAOPLDJGAKA": "",
+                            "type": "Int",
+                            "KHMNAHOBJAE": 201,
+                            "LHHFHDEJOHC": "Eff_SceneObj_GoalFollowSpot"
+                        }
+                    ]
+                }
+            },
+            "NLFIGALMIPD": [
+                {
+                    "$type": "ApplyModifier",
+                    "modifierName": "LightManager"
+                },
+                {
+                    "$type": "ApplyModifier",
+                    "modifierName": "StateManager"
+                }
+            ]
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "SceneObj_Area_Common_Property_Ani_Decal_Quest_Stain_01",
+            "modifiers": {
+                "Default_0": {
+                    "modifierName": "",
+                    "bonusCritical": 100.0,
+                    "NLFIGALMIPD": [
+                        {
+                            "$type": "AttachEffect",
+                            "LHHFHDEJOHC": "Eff_SceneObj_GroundDirty_02",
+                            "PCLAEGHPNHE": -1.0
+                        }
+                    ],
+                    "EOMGJKEEICG": [
+                        {
+                            "$type": "AddGlobalValue",
+                            "FLEEHCIOPKA": [
+                                {
+                                    "$type": "HNPLMECOEJL",
+                                    "ADONMFJCHOA": "Wind"
+                                }
+                            ],
+                            "value": 1.0,
+                            "NGGCNKPAODB": "_WIND_HIT_COUNT",
+                            "AJKBEKOCMKF": true,
+                            "LBHGJKHHAKP": 2.0,
+                            "EMGNPOKHMNN": 0.0
+                        },
+                        {
+                            "$type": "SendEffectTrigger",
+                            "FLEEHCIOPKA": [
+                                {
+                                    "$type": "OMPKIEPKGPF",
+                                    "NGGCNKPAODB": "_WIND_HIT_COUNT",
+                                    "value": 1.0
+                                }
+                            ],
+                            "HDBIEOFMAOD": "HalfDirty",
+                            "PAOPLDJGAKA": "",
+                            "LHHFHDEJOHC": "Eff_SceneObj_GroundDirty_02"
+                        },
+                        {
+                            "$type": "FireEffect",
+                            "FLEEHCIOPKA": [
+                                {
+                                    "$type": "HNPLMECOEJL",
+                                    "ADONMFJCHOA": "Wind"
+                                }
+                            ],
+                            "LHHFHDEJOHC": "Eff_SceneObj_GroundDirty_Blow",
+                            "PCLAEGHPNHE": -1.0
+                        },
+                        {
+                            "$type": "ApplyModifier",
+                            "KMGAOOHMCPK": "Team",
+                            "FLEEHCIOPKA": [
+                                {
+                                    "$type": "HNPLMECOEJL",
+                                    "ADONMFJCHOA": "Wind"
+                                }
+                            ],
+                            "modifierName": "CameraFog"
+                        },
+                        {
+                            "$type": "FireEffect",
+                            "FLEEHCIOPKA": [
+                                {
+                                    "$type": "HNPLMECOEJL",
+                                    "ADONMFJCHOA": "Water"
+                                }
+                            ],
+                            "LHHFHDEJOHC": "Eff_SceneObj_GroundDirty_Wash",
+                            "PCLAEGHPNHE": -1.0
+                        },
+                        {
+                            "$type": "KillSelf",
+                            "FLEEHCIOPKA": [
+                                {
+                                    "$type": "HNPLMECOEJL",
+                                    "ADONMFJCHOA": "Water"
+                                }
+                            ]
+                        },
+                        {
+                            "$type": "KillSelf",
+                            "FLEEHCIOPKA": [
+                                {
+                                    "$type": "OMPKIEPKGPF",
+                                    "NGGCNKPAODB": "_WIND_HIT_COUNT",
+                                    "value": 2.0
+                                }
+                            ]
+                        }
+                    ],
+                    "LFBJFECLNGK": [
+                        {
+                            "$type": "SendEffectTrigger",
+                            "HDBIEOFMAOD": "NoDirty",
+                            "PAOPLDJGAKA": "",
+                            "LHHFHDEJOHC": "Eff_SceneObj_GroundDirty_02"
+                        }
+                    ]
+                },
+                "CameraFog": {
+                    "modifierName": "",
+                    "FAFCPJJAIGK": 1.5,
+                    "bonusCritical": 100.0,
+                    "modifierMixins": [
+                        {
+                            "$type": "TriggerPostProcessEffectMixin",
+                            "HMGOKJJKGLM": "PostEffect_Scene_Dust",
+                            "duration": 1.5
+                        }
+                    ]
+                }
+            },
+            "NLFIGALMIPD": [
+                {
+                    "$type": "ApplyModifier",
+                    "modifierName": "Default_0"
+                }
+            ]
+        }
+    }
+]

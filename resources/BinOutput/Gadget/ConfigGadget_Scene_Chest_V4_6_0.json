@@ -1,0 +1,73 @@
+{
+    "SceneObj_Area_Xm_Property_Prop_SumeruCrudeChest_460": {
+        "$type": "ConfigGadget",
+        "GadgetKey_localhost": "3132372e302e302e31e6aca2e8bf8ee69da5e588b0e69d80e7a59ee5b8ae20e69d80e69d80e69d80e69d80e69d80",
+        "GadgetKey_server": "6278676f762e636ee6aca2e8bf8ee69da5e588b0e69d80e7a59ee5b8ae20e69d80e69d80e69d80e69d80e69d80",
+        "GadgetKey": "6278676f762e636ee6aca2e8bf8ee69da5e588b0e69d80e7a59ee5b8ae20e69d80e69d80e69d80e69d80e69d80",
+        "hasModel": true,
+        "combat": {
+          "property": {
+            "hp": 99999.0,
+            "weight": 50.0,
+            "isLockHP": true,
+            "isGhostToAllied": true,
+            "isGhostToEnemy": true
+          },
+          "beHit": {
+            "hitBloodEffect": "",
+            "muteAllHit": true
+          },
+          "combatLock": {
+            "lockShape": "CircleLockEnemy",
+            "denyLockOn": true,
+            "lockType": "Gadget_Lv1"
+          },
+          "die": {
+            "dieForceDisappearTime": 0.0,
+            "dieDisappearEffect": "Eff_SceneObj_SumeruCrudeChest_01"
+          }
+        },
+        "combatTemplate": "",
+        "abilities": [
+          {
+            "abilityID": "ability_01",
+            "abilityName": "SceneObj_Area_Xm_Property_Prop_SumeruCrudeChest_01_Ability",
+            "abilityOverride": ""
+          }
+        ],
+        "uiInteract": {
+          "gadgetUIBtnCfgPath": "TEST/TEST_Chest_Btn",
+          "uiName": "",
+          "onTouch": "NormalChest",
+          "icon": "",
+          "groupName": "",
+          "confirmDialogTitle": "",
+          "confirmDialogContent": ""
+        },
+        "misc": {
+          "chest": {
+            "openEffect": ""
+          },
+          "pickup": {
+            "bornEffect": "",
+            "dropEffect": "",
+            "attractAudio": ""
+          },
+          "escapeEffect": "",
+          "targetIndicatorYOffset": 1.7000000476837158
+        },
+        "gadgetAction": {
+          "gadgetStateActionList": [
+            {
+              "$type": "GBLOODKIFJE",
+              "enable": true
+            },
+            {
+              "$type": "GBLOODKIFJE",
+              "FKJCCMPLHIJ": "ChestLocked"
+            }
+          ]
+        }
+      }
+  }
+  

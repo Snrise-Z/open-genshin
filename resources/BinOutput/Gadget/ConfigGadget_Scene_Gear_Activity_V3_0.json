@@ -1,0 +1,691 @@
+{
+    "SceneObj_Area_Common_Property_Prop_Exploration_01": {
+        "$type": "ConfigGadget",
+        "common": {
+            "disableTickDistance": 1000.0
+        },
+        "hasModel": true,
+        "combat": {
+            "property": {
+                "HP": 10000.0,
+                "isLockHP": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true,
+                "canTriggerBullet": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "hitAutoRedirect": false,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "SceneObj_Area_Common_Property_Prop_Exploration_01",
+                "abilityName": "SceneObj_Area_Common_Property_Prop_Exploration_01",
+                "abilityOverride": ""
+            }
+        ],
+        "field": {
+            "concernType": "AllAvatars",
+            "shape": "CircleR2",
+            "PMOHIIJOLNG": "",
+            "triggerInfinite": true,
+            "lifeInfinite": true,
+            "overwriteCampType": true,
+            "campType": "All",
+            "JHEKALHPHBK": "",
+            "JFLLEDMCPLF": ""
+        },
+        "CFEIPLEGNFH": {
+            "APJGLOKDMCN": "",
+            "FHFEGJEAFPC": true,
+            "EBGEFDBEGNB": true
+        },
+        "billboard": {
+            "$type": "OIGGMCMODCG",
+            "attachPoint": "BillboardAttach",
+            "offset": {
+                "y": 1.649999976158142
+            }
+        }
+    },
+    "SceneObj_Area_Common_Property_Prop_ExplorationBullet_01": {
+        "$type": "ConfigGadget",
+        "common": {
+            "disableTickDistance": 100000.0
+        },
+        "model": {
+            "bornEffect": "",
+            "attachEffect": "Eff_SceneObj_ElementParticle_01_Fly"
+        },
+        "hasModel": true,
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 99999.0,
+                "attack": 10000.0,
+                "defense": 99999.0,
+                "weight": 1.0,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "SceneObj_Area_Common_Property_Prop_ExplorationBullet_01",
+                "abilityName": "SceneObj_Area_Common_Property_Prop_ExplorationBullet_01",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 5.0
+        },
+        "move": {
+            "$type": "EGIBMIADEHO",
+            "speed": 15.0,
+            "GBPNCGHBJMC": 120.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "EGLLIJOBGDB": true,
+            "BCNECAMPGJJ": true
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "AllExceptSelf",
+                "ignoreScene": true
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "SceneObj_Area_Common_Property_Prop_ExplorationBullet_01"
+                }
+            ],
+            "ENBJBDDCLMC": 0.4000000059604645
+        }
+    },
+    "SceneObj_Area_Xm_Property_Ani_Prop_ElementParticle_01": {
+        "$type": "ConfigGadget",
+        "hasModel": true,
+        "combat": {
+            "property": {
+                "HP": 10000.0,
+                "attack": 30.0,
+                "isLockHP": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "hitAutoRedirect": false,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "SceneObj_Area_Xm_Property_Ani_Prop_ElementParticle_01",
+                "abilityName": "SceneObj_Area_Xm_Property_Ani_Prop_ElementParticle_01",
+                "abilityOverride": ""
+            }
+        ],
+        "field": {
+            "concernType": "AllAvatars",
+            "shape": "CircleR1",
+            "PMOHIIJOLNG": "",
+            "triggerInfinite": true,
+            "lifeInfinite": true,
+            "checkInterval": 0.5,
+            "overwriteCampType": true,
+            "campType": "All",
+            "JHEKALHPHBK": "",
+            "JFLLEDMCPLF": ""
+        }
+    },
+    "SceneObj_Area_Xm_Property_Ani_Prop_ElementParticle_OnGround_01": {
+        "$type": "ConfigGadget",
+        "hasModel": true,
+        "combat": {
+            "property": {
+                "HP": 10000.0,
+                "attack": 30.0,
+                "isLockHP": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "hitAutoRedirect": false,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "SceneObj_Area_Xm_Property_Ani_Prop_ElementParticle_OnGround_01",
+                "abilityName": "SceneObj_Area_Xm_Property_Ani_Prop_ElementParticle_OnGround_01",
+                "abilityOverride": ""
+            }
+        ],
+        "field": {
+            "concernType": "AllAvatars",
+            "shape": "CircleR1",
+            "PMOHIIJOLNG": "",
+            "triggerInfinite": true,
+            "lifeInfinite": true,
+            "checkInterval": 0.5,
+            "overwriteCampType": true,
+            "campType": "All",
+            "JHEKALHPHBK": "",
+            "JFLLEDMCPLF": ""
+        }
+    },
+    "SceneObj_Area_Xm_Property_Ani_Prop_ElementParticle_Generator_01": {
+        "$type": "ConfigGadget",
+        "combat": {
+            "property": {
+                "HP": 10000.0,
+                "attack": 30.0,
+                "isLockHP": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true,
+                "canTriggerBullet": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "hitAutoRedirect": false,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "SceneObj_Area_Xm_Property_Ani_Prop_ElementParticle_Generator_01",
+                "abilityName": "SceneObj_Area_Xm_Property_Ani_Prop_ElementParticle_Generator_01",
+                "abilityOverride": ""
+            }
+        ]
+    },
+    "SceneObj_Area_Xm_Property_Ani_Prop_EnergyBall_01": {
+        "$type": "ConfigGadget",
+        "combat": {
+            "property": {
+                "HP": 10000.0,
+                "attack": 30.0,
+                "isLockHP": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "hitAutoRedirect": false,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "SceneObj_Area_Xm_Property_Ani_Prop_EnergyBall_01",
+                "abilityName": "SceneObj_Area_Xm_Property_Ani_Prop_EnergyBall_01",
+                "abilityOverride": ""
+            }
+        ],
+        "field": {
+            "concernType": "AllAvatars",
+            "shape": "CircleR1",
+            "PMOHIIJOLNG": "",
+            "triggerInfinite": true,
+            "lifeInfinite": true,
+            "checkInterval": 0.5,
+            "overwriteCampType": true,
+            "campType": "All",
+            "JHEKALHPHBK": "",
+            "JFLLEDMCPLF": ""
+        },
+        "KINALCPOMHK": true
+    },
+    "SceneObj_Area_Common_Property_Prop_Excavate_01": {
+        "$type": "ConfigGadget",
+        "common": {
+            "disableTickDistance": 100000.0
+        },
+        "combat": {
+            "property": {
+                "HP": 10000.0,
+                "isLockHP": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true,
+                "canTriggerBullet": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "hitAutoRedirect": false,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "SceneObj_Area_Common_Property_Prop_Excavate_01",
+                "abilityName": "SceneObj_Area_Common_Property_Prop_Excavate_01",
+                "abilityOverride": ""
+            }
+        ],
+        "field": {
+            "concernType": "AllAvatars",
+            "shape": "CircleR2H2",
+            "PMOHIIJOLNG": "",
+            "triggerInfinite": true,
+            "lifeInfinite": true,
+            "checkInterval": 0.5,
+            "overwriteCampType": true,
+            "campType": "SelfCamp",
+            "JHEKALHPHBK": "",
+            "JFLLEDMCPLF": ""
+        }
+    },
+    "SceneObj_Area_Xm_Property_Prop_SeelieFarAway_01": {
+        "$type": "ConfigGadget",
+        "combat": {
+            "property": {
+                "HP": 10000.0,
+                "attack": 30.0,
+                "isLockHP": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true,
+                "canTriggerBullet": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "hitAutoRedirect": false,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "SceneObj_Area_Xm_Property_Prop_SeelieFarAway_01",
+                "abilityName": "SceneObj_Area_Xm_Property_Prop_SeelieFarAway_01",
+                "abilityOverride": ""
+            }
+        ],
+        "move": {
+            "$type": "ConfigPlatformMove"
+        }
+    },
+    "SceneObj_Area_Common_Property_Prop_ExplorationRing_01": {
+        "$type": "ConfigGadget",
+        "model": {
+            "bornEffect": "",
+            "attachEffect": "Eff_SceneObj_Seeker_Exploration_01"
+        },
+        "hasModel": true,
+        "combat": {
+            "property": {
+                "HP": 10000.0,
+                "attack": 30.0,
+                "isLockHP": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true,
+                "canTriggerBullet": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "hitAutoRedirect": false,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": ""
+    },
+    "SceneObj_Level_Common_Property_Prop_RemovableCoin_01": {
+        "$type": "ConfigGadget",
+        "combat": {
+            "property": {
+                "HP": 10000.0,
+                "attack": 30.0,
+                "isLockHP": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true,
+                "canTriggerBullet": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "hitAutoRedirect": false,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "SceneObj_Level_Common_Property_Prop_RemovableCoin_01",
+                "abilityName": "SceneObj_Level_Common_Property_Prop_RemovableCoin_01",
+                "abilityOverride": ""
+            }
+        ],
+        "move": {
+            "$type": "ConfigPlatformMove"
+        }
+    },
+    "SceneObj_Level_Common_Property_Prop_ExpandAccessCoin_01": {
+        "$type": "ConfigGadget",
+        "combat": {
+            "property": {
+                "HP": 10000.0,
+                "attack": 30.0,
+                "isLockHP": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true,
+                "canTriggerBullet": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "hitAutoRedirect": false,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "SceneObj_Level_Common_Property_Prop_ExpandAccessCoin_01",
+                "abilityName": "SceneObj_Level_Common_Property_Prop_ExpandAccessCoin_01",
+                "abilityOverride": ""
+            }
+        ],
+        "field": {
+            "concernType": "AllAvatars",
+            "shape": "CircleR1",
+            "PMOHIIJOLNG": "",
+            "triggerInfinite": true,
+            "lifeInfinite": true,
+            "checkInterval": 0.5,
+            "overwriteCampType": true,
+            "campType": "All",
+            "JHEKALHPHBK": "",
+            "JFLLEDMCPLF": ""
+        }
+    },
+    "SceneObj_Area_Xm_Property_Prop_WoodAranaraStage_Part_NoDither": {
+        "$type": "ConfigGadget",
+        "hasModel": true,
+        "combatTemplate": "",
+        "CFEIPLEGNFH": {
+            "KIAMEMEDOJD": {},
+            "APJGLOKDMCN": ""
+        }
+    },
+    "SceneObj_Area_Xm_Property_Prop_WoodAranaraStage_Part": {
+        "$type": "ConfigGadget",
+        "hasModel": true,
+        "combatTemplate": "",
+        "CFEIPLEGNFH": {
+            "FNPCMAKBGOM": {
+                "AODPBCLJPNA": 0.30000001192092896
+            },
+            "KIAMEMEDOJD": {},
+            "APJGLOKDMCN": ""
+        }
+    },
+    "SceneObj_Area_Common_Property_Prop_ParkourOperatorXM_01": {
+        "$type": "ConfigGadget",
+        "hasModel": true,
+        "combat": {
+            "property": {
+                "HP": 99999.0,
+                "attack": 50.0,
+                "weight": 50.0,
+                "isLockHP": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "hitAutoRedirect": false,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "SceneObj_Area_Common_Property_Prop_ParkourOperatorXM_01",
+                "abilityName": "SceneObj_Area_Common_Property_Prop_ParkourOperatorXM_01",
+                "abilityOverride": ""
+            }
+        ],
+        "field": {
+            "concernType": "AllAvatars",
+            "shape": "CircleR1.5",
+            "PMOHIIJOLNG": "",
+            "triggerInfinite": true,
+            "lifeInfinite": true,
+            "checkInterval": 0.20000000298023224,
+            "overwriteCampType": true,
+            "campType": "All",
+            "JHEKALHPHBK": "",
+            "JFLLEDMCPLF": ""
+        },
+        "PHPNGMPHDGB": false,
+        "MFKPHCFMEJF": {
+            "NNKFJFIJEGD": [
+                {
+                    "$type": "DKAGMDFBKFG",
+                    "intID": "State",
+                    "BNBNPANFDGD": true
+                },
+                {
+                    "$type": "EBBDJBHDBKL",
+                    "parameter": "State",
+                    "type": "Int",
+                    "shieldHP": "Eff_SceneObj_Challengestarter_02"
+                },
+                {
+                    "$type": "EBBDJBHDBKL",
+                    "MDBPPIHBJGG": "GearStart",
+                    "parameter": "State",
+                    "type": "Int",
+                    "value": 201,
+                    "shieldHP": "Eff_SceneObj_Challengestarter_02"
+                },
+                {
+                    "$type": "EBBDJBHDBKL",
+                    "MDBPPIHBJGG": "GearStop",
+                    "parameter": "State",
+                    "type": "Int",
+                    "value": 202,
+                    "shieldHP": "Eff_SceneObj_Challengestarter_02"
+                }
+            ]
+        },
+        "billboard": {
+            "$type": "DGFKKPGDMFH",
+            "attachPoint": "BillboardAttach",
+            "offset": {
+                "y": 2.799999952316284
+            },
+            "iconName": "UI_NPCTopIcon_Activity_WinterCamp_Race",
+            "title": ""
+        }
+    },
+    "SceneObj_Gear_ElementDungeon_Operator_NoBase": {
+        "$type": "ConfigGadget",
+        "model": {
+            "bornEffect": "",
+            "attachEffect": "Eff_Gear_ElementDungeon_Operator"
+        },
+        "hasModel": true,
+        "combat": {
+            "property": {
+                "HP": 99999.0,
+                "attack": 200.0,
+                "weight": 50.0,
+                "isLockHP": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "hitAutoRedirect": false,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "field": {
+            "concernType": "LocalAvatar",
+            "shape": "CircleR2H2",
+            "PMOHIIJOLNG": "",
+            "triggerInfinite": true,
+            "lifeInfinite": true,
+            "checkInterval": 0.5,
+            "overwriteCampType": true,
+            "campType": "SelfCamp",
+            "JHEKALHPHBK": "",
+            "JFLLEDMCPLF": ""
+        },
+        "MFKPHCFMEJF": {
+            "NNKFJFIJEGD": [
+                {
+                    "$type": "EBBDJBHDBKL",
+                    "parameter": "gadgetState",
+                    "type": "Int",
+                    "shieldHP": "Eff_Gear_ElementDungeon_Operator"
+                },
+                {
+                    "$type": "EBBDJBHDBKL",
+                    "MDBPPIHBJGG": "GearStop",
+                    "parameter": "gadgetState",
+                    "type": "Int",
+                    "value": 202,
+                    "shieldHP": "Eff_Gear_ElementDungeon_Operator"
+                }
+            ]
+        }
+    },
+    "SceneObj_Gear_ElementDungeon_Operator_FungusActivity": {
+        "$type": "ConfigGadget",
+        "model": {
+            "bornEffect": "",
+            "attachEffect": "Eff_Gear_ElementDungeon_Operator"
+        },
+        "hasModel": true,
+        "combat": {
+            "property": {
+                "HP": 99999.0,
+                "attack": 200.0,
+                "weight": 50.0,
+                "isLockHP": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "hitAutoRedirect": false,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "EOLFAMFPCOL": {
+            "AOGIJKALGNB": "UI/open_fungus_fighter_organize_page",
+            "DLLLIKCMJMP": "UI_ACTIVITY_FUNGUSFIGHTER_FIGHT_START",
+            "icon": "",
+            "GEALIGKGCBF": "",
+            "NFJICIGABPE": "",
+            "MIHHAGGNIIO": ""
+        },
+        "MFKPHCFMEJF": {
+            "NNKFJFIJEGD": [
+                {
+                    "$type": "EBBDJBHDBKL",
+                    "parameter": "gadgetState",
+                    "type": "Int",
+                    "shieldHP": "Eff_Gear_ElementDungeon_Operator"
+                },
+                {
+                    "$type": "EBBDJBHDBKL",
+                    "MDBPPIHBJGG": "GearStop",
+                    "parameter": "gadgetState",
+                    "type": "Int",
+                    "value": 202,
+                    "shieldHP": "Eff_Gear_ElementDungeon_Operator"
+                },
+                {
+                    "$type": "GNOFGJLHGKO",
+                    "enable": true
+                },
+                {
+                    "$type": "GNOFGJLHGKO",
+                    "MDBPPIHBJGG": "GearStop"
+                }
+            ]
+        }
+    }
+}

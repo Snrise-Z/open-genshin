@@ -1,0 +1,280 @@
+{
+    "common": {
+        "effectAttachShape": {
+            "$type": "ConfigEffectAttachSkinnedMesh",
+            "mesh": "EffectMesh"
+        },
+        "mass": 20.0,
+        "height": 0.699999988079071,
+        "MECICKNEPGG": 0.5,
+        "affectedByWorld": true,
+        "checkInSurface": true,
+        "scale": 1.2000000476837158,
+        "canTriggerElementReactionText": false,
+        "useGrassDisplacement": true
+    },
+    "model": {
+        "bornEffect": "",
+        "attachEffect": "",
+        "canBakeMesh": false
+    },
+    "combat": {
+        "property": {
+            "endureType": "Monster_Minion",
+            "weight": 30.0
+        },
+        "beHit": {
+            "hitBloodEffect": "",
+            "muteAllHitText": true
+        },
+        "combatLock": {
+            "lockShape": "CircleLockEnemy",
+            "denyLockOn": true,
+            "lockType": "Default"
+        },
+        "die": {
+            "dieEndTime": 0.699999988079071,
+            "dieForceDisappearTime": 1.0,
+            "dieDisappearEffect": "Eff_Animal_Common_Die",
+            "CEJEBJMECHD": 0.699999988079071
+        }
+    },
+    "stateLayers": {
+        "defaultLayer": {
+            "$type": "ConfigNormalStateLayer",
+            "ACOCIAFGIAD": "",
+            "stateIDs": {
+                "Born": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Born": [],
+                        "Born_AS": [
+                            "Animal_Eel_Born"
+                        ]
+                    },
+                    "resetAnimatorTriggerOnExit": [
+                        "DoSkill"
+                    ]
+                },
+                "NormalIdle": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Standby_HighStance": [],
+                        "Standby_LowStance": []
+                    },
+                    "canDoSkill": true,
+                    "canSyncMove": true,
+                    "resetAnimatorTriggerOnExit": [
+                        "DoSkill"
+                    ]
+                },
+                "Retreat": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Retreat": [
+                            "Animal_Eel_Retreat"
+                        ]
+                    }
+                },
+                "Die": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Die": []
+                    }
+                },
+                "ChangeStance": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "LowStanceToHighStance": [],
+                        "HighStanceToLowStance": []
+                    },
+                    "canSyncMove": true,
+                    "resetAnimatorTriggerOnExit": [
+                        "DoSkill"
+                    ]
+                },
+                "FreeSkill": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "HighStance_Free01": [],
+                        "LowStance_Free01": []
+                    },
+                    "canSyncMove": true,
+                    "resetAnimatorTriggerOnExit": [
+                        "DoSkill"
+                    ]
+                }
+            }
+        }
+    },
+    "initialPoses": {
+        "Default": {
+            "initialPoseID": 1,
+            "initialPoseParams": {
+                "LHMPJOKLEHI": {
+                    "RandomPose": "1"
+                }
+            }
+        },
+        "LowStance": {
+            "initialPoseID": 2,
+            "initialPoseParams": {
+                "LHMPJOKLEHI": {
+                    "RandomPose": "2"
+                }
+            }
+        }
+    },
+    "aibeta": {
+        "enable": true,
+        "friendliness": 1,
+        "sensing": {
+            "settings": {
+                "DefaultSetting": {
+                    "enableVision": false,
+                    "feelRange": 7.0
+                }
+            }
+        },
+        "neurons": {
+            "DefaultSetting": [
+                "WEATHER_BAD"
+            ]
+        },
+        "threat": {
+            "viewThreatGrow": 75.0,
+            "feelThreatGrow": 1000.0,
+            "threatBroadcastRange": 5.0,
+            "JGFOPCOIJOI": ""
+        },
+        "defendArea": {
+            "defendRange": 100.0
+        },
+        "GFDCKHFMHMH": {
+            "CKMELLHBHNH": [
+                {
+                    "KLENJAFFEFE": 7.0,
+                    "BMJCOELLDOL": 15.0,
+                    "HJEFCLHLLLN": 1,
+                    "MHHHCHEOGCL": [
+                        2
+                    ],
+                    "MHEIPEDLGEP": true
+                },
+                {
+                    "KLENJAFFEFE": 7.0,
+                    "BMJCOELLDOL": 15.0,
+                    "HJEFCLHLLLN": 2,
+                    "MHHHCHEOGCL": [
+                        1
+                    ],
+                    "MHEIPEDLGEP": true
+                }
+            ]
+        },
+        "ui": {
+            "hasDirectionIndicator": false,
+            "FLMOHOODJBA": ""
+        },
+        "profiling": {
+            "lodStrategy": "MinorAnimal"
+        },
+        "BNIENJNLAIJ": {
+            "101": {
+                "NOKKDDHKGAK": "FreeSkill_HighStance",
+                "IKMCLKEPDFP": "Free",
+                "ENKLFBHHOJI": {
+                    "CEKMINILIFB": [
+                        1
+                    ]
+                },
+                "cd": 10.0,
+                "GPMLADFJAAH": 10.0,
+                "LKCFDIOMLCM": 5.0,
+                "KKAEGIJIDLG": 10.0,
+                "NOPNCNPCPJE": "",
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "FreeSkill"
+                ],
+                "PGPDNPMFFAG": "10",
+                "CCEAGFDONFH": "01",
+                "OKOFHICILMD": "10",
+                "CCFFFOIDOLP": "11"
+            },
+            "201": {
+                "NOKKDDHKGAK": "FreeSkill_LowStance",
+                "IKMCLKEPDFP": "Free",
+                "ENKLFBHHOJI": {
+                    "CEKMINILIFB": [
+                        2
+                    ]
+                },
+                "cd": 10.0,
+                "GPMLADFJAAH": 10.0,
+                "LKCFDIOMLCM": 5.0,
+                "KKAEGIJIDLG": 10.0,
+                "NOPNCNPCPJE": "",
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "FreeSkill"
+                ],
+                "PGPDNPMFFAG": "10",
+                "CCEAGFDONFH": "01",
+                "OKOFHICILMD": "10",
+                "CCFFFOIDOLP": "11"
+            }
+        },
+        "combatFixedMoveTactic": [
+            {
+                "$type": "GIMIMAJNOPH",
+                "enable": true,
+                "nerveTrigger": [
+                    "HIT",
+                    "WEATHER_BAD"
+                ],
+                "defaultSetting": {
+                    "cd": 0.0,
+                    "triggerDistance": 200.0,
+                    "fleeAngle": 30.0,
+                    "fleeNumberMin": 8,
+                    "fleeNumberMax": 12,
+                    "fleeDistanceMin": 3.299999952316284,
+                    "fleeDistanceMax": 3.299999952316284,
+                    "JOCOJHEICNA": ""
+                }
+            },
+            {
+                "$type": "KMHBGMELMKD",
+                "enable": true
+            },
+            {
+                "$type": "GGKADEIBMLG",
+                "enable": true,
+                "FJANPNOAAFK": {
+                    "CEKMINILIFB": [
+                        1
+                    ]
+                },
+                "defaultSetting": {
+                    "JIFJFPJANHO": 120.0,
+                    "CBKHBGCPFBG": 60.0,
+                    "EKDHNAGGGAE": 10.0,
+                    "BFEJAKFKKFP": 1.5,
+                    "KOAMKCEFJED": 3.0,
+                    "JOCOJHEICNA": ""
+                }
+            }
+        ]
+    },
+    "animal": {
+        "hasAbility": false,
+        "tickAbilityElement": false,
+        "hasCharacterRenderering": false
+    },
+    "EGGALDADMOL": {
+        "ILKLCFIONEC": {
+            "ABCJFMIGKJN": "Eff_SceneObj_CatchAnimal_CaughtSuccess"
+        }
+    }
+}

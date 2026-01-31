@@ -1,0 +1,909 @@
+{
+    "Skiff_Normal_01": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            },
+            "mass": 100000.0
+        },
+        "specialPoint": {
+            "elementAbsorb": "RootNode",
+            "elementPendant": "",
+            "elementDrop": "RootNode",
+            "bulletAim": "BulletAim"
+        },
+        "hasModel": true,
+        "combat": {
+            "property": {
+                "HP": 10000.0,
+                "attack": 100.0,
+                "weight": 500.0,
+                "ignorePurgeRate": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "lockType": "Gadget_Lv1"
+            },
+            "die": {
+                "dieForceDisappearTime": 0.0,
+                "dieDisappearEffect": "Eff_Skiff_Normal_Die"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Vehicle_Skiff_Normal_01",
+                "abilityName": "Vehicle_Skiff_Normal_01",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Vehicle_Skiff_AutoHeal",
+                "abilityName": "Vehicle_Skiff_AutoHeal",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Vehicle_Skiff_TestAbility",
+                "abilityName": "Vehicle_Skiff_TestAbility",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "SkiffStatue_WithOutAvatar",
+                "abilityName": "SkiffStatue_WithOutAvatar",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "SkiffStatue_WithAvatar",
+                "abilityName": "SkiffStatue_WithAvatar",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Vehicle_Skiff_FireCannon_Small",
+                "abilityName": "Vehicle_Skiff_FireCannon_Small",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Vehicle_Skiff_FireCannon_Big",
+                "abilityName": "Vehicle_Skiff_FireCannon_Big",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Vehicle_Skiff_Normal_BurstSprint",
+                "abilityName": "Vehicle_Skiff_Normal_BurstSprint",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Vehicle_Skiff_Normal_WindHole",
+                "abilityName": "Vehicle_Skiff_Normal_WindHole",
+                "abilityOverride": ""
+            }
+        ],
+        "field": {
+            "concernType": "AllAvatars",
+            "shape": "CircleR4",
+            "PMOHIIJOLNG": "",
+            "triggerInfinite": true,
+            "lifeInfinite": true,
+            "checkInterval": 0.5,
+            "JHEKALHPHBK": "",
+            "JFLLEDMCPLF": ""
+        },
+        "move": {
+            "$type": "PNFEBCKCEFA"
+        },
+        "LGBJNNEDJDF": {
+            "$type": "HMGGKIAHEGB"
+        },
+        "stateLayers": {
+            "defaultLayer": {
+                "$type": "GMHKGJPLHFD",
+                "DLEKAADOFBI": "",
+                "stateIDs": {
+                    "Idle": {
+                        "$type": "IBEIHDAMPHM",
+                        "DNPOFANDHPP": {
+                            "Idle": []
+                        },
+                        "NOHGAIAMGLM": true,
+                        "FKPEAEBOFKK": ""
+                    },
+                    "Forward": {
+                        "$type": "IBEIHDAMPHM",
+                        "DNPOFANDHPP": {
+                            "Forward": []
+                        },
+                        "NOHGAIAMGLM": true,
+                        "FKPEAEBOFKK": ""
+                    },
+                    "Backward": {
+                        "$type": "IBEIHDAMPHM",
+                        "DNPOFANDHPP": {
+                            "Backward": []
+                        },
+                        "NOHGAIAMGLM": true,
+                        "FKPEAEBOFKK": ""
+                    },
+                    "Sprint": {
+                        "$type": "IBEIHDAMPHM",
+                        "DNPOFANDHPP": {
+                            "Sprint": []
+                        },
+                        "NOHGAIAMGLM": true,
+                        "cameraParam": {
+                            "radiusSpringRatio": 0.6000000238418579
+                        },
+                        "FKPEAEBOFKK": ""
+                    }
+                }
+            }
+        },
+        "audio": {
+            "$type": "DAEIMDGDGCL",
+            "CDPGEDJOKEB": "",
+            "BFLPLAHDHHI": {
+                "text": "Play_amb_sceneObj_Boat_Impact"
+            },
+            "IPIPFLICIFK": 6.0,
+            "PMBOPJKLNLG": 100,
+            "NCOCHOOCFNI": 0.10000000149011612
+        },
+        "IKLPBPABKGL": {
+            "ENALKJMLGMO": "Skiff",
+            "OANBMKLOIKH": "Vehicle_Skiff",
+            "MJHDIFMBCHB": "",
+            "FFFKAPKBIKE": 1,
+            "LONBLJJGDJC": [
+                {
+                    "HCIMOHLCHIN": "seat0",
+                    "LKMINKAHDMO": 1001
+                }
+            ],
+            "NPAPJHMBFPI": 30,
+            "KPGLHJHMCNJ": 600201,
+            "EHMLCAAGIMF": {
+                "DAFBPIDOFKL": 240.0,
+                "HGNMMBGFBOJ": 25.0,
+                "FDCDMAKFNMM": 1.5,
+                "MLCMCPAGOPP": 200.0,
+                "ADKBBKACNBL": 1.0,
+                "KEHPPBPKFNP": 10.199999809265137
+            }
+        }
+    },
+    "Skiff_Normal_Beidou": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            },
+            "mass": 100000.0
+        },
+        "specialPoint": {
+            "elementAbsorb": "RootNode",
+            "elementPendant": "",
+            "elementDrop": "RootNode",
+            "bulletAim": "BulletAim"
+        },
+        "hasModel": true,
+        "combat": {
+            "property": {
+                "HP": 10000.0,
+                "attack": 100.0,
+                "weight": 500.0,
+                "ignorePurgeRate": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "lockType": "Gadget_Lv1"
+            },
+            "die": {
+                "dieForceDisappearTime": 0.0,
+                "dieDisappearEffect": "Eff_Skiff_Normal_Die"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Vehicle_Skiff_Normal_01",
+                "abilityName": "Vehicle_Skiff_Normal_01",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Vehicle_Skiff_AutoHeal",
+                "abilityName": "Vehicle_Skiff_AutoHeal",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Vehicle_Skiff_TestAbility",
+                "abilityName": "Vehicle_Skiff_TestAbility",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "SkiffStatue_WithOutAvatar",
+                "abilityName": "SkiffStatue_WithOutAvatar",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "SkiffStatue_WithAvatar",
+                "abilityName": "SkiffStatue_WithAvatar",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Vehicle_Skiff_FireCannon_Small",
+                "abilityName": "Vehicle_Skiff_FireCannon_Small",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Vehicle_Skiff_FireCannon_Big",
+                "abilityName": "Vehicle_Skiff_FireCannon_Big",
+                "abilityOverride": ""
+            }
+        ],
+        "field": {
+            "concernType": "AllAvatars",
+            "shape": "CircleR4",
+            "PMOHIIJOLNG": "",
+            "triggerInfinite": true,
+            "lifeInfinite": true,
+            "checkInterval": 0.5,
+            "JHEKALHPHBK": "",
+            "JFLLEDMCPLF": ""
+        },
+        "move": {
+            "$type": "PNFEBCKCEFA"
+        },
+        "LGBJNNEDJDF": {
+            "$type": "HMGGKIAHEGB"
+        },
+        "stateLayers": {
+            "defaultLayer": {
+                "$type": "GMHKGJPLHFD",
+                "DLEKAADOFBI": "",
+                "stateIDs": {
+                    "Idle": {
+                        "$type": "IBEIHDAMPHM",
+                        "DNPOFANDHPP": {
+                            "Idle": []
+                        },
+                        "NOHGAIAMGLM": true,
+                        "FKPEAEBOFKK": ""
+                    },
+                    "Forward": {
+                        "$type": "IBEIHDAMPHM",
+                        "DNPOFANDHPP": {
+                            "Forward": []
+                        },
+                        "NOHGAIAMGLM": true,
+                        "FKPEAEBOFKK": ""
+                    },
+                    "Backward": {
+                        "$type": "IBEIHDAMPHM",
+                        "DNPOFANDHPP": {
+                            "Backward": []
+                        },
+                        "NOHGAIAMGLM": true,
+                        "FKPEAEBOFKK": ""
+                    },
+                    "Sprint": {
+                        "$type": "IBEIHDAMPHM",
+                        "DNPOFANDHPP": {
+                            "Sprint": []
+                        },
+                        "NOHGAIAMGLM": true,
+                        "cameraParam": {
+                            "radiusSpringRatio": 0.6000000238418579
+                        },
+                        "FKPEAEBOFKK": ""
+                    }
+                }
+            }
+        },
+        "audio": {
+            "$type": "DAEIMDGDGCL",
+            "CDPGEDJOKEB": "",
+            "BFLPLAHDHHI": {
+                "text": "Play_amb_sceneObj_Boat_Impact"
+            },
+            "IPIPFLICIFK": 6.0,
+            "PMBOPJKLNLG": 100,
+            "NCOCHOOCFNI": 0.10000000149011612
+        },
+        "IKLPBPABKGL": {
+            "ENALKJMLGMO": "Skiff",
+            "OANBMKLOIKH": "Vehicle_Skiff",
+            "MJHDIFMBCHB": "",
+            "FFFKAPKBIKE": 1,
+            "LONBLJJGDJC": [
+                {
+                    "HCIMOHLCHIN": "seat0",
+                    "LKMINKAHDMO": 1002
+                }
+            ],
+            "NPAPJHMBFPI": 30,
+            "KPGLHJHMCNJ": 600201,
+            "EHMLCAAGIMF": {
+                "DAFBPIDOFKL": 240.0,
+                "HGNMMBGFBOJ": 25.0,
+                "FDCDMAKFNMM": 1.5,
+                "MLCMCPAGOPP": 200.0,
+                "ADKBBKACNBL": 1.0,
+                "KEHPPBPKFNP": 10.199999809265137
+            }
+        }
+    },
+    "Skiff_Normal_LanV3BoatGame": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            },
+            "mass": 100000.0
+        },
+        "specialPoint": {
+            "elementAbsorb": "RootNode",
+            "elementPendant": "",
+            "elementDrop": "RootNode",
+            "bulletAim": "BulletAim"
+        },
+        "hasModel": true,
+        "combat": {
+            "property": {
+                "HP": 10000.0,
+                "attack": 100.0,
+                "weight": 500.0,
+                "ignorePurgeRate": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "lockType": "Gadget_Lv1"
+            },
+            "die": {
+                "dieForceDisappearTime": 0.0,
+                "dieDisappearEffect": "Eff_Skiff_Normal_Die"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Vehicle_Skiff_Normal_01",
+                "abilityName": "Vehicle_Skiff_Normal_01",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Vehicle_Skiff_AutoHeal",
+                "abilityName": "Vehicle_Skiff_AutoHeal",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Vehicle_Skiff_TestAbility",
+                "abilityName": "Vehicle_Skiff_TestAbility",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "SkiffStatue_WithOutAvatar",
+                "abilityName": "SkiffStatue_WithOutAvatar",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "SkiffStatue_WithAvatar",
+                "abilityName": "SkiffStatue_WithAvatar",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Vehicle_Skiff_FireCannon_Small",
+                "abilityName": "Vehicle_Skiff_FireCannon_Small",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Vehicle_Skiff_FireCannon_Big",
+                "abilityName": "Vehicle_Skiff_FireCannon_Big",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Vehicle_Skiff_Normal_BurstSprint",
+                "abilityName": "Vehicle_Skiff_Normal_BurstSprint",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Vehicle_Skiff_Normal_WindHole",
+                "abilityName": "Vehicle_Skiff_Normal_WindHole",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Vehicle_Skiff_LanV3BoatGame_Fog",
+                "abilityName": "Vehicle_Skiff_LanV3BoatGame_Fog",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Vehicle_Skiff_LanV3BoatGame_Coin_Absorb",
+                "abilityName": "Vehicle_Skiff_LanV3BoatGame_Coin_Absorb",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Vehicle_Skiff_LanV3BoatGame_Shield",
+                "abilityName": "Vehicle_Skiff_LanV3BoatGame_Shield",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Vehicle_Skiff_LanV3BoatGame_Vortex",
+                "abilityName": "Vehicle_Skiff_LanV3BoatGame_Vortex",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Vehicle_Skiff_LanV3BoatGame_RushMove",
+                "abilityName": "Vehicle_Skiff_LanV3BoatGame_RushMove",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "Vehicle_Skiff_LanV3BoatGame_Stamina_Recover",
+                "abilityName": "Vehicle_Skiff_LanV3BoatGame_Stamina_Recover",
+                "abilityOverride": ""
+            }
+        ],
+        "field": {
+            "concernType": "AllAvatars",
+            "shape": "CircleR4",
+            "PMOHIIJOLNG": "",
+            "triggerInfinite": true,
+            "lifeInfinite": true,
+            "checkInterval": 0.5,
+            "JHEKALHPHBK": "",
+            "JFLLEDMCPLF": ""
+        },
+        "move": {
+            "$type": "PNFEBCKCEFA"
+        },
+        "LGBJNNEDJDF": {
+            "$type": "HMGGKIAHEGB"
+        },
+        "stateLayers": {
+            "defaultLayer": {
+                "$type": "GMHKGJPLHFD",
+                "DLEKAADOFBI": "",
+                "stateIDs": {
+                    "Idle": {
+                        "$type": "IBEIHDAMPHM",
+                        "DNPOFANDHPP": {
+                            "Idle": []
+                        },
+                        "NOHGAIAMGLM": true,
+                        "FKPEAEBOFKK": ""
+                    },
+                    "Forward": {
+                        "$type": "IBEIHDAMPHM",
+                        "DNPOFANDHPP": {
+                            "Forward": []
+                        },
+                        "NOHGAIAMGLM": true,
+                        "FKPEAEBOFKK": ""
+                    },
+                    "Backward": {
+                        "$type": "IBEIHDAMPHM",
+                        "DNPOFANDHPP": {
+                            "Backward": []
+                        },
+                        "NOHGAIAMGLM": true,
+                        "FKPEAEBOFKK": ""
+                    },
+                    "Sprint": {
+                        "$type": "IBEIHDAMPHM",
+                        "DNPOFANDHPP": {
+                            "Sprint": []
+                        },
+                        "NOHGAIAMGLM": true,
+                        "cameraParam": {
+                            "radiusSpringRatio": 0.6000000238418579
+                        },
+                        "FKPEAEBOFKK": ""
+                    }
+                }
+            }
+        },
+        "audio": {
+            "$type": "DAEIMDGDGCL",
+            "CDPGEDJOKEB": "",
+            "BFLPLAHDHHI": {
+                "text": "Play_amb_sceneObj_Boat_Impact"
+            },
+            "IPIPFLICIFK": 6.0,
+            "PMBOPJKLNLG": 100,
+            "NCOCHOOCFNI": 0.10000000149011612
+        },
+        "IKLPBPABKGL": {
+            "ENALKJMLGMO": "Skiff",
+            "OANBMKLOIKH": "LanternRiteV3Boat",
+            "MJHDIFMBCHB": "",
+            "FFFKAPKBIKE": 1,
+            "LONBLJJGDJC": [
+                {
+                    "HCIMOHLCHIN": "seat0",
+                    "LKMINKAHDMO": 1001
+                }
+            ],
+            "NPAPJHMBFPI": 30,
+            "KPGLHJHMCNJ": 600201,
+            "EHMLCAAGIMF": {
+                "DAFBPIDOFKL": 240.0,
+                "HGNMMBGFBOJ": 25.0,
+                "FDCDMAKFNMM": 1.5,
+                "MLCMCPAGOPP": 200.0,
+                "ADKBBKACNBL": 1.0,
+                "KEHPPBPKFNP": 10.199999809265137
+            },
+            "HGDEHJELAAH": true,
+            "BPMBCEJLGFC": 12.0
+        }
+    },
+    "Bullet_Skiff_Cannon_Small": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "CPGMBCECPEN": 0.4000000059604645
+            },
+            "mass": 5.0,
+            "affectedByWorld": true,
+            "checkInSurface": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 99999.0,
+                "isLockHP": true,
+                "isGhostToAllied": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Bullet_Skiff_Cannon_Small",
+                "abilityName": "Bullet_Skiff_Cannon_Small",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 10.0
+        },
+        "move": {
+            "$type": "FHJABLDOPCE",
+            "speed": 35.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "LDOEEHMFPHN": 20.0,
+            "IPBPLMGOJKC": 40.0,
+            "NKKKMPEEEAP": {
+                "$type": "HHINGLNHGCK",
+                "AHBLNOPFFIP": 50.0,
+                "minSpeed": 0.10000000149011612,
+                "maxSpeed": 100.0
+            }
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Bullet_Skiff_Cannon_Small"
+                }
+            ]
+        }
+    },
+    "Bullet_Skiff_Cannon_Big": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "CPGMBCECPEN": 0.4000000059604645
+            },
+            "mass": 5.0,
+            "affectedByWorld": true,
+            "checkInSurface": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "HP": 99999.0,
+                "isLockHP": true,
+                "isGhostToAllied": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Bullet_Skiff_Cannon_Big",
+                "abilityName": "Bullet_Skiff_Cannon_Big",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 10.0
+        },
+        "move": {
+            "$type": "FHJABLDOPCE",
+            "speed": 35.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "LDOEEHMFPHN": 20.0,
+            "IPBPLMGOJKC": 40.0,
+            "NKKKMPEEEAP": {
+                "$type": "HHINGLNHGCK",
+                "AHBLNOPFFIP": 50.0,
+                "minSpeed": 0.10000000149011612,
+                "maxSpeed": 100.0
+            }
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Bullet_Skiff_Cannon_Big"
+                }
+            ]
+        }
+    },
+    "SkillObj_Skiff_SprintTrigger": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            },
+            "mass": 50.0
+        },
+        "combat": {
+            "property": {
+                "endureType": "Monster_Grunt_Humanoid",
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "SkillObj_Skiff_SprintTrigger",
+                "abilityName": "SkillObj_Skiff_SprintTrigger",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeInfinite": true
+        },
+        "move": {
+            "$type": "DKAMCGDMNKI",
+            "MPMOPIIFDPO": {
+                "muteAll": true
+            },
+            "attachPoint": "RootNode",
+            "followRotation": true,
+            "HMPJAIBPNND": ""
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "triggerType": "TriggerAlways",
+                "triggerCD": 0.5,
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "SkillObj_Skiff_SprintTrigger"
+                }
+            ]
+        }
+    },
+    "SkillObj_Skiff_SprintTrigger_LanV3": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            },
+            "mass": 50.0
+        },
+        "combat": {
+            "property": {
+                "endureType": "Monster_Grunt_Humanoid",
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "SkillObj_Skiff_SprintTrigger_LanV3",
+                "abilityName": "SkillObj_Skiff_SprintTrigger_LanV3",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 2.0
+        },
+        "move": {
+            "$type": "DKAMCGDMNKI",
+            "MPMOPIIFDPO": {
+                "muteAll": true
+            },
+            "attachPoint": "RootNode",
+            "followRotation": true,
+            "HMPJAIBPNND": ""
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "triggerType": "TriggerAlways",
+                "triggerCD": 0.25,
+                "targetType": "Enemy"
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "SkillObj_Skiff_SprintTrigger_LanV3"
+                }
+            ]
+        }
+    },
+    "SkillObj_Skiff_BurstSprint": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            }
+        },
+        "combat": {
+            "property": {
+                "endureType": "Monster_Grunt_Humanoid",
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "AHCOGNAHOOF": {
+            "lifeTime": 0.30000001192092896
+        },
+        "CFEIPLEGNFH": {
+            "PLNCODIKIJB": {
+                "$type": "FOODCAOGPIF",
+                "alias": "",
+                "velocity": 30.0,
+                "attenuation": 4.0,
+                "OCDCIJKLNMM": true,
+                "JAPHNCFMAFM": true,
+                "COPEEGHPEGD": 6.0,
+                "EJCDFFMBIIC": 65.0,
+                "FIGLOBAPGOP": 1.5,
+                "OHFLDEGDEAD": 2,
+                "HDNPCAGMBFL": 25.0,
+                "EBOGEBNMENO": 10.0
+            },
+            "APJGLOKDMCN": ""
+        }
+    },
+    "ActivityAbility_SkillObj_Skiff_Vortex": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            }
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "useAbilityProperty": true,
+                "isInvincible": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true,
+                "ignorePurgeRate": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Avatar&Monster_Lv4"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Vehicle_Skiff_LanV3BoatGame_SkillObj_Vortex",
+                "abilityName": "Vehicle_Skiff_LanV3BoatGame_SkillObj_Vortex",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 10.0
+        }
+    },
+    "ActivityAbility_SkillObj_Skiff_Mire": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            }
+        },
+        "specialPoint": {
+            "elementAbsorb": "RootNode",
+            "elementPendant": "",
+            "elementDrop": "RootNode",
+            "bulletAim": "RootNode"
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "useAbilityProperty": true,
+                "isInvincible": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true,
+                "ignorePurgeRate": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Avatar&Monster_Lv4"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "Vehicle_Skiff_LanV3BoatGame_Mire",
+                "abilityName": "Vehicle_Skiff_LanV3BoatGame_Mire",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 20.0
+        }
+    }
+}

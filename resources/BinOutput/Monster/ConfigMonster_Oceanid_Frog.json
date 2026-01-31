@@ -1,0 +1,436 @@
+{
+    "common": {
+        "effectAttachShape": {
+            "$type": "ConfigEffectAttachSkinnedMesh",
+            "mesh": "EffectMesh"
+        },
+        "mass": 999999.0,
+        "MECICKNEPGG": 2.0,
+        "scale": 8.0
+    },
+    "model": {
+        "bornEffect": "Eff_Monster_Oceanid_AnimalBorn",
+        "attachEffect": "",
+        "canBakeMesh": false
+    },
+    "MEMHBNEJBCL": {
+        "PJBCJPKPOLB": 3.0
+    },
+    "combat": {
+        "property": {
+            "endureType": "Monster_Boss_Other",
+            "weight": 150.0
+        },
+        "beHit": {
+            "hitBloodEffect": ""
+        },
+        "combatLock": {
+            "lockShape": "CircleLockEnemy",
+            "lockType": "Avatar&Monster_Lv4"
+        },
+        "die": {
+            "dieEndTime": 2.0,
+            "dieForceDisappearTime": 5.0,
+            "dieDisappearEffect": "",
+            "LEDBOLGDENF": true,
+            "IEAKKMEDNDE": true,
+            "AAEANOPIAAL": true,
+            "IBBHGBHIHCI": true,
+            "BKIBMIAJOHP": true,
+            "MOFPBPPGPCL": true
+        }
+    },
+    "abilities": [
+        {
+            "abilityID": "Monster_Oceanid_Frog_JumpAtkBS",
+            "abilityName": "Monster_Oceanid_Frog_JumpAtkBS",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "Monster_Oceanid_Frog_JumpAtk_Alert",
+            "abilityName": "Monster_Oceanid_Frog_JumpAtk_Alert",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "Monster_Oceanid_Frog_JumpAtk_Damage",
+            "abilityName": "Monster_Oceanid_Frog_JumpAtk_Damage",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "Monster_Oceanid_Frog_WaterWave",
+            "abilityName": "Monster_Oceanid_Frog_WaterWave",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "Monster_Oceanid_Frog_ElementState",
+            "abilityName": "Monster_Oceanid_Frog_ElementState",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "Monster_Common_WaterMuteHurt",
+            "abilityName": "Monster_Common_WaterMuteHurt",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "Monster_Oceanid_Tit_BeingHit",
+            "abilityName": "Monster_Oceanid_Tit_BeingHit",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "Monster_Oceanid_Frog_DyingBS",
+            "abilityName": "Monster_Oceanid_Frog_DyingBS",
+            "abilityOverride": ""
+        }
+    ],
+    "stateLayers": {
+        "defaultLayer": {
+            "$type": "ConfigNormalStateLayer",
+            "ACOCIAFGIAD": "",
+            "stateIDs": {
+                "Born": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Born": []
+                    },
+                    "canDoSkill": true,
+                    "resetAnimatorTriggerOnExit": [
+                        "DoSkill"
+                    ]
+                },
+                "NormalIdle": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Standby": []
+                    },
+                    "canDoSkill": true,
+                    "canSyncMove": true,
+                    "resetAnimatorTriggerOnExit": [
+                        "DoSkill"
+                    ]
+                },
+                "NormalMove": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Walk": [
+                            "Audio_Monster_Oceanid_Frog_Walk"
+                        ]
+                    },
+                    "canSyncMove": true,
+                    "resetAnimatorTriggerOnExit": [
+                        "DoSkill"
+                    ],
+                    "LIPMJPLGIKD": true
+                },
+                "Turn": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "TurnLeft": [],
+                        "TurnRight": []
+                    },
+                    "canSyncMove": true,
+                    "resetAnimatorTriggerOnExit": [
+                        "DoSkill"
+                    ],
+                    "LIPMJPLGIKD": true
+                },
+                "Die": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Die": [
+                            "Monster_Oceanid_Frog_Die",
+                            "Audio_Boar_die"
+                        ]
+                    }
+                },
+                "Alert": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Alert": []
+                    },
+                    "canDoSkill": true,
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "Dying": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Dying": []
+                    },
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "WaterWave": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "WaterWave": [
+                            "Monster_Oceanid_Frog_WaterWave",
+                            "Audio_Monster_Oceanid_Frog_WaterWave"
+                        ]
+                    },
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ],
+                    "LIPMJPLGIKD": true
+                },
+                "JumpAtk": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "JumpAtk": [
+                            "Monster_Oceanid_Frog_JumpAtk",
+                            "Audio_Monster_Oceanid_Frog_JumpAtk"
+                        ]
+                    },
+                    "canSyncMove": true,
+                    "LAKHIBAPNAB": true,
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ],
+                    "LIPMJPLGIKD": true
+                }
+            }
+        }
+    },
+    "IEFGNHABHFH": {
+        "$type": "PAOBAEKGGBC",
+        "JBKMLLFNHAL": "BillboardAttach",
+        "EMFFJPOKEKF": "Character",
+        "LOMMBJLKPHE": 0.25,
+        "KGHAGECNJPO": true,
+        "JLCJBGKPEEC": 50.0
+    },
+    "initialPoses": {
+        "Default": {},
+        "Free": {
+            "initialPoseID": 2,
+            "initialPoseParams": {
+                "boolParams": {
+                    "Free": "true"
+                }
+            }
+        },
+        "Stand": {
+            "initialPoseID": 3,
+            "initialPoseParams": {
+                "boolParams": {
+                    "Stand": "true"
+                }
+            }
+        }
+    },
+    "aibeta": {
+        "enable": true,
+        "moveSetting": {
+            "moveCategory": "Amphibious",
+            "useNavMesh": false,
+            "navMeshAgentName": "Undead01"
+        },
+        "sensing": {
+            "settings": {
+                "DefaultSetting": {
+                    "feelRange": 50.0
+                },
+                "LowAlert": {
+                    "enableVision": false,
+                    "feelRange": 7.5
+                },
+                "StandAlert": {
+                    "PHDIIPOBJGA": 0.0,
+                    "feelRange": 7.0
+                },
+                "SpecialLowAlert": {
+                    "feelRange": 8.0
+                },
+                "OnlyHitAlert": {
+                    "PHDIIPOBJGA": 0.0,
+                    "hearAttractionRange": 0.0,
+                    "feelRange": 0.0,
+                    "GAENFGBFAHF": 30.0
+                }
+            },
+            "templates": {
+                "DefaultTemplate": {
+                    "DefaultPoses": "DefaultSetting",
+                    "2": "LowAlert",
+                    "3": "StandAlert"
+                },
+                "LowAlertTemplate": {
+                    "DefaultPoses": "SpecialLowAlert",
+                    "2": "LowAlert",
+                    "3": "StandAlert"
+                },
+                "OnlyHitTemplate": {
+                    "DefaultPoses": "OnlyHitAlert"
+                }
+            }
+        },
+        "threat": {
+            "feelThreatGrow": 100.0,
+            "KDPOCNEHGBJ": 100.0,
+            "BJLBMJLOPIP": [
+                {
+                    "LFALGCACJOF": 10.0,
+                    "IOHOACGNJHO": 2.0
+                },
+                {
+                    "LFALGCACJOF": 15.0,
+                    "IOHOACGNJHO": 1.25
+                },
+                {
+                    "LFALGCACJOF": 20.0,
+                    "IOHOACGNJHO": 0.5
+                }
+            ],
+            "JGFOPCOIJOI": ""
+        },
+        "defendArea": {
+            "defendRange": 50.0
+        },
+        "BNIENJNLAIJ": {
+            "3": {
+                "NOKKDDHKGAK": "OnAlert",
+                "IKMCLKEPDFP": "OnAlert",
+                "NOPNCNPCPJE": "",
+                "LLNBBNIEGGO": true,
+                "IDPMFPAPNCE": false,
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "Alert"
+                ],
+                "PGPDNPMFFAG": "10",
+                "CCEAGFDONFH": "01",
+                "OKOFHICILMD": "10",
+                "CCFFFOIDOLP": "11"
+            },
+            "101": {
+                "NOKKDDHKGAK": "WaterWave",
+                "ENKLFBHHOJI": {
+                    "CEKMINILIFB": [
+                        101
+                    ],
+                    "MLFAMHDFHMM": 20.0
+                },
+                "cd": 5.0,
+                "GPMLADFJAAH": 5.0,
+                "NOPNCNPCPJE": "Oceanid_rangedAttack",
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "WaterWave"
+                ],
+                "PGPDNPMFFAG": "11",
+                "CCEAGFDONFH": "01",
+                "OKOFHICILMD": "11",
+                "CCFFFOIDOLP": "11"
+            },
+            "201": {
+                "NOKKDDHKGAK": "JumpAtk",
+                "ENKLFBHHOJI": {
+                    "CEKMINILIFB": [
+                        101
+                    ],
+                    "MLFAMHDFHMM": 30.0
+                },
+                "cd": 5.0,
+                "GPMLADFJAAH": 7.5,
+                "LKCFDIOMLCM": 3.0,
+                "NOPNCNPCPJE": "Oceanid_meleeAttack_long",
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "JumpAtk"
+                ],
+                "PGPDNPMFFAG": "11",
+                "CCEAGFDONFH": "01",
+                "OKOFHICILMD": "11",
+                "CCFFFOIDOLP": "11"
+            }
+        },
+        "EMBHEEALPLD": 3.0,
+        "combatFixedMoveTactic": [
+            {
+                "$type": "BBIOKOJBHFG",
+                "enable": true,
+                "defaultSetting": {
+                    "KIHPEPHJMOG": 1,
+                    "triggerDistance": 4.0,
+                    "fleeAngle": 75.0,
+                    "fleeDistanceMin": 3.0,
+                    "fleeDistanceMax": 5.0,
+                    "NLEBDDJGDAA": 0.5,
+                    "JOCOJHEICNA": ""
+                }
+            },
+            {
+                "$type": "BNAGECKMCIB",
+                "enable": true,
+                "FJANPNOAAFK": {
+                    "CEKMINILIFB": [
+                        101
+                    ]
+                },
+                "defaultSetting": {
+                    "KIHPEPHJMOG": 1,
+                    "MPEMBMLOEDG": 12.5,
+                    "IJLGPEJGLEH": 99.0,
+                    "JKOGPCLFHCP": 7.5,
+                    "IHCAFCNDANA": 7.5,
+                    "OBDJFHBHOMP": 0,
+                    "JOCOJHEICNA": ""
+                }
+            },
+            {
+                "$type": "KMHBGMELMKD",
+                "enable": true,
+                "defaultSetting": {
+                    "KIHPEPHJMOG": 1,
+                    "JOCOJHEICNA": "",
+                    "DBIELIMGBMC": ""
+                }
+            },
+            {
+                "$type": "GGKADEIBMLG",
+                "enable": true,
+                "FJANPNOAAFK": {
+                    "CEKMINILIFB": [
+                        2
+                    ]
+                },
+                "defaultSetting": {
+                    "JIFJFPJANHO": 20.0,
+                    "CBKHBGCPFBG": 10.0,
+                    "EKDHNAGGGAE": 10.0,
+                    "BFEJAKFKKFP": 1.5,
+                    "KOAMKCEFJED": 3.0,
+                    "JOCOJHEICNA": ""
+                }
+            }
+        ]
+    },
+    "GIBHCHHOJFI": [
+        {
+            "NPDDCIDNKMH": 101,
+            "KCAOBJOPJIC": 257,
+            "abilityName": ""
+        },
+        {
+            "NPDDCIDNKMH": 201,
+            "KCAOBJOPJIC": 258,
+            "abilityName": ""
+        }
+    ],
+    "move": {
+        "$type": "IIGPJJNGCLE",
+        "EIEIGIPKLAO": {
+            "BIHHLCBMOAH": [
+                "RushMoveType"
+            ]
+        },
+        "MEKENCHCEEN": false,
+        "MLKCNHIIMCE": true,
+        "FACNOEFNHIB": "RootNode"
+    }
+}

@@ -1,0 +1,974 @@
+{
+    "common": {
+        "effectAttachShape": {
+            "$type": "ConfigEffectAttachSkinnedMesh",
+            "mesh": "EffectMesh"
+        },
+        "mass": 30.0,
+        "height": 1.600000023841858,
+        "INNNMDJACOJ": 1.7000000476837158,
+        "affectedByWorld": true,
+        "checkInSurface": true,
+        "useGrassDisplacement": true,
+        "BKPPECPBMBF": true,
+        "LOGFKHMLOOL": true
+    },
+    "LBGLCHLIKJP": {
+        "$type": "NJIKCGBDNDF",
+        "HONCKGMDJEK": true,
+        "IKIJCPNMBHI": 60.0,
+        "FMKKBCJKMPH": 30.0,
+        "FDPCOFKGCHG": [
+            "NormalIdle/Standby",
+            "NormalMove/WalkForward",
+            "NormalMove/WalkBack",
+            "NormalMove/WalkRight",
+            "NormalMove/WalkLeft",
+            "NormalMove/Run",
+            "Turn/TurnLeft",
+            "Turn/TurnRight"
+        ]
+    },
+    "model": {
+        "bornEffect": "Eff_Monster_Common_Born",
+        "attachEffect": ""
+    },
+    "MEMHBNEJBCL": {
+        "PJBCJPKPOLB": 1.0
+    },
+    "combat": {
+        "property": {
+            "endureType": "Monster_Minion",
+            "weight": 70.0
+        },
+        "beHit": {
+            "hitBloodEffect": ""
+        },
+        "combatLock": {
+            "lockShape": "CircleLockEnemy",
+            "lockType": "Avatar&Monster_Lv4"
+        },
+        "die": {
+            "hasAnimatorDie": true,
+            "dieEndTime": 4.0,
+            "dieForceDisappearTime": 15.0,
+            "dieDisappearEffect": "",
+            "AHGCGJLAMJJ": true,
+            "ragDollDieEndTimeDelay": 15.0,
+            "LEDBOLGDENF": true,
+            "IEAKKMEDNDE": true,
+            "AAEANOPIAAL": true,
+            "IBBHGBHIHCI": true,
+            "BKIBMIAJOHP": true,
+            "MOFPBPPGPCL": true
+        }
+    },
+    "EOGPAIHDBFM": {
+        "EMHOEGGEKMH": "",
+        "JLFHFMOAFHP": {
+            "equip01": "WeaponR",
+            "equip02": "WeaponL"
+        }
+    },
+    "abilities": [
+        {
+            "abilityID": "Alert",
+            "abilityName": "Thoarder_Alert",
+            "abilityOverride": "",
+            "OLLMEBCBAOE": true
+        },
+        {
+            "abilityID": "SteerAttack",
+            "abilityName": "Thoarder_Male_Crossbow_SteerAttack",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "ShootArrow_WithRandom",
+            "abilityName": "Thoarder_Male_Crossbow_ShootArrow_WithRandom",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "WeaponOnBack",
+            "abilityName": "Thoarder_WeaponOnBack",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "DrawWeapon",
+            "abilityName": "Thoarder_DrawWeapon",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "SheathWeapon",
+            "abilityName": "Thoarder_SheathWeapon",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "HideWeapon",
+            "abilityName": "Thoarder_HideWeapon",
+            "abilityOverride": ""
+        },
+        {
+            "abilityID": "SpecialsState_Weapon",
+            "abilityName": "Thoarder_SpecialsState_Weapon",
+            "abilityOverride": "",
+            "OLLMEBCBAOE": true
+        },
+        {
+            "abilityID": "ReturnToBorn",
+            "abilityName": "Thoarder_ReturnToBorn",
+            "abilityOverride": "",
+            "OLLMEBCBAOE": true
+        },
+        {
+            "abilityID": "SteerMove",
+            "abilityName": "Thoarder_SteerMove",
+            "abilityOverride": ""
+        }
+    ],
+    "stateLayers": {
+        "defaultLayer": {
+            "$type": "ConfigNormalStateLayer",
+            "ACOCIAFGIAD": "",
+            "stateIDs": {
+                "NormalIdle": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Standby": [],
+                        "Born": []
+                    },
+                    "canDoSkill": true,
+                    "canSyncMove": true,
+                    "resetAnimatorTriggerOnExit": [
+                        "DoSkill"
+                    ]
+                },
+                "NormalMove": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "WalkForward": [
+                            "Audio_Monster_Thoarder_Crossbow_Walk"
+                        ],
+                        "WalkBack": [
+                            "Audio_Monster_Thoarder_Crossbow_Walk"
+                        ],
+                        "WalkRight": [
+                            "Audio_Monster_Thoarder_Crossbow_Walk"
+                        ],
+                        "WalkLeft": [
+                            "Audio_Monster_Thoarder_Crossbow_Walk"
+                        ],
+                        "Run": [
+                            "Audio_Monster_Thoarder_Crossbow_Run"
+                        ]
+                    },
+                    "canDoSkill": true,
+                    "canSyncMove": true,
+                    "resetAnimatorTriggerOnExit": [
+                        "DoSkill"
+                    ],
+                    "LIPMJPLGIKD": true
+                },
+                "Turn": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "TurnLeft": [
+                            "Audio_Monster_Thoarder_Crossbow_Walk"
+                        ],
+                        "TurnRight": [
+                            "Audio_Monster_Thoarder_Crossbow_Walk"
+                        ]
+                    },
+                    "canDoSkill": true,
+                    "canSyncMove": true,
+                    "resetAnimatorTriggerOnExit": [
+                        "DoSkill"
+                    ],
+                    "LIPMJPLGIKD": true
+                },
+                "BeHit": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Hit_L": [
+                            "Audio_Monster_Thoarder_Crossbow_Normal_Hit_L_NOVO"
+                        ],
+                        "Hit_H": [
+                            "Audio_Monster_Thoarder_Crossbow_Normal_Hit_H_NOVO"
+                        ]
+                    },
+                    "AJBLILDCLBO": [
+                        "BeHit"
+                    ],
+                    "resetAnimatorTriggerOnExit": [
+                        "DoSkill"
+                    ]
+                },
+                "BeHitThrow": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "HitThrow": [],
+                        "HitThrowDrop": [],
+                        "HitThrowToGround": [
+                            "Audio_Monster_Thoarder_Crossbow_Normal_HitThrowToGround_NOVO"
+                        ]
+                    },
+                    "AJBLILDCLBO": [
+                        "BeHit",
+                        "HitAir2HitDrop"
+                    ],
+                    "resetAnimatorTriggerOnExit": [
+                        "DoSkill"
+                    ]
+                },
+                "Struggle": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Struggle": []
+                    },
+                    "AJBLILDCLBO": [
+                        "BeHit",
+                        "HitAir2HitDrop"
+                    ],
+                    "resetAnimatorTriggerOnExit": [
+                        "DoSkill"
+                    ]
+                },
+                "Die": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Die1": [
+                            "Monster_Thoarder_Male_Crossbow_Die",
+                            "Audio_Monster_Thoarder_Crossbow_Normal_Die_NOVO"
+                        ],
+                        "Die2": [
+                            "Monster_Thoarder_Male_Crossbow_Die",
+                            "Audio_Monster_Thoarder_Crossbow_Normal_Die_NOVO"
+                        ],
+                        "SwimDie": [
+                            "Audio_Monster_Thoarder_NoWeapon_SwimDie"
+                        ],
+                        "SwimDie_AS": [
+                            "Monster_Thoarder_Common_SwimDie",
+                            "Audio_Monster_Thoarder_NoWeapon_SwimDie"
+                        ]
+                    },
+                    "AJBLILDCLBO": [
+                        "DoSkill"
+                    ]
+                },
+                "Die_RagDoll": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "AirDie": [
+                            "Monster_Thoarder_Common_AirDie",
+                            "Audio_Monster_Thoarder_Crossbow_Normal_Die_NOVO"
+                        ]
+                    },
+                    "AJBLILDCLBO": [
+                        "DoSkill"
+                    ],
+                    "CPOLOGIELCD": true
+                },
+                "Life_Alert": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Alert": [
+                            "Audio_Monster_Thoarder_Crossbow_Normal_Alert_NOVO"
+                        ]
+                    },
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "Life_Warning": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Warning": [
+                            "Monster_Undead01_Warning",
+                            "Monster_Thoarder_Alert",
+                            "Audio_Monster_Thoarder_NoWeapon_Knife_Alert_NOVO"
+                        ],
+                        "Alert_Armed": [
+                            "Monster_Undead01_Warning",
+                            "Monster_Thoarder_Alert",
+                            "Audio_Monster_Thoarder_NoWeapon_Knife_Alert_NOVO"
+                        ]
+                    },
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "Aim": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Aim": [
+                            "Audio_Monster_Thoarder_Crossbow_Aim"
+                        ]
+                    },
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "Shoot": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Shoot": [
+                            "Monster_Thoarder_Male_Crossbow_Shoot_WithRandom",
+                            "Audio_Monster_Thoarder_Crossbow_Normal_Shoot_NOVO"
+                        ]
+                    },
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "Armed": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "canDoSkill": true,
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "Think": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Think": []
+                    },
+                    "canDoSkill": true,
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "Search": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Search": []
+                    },
+                    "canDoSkill": true,
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "Sit": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Sit": []
+                    },
+                    "canDoSkill": true,
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "Sleep": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Sleep": []
+                    },
+                    "canDoSkill": true,
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "Chat": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Chat": []
+                    },
+                    "canDoSkill": true,
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "ChatFree01": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "ChatFree01_BS": [],
+                        "ChatFree01_Loop": [],
+                        "ChatFree01_AS": []
+                    },
+                    "canDoSkill": true,
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "Threat": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Threat": []
+                    },
+                    "canDoSkill": true,
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "ThreatFree01": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "ThreatFree01": []
+                    },
+                    "canDoSkill": true,
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "Laugh": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "Laugh": []
+                    },
+                    "canDoSkill": true,
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "LaughFree01": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "LaughFree01": []
+                    },
+                    "canDoSkill": true,
+                    "resetAnimatorTriggerOnExit": [
+                        "BeHit",
+                        "DoSkill"
+                    ]
+                },
+                "SheathWeapon": {
+                    "$type": "ConfigMonsterStateIDInfo",
+                    "animatorStates": {
+                        "SheathWeapon": [
+                            "Monster_Thoarder_SheathWeapon",
+                            "Audio_Monster_Thoarder_Crossbow_SheathWeapon"
+                        ]
+                    },
+                    "resetAnimatorTriggerOnExit": [
+                        "SheathWeaponTrigger"
+                    ]
+                }
+            }
+        }
+    },
+    "IEFGNHABHFH": {
+        "$type": "PAOBAEKGGBC",
+        "JBKMLLFNHAL": "BillboardAttach",
+        "NDKBHOOPGNA": {
+            "x": -0.05000000074505806
+        },
+        "EMFFJPOKEKF": "Character",
+        "LOMMBJLKPHE": 0.25,
+        "KGHAGECNJPO": true
+    },
+    "initialPoses": {
+        "Default": {},
+        "FixedPos": {
+            "initialPoseID": 2,
+            "initialPoseParams": {
+                "boolParams": {
+                    "FixedPos": "true"
+                }
+            }
+        },
+        "FixedPosArmed": {
+            "initialPoseID": 3,
+            "initialPoseParams": {
+                "boolParams": {
+                    "FixedPosArmed": "true"
+                }
+            }
+        },
+        "Armed": {
+            "initialPoseID": 4,
+            "initialPoseParams": {
+                "boolParams": {
+                    "Armed": "true"
+                }
+            }
+        },
+        "Think": {
+            "initialPoseID": 9002,
+            "initialPoseParams": {
+                "boolParams": {
+                    "Think": "true"
+                }
+            }
+        },
+        "Search": {
+            "initialPoseID": 9003,
+            "initialPoseParams": {
+                "boolParams": {
+                    "Search": "true"
+                }
+            }
+        },
+        "Sit": {
+            "initialPoseID": 9004,
+            "initialPoseParams": {
+                "boolParams": {
+                    "Sit": "true"
+                }
+            }
+        },
+        "Sleep": {
+            "initialPoseID": 9005,
+            "initialPoseParams": {
+                "boolParams": {
+                    "Sleep": "true"
+                }
+            }
+        },
+        "Chat": {
+            "initialPoseID": 9006,
+            "initialPoseParams": {
+                "boolParams": {
+                    "Chat": "true"
+                }
+            }
+        },
+        "Threat": {
+            "initialPoseID": 9007,
+            "initialPoseParams": {
+                "boolParams": {
+                    "Threat": "true"
+                }
+            }
+        },
+        "Laugh": {
+            "initialPoseID": 9009,
+            "initialPoseParams": {
+                "boolParams": {
+                    "Laugh": "true"
+                }
+            }
+        }
+    },
+    "aibeta": {
+        "enable": true,
+        "moveSetting": {
+            "navMeshAgentName": "Undead01",
+            "NNPOPGCMKBH": 1.5
+        },
+        "sensing": {
+            "settings": {
+                "DefaultSetting": {
+                    "feelRange": 8.0
+                },
+                "HighAlert": {
+                    "PHDIIPOBJGA": 40.0,
+                    "feelRange": 10.0
+                },
+                "LowAlert": {
+                    "PHDIIPOBJGA": 10.0
+                },
+                "Sleep": {
+                    "PHDIIPOBJGA": 0.0,
+                    "feelRange": 3.0
+                },
+                "Patrol": {
+                    "PHDIIPOBJGA": 25.0,
+                    "COENEFGMPFK": 60.0,
+                    "feelRange": 8.0
+                }
+            },
+            "templates": {
+                "DefaultTemplate": {
+                    "DefaultPoses": "DefaultSetting",
+                    "9002": "LowAlert",
+                    "9003": "LowAlert",
+                    "9004": "LowAlert",
+                    "9005": "Sleep",
+                    "9006": "LowAlert",
+                    "9007": "LowAlert",
+                    "9009": "LowAlert"
+                },
+                "HighAlertTemplate": {
+                    "DefaultPoses": "HighAlert",
+                    "9002": "DefaultSetting",
+                    "9003": "DefaultSetting",
+                    "9004": "DefaultSetting",
+                    "9005": "Sleep",
+                    "9006": "DefaultSetting",
+                    "9007": "DefaultSetting",
+                    "9009": "DefaultSetting"
+                },
+                "PatrolTemplate": {
+                    "DefaultPoses": "Patrol"
+                }
+            }
+        },
+        "neurons": {
+            "DefaultSetting": [
+                "HIT"
+            ]
+        },
+        "threat": {
+            "DMBNEKAFACI": true,
+            "clearThreatTimerByDistance": 3.0,
+            "BJLBMJLOPIP": [
+                {
+                    "LFALGCACJOF": 10.0,
+                    "IOHOACGNJHO": 2.0
+                },
+                {
+                    "LFALGCACJOF": 15.0,
+                    "IOHOACGNJHO": 0.800000011920929
+                },
+                {
+                    "LFALGCACJOF": 20.0,
+                    "IOHOACGNJHO": 0.5
+                },
+                {
+                    "LFALGCACJOF": 25.0,
+                    "IOHOACGNJHO": 0.30000001192092896
+                },
+                {
+                    "LFALGCACJOF": 30.0,
+                    "IOHOACGNJHO": 0.20000000298023224
+                }
+            ],
+            "JGFOPCOIJOI": ""
+        },
+        "defendArea": {},
+        "profiling": {},
+        "IEMFHBCDJFP": [
+            {
+                "BIMBEJCAFLP": 1,
+                "DIAPGOFDGLC": 7.0
+            },
+            {
+                "BIMBEJCAFLP": 2,
+                "DIAPGOFDGLC": 3.0
+            }
+        ],
+        "BNIENJNLAIJ": {
+            "101": {
+                "NOKKDDHKGAK": "OnAlert",
+                "IKMCLKEPDFP": "OnAlert",
+                "HAOJJHNOGHO": true,
+                "ENKLFBHHOJI": {
+                    "CEKMINILIFB": [
+                        1,
+                        2,
+                        9002,
+                        9003,
+                        9004,
+                        9005,
+                        9006,
+                        9009
+                    ]
+                },
+                "NOPNCNPCPJE": "",
+                "LLNBBNIEGGO": true,
+                "IDPMFPAPNCE": false,
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "Life_Warning"
+                ],
+                "NNJBOCFBGJG": 3.0,
+                "PGPDNPMFFAG": "10",
+                "CCEAGFDONFH": "01",
+                "OKOFHICILMD": "10",
+                "CCFFFOIDOLP": "11"
+            },
+            "103": {
+                "NOKKDDHKGAK": "OnAlert_Armed",
+                "IKMCLKEPDFP": "OnAlert",
+                "HAOJJHNOGHO": true,
+                "ENKLFBHHOJI": {
+                    "CEKMINILIFB": [
+                        3,
+                        4,
+                        9007
+                    ]
+                },
+                "NOPNCNPCPJE": "",
+                "LLNBBNIEGGO": true,
+                "IDPMFPAPNCE": false,
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "Life_Warning"
+                ],
+                "NNJBOCFBGJG": 3.0,
+                "PGPDNPMFFAG": "10",
+                "CCEAGFDONFH": "01",
+                "OKOFHICILMD": "10",
+                "CCFFFOIDOLP": "11"
+            },
+            "301": {
+                "NOKKDDHKGAK": "Shoot",
+                "OFLMMKCAHKM": "RangedAttack",
+                "HAOJJHNOGHO": true,
+                "ENKLFBHHOJI": {
+                    "CEKMINILIFB": [
+                        1001,
+                        1002
+                    ],
+                    "MLFAMHDFHMM": 15.0
+                },
+                "cd": 3.5,
+                "NOPNCNPCPJE": "",
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "Aim",
+                    "Shoot"
+                ],
+                "PGPDNPMFFAG": "10",
+                "CCEAGFDONFH": "01",
+                "OKOFHICILMD": "10",
+                "CCFFFOIDOLP": "11"
+            },
+            "302": {
+                "NOKKDDHKGAK": "Shoot",
+                "OFLMMKCAHKM": "RangedAttack",
+                "HAOJJHNOGHO": true,
+                "ENKLFBHHOJI": {
+                    "CEKMINILIFB": [
+                        1001,
+                        1002
+                    ],
+                    "MLFAMHDFHMM": 45.0
+                },
+                "cd": 3.5,
+                "NOPNCNPCPJE": "",
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "Aim",
+                    "Shoot"
+                ],
+                "PGPDNPMFFAG": "10",
+                "CCEAGFDONFH": "01",
+                "OKOFHICILMD": "01",
+                "CCFFFOIDOLP": "11"
+            },
+            "303": {
+                "NOKKDDHKGAK": "Shoot",
+                "OFLMMKCAHKM": "RangedAttack",
+                "HAOJJHNOGHO": true,
+                "ENKLFBHHOJI": {
+                    "CEKMINILIFB": [
+                        1001,
+                        1002
+                    ],
+                    "MLFAMHDFHMM": 45.0
+                },
+                "cd": 3.5,
+                "NOPNCNPCPJE": "",
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "Aim",
+                    "Shoot"
+                ],
+                "PGPDNPMFFAG": "01",
+                "CCEAGFDONFH": "01",
+                "OKOFHICILMD": "10",
+                "CCFFFOIDOLP": "11"
+            },
+            "304": {
+                "NOKKDDHKGAK": "Shoot",
+                "OFLMMKCAHKM": "RangedAttack",
+                "HAOJJHNOGHO": true,
+                "ENKLFBHHOJI": {
+                    "CEKMINILIFB": [
+                        1001,
+                        1002
+                    ],
+                    "MLFAMHDFHMM": 45.0
+                },
+                "cd": 3.5,
+                "NOPNCNPCPJE": "",
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "Aim",
+                    "Shoot"
+                ],
+                "PGPDNPMFFAG": "01",
+                "CCEAGFDONFH": "01",
+                "OKOFHICILMD": "01",
+                "CCFFFOIDOLP": "11"
+            },
+            "90061": {
+                "NOKKDDHKGAK": "ChatFree01",
+                "IKMCLKEPDFP": "Free",
+                "ENKLFBHHOJI": {
+                    "CEKMINILIFB": [
+                        9006
+                    ]
+                },
+                "cd": 6.0,
+                "GPMLADFJAAH": 15.0,
+                "LKCFDIOMLCM": 5.0,
+                "KKAEGIJIDLG": 6.0,
+                "NOPNCNPCPJE": "",
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "ChatFree01"
+                ],
+                "PGPDNPMFFAG": "10",
+                "CCEAGFDONFH": "01",
+                "OKOFHICILMD": "10",
+                "CCFFFOIDOLP": "11"
+            },
+            "90071": {
+                "NOKKDDHKGAK": "ThreatFree01",
+                "IKMCLKEPDFP": "Free",
+                "ENKLFBHHOJI": {
+                    "CEKMINILIFB": [
+                        9007
+                    ]
+                },
+                "cd": 6.0,
+                "GPMLADFJAAH": 15.0,
+                "LKCFDIOMLCM": 5.0,
+                "KKAEGIJIDLG": 5.0,
+                "NOPNCNPCPJE": "",
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "ThreatFree01"
+                ],
+                "PGPDNPMFFAG": "10",
+                "CCEAGFDONFH": "01",
+                "OKOFHICILMD": "10",
+                "CCFFFOIDOLP": "11"
+            },
+            "90091": {
+                "NOKKDDHKGAK": "LaughFree01",
+                "IKMCLKEPDFP": "Free",
+                "ENKLFBHHOJI": {
+                    "CEKMINILIFB": [
+                        9009
+                    ]
+                },
+                "cd": 5.0,
+                "GPMLADFJAAH": 5.0,
+                "LKCFDIOMLCM": 3.0,
+                "KKAEGIJIDLG": 5.0,
+                "NOPNCNPCPJE": "",
+                "HGAMDGAEIGO": "",
+                "stateIDs": [
+                    "LaughFree01"
+                ],
+                "PGPDNPMFFAG": "10",
+                "CCEAGFDONFH": "01",
+                "OKOFHICILMD": "10",
+                "CCFFFOIDOLP": "11"
+            }
+        },
+        "EMBHEEALPLD": 3.0,
+        "combatFixedMoveTactic": [
+            {
+                "$type": "DIIPKNMAPAC",
+                "enable": true,
+                "FJANPNOAAFK": {
+                    "CEKMINILIFB": [
+                        1001
+                    ]
+                },
+                "defaultSetting": {
+                    "AGCMPDABMIA": 5.0,
+                    "GDPAONNEBCO": 30.0,
+                    "MMKHHBIBJEN": {
+                        "GECJAGFGHKL": 3.0,
+                        "GEECPOOOMFC": 0.5,
+                        "JNJFKLDABCB": 0.5,
+                        "BEJLOBBENJJ": 0.5
+                    },
+                    "HEGPGPBKGFH": "1111",
+                    "AFCLIFKCEKM": "1111",
+                    "JOCOJHEICNA": ""
+                }
+            },
+            {
+                "$type": "NCHKIPKMCLC",
+                "enable": true,
+                "FJANPNOAAFK": {
+                    "CEKMINILIFB": [
+                        1,
+                        4
+                    ]
+                }
+            },
+            {
+                "$type": "BNAGECKMCIB",
+                "enable": true,
+                "FJANPNOAAFK": {
+                    "CEKMINILIFB": [
+                        1001
+                    ]
+                },
+                "defaultSetting": {
+                    "IJLGPEJGLEH": 50.0,
+                    "JKOGPCLFHCP": 8.0,
+                    "IHCAFCNDANA": 10.0,
+                    "JOCOJHEICNA": ""
+                }
+            },
+            {
+                "$type": "KMHBGMELMKD",
+                "enable": true,
+                "defaultSetting": {
+                    "JOCOJHEICNA": "",
+                    "DBIELIMGBMC": ""
+                }
+            },
+            {
+                "$type": "GGKADEIBMLG",
+                "enable": true,
+                "FJANPNOAAFK": {
+                    "CEKMINILIFB": [
+                        1,
+                        4
+                    ]
+                },
+                "defaultSetting": {
+                    "JIFJFPJANHO": 3.0,
+                    "CBKHBGCPFBG": 1.5,
+                    "EKDHNAGGGAE": 15.0,
+                    "BFEJAKFKKFP": 3.75,
+                    "KOAMKCEFJED": 7.5,
+                    "JOCOJHEICNA": ""
+                }
+            }
+        ]
+    },
+    "GIBHCHHOJFI": [
+        {
+            "NPDDCIDNKMH": 301,
+            "KCAOBJOPJIC": 257,
+            "abilityName": ""
+        }
+    ],
+    "move": {
+        "$type": "IIGPJJNGCLE",
+        "MIPNOGBEANL": "FourDirection",
+        "BEPOPLDKJOP": "StoopType",
+        "FACNOEFNHIB": "RootNode"
+    },
+    "BEGHJJDCLLK": {
+        "KEEAIACIJBN": "",
+        "JIOEGJGNLEC": {},
+        "ILECIBOLHCO": {
+            "KMNBEAJOBPE": ""
+        },
+        "KMDKAEHLABB": {
+            "KMNBEAJOBPE": ""
+        },
+        "LODBOFAJFGC": {
+            "KMNBEAJOBPE": ""
+        },
+        "MPBLDCMJJLE": [
+            {
+                "KMNBEAJOBPE": ""
+            }
+        ]
+    }
+}

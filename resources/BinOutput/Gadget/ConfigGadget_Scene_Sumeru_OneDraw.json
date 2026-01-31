@@ -1,0 +1,172 @@
+{
+    "SceneObj_Area_Xm_Property_Ani_Flower_PlantDrawStart_01": {
+        "$type": "ConfigGadget",
+        "hasModel": true,
+        "combatTemplate": "default",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "SceneObj_Area_Xm_Property_Ani_Flower_PlantDrawStart_01_Ability",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "",
+                "abilityName": "Scene_RockGadget_Summon_Detect",
+                "abilityOverride": ""
+            }
+        ],
+        "field": {
+            "concernType": "CombatExcludeGWGO",
+            "shape": "",
+            "PMOHIIJOLNG": "",
+            "triggerInfinite": true,
+            "lifeInfinite": true,
+            "overwriteCampType": true,
+            "campType": "All",
+            "JHEKALHPHBK": "",
+            "JFLLEDMCPLF": ""
+        },
+        "MFKPHCFMEJF": {
+            "NNKFJFIJEGD": [
+                {
+                    "$type": "DKAGMDFBKFG",
+                    "intID": "GadgetState",
+                    "BNBNPANFDGD": true
+                }
+            ]
+        }
+    },
+    "SceneObj_Area_Xm_Property_Ani_Flower_PlantDraw_01": {
+        "$type": "ConfigGadget",
+        "hasModel": true,
+        "combatTemplate": "default",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "SceneObj_Area_Xm_Property_Ani_Flower_PlantDraw_01_Ability",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "",
+                "abilityName": "Scene_RockGadget_Summon_Detect",
+                "abilityOverride": ""
+            }
+        ],
+        "field": {
+            "concernType": "CombatExcludeGWGO",
+            "shape": "",
+            "PMOHIIJOLNG": "",
+            "triggerInfinite": true,
+            "lifeInfinite": true,
+            "overwriteCampType": true,
+            "campType": "All",
+            "JHEKALHPHBK": "",
+            "JFLLEDMCPLF": ""
+        },
+        "MFKPHCFMEJF": {
+            "NNKFJFIJEGD": [
+                {
+                    "$type": "DKAGMDFBKFG",
+                    "intID": "GadgetState",
+                    "BNBNPANFDGD": true
+                }
+            ]
+        }
+    },
+    "SceneObj_Area_Xm_Property_Ani_Flower_PlantDrawTree_01": {
+        "$type": "ConfigGadget",
+        "hasModel": true,
+        "combatTemplate": "default",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "SceneObj_Area_Xm_Property_Ani_Flower_PlantDrawTree_01_Ability",
+                "abilityOverride": ""
+            },
+            {
+                "abilityID": "",
+                "abilityName": "Scene_RockGadget_Summon_Detect",
+                "abilityOverride": ""
+            }
+        ],
+        "EOLFAMFPCOL": {
+            "AOGIJKALGNB": "TEST/TEST_Chest_Btn",
+            "DLLLIKCMJMP": "UI_VANASARA_GARDEN_BUTTON",
+            "IGMHLCNPBHI": "WidgetMPSupport",
+            "FGAFOJBEILG": [
+                "SceneObj_Area_Xm_Property_Ani_Flower_PlantDrawTree_01_Ability"
+            ],
+            "icon": "",
+            "GEALIGKGCBF": "",
+            "NFJICIGABPE": "",
+            "MIHHAGGNIIO": ""
+        },
+        "PPLJLLCBMEC": {}
+    },
+    "SceneObj_Area_Xm_Property_Unique_PlantDraw_02": {
+        "$type": "ConfigGadget",
+        "combatTemplate": "default",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "SceneObj_Area_Xm_Property_Unique_PlantDraw_02_Ability",
+                "abilityOverride": ""
+            }
+        ],
+        "MFKPHCFMEJF": {
+            "NNKFJFIJEGD": [
+                {
+                    "$type": "DKAGMDFBKFG",
+                    "intID": "gadgetState",
+                    "BNBNPANFDGD": true
+                }
+            ]
+        }
+    },
+    "SceneObj_Area_Xm_Property_Ani_Prop_Whiteballet_01_Special": {
+        "$type": "ConfigGadget",
+        "hasModel": true,
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "SceneObj_Area_Xm_Property_Ani_Prop_Whiteballet_01_Special_Ability",
+                "abilityOverride": ""
+            }
+        ],
+        "CFEIPLEGNFH": {
+            "KJKBBDBDBGN": {
+                "CNALECPIIHD": "Select",
+                "OLHFFEDLJGN": true,
+                "bornEffect": "",
+                "EJFBGNGILJB": "",
+                "MPJFHDHPAEA": ""
+            },
+            "APJGLOKDMCN": ""
+        },
+        "KINALCPOMHK": true
+    },
+    "SceneObj_Area_Xm_Property_Ani_Prop_XmFarm_01": {
+        "$type": "ConfigGadget",
+        "hasModel": true,
+        "combatTemplate": "default",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "SceneObj_Area_Xm_Property_Ani_Prop_XmFarm_01_Ability",
+                "abilityOverride": ""
+            }
+        ],
+        "EOLFAMFPCOL": {
+            "AOGIJKALGNB": "TEST/TEST_Chest_Btn",
+            "DLLLIKCMJMP": "",
+            "icon": "UI_Icon_Intee_PickUp",
+            "GEALIGKGCBF": "",
+            "NFJICIGABPE": "",
+            "MIHHAGGNIIO": ""
+        },
+        "PPLJLLCBMEC": {
+            "OONMLKGDJOL": 1.5
+        }
+    }
+}

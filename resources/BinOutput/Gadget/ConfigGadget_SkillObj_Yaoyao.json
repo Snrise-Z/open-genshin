@@ -1,0 +1,880 @@
+{
+    "Yaoyao_ExtraAttack_Bullet": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            }
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isInvincible": true,
+                "isGhostToAllied": true,
+                "isGhostToEnemy": true,
+                "ignorePurgeRate": false
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "Avatar_Yaoyao_ExtraAttack_Bullet",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 1.0
+        },
+        "move": {
+            "$type": "DKAMCGDMNKI",
+            "attachPoint": "",
+            "followRotation": true,
+            "offset": {
+                "y": 0.8999999761581421
+            },
+            "JGFLINDOJDF": {
+                "z": 1.0
+            },
+            "HMPJAIBPNND": ""
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "ccd": {
+                    "type": "Always"
+                },
+                "triggerType": "TriggerNoRepeat",
+                "targetType": "Enemy",
+                "ignoreScene": true
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Avatar_Yaoyao_ExtraAttack_Bullet"
+                }
+            ]
+        }
+    },
+    "Avatar_Yaoyao_Turnip_Bullet": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "CPGMBCECPEN": 0.4000000059604645
+            },
+            "mass": 5.0,
+            "affectedByWorld": true,
+            "checkInSurface": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isLockHP": true,
+                "isGhostToAllied": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "Avatar_Yaoyao_Turnip_Bullet",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 5.0
+        },
+        "move": {
+            "$type": "JMFMBHDPAFJ",
+            "MPMOPIIFDPO": {
+                "muteAll": true
+            },
+            "speed": 20.0,
+            "AFIKDKDFKCJ": 5.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "LDOEEHMFPHN": 45.0,
+            "IPBPLMGOJKC": 45.0,
+            "delayTime": 0.20000000298023224,
+            "ABFGDKPLNGH": 0.30000001192092896,
+            "IJLBDIGEEHE": 4.0
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "ccd": {
+                    "type": "Always"
+                },
+                "triggerCD": 0.10000000149011612,
+                "targetType": "AllExceptSelf",
+                "bornWithTriggerEnabled": false
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Avatar_Yaoyao_Turnip_Bullet"
+                }
+            ],
+            "JHKBLJLPGEB": true,
+            "ENBJBDDCLMC": 0.15000000596046448,
+            "AEMONPKLPOP": true,
+            "PGHEFGJADMG": true
+        }
+    },
+    "Avatar_Yaoyao_Turnip_Bullet_Parabola": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "CPGMBCECPEN": 0.4000000059604645
+            },
+            "mass": 5.0,
+            "affectedByWorld": true,
+            "checkInSurface": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isLockHP": true,
+                "isGhostToAllied": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "AHCOGNAHOOF": {
+            "lifeTime": 5.0
+        },
+        "move": {
+            "$type": "FHJABLDOPCE",
+            "speed": 15.0,
+            "AFIKDKDFKCJ": 5.0,
+            "LDOEEHMFPHN": 55.0,
+            "IPBPLMGOJKC": 45.0
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "ccd": {
+                    "type": "Always"
+                },
+                "triggerCD": 0.10000000149011612,
+                "targetType": "AllExceptSelf",
+                "bornWithTriggerEnabled": false
+            },
+            "JHKBLJLPGEB": true,
+            "ENBJBDDCLMC": 0.20000000298023224,
+            "AEMONPKLPOP": true,
+            "PGHEFGJADMG": true
+        }
+    },
+    "Avatar_Yaoyao_Turnip": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isLockHP": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "Avatar_Yaoyao_Turnip",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 16.0
+        },
+        "move": {
+            "$type": "KPCHGIMLNOF",
+            "MPMOPIIFDPO": {
+                "includeForces": [
+                    "WindZoneType",
+                    "RetreatType",
+                    "RetreatAirType"
+                ]
+            },
+            "CFMOMNBLFLJ": false
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "Enemy",
+                "ignoreScene": true
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Avatar_Yaoyao_Turnip"
+                }
+            ]
+        }
+    },
+    "Avatar_Yaoyao_Golden_Turnip_Bullet": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "CPGMBCECPEN": 0.4000000059604645
+            },
+            "mass": 5.0,
+            "affectedByWorld": true,
+            "checkInSurface": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isLockHP": true,
+                "isGhostToAllied": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "Avatar_Yaoyao_Golden_Turnip_Bullet",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 5.0
+        },
+        "move": {
+            "$type": "JMFMBHDPAFJ",
+            "MPMOPIIFDPO": {
+                "muteAll": true
+            },
+            "speed": 15.0,
+            "GBPNCGHBJMC": 2900.0,
+            "AFIKDKDFKCJ": 20.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "KGGKADOKFII": 0.10000000149011612,
+            "LDOEEHMFPHN": 55.0,
+            "IPBPLMGOJKC": 45.0,
+            "delayTime": 0.20000000298023224,
+            "ABFGDKPLNGH": 0.30000001192092896,
+            "IJLBDIGEEHE": 4.0
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "ccd": {
+                    "type": "Always"
+                },
+                "triggerCD": 0.10000000149011612,
+                "targetType": "AllExceptSelf",
+                "bornWithTriggerEnabled": false
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Avatar_Yaoyao_Golden_Turnip_Bullet"
+                }
+            ],
+            "JHKBLJLPGEB": true,
+            "ENBJBDDCLMC": 0.20000000298023224,
+            "AEMONPKLPOP": true,
+            "PGHEFGJADMG": true
+        }
+    },
+    "Avatar_Yaoyao_Golden_Turnip": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isLockHP": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "Avatar_Yaoyao_Golden_Turnip",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 16.0
+        },
+        "move": {
+            "$type": "KPCHGIMLNOF",
+            "MPMOPIIFDPO": {
+                "includeForces": [
+                    "WindZoneType",
+                    "RetreatType",
+                    "RetreatAirType"
+                ]
+            },
+            "CFMOMNBLFLJ": false
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "targetType": "AllExceptSelf",
+                "ignoreScene": true
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Avatar_Yaoyao_Golden_Turnip"
+                }
+            ]
+        }
+    },
+    "Yaoyao_ElementalArt_Rabbit": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            },
+            "checkInSurface": true,
+            "enableCrashDamage": false
+        },
+        "model": {
+            "bornEffect": "",
+            "attachEffect": "",
+            "CEELLKAMKKG": true
+        },
+        "hasModel": true,
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "weight": 200.0,
+                "isLockHP": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "Avatar_Yaoyao_ElementalArt_Rabbit",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 12.0
+        },
+        "move": {
+            "$type": "KPCHGIMLNOF",
+            "MPMOPIIFDPO": {
+                "includeForces": [
+                    "RetreatType",
+                    "RetreatAirType",
+                    "WindZoneType"
+                ]
+            },
+            "CFMOMNBLFLJ": false
+        },
+        "stateLayers": {
+            "defaultLayer": {
+                "$type": "GMHKGJPLHFD",
+                "DLEKAADOFBI": "",
+                "stateIDs": {
+                    "Yaoyao_ElementalArt_Rabbit_Born": {
+                        "$type": "CCIEFDKKMLG",
+                        "DNPOFANDHPP": {
+                            "Born": []
+                        }
+                    },
+                    "Yaoyao_ElementalArt_Rabbit_Attack": {
+                        "$type": "CCIEFDKKMLG",
+                        "DNPOFANDHPP": {
+                            "Attack": [
+                                "Yaoyao_ElementalArt_Rabbit_Attack"
+                            ]
+                        },
+                        "CGNNAJLBEMJ": true,
+                        "IFANCOHKFJD": true
+                    }
+                }
+            }
+        },
+        "IBIGNBDDJMN": {
+            "PEHLMGCPELG": 1
+        }
+    },
+    "Yaoyao_ElementalArt_Rabbit_Throw": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isLockHP": true,
+                "isGhostToEnemy": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "Avatar_Yaoyao_ElementalArt_Rabbit_Throw",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 10.199999809265137
+        },
+        "move": {
+            "$type": "FHJABLDOPCE",
+            "speed": 18.0,
+            "JPDDBBHJAAH": true,
+            "IPBPLMGOJKC": 30.0,
+            "IKCALEGKAJK": true
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "ccd": {
+                    "type": "Always"
+                },
+                "targetType": "Enemy",
+                "ignoreWater": true
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Avatar_Yaoyao_ElementalArt_Rabbit_Throw"
+                }
+            ],
+            "ENBJBDDCLMC": 0.10000000149011612
+        }
+    },
+    "Yaoyao_ElementalArt_Rabbit_Throw_Short": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isLockHP": true,
+                "isGhostToEnemy": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "Avatar_Yaoyao_ElementalArt_Rabbit_Throw",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 10.199999809265137
+        },
+        "move": {
+            "$type": "FHJABLDOPCE",
+            "speed": 8.5,
+            "JPDDBBHJAAH": true,
+            "LDOEEHMFPHN": 60.0,
+            "IPBPLMGOJKC": 30.0
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "ccd": {
+                    "type": "Always"
+                },
+                "targetType": "Enemy",
+                "ignoreWater": true
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Avatar_Yaoyao_ElementalArt_Rabbit_Throw"
+                }
+            ],
+            "ENBJBDDCLMC": 0.10000000149011612
+        }
+    },
+    "Yaoyao_ElementalBurst_Rabbit": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            },
+            "checkInSurface": true,
+            "enableCrashDamage": false
+        },
+        "model": {
+            "bornEffect": "",
+            "attachEffect": "",
+            "CEELLKAMKKG": true
+        },
+        "hasModel": true,
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "weight": 200.0,
+                "isLockHP": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Gadget_Lv1"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "Avatar_Yaoyao_ElementalBurst_Rabbit",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 7.5
+        },
+        "move": {
+            "$type": "KPCHGIMLNOF",
+            "MPMOPIIFDPO": {
+                "includeForces": [
+                    "RetreatType",
+                    "RetreatAirType",
+                    "WindZoneType"
+                ]
+            }
+        },
+        "stateLayers": {
+            "defaultLayer": {
+                "$type": "GMHKGJPLHFD",
+                "DLEKAADOFBI": "",
+                "stateIDs": {
+                    "Yaoyao_ElementalArt_Rabbit_Idle": {
+                        "$type": "CCIEFDKKMLG",
+                        "DNPOFANDHPP": {
+                            "Idle": []
+                        }
+                    },
+                    "Yaoyao_ElementalArt_Rabbit_Attack": {
+                        "$type": "CCIEFDKKMLG",
+                        "DNPOFANDHPP": {
+                            "Attack": [
+                                "Yaoyao_ElementalBurst_Rabbit_Attack"
+                            ]
+                        },
+                        "IFANCOHKFJD": true
+                    }
+                }
+            }
+        },
+        "IBIGNBDDJMN": {
+            "PEHLMGCPELG": 1
+        }
+    },
+    "Yaoyao_ElementalBurst_Rabbit_Throw": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC",
+                "FCAGPAEOLPI": 2.4000000953674316,
+                "HOJBBPFJMIL": 2.4000000953674316,
+                "CPGMBCECPEN": 2.4000000953674316
+            },
+            "affectedByWorld": true
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isLockHP": true,
+                "isGhostToEnemy": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "Avatar_Yaoyao_ElementalBurst_Rabbit_Throw",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 3.0
+        },
+        "move": {
+            "$type": "FHJABLDOPCE",
+            "speed": 6.0,
+            "AFIKDKDFKCJ": 1.0,
+            "LHELNOJGENO": {
+                "$type": "CIOIIBOBLMD"
+            },
+            "IPBPLMGOJKC": 25.0
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "ccd": {
+                    "type": "Always"
+                },
+                "targetType": "Enemy",
+                "ignoreWater": true
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Avatar_Yaoyao_ElementalBurst_Rabbit_Throw"
+                }
+            ]
+        }
+    },
+    "Yaoyao_ElementalBurst_Rabbit_Throw_Pre": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            },
+            "enableCrashDamage": false
+        },
+        "model": {
+            "bornEffect": "",
+            "attachEffect": "",
+            "CEELLKAMKKG": true
+        },
+        "hasModel": true,
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isLockHP": true,
+                "isGhostToEnemy": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "Avatar_Yaoyao_ElementalBurst_Rabbit_Throw_Pre",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 1.5
+        },
+        "move": {
+            "$type": "DKAMCGDMNKI",
+            "attachPoint": "PRIVATE_Back",
+            "JHIDLJOPJML": true,
+            "DFBEHIFNJDB": 0.11999999731779099,
+            "JLAPPDLNLAN": 0.18000000715255737,
+            "HAKODFPHGPM": 0.11999999731779099,
+            "IALNCPBDMCB": 0.5,
+            "HMPJAIBPNND": ""
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "ccd": {
+                    "type": "Always"
+                },
+                "targetType": "Enemy",
+                "ignoreWater": true
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Avatar_Yaoyao_ElementalBurst_Rabbit_Throw_Pre"
+                }
+            ],
+            "JPNAMDFCBFN": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Avatar_Yaoyao_ElementalBurst_Rabbit_Throw_Pre"
+                }
+            ]
+        },
+        "IBIGNBDDJMN": {
+            "PEHLMGCPELG": 1
+        },
+        "PCADANJPFND": true
+    },
+    "Yaoyao_ElementalBurst_Rabbit_Throw_Pre_BulletTrigger": {
+        "$type": "ConfigGadget",
+        "common": {
+            "effectAttachShape": {
+                "$type": "FPGDAMEDKLC"
+            },
+            "enableCrashDamage": false
+        },
+        "combat": {
+            "property": {
+                "useCreatorProperty": true,
+                "isLockHP": true,
+                "isGhostToEnemy": true
+            },
+            "beHit": {
+                "hitBloodEffect": "",
+                "muteAllHit": true,
+                "muteAllHitEffect": true,
+                "muteAllHitText": true
+            },
+            "combatLock": {
+                "lockShape": "CircleLockEnemy",
+                "denyLockOn": true,
+                "lockType": "Default"
+            }
+        },
+        "combatTemplate": "",
+        "abilities": [
+            {
+                "abilityID": "",
+                "abilityName": "Avatar_Yaoyao_ElementalBurst_Rabbit_Throw_Pre_BulletTrigger",
+                "abilityOverride": ""
+            }
+        ],
+        "AHCOGNAHOOF": {
+            "lifeTime": 1.5
+        },
+        "move": {
+            "$type": "DKAMCGDMNKI",
+            "target": "TargetEntity",
+            "attachPoint": "BulletTrigger",
+            "JHIDLJOPJML": true,
+            "HMPJAIBPNND": ""
+        },
+        "LGBJNNEDJDF": {
+            "$type": "AJELOFLEBAF",
+            "collision": {
+                "ccd": {
+                    "type": "Always"
+                },
+                "targetType": "Enemy",
+                "ignoreWater": true
+            },
+            "JFFIPBCGGOM": [
+                {
+                    "$type": "NFGPPKHKFBL",
+                    "abilityName": "Avatar_Yaoyao_ElementalBurst_Rabbit_Throw_Pre_BulletTrigger"
+                }
+            ]
+        },
+        "PCADANJPFND": true
+    }
+}

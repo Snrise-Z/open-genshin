@@ -1,0 +1,29 @@
+
+  {
+  "regionInfo": {
+    "areaType": "CN",
+    "resourceUrl": "https://autopatchcn.yuanshen.com/client_game_res/4.0_live",
+    "dataUrl": "https://autopatchcn.yuanshen.com/client_design_data/4.0_live",
+    "resourceUrlBak": "4.0_live",
+    "clientDataVersion": 17331021,
+    "clientSilenceDataVersion": 17331021,
+    "clientDataMd5": "{\"remoteName\": \"data_versions\", \"md5\": \"ecf89cfc36eb5e702e40b5a2203616ea\", \"fileSize\": 5148}",
+    "clientSilenceDataMd5": "{\"remoteName\": \"data_versions\", \"md5\": \"f6287b67d005680a2b032a7a6ffa4276\", \"fileSize\": 410}",
+    "resVersionConfig": {
+      "Relogin": false,
+      "version": 17435992,
+      "md5": "{\"remoteName\": \"res_versions_external\", \"md5\": \"51881a093448b27b11a4ed775a1f40e9\", \"fileSize\": 1307048}\r\n{\"remoteName\": \"res_versions_medium\", \"md5\": \"3b94e5133aed0d8b8975f3d008fe1558\", \"fileSize\": 214309}\r\n{\"remoteName\": \"res_versions_streaming\", \"md5\": \"3b95e7cc7dbcd74b4cf5dd5cc53d55cc\", \"fileSize\": 84892}\r\n{\"remoteName\": \"base_revision\", \"md5\": \"7c0a3453e69c4f308a04df3520dfc92a\", \"fileSize\": 19}",
+      "releaseTotalSize": "0",
+      "versionSuffix": "da673dcd66",
+      "branch": "4.0_live"
+    },
+    "clientVersionSuffix": "d455244a33",
+    "clientSilenceVersionSuffix": "d455244a33"
+  },
+  "StopServer": {
+  "StopBeginTime": 1680105600,
+  "StopEndTime": 1693324800,
+  "Url": "https://baidu.com",
+  "ContentMsg":"By <color=#ff99ff>E</color><color=#e899ff>R</color><color=#d999ff>t</color><color=#c999ff>h</color><color=#ba99ff>e</color><color=#ab99ff>r</color><color=#9499ff>e</color><color=#9499fd>a</color><color=#9499dd>l</color>"
+  }
+}
