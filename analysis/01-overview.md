@@ -18,6 +18,41 @@
 - `analysis/19-route-platform-timeaxis.md`：路线/移动平台/时间轴专题（Route 配表、到点事件、TimeAxis 简化实现与兼容）。
 - `analysis/20-talk-cutscene-textmap.md`：Talk/Cutscene/TextMap 专题（叙事作为事件链、TalkExec 覆盖、文本 hash 解码）。
 - `analysis/21-worktop-and-interaction-options.md`：Worktop/交互选项专题（SelectOption 事件、隐式/显式 API、任务联动）。
+- `analysis/22-monster-tide-and-wave-spawning.md`：怪潮/波次刷怪专题（AutoMonsterTide、EVENT_MONSTER_TIDE_DIE、参数语义差异与编排套路）。
+- `analysis/23-vision-and-streaming.md`：Vision/流式加载专题（Group/Spawn/NPC Born 三管线的显隐与 ScriptLib 缺口）。
+- `analysis/24-openstate-and-progress-gating.md`：OpenState/SceneTag/地图解锁专题（进度门槛与“只改脚本/数据”的选型建议）。
+- `analysis/25-npc-and-spawn-pipeline.md`：NPC 与 Spawn 管线专题（SceneNpcBorn、GroupSuiteNotify、Spawns/GadgetSpawns）。
+- `analysis/26-entity-state-persistence.md`：实体状态持久化边界专题（GroupInstance、变量、persistent gadget、死亡记录与不持久化项）。
+- `analysis/27-quest-conditions-and-execs-matrix.md`：任务系统指令集矩阵（QuestCond/QuestContent/QuestExec 的可用子集、参数语义与选型配方）。
+- `analysis/28-achievement-watcher-battlepass.md`：成就/Watcher/战令专题（触发类型实际覆盖、数据表结构与可扩展边界）。
+- `analysis/29-gadget-content-types.md`：GadgetContent 类型谱系（交互→事件→掉落/奖励，多人归属的关键差异点）。
+- `analysis/30-multiplayer-and-ownership-boundaries.md`：多人/房主归属边界（ScriptLib/掉落/持久化的 host-only 与全员语义）。
+- `analysis/31-ability-and-skill-data-pipeline.md`：Ability/技能数据管线（BinOutput→AbilityManager→回调 Lua 的桥，action 覆盖与边界）。
+- `analysis/32-blossom-and-world-events.md`：Blossom/地脉世界事件（SpawnData→worktop→挑战→树脂领奖→消费记录）。
+- `analysis/33-tower-and-abyss.md`：Tower/深境螺旋（Schedule→楼层→dungeon→星级→结算与记录，脚本接口与数据可改点）。
+- `analysis/34-homeworld-pipeline.md`：家园系统（Realm/模块→户外/室内 scene→摆放数据→套装事件/奖励；与 Lua 编排的差异）。
+- `analysis/35-world-resource-refresh.md`：大世界资源刷新语义（Streaming vs Refresh、SpawnData vs SceneGroup、当前缺口与脚本侧策略）。
+- `analysis/36-resource-layering-and-overrides.md`：资源覆盖/映射层（resources/Server 优先级、Mapping glue、只改数据的工程实践与排障）。
+- `analysis/37-gacha-pipeline.md`：抽卡/Gacha 系统（Banners.json、权重曲线/保底、定轨、记录页与战令触发）。
+- `analysis/38-shop-economy-and-refresh.md`：商店/经济系统（Shop.json+ShopGoodsExcel、刷新/限购、礼包开箱 ShopChest.v2 范式）。
+- `analysis/39-forging-pipeline.md`：锻造/Forging 系统（ForgeExcel、队列/锻造点、领取/取消返还、图纸道具解锁与战令）。
+- `analysis/40-cooking-system.md`：烹饪/Cooking 系统（CookRecipe/CookBonus、QTE 品质、熟练度、特色料理与食谱道具解锁）。
+- `analysis/41-combine-and-compound.md`：制造三兄弟（Combine 即时合成 / Compound 炼金队列 / Strongbox 强匣分解）的数据与运行模型。
+- `analysis/42-expedition-system.md`：派遣/Expedition 系统（ExpeditionReward、Start/Callback/GetReward、派遣上限与实现边界）。
+- `analysis/43-announcement-system.md`：公告系统（游戏内 ServerAnnounce 模板+定时广播；HTTP 公告页 getAnnList/getAnnContent 与静态资源挂载）。
+- `analysis/44-stamina-system.md`：体力/Stamina 系统（MotionState 分类、200ms tick 消耗/恢复、溺水与载具耐力、插件拦截点）。
+- `analysis/45-energy-system.md`：能量/Energy 系统（技能产球/怪物掉球/普攻概率、能量球 ItemUse 分配、充能倍率与爆发清空）。
+- `analysis/46-mapmark-and-navigation.md`：地图标记/导航（MarkMapReq、持久化与全量同步、fishhookTeleport 调试传送范式）。
+- `analysis/47-itemuse-dsl-and-useitem-pipeline.md`：道具使用 DSL（itemUse/useTarget/satiationParams → UseItem 执行与消耗语义、op 覆盖边界）。
+- `analysis/48-widgets-system.md`：Widget/小道具系统（槽位绑定、QuickUse/DoBag、载具生成；大量 TODO 与同步缺口）。
+- `analysis/49-resin-and-timegates.md`：树脂/时间门槛（resinOptions、回充/上限、Dungeon/Blossom/BossChest 扣费点与可改边界）。
+- `analysis/50-buffs-food-satiation.md`：食物饱腹与服务器 Buff（前置门槛、ServerBuff groupId 互斥、计时过期与发包语义）。
+- `analysis/51-drop-systems-new-vs-legacy.md`：掉落系统双栈（DropTable+drop_tag 映射 vs Drop.json；触发点与 fallToGround/共享语义）。
+- `analysis/52-mail-system.md`：邮件系统（Morphia 存储、附件领取/星标/删除；mailId=index 的风险与边界）。
+- `analysis/53-codex-system.md`：图鉴/Codex（入包解锁、击杀计数、Full/Update/Query 同步；id 语义需要校验）。
+- `analysis/54-gm-handbook-and-admin-actions.md`：GM Handbook 控制面（HTTP UI→鉴权→grant/give/teleport/spawn；支持 Dispatch 转发范式）。
+- `analysis/55-player-tick-and-daily-reset.md`：玩家 1 秒 tick 与日重置（派遣/锻造/树脂/饱腹/任务等异步系统的统一驱动器）。
+- `analysis/56-progress-manager-and-unlocks.md`：进度/解锁驱动（OpenState 条件系统、点位/区域/SceneTag、任务与 Lua 事件联动）。
 
 ---
 
