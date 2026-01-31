@@ -53,6 +53,26 @@
 - `analysis/54-gm-handbook-and-admin-actions.md`：GM Handbook 控制面（HTTP UI→鉴权→grant/give/teleport/spawn；支持 Dispatch 转发范式）。
 - `analysis/55-player-tick-and-daily-reset.md`：玩家 1 秒 tick 与日重置（派遣/锻造/树脂/饱腹/任务等异步系统的统一驱动器）。
 - `analysis/56-progress-manager-and-unlocks.md`：进度/解锁驱动（OpenState 条件系统、点位/区域/SceneTag、任务与 Lua 事件联动）。
+- `analysis/60-content-authoring-cookbook-overview.md`：内容制作 Cookbook 总览（工作流、ID 规划、调试方法与常见坑）。
+- `analysis/61-cookbook-new-group-encounter.md`：内容制作 Cookbook：遭遇战房间（Worktop 开始→刷怪→清怪解锁宝箱）。
+- `analysis/62-cookbook-timed-challenge-and-waves.md`：内容制作 Cookbook：限时挑战+波次（Challenge 成功/失败→suite/wave 推进→收尾重置）。
+- `analysis/63-cookbook-region-driven-fsm.md`：内容制作 Cookbook：区域触发链（Enter/Leave Region→阶段机→成功/失败重置）。
+- `analysis/64-cookbook-gadget-puzzle-and-chest.md`：内容制作 Cookbook：机关解谜（GadgetState/变量/计时→解锁/生成宝箱）。
+- `analysis/65-cookbook-quest-driven-dynamic-groups.md`：内容制作 Cookbook：任务驱动动态 Group（QuestExec 注册/卸载 + LuaNotify 推进）。
+- `analysis/66-cookbook-dialogue-and-interaction-quest.md`：内容制作 Cookbook：对白/交互轻量任务（CompleteTalk vs SelectOption+LuaNotify）。
+- `analysis/67-cookbook-reward-drop-and-loot.md`：内容制作 Cookbook：奖励/掉落制作（DropTable/drop_tag、宝箱/怪物、多人与归属）。
+- `analysis/68-cookbook-reusing-common-vx-modules.md`：内容制作 Cookbook：复用 Common/Vx_y 模块（注入式实例化、fastRequire 约束与可运行性审计）。
+- `analysis/69-cookbook-dungeon-and-instanced-content.md`：内容制作 Cookbook：副本/实例内容（/dungeon 进入→Challenge 驱动通关→DungeonSettle 收尾）。
+- `analysis/70-avatar-progression-and-stats.md`：玩家子系统专题：角色（等级/突破/属性面板；recalcStats 总线与可改点）。
+- `analysis/71-weapon-system.md`：玩家子系统专题：武器（强化/突破/精炼/被动；EquipAffix 映射与边界）。
+- `analysis/72-reliquary-system.md`：玩家子系统专题：圣遗物（主副词条生成、强化 roll、套装 EquipAffix、强匣衔接）。
+- `analysis/73-talent-proudskill-skilldepot.md`：玩家子系统专题：天赋（SkillDepot/AvatarSkill/ProudSkill 映射、固有天赋解锁与能力注入）。
+- `analysis/74-constellation-and-openconfig.md`：玩家子系统专题：命之座（Talent/OpenConfig、+3 天赋等级、技能次数修饰与实现边界）。
+- `analysis/75-team-and-resonance.md`：玩家子系统专题：队伍（编队/出战切换/元素共鸣/联机队伍；硬编码边界）。
+- `analysis/76-trial-avatar-and-trial-team.md`：玩家子系统专题：试用角色与试用队伍（模板 Build 注入、任务/活动触发链路）。
+- `analysis/77-adventure-rank-and-world-level.md`：玩家子系统专题：冒险等阶&世界等级（升级曲线、OpenState/任务联动、怪物等级缩放）。
+- `analysis/78-scene-points-teleport-and-statues.md`：玩家子系统专题：传送锚点/七天神像/秘境入口（ScenePoint 数据、解锁事件链与供奉）。
+- `analysis/79-fetter-and-namecard.md`：玩家子系统专题：好感度/羁绊（Fetter）与名片奖励（经验曲线、领取流程与简化边界）。
 
 ---
 
